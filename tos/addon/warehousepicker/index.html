@@ -18,7 +18,7 @@
 <style amp-custom>
    
   body {
-    font-family: "Noto Sans Japanese";
+    font-family: "Noto Sans Japanese", "monospace";
     font-size: 85%;
     padding-left: 5px;
     padding-right: 5px;
@@ -70,12 +70,19 @@
     border-left: 7px solid #999;
     border-bottom: 1px solid #999;
   }
+  section > .summary {
+    font-size: 85%;
+    color: #999;
+  }
   aside {
     float: left;
     max-width: 300px;
     height: 100%;
     margin-top: 10px;
     font-size: 85%;
+  }
+  aside > div {
+    margin-bottom: 10px;
   }
    
   .pagination {
@@ -99,11 +106,12 @@
     border: 1px solid #000000;
   }
    
-  .highlight > pre {
+  pre {
     margin-left: 10px;
     margin-right: 10px;
     padding: 5px;
     border: 1px solid #999;
+    word-wrap: break-word;
   }
   .highlight .c { color: #999988; font-style: italic }  
   .highlight .err { color: #a61717; background-color: #e3d2d2 }  
@@ -167,15 +175,43 @@
   .highlight .il { color: #009999 }  
 </style>
 
+
+
 <script type="application/ld+json">
 {
   "@context": "http://schema.org"
+  "@type": "BlogPosting",
+  "headline": "[tree of savior addon] 所持キャラ全員の個人倉庫を見るアドオン",
+  "url": "http://www.weizlogy.gq/tos/addon/warehousepicker/",
+  "datePublished": "2017-02-19 17:42:00 &#43;0900 JST",
+  "author": {
+    "@type": "Person",
+    "name": "weizlogy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Weiβlogy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.weizlogy.gq//favicon.ico"
+    }
+  },
+  "dateModified": "2017-02-19 17:42:00 &#43;0900 JST",
+  "mainEntityOfPage": "1",
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://www.weizlogy.gq//dummy.png",
+    "width": "100",
+    "height": "100"
+  }
 }
 </script>
+
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
+<script async='async' custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 
 <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -247,6 +283,23 @@
   <p>Powered by hugo &#43; github pages.<p>
   <p><a href="https://twitter.com/twihamatter">Twitter</a></p>
 <p><a href="https://plus.google.com/+%E7%99%BD%E6%BF%B1%E7%9D%A6%E4%B8%89?hl=ja">Google+</a></p>
+
+
+<amp-analytics type="googleanalytics" id="analytics1">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-565719-7"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
 
 </footer>
 

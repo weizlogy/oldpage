@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html ⚡>
+<head>
+<meta charset="utf-8">
+<link rel="canonical" href="http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<title>
+
+  [system development] XAMLでブロック矢印を描画する &ndash; Weizlogy
+
+</title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+
+
+<style amp-custom>
+   
+  body {
+    font-family: "Noto Sans Japanese", "monospace";
+    font-size: 85%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  h1 > a {
+    text-decoration: none;
+    color: inherit;
+  }
+  header {
+    clear: left;
+  }
+  header > h1 {
+    font-family: 'Lobster', cursive;
+    display: inline;
+    color: #666;
+  }
+  header > h2 {
+    font-family: 'Lobster', cursive;
+    display: inline;
+    margin-left: 10px;
+    color: #999;
+  }
+  footer {
+    clear: left;
+    padding-top: 10px;
+  }
+  footer > p {
+    display: inline;
+    padding-left: 10px;
+  }
+   
+  article > div > h2 {
+    padding: 0px 0px 5px 5px;
+    border-left: 7px solid #999;
+    border-bottom: 1px solid #999;
+  }
+  article > div > h3 {
+    padding: 0px 0px 5px 5px;
+    border-left: 7px solid #CCC;
+    border-bottom: 1px solid #CCC;
+  }
+   
+  section {
+    padding-left: 10px;
+    overflow: hidden;
+  }
+  section > h1 {
+    padding: 0px 0px 5px 5px;
+    border-left: 7px solid #999;
+    border-bottom: 1px solid #999;
+  }
+  section > .summary {
+    font-size: 85%;
+    color: #999;
+  }
+  aside {
+    float: left;
+    max-width: 300px;
+    height: 100%;
+    margin-top: 10px;
+    font-size: 85%;
+  }
+  aside > div {
+    margin-bottom: 10px;
+  }
+   
+  .pagination {
+    display: inline-block;
+  }
+  .pagination li {
+    display: inline-block;
+    text-decoration: none;
+  }
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 7px 14px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #000000;
+    margin: 0 4px;
+  }
+  .pagination li.active a {
+    background-color: #F5F5F5;
+    border: 1px solid #000000;
+  }
+   
+  pre {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #999;
+    word-wrap: break-word;
+  }
+  .highlight .c { color: #999988; font-style: italic }  
+  .highlight .err { color: #a61717; background-color: #e3d2d2 }  
+  .highlight .k { color: #000000; font-weight: bold }  
+  .highlight .o { color: #000000; font-weight: bold }  
+  .highlight .cm { color: #999988; font-style: italic }  
+  .highlight .cp { color: #999999; font-weight: bold; font-style: italic }  
+  .highlight .c1 { color: #999988; font-style: italic }  
+  .highlight .cs { color: #999999; font-weight: bold; font-style: italic }  
+  .highlight .gd { color: #000000; background-color: #ffdddd }  
+  .highlight .ge { color: #000000; font-style: italic }  
+  .highlight .gr { color: #aa0000 }  
+  .highlight .gh { color: #999999 }  
+  .highlight .gi { color: #000000; background-color: #ddffdd }  
+  .highlight .go { color: #888888 }  
+  .highlight .gp { color: #555555 }  
+  .highlight .gs { font-weight: bold }  
+  .highlight .gu { color: #aaaaaa }  
+  .highlight .gt { color: #aa0000 }  
+  .highlight .kc { color: #000000; font-weight: bold }  
+  .highlight .kd { color: #000000; font-weight: bold }  
+  .highlight .kn { color: #000000; font-weight: bold }  
+  .highlight .kp { color: #000000; font-weight: bold }  
+  .highlight .kr { color: #000000; font-weight: bold }  
+  .highlight .kt { color: #445588; font-weight: bold }  
+  .highlight .m { color: #009999 }  
+  .highlight .s { color: #d01040 }  
+  .highlight .na { color: #008080 }  
+  .highlight .nb { color: #0086B3 }  
+  .highlight .nc { color: #445588; font-weight: bold }  
+  .highlight .no { color: #008080 }  
+  .highlight .nd { color: #3c5d5d; font-weight: bold }  
+  .highlight .ni { color: #800080 }  
+  .highlight .ne { color: #990000; font-weight: bold }  
+  .highlight .nf { color: #990000; font-weight: bold }  
+  .highlight .nl { color: #990000; font-weight: bold }  
+  .highlight .nn { color: #555555 }  
+  .highlight .nt { color: #000080 }  
+  .highlight .nv { color: #008080 }  
+  .highlight .ow { color: #000000; font-weight: bold }  
+  .highlight .w { color: #bbbbbb }  
+  .highlight .mf { color: #009999 }  
+  .highlight .mh { color: #009999 }  
+  .highlight .mi { color: #009999 }  
+  .highlight .mo { color: #009999 }  
+  .highlight .sb { color: #d01040 }  
+  .highlight .sc { color: #d01040 }  
+  .highlight .sd { color: #d01040 }  
+  .highlight .s2 { color: #d01040 }  
+  .highlight .se { color: #d01040 }  
+  .highlight .sh { color: #d01040 }  
+  .highlight .si { color: #d01040 }  
+  .highlight .sx { color: #d01040 }  
+  .highlight .sr { color: #009926 }  
+  .highlight .s1 { color: #d01040 }  
+  .highlight .ss { color: #990073 }  
+  .highlight .bp { color: #999999 }  
+  .highlight .vc { color: #008080 }  
+  .highlight .vg { color: #008080 }  
+  .highlight .vi { color: #008080 }  
+  .highlight .il { color: #009999 }  
+</style>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org"
+  "@type": "BlogPosting",
+  "headline": "[system development] XAMLでブロック矢印を描画する",
+  "url": "http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/",
+  "datePublished": "2016-12-04 22:45:00.001 &#43;0900 JST",
+  "author": {
+    "@type": "Person",
+    "name": "weizlogy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Weiβlogy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.weizlogy.gq//favicon.ico"
+    }
+  },
+  "dateModified": "2016-12-04 22:45:00.001 &#43;0900 JST",
+  "mainEntityOfPage": "1",
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://www.weizlogy.gq//dummy.png",
+    "width": "100",
+    "height": "100"
+  }
+}
+</script>
+
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+<noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<script async='async' custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+</head>
+
+<body>
+<div id="container">
+
+<header>
+
+  <h1><a href="http://www.weizlogy.gq/">Weizlogy</a></h1>
+  <h2> - Live in der Zukunft.</h2>
+
+</header>
+
+<aside>
+</aside>
+
+<div>
+<article>
+
+ <h1><a href="http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/">[system development] XAMLでブロック矢印を描画する</a></h1>
+ <div>
+  
+
+<h2 id="ブロック矢印完成図">ブロック矢印完成図</h2>
+
+<p><a href="https://2.bp.blogspot.com/-QPmVEzpBOBo/WEQVzFGr4lI/AAAAAAAACdY/1nNprsKOYfsPBfK8hDGLXTx06mNUabT0ACLcB/s1600/block_arrow.png"><amp-img src="https://2.bp.blogspot.com/-QPmVEzpBOBo/WEQVzFGr4lI/AAAAAAAACdY/1nNprsKOYfsPBfK8hDGLXTx06mNUabT0ACLcB/s320/block_arrow.png" width="320" height="230" title="" layout="responsive" /></a></p>
+
+<h2 id="コード">コード</h2>
+<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span>  <span class="nt">&lt;Path</span> <span class="na">Stroke=</span><span class="s">&quot;Black&quot;</span> <span class="na">StrokeThickness=</span><span class="s">&quot;2&quot;</span> <span class="na">Fill=</span><span class="s">&quot;Gray&quot;</span> <span class="na">Data=</span><span class="s">&quot;M 100 100 H 200 V 90 L 230 115 L 200 140 V 130 H 100 V 100 Z&quot;</span> <span class="na">Margin=</span><span class="s">&quot;-30,-30,0,0&quot;</span> <span class="nt">/&gt;</span>
+</code></pre></div>
+
+<h2 id="解説">解説</h2>
+
+<p>Pathを使って目標の位置付近に描画、Marginで微調整します。</p>
+
+<p><a href="https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspx">https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspx</a>を読めば分かりますが簡単です。
+一筆書きの要領で、矢印の左上から時計回りに線を引いています。</p>
+
+<p>「M 100 100」は「X=100,Y=100に移動」します。</p>
+
+<p>「H 200」は「現在位置からX=200まで描線」します。</p>
+
+<p>「V 90」は「現在位置からY=90まで描線」します。</p>
+
+<p>「L 230 115」は「現在位置からX=230,Y=115まで描線」します。</p>
+
+<p>以下繰り返しの上、 「Z」は「描線の範囲を閉鎖」します。</p>
+
+<p>座標の算出には、描画開始位置、シャフトの幅と高さ、アローヘッドの出代と角度を決めます。
+今回は、描画開始位置=100,100、シャフトの幅=100、高さ=30、アローヘッドの出代=10、角度=60にしました。</p>
+
+<p><a href="https://1.bp.blogspot.com/-GYh_fEvUajg/WEQcFVO7iYI/AAAAAAAACdo/LHnxOMOol1kDZPx3IPGsuZgHBEPJX6uJACLcB/s320/block_arrow_calc.png"><amp-img src="https://1.bp.blogspot.com/-GYh_fEvUajg/WEQcFVO7iYI/AAAAAAAACdo/LHnxOMOol1kDZPx3IPGsuZgHBEPJX6uJACLcB/s1600/block_arrow_calc.png" width="320" height="180" title="" layout="responsive" /></a></p>
+
+<p>アローヘッドの頂点座標の算出は、頂点がシャフトの中央にあることと、三平方の定理を使えばきっちり出せます。
+つまり、シャフトの幅は偶数が良いです。</p>
+
+ </div>
+
+</article>
+</div>
+
+<footer>
+
+  <p>© 2010 weizlogy.<p>
+  <p>Powered by hugo &#43; github pages.<p>
+  <p><a href="https://twitter.com/twihamatter">Twitter</a></p>
+<p><a href="https://plus.google.com/+%E7%99%BD%E6%BF%B1%E7%9D%A6%E4%B8%89?hl=ja">Google+</a></p>
+
+
+<amp-analytics type="googleanalytics" id="analytics1">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-565719-7"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
+
+</footer>
+
+</div>
+</body>
+</html>

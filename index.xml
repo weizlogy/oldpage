@@ -62,7 +62,7 @@
 
 &lt;p&gt;[EndurColor]は装備の耐久度閾値に対応する色をRGBで指定します。&lt;/p&gt;
 
-&lt;h3 id=&#34;explanation-of-inilial-parameters&#34;&gt;explanation of inilial parameters.&lt;/h3&gt;
+&lt;h3 id=&#34;explanation-of-initial-parameters&#34;&gt;explanation of initial parameters.&lt;/h3&gt;
 
 &lt;p&gt;武器&lt;/p&gt;
 
@@ -224,6 +224,60 @@
     </item>
     
     <item>
+      <title>[site management] schema.org構造化データBlogPosting対応 with JSON&#43;LD in blogger</title>
+      <link>http://www.weizlogy.gq/site/blogger-blogposting-jsonld/</link>
+      <pubDate>Sun, 26 Feb 2017 12:54:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/site/blogger-blogposting-jsonld/</guid>
+      <description>&lt;p&gt;bloggerのテンプレートで、以下のブログ投稿箇所を検索します。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;b:loop&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;values=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;data:posts&amp;#39;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;var=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;post&amp;#39;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;この直下に以下のスクリプトを挿入します。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!-- schema.org - BlogPosting. --&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;application/ld+json&amp;#39;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
+  {
+    &amp;quot;@context&amp;quot;: &amp;quot;http://schema.org&amp;quot;,
+    &amp;quot;@type&amp;quot;: &amp;quot;BlogPosting&amp;quot;,
+    &amp;quot;headline&amp;quot;: &amp;quot;&lt;span class=&#34;nt&#34;&gt;&amp;lt;data:blog.url/&amp;gt;&lt;/span&gt;&amp;quot;,
+    &amp;quot;url&amp;quot;: &amp;quot;&lt;span class=&#34;nt&#34;&gt;&amp;lt;data:blog.pageTitle/&amp;gt;&lt;/span&gt;&amp;quot;,
+    &amp;quot;datePublished&amp;quot;: &amp;quot;&lt;span class=&#34;nt&#34;&gt;&amp;lt;data:post.timestampISO8601/&amp;gt;&lt;/span&gt;&amp;quot;,
+    &amp;quot;author&amp;quot;: {
+      &amp;quot;@type&amp;quot;: &amp;quot;Person&amp;quot;,
+      &amp;quot;name&amp;quot;: &amp;quot;&lt;span class=&#34;nt&#34;&gt;&amp;lt;data:post.author/&amp;gt;&lt;/span&gt;&amp;quot;
+    },
+    &amp;quot;publisher&amp;quot;: {
+      &amp;quot;@type&amp;quot;: &amp;quot;Organization&amp;quot;,
+      &amp;quot;name&amp;quot;: &amp;quot;Weiβlogy&amp;quot;,
+      &amp;quot;logo&amp;quot;: {
+        &amp;quot;@type&amp;quot;: &amp;quot;ImageObject&amp;quot;,
+        &amp;quot;url&amp;quot;: &amp;quot;http://www.weizlogy.gq/favicon.ico&amp;quot;
+      }
+    },
+    &amp;quot;dateModified&amp;quot;: &amp;quot;&lt;span class=&#34;nt&#34;&gt;&amp;lt;data:post.timestampISO8601/&amp;gt;&lt;/span&gt;&amp;quot;,
+    &amp;quot;mainEntityOfPage&amp;quot;: &amp;quot;1&amp;quot;,
+    &amp;quot;image&amp;quot;: {
+      &amp;quot;@type&amp;quot;: &amp;quot;ImageObject&amp;quot;,
+      &amp;quot;url&amp;quot;: &amp;quot;http://www.weizlogy.gq/dummy.png&amp;quot;,
+      &amp;quot;width&amp;quot;: &amp;quot;100&amp;quot;,
+      &amp;quot;height&amp;quot;: &amp;quot;100&amp;quot;
+    }
+  }
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;publisher, imageは各自修正してください。&lt;/p&gt;
+
+&lt;p&gt;datePublished, dateModifiedは今のところ同じ値になっています。&lt;/p&gt;
+
+&lt;p&gt;feedDataに情報はありますが、Javascriptを経由せず取得するのは難しそうです。&lt;/p&gt;
+
+&lt;p&gt;本当はheaderタグ内に置きたかったのですが、data:postsが b:section class=&amp;lsquo;main&amp;rsquo; id=&amp;lsquo;main&amp;rsquo; 配下でないと
+有効でないという仕様に阻まれました。。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/staminagauge/</link>
       <pubDate>Sat, 25 Feb 2017 00:33:00 +0900</pubDate>
@@ -337,6 +391,85 @@
 
 &lt;p&gt;今のところチームの区別なくキャラ名のみ表示しますので、複数チームを所持している場合に使い勝手に難があるかもしれません。
 使いにくいようでしたら改善します。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[system] Schritt - 論理ステップカウンター</title>
+      <link>http://www.weizlogy.gq/system/item/schritt/</link>
+      <pubDate>Mon, 13 Feb 2017 17:32:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/system/item/schritt/</guid>
+      <description>
+
+&lt;h2 id=&#34;overviews&#34;&gt;overviews.&lt;/h2&gt;
+
+&lt;p&gt;Schrittは論理ステップカウンターです。&lt;/p&gt;
+
+&lt;p&gt;従来のステップカウンターは物理行でカウントする方式が主流であるため、書き方により規模に差異が現れます。&lt;/p&gt;
+
+&lt;p&gt;Schrittは論理的に命令をカウントすることで、書き方による規模の差異を抑制することを目的に作られました。&lt;/p&gt;
+
+&lt;p&gt;SchrittはLinux(ubuntu)のMonoを使用し、C#で実装されているため、.Net Frameworkの恩恵を受けられる環境であれば動作します。&lt;/p&gt;
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/8zf41fu9hwf15nk/Schritt-core.exe?dl=0&#34;&gt;Schritt&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;status&#34;&gt;status.&lt;/h2&gt;
+
+&lt;p&gt;| 言語 | 対応バージョン | 状況説明 |
+|:&amp;mdash;||:&amp;mdash;||:&amp;mdash;|
+| C | 0.0.3-α |  |
+| C++ |  | 順次対応予定 |
+| C# | 0.0.1-α |  |
+| Java | 0.0.2-α |  |
+| VB |  | 順次対応予定 |
+| JavaScript |  | 順次対応予定 |
+| HTML |  | 順次対応予定 |
+| CSS |  | 順次対応予定 |
+| Ruby |  | 順次対応予定 |&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;.Net Framework 4.5以上が必要です。&lt;/p&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v0-0-4-α&#34;&gt;v0.0.4-α&lt;/h3&gt;
+
+&lt;p&gt;ディレクトリ再帰走査対応。&lt;/p&gt;
+
+&lt;h3 id=&#34;v0-0-3-α&#34;&gt;v0.0.3-α&lt;/h3&gt;
+
+&lt;p&gt;C言語対応。&lt;/p&gt;
+
+&lt;h3 id=&#34;v0-0-2-α&#34;&gt;v0.0.2-α&lt;/h3&gt;
+
+&lt;p&gt;Java言語対応。&lt;/p&gt;
+
+&lt;h3 id=&#34;v0-0-1-α&#34;&gt;v0.0.1-α&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;実行体に対してコマンドライン引数でステップ数を計測するソースコードのパスまたはディレクトリを指定(複数可)します。
+ディレクトリ指定の場合は、サブフォルダを再帰的に走査します。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span&gt;&lt;/span&gt;Schritt-core.exe test1.cs test2.cs
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;実行結果は標準出力にCSV形式で出力されます。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span&gt;&lt;/span&gt;filename,comment,step
+test1.cs,10,20
+test2.cs,0,5
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&#34;lisence&#34;&gt;lisence.&lt;/h2&gt;
+
+&lt;p&gt;SchrittはMITライセンスで提供します。&lt;/p&gt;
+
+&lt;h2 id=&#34;limitations&#34;&gt;limitations.&lt;/h2&gt;
+
+&lt;p&gt;ソースコードの文字コードはBOM付きのUnicode、またはBOM無しのUTF-8に対応しています。&lt;/p&gt;
 </description>
     </item>
     
@@ -520,6 +653,24 @@
 &lt;p&gt;アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。&lt;/p&gt;
 
 &lt;p&gt;動画を撮るときに設定では非表示にできなかったので。。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[system development] TSLで定義される全CipherSuiteの一覧</title>
+      <link>http://www.weizlogy.gq/system/dev/cipher-suites/</link>
+      <pubDate>Tue, 31 Jan 2017 21:59:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/system/dev/cipher-suites/</guid>
+      <description>&lt;p&gt;Cipher Suiteの説明はさて置き、一覧を見るために以下のコマンドを使用する例が多々見受けられます。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span&gt;&lt;/span&gt;$ openssl ciphers -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;これはopensslが対応するCipherSuiteの一覧であり、実際に存在するCipherSuiteの一覧とは異なります。&lt;/p&gt;
+
+&lt;p&gt;実際に存在するCipherSuiteの一覧は、RFC5426によるとIANA管理とのことで、下記URLがマスターです。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4&#34;&gt;http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -807,154 +958,6 @@
 &lt;p&gt;iesファイルフォーマットは、以下のソースコードを参考にさせて頂きました。 ありがとうございます。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/r1emu/IPFUnpacker/blob/master&#34;&gt;https://github.com/r1emu/IPFUnpacker/blob/master&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）</title>
-      <link>http://www.weizlogy.gq/tos/addon/console/</link>
-      <pubDate>Sat, 10 Dec 2016 17:30:00 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/console/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/mkjc554mhp257ne/console.ipf?dl=0&#34;&gt;[v1.1.0] console.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;p&gt;Nexon\TreeofSaviorJP\addons\console\settings.txt を作成します。&lt;/p&gt;
-
-&lt;p&gt;ファイルを開いて一行目に、10 210 1と入力します。
-設定は半角スペース区切りで、[ボタンのX座標] [ボタンのY座標] [ボタン表示状態]。&lt;/p&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
-
-&lt;p&gt;設定[ボタン表示状態]を追加しました。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされるとボタン表示状態が1の場合のみ、[Console]ボタンが表示されます。
-ボタンを押すと抽出を開始します。
-ボタン表示状態はエリアチェンジの度に読み込まれるため、ゲーム起動中にボタン表示を切り替えることも可能です。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると[Console]ボタンが表示されます。ボタンを押すと抽出を開始します。 Nexon\TreeofSaviorJP\data\console.txt に抽出結果が出力されます。
-実際の抽出結果は&lt;a href=&#34;http://www.weizlogy.gq/2016/09/tree-of-savior-lua.html&#34;&gt;別記事&lt;/a&gt;にあります。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/distance/</link>
-      <pubDate>Sun, 13 Nov 2016 18:00:00 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/distance/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/c8v4g9tdi4iqpgb/distance.ipf?dl=0&#34;&gt;[v1.1.0]distance.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;amp-youtube data-videoid=&#34;IUtCzMMKbXU&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
-
-&lt;p&gt;メートル単位対応しました。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると近隣（20m範囲内）モンスターに自キャラからの距離がメートル単位で表示されます。&lt;/p&gt;
-
-&lt;p&gt;距離が12mを超えると、表示が消えます。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると近隣（500範囲内）モンスターに自キャラからの距離が表示されます。&lt;/p&gt;
-
-&lt;p&gt;単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 飛行アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/fly/</link>
-      <pubDate>Sun, 09 Oct 2016 19:39:00 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/fly/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;!-- 再公開には @Zinnai0 の許可が必要です。 --&gt;
-
-&lt;p&gt;&lt;amp-img src=&#34;https://2.bp.blogspot.com/-gZOBr6HnNBo/WIvU2G60NWI/AAAAAAAACh0/x7SRGGFM7W8ABWeJw4-gaK8rTeUesBITwCLcB/s320/zzz.png&#34; width=&#34;320&#34; height=&#34;320&#34; title=&#34;00001710-EOF&#34; layout=&#34;responsive&#34; /&gt;(&lt;a href=&#34;https://www.dropbox.com/s/c0h4s39ut5p0v36/zzz.png?dl=0&#34;&gt;https://www.dropbox.com/s/c0h4s39ut5p0v36/zzz.png?dl=0&lt;/a&gt;)&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;amp-youtube data-videoid=&#34;Ad_LIzKk_no&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;p&gt;Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。&lt;/p&gt;
-
-&lt;p&gt;ファイルを開いて一行目に、10 130 200 0 1と入力します。&lt;/p&gt;
-
-&lt;p&gt;設定は半角スペース区切りで、[ボタンのX座標] [ボタンのY座標] [飛距離] [前回飛行中か？] [ボタン表示状態]。&lt;/p&gt;
-
-&lt;p&gt;飛距離は150～200が良いです。100では弓に狙われます。&lt;/p&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
-
-&lt;p&gt;設定[ボタン表示状態]を追加しました。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、[ボタン表示状態]が1の場合のみ、[Fly]ボタンが表示されます。&lt;/p&gt;
-
-&lt;p&gt;ショートカットキーを追加しました。&lt;/p&gt;
-
-&lt;p&gt;ESCAPE+UP(上矢印)で飛行、飛行解除ができます。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると[Fly]ボタンが表示されます。&lt;/p&gt;
-
-&lt;p&gt;ボタンを押すと飛行状態、地上に降りるを繰り返します。&lt;/p&gt;
-
-&lt;p&gt;飛行状態でも地上の敵を攻撃できます。
-飛行状態では地上の敵はこちらを近接攻撃できません。&lt;/p&gt;
-
-&lt;p&gt;実際は地上を歩行しているのでトラップには気をつけてください。&lt;/p&gt;
-
-&lt;p&gt;飛行状態ではスキルが使用不可ですが、ノックバックを受けるとスキルが使用可能になりますので、
-わざとノックバックするようになっています。&lt;/p&gt;
 </description>
     </item>
     

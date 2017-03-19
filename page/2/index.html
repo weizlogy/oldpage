@@ -19,7 +19,7 @@
 <style amp-custom>
    
   body {
-    font-family: "Noto Sans Japanese";
+    font-family: "Noto Sans Japanese", "monospace";
     font-size: 85%;
     padding-left: 5px;
     padding-right: 5px;
@@ -71,12 +71,19 @@
     border-left: 7px solid #999;
     border-bottom: 1px solid #999;
   }
+  section > .summary {
+    font-size: 85%;
+    color: #999;
+  }
   aside {
     float: left;
     max-width: 300px;
     height: 100%;
     margin-top: 10px;
     font-size: 85%;
+  }
+  aside > div {
+    margin-bottom: 10px;
   }
    
   .pagination {
@@ -100,11 +107,12 @@
     border: 1px solid #000000;
   }
    
-  .highlight > pre {
+  pre {
     margin-left: 10px;
     margin-right: 10px;
     padding: 5px;
     border: 1px solid #999;
+    word-wrap: break-word;
   }
   .highlight .c { color: #999988; font-style: italic }  
   .highlight .err { color: #a61717; background-color: #e3d2d2 }  
@@ -168,15 +176,13 @@
   .highlight .il { color: #009999 }  
 </style>
 
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org"
-}
-</script>
+
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
+<script async='async' custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
@@ -192,58 +198,169 @@
 </header>
 
 <aside>
-
-<strong>Last modified.</strong>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon-dev/create-addon/">[tree of savior addon for developpers] アドオン作成～設置方法まとめ</a></div>
-  <div>@2016-09-25 07:41:00 &#43;0900 JST</div>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon/fly/">[tree of savior addon] 飛行アドオン</a></div>
-  <div>@2016-10-09 19:39:00 &#43;0900 JST</div>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon/distance/">[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</a></div>
-  <div>@2016-11-13 18:00:00.002 &#43;0900 JST</div>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon/console/">[tree of savior addon] アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）</a></div>
-  <div>@2016-12-10 17:30:00.001 &#43;0900 JST</div>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/">[tree of savior addon for developpers] iesファイルをcsv形式のファイルに変換するソフト</a></div>
-  <div>@2016-12-31 15:42:00.002 &#43;0900 JST</div>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon-dev/ies-format/">[tree of savior addon for developpers] iesファイルフォーマット解説</a></div>
-  <div>@2016-12-31 17:29:00.001 &#43;0900 JST</div>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon/hidename/">[tree of savior addon] 画面にある自キャラ名を消すアドオン</a></div>
-  <div>@2017-02-05 18:08:00 &#43;0900 JST</div>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon/monsterstatus/">[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</a></div>
-  <div>@2017-02-09 05:57:00.002 &#43;0900 JST</div>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon/customabilityshop/">[tree of savior addon] 特性習得ウィンドウに各特性の最大レベルを表示するアドオン</a></div>
-  <div>@2017-02-12 02:29:00 &#43;0900 JST</div>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon/megaphonecount/">[tree of savior addon] チャット入力欄表示中に所持中のメガホン数を表示するアドオン</a></div>
-  <div>@2017-02-12 21:56:00 &#43;0900 JST</div>
-
-
+<div>
+  <strong>Category.</strong>
+  
+  
+  <div><a href="/categories/site-management">site-management</a> (4)</div>
+  
+  <div><a href="/categories/system">system</a> (2)</div>
+  
+  <div><a href="/categories/system-dev">system-dev</a> (15)</div>
+  
+  <div><a href="/categories/tos-addon">tos-addon</a> (12)</div>
+  
+  <div><a href="/categories/tos-addon-dev">tos-addon-dev</a> (4)</div>
+  
+  
+  
+  
+</div>
+<div>
+  
+  <strong>Last modified.</strong>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a></div>
+    <div>@2010-09-11 18:35:00 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">[system development] strutsのFormFileからローカルファイルの絶対パスを取得</a></div>
+    <div>@2011-04-24 01:02:00.001 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a></div>
+    <div>@2011-05-15 01:21:00.001 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/">[system development] BeanUtils.describe()で配列を扱いたい</a></div>
+    <div>@2011-09-10 00:03:00 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/">[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</a></div>
+    <div>@2012-03-10 14:48:00.001 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/">[system development] JQueryUIのAutoCompleteを特定操作で強制選択する</a></div>
+    <div>@2014-03-19 12:39:00.002 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/">[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</a></div>
+    <div>@2014-04-15 13:15:00.002 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/spring-aop-test/">[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</a></div>
+    <div>@2014-05-02 12:58:00.001 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/">[system development] ubuntu16.04でMonoDevelopを使った開発環境</a></div>
+    <div>@2016-06-12 10:56:00 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/site/seo-bing-webmaster/">[site management] bing Web マスターのSEOレポート対策</a></div>
+    <div>@2016-06-13 22:31:00 &#43;0900 JST</div>
+  
+  
+</div>
 </aside>
 
 <div>
   <section>
-  <h1>tree of savior addon.</h1>
   
+  
+  <div><a href="http://www.weizlogy.gq/tos/addon/monsterstatus/">[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</a></div>
+  <pre class="summary"> download. monsterstatus.ipf
+install. README.md
+introduction.  settings. descriptions. v1.0.0 新規作成。
+アドオンがロードされると、ターゲットしたモンスターのステータス（*1）が画面上部に表示されます。
+[*1] 表示するステータスは現在のところ以下の通りです。
+   表示名 内容     ATK 物理攻撃力(最大)   MATK 魔法攻撃力(最大)   DEF 物理防御力   MDEF 魔法防御力   DR 回避率   CDR クリティカル回避率   CATK クリティカル攻撃力   CDEF クリティカル防御力    </pre>
+  
+  <div><a href="http://www.weizlogy.gq/tos/addon/hidename/">[tree of savior addon] 画面にある自キャラ名を消すアドオン</a></div>
+  <pre class="summary">download. hidename.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.0 新規作成。
+アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。
+動画を撮るときに設定では非表示にできなかったので。。。</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/cipher-suites/">[system development] TSLで定義される全CipherSuiteの一覧</a></div>
+  <pre class="summary">Cipher Suiteの説明はさて置き、一覧を見るために以下のコマンドを使用する例が多々見受けられます。
+$ openssl ciphers -v  これはopensslが対応するCipherSuiteの一覧であり、実際に存在するCipherSuiteの一覧とは異なります。
+実際に存在するCipherSuiteの一覧は、RFC5426によるとIANA管理とのことで、下記URLがマスターです。
+http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon-dev/ies-format/">[tree of savior addon for developpers] iesファイルフォーマット解説</a></div>
+  <pre class="summary">???は可変長です。
+Total block  ------------------- ---------------------------- ------------------------- | Header [156 byte] | Cell Header [136 x N byte] | Row Data [??? x M byte] | ------------------- ---------------------------- -------------------------  N=列数。は、Header blockのCellCountで指定。 M=行数。は、Header blockのRowCountで指定。
+Header block  ---------------------- ------------------- ------------------------ | TableName [128 byte] | Reserve1 [4 byte] | OffsetOfData [4 byte] | ---------------------- ------------------- ------------------------ --------------------------- ------------------- ------------------- | OffsetOfResource [4 byte] | FileSize [4 byte] | Reserve2 [4 byte] | --------------------------- ------------------- ------------------- ------------------- -------------------- -------------------------- | RowCount [2 byte] | CellCount [2 byte] | NumCellCount [2 byte] | ------------------- -------------------- -------------------------- ----------------------- ------------------------------------------- | StrCellCount [2 byte] | Reserve3 [2 byte] | --------------------- | ----------------------- -------------------------------------------           TableName IESテーブル名   Reserve1 予約1   OffsetOfData Cell Header blockのサイズ   OffsetOfResource Row Data blockのサイズ   FileSize IESファイルサイズ   Reserve2 予約2   RowCount 行数   CellCount 列数   NumCellCount 数値列数   StrCellCount 文字列列数   Reserve3 予約3    Cell Header block  ---------------- ------------------- ---------------------- | Name [64 byte] | Name2 [64 byte] | Type [2 byte] | ------ | ---------------- ------------------- ---------------------- ------------------- ------------------- ------------------- | Reserve1 [2 byte] | Reserve2 [4 byte] | Position [2 byte] | ------------------- ------------------- -------------------           Name Cell名   Name2 Cell別名   Type 0：数値Cell、1,2：文字列Cell   Reserve1 予約1   Reserve2 予約2   Position Type内Cell順序    Cell順は、Type昇順、Position昇順。</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/">[tree of savior addon for developpers] iesファイルをcsv形式のファイルに変換するソフト</a></div>
+  <pre class="summary">overviews. Tree Of Saviorのipfファイル内には拡張子がiesのファイルがあります。
+Ipf Suiteでは中身を見ることができますが、extractしても実体はバイナリファイル（かつ、暗号化されている）で、 テキストエディタでもバイナリエディタでも見ても分かりません。
+もちろん、grep検索で引き当てることもできません。
+本ソフトは、iesファイルを解析し、可読性のあるcsvファイルを生成します。
+download. IEStoCSV.zip
+install. ダウンロードしたzipを解凍し、任意の場所に配置します。
+descriptions. コンソールアプリケーションなので、コマンドプロンプトで操作します。
+IEStoCSV.exe &lt;走査ディレクトリ&gt;  サブフォルダを含む走査ディレクトリ配下のiesファイルに対して、対となるcsv形式のファイルを生成します。
+走査ディレクトリ省略時は、本ソフトのある位置を対象とします。
+caution. iesファイル内に韓国語が含まれるので、Excelでは文字化けします。（ExcelはShiftJISですが、生成するcsvはUTF8なので）
+本当は英訳を載せたいのですが、完全無料の翻訳APIがないもので。。。 需要があれば何とかしようと思います。
+acknowledgment. iesファイルフォーマットは、以下のソースコードを参考にさせて頂きました。 ありがとうございます。
+https://github.com/r1emu/IPFUnpacker/blob/master</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/item/tapete/">[system] Tapete - Windows spotlight画像抽出</a></div>
+  <pre class="summary">overviews. Windows10のロック画面で使われるspotlight画像を厳選し、&lt;ユーザーディレクトリ&gt;\picture\Tapete フォルダにコピーします。
+コピーは随時発生し、日次で最新状態にリセットします。
+壁紙のスライドショーで使用することを想定し、画像の厳選条件は、4KB以上かつ、 プライマリースクリーンの解像度以上としています。
+download. Tapete.zip
+install. ダウンロードしたzipを解凍し、任意の場所に配置します。
+descriptions. 画面のフォルダパスをクリックすると、該当フォルダをエクスプローラーで開きます。
+最小化すると通知アイコン化します。アイコンをクリックすると復元します。
+cautions. 自動起動はしないので、必要に応じてスタートアップに登録してください。
+コピー先は固定なので、ソフトリンクやジャンクションで任意の場所にコピーさせることもできます。</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/console/">[tree of savior addon] アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）</a></div>
+  <pre class="summary">download. [v1.1.0] console.ipf
+install. README.md
+introduction. settings. Nexon\TreeofSaviorJP\addons\console\settings.txt を作成します。
+ファイルを開いて一行目に、10 210 1と入力します。 設定は半角スペース区切りで、[ボタンのX座標] [ボタンのY座標] [ボタン表示状態]。
+descriptions. v1.1.0 設定[ボタン表示状態]を追加しました。
+アドオンがロードされるとボタン表示状態が1の場合のみ、[Console]ボタンが表示されます。 ボタンを押すと抽出を開始します。 ボタン表示状態はエリアチェンジの度に読み込まれるため、ゲーム起動中にボタン表示を切り替えることも可能です。
+v1.0.0 新規作成。
+アドオンがロードされると[Console]ボタンが表示されます。ボタンを押すと抽出を開始します。 Nexon\TreeofSaviorJP\data\console.txt に抽出結果が出力されます。 実際の抽出結果は別記事にあります。</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/">[system development] XAMLでブロック矢印を描画する</a></div>
+  <pre class="summary">ブロック矢印完成図 
+コード  &lt;Path Stroke=&quot;Black&quot; StrokeThickness=&quot;2&quot; Fill=&quot;Gray&quot; Data=&quot;M 100 100 H 200 V 90 L 230 115 L 200 140 V 130 H 100 V 100 Z&quot; Margin=&quot;-30,-30,0,0&quot; /&gt;  解説 Pathを使って目標の位置付近に描画、Marginで微調整します。
+https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspxを読めば分かりますが簡単です。 一筆書きの要領で、矢印の左上から時計回りに線を引いています。
+「M 100 100」は「X=100,Y=100に移動」します。
+「H 200」は「現在位置からX=200まで描線」します。
+「V 90」は「現在位置からY=90まで描線」します。
+「L 230 115」は「現在位置からX=230,Y=115まで描線」します。
+以下繰り返しの上、 「Z」は「描線の範囲を閉鎖」します。
+座標の算出には、描画開始位置、シャフトの幅と高さ、アローヘッドの出代と角度を決めます。 今回は、描画開始位置=100,100、シャフトの幅=100、高さ=30、アローヘッドの出代=10、角度=60にしました。
+
+アローヘッドの頂点座標の算出は、頂点がシャフトの中央にあることと、三平方の定理を使えばきっちり出せます。 つまり、シャフトの幅は偶数が良いです。</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/distance/">[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</a></div>
+  <pre class="summary">download. [v1.1.0]distance.ipf
+install. README.md
+introduction.  settings. descriptions. v1.1.0 メートル単位対応しました。
+アドオンがロードされると近隣（20m範囲内）モンスターに自キャラからの距離がメートル単位で表示されます。
+距離が12mを超えると、表示が消えます。
+v1.0.0 新規作成。
+アドオンがロードされると近隣（500範囲内）モンスターに自キャラからの距離が表示されます。
+単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/fly/">[tree of savior addon] 飛行アドオン</a></div>
-  
-  <div><a href="http://www.weizlogy.gq/tos/addon-dev/create-addon/">[tree of savior addon for developpers] アドオン作成～設置方法まとめ</a></div>
+  <pre class="summary">download. (https://www.dropbox.com/s/c0h4s39ut5p0v36/zzz.png?dl=0)
+install. README.md
+introduction.  settings. Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。
+ファイルを開いて一行目に、10 130 200 0 1と入力します。
+設定は半角スペース区切りで、[ボタンのX座標] [ボタンのY座標] [飛距離] [前回飛行中か？] [ボタン表示状態]。
+飛距離は150～200が良いです。100では弓に狙われます。
+descriptions. v1.1.0 設定[ボタン表示状態]を追加しました。
+アドオンがロードされると、[ボタン表示状態]が1の場合のみ、[Fly]ボタンが表示されます。
+ショートカットキーを追加しました。
+ESCAPE+UP(上矢印)で飛行、飛行解除ができます。
+v1.0.0 新規作成。
+アドオンがロードされると[Fly]ボタンが表示されます。
+ボタンを押すと飛行状態、地上に降りるを繰り返します。
+飛行状態でも地上の敵を攻撃できます。 飛行状態では地上の敵はこちらを近接攻撃できません。
+実際は地上を歩行しているのでトラップには気をつけてください。
+飛行状態ではスキルが使用不可ですが、ノックバックを受けるとスキルが使用可能になりますので、 わざとノックバックするようになっています。</pre>
   
   
     
@@ -265,12 +382,18 @@
         class="active"><a href="/page/2/">2</a></li>
         
         <li
-        class="disabled">
-        <a href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        ><a href="/page/3/">3</a></li>
+        
+        <li
+        ><a href="/page/4/">4</a></li>
+        
+        <li
+        >
+        <a href="/page/3/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
         </li>
         
         <li>
-            <a href="/page/2/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+            <a href="/page/4/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
         </li>
         
     </ul>
@@ -284,6 +407,23 @@
   <p>Powered by hugo &#43; github pages.<p>
   <p><a href="https://twitter.com/twihamatter">Twitter</a></p>
 <p><a href="https://plus.google.com/+%E7%99%BD%E6%BF%B1%E7%9D%A6%E4%B8%89?hl=ja">Google+</a></p>
+
+
+<amp-analytics type="googleanalytics" id="analytics1">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-565719-7"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
 
 </footer>
 

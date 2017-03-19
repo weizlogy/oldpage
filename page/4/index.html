@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html ⚡>
+<head>
+	<meta name="generator" content="Hugo 0.19" />
+<meta charset="utf-8">
+<link rel="canonical" href="http://www.weizlogy.gq/">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<title>
+
+  Weizlogy
+
+</title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+
+
+<style amp-custom>
+   
+  body {
+    font-family: "Noto Sans Japanese", "monospace";
+    font-size: 85%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  h1 > a {
+    text-decoration: none;
+    color: inherit;
+  }
+  header {
+    clear: left;
+  }
+  header > h1 {
+    font-family: 'Lobster', cursive;
+    display: inline;
+    color: #666;
+  }
+  header > h2 {
+    font-family: 'Lobster', cursive;
+    display: inline;
+    margin-left: 10px;
+    color: #999;
+  }
+  footer {
+    clear: left;
+    padding-top: 10px;
+  }
+  footer > p {
+    display: inline;
+    padding-left: 10px;
+  }
+   
+  article > div > h2 {
+    padding: 0px 0px 5px 5px;
+    border-left: 7px solid #999;
+    border-bottom: 1px solid #999;
+  }
+  article > div > h3 {
+    padding: 0px 0px 5px 5px;
+    border-left: 7px solid #CCC;
+    border-bottom: 1px solid #CCC;
+  }
+   
+  section {
+    padding-left: 10px;
+    overflow: hidden;
+  }
+  section > h1 {
+    padding: 0px 0px 5px 5px;
+    border-left: 7px solid #999;
+    border-bottom: 1px solid #999;
+  }
+  section > .summary {
+    font-size: 85%;
+    color: #999;
+  }
+  aside {
+    float: left;
+    max-width: 300px;
+    height: 100%;
+    margin-top: 10px;
+    font-size: 85%;
+  }
+  aside > div {
+    margin-bottom: 10px;
+  }
+   
+  .pagination {
+    display: inline-block;
+  }
+  .pagination li {
+    display: inline-block;
+    text-decoration: none;
+  }
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 7px 14px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #000000;
+    margin: 0 4px;
+  }
+  .pagination li.active a {
+    background-color: #F5F5F5;
+    border: 1px solid #000000;
+  }
+   
+  pre {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #999;
+    word-wrap: break-word;
+  }
+  .highlight .c { color: #999988; font-style: italic }  
+  .highlight .err { color: #a61717; background-color: #e3d2d2 }  
+  .highlight .k { color: #000000; font-weight: bold }  
+  .highlight .o { color: #000000; font-weight: bold }  
+  .highlight .cm { color: #999988; font-style: italic }  
+  .highlight .cp { color: #999999; font-weight: bold; font-style: italic }  
+  .highlight .c1 { color: #999988; font-style: italic }  
+  .highlight .cs { color: #999999; font-weight: bold; font-style: italic }  
+  .highlight .gd { color: #000000; background-color: #ffdddd }  
+  .highlight .ge { color: #000000; font-style: italic }  
+  .highlight .gr { color: #aa0000 }  
+  .highlight .gh { color: #999999 }  
+  .highlight .gi { color: #000000; background-color: #ddffdd }  
+  .highlight .go { color: #888888 }  
+  .highlight .gp { color: #555555 }  
+  .highlight .gs { font-weight: bold }  
+  .highlight .gu { color: #aaaaaa }  
+  .highlight .gt { color: #aa0000 }  
+  .highlight .kc { color: #000000; font-weight: bold }  
+  .highlight .kd { color: #000000; font-weight: bold }  
+  .highlight .kn { color: #000000; font-weight: bold }  
+  .highlight .kp { color: #000000; font-weight: bold }  
+  .highlight .kr { color: #000000; font-weight: bold }  
+  .highlight .kt { color: #445588; font-weight: bold }  
+  .highlight .m { color: #009999 }  
+  .highlight .s { color: #d01040 }  
+  .highlight .na { color: #008080 }  
+  .highlight .nb { color: #0086B3 }  
+  .highlight .nc { color: #445588; font-weight: bold }  
+  .highlight .no { color: #008080 }  
+  .highlight .nd { color: #3c5d5d; font-weight: bold }  
+  .highlight .ni { color: #800080 }  
+  .highlight .ne { color: #990000; font-weight: bold }  
+  .highlight .nf { color: #990000; font-weight: bold }  
+  .highlight .nl { color: #990000; font-weight: bold }  
+  .highlight .nn { color: #555555 }  
+  .highlight .nt { color: #000080 }  
+  .highlight .nv { color: #008080 }  
+  .highlight .ow { color: #000000; font-weight: bold }  
+  .highlight .w { color: #bbbbbb }  
+  .highlight .mf { color: #009999 }  
+  .highlight .mh { color: #009999 }  
+  .highlight .mi { color: #009999 }  
+  .highlight .mo { color: #009999 }  
+  .highlight .sb { color: #d01040 }  
+  .highlight .sc { color: #d01040 }  
+  .highlight .sd { color: #d01040 }  
+  .highlight .s2 { color: #d01040 }  
+  .highlight .se { color: #d01040 }  
+  .highlight .sh { color: #d01040 }  
+  .highlight .si { color: #d01040 }  
+  .highlight .sx { color: #d01040 }  
+  .highlight .sr { color: #009926 }  
+  .highlight .s1 { color: #d01040 }  
+  .highlight .ss { color: #990073 }  
+  .highlight .bp { color: #999999 }  
+  .highlight .vc { color: #008080 }  
+  .highlight .vg { color: #008080 }  
+  .highlight .vi { color: #008080 }  
+  .highlight .il { color: #009999 }  
+</style>
+
+
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+<noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<script async='async' custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+</head>
+
+<body>
+<div id="container">
+
+<header>
+
+  <h1><a href="http://www.weizlogy.gq/">Weizlogy</a></h1>
+  <h2> - Live in der Zukunft.</h2>
+
+</header>
+
+<aside>
+<div>
+  <strong>Category.</strong>
+  
+  
+  <div><a href="/categories/site-management">site-management</a> (4)</div>
+  
+  <div><a href="/categories/system">system</a> (2)</div>
+  
+  <div><a href="/categories/system-dev">system-dev</a> (15)</div>
+  
+  <div><a href="/categories/tos-addon">tos-addon</a> (12)</div>
+  
+  <div><a href="/categories/tos-addon-dev">tos-addon-dev</a> (4)</div>
+  
+  
+  
+  
+</div>
+<div>
+  
+  <strong>Last modified.</strong>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a></div>
+    <div>@2010-09-11 18:35:00 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">[system development] strutsのFormFileからローカルファイルの絶対パスを取得</a></div>
+    <div>@2011-04-24 01:02:00.001 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a></div>
+    <div>@2011-05-15 01:21:00.001 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/">[system development] BeanUtils.describe()で配列を扱いたい</a></div>
+    <div>@2011-09-10 00:03:00 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/">[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</a></div>
+    <div>@2012-03-10 14:48:00.001 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/">[system development] JQueryUIのAutoCompleteを特定操作で強制選択する</a></div>
+    <div>@2014-03-19 12:39:00.002 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/">[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</a></div>
+    <div>@2014-04-15 13:15:00.002 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/spring-aop-test/">[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</a></div>
+    <div>@2014-05-02 12:58:00.001 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/">[system development] ubuntu16.04でMonoDevelopを使った開発環境</a></div>
+    <div>@2016-06-12 10:56:00 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/site/seo-bing-webmaster/">[site management] bing Web マスターのSEOレポート対策</a></div>
+    <div>@2016-06-13 22:31:00 &#43;0900 JST</div>
+  
+  
+</div>
+</aside>
+
+<div>
+  <section>
+  
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/">[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</a></div>
+  <pre class="summary">img タグにサーブレットの URL を埋め込んで、画面描画時に呼び出します。 呼び出した先では画像をバイナリ形式で読み込んで画面に出力します。
+データベースに Blob 型で保存した画像の読み込みも、ロジックは同じです。
+JSPでは&hellip;
+&lt;img src=&quot;xxx.do&quot; /&gt;  サーバーサイドでは&hellip;
+/** xxx.do から呼び出される Servlet */ protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { // ファイルパスはどこからか入手する String file = &quot;\\server\image\sample.jpg&quot;; if (file == null || &quot;&quot;.equals(file)) { return; } try { // 画像を読み込む byte[] image = Files.readAllBytes(Paths.get(file)); // レスポンスヘッダーを設定する response.setContentType(&quot;image/&quot; + file.substring(file.lastIndexOf(&quot;.&quot;))); response.setContentLength(image.length); // servlet specification 3.1 によると OutputStream は // Servlet 終了時にクローズされる // 従って、ここではクローズしない // むしろ、ここでクローズすると二重解放になる可能性があるのでは？ response.</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/">[system development] JQueryUIのAutoCompleteを特定操作で強制選択する</a></div>
+  <pre class="summary">本来は blur 時に強制選択したかったのですが、候補確定時に AutoComplete の対象にフォーカスが当たる挙動を回避できなかったため、エンターキーで代用です。
+var obj = $(&#39;#autocomplete&#39;); obj.on(&#39;keydown&#39;, function(e) { // エンターキー以外を無視する if (e.which !== 13) { return; } // search メソッドの結果で候補が存在する場合、 // autocompleteopen イベントが発行される // 候補が 0 件の場合は動作しない obj.on(&#39;autocompleteopen&#39;, function() { // 下矢印キーダウンイベントを作成し、候補の先頭を選択状態にする var keyDownEvent = $.Event(&#39;keydown&#39;); keyDownEvent.keyCode = $.ui.keyCode.DOWN; obj.trigger(keyDownEvent); // エンターキーダウンを作成し、選択状態の候補で確定する // →候補確定時のイベントが発火する keyDownEvent.keyCode = $.ui.keyCode.ENTER; obj.trigger(keyDownEvent); // 通常動作時は不要なイベントなので終了時に破棄しておく obj.off(&#39;autocompleteopen&#39;); }); // 現在の入力値で検索する obj.autocomplete(&#39;search&#39;); });  </pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/">[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</a></div>
+  <pre class="summary">Windows APIのIcmp6SendEcho2()をWindows XPで呼び出すときは以下の点に注意が必要です。
+Syntax from msdn.
+DWORD Icmp6SendEcho2( __in HANDLE IcmpHandle, __in_opt HANDLE Event, __in_opt PIO_APC_ROUTINE ApcRoutine, __in_opt PVOID ApcContext, __in struct sockaddr_in6 *SourceAddress, __in struct sockaddr_in6 *DestinationAddress, __in LPVOID RequestData, __in WORD RequestSize, __in_opt PIP_OPTION_INFORMATION RequestOptions, __out LPVOID ReplyBuffer, __in DWORD ReplySize, __in DWORD Timeout );   第9引数 PIP_OPTION_INFORMATION は必須です。Vista 以降のOSで動かす場合は任意です。（NULLでもよい） 第10引数 ReplyBuffer は80byte以上の領域がないとWin32エラーコード122（システム コールに渡されるデータ領域が小さすぎます）が発生します。  IcmpSendEcho()とは設定値が微妙に異なりますね。</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/">[system development] BeanUtils.describe()で配列を扱いたい</a></div>
+  <pre class="summary">題名の通り、BeanUtils.describe()で配列を扱いたいのです。主にStringの配列。
+BeanUtils.describe()を使うと、クラスのフィールドをMapに変換してくれますが「文字列として表現可能な形式のもの」に限ります。
+Stringの配列については配列の先頭を出力し、残りは切り捨てられます。
+※{&ldquo;a&rdquo;, &ldquo;b&rdquo;, &ldquo;c&rdquo;}という配列がある場合、&rdquo;a&rdquo;以外の値が切り捨てられます。
+これは、BeanUtilsBeanの仕様となっております。
+ただし、「commons beanUtils 1.8.0」以降は以下の回避策があります。
+BeanUtilsBean.setInstance(new BeanUtilsBean2()); ArrayConverter converter = new ArrayConverter(String[].class, new StringConverter(), 0); // OnlyFirstToStringがtrueの場合、配列の先頭だけ使用します converter.setOnlyFirstToString(false); ConvertUtils.register(converter, String[].class);  上記処理はインスタンスを共有するため、他に影響がある場合は後処理も必要です。
+ConvertUtils.deregister(String[].class); BeanUtilsBean.setInstance(new BeanUtilsBean());  Converterインターフェースを実装したクラスを作成し、ConvertUtilsにregistすると、独自の変換も可能です。</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a></div>
+  <pre class="summary">strutsのActionFormには、「map-backed properties」「list-backed properties」という機能があります。
+ActionFormにMapやListのフィールドと適切なアクセサーメソッドを用意することで、JSP-Servlet間のデータ送受信が動的に行われる仕組みです。
+Formのフィールドをいくつも用意しなくていいところが、とても便利です。
+基本的な使い方は、下記公式リンクが分かりやすくなっています。
+http://struts.apache.org/1.x/userGuide/building_controller.html#map_action_form_classes
+今回の趣旨は、「map-backed properties」「list-backed properties」を併用することです。 検索結果等JSPで動的に一覧表示した複数のForm値を、簡単にActionで受け取ることができます。
+struts1.3.10
+java 1.6.0_18
+以下のようなFormクラスを用意します。
+import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.beanutils.LazyDynaMap; public HogeForm extends ActionForm { private LazyDynaList values = new LazyDynaList(LazyDynaMap.class); public String getValue(int index) { return values.get(index); } public void setValue(int index, Object value) { return values.set(index, value); } public List&lt;Map&lt;String, String&gt;&gt; getValues() { // LazyDynaList, LazyDynaMapのままでは扱いにくいため、より一般的な型（List, Map）に変換します。 List&lt;Map&lt;String, String&gt;&gt; convertValues = new ArrayList&lt;Map&lt;String, String&gt;&gt;(); for (Object item : values) { convertValues.</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">[system development] strutsのFormFileからローカルファイルの絶対パスを取得</a></div>
+  <pre class="summary">strutsのFormFileからローカルファイルの絶対パスを取得したいのです。 （取得しても無意味ですが）
+eclipseのデバッガで参照すると、確かにprivate変数に絶対パスを持っていますが、アクセスするためのメソッドがありません。
+リフレクションでアクセス可能です。
+DiskFileItemを使用するために、「commons-fileupload.jar」が必要です。
+struts1.3.10
+java 1.6.0_18
+// formFileの実体は「org.apache.struts.upload.CommonsMultipartRequestHandler.CommonsFormFile」 Field f = formFile.getClass().getDeclaredField(&quot;fileItem&quot;); f.setAccessible(true); // fileItemは「org.apache.commons.fileupload.FileItem」を実装した「org.apache.commons.fileupload.disk.DiskFileItem」 DiskFileItem item = (DiskFileItem) f.get(formFile); System.out.println(item.getName());  </pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a></div>
+  <pre class="summary">掲題の件について、検索キーワードにあがりましたので、簡単にまとめました。
+正式には、以下のErrorが発生しました。
+System.Windows.Data Error: 4 : Cannot find source for binding with reference &lsquo;RelativeSource FindAncestor, AncestorType=&lsquo;System.Windows.Controls.ItemsControl&rsquo;, AncestorLevel=&lsquo;1&rdquo;. BindingExpression:Path=HorizontalContentAlignment; DataItem=null; target element is &lsquo;ListBoxItem&rsquo; (Name=&ldquo;); target property is &lsquo;HorizontalContentAlignment&rsquo; (type &lsquo;HorizontalAlignment&rsquo;)
+System.Windows.Data Error: 4 : Cannot find source for binding with reference &lsquo;RelativeSource FindAncestor, AncestorType=&lsquo;System.Windows.Controls.ItemsControl&rsquo;, AncestorLevel=&lsquo;1&rdquo;. BindingExpression:Path=VerticalContentAlignment; DataItem=null; target element is &lsquo;ListBoxItem&rsquo; (Name=&ldquo;); target property is &lsquo;VerticalContentAlignment&rsquo; (type &lsquo;VerticalAlignment&rsquo;)
+xamlのStyle定義のSetterプロパティでAlignmentを定義していると出るみたいです。 定義を外すとErrorは出ません。 みたいです。というのは、何故なのか理由が分からないためです。
+以下、実際のコードの抜粋です。
+&lt;Style TargetType=&quot;{x:Type ListBoxItem}&quot;&gt; &lt;Setter Property=&quot;HorizontalContentAlignment&quot; Value=&quot;{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&quot;/&gt; &lt;Setter Property=&quot;VerticalContentAlignment&quot; Value=&quot;{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&quot;/&gt;  </pre>
+  
+  
+    
+    <ul class="pagination">
+        
+        <li>
+            <a href="/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        </li>
+        
+        <li
+        >
+        <a href="/page/3/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        </li>
+        
+        <li
+        ><a href="/">1</a></li>
+        
+        <li
+        ><a href="/page/2/">2</a></li>
+        
+        <li
+        ><a href="/page/3/">3</a></li>
+        
+        <li
+        class="active"><a href="/page/4/">4</a></li>
+        
+        <li
+        class="disabled">
+        <a href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        </li>
+        
+        <li>
+            <a href="/page/4/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        </li>
+        
+    </ul>
+    
+  </section>
+</div>
+
+<footer>
+
+  <p>© 2010 weizlogy.<p>
+  <p>Powered by hugo &#43; github pages.<p>
+  <p><a href="https://twitter.com/twihamatter">Twitter</a></p>
+<p><a href="https://plus.google.com/+%E7%99%BD%E6%BF%B1%E7%9D%A6%E4%B8%89?hl=ja">Google+</a></p>
+
+
+<amp-analytics type="googleanalytics" id="analytics1">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-565719-7"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
+
+</footer>
+
+</div>
+</body>
+</html>

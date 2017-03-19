@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html ⚡>
+<head>
+<meta charset="utf-8">
+<link rel="canonical" href="http://www.weizlogy.gq/categories/system-dev/">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<title>
+
+  Weizlogy
+
+</title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+
+
+<style amp-custom>
+   
+  body {
+    font-family: "Noto Sans Japanese", "monospace";
+    font-size: 85%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  h1 > a {
+    text-decoration: none;
+    color: inherit;
+  }
+  header {
+    clear: left;
+  }
+  header > h1 {
+    font-family: 'Lobster', cursive;
+    display: inline;
+    color: #666;
+  }
+  header > h2 {
+    font-family: 'Lobster', cursive;
+    display: inline;
+    margin-left: 10px;
+    color: #999;
+  }
+  footer {
+    clear: left;
+    padding-top: 10px;
+  }
+  footer > p {
+    display: inline;
+    padding-left: 10px;
+  }
+   
+  article > div > h2 {
+    padding: 0px 0px 5px 5px;
+    border-left: 7px solid #999;
+    border-bottom: 1px solid #999;
+  }
+  article > div > h3 {
+    padding: 0px 0px 5px 5px;
+    border-left: 7px solid #CCC;
+    border-bottom: 1px solid #CCC;
+  }
+   
+  section {
+    padding-left: 10px;
+    overflow: hidden;
+  }
+  section > h1 {
+    padding: 0px 0px 5px 5px;
+    border-left: 7px solid #999;
+    border-bottom: 1px solid #999;
+  }
+  section > .summary {
+    font-size: 85%;
+    color: #999;
+  }
+  aside {
+    float: left;
+    max-width: 300px;
+    height: 100%;
+    margin-top: 10px;
+    font-size: 85%;
+  }
+  aside > div {
+    margin-bottom: 10px;
+  }
+   
+  .pagination {
+    display: inline-block;
+  }
+  .pagination li {
+    display: inline-block;
+    text-decoration: none;
+  }
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 7px 14px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #000000;
+    margin: 0 4px;
+  }
+  .pagination li.active a {
+    background-color: #F5F5F5;
+    border: 1px solid #000000;
+  }
+   
+  pre {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #999;
+    word-wrap: break-word;
+  }
+  .highlight .c { color: #999988; font-style: italic }  
+  .highlight .err { color: #a61717; background-color: #e3d2d2 }  
+  .highlight .k { color: #000000; font-weight: bold }  
+  .highlight .o { color: #000000; font-weight: bold }  
+  .highlight .cm { color: #999988; font-style: italic }  
+  .highlight .cp { color: #999999; font-weight: bold; font-style: italic }  
+  .highlight .c1 { color: #999988; font-style: italic }  
+  .highlight .cs { color: #999999; font-weight: bold; font-style: italic }  
+  .highlight .gd { color: #000000; background-color: #ffdddd }  
+  .highlight .ge { color: #000000; font-style: italic }  
+  .highlight .gr { color: #aa0000 }  
+  .highlight .gh { color: #999999 }  
+  .highlight .gi { color: #000000; background-color: #ddffdd }  
+  .highlight .go { color: #888888 }  
+  .highlight .gp { color: #555555 }  
+  .highlight .gs { font-weight: bold }  
+  .highlight .gu { color: #aaaaaa }  
+  .highlight .gt { color: #aa0000 }  
+  .highlight .kc { color: #000000; font-weight: bold }  
+  .highlight .kd { color: #000000; font-weight: bold }  
+  .highlight .kn { color: #000000; font-weight: bold }  
+  .highlight .kp { color: #000000; font-weight: bold }  
+  .highlight .kr { color: #000000; font-weight: bold }  
+  .highlight .kt { color: #445588; font-weight: bold }  
+  .highlight .m { color: #009999 }  
+  .highlight .s { color: #d01040 }  
+  .highlight .na { color: #008080 }  
+  .highlight .nb { color: #0086B3 }  
+  .highlight .nc { color: #445588; font-weight: bold }  
+  .highlight .no { color: #008080 }  
+  .highlight .nd { color: #3c5d5d; font-weight: bold }  
+  .highlight .ni { color: #800080 }  
+  .highlight .ne { color: #990000; font-weight: bold }  
+  .highlight .nf { color: #990000; font-weight: bold }  
+  .highlight .nl { color: #990000; font-weight: bold }  
+  .highlight .nn { color: #555555 }  
+  .highlight .nt { color: #000080 }  
+  .highlight .nv { color: #008080 }  
+  .highlight .ow { color: #000000; font-weight: bold }  
+  .highlight .w { color: #bbbbbb }  
+  .highlight .mf { color: #009999 }  
+  .highlight .mh { color: #009999 }  
+  .highlight .mi { color: #009999 }  
+  .highlight .mo { color: #009999 }  
+  .highlight .sb { color: #d01040 }  
+  .highlight .sc { color: #d01040 }  
+  .highlight .sd { color: #d01040 }  
+  .highlight .s2 { color: #d01040 }  
+  .highlight .se { color: #d01040 }  
+  .highlight .sh { color: #d01040 }  
+  .highlight .si { color: #d01040 }  
+  .highlight .sx { color: #d01040 }  
+  .highlight .sr { color: #009926 }  
+  .highlight .s1 { color: #d01040 }  
+  .highlight .ss { color: #990073 }  
+  .highlight .bp { color: #999999 }  
+  .highlight .vc { color: #008080 }  
+  .highlight .vg { color: #008080 }  
+  .highlight .vi { color: #008080 }  
+  .highlight .il { color: #009999 }  
+</style>
+
+
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+<noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<script async='async' custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+</head>
+
+<body>
+<div id="container">
+
+<header>
+
+  <h1><a href="http://www.weizlogy.gq/">Weizlogy</a></h1>
+  <h2> - Live in der Zukunft.</h2>
+
+</header>
+
+<aside>
+<div>
+  <strong>Category.</strong>
+  
+  
+  <div><a href="/categories/site-management">site-management</a> (4)</div>
+  
+  <div><a href="/categories/system">system</a> (2)</div>
+  
+  <div><a href="/categories/system-dev">system-dev</a> (15)</div>
+  
+  <div><a href="/categories/tos-addon">tos-addon</a> (12)</div>
+  
+  <div><a href="/categories/tos-addon-dev">tos-addon-dev</a> (4)</div>
+  
+  
+  
+  
+</div>
+<div>
+  
+  <strong>Last modified.</strong>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a></div>
+    <div>@2010-09-11 18:35:00 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">[system development] strutsのFormFileからローカルファイルの絶対パスを取得</a></div>
+    <div>@2011-04-24 01:02:00.001 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a></div>
+    <div>@2011-05-15 01:21:00.001 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/">[system development] BeanUtils.describe()で配列を扱いたい</a></div>
+    <div>@2011-09-10 00:03:00 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/">[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</a></div>
+    <div>@2012-03-10 14:48:00.001 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/">[system development] JQueryUIのAutoCompleteを特定操作で強制選択する</a></div>
+    <div>@2014-03-19 12:39:00.002 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/">[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</a></div>
+    <div>@2014-04-15 13:15:00.002 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/spring-aop-test/">[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</a></div>
+    <div>@2014-05-02 12:58:00.001 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/">[system development] ubuntu16.04でMonoDevelopを使った開発環境</a></div>
+    <div>@2016-06-12 10:56:00 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/step-counter-is/">[system development] ステップカウンターのあるべき姿を考察する</a></div>
+    <div>@2016-07-29 00:14:00.003 &#43;0900 JST</div>
+  
+  
+</div>
+</aside>
+
+<div>
+  <section>
+  
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/cipher-suites/">[system development] TSLで定義される全CipherSuiteの一覧</a></div>
+  <pre class="summary">Cipher Suiteの説明はさて置き、一覧を見るために以下のコマンドを使用する例が多々見受けられます。
+$ openssl ciphers -v  これはopensslが対応するCipherSuiteの一覧であり、実際に存在するCipherSuiteの一覧とは異なります。
+実際に存在するCipherSuiteの一覧は、RFC5426によるとIANA管理とのことで、下記URLがマスターです。
+http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/">[system development] XAMLでブロック矢印を描画する</a></div>
+  <pre class="summary">ブロック矢印完成図 
+コード  &lt;Path Stroke=&quot;Black&quot; StrokeThickness=&quot;2&quot; Fill=&quot;Gray&quot; Data=&quot;M 100 100 H 200 V 90 L 230 115 L 200 140 V 130 H 100 V 100 Z&quot; Margin=&quot;-30,-30,0,0&quot; /&gt;  解説 Pathを使って目標の位置付近に描画、Marginで微調整します。
+https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspxを読めば分かりますが簡単です。 一筆書きの要領で、矢印の左上から時計回りに線を引いています。
+「M 100 100」は「X=100,Y=100に移動」します。
+「H 200」は「現在位置からX=200まで描線」します。
+「V 90」は「現在位置からY=90まで描線」します。
+「L 230 115」は「現在位置からX=230,Y=115まで描線」します。
+以下繰り返しの上、 「Z」は「描線の範囲を閉鎖」します。
+座標の算出には、描画開始位置、シャフトの幅と高さ、アローヘッドの出代と角度を決めます。 今回は、描画開始位置=100,100、シャフトの幅=100、高さ=30、アローヘッドの出代=10、角度=60にしました。
+
+アローヘッドの頂点座標の算出は、頂点がシャフトの中央にあることと、三平方の定理を使えばきっちり出せます。 つまり、シャフトの幅は偶数が良いです。</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/openweathermap-with-java-bazel/">[system development] Codeaywhere&#43;Java&#43;bazelでOpenWeatherMapのAPIを使用し現在の気象情報を取得する</a></div>
+  <pre class="summary">OpenWeatherMapの使い方 OpenWeatherMapは各種気象情報提供サービスです。
+サインアップすれば無料で使えるAPIも提供しています。
+今回は現在のみなので、Current weather data APIを使用します。 RESTサービスになっており、以下のURLで情報がJSON形式で取得できます。（{city name}は英語で）
+http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;APPID={Your API Key}  JSON形式ではJavaで扱いにくいので、&rdquo;mode=xml&rdquo;パラメータでXML形式にします。
+http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;mode=xml&amp;APPID={Your API Key}  気象情報は以下のように返却されます。（例は{city name}=Tokyo）
+&lt;?xml version=&quot;1.0&quot;?&gt; &lt;current&gt; &lt;city id=&quot;1850147&quot; name=&quot;Tokyo&quot;&gt; &lt;coord lat=&quot;35.69&quot; lon=&quot;139.69&quot;/&gt; &lt;country&gt;JP&lt;/country&gt; &lt;sun set=&quot;2016-08-15T09:30:23&quot; rise=&quot;2016-08-14T20:00:21&quot;/&gt; &lt;/city&gt; &lt;temperature unit=&quot;kelvin&quot; max=&quot;304.82&quot; min=&quot;298.71&quot; value=&quot;301.68&quot;/&gt; &lt;humidity unit=&quot;%&quot; value=&quot;85&quot;/&gt; &lt;pressure unit=&quot;hPa&quot; value=&quot;1001&quot;/&gt; &lt;wind&gt; &lt;speed name=&quot;Gentle Breeze&quot; value=&quot;3.41&quot;/&gt; &lt;gusts/&gt; &lt;direction name=&quot;South&quot; value=&quot;179.504&quot; code=&quot;S&quot;/&gt; &lt;/wind&gt; &lt;clouds name=&quot;clear sky&quot; value=&quot;8&quot;/&gt; &lt;visibility/&gt; &lt;precipitation unit=&quot;3h&quot; value=&quot;0.245&quot; mode=&quot;rain&quot;/&gt; &lt;weather value=&quot;light rain&quot; icon=&quot;10d&quot; number=&quot;500&quot;/&gt; &lt;lastupdate value=&quot;2016-08-15T07:41:15&quot;/&gt; &lt;/current&gt;  JavaでOpenWeatherMapのAPIを呼び出す RESTクライアントは色々ありますが、お手軽なApache Commonsのhttpclientとfluent-hcにします。</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/">[system development] Codeanywhereでbazelを使う</a></div>
+  <pre class="summary">CodeanywhereはクラウドIDEで、sudoが許可されたターミナルを使うことができます。 Google+アカウント連携ですぐに使えます。
+bazelは、mavenやGradleのようなビルドツールで、様々な言語のビルドが可能です。
+Codeanyhwereにbazelをインストール bazelはjdk1.8以降（jdk1.7はサポートされているが非推奨）が必須ですが、Codeanywhereはjdk1.7の環境です。 今回はjdk1.7のままでインストールします。
+cabox@box-codeanywhere:~/workspace$ java -version java version &quot;1.7.0_95&quot; OpenJDK Runtime Environment (IcedTea 2.6.4) (7u95-2.6.4-0ubuntu0.14.04.1) OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode)  Installig Bazelを参考に、以下のコマンドを打ちます。
+$ echo &quot;deb [arch=amd64] http://storage.googleapis.com/bazel-apt testing jdk1.7&quot; | sudo tee /etc/apt/sources.list.d/bazel.list $ curl https://storage.googleapis.com/bazel-apt/doc/apt-key.pub.gpg | sudo apt-key add - sudo apt-get update &amp;&amp; sudo apt-get install bazel  bazelでjavaをビルド 最低限の必要なファイルを作成します。
+cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cabox@box-codeanywhere:~/workspace$ touch hello/src/main/java/gq/weizlogy/Main.java cabox@box-codeanywhere:~/workspace$ touch hello/WORKSPACE cabox@box-codeanywhere:~/workspace$ touch hello/BUILD  hello/src/main/java/gq/weizlogy/Main.</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/">[system development] Monodevelopで埋め込みリソースを使う</a></div>
+  <pre class="summary">ソリューションエクスプローラーで対象のファイルを右クリックします。
+「ビルドアクション &gt; EmbeddedResource」を選択します。以上です。
+プログラムからのアクセスで必要なリソースIDは、デフォルトネームスペース＋ファイル名となります。 リソースIDはプロパティビューで変更可能です。
+使い方は以下の通りです。
+using (var stream = new System.IO.StreamReader(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream(&quot;[ResourceID]&quot;), true)) { ... }  </pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/step-counter-is/">[system development] ステップカウンターのあるべき姿を考察する</a></div>
+  <pre class="summary">ステップカウンターとは？ LOCを計測するツールです。LOCはLines Of Codeの略で、プログラムの規模として扱います。
+ 空行（改行など空白だけの行）やコメント行（コメントと空白だけの行）は除く、2つの命令が書かれた行は2行と数える、括弧だけの行を除くなどの換算をした行数を論理LOC (logical LOC) といい、通常はこちらを使う。
+&ndash; https://ja.wikipedia.org/wiki/LOC
+ 2つの命令が書かれた行は2行と数える、括弧だけの行を除くなどの換算してますか？ 世にあるステップカウンターは、有効行（実行行）、コメント行、空白行の3種を見ていることが多く、高度な換算はされていないようです。
+そこで、*本来あるべきステップカウンター*を、以下の考察に基づき鋭意作成中です。
+詳細はこちらをご覧ください。
+本来あるべきステップカウンターの想定仕様概要  2つの命令が書かれた行は2行と数える。 括弧だけの行を除く。 ディレクティブは考慮が必要。  本来あるべきステップカウンターの想定仕様詳細 2つの命令が書かれた行は2行と数える C言語系統は命令の終端に&rdquo;;&ldquo;が必要な言語使用のため、その終端記号（または文字）を数えれば良い。また、IF文では&rdquo;{&ldquo;、SWITCH-CASE文では&rdquo;{&ldquo;と&rdquo;:&ldquo;に着目することで命令を計測します。
+ただし、FOR文は3式で1セットの命令であるため、FOR文中の終端記号は無視しなければいけません。 VBやRubyのような言語、HTMLのようなタグが構成要素の場合は検討中です。
+括弧だけの行を除く C言語系統はブロックの終端記号&rdquo;}&ldquo;がありますが、1命令のセットであるため、開始記号&rdquo;{&ldquo;とどちらか一方を測定対象とすべきです。 VBやRubyのような言語の&rdquo;END&rdquo;キーワードも同様です。
+ディレクティブは考慮が必要 Javaのimport文、C#のusingディレクティブは、パッケージ名を省略するためだけに存在するもので、記載の有無がプログラムの動作に影響を与えませんので、命令とは位置付け異なります。
+C言語系統のプリプロセッサーディレクティブは微妙ですが、動作に影響を与えるものもあるため、命令と考えます。
+ただし、&rdquo;#endif&rdquo;、&rdquo;#region&rdquo;、&rdquo;#endregion&rdquo;は非命令とし計測しません。
+C言語の#includeは、必須であることを除き、C#のusingディレクティブ同様、非命令とします。
+考察は続きます。。。</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/">[system development] ubuntu16.04でMonoDevelopを使った開発環境</a></div>
+  <pre class="summary">LinuxでC#を使うための環境(mono)とIDE(MonoDevelop)をインストールします。
+まずはmonoをインストールします。
+$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF $ echo &quot;deb http://download.mono-project.com/repo/debian wheezy main&quot; | sudo tee /etc/apt/sources.list.d/mono-xamarin.list $ sudo apt-get update $ sudo apt-get install mono-complete  続いてMonoDevelopをインストールします。
+$ sudo apt-get install monodevelop  monodevelopコマンドでIDEを起動します。</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/spring-aop-test/">[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</a></div>
+  <pre class="summary">Interceptor クラスの内容は以下の通りです。
+import org.aspectj.lang.ProceedingJoinPoint; import org.aspectj.lang.annotation.Around; import org.aspectj.lang.annotation.Aspect; @Aspect public class SomeInterceptor { @Around(&quot;execution(* execute(..))&quot;) public Object around(ProceedingJoinPoint pjp) { System.out.println(String.format(&quot;%s.%s start.&quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); Object value = null; try { value = pjp.proceed(); } catch (Throwable e) { e.printStackTrace(); } System.out.println(String.format(&quot;%s.%s ended.&quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); return value; } }  Test クラスの内容は以下の通りです。
+import static org.junit.Assert.*; import java.util.ArrayList; import org.junit.Test; import org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint; import org.springframework.aop.framework.ReflectiveMethodInvocation; import org.springframework.aop.interceptor.SimpleTraceInterceptor; public class SomeInterceptorTest { /** AOP の対象となるメソッドを持つクラス */ private static class AOPTarget { public String execute() { System.</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/">[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</a></div>
+  <pre class="summary">img タグにサーブレットの URL を埋め込んで、画面描画時に呼び出します。 呼び出した先では画像をバイナリ形式で読み込んで画面に出力します。
+データベースに Blob 型で保存した画像の読み込みも、ロジックは同じです。
+JSPでは&hellip;
+&lt;img src=&quot;xxx.do&quot; /&gt;  サーバーサイドでは&hellip;
+/** xxx.do から呼び出される Servlet */ protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { // ファイルパスはどこからか入手する String file = &quot;\\server\image\sample.jpg&quot;; if (file == null || &quot;&quot;.equals(file)) { return; } try { // 画像を読み込む byte[] image = Files.readAllBytes(Paths.get(file)); // レスポンスヘッダーを設定する response.setContentType(&quot;image/&quot; + file.substring(file.lastIndexOf(&quot;.&quot;))); response.setContentLength(image.length); // servlet specification 3.1 によると OutputStream は // Servlet 終了時にクローズされる // 従って、ここではクローズしない // むしろ、ここでクローズすると二重解放になる可能性があるのでは？ response.</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/">[system development] JQueryUIのAutoCompleteを特定操作で強制選択する</a></div>
+  <pre class="summary">本来は blur 時に強制選択したかったのですが、候補確定時に AutoComplete の対象にフォーカスが当たる挙動を回避できなかったため、エンターキーで代用です。
+var obj = $(&#39;#autocomplete&#39;); obj.on(&#39;keydown&#39;, function(e) { // エンターキー以外を無視する if (e.which !== 13) { return; } // search メソッドの結果で候補が存在する場合、 // autocompleteopen イベントが発行される // 候補が 0 件の場合は動作しない obj.on(&#39;autocompleteopen&#39;, function() { // 下矢印キーダウンイベントを作成し、候補の先頭を選択状態にする var keyDownEvent = $.Event(&#39;keydown&#39;); keyDownEvent.keyCode = $.ui.keyCode.DOWN; obj.trigger(keyDownEvent); // エンターキーダウンを作成し、選択状態の候補で確定する // →候補確定時のイベントが発火する keyDownEvent.keyCode = $.ui.keyCode.ENTER; obj.trigger(keyDownEvent); // 通常動作時は不要なイベントなので終了時に破棄しておく obj.off(&#39;autocompleteopen&#39;); }); // 現在の入力値で検索する obj.autocomplete(&#39;search&#39;); });  </pre>
+  
+  
+    
+    <ul class="pagination">
+        
+        <li>
+            <a href="/categories/system-dev/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        </li>
+        
+        <li
+        class="disabled">
+        <a href="" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        </li>
+        
+        <li
+        class="active"><a href="/categories/system-dev/">1</a></li>
+        
+        <li
+        ><a href="/categories/system-dev/page/2/">2</a></li>
+        
+        <li
+        >
+        <a href="/categories/system-dev/page/2/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        </li>
+        
+        <li>
+            <a href="/categories/system-dev/page/2/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        </li>
+        
+    </ul>
+    
+  </section>
+</div>
+
+<footer>
+
+  <p>© 2010 weizlogy.<p>
+  <p>Powered by hugo &#43; github pages.<p>
+  <p><a href="https://twitter.com/twihamatter">Twitter</a></p>
+<p><a href="https://plus.google.com/+%E7%99%BD%E6%BF%B1%E7%9D%A6%E4%B8%89?hl=ja">Google+</a></p>
+
+
+<amp-analytics type="googleanalytics" id="analytics1">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-565719-7"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
+
+</footer>
+
+</div>
+</body>
+</html>

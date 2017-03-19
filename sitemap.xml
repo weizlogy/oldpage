@@ -17,6 +17,11 @@
   </url>
   
   <url>
+    <loc>http://www.weizlogy.gq/site/blogger-blogposting-jsonld/</loc>
+    <lastmod>2017-02-26T12:54:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.weizlogy.gq/tos/addon/staminagauge/</loc>
     <lastmod>2017-02-25T00:33:00+09:00</lastmod>
   </url>
@@ -29,6 +34,11 @@
   <url>
     <loc>http://www.weizlogy.gq/tos/addon/warehousepicker/</loc>
     <lastmod>2017-02-19T17:42:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/system/item/schritt/</loc>
+    <lastmod>2017-02-13T17:32:00+09:00</lastmod>
   </url>
   
   <url>
@@ -52,6 +62,11 @@
   </url>
   
   <url>
+    <loc>http://www.weizlogy.gq/system/dev/cipher-suites/</loc>
+    <lastmod>2017-01-31T21:59:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.weizlogy.gq/tos/addon-dev/ies-format/</loc>
     <lastmod>2016-12-31T17:29:00+09:00</lastmod>
   </url>
@@ -62,8 +77,18 @@
   </url>
   
   <url>
+    <loc>http://www.weizlogy.gq/system/item/tapete/</loc>
+    <lastmod>2016-12-18T16:55:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.weizlogy.gq/tos/addon/console/</loc>
     <lastmod>2016-12-10T17:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/</loc>
+    <lastmod>2016-12-04T22:45:00+09:00</lastmod>
   </url>
   
   <url>
@@ -82,7 +107,117 @@
   </url>
   
   <url>
+    <loc>http://www.weizlogy.gq/system/dev/openweathermap-with-java-bazel/</loc>
+    <lastmod>2016-08-21T11:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/</loc>
+    <lastmod>2016-08-13T17:06:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/</loc>
+    <lastmod>2016-07-31T16:11:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/system/dev/step-counter-is/</loc>
+    <lastmod>2016-07-29T00:14:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/site/blogger-last-modified/</loc>
+    <lastmod>2016-06-16T22:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/site/code-prettify-on-github/</loc>
+    <lastmod>2016-06-15T23:16:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/site/seo-bing-webmaster/</loc>
+    <lastmod>2016-06-13T22:31:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/</loc>
+    <lastmod>2016-06-12T10:56:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/system/dev/spring-aop-test/</loc>
+    <lastmod>2014-05-02T12:58:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/</loc>
+    <lastmod>2014-04-15T13:15:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/</loc>
+    <lastmod>2014-03-19T12:39:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/</loc>
+    <lastmod>2012-03-10T14:48:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/</loc>
+    <lastmod>2011-09-10T00:03:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/</loc>
+    <lastmod>2011-05-15T01:21:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/</loc>
+    <lastmod>2011-04-24T01:02:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/</loc>
+    <lastmod>2010-09-11T18:35:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.weizlogy.gq/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/categories/site-management/</loc>
+    <lastmod>2017-02-26T12:54:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/site/</loc>
+    <lastmod>2017-02-26T12:54:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/categories/system/</loc>
+    <lastmod>2017-02-13T17:32:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/categories/system-dev/</loc>
+    <lastmod>2017-01-31T21:59:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/system/</loc>
+    <lastmod>2017-02-13T17:32:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   

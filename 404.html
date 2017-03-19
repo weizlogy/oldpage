@@ -10,7 +10,7 @@
 <style amp-custom>
    
   body {
-    font-family: "Noto Sans Japanese";
+    font-family: "Noto Sans Japanese", "monospace";
     font-size: 85%;
     padding-left: 5px;
     padding-right: 5px;
@@ -62,12 +62,19 @@
     border-left: 7px solid #999;
     border-bottom: 1px solid #999;
   }
+  section > .summary {
+    font-size: 85%;
+    color: #999;
+  }
   aside {
     float: left;
     max-width: 300px;
     height: 100%;
     margin-top: 10px;
     font-size: 85%;
+  }
+  aside > div {
+    margin-bottom: 10px;
   }
    
   .pagination {
@@ -91,11 +98,12 @@
     border: 1px solid #000000;
   }
    
-  .highlight > pre {
+  pre {
     margin-left: 10px;
     margin-right: 10px;
     padding: 5px;
     border: 1px solid #999;
+    word-wrap: break-word;
   }
   .highlight .c { color: #999988; font-style: italic }  
   .highlight .err { color: #a61717; background-color: #e3d2d2 }  

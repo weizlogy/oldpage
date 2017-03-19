@@ -19,7 +19,7 @@
 <style amp-custom>
    
   body {
-    font-family: "Noto Sans Japanese";
+    font-family: "Noto Sans Japanese", "monospace";
     font-size: 85%;
     padding-left: 5px;
     padding-right: 5px;
@@ -71,12 +71,19 @@
     border-left: 7px solid #999;
     border-bottom: 1px solid #999;
   }
+  section > .summary {
+    font-size: 85%;
+    color: #999;
+  }
   aside {
     float: left;
     max-width: 300px;
     height: 100%;
     margin-top: 10px;
     font-size: 85%;
+  }
+  aside > div {
+    margin-bottom: 10px;
   }
    
   .pagination {
@@ -100,11 +107,12 @@
     border: 1px solid #000000;
   }
    
-  .highlight > pre {
+  pre {
     margin-left: 10px;
     margin-right: 10px;
     padding: 5px;
     border: 1px solid #999;
+    word-wrap: break-word;
   }
   .highlight .c { color: #999988; font-style: italic }  
   .highlight .err { color: #a61717; background-color: #e3d2d2 }  
@@ -168,15 +176,13 @@
   .highlight .il { color: #009999 }  
 </style>
 
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org"
-}
-</script>
+
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
+<script async='async' custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
@@ -192,66 +198,160 @@
 </header>
 
 <aside>
-
-<strong>Last modified.</strong>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon-dev/create-addon/">[tree of savior addon for developpers] アドオン作成～設置方法まとめ</a></div>
-  <div>@2016-09-25 07:41:00 &#43;0900 JST</div>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon/fly/">[tree of savior addon] 飛行アドオン</a></div>
-  <div>@2016-10-09 19:39:00 &#43;0900 JST</div>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon/distance/">[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</a></div>
-  <div>@2016-11-13 18:00:00.002 &#43;0900 JST</div>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon/console/">[tree of savior addon] アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）</a></div>
-  <div>@2016-12-10 17:30:00.001 &#43;0900 JST</div>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/">[tree of savior addon for developpers] iesファイルをcsv形式のファイルに変換するソフト</a></div>
-  <div>@2016-12-31 15:42:00.002 &#43;0900 JST</div>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon-dev/ies-format/">[tree of savior addon for developpers] iesファイルフォーマット解説</a></div>
-  <div>@2016-12-31 17:29:00.001 &#43;0900 JST</div>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon/hidename/">[tree of savior addon] 画面にある自キャラ名を消すアドオン</a></div>
-  <div>@2017-02-05 18:08:00 &#43;0900 JST</div>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon/monsterstatus/">[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</a></div>
-  <div>@2017-02-09 05:57:00.002 &#43;0900 JST</div>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon/customabilityshop/">[tree of savior addon] 特性習得ウィンドウに各特性の最大レベルを表示するアドオン</a></div>
-  <div>@2017-02-12 02:29:00 &#43;0900 JST</div>
-
-  <div><a href="http://www.weizlogy.gq/tos/addon/megaphonecount/">[tree of savior addon] チャット入力欄表示中に所持中のメガホン数を表示するアドオン</a></div>
-  <div>@2017-02-12 21:56:00 &#43;0900 JST</div>
-
-
+<div>
+  <strong>Category.</strong>
+  
+  
+  <div><a href="/categories/site-management">site-management</a> (4)</div>
+  
+  <div><a href="/categories/system">system</a> (2)</div>
+  
+  <div><a href="/categories/system-dev">system-dev</a> (15)</div>
+  
+  <div><a href="/categories/tos-addon">tos-addon</a> (12)</div>
+  
+  <div><a href="/categories/tos-addon-dev">tos-addon-dev</a> (4)</div>
+  
+  
+  
+  
+</div>
+<div>
+  
+  <strong>Last modified.</strong>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a></div>
+    <div>@2010-09-11 18:35:00 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">[system development] strutsのFormFileからローカルファイルの絶対パスを取得</a></div>
+    <div>@2011-04-24 01:02:00.001 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a></div>
+    <div>@2011-05-15 01:21:00.001 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/">[system development] BeanUtils.describe()で配列を扱いたい</a></div>
+    <div>@2011-09-10 00:03:00 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/">[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</a></div>
+    <div>@2012-03-10 14:48:00.001 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/">[system development] JQueryUIのAutoCompleteを特定操作で強制選択する</a></div>
+    <div>@2014-03-19 12:39:00.002 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/">[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</a></div>
+    <div>@2014-04-15 13:15:00.002 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/spring-aop-test/">[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</a></div>
+    <div>@2014-05-02 12:58:00.001 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/">[system development] ubuntu16.04でMonoDevelopを使った開発環境</a></div>
+    <div>@2016-06-12 10:56:00 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/site/seo-bing-webmaster/">[site management] bing Web マスターのSEOレポート対策</a></div>
+    <div>@2016-06-13 22:31:00 &#43;0900 JST</div>
+  
+  
+</div>
 </aside>
 
 <div>
   <section>
-  <h1>tree of savior addon.</h1>
   
   
   <div><a href="http://www.weizlogy.gq/tos/addon/repairendur/">[tree of savior addon] 装備修理時、装備アイコンに耐久度（％）を色分け表示するアドオン</a></div>
+  <pre class="summary">download. [v1.0.1]repairendur.ipf
+install. README.md
+introduction. 
+
+settings. Nexon\TreeofSaviorJP\addons\repairendur\settings.txt を作成します。
+以下の初期設定をsettings.txtコピペします。
+reen.Weapon = { Lp = 30, Mp = 5, Hp = 1 }; reen.Armor = { Lp = 35, Mp = 10, Hp = 5 }; reen.EndurColor = { Lc = &quot;FFFF00&quot;, Mc = &quot;FF0000&quot;, Hc = &quot;000000&quot; };  explanation. この設定は装備の耐久度と割合に応じた文字色の設定です。
+[Weapon]、[Armor]は装備の耐久度の色分け用閾値で、Low, Middle, Highの3段階を、武器用と防具用で用意しています。
+[EndurColor]は装備の耐久度閾値に対応する色をRGBで指定します。
+explanation of initial parameters. 武器
+ 耐久度[30]%以下で[黄]色 耐久度[5]%以下で[赤]色 耐久度[1]%以下で[黒]色  防具
+ 耐久度[35]%以下で[黄]色 耐久度[10]%以下で[赤]色 耐久度[5]%以下で[黒]色  descriptions.</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon-dev/use-custom-skins/">[tree of savior addon for developpers] アドオンで自作スキンを使用する方法</a></div>
+  <pre class="summary">ifpファイル内部構成 xxx.ipf ├───addon_d.ipf │ └───xxx │ ├───xxx.lua │ └───xxx.xml └───ui.ipf ├───baseskinset │ └───xxx.xml └───skin └───xxx.tga  addon_d.ipf Tree Of Savior アドオン作成～設置方法まとめ 参照。
+ui.ipf baseskinset 自作スキンの読込とアドオン内部で使用するスキンの定義を行います。
+xxx.xml
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;skinset name=&quot;Base&quot;&gt; &lt;imagelist category=&quot;ringcommand&quot;&gt; &lt;image name=&quot;image1&quot; file=&quot;\skin\xxx.tga&quot; imgrect=&quot;211 5 197 195&quot;/&gt; &lt;image name=&quot;image2&quot; file=&quot;\skin\xxx.tga&quot; imgrect=&quot;417 5 197 195&quot;/&gt; &lt;/imagelist&gt; &lt;/skinset&gt;  name アドオン内部で参照するスキン名。
+オリジナルのスキン名と重複しないように気を付けます。
+file スキン読み込み元画像ファイルパス。
+imgrect スキン読み込み元画像ファイル内画像座標。
+半角スペース区切りで四角形の左上と右下の頂点座標を指定します。 =&gt; x, y, width, height
+skin 自作スキン画像ファイルを配置します。
+アドオン実装方法 xml &lt;picture name=&quot;xxx&quot; rect=&quot;0 0 70 30&quot; margin=&quot;0 0 45 0&quot; hittest=&quot;true&quot; image=&quot;image1&quot;/&gt;  lua local pic = GET_CHILD(xxx, &quot;xxx&quot;, &quot;ui::CPicture&quot;); pic:SetImage(&quot;image2&quot;);  tgaファイル 画像ファイルの一つ。</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/customcompanion/">[tree of savior addon] コンパニオンのリングコマンドを拡張するアドオン</a></div>
+  <pre class="summary">download. customcompanion.ipf
+install. README.md
+introduction.  settings. descriptions. v1.0.0 新規作成。
+アドオンがロードされると、コンパニオンに近づくだけでリングコマンドが出現するようになります。 今まで通り、コンパニオンから離れるとリングコマンドが消えます。
+リングコマンドに[自動戦闘ON/OFFトグルアイコン]、[コンパニオン休眠化]のスロットを追加します。 ホットキーの割り当てはありません。
+騎乗スキルのないキャラ、コンパニオンの場合は、リングコマンドの[騎乗]、[降りる]のスロットを削除します。
+自動戦闘ON/OFF クリックするたびに自動戦闘のON/OFFを切り替えます。 切り替え結果はチャット上にSYSTEMメッセージで表示します。
+コンパニオン休眠化 クリックするとコンパニオンを休眠状態にします。 コンパニオンの休眠解除は、今まで通り、コンパニオン情報から行います。</pre>
+  
+  <div><a href="http://www.weizlogy.gq/site/blogger-blogposting-jsonld/">[site management] schema.org構造化データBlogPosting対応 with JSON&#43;LD in blogger</a></div>
+  <pre class="summary">bloggerのテンプレートで、以下のブログ投稿箇所を検索します。
+&lt;b:loop values=&#39;data:posts&#39; var=&#39;post&#39;&gt;  この直下に以下のスクリプトを挿入します。
+&lt;!-- schema.org - BlogPosting. --&gt; &lt;script type=&#39;application/ld+json&#39;&gt; { &quot;@context&quot;: &quot;http://schema.org&quot;, &quot;@type&quot;: &quot;BlogPosting&quot;, &quot;headline&quot;: &quot;&lt;data:blog.url/&gt;&quot;, &quot;url&quot;: &quot;&lt;data:blog.pageTitle/&gt;&quot;, &quot;datePublished&quot;: &quot;&lt;data:post.timestampISO8601/&gt;&quot;, &quot;author&quot;: { &quot;@type&quot;: &quot;Person&quot;, &quot;name&quot;: &quot;&lt;data:post.author/&gt;&quot; }, &quot;publisher&quot;: { &quot;@type&quot;: &quot;Organization&quot;, &quot;name&quot;: &quot;Weiβlogy&quot;, &quot;logo&quot;: { &quot;@type&quot;: &quot;ImageObject&quot;, &quot;url&quot;: &quot;http://www.weizlogy.gq/favicon.ico&quot; } }, &quot;dateModified&quot;: &quot;&lt;data:post.timestampISO8601/&gt;&quot;, &quot;mainEntityOfPage&quot;: &quot;1&quot;, &quot;image&quot;: { &quot;@type&quot;: &quot;ImageObject&quot;, &quot;url&quot;: &quot;http://www.weizlogy.gq/dummy.png&quot;, &quot;width&quot;: &quot;100&quot;, &quot;height&quot;: &quot;100&quot; } } &lt;/script&gt;  publisher, imageは各自修正してください。
+datePublished, dateModifiedは今のところ同じ値になっています。
+feedDataに情報はありますが、Javascriptを経由せず取得するのは難しそうです。
+本当はheaderタグ内に置きたかったのですが、data:postsが b:section class=&lsquo;main&rsquo; id=&lsquo;main&rsquo; 配下でないと 有効でないという仕様に阻まれました。。。</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/staminagauge/">[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</a></div>
+  <pre class="summary">download. staminigauge.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.0 新規作成。
+アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。
+若干キャラ名と被りますが、気にしないように。</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/marketselltimechanger/">[tree of savior addon] マーケットデフォルト出品日数変更アドオン</a></div>
+  <pre class="summary">download. marketselltimechanger.ipf
+install. README.md
+introduction. settings. Nexon\TreeofSaviorJP\addons\marketselltimechanger\settings.txt を作成します。
+ファイルを開いて一行目に、（デフォルト1日が良ければ）1と入力します。
+設定は、[デフォルト出品日数]のみ。
+現状、1,3,5,7 が使用でき、それ以外が入力されていた場合は、システムのデフォルト値が採用されます。
+descriptions. v1.0.0 新規作成。
+アドオンがロードされると、設定ファイルに記載された値でマーケットのデフォルト出品日数を変更します。</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/warehousepicker/">[tree of savior addon] 所持キャラ全員の個人倉庫を見るアドオン</a></div>
+  <pre class="summary">download. warehousepicker.ipf
+install. README.md
+introduction.  settings. Nexon\TreeofSaviorJP\addons\warehousepicker フォルダーを作成します。
+各所持キャラで個人倉庫を開閉する（正確には閉じる瞬間）と、先ほど作成したフォルダーに個人倉庫のアイテム情報を保存します。
+descriptions. v1.0.0 新規作成。
+アドオンがロードされた後、いずれかのキャラで個人倉庫を開くと、倉庫左下に[whpk]ボタンが出現します。 ボタンを押すと、事前に保存された所持キャラの個人倉庫のアイテム情報を表示するダイアログを開きます。
+ダイアログには、事前に個人倉庫のアイテム情報が作成された所持キャラ名のドロップダウンリストが表示されます。 ドロップダウンリストで選択した所持キャラ名の個人倉庫のアイテム情報（アイテムアイコン、名称、個数）をダイアログ内に表示します。
+最低一度は各所持キャラで個人倉庫を開閉する必要がありますが、それ以降はいずれかのキャラでログインすると全員の個人倉庫を見ることができます。
+今のところチームの区別なくキャラ名のみ表示しますので、複数チームを所持している場合に使い勝手に難があるかもしれません。 使いにくいようでしたら改善します。</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/item/schritt/">[system] Schritt - 論理ステップカウンター</a></div>
+  <pre class="summary">overviews. Schrittは論理ステップカウンターです。
+従来のステップカウンターは物理行でカウントする方式が主流であるため、書き方により規模に差異が現れます。
+Schrittは論理的に命令をカウントすることで、書き方による規模の差異を抑制することを目的に作られました。
+SchrittはLinux(ubuntu)のMonoを使用し、C#で実装されているため、.Net Frameworkの恩恵を受けられる環境であれば動作します。
+download. Schritt
+status. | 言語 | 対応バージョン | 状況説明 | |:&mdash;||:&mdash;||:&mdash;| | C | 0.0.3-α | | | C++ | | 順次対応予定 | | C# | 0.0.1-α | | | Java | 0.0.2-α | | | VB | | 順次対応予定 | | JavaScript | | 順次対応予定 | | HTML | | 順次対応予定 | | CSS | | 順次対応予定 | | Ruby | | 順次対応予定 |</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/megaphonecount/">[tree of savior addon] チャット入力欄表示中に所持中のメガホン数を表示するアドオン</a></div>
+  <pre class="summary">download. megaphonecount.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.0 新規作成。
+アドオンがロードされると、チャット入力欄表示中に所持中のメガホン数が表示されます。 それだけです。。。</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/customabilityshop/">[tree of savior addon] 特性習得ウィンドウに各特性の最大レベルを表示するアドオン</a></div>
-  
-  <div><a href="http://www.weizlogy.gq/tos/addon/monsterstatus/">[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</a></div>
-  
-  <div><a href="http://www.weizlogy.gq/tos/addon/hidename/">[tree of savior addon] 画面にある自キャラ名を消すアドオン</a></div>
+  <pre class="summary">download. 2/22パッチで最大値が表示されるようになりましたので非公開にします。
+install. README.md
+introduction. 
+settings. descriptions. v1.0.0 新規作成。
+アドオンがロードされると、特性習得ウィンドウに各特性の最大レベルが表示されます。 無くてもいい気がするけど。。。</pre>
   
   
     
@@ -273,12 +373,18 @@
         ><a href="/page/2/">2</a></li>
         
         <li
+        ><a href="/page/3/">3</a></li>
+        
+        <li
+        ><a href="/page/4/">4</a></li>
+        
+        <li
         >
         <a href="/page/2/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
         </li>
         
         <li>
-            <a href="/page/2/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+            <a href="/page/4/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
         </li>
         
     </ul>
@@ -292,6 +398,23 @@
   <p>Powered by hugo &#43; github pages.<p>
   <p><a href="https://twitter.com/twihamatter">Twitter</a></p>
 <p><a href="https://plus.google.com/+%E7%99%BD%E6%BF%B1%E7%9D%A6%E4%B8%89?hl=ja">Google+</a></p>
+
+
+<amp-analytics type="googleanalytics" id="analytics1">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-565719-7"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
 
 </footer>
 
