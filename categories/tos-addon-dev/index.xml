@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tos Addon Dev on Weizlogy</title>
-    <link>http://weizlogy.github.io/categories/tos-addon-dev/index.xml</link>
+    <link>http://www.weizlogy.gq/categories/tos-addon-dev/index.xml</link>
     <description>Recent content in Tos Addon Dev on Weizlogy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <atom:link href="http://weizlogy.github.io/categories/tos-addon-dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.weizlogy.gq/categories/tos-addon-dev/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>[tree of savior addon for developpers] アドオンで自作スキンを使用する方法</title>
-      <link>http://weizlogy.github.io/tos/addon-dev/use-custom-skins/</link>
+      <link>http://www.weizlogy.gq/tos/addon-dev/use-custom-skins/</link>
       <pubDate>Sun, 05 Mar 2017 14:19:00 +0900</pubDate>
       
-      <guid>http://weizlogy.github.io/tos/addon-dev/use-custom-skins/</guid>
+      <guid>http://www.weizlogy.gq/tos/addon-dev/use-custom-skins/</guid>
       <description>
 
 &lt;h2 id=&#34;ifpファイル内部構成&#34;&gt;ifpファイル内部構成&lt;/h2&gt;
@@ -94,10 +94,10 @@
     
     <item>
       <title>[tree of savior addon for developpers] iesファイルフォーマット解説</title>
-      <link>http://weizlogy.github.io/tos/addon-dev/ies-format/</link>
+      <link>http://www.weizlogy.gq/tos/addon-dev/ies-format/</link>
       <pubDate>Sat, 31 Dec 2016 17:29:00 +0900</pubDate>
       
-      <guid>http://weizlogy.github.io/tos/addon-dev/ies-format/</guid>
+      <guid>http://www.weizlogy.gq/tos/addon-dev/ies-format/</guid>
       <description>
 
 &lt;p&gt;???は可変長です。&lt;/p&gt;
@@ -329,10 +329,10 @@
     
     <item>
       <title>[tree of savior addon for developpers] iesファイルをcsv形式のファイルに変換するソフト</title>
-      <link>http://weizlogy.github.io/tos/addon-dev/ies-to-csv/</link>
+      <link>http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/</link>
       <pubDate>Sat, 31 Dec 2016 15:42:00 +0900</pubDate>
       
-      <guid>http://weizlogy.github.io/tos/addon-dev/ies-to-csv/</guid>
+      <guid>http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/</guid>
       <description>
 
 &lt;h2 id=&#34;overviews&#34;&gt;overviews.&lt;/h2&gt;
@@ -381,10 +381,10 @@
     
     <item>
       <title>[tree of savior addon for developpers] アドオン作成～設置方法まとめ</title>
-      <link>http://weizlogy.github.io/tos/addon-dev/create-addon/</link>
+      <link>http://www.weizlogy.gq/tos/addon-dev/create-addon/</link>
       <pubDate>Sun, 25 Sep 2016 07:41:00 +0900</pubDate>
       
-      <guid>http://weizlogy.github.io/tos/addon-dev/create-addon/</guid>
+      <guid>http://www.weizlogy.gq/tos/addon-dev/create-addon/</guid>
       <description>
 
 &lt;h2 id=&#34;必要なもの&#34;&gt;必要なもの&lt;/h2&gt;
