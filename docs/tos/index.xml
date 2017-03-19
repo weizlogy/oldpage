@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tos on Weizlogy</title>
+    <link>http://weizlogy.github.io/tos/index.xml</link>
+    <description>Recent content in Tos on Weizlogy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2010 weizlogy.</copyright>
+    <lastBuildDate>Thu, 09 Mar 2017 05:55:00 +0900</lastBuildDate>
+    <atom:link href="http://weizlogy.github.io/tos/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>[tree of savior addon] 装備修理時、装備アイコンに耐久度（％）を色分け表示するアドオン</title>
+      <link>http://weizlogy.github.io/tos/addon/repairendur/</link>
+      <pubDate>Thu, 09 Mar 2017 05:55:00 +0900</pubDate>
+      
+      <guid>http://weizlogy.github.io/tos/addon/repairendur/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/tqffyh7j2dmgs4k/repairendur.ipf?dl=0&#34;&gt;[v1.0.1]repairendur.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://1.bp.blogspot.com/-1pmFYgl40N4/WMBvW1zRsHI/AAAAAAAACpU/8sqEnAesGEIe2gsCjAyO5UXpbsJoHZwhQCLcB/s1600/repairendur1.PNG&#34;&gt;&lt;amp-img src=&#34;https://1.bp.blogspot.com/-1pmFYgl40N4/WMBvW1zRsHI/AAAAAAAACpU/8sqEnAesGEIe2gsCjAyO5UXpbsJoHZwhQCLcB/s320/repairendur1.PNG&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://1.bp.blogspot.com/-7fqCudbXptY/WMBvWp50OZI/AAAAAAAACpQ/huWjvdPaiH0f5cI0M5W18weC534JFuIqgCLcB/s1600/repairendur2_1.png&#34;&gt;&lt;amp-img src=&#34;https://1.bp.blogspot.com/-7fqCudbXptY/WMBvWp50OZI/AAAAAAAACpQ/huWjvdPaiH0f5cI0M5W18weC534JFuIqgCLcB/s320/repairendur2_1.png&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;p&gt;Nexon\TreeofSaviorJP\addons\repairendur\settings.txt を作成します。&lt;/p&gt;
+
+&lt;p&gt;以下の初期設定をsettings.txtコピペします。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;reen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Weapon&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;Lp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;Mp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;Hp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;reen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Armor&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;Lp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;35&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;Mp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;Hp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;reen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;EndurColor&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;Lc&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;FFFF00&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;Mc&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;FF0000&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;Hc&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;000000&amp;quot;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;explanation&#34;&gt;explanation.&lt;/h3&gt;
+
+&lt;p&gt;この設定は装備の耐久度と割合に応じた文字色の設定です。&lt;/p&gt;
+
+&lt;p&gt;[Weapon]、[Armor]は装備の耐久度の色分け用閾値で、Low, Middle, Highの3段階を、武器用と防具用で用意しています。&lt;/p&gt;
+
+&lt;p&gt;[EndurColor]は装備の耐久度閾値に対応する色をRGBで指定します。&lt;/p&gt;
+
+&lt;h3 id=&#34;explanation-of-inilial-parameters&#34;&gt;explanation of inilial parameters.&lt;/h3&gt;
+
+&lt;p&gt;武器&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;耐久度[30]%以下で[黄]色&lt;/li&gt;
+&lt;li&gt;耐久度[5]%以下で[赤]色&lt;/li&gt;
+&lt;li&gt;耐久度[1]%以下で[黒]色&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;防具&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;耐久度[35]%以下で[黄]色&lt;/li&gt;
+&lt;li&gt;耐久度[10]%以下で[赤]色&lt;/li&gt;
+&lt;li&gt;耐久度[5]%以下で[黒]色&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
+
+&lt;p&gt;修理後に以前の耐久度表示が残る問題を修正しました。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、NPC修理、露天修理の装備アイコンに耐久度を設定の閾値に応じた文字色で表示します。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon for developpers] アドオンで自作スキンを使用する方法</title>
+      <link>http://weizlogy.github.io/tos/addon-dev/use-custom-skins/</link>
+      <pubDate>Sun, 05 Mar 2017 14:19:00 +0900</pubDate>
+      
+      <guid>http://weizlogy.github.io/tos/addon-dev/use-custom-skins/</guid>
+      <description>
+
+&lt;h2 id=&#34;ifpファイル内部構成&#34;&gt;ifpファイル内部構成&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;xxx.ipf
+├───addon_d.ipf
+│     └───xxx
+│          ├───xxx.lua
+│          └───xxx.xml
+└───ui.ipf
+      ├───baseskinset
+      │    └───xxx.xml
+      └───skin
+           └───xxx.tga
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;addon-d-ipf&#34;&gt;addon_d.ipf&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.weizlogy.gq/2016/09/tree-of-savior_25.html&#34;&gt;Tree Of Savior アドオン作成～設置方法まとめ&lt;/a&gt;
+参照。&lt;/p&gt;
+
+&lt;h2 id=&#34;ui-ipf&#34;&gt;ui.ipf&lt;/h2&gt;
+
+&lt;h3 id=&#34;baseskinset&#34;&gt;baseskinset&lt;/h3&gt;
+
+&lt;p&gt;自作スキンの読込とアドオン内部で使用するスキンの定義を行います。&lt;/p&gt;
+
+&lt;p&gt;xxx.xml&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;skinset&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;Base&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&#34;nt&#34;&gt;&amp;lt;imagelist&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;category=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;ringcommand&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&#34;nt&#34;&gt;&amp;lt;image&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;image1&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;file=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;\skin\xxx.tga&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;imgrect=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;211 5 197 195&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span class=&#34;nt&#34;&gt;&amp;lt;image&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;image2&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;file=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;\skin\xxx.tga&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;imgrect=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;417 5 197 195&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;/imagelist&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;/skinset&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&#34;name&#34;&gt;name&lt;/h4&gt;
+
+&lt;p&gt;アドオン内部で参照するスキン名。&lt;/p&gt;
+
+&lt;p&gt;オリジナルのスキン名と重複しないように気を付けます。&lt;/p&gt;
+
+&lt;h4 id=&#34;file&#34;&gt;file&lt;/h4&gt;
+
+&lt;p&gt;スキン読み込み元画像ファイルパス。&lt;/p&gt;
+
+&lt;h4 id=&#34;imgrect&#34;&gt;imgrect&lt;/h4&gt;
+
+&lt;p&gt;スキン読み込み元画像ファイル内画像座標。&lt;/p&gt;
+
+&lt;p&gt;半角スペース区切りで四角形の左上と右下の頂点座標を指定します。
+=&amp;gt; x, y, width, height&lt;/p&gt;
+
+&lt;h3 id=&#34;skin&#34;&gt;skin&lt;/h3&gt;
+
+&lt;p&gt;自作スキン画像ファイルを配置します。&lt;/p&gt;
+
+&lt;h2 id=&#34;アドオン実装方法&#34;&gt;アドオン実装方法&lt;/h2&gt;
+
+&lt;h3 id=&#34;xml&#34;&gt;xml&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;picture&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;xxx&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;rect=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;0 0 70 30&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;margin=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;0 0 45 0&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;hittest=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;true&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;image=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;image1&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;lua&#34;&gt;lua&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;local&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pic&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GET_CHILD&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;xxx&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;xxx&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;ui::CPicture&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;pic&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;SetImage&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;quot;image2&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&#34;tgaファイル&#34;&gt;tgaファイル&lt;/h2&gt;
+
+&lt;p&gt;画像ファイルの一つ。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://convertio.co/ja/png-tga/&#34;&gt;https://convertio.co/ja/png-tga/&lt;/a&gt;でtgaと各種画像拡張子の相互変換が可能です。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] コンパニオンのリングコマンドを拡張するアドオン</title>
+      <link>http://weizlogy.github.io/tos/addon/customcompanion/</link>
+      <pubDate>Sun, 05 Mar 2017 07:56:00 +0900</pubDate>
+      
+      <guid>http://weizlogy.github.io/tos/addon/customcompanion/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/1r0bo0z9acwz4ui/customcompanion.ipf?dl=0&#34;&gt;customcompanion.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;amp-youtube data-videoid=&#34;QaPBalivuk4&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、コンパニオンに近づくだけでリングコマンドが出現するようになります。
+今まで通り、コンパニオンから離れるとリングコマンドが消えます。&lt;/p&gt;
+
+&lt;p&gt;リングコマンドに[自動戦闘ON/OFFトグルアイコン]、[コンパニオン休眠化]のスロットを追加します。
+ホットキーの割り当てはありません。&lt;/p&gt;
+
+&lt;p&gt;騎乗スキルのないキャラ、コンパニオンの場合は、リングコマンドの[騎乗]、[降りる]のスロットを削除します。&lt;/p&gt;
+
+&lt;h3 id=&#34;自動戦闘on-off&#34;&gt;自動戦闘ON/OFF&lt;/h3&gt;
+
+&lt;p&gt;クリックするたびに自動戦闘のON/OFFを切り替えます。 切り替え結果はチャット上にSYSTEMメッセージで表示します。&lt;/p&gt;
+
+&lt;h3 id=&#34;コンパニオン休眠化&#34;&gt;コンパニオン休眠化&lt;/h3&gt;
+
+&lt;p&gt;クリックするとコンパニオンを休眠状態にします。 コンパニオンの休眠解除は、今まで通り、コンパニオン情報から行います。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</title>
+      <link>http://weizlogy.github.io/tos/addon/staminagauge/</link>
+      <pubDate>Sat, 25 Feb 2017 00:33:00 +0900</pubDate>
+      
+      <guid>http://weizlogy.github.io/tos/addon/staminagauge/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/jpd1fzm70dn0mhb/staminigauge.ipf?dl=0&#34;&gt;staminigauge.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://1.bp.blogspot.com/-PMCi6_WkEYc/WLBRzWOTrgI/AAAAAAAACoI/SR-iP_MqSoYud4xzv1w_zseS7TUpIUSywCLcB/s1600/staminigauge.PNG&#34;&gt;&lt;amp-img src=&#34;https://1.bp.blogspot.com/-PMCi6_WkEYc/WLBRzWOTrgI/AAAAAAAACoI/SR-iP_MqSoYud4xzv1w_zseS7TUpIUSywCLcB/s320/staminigauge.PNG&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。&lt;/p&gt;
+
+&lt;p&gt;若干キャラ名と被りますが、気にしないように。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] マーケットデフォルト出品日数変更アドオン</title>
+      <link>http://weizlogy.github.io/tos/addon/marketselltimechanger/</link>
+      <pubDate>Thu, 23 Feb 2017 23:34:00 +0900</pubDate>
+      
+      <guid>http://weizlogy.github.io/tos/addon/marketselltimechanger/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/g54jw30u6tx9117/marketselltimechanger.ipf?dl=0&#34;&gt;marketselltimechanger.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;p&gt;Nexon\TreeofSaviorJP\addons\marketselltimechanger\settings.txt を作成します。&lt;/p&gt;
+
+&lt;p&gt;ファイルを開いて一行目に、（デフォルト1日が良ければ）1と入力します。&lt;/p&gt;
+
+&lt;p&gt;設定は、[デフォルト出品日数]のみ。&lt;/p&gt;
+
+&lt;p&gt;現状、1,3,5,7 が使用でき、それ以外が入力されていた場合は、システムのデフォルト値が採用されます。&lt;/p&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、設定ファイルに記載された値でマーケットのデフォルト出品日数を変更します。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 所持キャラ全員の個人倉庫を見るアドオン</title>
+      <link>http://weizlogy.github.io/tos/addon/warehousepicker/</link>
+      <pubDate>Sun, 19 Feb 2017 17:42:00 +0900</pubDate>
+      
+      <guid>http://weizlogy.github.io/tos/addon/warehousepicker/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/qkoh8lkds1m82d1/warehousepicker.ipf?dl=0&#34;&gt;warehousepicker.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;amp-youtube data-videoid=&#34;K0V5lyVg_WY&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;p&gt;Nexon\TreeofSaviorJP\addons\warehousepicker フォルダーを作成します。&lt;/p&gt;
+
+&lt;p&gt;各所持キャラで個人倉庫を開閉する（正確には閉じる瞬間）と、先ほど作成したフォルダーに個人倉庫のアイテム情報を保存します。&lt;/p&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされた後、いずれかのキャラで個人倉庫を開くと、倉庫左下に[whpk]ボタンが出現します。
+ボタンを押すと、事前に保存された所持キャラの個人倉庫のアイテム情報を表示するダイアログを開きます。&lt;/p&gt;
+
+&lt;p&gt;ダイアログには、事前に個人倉庫のアイテム情報が作成された所持キャラ名のドロップダウンリストが表示されます。
+ドロップダウンリストで選択した所持キャラ名の個人倉庫のアイテム情報（アイテムアイコン、名称、個数）をダイアログ内に表示します。&lt;/p&gt;
+
+&lt;p&gt;最低一度は各所持キャラで個人倉庫を開閉する必要がありますが、それ以降はいずれかのキャラでログインすると全員の個人倉庫を見ることができます。&lt;/p&gt;
+
+&lt;p&gt;今のところチームの区別なくキャラ名のみ表示しますので、複数チームを所持している場合に使い勝手に難があるかもしれません。
+使いにくいようでしたら改善します。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] チャット入力欄表示中に所持中のメガホン数を表示するアドオン</title>
+      <link>http://weizlogy.github.io/tos/addon/megaphonecount/</link>
+      <pubDate>Sun, 12 Feb 2017 21:56:00 +0900</pubDate>
+      
+      <guid>http://weizlogy.github.io/tos/addon/megaphonecount/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/bnq1vmaz1knd8j5/megaphonecount.ipf?dl=0&#34;&gt;megaphonecount.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://1.bp.blogspot.com/-dzAFJ2NNsxY/WKBbR0WULvI/AAAAAAAACj0/XUQaXpu_sbQvbRWRPPAE2N2h6JnvNaAEwCLcB/s1600/megaphonecount.PNG&#34;&gt;&lt;amp-img src=&#34;https://1.bp.blogspot.com/-dzAFJ2NNsxY/WKBbR0WULvI/AAAAAAAACj0/XUQaXpu_sbQvbRWRPPAE2N2h6JnvNaAEwCLcB/s320/megaphonecount.PNG&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、チャット入力欄表示中に所持中のメガホン数が表示されます。 それだけです。。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 特性習得ウィンドウに各特性の最大レベルを表示するアドオン</title>
+      <link>http://weizlogy.github.io/tos/addon/customabilityshop/</link>
+      <pubDate>Sun, 12 Feb 2017 02:29:00 +0900</pubDate>
+      
+      <guid>http://weizlogy.github.io/tos/addon/customabilityshop/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;2/22パッチで最大値が表示されるようになりましたので非公開にします。&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://4.bp.blogspot.com/-D0bmazzRJg4/WJ84fwDr3qI/AAAAAAAACjE/GZQ3PZvawxMq0no4KtWgVgP-M9dWrKymgCLcB/s1600/customabilityshop.PNG&#34;&gt;&lt;amp-img src=&#34;https://4.bp.blogspot.com/-D0bmazzRJg4/WJ84fwDr3qI/AAAAAAAACjE/GZQ3PZvawxMq0no4KtWgVgP-M9dWrKymgCLcB/s320/customabilityshop.PNG&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、特性習得ウィンドウに各特性の最大レベルが表示されます。 無くてもいい気がするけど。。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</title>
+      <link>http://weizlogy.github.io/tos/addon/monsterstatus/</link>
+      <pubDate>Thu, 09 Feb 2017 05:57:00 +0900</pubDate>
+      
+      <guid>http://weizlogy.github.io/tos/addon/monsterstatus/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/g7sc2itkfqig36c/monsterstatus.ipf?dl=0&#34;&gt;monsterstatus.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;amp-youtube data-videoid=&#34;D2RID_R7v70&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、ターゲットしたモンスターのステータス（*1）が画面上部に表示されます。&lt;/p&gt;
+
+&lt;p&gt;[*1] 表示するステータスは現在のところ以下の通りです。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;表示名&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;内容&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ATK&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;物理攻撃力(最大)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;MATK&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;魔法攻撃力(最大)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;DEF&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;物理防御力&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;MDEF&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;魔法防御力&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;DR&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;回避率&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;CDR&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;クリティカル回避率&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;CATK&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;クリティカル攻撃力&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;CDEF&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;クリティカル防御力&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
+      <link>http://weizlogy.github.io/tos/addon/hidename/</link>
+      <pubDate>Sun, 05 Feb 2017 18:08:00 +0900</pubDate>
+      
+      <guid>http://weizlogy.github.io/tos/addon/hidename/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/gzgetnxxrqhyaux/hidename.ipf?dl=0&#34;&gt;hidename.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://3.bp.blogspot.com/-QFnqzpPXSyY/WJbrOQsm5wI/AAAAAAAACiM/LHQRWeiW6RsZUbzg1lKEXB-ATxNGOLopgCLcB/s1600/hideteamname_sample.PNG&#34;&gt;&lt;amp-img src=&#34;https://3.bp.blogspot.com/-QFnqzpPXSyY/WJbrOQsm5wI/AAAAAAAACiM/LHQRWeiW6RsZUbzg1lKEXB-ATxNGOLopgCLcB/s1600/hideteamname_sample.PNG&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。&lt;/p&gt;
+
+&lt;p&gt;動画を撮るときに設定では非表示にできなかったので。。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon for developpers] iesファイルフォーマット解説</title>
+      <link>http://weizlogy.github.io/tos/addon-dev/ies-format/</link>
+      <pubDate>Sat, 31 Dec 2016 17:29:00 +0900</pubDate>
+      
+      <guid>http://weizlogy.github.io/tos/addon-dev/ies-format/</guid>
+      <description>
+
+&lt;p&gt;???は可変長です。&lt;/p&gt;
+
+&lt;h2 id=&#34;total-block&#34;&gt;Total block&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt; ------------------- ---------------------------- -------------------------
+| Header [156 byte] | Cell Header [136 x N byte] | Row Data [??? x M byte] |
+ ------------------- ---------------------------- -------------------------
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;N=列数。は、Header blockのCellCountで指定。 M=行数。は、Header blockのRowCountで指定。&lt;/p&gt;
+
+&lt;h2 id=&#34;header-block&#34;&gt;Header block&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt; ---------------------- ------------------- ------------------------
+| TableName [128 byte] | Reserve1 [4 byte] | OffsetOfData [4 byte]  |
+ ---------------------- ------------------- ------------------------
+ --------------------------- ------------------- -------------------
+| OffsetOfResource [4 byte] | FileSize [4 byte] | Reserve2 [4 byte] |
+ --------------------------- ------------------- -------------------
+ ------------------- -------------------- --------------------------
+| RowCount [2 byte] | CellCount [2 byte] | NumCellCount [2 byte]    |
+ ------------------- -------------------- --------------------------
+ ----------------------- -------------------------------------------
+| StrCellCount [2 byte] | Reserve3 [2 byte] | --------------------- |
+ ----------------------- -------------------------------------------
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;TableName&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;IESテーブル名&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Reserve1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;予約1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;OffsetOfData&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Cell Header blockのサイズ&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;OffsetOfResource&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Row Data blockのサイズ&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;FileSize&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;IESファイルサイズ&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Reserve2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;予約2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;RowCount&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;行数&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;CellCount&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;列数&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;NumCellCount&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;数値列数&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;StrCellCount&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;文字列列数&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Reserve3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;予約3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;cell-header-block&#34;&gt;Cell Header block&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt; ---------------- ------------------- ----------------------
+| Name [64 byte] | Name2 [64 byte] | Type [2 byte] | ------ |
+ ---------------- ------------------- ----------------------
+ ------------------- ------------------- -------------------
+| Reserve1 [2 byte] | Reserve2 [4 byte] | Position [2 byte] |
+ ------------------- ------------------- -------------------
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Name&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Cell名&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Name2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Cell別名&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Type&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;0：数値Cell、1,2：文字列Cell&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Reserve1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;予約1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Reserve2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;予約2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Position&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Type内Cell順序&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Cell順は、Type昇順、Position昇順。&lt;/p&gt;
+
+&lt;h2 id=&#34;row-data-block&#34;&gt;Row Data block&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt; ------------------- ---------------------- --------------------
+| Option [??? byte] | Cell Data [??? byte] | Padding [??? byte] |
+ ------------------- ---------------------- --------------------
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Paddingは、文字列Cellの数だけ0x00が付与される。&lt;/p&gt;
+
+&lt;h3 id=&#34;option-block&#34;&gt;Option block&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt; ------------------- --------------- -----------------
+| Reserve1 [4 byte] | Size [2 byte] | Name [??? byte] |
+ ------------------- --------------- -----------------
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Reserve1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;予約1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Size&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Nameのバイト長&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Name&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Cellオプション名&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;cell-data-block&#34;&gt;Cell Data block&lt;/h3&gt;
+
+&lt;p&gt;数値Cellの場合：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; ----------------
+| Value [4 byte] |
+ ----------------
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;文字列Cellの場合：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; --------------- ------------------
+| Size [2 byte] | Value [??? byte] |
+ --------------- ------------------
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Size&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Nameのバイト長&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Name&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;列データ&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon for developpers] iesファイルをcsv形式のファイルに変換するソフト</title>
+      <link>http://weizlogy.github.io/tos/addon-dev/ies-to-csv/</link>
+      <pubDate>Sat, 31 Dec 2016 15:42:00 +0900</pubDate>
+      
+      <guid>http://weizlogy.github.io/tos/addon-dev/ies-to-csv/</guid>
+      <description>
+
+&lt;h2 id=&#34;overviews&#34;&gt;overviews.&lt;/h2&gt;
+
+&lt;p&gt;Tree Of Saviorのipfファイル内には拡張子がiesのファイルがあります。&lt;/p&gt;
+
+&lt;p&gt;Ipf Suiteでは中身を見ることができますが、extractしても実体はバイナリファイル（かつ、暗号化されている）で、
+テキストエディタでもバイナリエディタでも見ても分かりません。&lt;/p&gt;
+
+&lt;p&gt;もちろん、grep検索で引き当てることもできません。&lt;/p&gt;
+
+&lt;p&gt;本ソフトは、iesファイルを解析し、可読性のあるcsvファイルを生成します。&lt;/p&gt;
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/61977sy5a2b1nwl/IEStoCSV.zip?dl=0&#34;&gt;IEStoCSV.zip&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードしたzipを解凍し、任意の場所に配置します。&lt;/p&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;p&gt;コンソールアプリケーションなので、コマンドプロンプトで操作します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;IEStoCSV.exe &amp;lt;走査ディレクトリ&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;サブフォルダを含む走査ディレクトリ配下のiesファイルに対して、対となるcsv形式のファイルを生成します。&lt;/p&gt;
+
+&lt;p&gt;走査ディレクトリ省略時は、本ソフトのある位置を対象とします。&lt;/p&gt;
+
+&lt;h2 id=&#34;caution&#34;&gt;caution.&lt;/h2&gt;
+
+&lt;p&gt;iesファイル内に韓国語が含まれるので、Excelでは文字化けします。（ExcelはShiftJISですが、生成するcsvはUTF8なので）&lt;/p&gt;
+
+&lt;p&gt;本当は英訳を載せたいのですが、完全無料の翻訳APIがないもので。。。 需要があれば何とかしようと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;acknowledgment&#34;&gt;acknowledgment.&lt;/h2&gt;
+
+&lt;p&gt;iesファイルフォーマットは、以下のソースコードを参考にさせて頂きました。 ありがとうございます。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/r1emu/IPFUnpacker/blob/master&#34;&gt;https://github.com/r1emu/IPFUnpacker/blob/master&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）</title>
+      <link>http://weizlogy.github.io/tos/addon/console/</link>
+      <pubDate>Sat, 10 Dec 2016 17:30:00 +0900</pubDate>
+      
+      <guid>http://weizlogy.github.io/tos/addon/console/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/mkjc554mhp257ne/console.ipf?dl=0&#34;&gt;[v1.1.0] console.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;p&gt;Nexon\TreeofSaviorJP\addons\console\settings.txt を作成します。&lt;/p&gt;
+
+&lt;p&gt;ファイルを開いて一行目に、10 210 1と入力します。
+設定は半角スペース区切りで、[ボタンのX座標] [ボタンのY座標] [ボタン表示状態]。&lt;/p&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
+
+&lt;p&gt;設定[ボタン表示状態]を追加しました。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされるとボタン表示状態が1の場合のみ、[Console]ボタンが表示されます。
+ボタンを押すと抽出を開始します。
+ボタン表示状態はエリアチェンジの度に読み込まれるため、ゲーム起動中にボタン表示を切り替えることも可能です。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると[Console]ボタンが表示されます。ボタンを押すと抽出を開始します。 Nexon\TreeofSaviorJP\data\console.txt に抽出結果が出力されます。
+実際の抽出結果は&lt;a href=&#34;http://www.weizlogy.gq/2016/09/tree-of-savior-lua.html&#34;&gt;別記事&lt;/a&gt;にあります。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</title>
+      <link>http://weizlogy.github.io/tos/addon/distance/</link>
+      <pubDate>Sun, 13 Nov 2016 18:00:00 +0900</pubDate>
+      
+      <guid>http://weizlogy.github.io/tos/addon/distance/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/c8v4g9tdi4iqpgb/distance.ipf?dl=0&#34;&gt;[v1.1.0]distance.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;amp-youtube data-videoid=&#34;IUtCzMMKbXU&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
+
+&lt;p&gt;メートル単位対応しました。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると近隣（20m範囲内）モンスターに自キャラからの距離がメートル単位で表示されます。&lt;/p&gt;
+
+&lt;p&gt;距離が12mを超えると、表示が消えます。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると近隣（500範囲内）モンスターに自キャラからの距離が表示されます。&lt;/p&gt;
+
+&lt;p&gt;単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 飛行アドオン</title>
+      <link>http://weizlogy.github.io/tos/addon/fly/</link>
+      <pubDate>Sun, 09 Oct 2016 19:39:00 +0900</pubDate>
+      
+      <guid>http://weizlogy.github.io/tos/addon/fly/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;!-- 再公開には @Zinnai0 の許可が必要です。 --&gt;
+
+&lt;p&gt;&lt;amp-img src=&#34;https://2.bp.blogspot.com/-gZOBr6HnNBo/WIvU2G60NWI/AAAAAAAACh0/x7SRGGFM7W8ABWeJw4-gaK8rTeUesBITwCLcB/s320/zzz.png&#34; width=&#34;320&#34; height=&#34;320&#34; title=&#34;00001710-EOF&#34; layout=&#34;responsive&#34; /&gt;(&lt;a href=&#34;https://www.dropbox.com/s/c0h4s39ut5p0v36/zzz.png?dl=0&#34;&gt;https://www.dropbox.com/s/c0h4s39ut5p0v36/zzz.png?dl=0&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;amp-youtube data-videoid=&#34;Ad_LIzKk_no&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;p&gt;Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。&lt;/p&gt;
+
+&lt;p&gt;ファイルを開いて一行目に、10 130 200 0 1と入力します。&lt;/p&gt;
+
+&lt;p&gt;設定は半角スペース区切りで、[ボタンのX座標] [ボタンのY座標] [飛距離] [前回飛行中か？] [ボタン表示状態]。&lt;/p&gt;
+
+&lt;p&gt;飛距離は150～200が良いです。100では弓に狙われます。&lt;/p&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
+
+&lt;p&gt;設定[ボタン表示状態]を追加しました。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、[ボタン表示状態]が1の場合のみ、[Fly]ボタンが表示されます。&lt;/p&gt;
+
+&lt;p&gt;ショートカットキーを追加しました。&lt;/p&gt;
+
+&lt;p&gt;ESCAPE+UP(上矢印)で飛行、飛行解除ができます。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると[Fly]ボタンが表示されます。&lt;/p&gt;
+
+&lt;p&gt;ボタンを押すと飛行状態、地上に降りるを繰り返します。&lt;/p&gt;
+
+&lt;p&gt;飛行状態でも地上の敵を攻撃できます。
+飛行状態では地上の敵はこちらを近接攻撃できません。&lt;/p&gt;
+
+&lt;p&gt;実際は地上を歩行しているのでトラップには気をつけてください。&lt;/p&gt;
+
+&lt;p&gt;飛行状態ではスキルが使用不可ですが、ノックバックを受けるとスキルが使用可能になりますので、
+わざとノックバックするようになっています。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

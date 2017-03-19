@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://weizlogy.github.io/tos/addon/repairendur/</loc>
+    <lastmod>2017-03-09T05:55:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/tos/addon-dev/use-custom-skins/</loc>
+    <lastmod>2017-03-05T14:19:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/tos/addon/customcompanion/</loc>
+    <lastmod>2017-03-05T07:56:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/tos/addon/staminagauge/</loc>
+    <lastmod>2017-02-25T00:33:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/tos/addon/marketselltimechanger/</loc>
+    <lastmod>2017-02-23T23:34:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/tos/addon/warehousepicker/</loc>
+    <lastmod>2017-02-19T17:42:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/tos/addon/megaphonecount/</loc>
+    <lastmod>2017-02-12T21:56:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/tos/addon/customabilityshop/</loc>
+    <lastmod>2017-02-12T02:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/tos/addon/monsterstatus/</loc>
+    <lastmod>2017-02-09T05:57:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/tos/addon/hidename/</loc>
+    <lastmod>2017-02-05T18:08:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/tos/addon-dev/ies-format/</loc>
+    <lastmod>2016-12-31T17:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/tos/addon-dev/ies-to-csv/</loc>
+    <lastmod>2016-12-31T15:42:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/tos/addon/console/</loc>
+    <lastmod>2016-12-10T17:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/tos/addon/distance/</loc>
+    <lastmod>2016-11-13T18:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/tos/addon/fly/</loc>
+    <lastmod>2016-10-09T19:39:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/tos/addon-dev/create-addon/</loc>
+    <lastmod>2016-09-25T07:41:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/tos/</loc>
+    <lastmod>2017-03-09T05:55:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/categories/tos-addon/</loc>
+    <lastmod>2017-03-09T05:55:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/categories/tos-addon-dev/</loc>
+    <lastmod>2017-03-05T14:19:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://weizlogy.github.io/</loc>
+    <lastmod>2017-03-09T05:55:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

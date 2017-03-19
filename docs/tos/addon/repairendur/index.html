@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html ⚡>
+<head>
+<meta charset="utf-8">
+<link rel="canonical" href="http://weizlogy.github.io/tos/addon/repairendur/">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<title>
+
+  [tree of savior addon] 装備修理時、装備アイコンに耐久度（％）を色分け表示するアドオン &ndash; Weizlogy
+
+</title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+
+
+<style amp-custom>
+   
+  body {
+    font-family: "Noto Sans Japanese";
+    font-size: 85%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  h1 > a {
+    text-decoration: none;
+    color: inherit;
+  }
+  header {
+    clear: left;
+  }
+  header > h1 {
+    font-family: 'Lobster', cursive;
+    display: inline;
+    color: #666;
+  }
+  header > h2 {
+    font-family: 'Lobster', cursive;
+    display: inline;
+    margin-left: 10px;
+    color: #999;
+  }
+  footer {
+    clear: left;
+    padding-top: 10px;
+  }
+  footer > p {
+    display: inline;
+    padding-left: 10px;
+  }
+   
+  article > div > h2 {
+    padding: 0px 0px 5px 5px;
+    border-left: 7px solid #999;
+    border-bottom: 1px solid #999;
+  }
+  article > div > h3 {
+    padding: 0px 0px 5px 5px;
+    border-left: 7px solid #CCC;
+    border-bottom: 1px solid #CCC;
+  }
+   
+  section {
+    padding-left: 10px;
+    overflow: hidden;
+  }
+  section > h1 {
+    padding: 0px 0px 5px 5px;
+    border-left: 7px solid #999;
+    border-bottom: 1px solid #999;
+  }
+  aside {
+    float: left;
+    max-width: 300px;
+    height: 100%;
+    margin-top: 10px;
+    font-size: 85%;
+  }
+   
+  .pagination {
+    display: inline-block;
+  }
+  .pagination li {
+    display: inline-block;
+    text-decoration: none;
+  }
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 7px 14px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #000000;
+    margin: 0 4px;
+  }
+  .pagination li.active a {
+    background-color: #F5F5F5;
+    border: 1px solid #000000;
+  }
+   
+  .highlight > pre {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #999;
+  }
+  .highlight .c { color: #999988; font-style: italic }  
+  .highlight .err { color: #a61717; background-color: #e3d2d2 }  
+  .highlight .k { color: #000000; font-weight: bold }  
+  .highlight .o { color: #000000; font-weight: bold }  
+  .highlight .cm { color: #999988; font-style: italic }  
+  .highlight .cp { color: #999999; font-weight: bold; font-style: italic }  
+  .highlight .c1 { color: #999988; font-style: italic }  
+  .highlight .cs { color: #999999; font-weight: bold; font-style: italic }  
+  .highlight .gd { color: #000000; background-color: #ffdddd }  
+  .highlight .ge { color: #000000; font-style: italic }  
+  .highlight .gr { color: #aa0000 }  
+  .highlight .gh { color: #999999 }  
+  .highlight .gi { color: #000000; background-color: #ddffdd }  
+  .highlight .go { color: #888888 }  
+  .highlight .gp { color: #555555 }  
+  .highlight .gs { font-weight: bold }  
+  .highlight .gu { color: #aaaaaa }  
+  .highlight .gt { color: #aa0000 }  
+  .highlight .kc { color: #000000; font-weight: bold }  
+  .highlight .kd { color: #000000; font-weight: bold }  
+  .highlight .kn { color: #000000; font-weight: bold }  
+  .highlight .kp { color: #000000; font-weight: bold }  
+  .highlight .kr { color: #000000; font-weight: bold }  
+  .highlight .kt { color: #445588; font-weight: bold }  
+  .highlight .m { color: #009999 }  
+  .highlight .s { color: #d01040 }  
+  .highlight .na { color: #008080 }  
+  .highlight .nb { color: #0086B3 }  
+  .highlight .nc { color: #445588; font-weight: bold }  
+  .highlight .no { color: #008080 }  
+  .highlight .nd { color: #3c5d5d; font-weight: bold }  
+  .highlight .ni { color: #800080 }  
+  .highlight .ne { color: #990000; font-weight: bold }  
+  .highlight .nf { color: #990000; font-weight: bold }  
+  .highlight .nl { color: #990000; font-weight: bold }  
+  .highlight .nn { color: #555555 }  
+  .highlight .nt { color: #000080 }  
+  .highlight .nv { color: #008080 }  
+  .highlight .ow { color: #000000; font-weight: bold }  
+  .highlight .w { color: #bbbbbb }  
+  .highlight .mf { color: #009999 }  
+  .highlight .mh { color: #009999 }  
+  .highlight .mi { color: #009999 }  
+  .highlight .mo { color: #009999 }  
+  .highlight .sb { color: #d01040 }  
+  .highlight .sc { color: #d01040 }  
+  .highlight .sd { color: #d01040 }  
+  .highlight .s2 { color: #d01040 }  
+  .highlight .se { color: #d01040 }  
+  .highlight .sh { color: #d01040 }  
+  .highlight .si { color: #d01040 }  
+  .highlight .sx { color: #d01040 }  
+  .highlight .sr { color: #009926 }  
+  .highlight .s1 { color: #d01040 }  
+  .highlight .ss { color: #990073 }  
+  .highlight .bp { color: #999999 }  
+  .highlight .vc { color: #008080 }  
+  .highlight .vg { color: #008080 }  
+  .highlight .vi { color: #008080 }  
+  .highlight .il { color: #009999 }  
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org"
+}
+</script>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+<noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+</head>
+
+<body>
+<div id="container">
+
+<header>
+
+  <h1><a href="http://weizlogy.github.io/">Weizlogy</a></h1>
+  <h2> - Live in der Zukunft.</h2>
+
+</header>
+
+<aside>
+</aside>
+
+<div>
+<article>
+
+ <h1><a href="http://weizlogy.github.io/tos/addon/repairendur/">[tree of savior addon] 装備修理時、装備アイコンに耐久度（％）を色分け表示するアドオン</a></h1>
+ <div>
+  
+
+<h2 id="download">download.</h2>
+
+<p><a href="https://www.dropbox.com/s/tqffyh7j2dmgs4k/repairendur.ipf?dl=0">[v1.0.1]repairendur.ipf</a></p>
+
+<h2 id="install">install.</h2>
+
+<p><a href="https://github.com/weizlogy/tos/blob/master/README.md">README.md</a></p>
+
+<h2 id="introduction">introduction.</h2>
+
+<p><a href="https://1.bp.blogspot.com/-1pmFYgl40N4/WMBvW1zRsHI/AAAAAAAACpU/8sqEnAesGEIe2gsCjAyO5UXpbsJoHZwhQCLcB/s1600/repairendur1.PNG"><amp-img src="https://1.bp.blogspot.com/-1pmFYgl40N4/WMBvW1zRsHI/AAAAAAAACpU/8sqEnAesGEIe2gsCjAyO5UXpbsJoHZwhQCLcB/s320/repairendur1.PNG" width="320" height="184" title="" layout="responsive" /></a></p>
+
+<p><a href="https://1.bp.blogspot.com/-7fqCudbXptY/WMBvWp50OZI/AAAAAAAACpQ/huWjvdPaiH0f5cI0M5W18weC534JFuIqgCLcB/s1600/repairendur2_1.png"><amp-img src="https://1.bp.blogspot.com/-7fqCudbXptY/WMBvWp50OZI/AAAAAAAACpQ/huWjvdPaiH0f5cI0M5W18weC534JFuIqgCLcB/s320/repairendur2_1.png" width="320" height="184" title="" layout="responsive" /></a></p>
+
+<h2 id="settings">settings.</h2>
+
+<p>Nexon\TreeofSaviorJP\addons\repairendur\settings.txt を作成します。</p>
+
+<p>以下の初期設定をsettings.txtコピペします。</p>
+<div class="highlight"><pre><code class="language-lua" data-lang="lua"><span></span><span class="n">reen</span><span class="p">.</span><span class="n">Weapon</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="n">Lp</span> <span class="o">=</span> <span class="mi">30</span><span class="p">,</span>
+  <span class="n">Mp</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
+  <span class="n">Hp</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="p">};</span>
+<span class="n">reen</span><span class="p">.</span><span class="n">Armor</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="n">Lp</span> <span class="o">=</span> <span class="mi">35</span><span class="p">,</span>
+  <span class="n">Mp</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+  <span class="n">Hp</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="p">};</span>
+<span class="n">reen</span><span class="p">.</span><span class="n">EndurColor</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="n">Lc</span> <span class="o">=</span> <span class="s2">&quot;FFFF00&quot;</span><span class="p">,</span>
+  <span class="n">Mc</span> <span class="o">=</span> <span class="s2">&quot;FF0000&quot;</span><span class="p">,</span>
+  <span class="n">Hc</span> <span class="o">=</span> <span class="s2">&quot;000000&quot;</span>
+<span class="p">};</span>
+</code></pre></div>
+
+<h3 id="explanation">explanation.</h3>
+
+<p>この設定は装備の耐久度と割合に応じた文字色の設定です。</p>
+
+<p>[Weapon]、[Armor]は装備の耐久度の色分け用閾値で、Low, Middle, Highの3段階を、武器用と防具用で用意しています。</p>
+
+<p>[EndurColor]は装備の耐久度閾値に対応する色をRGBで指定します。</p>
+
+<h3 id="explanation-of-inilial-parameters">explanation of inilial parameters.</h3>
+
+<p>武器</p>
+
+<ul>
+<li>耐久度[30]%以下で[黄]色</li>
+<li>耐久度[5]%以下で[赤]色</li>
+<li>耐久度[1]%以下で[黒]色</li>
+</ul>
+
+<p>防具</p>
+
+<ul>
+<li>耐久度[35]%以下で[黄]色</li>
+<li>耐久度[10]%以下で[赤]色</li>
+<li>耐久度[5]%以下で[黒]色</li>
+</ul>
+
+<h2 id="descriptions">descriptions.</h2>
+
+<h3 id="v1-0-1">v1.0.1</h3>
+
+<p>修理後に以前の耐久度表示が残る問題を修正しました。</p>
+
+<h3 id="v1-0-0">v1.0.0</h3>
+
+<p>新規作成。</p>
+
+<p>アドオンがロードされると、NPC修理、露天修理の装備アイコンに耐久度を設定の閾値に応じた文字色で表示します。</p>
+
+ </div>
+
+</article>
+</div>
+
+<footer>
+
+  <p>© 2010 weizlogy.<p>
+  <p>Powered by hugo &#43; github pages.<p>
+  <p><a href="https://twitter.com/twihamatter">Twitter</a></p>
+<p><a href="https://plus.google.com/+%E7%99%BD%E6%BF%B1%E7%9D%A6%E4%B8%89?hl=ja">Google+</a></p>
+
+</footer>
+
+</div>
+</body>
+</html>
