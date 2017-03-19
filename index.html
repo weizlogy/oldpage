@@ -177,10 +177,40 @@
 </style>
 
 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org"
+  "@type": "BlogPosting",
+  "headline": "Weizlogy",
+  "url": "http://www.weizlogy.gq/",
+  "datePublished": "2017-03-09 05:55:00 &#43;0900 JST",
+  "author": {
+    "@type": "Person",
+    "name": "weizlogy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Weiβlogy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.weizlogy.gq//favicon.ico"
+    }
+  },
+  "dateModified": "2017-03-09 05:55:00 &#43;0900 JST",
+  "mainEntityOfPage": "1",
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://www.weizlogy.gq//dummy.png",
+    "width": "100",
+    "height": "100"
+  }
+}
+</script>
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
 <script async='async' custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 
@@ -271,6 +301,12 @@ reen.Weapon = { Lp = 30, Mp = 5, Hp = 1 }; reen.Armor = { Lp = 35, Mp = 10, Hp =
 explanation of initial parameters. 武器
  耐久度[30]%以下で[黄]色 耐久度[5]%以下で[赤]色 耐久度[1]%以下で[黒]色  防具
  耐久度[35]%以下で[黄]色 耐久度[10]%以下で[赤]色 耐久度[5]%以下で[黒]色  descriptions.</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/tos/addon-dev/use-custom-skins/">[tree of savior addon for developpers] アドオンで自作スキンを使用する方法</a></div>
   <pre class="summary">ifpファイル内部構成 xxx.ipf ├───addon_d.ipf │ └───xxx │ ├───xxx.lua │ └───xxx.xml └───ui.ipf ├───baseskinset │ └───xxx.xml └───skin └───xxx.tga  addon_d.ipf Tree Of Savior アドオン作成～設置方法まとめ 参照。
@@ -283,6 +319,12 @@ imgrect スキン読み込み元画像ファイル内画像座標。
 半角スペース区切りで四角形の左上と右下の頂点座標を指定します。 =&gt; x, y, width, height
 skin 自作スキン画像ファイルを配置します。
 アドオン実装方法 xml &lt;picture name=&quot;xxx&quot; rect=&quot;0 0 70 30&quot; margin=&quot;0 0 45 0&quot; hittest=&quot;true&quot; image=&quot;image1&quot;/&gt;  lua local pic = GET_CHILD(xxx, &quot;xxx&quot;, &quot;ui::CPicture&quot;); pic:SetImage(&quot;image2&quot;);  tgaファイル 画像ファイルの一つ。</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/customcompanion/">[tree of savior addon] コンパニオンのリングコマンドを拡張するアドオン</a></div>
   <pre class="summary">download. customcompanion.ipf
@@ -293,6 +335,12 @@ introduction.  settings. descriptions. v1.0.0 新規作成。
 騎乗スキルのないキャラ、コンパニオンの場合は、リングコマンドの[騎乗]、[降りる]のスロットを削除します。
 自動戦闘ON/OFF クリックするたびに自動戦闘のON/OFFを切り替えます。 切り替え結果はチャット上にSYSTEMメッセージで表示します。
 コンパニオン休眠化 クリックするとコンパニオンを休眠状態にします。 コンパニオンの休眠解除は、今まで通り、コンパニオン情報から行います。</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/site/blogger-blogposting-jsonld/">[site management] schema.org構造化データBlogPosting対応 with JSON&#43;LD in blogger</a></div>
   <pre class="summary">bloggerのテンプレートで、以下のブログ投稿箇所を検索します。
@@ -301,6 +349,12 @@ introduction.  settings. descriptions. v1.0.0 新規作成。
 datePublished, dateModifiedは今のところ同じ値になっています。
 feedDataに情報はありますが、Javascriptを経由せず取得するのは難しそうです。
 本当はheaderタグ内に置きたかったのですが、data:postsが b:section class=&lsquo;main&rsquo; id=&lsquo;main&rsquo; 配下でないと 有効でないという仕様に阻まれました。。。</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/staminagauge/">[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</a></div>
   <pre class="summary">download. staminigauge.ipf
@@ -309,6 +363,12 @@ introduction.
 settings. descriptions. v1.0.0 新規作成。
 アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。
 若干キャラ名と被りますが、気にしないように。</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/marketselltimechanger/">[tree of savior addon] マーケットデフォルト出品日数変更アドオン</a></div>
   <pre class="summary">download. marketselltimechanger.ipf
@@ -319,6 +379,12 @@ introduction. settings. Nexon\TreeofSaviorJP\addons\marketselltimechanger\settin
 現状、1,3,5,7 が使用でき、それ以外が入力されていた場合は、システムのデフォルト値が採用されます。
 descriptions. v1.0.0 新規作成。
 アドオンがロードされると、設定ファイルに記載された値でマーケットのデフォルト出品日数を変更します。</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/warehousepicker/">[tree of savior addon] 所持キャラ全員の個人倉庫を見るアドオン</a></div>
   <pre class="summary">download. warehousepicker.ipf
@@ -330,6 +396,12 @@ descriptions. v1.0.0 新規作成。
 ダイアログには、事前に個人倉庫のアイテム情報が作成された所持キャラ名のドロップダウンリストが表示されます。 ドロップダウンリストで選択した所持キャラ名の個人倉庫のアイテム情報（アイテムアイコン、名称、個数）をダイアログ内に表示します。
 最低一度は各所持キャラで個人倉庫を開閉する必要がありますが、それ以降はいずれかのキャラでログインすると全員の個人倉庫を見ることができます。
 今のところチームの区別なくキャラ名のみ表示しますので、複数チームを所持している場合に使い勝手に難があるかもしれません。 使いにくいようでしたら改善します。</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/item/schritt/">[system] Schritt - 論理ステップカウンター</a></div>
   <pre class="summary">overviews. Schrittは論理ステップカウンターです。
@@ -338,6 +410,12 @@ Schrittは論理的に命令をカウントすることで、書き方による�
 SchrittはLinux(ubuntu)のMonoを使用し、C#で実装されているため、.Net Frameworkの恩恵を受けられる環境であれば動作します。
 download. Schritt
 status. | 言語 | 対応バージョン | 状況説明 | |:&mdash;||:&mdash;||:&mdash;| | C | 0.0.3-α | | | C++ | | 順次対応予定 | | C# | 0.0.1-α | | | Java | 0.0.2-α | | | VB | | 順次対応予定 | | JavaScript | | 順次対応予定 | | HTML | | 順次対応予定 | | CSS | | 順次対応予定 | | Ruby | | 順次対応予定 |</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/megaphonecount/">[tree of savior addon] チャット入力欄表示中に所持中のメガホン数を表示するアドオン</a></div>
   <pre class="summary">download. megaphonecount.ipf
@@ -345,6 +423,12 @@ install. README.md
 introduction. 
 settings. descriptions. v1.0.0 新規作成。
 アドオンがロードされると、チャット入力欄表示中に所持中のメガホン数が表示されます。 それだけです。。。</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/customabilityshop/">[tree of savior addon] 特性習得ウィンドウに各特性の最大レベルを表示するアドオン</a></div>
   <pre class="summary">download. 2/22パッチで最大値が表示されるようになりましたので非公開にします。
@@ -352,6 +436,12 @@ install. README.md
 introduction. 
 settings. descriptions. v1.0.0 新規作成。
 アドオンがロードされると、特性習得ウィンドウに各特性の最大レベルが表示されます。 無くてもいい気がするけど。。。</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   
     

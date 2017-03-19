@@ -176,10 +176,40 @@
 </style>
 
 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org"
+  "@type": "BlogPosting",
+  "headline": "Tos Addon Dev",
+  "url": "http://www.weizlogy.gq/categories/tos-addon-dev/",
+  "datePublished": "2017-03-05 14:19:00 &#43;0900 JST",
+  "author": {
+    "@type": "Person",
+    "name": "weizlogy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Weiβlogy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.weizlogy.gq//favicon.ico"
+    }
+  },
+  "dateModified": "2017-03-05 14:19:00 &#43;0900 JST",
+  "mainEntityOfPage": "1",
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://www.weizlogy.gq//dummy.png",
+    "width": "100",
+    "height": "100"
+  }
+}
+</script>
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
 <script async='async' custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 
@@ -250,11 +280,23 @@ imgrect スキン読み込み元画像ファイル内画像座標。
 半角スペース区切りで四角形の左上と右下の頂点座標を指定します。 =&gt; x, y, width, height
 skin 自作スキン画像ファイルを配置します。
 アドオン実装方法 xml &lt;picture name=&quot;xxx&quot; rect=&quot;0 0 70 30&quot; margin=&quot;0 0 45 0&quot; hittest=&quot;true&quot; image=&quot;image1&quot;/&gt;  lua local pic = GET_CHILD(xxx, &quot;xxx&quot;, &quot;ui::CPicture&quot;); pic:SetImage(&quot;image2&quot;);  tgaファイル 画像ファイルの一つ。</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/tos/addon-dev/ies-format/">[tree of savior addon for developpers] iesファイルフォーマット解説</a></div>
   <pre class="summary">???は可変長です。
 Total block  ------------------- ---------------------------- ------------------------- | Header [156 byte] | Cell Header [136 x N byte] | Row Data [??? x M byte] | ------------------- ---------------------------- -------------------------  N=列数。は、Header blockのCellCountで指定。 M=行数。は、Header blockのRowCountで指定。
 Header block  ---------------------- ------------------- ------------------------ | TableName [128 byte] | Reserve1 [4 byte] | OffsetOfData [4 byte] | ---------------------- ------------------- ------------------------ --------------------------- ------------------- ------------------- | OffsetOfResource [4 byte] | FileSize [4 byte] | Reserve2 [4 byte] | --------------------------- ------------------- ------------------- ------------------- -------------------- -------------------------- | RowCount [2 byte] | CellCount [2 byte] | NumCellCount [2 byte] | ------------------- -------------------- -------------------------- ----------------------- ------------------------------------------- | StrCellCount [2 byte] | Reserve3 [2 byte] | --------------------- | ----------------------- -------------------------------------------           TableName IESテーブル名   Reserve1 予約1   OffsetOfData Cell Header blockのサイズ   OffsetOfResource Row Data blockのサイズ   FileSize IESファイルサイズ   Reserve2 予約2   RowCount 行数   CellCount 列数   NumCellCount 数値列数   StrCellCount 文字列列数   Reserve3 予約3    Cell Header block  ---------------- ------------------- ---------------------- | Name [64 byte] | Name2 [64 byte] | Type [2 byte] | ------ | ---------------- ------------------- ---------------------- ------------------- ------------------- ------------------- | Reserve1 [2 byte] | Reserve2 [4 byte] | Position [2 byte] | ------------------- ------------------- -------------------           Name Cell名   Name2 Cell別名   Type 0：数値Cell、1,2：文字列Cell   Reserve1 予約1   Reserve2 予約2   Position Type内Cell順序    Cell順は、Type昇順、Position昇順。</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/">[tree of savior addon for developpers] iesファイルをcsv形式のファイルに変換するソフト</a></div>
   <pre class="summary">overviews. Tree Of Saviorのipfファイル内には拡張子がiesのファイルがあります。
@@ -270,6 +312,12 @@ caution. iesファイル内に韓国語が含まれるので、Excelでは文字
 本当は英訳を載せたいのですが、完全無料の翻訳APIがないもので。。。 需要があれば何とかしようと思います。
 acknowledgment. iesファイルフォーマットは、以下のソースコードを参考にさせて頂きました。 ありがとうございます。
 https://github.com/r1emu/IPFUnpacker/blob/master</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/tos/addon-dev/create-addon/">[tree of savior addon for developpers] アドオン作成～設置方法まとめ</a></div>
   <pre class="summary">必要なもの  IPF Suite IPFUnpacker  作成手順 1. アドオンの名前を決める &ldquo;xxxaddonxxx&rdquo;としてみます。全て小文字、記号なしが良いです。
@@ -281,6 +329,12 @@ function XXXADDONXXX_ON_INIT(addon, frame) -- 任意の初期化処理 end  4. �
 上部メニューの[Add]ボタンを押します。ファイル選択ダイアログが出現するので、先に作成したxmlとluaファイルを選択します。
 上部メニューの[Save]ボタンを押します。保存するファイル名は&rdquo;xxxaddonxxx.ipf&rdquo;とします。
 5. アドオンを暗号化する IPF Unpackerで暗号化します。&rdquo;Done!</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   
     

@@ -177,10 +177,40 @@
 </style>
 
 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org"
+  "@type": "BlogPosting",
+  "headline": "Weizlogy",
+  "url": "http://www.weizlogy.gq/",
+  "datePublished": "2016-09-25 07:41:00 &#43;0900 JST",
+  "author": {
+    "@type": "Person",
+    "name": "weizlogy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Weiβlogy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.weizlogy.gq//favicon.ico"
+    }
+  },
+  "dateModified": "2016-09-25 07:41:00 &#43;0900 JST",
+  "mainEntityOfPage": "1",
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://www.weizlogy.gq//dummy.png",
+    "width": "100",
+    "height": "100"
+  }
+}
+</script>
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
 <script async='async' custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 
@@ -268,6 +298,12 @@ function XXXADDONXXX_ON_INIT(addon, frame) -- 任意の初期化処理 end  4. �
 上部メニューの[Add]ボタンを押します。ファイル選択ダイアログが出現するので、先に作成したxmlとluaファイルを選択します。
 上部メニューの[Save]ボタンを押します。保存するファイル名は&rdquo;xxxaddonxxx.ipf&rdquo;とします。
 5. アドオンを暗号化する IPF Unpackerで暗号化します。&rdquo;Done!</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/openweathermap-with-java-bazel/">[system development] Codeaywhere&#43;Java&#43;bazelでOpenWeatherMapのAPIを使用し現在の気象情報を取得する</a></div>
   <pre class="summary">OpenWeatherMapの使い方 OpenWeatherMapは各種気象情報提供サービスです。
@@ -276,6 +312,12 @@ function XXXADDONXXX_ON_INIT(addon, frame) -- 任意の初期化処理 end  4. �
 http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;APPID={Your API Key}  JSON形式ではJavaで扱いにくいので、&rdquo;mode=xml&rdquo;パラメータでXML形式にします。
 http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;mode=xml&amp;APPID={Your API Key}  気象情報は以下のように返却されます。（例は{city name}=Tokyo）
 &lt;?xml version=&quot;1.0&quot;?&gt; &lt;current&gt; &lt;city id=&quot;1850147&quot; name=&quot;Tokyo&quot;&gt; &lt;coord lat=&quot;35.69&quot; lon=&quot;139.69&quot;/&gt; &lt;country&gt;JP&lt;/country&gt; &lt;sun set=&quot;2016-08-15T09:30:23&quot; rise=&quot;2016-08-14T20:00:21&quot;/&gt; &lt;/city&gt; &lt;temperature unit=&quot;kelvin&quot; max=&quot;304.82&quot; min=&quot;298.71&quot; value=&quot;301.68&quot;/&gt; &lt;humidity unit=&quot;%&quot; value=&quot;85&quot;/&gt; &lt;pressure unit=&quot;hPa&quot; value=&quot;1001&quot;/&gt; &lt;wind&gt; &lt;speed name=&quot;Gentle Breeze&quot; value=&quot;3.41&quot;/&gt; &lt;gusts/&gt; &lt;direction name=&quot;South&quot; value=&quot;179.504&quot; code=&quot;S&quot;/&gt; &lt;/wind&gt; &lt;clouds name=&quot;clear sky&quot; value=&quot;8&quot;/&gt; &lt;visibility/&gt; &lt;precipitation unit=&quot;3h&quot; value=&quot;0.245&quot; mode=&quot;rain&quot;/&gt; &lt;weather value=&quot;light rain&quot; icon=&quot;10d&quot; number=&quot;500&quot;/&gt; &lt;lastupdate value=&quot;2016-08-15T07:41:15&quot;/&gt; &lt;/current&gt;  JavaでOpenWeatherMapのAPIを呼び出す RESTクライアントは色々ありますが、お手軽なApache Commonsのhttpclientとfluent-hcにします。</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/">[system development] Codeanywhereでbazelを使う</a></div>
   <pre class="summary">CodeanywhereはクラウドIDEで、sudoが許可されたターミナルを使うことができます。 Google+アカウント連携ですぐに使えます。
@@ -284,6 +326,12 @@ Codeanyhwereにbazelをインストール bazelはjdk1.8以降（jdk1.7はサポ
 cabox@box-codeanywhere:~/workspace$ java -version java version &quot;1.7.0_95&quot; OpenJDK Runtime Environment (IcedTea 2.6.4) (7u95-2.6.4-0ubuntu0.14.04.1) OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode)  Installig Bazelを参考に、以下のコマンドを打ちます。
 $ echo &quot;deb [arch=amd64] http://storage.googleapis.com/bazel-apt testing jdk1.7&quot; | sudo tee /etc/apt/sources.list.d/bazel.list $ curl https://storage.googleapis.com/bazel-apt/doc/apt-key.pub.gpg | sudo apt-key add - sudo apt-get update &amp;&amp; sudo apt-get install bazel  bazelでjavaをビルド 最低限の必要なファイルを作成します。
 cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cabox@box-codeanywhere:~/workspace$ touch hello/src/main/java/gq/weizlogy/Main.java cabox@box-codeanywhere:~/workspace$ touch hello/WORKSPACE cabox@box-codeanywhere:~/workspace$ touch hello/BUILD  hello/src/main/java/gq/weizlogy/Main.</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/">[system development] Monodevelopで埋め込みリソースを使う</a></div>
   <pre class="summary">ソリューションエクスプローラーで対象のファイルを右クリックします。
@@ -291,6 +339,12 @@ cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cab
 プログラムからのアクセスで必要なリソースIDは、デフォルトネームスペース＋ファイル名となります。 リソースIDはプロパティビューで変更可能です。
 使い方は以下の通りです。
 using (var stream = new System.IO.StreamReader(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream(&quot;[ResourceID]&quot;), true)) { ... }  </pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/step-counter-is/">[system development] ステップカウンターのあるべき姿を考察する</a></div>
   <pre class="summary">ステップカウンターとは？ LOCを計測するツールです。LOCはLines Of Codeの略で、プログラムの規模として扱います。
@@ -307,6 +361,12 @@ C言語系統のプリプロセッサーディレクティブは微妙ですが�
 ただし、&rdquo;#endif&rdquo;、&rdquo;#region&rdquo;、&rdquo;#endregion&rdquo;は非命令とし計測しません。
 C言語の#includeは、必須であることを除き、C#のusingディレクティブ同様、非命令とします。
 考察は続きます。。。</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/site/blogger-last-modified/">[site management] bloggerで最終更新日時を表示する</a></div>
   <pre class="summary">bloggerのテンプレートタグでは更新日時を取得できないので、別の方法を参考に、時刻追加、個別記事表示、一覧記事表示どちらも対応するようにしました。
@@ -317,12 +377,24 @@ C言語の#includeは、必須であることを除き、C#のusingディレク�
 投稿領域近辺が良いと思いますので、&lt;b:includable id=&lsquo;post&rsquo; var=&lsquo;post&rsquo;&gt;&hellip;&lt;/b:includable&gt;を展開し、そこから好きな位置に決めます。 今回は、投稿日時の近辺にするため、&lt;span class=&lsquo;post-timestamp&rsquo;&gt;と次の要素の間に以下の投稿に依存するコードを埋め込みます。
 &lt;!-- 最終更新日時 --&gt; &lt;span expr:id=&#39;data:post.id&#39; class=&#39;last-modified updated&#39;&gt;&lt;/span&gt; &lt;script type=&#39;text/javascript&#39;&gt; var id = &quot;&lt;data:post.id/&gt;&quot;; &lt;/script&gt; &lt;script type=&#39;text/javascript&#39;&gt; var sHome = &quot;&lt;data:blog.homepageUrl/&gt;&quot;; var sURL = &quot;&lt;data:post.url/&gt;&quot;; sURL = sURL.replace(sHome, &quot;&quot;) sURL = &quot;/&quot; + sURL; document.write(unescape(&quot;%3Cscript&quot;)+&quot; src=&#39;&quot;+sHome+&quot;/atom.xml?redirect=false&amp;path=&quot;+sURL+&quot;&amp;max-results=1&amp;alt=json-in-script&amp;callback=show_last_modified&#39; type=&#39;text/javascript&#39;&quot;+unescape(&quot;%3E%3C/script%3E&quot;)); &lt;/script&gt;  各投稿のRSSからコールバックされる関数show_last_modifiedは投稿に依存せず不変のため、テンプレートの上部に(投稿の前に宣言できればどこでも良い)一度だけ宣言します。
 &lt;script type=&quot;text/javascript&quot;&gt;// &lt;![CDATA[ function show_last_modified(root) { var published = &#39;&#39;; var updated = &#39;&#39;; for (var i = 0; i &lt; root.</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/site/code-prettify-on-github/">[site management] code-prettifyがgithubに移行し進化していたので対応した</a></div>
   <pre class="summary">code-prettifyはGoogle謹製シンタックスハイライターです。
 以前は以下の構成が必要でした。
 &lt;!-- prettify --&gt; &lt;style type=&#39;text/css&#39;&gt; @import &quot;http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css&quot;; &lt;/style&gt; &lt;script src=&#39;http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js&#39; type=&#39;text/javascript&#39;&gt;&lt;/script&gt; &lt;script type=&#39;text/javascript&#39;&gt; function prettify() { prettyPrint(); } if (window.addEventListener) { window.addEventListener(&quot;load&quot;, prettify, false); } else if (window.attachEvent) { window.attachEvent(&quot;onload&quot;, prettify); } else { window.onload = prettify; }&lt;/script&gt; &lt;!-- prettify --&gt;  進化後はたった一行で済みます。すごいですね。
 &lt;script src=&quot;https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js&quot;&gt;&lt;/script&gt;  </pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/site/seo-bing-webmaster/">[site management] bing Web マスターのSEOレポート対策</a></div>
   <pre class="summary">[レポート＆データ] &gt; [SEOレポート]からレポートを確認できます。 簡単なものから順次対策していきます。
@@ -336,17 +408,35 @@ C言語の#includeは、必須であることを除き、C#のusingディレク�
  ページ ソースから余分な &lt;h1&gt; タグを削除し、1 つの &lt;h1&gt; タグしか存在しないようにします。
  bloggerでは、シンプルテンプレートを使用中ですが、タイトルにh1タグを使用しているため、ブログ本文中にh1タグを使用してはいけません。
 &lt;img&gt; タグで ALT 属性が定義されていません。  bing Web マスター曰く、 原則として、検索エンジンは画像ファイルを解釈しません。サイト所有者は、&lt;img alt&gt; 属性のテキストを使用して検索エンジンとエンド ユーザーに関連情報を提供することができます。エンド ユーザーが画像を無効にしている場合や画像が正しく読み込まれなかった場合に、Alt テキストが役に立ちます。また、スクリーン リーダーでも Alt テキストが使用されます。Alt テキストが記述的で、画像を正確に示し、ページ コンテンツをサポートしていることを確認してください。</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/">[system development] ubuntu16.04でMonoDevelopを使った開発環境</a></div>
   <pre class="summary">LinuxでC#を使うための環境(mono)とIDE(MonoDevelop)をインストールします。
 まずはmonoをインストールします。
 $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF $ echo &quot;deb http://download.mono-project.com/repo/debian wheezy main&quot; | sudo tee /etc/apt/sources.list.d/mono-xamarin.list $ sudo apt-get update $ sudo apt-get install mono-complete  続いてMonoDevelopをインストールします。
 $ sudo apt-get install monodevelop  monodevelopコマンドでIDEを起動します。</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/spring-aop-test/">[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</a></div>
   <pre class="summary">Interceptor クラスの内容は以下の通りです。
 import org.aspectj.lang.ProceedingJoinPoint; import org.aspectj.lang.annotation.Around; import org.aspectj.lang.annotation.Aspect; @Aspect public class SomeInterceptor { @Around(&quot;execution(* execute(..))&quot;) public Object around(ProceedingJoinPoint pjp) { System.out.println(String.format(&quot;%s.%s start.&quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); Object value = null; try { value = pjp.proceed(); } catch (Throwable e) { e.printStackTrace(); } System.out.println(String.format(&quot;%s.%s ended.&quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); return value; } }  Test クラスの内容は以下の通りです。
 import static org.junit.Assert.*; import java.util.ArrayList; import org.junit.Test; import org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint; import org.springframework.aop.framework.ReflectiveMethodInvocation; import org.springframework.aop.interceptor.SimpleTraceInterceptor; public class SomeInterceptorTest { /** AOP の対象となるメソッドを持つクラス */ private static class AOPTarget { public String execute() { System.</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   
     

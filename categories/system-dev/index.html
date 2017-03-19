@@ -176,10 +176,40 @@
 </style>
 
 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org"
+  "@type": "BlogPosting",
+  "headline": "System Dev",
+  "url": "http://www.weizlogy.gq/categories/system-dev/",
+  "datePublished": "2017-01-31 21:59:00.001 &#43;0900 JST",
+  "author": {
+    "@type": "Person",
+    "name": "weizlogy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Weiβlogy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.weizlogy.gq//favicon.ico"
+    }
+  },
+  "dateModified": "2017-01-31 21:59:00.001 &#43;0900 JST",
+  "mainEntityOfPage": "1",
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://www.weizlogy.gq//dummy.png",
+    "width": "100",
+    "height": "100"
+  }
+}
+</script>
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
 <script async='async' custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 
@@ -262,6 +292,12 @@
 $ openssl ciphers -v  これはopensslが対応するCipherSuiteの一覧であり、実際に存在するCipherSuiteの一覧とは異なります。
 実際に存在するCipherSuiteの一覧は、RFC5426によるとIANA管理とのことで、下記URLがマスターです。
 http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/">[system development] XAMLでブロック矢印を描画する</a></div>
   <pre class="summary">ブロック矢印完成図 
@@ -275,6 +311,12 @@ https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspxを読めば
 座標の算出には、描画開始位置、シャフトの幅と高さ、アローヘッドの出代と角度を決めます。 今回は、描画開始位置=100,100、シャフトの幅=100、高さ=30、アローヘッドの出代=10、角度=60にしました。
 
 アローヘッドの頂点座標の算出は、頂点がシャフトの中央にあることと、三平方の定理を使えばきっちり出せます。 つまり、シャフトの幅は偶数が良いです。</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/openweathermap-with-java-bazel/">[system development] Codeaywhere&#43;Java&#43;bazelでOpenWeatherMapのAPIを使用し現在の気象情報を取得する</a></div>
   <pre class="summary">OpenWeatherMapの使い方 OpenWeatherMapは各種気象情報提供サービスです。
@@ -283,6 +325,12 @@ https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspxを読めば
 http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;APPID={Your API Key}  JSON形式ではJavaで扱いにくいので、&rdquo;mode=xml&rdquo;パラメータでXML形式にします。
 http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;mode=xml&amp;APPID={Your API Key}  気象情報は以下のように返却されます。（例は{city name}=Tokyo）
 &lt;?xml version=&quot;1.0&quot;?&gt; &lt;current&gt; &lt;city id=&quot;1850147&quot; name=&quot;Tokyo&quot;&gt; &lt;coord lat=&quot;35.69&quot; lon=&quot;139.69&quot;/&gt; &lt;country&gt;JP&lt;/country&gt; &lt;sun set=&quot;2016-08-15T09:30:23&quot; rise=&quot;2016-08-14T20:00:21&quot;/&gt; &lt;/city&gt; &lt;temperature unit=&quot;kelvin&quot; max=&quot;304.82&quot; min=&quot;298.71&quot; value=&quot;301.68&quot;/&gt; &lt;humidity unit=&quot;%&quot; value=&quot;85&quot;/&gt; &lt;pressure unit=&quot;hPa&quot; value=&quot;1001&quot;/&gt; &lt;wind&gt; &lt;speed name=&quot;Gentle Breeze&quot; value=&quot;3.41&quot;/&gt; &lt;gusts/&gt; &lt;direction name=&quot;South&quot; value=&quot;179.504&quot; code=&quot;S&quot;/&gt; &lt;/wind&gt; &lt;clouds name=&quot;clear sky&quot; value=&quot;8&quot;/&gt; &lt;visibility/&gt; &lt;precipitation unit=&quot;3h&quot; value=&quot;0.245&quot; mode=&quot;rain&quot;/&gt; &lt;weather value=&quot;light rain&quot; icon=&quot;10d&quot; number=&quot;500&quot;/&gt; &lt;lastupdate value=&quot;2016-08-15T07:41:15&quot;/&gt; &lt;/current&gt;  JavaでOpenWeatherMapのAPIを呼び出す RESTクライアントは色々ありますが、お手軽なApache Commonsのhttpclientとfluent-hcにします。</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/">[system development] Codeanywhereでbazelを使う</a></div>
   <pre class="summary">CodeanywhereはクラウドIDEで、sudoが許可されたターミナルを使うことができます。 Google+アカウント連携ですぐに使えます。
@@ -291,6 +339,12 @@ Codeanyhwereにbazelをインストール bazelはjdk1.8以降（jdk1.7はサポ
 cabox@box-codeanywhere:~/workspace$ java -version java version &quot;1.7.0_95&quot; OpenJDK Runtime Environment (IcedTea 2.6.4) (7u95-2.6.4-0ubuntu0.14.04.1) OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode)  Installig Bazelを参考に、以下のコマンドを打ちます。
 $ echo &quot;deb [arch=amd64] http://storage.googleapis.com/bazel-apt testing jdk1.7&quot; | sudo tee /etc/apt/sources.list.d/bazel.list $ curl https://storage.googleapis.com/bazel-apt/doc/apt-key.pub.gpg | sudo apt-key add - sudo apt-get update &amp;&amp; sudo apt-get install bazel  bazelでjavaをビルド 最低限の必要なファイルを作成します。
 cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cabox@box-codeanywhere:~/workspace$ touch hello/src/main/java/gq/weizlogy/Main.java cabox@box-codeanywhere:~/workspace$ touch hello/WORKSPACE cabox@box-codeanywhere:~/workspace$ touch hello/BUILD  hello/src/main/java/gq/weizlogy/Main.</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/">[system development] Monodevelopで埋め込みリソースを使う</a></div>
   <pre class="summary">ソリューションエクスプローラーで対象のファイルを右クリックします。
@@ -298,6 +352,12 @@ cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cab
 プログラムからのアクセスで必要なリソースIDは、デフォルトネームスペース＋ファイル名となります。 リソースIDはプロパティビューで変更可能です。
 使い方は以下の通りです。
 using (var stream = new System.IO.StreamReader(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream(&quot;[ResourceID]&quot;), true)) { ... }  </pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/step-counter-is/">[system development] ステップカウンターのあるべき姿を考察する</a></div>
   <pre class="summary">ステップカウンターとは？ LOCを計測するツールです。LOCはLines Of Codeの略で、プログラムの規模として扱います。
@@ -314,17 +374,35 @@ C言語系統のプリプロセッサーディレクティブは微妙ですが�
 ただし、&rdquo;#endif&rdquo;、&rdquo;#region&rdquo;、&rdquo;#endregion&rdquo;は非命令とし計測しません。
 C言語の#includeは、必須であることを除き、C#のusingディレクティブ同様、非命令とします。
 考察は続きます。。。</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/">[system development] ubuntu16.04でMonoDevelopを使った開発環境</a></div>
   <pre class="summary">LinuxでC#を使うための環境(mono)とIDE(MonoDevelop)をインストールします。
 まずはmonoをインストールします。
 $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF $ echo &quot;deb http://download.mono-project.com/repo/debian wheezy main&quot; | sudo tee /etc/apt/sources.list.d/mono-xamarin.list $ sudo apt-get update $ sudo apt-get install mono-complete  続いてMonoDevelopをインストールします。
 $ sudo apt-get install monodevelop  monodevelopコマンドでIDEを起動します。</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/spring-aop-test/">[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</a></div>
   <pre class="summary">Interceptor クラスの内容は以下の通りです。
 import org.aspectj.lang.ProceedingJoinPoint; import org.aspectj.lang.annotation.Around; import org.aspectj.lang.annotation.Aspect; @Aspect public class SomeInterceptor { @Around(&quot;execution(* execute(..))&quot;) public Object around(ProceedingJoinPoint pjp) { System.out.println(String.format(&quot;%s.%s start.&quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); Object value = null; try { value = pjp.proceed(); } catch (Throwable e) { e.printStackTrace(); } System.out.println(String.format(&quot;%s.%s ended.&quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); return value; } }  Test クラスの内容は以下の通りです。
 import static org.junit.Assert.*; import java.util.ArrayList; import org.junit.Test; import org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint; import org.springframework.aop.framework.ReflectiveMethodInvocation; import org.springframework.aop.interceptor.SimpleTraceInterceptor; public class SomeInterceptorTest { /** AOP の対象となるメソッドを持つクラス */ private static class AOPTarget { public String execute() { System.</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/">[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</a></div>
   <pre class="summary">img タグにサーブレットの URL を埋め込んで、画面描画時に呼び出します。 呼び出した先では画像をバイナリ形式で読み込んで画面に出力します。
@@ -332,10 +410,22 @@ import static org.junit.Assert.*; import java.util.ArrayList; import org.junit.T
 JSPでは&hellip;
 &lt;img src=&quot;xxx.do&quot; /&gt;  サーバーサイドでは&hellip;
 /** xxx.do から呼び出される Servlet */ protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { // ファイルパスはどこからか入手する String file = &quot;\\server\image\sample.jpg&quot;; if (file == null || &quot;&quot;.equals(file)) { return; } try { // 画像を読み込む byte[] image = Files.readAllBytes(Paths.get(file)); // レスポンスヘッダーを設定する response.setContentType(&quot;image/&quot; + file.substring(file.lastIndexOf(&quot;.&quot;))); response.setContentLength(image.length); // servlet specification 3.1 によると OutputStream は // Servlet 終了時にクローズされる // 従って、ここではクローズしない // むしろ、ここでクローズすると二重解放になる可能性があるのでは？ response.</pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/">[system development] JQueryUIのAutoCompleteを特定操作で強制選択する</a></div>
   <pre class="summary">本来は blur 時に強制選択したかったのですが、候補確定時に AutoComplete の対象にフォーカスが当たる挙動を回避できなかったため、エンターキーで代用です。
 var obj = $(&#39;#autocomplete&#39;); obj.on(&#39;keydown&#39;, function(e) { // エンターキー以外を無視する if (e.which !== 13) { return; } // search メソッドの結果で候補が存在する場合、 // autocompleteopen イベントが発行される // 候補が 0 件の場合は動作しない obj.on(&#39;autocompleteopen&#39;, function() { // 下矢印キーダウンイベントを作成し、候補の先頭を選択状態にする var keyDownEvent = $.Event(&#39;keydown&#39;); keyDownEvent.keyCode = $.ui.keyCode.DOWN; obj.trigger(keyDownEvent); // エンターキーダウンを作成し、選択状態の候補で確定する // →候補確定時のイベントが発火する keyDownEvent.keyCode = $.ui.keyCode.ENTER; obj.trigger(keyDownEvent); // 通常動作時は不要なイベントなので終了時に破棄しておく obj.off(&#39;autocompleteopen&#39;); }); // 現在の入力値で検索する obj.autocomplete(&#39;search&#39;); });  </pre>
+  <amp-ad type="adsense"
+    layout="fixed-height"
+    height=100
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
   
   
     
