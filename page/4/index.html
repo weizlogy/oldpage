@@ -76,7 +76,7 @@
     color: #999;
   }
   aside {
-    float: left;
+    float: right;
     max-width: 300px;
     height: 100%;
     margin-top: 10px;
@@ -294,33 +294,15 @@
 JSPでは&hellip;
 &lt;img src=&quot;xxx.do&quot; /&gt;  サーバーサイドでは&hellip;
 /** xxx.do から呼び出される Servlet */ protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { // ファイルパスはどこからか入手する String file = &quot;\\server\image\sample.jpg&quot;; if (file == null || &quot;&quot;.equals(file)) { return; } try { // 画像を読み込む byte[] image = Files.readAllBytes(Paths.get(file)); // レスポンスヘッダーを設定する response.setContentType(&quot;image/&quot; + file.substring(file.lastIndexOf(&quot;.&quot;))); response.setContentLength(image.length); // servlet specification 3.1 によると OutputStream は // Servlet 終了時にクローズされる // 従って、ここではクローズしない // むしろ、ここでクローズすると二重解放になる可能性があるのでは？ response.</pre>
-  <amp-ad type="adsense"
-    layout="fixed-height"
-    height=100
-    data-ad-client="ca-pub-3395565787038716"
-    data-ad-slot="6217845612">
-  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/">[system development] JQueryUIのAutoCompleteを特定操作で強制選択する</a></div>
   <pre class="summary">本来は blur 時に強制選択したかったのですが、候補確定時に AutoComplete の対象にフォーカスが当たる挙動を回避できなかったため、エンターキーで代用です。
 var obj = $(&#39;#autocomplete&#39;); obj.on(&#39;keydown&#39;, function(e) { // エンターキー以外を無視する if (e.which !== 13) { return; } // search メソッドの結果で候補が存在する場合、 // autocompleteopen イベントが発行される // 候補が 0 件の場合は動作しない obj.on(&#39;autocompleteopen&#39;, function() { // 下矢印キーダウンイベントを作成し、候補の先頭を選択状態にする var keyDownEvent = $.Event(&#39;keydown&#39;); keyDownEvent.keyCode = $.ui.keyCode.DOWN; obj.trigger(keyDownEvent); // エンターキーダウンを作成し、選択状態の候補で確定する // →候補確定時のイベントが発火する keyDownEvent.keyCode = $.ui.keyCode.ENTER; obj.trigger(keyDownEvent); // 通常動作時は不要なイベントなので終了時に破棄しておく obj.off(&#39;autocompleteopen&#39;); }); // 現在の入力値で検索する obj.autocomplete(&#39;search&#39;); });  </pre>
-  <amp-ad type="adsense"
-    layout="fixed-height"
-    height=100
-    data-ad-client="ca-pub-3395565787038716"
-    data-ad-slot="6217845612">
-  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/">[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</a></div>
   <pre class="summary">Windows APIのIcmp6SendEcho2()をWindows XPで呼び出すときは以下の点に注意が必要です。
 Syntax from msdn.
 DWORD Icmp6SendEcho2( __in HANDLE IcmpHandle, __in_opt HANDLE Event, __in_opt PIO_APC_ROUTINE ApcRoutine, __in_opt PVOID ApcContext, __in struct sockaddr_in6 *SourceAddress, __in struct sockaddr_in6 *DestinationAddress, __in LPVOID RequestData, __in WORD RequestSize, __in_opt PIP_OPTION_INFORMATION RequestOptions, __out LPVOID ReplyBuffer, __in DWORD ReplySize, __in DWORD Timeout );   第9引数 PIP_OPTION_INFORMATION は必須です。Vista 以降のOSで動かす場合は任意です。（NULLでもよい） 第10引数 ReplyBuffer は80byte以上の領域がないとWin32エラーコード122（システム コールに渡されるデータ領域が小さすぎます）が発生します。  IcmpSendEcho()とは設定値が微妙に異なりますね。</pre>
-  <amp-ad type="adsense"
-    layout="fixed-height"
-    height=100
-    data-ad-client="ca-pub-3395565787038716"
-    data-ad-slot="6217845612">
-  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/">[system development] BeanUtils.describe()で配列を扱いたい</a></div>
   <pre class="summary">題名の通り、BeanUtils.describe()で配列を扱いたいのです。主にStringの配列。
@@ -331,12 +313,6 @@ Stringの配列については配列の先頭を出力し、残りは切り捨�
 ただし、「commons beanUtils 1.8.0」以降は以下の回避策があります。
 BeanUtilsBean.setInstance(new BeanUtilsBean2()); ArrayConverter converter = new ArrayConverter(String[].class, new StringConverter(), 0); // OnlyFirstToStringがtrueの場合、配列の先頭だけ使用します converter.setOnlyFirstToString(false); ConvertUtils.register(converter, String[].class);  上記処理はインスタンスを共有するため、他に影響がある場合は後処理も必要です。
 ConvertUtils.deregister(String[].class); BeanUtilsBean.setInstance(new BeanUtilsBean());  Converterインターフェースを実装したクラスを作成し、ConvertUtilsにregistすると、独自の変換も可能です。</pre>
-  <amp-ad type="adsense"
-    layout="fixed-height"
-    height=100
-    data-ad-client="ca-pub-3395565787038716"
-    data-ad-slot="6217845612">
-  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a></div>
   <pre class="summary">strutsのActionFormには、「map-backed properties」「list-backed properties」という機能があります。
@@ -349,12 +325,6 @@ struts1.3.10
 java 1.6.0_18
 以下のようなFormクラスを用意します。
 import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.beanutils.LazyDynaMap; public HogeForm extends ActionForm { private LazyDynaList values = new LazyDynaList(LazyDynaMap.class); public String getValue(int index) { return values.get(index); } public void setValue(int index, Object value) { return values.set(index, value); } public List&lt;Map&lt;String, String&gt;&gt; getValues() { // LazyDynaList, LazyDynaMapのままでは扱いにくいため、より一般的な型（List, Map）に変換します。 List&lt;Map&lt;String, String&gt;&gt; convertValues = new ArrayList&lt;Map&lt;String, String&gt;&gt;(); for (Object item : values) { convertValues.</pre>
-  <amp-ad type="adsense"
-    layout="fixed-height"
-    height=100
-    data-ad-client="ca-pub-3395565787038716"
-    data-ad-slot="6217845612">
-  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">[system development] strutsのFormFileからローカルファイルの絶対パスを取得</a></div>
   <pre class="summary">strutsのFormFileからローカルファイルの絶対パスを取得したいのです。 （取得しても無意味ですが）
@@ -364,12 +334,6 @@ DiskFileItemを使用するために、「commons-fileupload.jar」が必要で�
 struts1.3.10
 java 1.6.0_18
 // formFileの実体は「org.apache.struts.upload.CommonsMultipartRequestHandler.CommonsFormFile」 Field f = formFile.getClass().getDeclaredField(&quot;fileItem&quot;); f.setAccessible(true); // fileItemは「org.apache.commons.fileupload.FileItem」を実装した「org.apache.commons.fileupload.disk.DiskFileItem」 DiskFileItem item = (DiskFileItem) f.get(formFile); System.out.println(item.getName());  </pre>
-  <amp-ad type="adsense"
-    layout="fixed-height"
-    height=100
-    data-ad-client="ca-pub-3395565787038716"
-    data-ad-slot="6217845612">
-  </amp-ad>
   
   <div><a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a></div>
   <pre class="summary">掲題の件について、検索キーワードにあがりましたので、簡単にまとめました。
@@ -379,12 +343,6 @@ System.Windows.Data Error: 4 : Cannot find source for binding with reference &ls
 xamlのStyle定義のSetterプロパティでAlignmentを定義していると出るみたいです。 定義を外すとErrorは出ません。 みたいです。というのは、何故なのか理由が分からないためです。
 以下、実際のコードの抜粋です。
 &lt;Style TargetType=&quot;{x:Type ListBoxItem}&quot;&gt; &lt;Setter Property=&quot;HorizontalContentAlignment&quot; Value=&quot;{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&quot;/&gt; &lt;Setter Property=&quot;VerticalContentAlignment&quot; Value=&quot;{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&quot;/&gt;  </pre>
-  <amp-ad type="adsense"
-    layout="fixed-height"
-    height=100
-    data-ad-client="ca-pub-3395565787038716"
-    data-ad-slot="6217845612">
-  </amp-ad>
   
   
     
@@ -423,6 +381,13 @@ xamlのStyle定義のSetterプロパティでAlignmentを定義していると�
     </ul>
     
   </section>
+  <amp-ad type="adsense"
+    layout="responsive"
+    width=300
+    height=250
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
 </div>
 
 <footer>
