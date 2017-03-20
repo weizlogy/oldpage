@@ -19,7 +19,7 @@
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/v1.0.0/dpsmeter.ipf&#34;&gt;[v1.0.0] dpsmeter.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/v1.1.0/dpsmeter.ipf&#34;&gt;[v1.1.0] dpsmeter.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -30,6 +30,17 @@
 &lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
 
 &lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
+
+&lt;p&gt;現在のDPS、最大DPSをモンスターUI近辺に、以下のフォーマット表示します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[現在のDPS]([最大DPS]) dps
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;モンスター死亡時、最大DPSをsystemメッセージで表示します。&lt;/p&gt;
+
+&lt;p&gt;ターゲットアイコン表示が可能な距離まで近づくとDPS計測を開始、離れると停止します。&lt;/p&gt;
 
 &lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
 
@@ -44,7 +55,6 @@
 &lt;ul&gt;
 &lt;li&gt;ソロで戦う。（コンパニオンも出さない）&lt;/li&gt;
 &lt;li&gt;混戦しない。&lt;/li&gt;
-&lt;li&gt;ターゲットを戦闘終了まで維持する。&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
