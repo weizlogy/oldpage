@@ -10,6 +10,46 @@
     <atom:link href="http://www.weizlogy.gq/categories/tos-addon/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>[tree of savior addon] DPS計測アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/dpsmeter/</link>
+      <pubDate>Mon, 20 Mar 2017 08:41:36 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/dpsmeter/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/v1.0.0/dpsmeter.ipf&#34;&gt;[v1.0.0] dpsmeter.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされるとDPS計測が有効になり、計測結果はsystemメッセージで通知します。&lt;/p&gt;
+
+&lt;p&gt;現時点ではコンバットログが取れないので、正確な測定は実現できていません。&lt;/p&gt;
+
+&lt;p&gt;少しでも測定精度を上げたい場合は、以下の点に注意してください。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ソロで戦う。（コンパニオンも出さない）&lt;/li&gt;
+&lt;li&gt;混戦しない。&lt;/li&gt;
+&lt;li&gt;ターゲットを戦闘終了まで維持する。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>[tree of savior addon] 装備修理時、装備アイコンに耐久度（％）を色分け表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/repairendur/</link>
       <pubDate>Thu, 09 Mar 2017 05:55:00 +0900</pubDate>

@@ -7,8 +7,48 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Thu, 09 Mar 2017 05:55:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 20 Mar 2017 08:41:36 +0900</lastBuildDate>
     <atom:link href="http://www.weizlogy.gq/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>[tree of savior addon] DPS計測アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/dpsmeter/</link>
+      <pubDate>Mon, 20 Mar 2017 08:41:36 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/dpsmeter/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/v1.0.0/dpsmeter.ipf&#34;&gt;[v1.0.0] dpsmeter.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされるとDPS計測が有効になり、計測結果はsystemメッセージで通知します。&lt;/p&gt;
+
+&lt;p&gt;現時点ではコンバットログが取れないので、正確な測定は実現できていません。&lt;/p&gt;
+
+&lt;p&gt;少しでも測定精度を上げたい場合は、以下の点に注意してください。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ソロで戦う。（コンパニオンも出さない）&lt;/li&gt;
+&lt;li&gt;混戦しない。&lt;/li&gt;
+&lt;li&gt;ターゲットを戦闘終了まで維持する。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] 装備修理時、装備アイコンに耐久度（％）を色分け表示するアドオン</title>
@@ -906,58 +946,6 @@ test2.cs,0,5
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon for developpers] iesファイルをcsv形式のファイルに変換するソフト</title>
-      <link>http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/</link>
-      <pubDate>Sat, 31 Dec 2016 15:42:00 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/</guid>
-      <description>
-
-&lt;h2 id=&#34;overviews&#34;&gt;overviews.&lt;/h2&gt;
-
-&lt;p&gt;Tree Of Saviorのipfファイル内には拡張子がiesのファイルがあります。&lt;/p&gt;
-
-&lt;p&gt;Ipf Suiteでは中身を見ることができますが、extractしても実体はバイナリファイル（かつ、暗号化されている）で、
-テキストエディタでもバイナリエディタでも見ても分かりません。&lt;/p&gt;
-
-&lt;p&gt;もちろん、grep検索で引き当てることもできません。&lt;/p&gt;
-
-&lt;p&gt;本ソフトは、iesファイルを解析し、可読性のあるcsvファイルを生成します。&lt;/p&gt;
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/61977sy5a2b1nwl/IEStoCSV.zip?dl=0&#34;&gt;IEStoCSV.zip&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;ダウンロードしたzipを解凍し、任意の場所に配置します。&lt;/p&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;p&gt;コンソールアプリケーションなので、コマンドプロンプトで操作します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;IEStoCSV.exe &amp;lt;走査ディレクトリ&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;サブフォルダを含む走査ディレクトリ配下のiesファイルに対して、対となるcsv形式のファイルを生成します。&lt;/p&gt;
-
-&lt;p&gt;走査ディレクトリ省略時は、本ソフトのある位置を対象とします。&lt;/p&gt;
-
-&lt;h2 id=&#34;caution&#34;&gt;caution.&lt;/h2&gt;
-
-&lt;p&gt;iesファイル内に韓国語が含まれるので、Excelでは文字化けします。（ExcelはShiftJISですが、生成するcsvはUTF8なので）&lt;/p&gt;
-
-&lt;p&gt;本当は英訳を載せたいのですが、完全無料の翻訳APIがないもので。。。 需要があれば何とかしようと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;acknowledgment&#34;&gt;acknowledgment.&lt;/h2&gt;
-
-&lt;p&gt;iesファイルフォーマットは、以下のソースコードを参考にさせて頂きました。 ありがとうございます。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/r1emu/IPFUnpacker/blob/master&#34;&gt;https://github.com/r1emu/IPFUnpacker/blob/master&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

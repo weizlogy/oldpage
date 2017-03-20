@@ -180,6 +180,35 @@
 </style>
 
 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org"
+  "@type": "BlogPosting",
+  "headline": "Weizlogy",
+  "url": "http://www.weizlogy.gq/",
+  "datePublished": "2014-05-02 12:58:00.001 &#43;0900 JST",
+  "author": {
+    "@type": "Person",
+    "name": "weizlogy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Weiβlogy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.weizlogy.gq//favicon.ico"
+    }
+  },
+  "dateModified": "2014-05-02 12:58:00.001 &#43;0900 JST",
+  "mainEntityOfPage": "1",
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://www.weizlogy.gq//dummy.png",
+    "width": "100",
+    "height": "100"
+  }
+}
+</script>
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -212,7 +241,7 @@
   
   <div><a href="/categories/system-dev">system-dev</a> (15)</div>
   
-  <div><a href="/categories/tos-addon">tos-addon</a> (12)</div>
+  <div><a href="/categories/tos-addon">tos-addon</a> (13)</div>
   
   <div><a href="/categories/tos-addon-dev">tos-addon-dev</a> (4)</div>
   
@@ -261,6 +290,11 @@
 <div class="main">
   <section>
   
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/spring-aop-test/">[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</a></div>
+  <pre class="summary">Interceptor クラスの内容は以下の通りです。
+import org.aspectj.lang.ProceedingJoinPoint; import org.aspectj.lang.annotation.Around; import org.aspectj.lang.annotation.Aspect; @Aspect public class SomeInterceptor { @Around(&quot;execution(* execute(..))&quot;) public Object around(ProceedingJoinPoint pjp) { System.out.println(String.format(&quot;%s.%s start.&quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); Object value = null; try { value = pjp.proceed(); } catch (Throwable e) { e.printStackTrace(); } System.out.println(String.format(&quot;%s.%s ended.&quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); return value; } }  Test クラスの内容は以下の通りです。
+import static org.junit.Assert.*; import java.util.ArrayList; import org.junit.Test; import org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint; import org.springframework.aop.framework.ReflectiveMethodInvocation; import org.springframework.aop.interceptor.SimpleTraceInterceptor; public class SomeInterceptorTest { /** AOP の対象となるメソッドを持つクラス */ private static class AOPTarget { public String execute() { System.</pre>
   
   <div><a href="http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/">[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</a></div>
   <pre class="summary">img タグにサーブレットの URL を埋め込んで、画面描画時に呼び出します。 呼び出した先では画像をバイナリ形式で読み込んで画面に出力します。

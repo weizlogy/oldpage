@@ -2,11 +2,11 @@
 <html ⚡>
 <head>
 <meta charset="utf-8">
-<link rel="canonical" href="http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/">
+<link rel="canonical" href="http://www.weizlogy.gq/tos/addon/dpsmeter/">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <title>
 
-  [system development] Monodevelopで埋め込みリソースを使う &ndash; Weizlogy
+  [tree of savior addon] DPS計測アドオン &ndash; Weizlogy
 
 </title>
 
@@ -184,9 +184,9 @@
 {
   "@context": "http://schema.org"
   "@type": "BlogPosting",
-  "headline": "[system development] Monodevelopで埋め込みリソースを使う",
-  "url": "http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/",
-  "datePublished": "2016-07-31 16:11:00 &#43;0900 JST",
+  "headline": "[tree of savior addon] DPS計測アドオン",
+  "url": "http://www.weizlogy.gq/tos/addon/dpsmeter/",
+  "datePublished": "2017-03-20 08:41:36 &#43;0900 JST",
   "author": {
     "@type": "Person",
     "name": "weizlogy"
@@ -199,7 +199,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2016-07-31 16:11:00 &#43;0900 JST",
+  "dateModified": "2017-03-20 08:41:36 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -237,20 +237,39 @@
 <div>
 <article>
 
- <h1><a href="http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/">[system development] Monodevelopで埋め込みリソースを使う</a></h1>
+ <h1><a href="http://www.weizlogy.gq/tos/addon/dpsmeter/">[tree of savior addon] DPS計測アドオン</a></h1>
  <div>
-  <p>ソリューションエクスプローラーで対象のファイルを右クリックします。</p>
+  
 
-<p>「ビルドアクション &gt; EmbeddedResource」を選択します。以上です。</p>
+<h2 id="download">download.</h2>
 
-<p>プログラムからのアクセスで必要なリソースIDは、デフォルトネームスペース＋ファイル名となります。
-リソースIDはプロパティビューで変更可能です。</p>
+<p><a href="https://github.com/weizlogy/tos/releases/download/v1.0.0/dpsmeter.ipf">[v1.0.0] dpsmeter.ipf</a></p>
 
-<p>使い方は以下の通りです。</p>
-<div class="highlight"><pre><code class="language-C#" data-lang="C#"><span></span><span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">stream</span> <span class="p">=</span> <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">IO</span><span class="p">.</span><span class="n">StreamReader</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">Reflection</span><span class="p">.</span><span class="n">Assembly</span><span class="p">.</span><span class="n">GetExecutingAssembly</span><span class="p">().</span><span class="n">GetManifestResourceStream</span><span class="p">(</span><span class="s">&quot;[ResourceID]&quot;</span><span class="p">),</span> <span class="k">true</span><span class="p">))</span> <span class="p">{</span>
-    <span class="p">...</span>
-<span class="p">}</span>
-</code></pre></div>
+<h2 id="install">install.</h2>
+
+<p><a href="https://github.com/weizlogy/tos/blob/master/README.md">README.md</a></p>
+
+<h2 id="introduction">introduction.</h2>
+
+<h2 id="settings">settings.</h2>
+
+<h2 id="descriptions">descriptions.</h2>
+
+<h3 id="v1-0-0">v1.0.0</h3>
+
+<p>新規作成。</p>
+
+<p>アドオンがロードされるとDPS計測が有効になり、計測結果はsystemメッセージで通知します。</p>
+
+<p>現時点ではコンバットログが取れないので、正確な測定は実現できていません。</p>
+
+<p>少しでも測定精度を上げたい場合は、以下の点に注意してください。</p>
+
+<ul>
+<li>ソロで戦う。（コンパニオンも出さない）</li>
+<li>混戦しない。</li>
+<li>ターゲットを戦闘終了まで維持する。</li>
+</ul>
 
  </div>
 
