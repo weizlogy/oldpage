@@ -2,11 +2,11 @@
 <html ⚡>
 <head>
 <meta charset="utf-8">
-<link rel="canonical" href="http://www.weizlogy.gq/tos/addon/dpsmeter/">
+<link rel="canonical" href="http://www.weizlogy.gq/tos/addon/savequest/">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <title>
 
-  [tree of savior addon] DPS計測アドオン &ndash; Weizlogy
+  [tree of savior addon] ワープ用クエスト誤完了防止アドオン &ndash; Weizlogy
 
 </title>
 
@@ -184,9 +184,9 @@
 {
   "@context": "http://schema.org"
   "@type": "BlogPosting",
-  "headline": "[tree of savior addon] DPS計測アドオン",
-  "url": "http://www.weizlogy.gq/tos/addon/dpsmeter/",
-  "datePublished": "2017-03-20 08:41:36 &#43;0900 JST",
+  "headline": "[tree of savior addon] ワープ用クエスト誤完了防止アドオン",
+  "url": "http://www.weizlogy.gq/tos/addon/savequest/",
+  "datePublished": "2017-03-24 05:28:54 &#43;0900 JST",
   "author": {
     "@type": "Person",
     "name": "weizlogy"
@@ -199,7 +199,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-20 08:41:36 &#43;0900 JST",
+  "dateModified": "2017-03-24 05:28:54 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -237,13 +237,13 @@
 <div>
 <article>
 
- <h1><a href="http://www.weizlogy.gq/tos/addon/dpsmeter/">[tree of savior addon] DPS計測アドオン</a></h1>
+ <h1><a href="http://www.weizlogy.gq/tos/addon/savequest/">[tree of savior addon] ワープ用クエスト誤完了防止アドオン</a></h1>
  <div>
   
 
 <h2 id="download">download.</h2>
 
-<p><a href="https://github.com/weizlogy/tos/releases/download/dpsmeter-v1.1.0/dpsmeter.ipf">[v1.1.0] dpsmeter.ipf</a></p>
+<p><a href="https://github.com/weizlogy/tos/releases/download/savequest-v1.0.0/savequest.ipf">[v1.0.0]savequest.ipf</a></p>
 
 <h2 id="install">install.</h2>
 
@@ -253,33 +253,38 @@
 
 <h2 id="settings">settings.</h2>
 
+<p>Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。</p>
+
+<h3 id="explanation">explanation.</h3>
+
+<p>savequestフォルダーにはquests.txtが自動的に生成され、
+アドオンで使用する情報をログアウト後も保持するために使用します。</p>
+
 <h2 id="descriptions">descriptions.</h2>
-
-<h3 id="v1-1-0">v1.1.0</h3>
-
-<p>現在のDPS、最大DPSをモンスターUI近辺に、以下のフォーマット表示します。</p>
-
-<pre><code>[現在のDPS]([最大DPS]) dps
-</code></pre>
-
-<p>モンスター死亡時、最大DPSをsystemメッセージで表示します。</p>
-
-<p>ターゲットアイコン表示が可能な距離まで近づくとDPS計測を開始、離れると停止します。</p>
 
 <h3 id="v1-0-0">v1.0.0</h3>
 
 <p>新規作成。</p>
 
-<p>アドオンがロードされるとDPS計測が有効になり、計測結果はsystemメッセージで通知します。</p>
+<p>アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、
+ワープ直後の誤完了を防止できます。</p>
 
-<p>現時点ではコンバットログが取れないので、正確な測定は実現できていません。</p>
+<h2 id="usage">usage.</h2>
 
-<p>少しでも測定精度を上げたい場合は、以下の点に注意してください。</p>
+<p>UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、
+メニュー（save, release, cancel）が開きます。</p>
 
-<ul>
-<li>ソロで戦う。（コンパニオンも出さない）</li>
-<li>混戦しない。</li>
-</ul>
+<p>saveを選択すると該当クエストのNPCは非表示となります。
+また、save済みのクエストのワープアイコン直下に[saved.]の文字を表示します。</p>
+
+<p>元に戻すにはreleaseを選択します。</p>
+
+<h2 id="cautions">cautions.</h2>
+
+<p>念のため、アドオンは補助的な位置づけとし、
+ワープ直後はNPCを選択しないよう留意してください。</p>
+
+<p>一時消去したNPCは、release後、エリアチェンジで表示できます。</p>
 
  </div>
 

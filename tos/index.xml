@@ -7,8 +7,63 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Mon, 20 Mar 2017 08:41:36 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 24 Mar 2017 05:28:54 +0900</lastBuildDate>
     <atom:link href="http://www.weizlogy.gq/tos/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>[tree of savior addon] ワープ用クエスト誤完了防止アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/savequest/</link>
+      <pubDate>Fri, 24 Mar 2017 05:28:54 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/savequest/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/savequest-v1.0.0/savequest.ipf&#34;&gt;[v1.0.0]savequest.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;p&gt;Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。&lt;/p&gt;
+
+&lt;h3 id=&#34;explanation&#34;&gt;explanation.&lt;/h3&gt;
+
+&lt;p&gt;savequestフォルダーにはquests.txtが自動的に生成され、
+アドオンで使用する情報をログアウト後も保持するために使用します。&lt;/p&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、
+ワープ直後の誤完了を防止できます。&lt;/p&gt;
+
+&lt;h2 id=&#34;usage&#34;&gt;usage.&lt;/h2&gt;
+
+&lt;p&gt;UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、
+メニュー（save, release, cancel）が開きます。&lt;/p&gt;
+
+&lt;p&gt;saveを選択すると該当クエストのNPCは非表示となります。
+また、save済みのクエストのワープアイコン直下に[saved.]の文字を表示します。&lt;/p&gt;
+
+&lt;p&gt;元に戻すにはreleaseを選択します。&lt;/p&gt;
+
+&lt;h2 id=&#34;cautions&#34;&gt;cautions.&lt;/h2&gt;
+
+&lt;p&gt;念のため、アドオンは補助的な位置づけとし、
+ワープ直後はNPCを選択しないよう留意してください。&lt;/p&gt;
+
+&lt;p&gt;一時消去したNPCは、release後、エリアチェンジで表示できます。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] DPS計測アドオン</title>
@@ -20,7 +75,7 @@
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/v1.1.0/dpsmeter.ipf&#34;&gt;[v1.1.0] dpsmeter.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/dpsmeter-v1.1.0/dpsmeter.ipf&#34;&gt;[v1.1.0] dpsmeter.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -901,48 +956,6 @@
 
 &lt;p&gt;アドオンがロードされると[Console]ボタンが表示されます。ボタンを押すと抽出を開始します。 Nexon\TreeofSaviorJP\data\console.txt に抽出結果が出力されます。
 実際の抽出結果は&lt;a href=&#34;http://www.weizlogy.gq/2016/09/tree-of-savior-lua.html&#34;&gt;別記事&lt;/a&gt;にあります。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/distance/</link>
-      <pubDate>Sun, 13 Nov 2016 18:00:00 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/distance/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/c8v4g9tdi4iqpgb/distance.ipf?dl=0&#34;&gt;[v1.1.0]distance.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;amp-youtube data-videoid=&#34;IUtCzMMKbXU&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
-
-&lt;p&gt;メートル単位対応しました。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると近隣（20m範囲内）モンスターに自キャラからの距離がメートル単位で表示されます。&lt;/p&gt;
-
-&lt;p&gt;距離が12mを超えると、表示が消えます。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると近隣（500範囲内）モンスターに自キャラからの距離が表示されます。&lt;/p&gt;
-
-&lt;p&gt;単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。&lt;/p&gt;
 </description>
     </item>
     

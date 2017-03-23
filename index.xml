@@ -7,8 +7,63 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Mon, 20 Mar 2017 08:41:36 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 24 Mar 2017 05:28:54 +0900</lastBuildDate>
     <atom:link href="http://www.weizlogy.gq/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>[tree of savior addon] ワープ用クエスト誤完了防止アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/savequest/</link>
+      <pubDate>Fri, 24 Mar 2017 05:28:54 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/savequest/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/savequest-v1.0.0/savequest.ipf&#34;&gt;[v1.0.0]savequest.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;p&gt;Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。&lt;/p&gt;
+
+&lt;h3 id=&#34;explanation&#34;&gt;explanation.&lt;/h3&gt;
+
+&lt;p&gt;savequestフォルダーにはquests.txtが自動的に生成され、
+アドオンで使用する情報をログアウト後も保持するために使用します。&lt;/p&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、
+ワープ直後の誤完了を防止できます。&lt;/p&gt;
+
+&lt;h2 id=&#34;usage&#34;&gt;usage.&lt;/h2&gt;
+
+&lt;p&gt;UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、
+メニュー（save, release, cancel）が開きます。&lt;/p&gt;
+
+&lt;p&gt;saveを選択すると該当クエストのNPCは非表示となります。
+また、save済みのクエストのワープアイコン直下に[saved.]の文字を表示します。&lt;/p&gt;
+
+&lt;p&gt;元に戻すにはreleaseを選択します。&lt;/p&gt;
+
+&lt;h2 id=&#34;cautions&#34;&gt;cautions.&lt;/h2&gt;
+
+&lt;p&gt;念のため、アドオンは補助的な位置づけとし、
+ワープ直後はNPCを選択しないよう留意してください。&lt;/p&gt;
+
+&lt;p&gt;一時消去したNPCは、release後、エリアチェンジで表示できます。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] DPS計測アドオン</title>
@@ -20,7 +75,7 @@
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/v1.1.0/dpsmeter.ipf&#34;&gt;[v1.1.0] dpsmeter.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/dpsmeter-v1.1.0/dpsmeter.ipf&#34;&gt;[v1.1.0] dpsmeter.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -721,241 +776,6 @@ test2.cs,0,5
 &lt;p&gt;実際に存在するCipherSuiteの一覧は、RFC5426によるとIANA管理とのことで、下記URLがマスターです。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4&#34;&gt;http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon for developpers] iesファイルフォーマット解説</title>
-      <link>http://www.weizlogy.gq/tos/addon-dev/ies-format/</link>
-      <pubDate>Sat, 31 Dec 2016 17:29:00 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon-dev/ies-format/</guid>
-      <description>
-
-&lt;p&gt;???は可変長です。&lt;/p&gt;
-
-&lt;h2 id=&#34;total-block&#34;&gt;Total block&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt; ------------------- ---------------------------- -------------------------
-| Header [156 byte] | Cell Header [136 x N byte] | Row Data [??? x M byte] |
- ------------------- ---------------------------- -------------------------
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;N=列数。は、Header blockのCellCountで指定。 M=行数。は、Header blockのRowCountで指定。&lt;/p&gt;
-
-&lt;h2 id=&#34;header-block&#34;&gt;Header block&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt; ---------------------- ------------------- ------------------------
-| TableName [128 byte] | Reserve1 [4 byte] | OffsetOfData [4 byte]  |
- ---------------------- ------------------- ------------------------
- --------------------------- ------------------- -------------------
-| OffsetOfResource [4 byte] | FileSize [4 byte] | Reserve2 [4 byte] |
- --------------------------- ------------------- -------------------
- ------------------- -------------------- --------------------------
-| RowCount [2 byte] | CellCount [2 byte] | NumCellCount [2 byte]    |
- ------------------- -------------------- --------------------------
- ----------------------- -------------------------------------------
-| StrCellCount [2 byte] | Reserve3 [2 byte] | --------------------- |
- ----------------------- -------------------------------------------
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;TableName&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;IESテーブル名&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Reserve1&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;予約1&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;OffsetOfData&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Cell Header blockのサイズ&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;OffsetOfResource&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Row Data blockのサイズ&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;FileSize&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;IESファイルサイズ&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Reserve2&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;予約2&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;RowCount&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;行数&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;CellCount&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;列数&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;NumCellCount&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;数値列数&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;StrCellCount&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;文字列列数&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Reserve3&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;予約3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&#34;cell-header-block&#34;&gt;Cell Header block&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt; ---------------- ------------------- ----------------------
-| Name [64 byte] | Name2 [64 byte] | Type [2 byte] | ------ |
- ---------------- ------------------- ----------------------
- ------------------- ------------------- -------------------
-| Reserve1 [2 byte] | Reserve2 [4 byte] | Position [2 byte] |
- ------------------- ------------------- -------------------
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Name&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Cell名&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Name2&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Cell別名&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Type&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;0：数値Cell、1,2：文字列Cell&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Reserve1&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;予約1&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Reserve2&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;予約2&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Position&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Type内Cell順序&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Cell順は、Type昇順、Position昇順。&lt;/p&gt;
-
-&lt;h2 id=&#34;row-data-block&#34;&gt;Row Data block&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt; ------------------- ---------------------- --------------------
-| Option [??? byte] | Cell Data [??? byte] | Padding [??? byte] |
- ------------------- ---------------------- --------------------
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Paddingは、文字列Cellの数だけ0x00が付与される。&lt;/p&gt;
-
-&lt;h3 id=&#34;option-block&#34;&gt;Option block&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt; ------------------- --------------- -----------------
-| Reserve1 [4 byte] | Size [2 byte] | Name [??? byte] |
- ------------------- --------------- -----------------
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Reserve1&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;予約1&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Size&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Nameのバイト長&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Name&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Cellオプション名&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&#34;cell-data-block&#34;&gt;Cell Data block&lt;/h3&gt;
-
-&lt;p&gt;数値Cellの場合：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; ----------------
-| Value [4 byte] |
- ----------------
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;文字列Cellの場合：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; --------------- ------------------
-| Size [2 byte] | Value [??? byte] |
- --------------- ------------------
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Size&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Nameのバイト長&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Name&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;列データ&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
 </description>
     </item>
     
