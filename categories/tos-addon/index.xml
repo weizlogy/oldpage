@@ -19,7 +19,7 @@
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/savequest-v1.0.0/savequest.ipf&#34;&gt;[v1.0.0]savequest.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/savequest-v1.0.1/savequest.ipf&#34;&gt;[v1.0.1]savequest.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -37,6 +37,12 @@
 アドオンで使用する情報をログアウト後も保持するために使用します。&lt;/p&gt;
 
 &lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
+
+&lt;p&gt;再ログイン時に前回の状態が保存されない問題を修正しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/issues/1&#34;&gt;issue #1&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
 
