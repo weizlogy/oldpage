@@ -243,7 +243,7 @@
 
 <h2 id="download">download.</h2>
 
-<p><a href="https://www.dropbox.com/s/tqffyh7j2dmgs4k/repairendur.ipf?dl=0">[v1.0.1]repairendur.ipf</a></p>
+<p><a href="https://github.com/weizlogy/tos/releases/download/repairendur-v1.1.0/repairendur.ipf">[v1.1.0]repairendur.ipf</a></p>
 
 <h2 id="install">install.</h2>
 
@@ -259,7 +259,7 @@
 
 <p>Nexon\TreeofSaviorJP\addons\repairendur\settings.txt を作成します。</p>
 
-<p>以下の初期設定をsettings.txtコピペします。</p>
+<p>以下の初期設定を<a href="https://github.com/weizlogy/tos/blob/master/repairendur/settings.txt">settings.txt</a>コピペします。</p>
 <div class="highlight"><pre><code class="language-lua" data-lang="lua"><span></span><span class="n">reen</span><span class="p">.</span><span class="n">Weapon</span> <span class="o">=</span> <span class="p">{</span>
   <span class="n">Lp</span> <span class="o">=</span> <span class="mi">30</span><span class="p">,</span>
   <span class="n">Mp</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
@@ -270,6 +270,7 @@
   <span class="n">Mp</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
   <span class="n">Hp</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="p">};</span>
+<span class="n">reen</span><span class="p">.</span><span class="n">SubWeapon</span> <span class="o">=</span> <span class="n">reen</span><span class="p">.</span><span class="n">Weapon</span><span class="p">;</span> <span class="c1">-- added v1.1.0</span>
 <span class="n">reen</span><span class="p">.</span><span class="n">EndurColor</span> <span class="o">=</span> <span class="p">{</span>
   <span class="n">Lc</span> <span class="o">=</span> <span class="s2">&quot;FFFF00&quot;</span><span class="p">,</span>
   <span class="n">Mc</span> <span class="o">=</span> <span class="s2">&quot;FF0000&quot;</span><span class="p">,</span>
@@ -303,7 +304,21 @@
 <li>耐久度[5]%以下で[黒]色</li>
 </ul>
 
+<p>サブウェポン</p>
+
+<ul>
+<li>武器と同様</li>
+</ul>
+
 <h2 id="descriptions">descriptions.</h2>
+
+<h3 id="v1-1-0">v1.1.0</h3>
+
+<p>サブウェポン用の設定を追加しました。</p>
+
+<p><a href="https://github.com/weizlogy/tos/issues/2">issue #2</a></p>
+
+<p>初期値は武器の設定値を見るようにしています。</p>
 
 <h3 id="v1-0-1">v1.0.1</h3>
 
