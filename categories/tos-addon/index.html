@@ -179,35 +179,6 @@
 </style>
 
 
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org"
-  "@type": "BlogPosting",
-  "headline": "Tos Addon",
-  "url": "http://www.weizlogy.gq/categories/tos-addon/",
-  "datePublished": "2017-03-26 18:41:05.1360675 &#43;0900 JST",
-  "author": {
-    "@type": "Person",
-    "name": "weizlogy"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Weiβlogy",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "http://www.weizlogy.gq//favicon.ico"
-    }
-  },
-  "dateModified": "2017-03-26 18:41:05.1360675 &#43;0900 JST",
-  "mainEntityOfPage": "1",
-  "image": {
-    "@type": "ImageObject",
-    "url": "http://www.weizlogy.gq//dummy.png",
-    "width": "100",
-    "height": "100"
-  }
-}
-</script>
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -252,6 +223,9 @@
   
   <strong>Last modified.</strong>
   
+    <div><a href="http://www.weizlogy.gq/tos/addon/dpsmeter/">[tree of savior addon] DPS計測アドオン</a></div>
+    <div>@2017-03-27 05:55:38.7895724 &#43;0900 JST</div>
+  
     <div><a href="http://www.weizlogy.gq/tos/addon/monsterstatus/">[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</a></div>
     <div>@2017-03-26 18:41:05.1360675 &#43;0900 JST</div>
   
@@ -279,9 +253,6 @@
     <div><a href="http://www.weizlogy.gq/tos/addon/fly/">[tree of savior addon] 飛行アドオン</a></div>
     <div>@2017-03-26 15:40:05.3629615 &#43;0900 JST</div>
   
-    <div><a href="http://www.weizlogy.gq/tos/addon/dpsmeter/">[tree of savior addon] DPS計測アドオン</a></div>
-    <div>@2017-03-26 15:40:00.9711734 &#43;0900 JST</div>
-  
   
 </div>
 </aside>
@@ -289,6 +260,24 @@
 <div class="main">
   <section>
   
+  
+  <div><a href="http://www.weizlogy.gq/tos/addon/dpsmeter/">[tree of savior addon] DPS計測アドオン</a></div>
+  <pre class="summary"> download. [v1.2.0] dpsmeter.ipf
+install. README.md
+introduction. settings. descriptions. v1.2.0 DPS計測方法を調整。
+ターゲットアイコン表示が可能な距離まで近づいて、初撃時（を含む。初撃はdamage/1sec換算）からDPS計測を開始します。
+ターゲットが死ぬかフレームアウトするまで計測は止まりません。
+DPS計測対象を調整。
+旧バージョンではfaction = &ldquo;Monster&rdquo;を計測対象としていましたが不十分でしたので、 計測対象を拡大し、ペット以外（faction ~= &ldquo;Pet&rdquo;）としました。
+IWやルーツクリスタルも対象となってしまいますが、計測されないよりは良いかと。。。
+v1.1.0 現在のDPS、最大DPSをモンスターUI近辺に、以下のフォーマット表示します。
+[現在のDPS]([最大DPS]) dps  モンスター死亡時、最大DPSをsystemメッセージで表示します。
+ターゲットアイコン表示が可能な距離まで近づくとDPS計測を開始、離れると停止します。
+v1.0.0 新規作成。
+アドオンがロードされるとDPS計測が有効になり、計測結果はsystemメッセージで通知します。
+現時点ではコンバットログが取れないので、正確な測定は実現できていません。
+少しでも測定精度を上げたい場合は、以下の点に注意してください。
+ ソロで戦う。（コンパニオンも出さない） 混戦しない。  </pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/monsterstatus/">[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</a></div>
   <pre class="summary"> download. [v2.0.0]monsterstatus.ipf
@@ -392,18 +381,6 @@ v1.0.0 新規作成。
 飛行状態でも地上の敵を攻撃できます。 飛行状態では地上の敵はこちらを近接攻撃できません。
 実際は地上を歩行しているのでトラップには気をつけてください。
 飛行状態ではスキルが使用不可ですが、ノックバックを受けるとスキルが使用可能になりますので、 わざとノックバックするようになっています。</pre>
-  
-  <div><a href="http://www.weizlogy.gq/tos/addon/dpsmeter/">[tree of savior addon] DPS計測アドオン</a></div>
-  <pre class="summary"> download. [v1.1.0] dpsmeter.ipf
-install. README.md
-introduction. settings. descriptions. v1.1.0 現在のDPS、最大DPSをモンスターUI近辺に、以下のフォーマット表示します。
-[現在のDPS]([最大DPS]) dps  モンスター死亡時、最大DPSをsystemメッセージで表示します。
-ターゲットアイコン表示が可能な距離まで近づくとDPS計測を開始、離れると停止します。
-v1.0.0 新規作成。
-アドオンがロードされるとDPS計測が有効になり、計測結果はsystemメッセージで通知します。
-現時点ではコンバットログが取れないので、正確な測定は実現できていません。
-少しでも測定精度を上げたい場合は、以下の点に注意してください。
- ソロで戦う。（コンパニオンも出さない） 混戦しない。  </pre>
   
   
     

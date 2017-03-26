@@ -179,35 +179,6 @@
 </style>
 
 
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org"
-  "@type": "BlogPosting",
-  "headline": "System Dev",
-  "url": "http://www.weizlogy.gq/categories/system-dev/",
-  "datePublished": "2017-03-26 15:42:59.7164615 &#43;0900 JST",
-  "author": {
-    "@type": "Person",
-    "name": "weizlogy"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Weiβlogy",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "http://www.weizlogy.gq//favicon.ico"
-    }
-  },
-  "dateModified": "2017-03-26 15:42:59.7164615 &#43;0900 JST",
-  "mainEntityOfPage": "1",
-  "image": {
-    "@type": "ImageObject",
-    "url": "http://www.weizlogy.gq//dummy.png",
-    "width": "100",
-    "height": "100"
-  }
-}
-</script>
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -252,6 +223,9 @@
   
   <strong>Last modified.</strong>
   
+    <div><a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a></div>
+    <div>@2017-03-27 03:37:14.6766437 &#43;0900 JST</div>
+  
     <div><a href="http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/">[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</a></div>
     <div>@2017-03-26 15:42:59.7164615 &#43;0900 JST</div>
   
@@ -279,9 +253,6 @@
     <div><a href="http://www.weizlogy.gq/system/dev/openweathermap-with-java-bazel/">[system development] Codeaywhere&#43;Java&#43;bazelでOpenWeatherMapのAPIを使用し現在の気象情報を取得する</a></div>
     <div>@2017-03-26 15:42:27.9532414 &#43;0900 JST</div>
   
-    <div><a href="http://www.weizlogy.gq/system/dev/spring-aop-test/">[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</a></div>
-    <div>@2017-03-26 15:42:24.4434868 &#43;0900 JST</div>
-  
   
 </div>
 </aside>
@@ -289,6 +260,18 @@
 <div class="main">
   <section>
   
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a></div>
+  <pre class="summary">strutsのActionFormには、「map-backed properties」「list-backed properties」という機能があります。
+ActionFormにMapやListのフィールドと適切なアクセサーメソッドを用意することで、JSP-Servlet間のデータ送受信が動的に行われる仕組みです。
+Formのフィールドをいくつも用意しなくていいところが、とても便利です。
+基本的な使い方は、下記公式リンクが分かりやすくなっています。
+http://struts.apache.org/1.x/userGuide/building_controller.html#map_action_form_classes
+今回の趣旨は、「map-backed properties」「list-backed properties」を併用することです。 検索結果等JSPで動的に一覧表示した複数のForm値を、簡単にActionで受け取ることができます。
+struts1.3.10
+java 1.6.0_18
+以下のようなFormクラスを用意します。
+import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.beanutils.LazyDynaMap; public HogeForm extends ActionForm { private LazyDynaList values = new LazyDynaList(LazyDynaMap.class); public String getValue(int index) { return values.get(index); } public void setValue(int index, Object value) { return values.set(index, value); } public List&lt;Map&lt;String, String&gt;&gt; getValues() { // LazyDynaList, LazyDynaMapのままでは扱いにくいため、より一般的な型（List, Map）に変換します。 List&lt;Map&lt;String, String&gt;&gt; convertValues = new ArrayList&lt;Map&lt;String, String&gt;&gt;(); for (Object item : values) { convertValues.</pre>
   
   <div><a href="http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/">[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</a></div>
   <pre class="summary">Windows APIのIcmp6SendEcho2()をWindows XPで呼び出すときは以下の点に注意が必要です。
@@ -349,11 +332,6 @@ $ sudo apt-get install monodevelop  monodevelopコマンドでIDEを起動しま
 http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;APPID={Your API Key}  JSON形式ではJavaで扱いにくいので、&rdquo;mode=xml&rdquo;パラメータでXML形式にします。
 http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;mode=xml&amp;APPID={Your API Key}  気象情報は以下のように返却されます。（例は{city name}=Tokyo）
 &lt;?xml version=&quot;1.0&quot;?&gt; &lt;current&gt; &lt;city id=&quot;1850147&quot; name=&quot;Tokyo&quot;&gt; &lt;coord lat=&quot;35.69&quot; lon=&quot;139.69&quot;/&gt; &lt;country&gt;JP&lt;/country&gt; &lt;sun set=&quot;2016-08-15T09:30:23&quot; rise=&quot;2016-08-14T20:00:21&quot;/&gt; &lt;/city&gt; &lt;temperature unit=&quot;kelvin&quot; max=&quot;304.82&quot; min=&quot;298.71&quot; value=&quot;301.68&quot;/&gt; &lt;humidity unit=&quot;%&quot; value=&quot;85&quot;/&gt; &lt;pressure unit=&quot;hPa&quot; value=&quot;1001&quot;/&gt; &lt;wind&gt; &lt;speed name=&quot;Gentle Breeze&quot; value=&quot;3.41&quot;/&gt; &lt;gusts/&gt; &lt;direction name=&quot;South&quot; value=&quot;179.504&quot; code=&quot;S&quot;/&gt; &lt;/wind&gt; &lt;clouds name=&quot;clear sky&quot; value=&quot;8&quot;/&gt; &lt;visibility/&gt; &lt;precipitation unit=&quot;3h&quot; value=&quot;0.245&quot; mode=&quot;rain&quot;/&gt; &lt;weather value=&quot;light rain&quot; icon=&quot;10d&quot; number=&quot;500&quot;/&gt; &lt;lastupdate value=&quot;2016-08-15T07:41:15&quot;/&gt; &lt;/current&gt;  JavaでOpenWeatherMapのAPIを呼び出す RESTクライアントは色々ありますが、お手軽なApache Commonsのhttpclientとfluent-hcにします。</pre>
-  
-  <div><a href="http://www.weizlogy.gq/system/dev/spring-aop-test/">[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</a></div>
-  <pre class="summary">Interceptor クラスの内容は以下の通りです。
-import org.aspectj.lang.ProceedingJoinPoint; import org.aspectj.lang.annotation.Around; import org.aspectj.lang.annotation.Aspect; @Aspect public class SomeInterceptor { @Around(&quot;execution(* execute(..))&quot;) public Object around(ProceedingJoinPoint pjp) { System.out.println(String.format(&quot;%s.%s start.&quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); Object value = null; try { value = pjp.proceed(); } catch (Throwable e) { e.printStackTrace(); } System.out.println(String.format(&quot;%s.%s ended.&quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); return value; } }  Test クラスの内容は以下の通りです。
-import static org.junit.Assert.*; import java.util.ArrayList; import org.junit.Test; import org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint; import org.springframework.aop.framework.ReflectiveMethodInvocation; import org.springframework.aop.interceptor.SimpleTraceInterceptor; public class SomeInterceptorTest { /** AOP の対象となるメソッドを持つクラス */ private static class AOPTarget { public String execute() { System.</pre>
   
   
     

@@ -186,7 +186,7 @@
   "@type": "BlogPosting",
   "headline": "[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す",
   "url": "http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/",
-  "datePublished": "2017-03-26 15:42:15.756607 &#43;0900 JST",
+  "datePublished": "2017-03-27 03:37:14.6766437 &#43;0900 JST",
   "author": {
     "@type": "Person",
     "name": "weizlogy"
@@ -199,7 +199,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-26 15:42:15.756607 &#43;0900 JST",
+  "dateModified": "2017-03-27 03:37:14.6766437 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -284,7 +284,7 @@
 </code></pre></div>
 
 <p>JSPでは以下のように出力しておきます。
-Formをsubmitすると、HogeFormのvaluesにList<Map>の形式で値が格納されています。</p>
+Formをsubmitすると、HogeFormのvaluesにList&lt;Map&gt;の形式で値が格納されています。</p>
 <div class="highlight"><pre><code class="language-jsp" data-lang="jsp"><span></span><span class="nt">&lt;logic:iterate</span> <span class="na">id=</span><span class="s">&quot;xxx&quot;</span> <span class="na">name=</span><span class="s">&quot;yyy&quot;</span> <span class="na">indexId=</span><span class="s">&quot;index&quot;</span><span class="nt">&gt;</span>
 <span class="nt">&lt;INPUT</span> <span class="na">type=</span><span class="s">&quot;hidden&quot;</span> <span class="na">name=</span><span class="s">&quot;value[</span><span class="k">&lt;%=</span> <span class="n">index</span> <span class="k">%&gt;</span><span class="s">].aaa&quot;</span> <span class="na">value=</span><span class="s">&quot;&lt;bean:write name=&quot;</span><span class="err">xxx&quot;</span> <span class="na">property=</span><span class="s">&quot;123&quot;</span> <span class="nt">/&gt;</span>&quot; /&gt;
 <span class="nt">&lt;INPUT</span> <span class="na">type=</span><span class="s">&quot;hidden&quot;</span> <span class="na">name=</span><span class="s">&quot;value[</span><span class="k">&lt;%=</span> <span class="n">index</span> <span class="k">%&gt;</span><span class="s">].bbb&quot;</span> <span class="na">value=</span><span class="s">&quot;&lt;bean:write name=&quot;</span><span class="err">xxx&quot;</span> <span class="na">property=</span><span class="s">&quot;456&quot;</span> <span class="nt">/&gt;</span>&quot; /&gt;

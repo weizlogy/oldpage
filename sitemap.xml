@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.weizlogy.gq/tos/addon/dpsmeter/</loc>
+    <lastmod>2017-03-27T05:55:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/</loc>
+    <lastmod>2017-03-27T03:37:14+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.weizlogy.gq/tos/addon/monsterstatus/</loc>
     <lastmod>2017-03-26T18:41:05+09:00</lastmod>
   </url>
@@ -59,11 +69,6 @@
   <url>
     <loc>http://www.weizlogy.gq/system/dev/step-counter-is/</loc>
     <lastmod>2017-03-26T15:42:20+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/</loc>
-    <lastmod>2017-03-26T15:42:15+09:00</lastmod>
   </url>
   
   <url>
@@ -172,11 +177,6 @@
   </url>
   
   <url>
-    <loc>http://www.weizlogy.gq/tos/addon/dpsmeter/</loc>
-    <lastmod>2017-03-26T15:40:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.weizlogy.gq/tos/addon/distance/</loc>
     <lastmod>2017-03-26T15:39:56+09:00</lastmod>
   </url>
@@ -221,25 +221,25 @@
   
   <url>
     <loc>http://www.weizlogy.gq/categories/system-dev/</loc>
-    <lastmod>2017-03-26T15:42:59+09:00</lastmod>
+    <lastmod>2017-03-27T03:37:14+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.weizlogy.gq/system/</loc>
-    <lastmod>2017-03-26T15:42:59+09:00</lastmod>
+    <lastmod>2017-03-27T03:37:14+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.weizlogy.gq/tos/</loc>
-    <lastmod>2017-03-26T18:41:05+09:00</lastmod>
+    <lastmod>2017-03-27T05:55:38+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.weizlogy.gq/categories/tos-addon/</loc>
-    <lastmod>2017-03-26T18:41:05+09:00</lastmod>
+    <lastmod>2017-03-27T05:55:38+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -251,7 +251,7 @@
   
   <url>
     <loc>http://www.weizlogy.gq/</loc>
-    <lastmod>2017-03-26T18:41:05+09:00</lastmod>
+    <lastmod>2017-03-27T05:55:38+09:00</lastmod>
     <priority>0</priority>
   </url>
   

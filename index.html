@@ -180,35 +180,6 @@
 </style>
 
 
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org"
-  "@type": "BlogPosting",
-  "headline": "Weizlogy",
-  "url": "http://www.weizlogy.gq/",
-  "datePublished": "2017-03-26 18:41:05.1360675 &#43;0900 JST",
-  "author": {
-    "@type": "Person",
-    "name": "weizlogy"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Weiβlogy",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "http://www.weizlogy.gq//favicon.ico"
-    }
-  },
-  "dateModified": "2017-03-26 18:41:05.1360675 &#43;0900 JST",
-  "mainEntityOfPage": "1",
-  "image": {
-    "@type": "ImageObject",
-    "url": "http://www.weizlogy.gq//dummy.png",
-    "width": "100",
-    "height": "100"
-  }
-}
-</script>
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -253,6 +224,12 @@
   
   <strong>Last modified.</strong>
   
+    <div><a href="http://www.weizlogy.gq/tos/addon/dpsmeter/">[tree of savior addon] DPS計測アドオン</a></div>
+    <div>@2017-03-27 05:55:38.7895724 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a></div>
+    <div>@2017-03-27 03:37:14.6766437 &#43;0900 JST</div>
+  
     <div><a href="http://www.weizlogy.gq/tos/addon/monsterstatus/">[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</a></div>
     <div>@2017-03-26 18:41:05.1360675 &#43;0900 JST</div>
   
@@ -276,12 +253,6 @@
   
     <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/">[system development] Monodevelopで埋め込みリソースを使う</a></div>
     <div>@2017-03-26 15:42:36.7579002 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/">[system development] ubuntu16.04でMonoDevelopを使った開発環境</a></div>
-    <div>@2017-03-26 15:42:33.1654193 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/system/dev/openweathermap-with-java-bazel/">[system development] Codeaywhere&#43;Java&#43;bazelでOpenWeatherMapのAPIを使用し現在の気象情報を取得する</a></div>
-    <div>@2017-03-26 15:42:27.9532414 &#43;0900 JST</div>
   
   
 </div>
@@ -307,9 +278,15 @@ cautions. 念のため、アドオンは補助的な位置づけとし、 ワー
 一時消去したNPCは、release後、エリアチェンジで表示できます。</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/dpsmeter/">[tree of savior addon] DPS計測アドオン</a></div>
-  <pre class="summary"> download. [v1.1.0] dpsmeter.ipf
+  <pre class="summary"> download. [v1.2.0] dpsmeter.ipf
 install. README.md
-introduction. settings. descriptions. v1.1.0 現在のDPS、最大DPSをモンスターUI近辺に、以下のフォーマット表示します。
+introduction. settings. descriptions. v1.2.0 DPS計測方法を調整。
+ターゲットアイコン表示が可能な距離まで近づいて、初撃時（を含む。初撃はdamage/1sec換算）からDPS計測を開始します。
+ターゲットが死ぬかフレームアウトするまで計測は止まりません。
+DPS計測対象を調整。
+旧バージョンではfaction = &ldquo;Monster&rdquo;を計測対象としていましたが不十分でしたので、 計測対象を拡大し、ペット以外（faction ~= &ldquo;Pet&rdquo;）としました。
+IWやルーツクリスタルも対象となってしまいますが、計測されないよりは良いかと。。。
+v1.1.0 現在のDPS、最大DPSをモンスターUI近辺に、以下のフォーマット表示します。
 [現在のDPS]([最大DPS]) dps  モンスター死亡時、最大DPSをsystemメッセージで表示します。
 ターゲットアイコン表示が可能な距離まで近づくとDPS計測を開始、離れると停止します。
 v1.0.0 新規作成。
