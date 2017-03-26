@@ -179,6 +179,35 @@
 </style>
 
 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org"
+  "@type": "BlogPosting",
+  "headline": "Tos Addon Dev",
+  "url": "http://www.weizlogy.gq/categories/tos-addon-dev/",
+  "datePublished": "2017-03-26 15:41:17.5030553 &#43;0900 JST",
+  "author": {
+    "@type": "Person",
+    "name": "weizlogy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Weiβlogy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.weizlogy.gq//favicon.ico"
+    }
+  },
+  "dateModified": "2017-03-26 15:41:17.5030553 &#43;0900 JST",
+  "mainEntityOfPage": "1",
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://www.weizlogy.gq//dummy.png",
+    "width": "100",
+    "height": "100"
+  }
+}
+</script>
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -224,16 +253,16 @@
   <strong>Last modified.</strong>
   
     <div><a href="http://www.weizlogy.gq/tos/addon-dev/use-custom-skins/">[tree of savior addon for developpers] アドオンで自作スキンを使用する方法</a></div>
-    <div>@2017-03-05 14:19:00 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon-dev/ies-format/">[tree of savior addon for developpers] iesファイルフォーマット解説</a></div>
-    <div>@2016-12-31 17:29:00.001 &#43;0900 JST</div>
+    <div>@2017-03-26 15:41:17.5030553 &#43;0900 JST</div>
   
     <div><a href="http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/">[tree of savior addon for developpers] iesファイルをcsv形式のファイルに変換するソフト</a></div>
-    <div>@2016-12-31 15:42:00.002 &#43;0900 JST</div>
+    <div>@2017-03-26 15:41:13.0305514 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/tos/addon-dev/ies-format/">[tree of savior addon for developpers] iesファイルフォーマット解説</a></div>
+    <div>@2017-03-26 15:41:06.501088 &#43;0900 JST</div>
   
     <div><a href="http://www.weizlogy.gq/tos/addon-dev/create-addon/">[tree of savior addon for developpers] アドオン作成～設置方法まとめ</a></div>
-    <div>@2016-09-25 07:41:00 &#43;0900 JST</div>
+    <div>@2017-03-26 15:40:59.8402069 &#43;0900 JST</div>
   
   
 </div>
@@ -255,11 +284,6 @@ imgrect スキン読み込み元画像ファイル内画像座標。
 skin 自作スキン画像ファイルを配置します。
 アドオン実装方法 xml &lt;picture name=&quot;xxx&quot; rect=&quot;0 0 70 30&quot; margin=&quot;0 0 45 0&quot; hittest=&quot;true&quot; image=&quot;image1&quot;/&gt;  lua local pic = GET_CHILD(xxx, &quot;xxx&quot;, &quot;ui::CPicture&quot;); pic:SetImage(&quot;image2&quot;);  tgaファイル 画像ファイルの一つ。</pre>
   
-  <div><a href="http://www.weizlogy.gq/tos/addon-dev/ies-format/">[tree of savior addon for developpers] iesファイルフォーマット解説</a></div>
-  <pre class="summary">???は可変長です。
-Total block  ------------------- ---------------------------- ------------------------- | Header [156 byte] | Cell Header [136 x N byte] | Row Data [??? x M byte] | ------------------- ---------------------------- -------------------------  N=列数。は、Header blockのCellCountで指定。 M=行数。は、Header blockのRowCountで指定。
-Header block  ---------------------- ------------------- ------------------------ | TableName [128 byte] | Reserve1 [4 byte] | OffsetOfData [4 byte] | ---------------------- ------------------- ------------------------ --------------------------- ------------------- ------------------- | OffsetOfResource [4 byte] | FileSize [4 byte] | Reserve2 [4 byte] | --------------------------- ------------------- ------------------- ------------------- -------------------- -------------------------- | RowCount [2 byte] | CellCount [2 byte] | NumCellCount [2 byte] | ------------------- -------------------- -------------------------- ----------------------- ------------------------------------------- | StrCellCount [2 byte] | Reserve3 [2 byte] | --------------------- | ----------------------- -------------------------------------------           TableName IESテーブル名   Reserve1 予約1   OffsetOfData Cell Header blockのサイズ   OffsetOfResource Row Data blockのサイズ   FileSize IESファイルサイズ   Reserve2 予約2   RowCount 行数   CellCount 列数   NumCellCount 数値列数   StrCellCount 文字列列数   Reserve3 予約3    Cell Header block  ---------------- ------------------- ---------------------- | Name [64 byte] | Name2 [64 byte] | Type [2 byte] | ------ | ---------------- ------------------- ---------------------- ------------------- ------------------- ------------------- | Reserve1 [2 byte] | Reserve2 [4 byte] | Position [2 byte] | ------------------- ------------------- -------------------           Name Cell名   Name2 Cell別名   Type 0：数値Cell、1,2：文字列Cell   Reserve1 予約1   Reserve2 予約2   Position Type内Cell順序    Cell順は、Type昇順、Position昇順。</pre>
-  
   <div><a href="http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/">[tree of savior addon for developpers] iesファイルをcsv形式のファイルに変換するソフト</a></div>
   <pre class="summary">overviews. Tree Of Saviorのipfファイル内には拡張子がiesのファイルがあります。
 Ipf Suiteでは中身を見ることができますが、extractしても実体はバイナリファイル（かつ、暗号化されている）で、 テキストエディタでもバイナリエディタでも見ても分かりません。
@@ -274,6 +298,11 @@ caution. iesファイル内に韓国語が含まれるので、Excelでは文字
 本当は英訳を載せたいのですが、完全無料の翻訳APIがないもので。。。 需要があれば何とかしようと思います。
 acknowledgment. iesファイルフォーマットは、以下のソースコードを参考にさせて頂きました。 ありがとうございます。
 https://github.com/r1emu/IPFUnpacker/blob/master</pre>
+  
+  <div><a href="http://www.weizlogy.gq/tos/addon-dev/ies-format/">[tree of savior addon for developpers] iesファイルフォーマット解説</a></div>
+  <pre class="summary">???は可変長です。
+Total block  ------------------- ---------------------------- ------------------------- | Header [156 byte] | Cell Header [136 x N byte] | Row Data [??? x M byte] | ------------------- ---------------------------- -------------------------  N=列数。は、Header blockのCellCountで指定。 M=行数。は、Header blockのRowCountで指定。
+Header block  ---------------------- ------------------- ------------------------ | TableName [128 byte] | Reserve1 [4 byte] | OffsetOfData [4 byte] | ---------------------- ------------------- ------------------------ --------------------------- ------------------- ------------------- | OffsetOfResource [4 byte] | FileSize [4 byte] | Reserve2 [4 byte] | --------------------------- ------------------- ------------------- ------------------- -------------------- -------------------------- | RowCount [2 byte] | CellCount [2 byte] | NumCellCount [2 byte] | ------------------- -------------------- -------------------------- ----------------------- ------------------------------------------- | StrCellCount [2 byte] | Reserve3 [2 byte] | --------------------- | ----------------------- -------------------------------------------           TableName IESテーブル名   Reserve1 予約1   OffsetOfData Cell Header blockのサイズ   OffsetOfResource Row Data blockのサイズ   FileSize IESファイルサイズ   Reserve2 予約2   RowCount 行数   CellCount 列数   NumCellCount 数値列数   StrCellCount 文字列列数   Reserve3 予約3    Cell Header block  ---------------- ------------------- ---------------------- | Name [64 byte] | Name2 [64 byte] | Type [2 byte] | ------ | ---------------- ------------------- ---------------------- ------------------- ------------------- ------------------- | Reserve1 [2 byte] | Reserve2 [4 byte] | Position [2 byte] | ------------------- ------------------- -------------------           Name Cell名   Name2 Cell別名   Type 0：数値Cell、1,2：文字列Cell   Reserve1 予約1   Reserve2 予約2   Position Type内Cell順序    Cell順は、Type昇順、Position昇順。</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon-dev/create-addon/">[tree of savior addon for developpers] アドオン作成～設置方法まとめ</a></div>
   <pre class="summary">必要なもの  IPF Suite IPFUnpacker  作成手順 1. アドオンの名前を決める &ldquo;xxxaddonxxx&rdquo;としてみます。全て小文字、記号なしが良いです。
