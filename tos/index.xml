@@ -7,13 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Sun, 26 Mar 2017 16:09:50 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 26 Mar 2017 18:41:05 +0900</lastBuildDate>
     <atom:link href="http://www.weizlogy.gq/tos/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/monsterstatus/</link>
-      <pubDate>Sun, 26 Mar 2017 16:09:50 +0900</pubDate>
+      <pubDate>Sun, 26 Mar 2017 18:41:05 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/monsterstatus/</guid>
       <description>
@@ -28,7 +28,7 @@
 
 &lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
 
-&lt;amp-youtube data-videoid=&#34;D2RID_R7v70&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
+&lt;amp-youtube data-videoid=&#34;IjzyuRoAbQo&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
 
 &lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
 
@@ -36,9 +36,9 @@
 
 &lt;h3 id=&#34;v2-0-0&#34;&gt;v2.0.0&lt;/h3&gt;
 
-&lt;p&gt;冒険日誌から討伐数、ドロップアイテム名を取得、表示する機能を追加しました。&lt;/p&gt;
-
-&lt;p&gt;また、ドロップアイテム名からアイテムツールチップが開けます。&lt;/p&gt;
+&lt;p&gt;冒険日誌から討伐数、ドロップアイテム名、アイテム収集率を取得、
+表示する機能を追加しました。
+また、ドロップアイテム名からアイテムツールチップが開けます。&lt;/p&gt;
 
 &lt;p&gt;表示するステータス 、フォーマットを調整しました。&lt;/p&gt;
 
