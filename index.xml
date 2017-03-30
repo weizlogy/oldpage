@@ -7,8 +7,165 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Mon, 27 Mar 2017 05:55:38 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 31 Mar 2017 07:04:18 +0900</lastBuildDate>
     <atom:link href="http://www.weizlogy.gq/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>[tree of savior addon] オブジェクト探索アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/objectdetector/</link>
+      <pubDate>Fri, 31 Mar 2017 07:04:18 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/objectdetector/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/objectdetector-v1.0.1/objectdetector.ipf&#34;&gt;[v1.0.1]objectdetector.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
+
+&lt;p&gt;性能改善しました。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、マップとミニマップに四角形のアイコン[*1]が表示されます。&lt;/p&gt;
+
+&lt;p&gt;[*1] アイコン配色とオブジェクトの関係は以下の通りです。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;色&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;オブジェクト&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;赤&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;モンスター&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;赤点滅&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;クローバーバフモンスター&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;青&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;PC&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;橙&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NPC&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;橙点滅&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;宝箱&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;紫&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ルーツクリスタル&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;白&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ドロップアイテム&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;黒&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;その他&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;配色をカスタマイズする設定を追加する予定です。&lt;/p&gt;
+
+&lt;p&gt;某レーダーと違いマップにオーバーレイせず直接描画しているため、既存UIの邪魔をしません。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 飛行アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/fly/</link>
+      <pubDate>Fri, 31 Mar 2017 06:42:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/fly/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/5gq04f1jpoju4na/fly.ipf?dl=0&#34;&gt;[v1.1.0]fly.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;amp-youtube data-videoid=&#34;Ad_LIzKk_no&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;p&gt;Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。&lt;/p&gt;
+
+&lt;p&gt;ファイルを開いて一行目に、10 130 200 0 1と入力します。&lt;/p&gt;
+
+&lt;p&gt;設定は半角スペース区切りで、[ボタンのX座標] [ボタンのY座標] [飛距離] [前回飛行中か？] [ボタン表示状態]。&lt;/p&gt;
+
+&lt;p&gt;飛距離は150～200が良いです。100では弓に狙われます。&lt;/p&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
+
+&lt;p&gt;設定[ボタン表示状態]を追加しました。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、[ボタン表示状態]が1の場合のみ、[Fly]ボタンが表示されます。&lt;/p&gt;
+
+&lt;p&gt;ショートカットキーを追加しました。&lt;/p&gt;
+
+&lt;p&gt;ESCAPE+UP(上矢印)で飛行、飛行解除ができます。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると[Fly]ボタンが表示されます。&lt;/p&gt;
+
+&lt;p&gt;ボタンを押すと飛行状態、地上に降りるを繰り返します。&lt;/p&gt;
+
+&lt;p&gt;飛行状態でも地上の敵を攻撃できます。
+飛行状態では地上の敵はこちらを近接攻撃できません。&lt;/p&gt;
+
+&lt;p&gt;実際は地上を歩行しているのでトラップには気をつけてください。&lt;/p&gt;
+
+&lt;p&gt;飛行状態ではスキルが使用不可ですが、ノックバックを受けるとスキルが使用可能になりますので、わざとノックバックするようになっています。&lt;/p&gt;
+
+&lt;p&gt;休息中に飛行すると、休息バフがついた状態で行動できます。
+ただし、攻撃などの操作を行うと休息バフは解除されます。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] DPS計測アドオン</title>
@@ -1037,96 +1194,6 @@ java_library (
         &lt;span class=&#34;n&#34;&gt;assertTrue&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;);&lt;/span&gt;
     &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[system development] ステップカウンターのあるべき姿を考察する</title>
-      <link>http://www.weizlogy.gq/system/dev/step-counter-is/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:20 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/step-counter-is/</guid>
-      <description>
-
-&lt;h2 id=&#34;ステップカウンターとは&#34;&gt;ステップカウンターとは？&lt;/h2&gt;
-
-&lt;p&gt;LOCを計測するツールです。LOCはLines Of Codeの略で、プログラムの規模として扱います。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;空行（改行など空白だけの行）やコメント行（コメントと空白だけの行）は除く、2つの命令が書かれた行は2行と数える、括弧だけの行を除くなどの換算をした行数を論理LOC (logical LOC) といい、通常はこちらを使う。&lt;/p&gt;
-
-&lt;p&gt;&lt;cite&gt;&amp;ndash; &lt;a href=&#34;https://ja.wikipedia.org/wiki/LOC&#34;&gt;https://ja.wikipedia.org/wiki/LOC&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;2つの命令が書かれた行は2行と数える-括弧だけの行を除くなどの換算してますか&#34;&gt;2つの命令が書かれた行は2行と数える、括弧だけの行を除くなどの換算してますか？&lt;/h2&gt;
-
-&lt;p&gt;世にあるステップカウンターは、有効行（実行行）、コメント行、空白行の3種を見ていることが多く、高度な換算はされていないようです。&lt;/p&gt;
-
-&lt;p&gt;そこで、*本来あるべきステップカウンター*を、以下の考察に基づき鋭意作成中です。&lt;/p&gt;
-
-&lt;p&gt;詳細は&lt;a href=&#34;http://www.weizlogy.gq/system/item/schritt.html&#34;&gt;こちら&lt;/a&gt;をご覧ください。&lt;/p&gt;
-
-&lt;h2 id=&#34;本来あるべきステップカウンターの想定仕様概要&#34;&gt;本来あるべきステップカウンターの想定仕様概要&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;2つの命令が書かれた行は2行と数える。&lt;/li&gt;
-&lt;li&gt;括弧だけの行を除く。&lt;/li&gt;
-&lt;li&gt;ディレクティブは考慮が必要。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;本来あるべきステップカウンターの想定仕様詳細&#34;&gt;本来あるべきステップカウンターの想定仕様詳細&lt;/h2&gt;
-
-&lt;h3 id=&#34;2つの命令が書かれた行は2行と数える&#34;&gt;2つの命令が書かれた行は2行と数える&lt;/h3&gt;
-
-&lt;p&gt;C言語系統は命令の終端に&amp;rdquo;;&amp;ldquo;が必要な言語使用のため、その終端記号（または文字）を数えれば良い。また、IF文では&amp;rdquo;{&amp;ldquo;、SWITCH-CASE文では&amp;rdquo;{&amp;ldquo;と&amp;rdquo;:&amp;ldquo;に着目することで命令を計測します。&lt;/p&gt;
-
-&lt;p&gt;ただし、FOR文は3式で1セットの命令であるため、FOR文中の終端記号は無視しなければいけません。
-VBやRubyのような言語、HTMLのようなタグが構成要素の場合は検討中です。&lt;/p&gt;
-
-&lt;h3 id=&#34;括弧だけの行を除く&#34;&gt;括弧だけの行を除く&lt;/h3&gt;
-
-&lt;p&gt;C言語系統はブロックの終端記号&amp;rdquo;}&amp;ldquo;がありますが、1命令のセットであるため、開始記号&amp;rdquo;{&amp;ldquo;とどちらか一方を測定対象とすべきです。
-VBやRubyのような言語の&amp;rdquo;END&amp;rdquo;キーワードも同様です。&lt;/p&gt;
-
-&lt;h3 id=&#34;ディレクティブは考慮が必要&#34;&gt;ディレクティブは考慮が必要&lt;/h3&gt;
-
-&lt;p&gt;Javaのimport文、C#のusingディレクティブは、パッケージ名を省略するためだけに存在するもので、記載の有無がプログラムの動作に影響を与えませんので、命令とは位置付け異なります。&lt;/p&gt;
-
-&lt;p&gt;C言語系統のプリプロセッサーディレクティブは微妙ですが、動作に影響を与えるものもあるため、命令と考えます。&lt;/p&gt;
-
-&lt;p&gt;ただし、&amp;rdquo;#endif&amp;rdquo;、&amp;rdquo;#region&amp;rdquo;、&amp;rdquo;#endregion&amp;rdquo;は非命令とし計測しません。&lt;/p&gt;
-
-&lt;p&gt;C言語の#includeは、必須であることを除き、C#のusingディレクティブ同様、非命令とします。&lt;/p&gt;
-
-&lt;p&gt;考察は続きます。。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[system development] strutsのFormFileからローカルファイルの絶対パスを取得</title>
-      <link>http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:11 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/</guid>
-      <description>&lt;p&gt;strutsのFormFileからローカルファイルの絶対パスを取得したいのです。
-（取得しても無意味ですが）&lt;/p&gt;
-
-&lt;p&gt;eclipseのデバッガで参照すると、確かにprivate変数に絶対パスを持っていますが、アクセスするためのメソッドがありません。&lt;/p&gt;
-
-&lt;p&gt;リフレクションでアクセス可能です。&lt;/p&gt;
-
-&lt;p&gt;DiskFileItemを使用するために、「commons-fileupload.jar」が必要です。&lt;/p&gt;
-
-&lt;p&gt;struts1.3.10&lt;/p&gt;
-
-&lt;p&gt;java 1.6.0_18&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// formFileの実体は「org.apache.struts.upload.CommonsMultipartRequestHandler.CommonsFormFile」&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;Field&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;formFile&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getClass&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;().&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getDeclaredField&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;fileItem&amp;quot;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;);&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setAccessible&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;);&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;// fileItemは「org.apache.commons.fileupload.FileItem」を実装した「org.apache.commons.fileupload.disk.DiskFileItem」&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;DiskFileItem&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;item&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DiskFileItem&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;formFile&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;);&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;item&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getName&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;());&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 </description>
     </item>

@@ -2,11 +2,11 @@
 <html ⚡>
 <head>
 <meta charset="utf-8">
-<link rel="canonical" href="http://www.weizlogy.gq/tos/addon/fly/">
+<link rel="canonical" href="http://www.weizlogy.gq/tos/addon/objectdetector/">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <title>
 
-  [tree of savior addon] 飛行アドオン &ndash; Weizlogy
+  [tree of savior addon] オブジェクト探索アドオン &ndash; Weizlogy
 
 </title>
 
@@ -184,9 +184,9 @@
 {
   "@context": "http://schema.org"
   "@type": "BlogPosting",
-  "headline": "[tree of savior addon] 飛行アドオン",
-  "url": "http://www.weizlogy.gq/tos/addon/fly/",
-  "datePublished": "2017-03-31 06:42:00.555915 &#43;0900 JST",
+  "headline": "[tree of savior addon] オブジェクト探索アドオン",
+  "url": "http://www.weizlogy.gq/tos/addon/objectdetector/",
+  "datePublished": "2017-03-31 07:04:18.8603697 &#43;0900 JST",
   "author": {
     "@type": "Person",
     "name": "weizlogy"
@@ -199,7 +199,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-31 06:42:00.555915 &#43;0900 JST",
+  "dateModified": "2017-03-31 07:04:18.8603697 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -237,13 +237,13 @@
 <div>
 <article>
 
- <h1><a href="http://www.weizlogy.gq/tos/addon/fly/">[tree of savior addon] 飛行アドオン</a></h1>
+ <h1><a href="http://www.weizlogy.gq/tos/addon/objectdetector/">[tree of savior addon] オブジェクト探索アドオン</a></h1>
  <div>
   
 
 <h2 id="download">download.</h2>
 
-<p><a href="https://www.dropbox.com/s/5gq04f1jpoju4na/fly.ipf?dl=0">[v1.1.0]fly.ipf</a></p>
+<p><a href="https://github.com/weizlogy/tos/releases/download/objectdetector-v1.0.1/objectdetector.ipf">[v1.0.1]objectdetector.ipf</a></p>
 
 <h2 id="install">install.</h2>
 
@@ -251,47 +251,80 @@
 
 <h2 id="introduction">introduction.</h2>
 
-<amp-youtube data-videoid="Ad_LIzKk_no" width="480" height="270" layout="responsive"></amp-youtube>
+<p><a href="https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1"><amp-img src="https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1" width="320" height="185" title="" layout="responsive" /></a></p>
+
+<p><a href="https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1"><amp-img src="https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1" width="320" height="185" title="" layout="responsive" /></a></p>
 
 <h2 id="settings">settings.</h2>
 
-<p>Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。</p>
-
-<p>ファイルを開いて一行目に、10 130 200 0 1と入力します。</p>
-
-<p>設定は半角スペース区切りで、[ボタンのX座標] [ボタンのY座標] [飛距離] [前回飛行中か？] [ボタン表示状態]。</p>
-
-<p>飛距離は150～200が良いです。100では弓に狙われます。</p>
-
 <h2 id="descriptions">descriptions.</h2>
 
-<h3 id="v1-1-0">v1.1.0</h3>
+<h3 id="v1-0-1">v1.0.1</h3>
 
-<p>設定[ボタン表示状態]を追加しました。</p>
-
-<p>アドオンがロードされると、[ボタン表示状態]が1の場合のみ、[Fly]ボタンが表示されます。</p>
-
-<p>ショートカットキーを追加しました。</p>
-
-<p>ESCAPE+UP(上矢印)で飛行、飛行解除ができます。</p>
+<p>性能改善しました。</p>
 
 <h3 id="v1-0-0">v1.0.0</h3>
 
 <p>新規作成。</p>
 
-<p>アドオンがロードされると[Fly]ボタンが表示されます。</p>
+<p>アドオンがロードされると、マップとミニマップに四角形のアイコン[*1]が表示されます。</p>
 
-<p>ボタンを押すと飛行状態、地上に降りるを繰り返します。</p>
+<p>[*1] アイコン配色とオブジェクトの関係は以下の通りです。</p>
 
-<p>飛行状態でも地上の敵を攻撃できます。
-飛行状態では地上の敵はこちらを近接攻撃できません。</p>
+<table>
+<thead>
+<tr>
+<th align="left">色</th>
+<th align="left">オブジェクト</th>
+</tr>
+</thead>
 
-<p>実際は地上を歩行しているのでトラップには気をつけてください。</p>
+<tbody>
+<tr>
+<td align="left">赤</td>
+<td align="left">モンスター</td>
+</tr>
 
-<p>飛行状態ではスキルが使用不可ですが、ノックバックを受けるとスキルが使用可能になりますので、わざとノックバックするようになっています。</p>
+<tr>
+<td align="left">赤点滅</td>
+<td align="left">クローバーバフモンスター</td>
+</tr>
 
-<p>休息中に飛行すると、休息バフがついた状態で行動できます。
-ただし、攻撃などの操作を行うと休息バフは解除されます。</p>
+<tr>
+<td align="left">青</td>
+<td align="left">PC</td>
+</tr>
+
+<tr>
+<td align="left">橙</td>
+<td align="left">NPC</td>
+</tr>
+
+<tr>
+<td align="left">橙点滅</td>
+<td align="left">宝箱</td>
+</tr>
+
+<tr>
+<td align="left">紫</td>
+<td align="left">ルーツクリスタル</td>
+</tr>
+
+<tr>
+<td align="left">白</td>
+<td align="left">ドロップアイテム</td>
+</tr>
+
+<tr>
+<td align="left">黒</td>
+<td align="left">その他</td>
+</tr>
+</tbody>
+</table>
+
+<p>配色をカスタマイズする設定を追加する予定です。</p>
+
+<p>某レーダーと違いマップにオーバーレイせず直接描画しているため、既存UIの邪魔をしません。</p>
 
  </div>
 
