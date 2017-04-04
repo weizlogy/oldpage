@@ -10,6 +10,111 @@
     <atom:link href="http://www.weizlogy.gq/categories/tos-addon/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>[tree of savior addon] 飛行アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/fly/</link>
+      <pubDate>Tue, 04 Apr 2017 21:30:54 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/fly/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/5gq04f1jpoju4na/fly.ipf?dl=0&#34;&gt;[v1.2.0]fly.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;amp-youtube data-videoid=&#34;Ad_LIzKk_no&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;p&gt;Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。&lt;/p&gt;
+
+&lt;p&gt;以下の初期設定をコピペします。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fly&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;config&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;pos&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;jumpPower&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;140&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;showButton&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;cameraHeight&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;withPet&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;explanation&#34;&gt;explanation.&lt;/h3&gt;
+
+&lt;h4 id=&#34;pos&#34;&gt;pos.&lt;/h4&gt;
+
+&lt;p&gt;ボタンの座標指定です。&lt;/p&gt;
+
+&lt;p&gt;[showButton]が0の場合は無視されます。&lt;/p&gt;
+
+&lt;h4 id=&#34;jumppower&#34;&gt;jumpPower.&lt;/h4&gt;
+
+&lt;p&gt;飛距離です。&lt;/p&gt;
+
+&lt;p&gt;100では弓に狙われます。
+150では通常攻撃が届きません。（wizでは140で届きます。）&lt;/p&gt;
+
+&lt;h4 id=&#34;showbutton&#34;&gt;showButton.&lt;/h4&gt;
+
+&lt;p&gt;ボタン表示状態です。&lt;/p&gt;
+
+&lt;p&gt;1の場合のみ、飛行ON/OFFボタンを[pos]の座標に表示します。&lt;/p&gt;
+
+&lt;h4 id=&#34;cameraheight&#34;&gt;cameraHeight.&lt;/h4&gt;
+
+&lt;p&gt;飛行時のカメラ位置です。&lt;/p&gt;
+
+&lt;p&gt;飛距離によりますが、50～70あたりで自分の影が画面中央あたりに見え、歩行しやすいです。&lt;/p&gt;
+
+&lt;p&gt;0を指定すると、今まで通りの視点になります。&lt;/p&gt;
+
+&lt;h4 id=&#34;withpet&#34;&gt;withPet.&lt;/h4&gt;
+
+&lt;p&gt;ペット飛行有無です。&lt;/p&gt;
+
+&lt;p&gt;1を指定すると、ペットも一緒に飛行します。&lt;/p&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-2-0&#34;&gt;v1.2.0&lt;/h3&gt;
+
+&lt;p&gt;設定ファイルのフォーマット変更、cameraHeight、withPetオプションを実装しました。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
+
+&lt;p&gt;設定[ボタン表示状態]を追加しました。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、[ボタン表示状態]が1の場合のみ、[Fly]ボタンが表示されます。&lt;/p&gt;
+
+&lt;p&gt;ショートカットキーを追加しました。&lt;/p&gt;
+
+&lt;p&gt;ESCAPE+UP(上矢印)で飛行、飛行解除ができます。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると[Fly]ボタンが表示されます。&lt;/p&gt;
+
+&lt;p&gt;ボタンを押すと飛行状態、地上に降りるを繰り返します。&lt;/p&gt;
+
+&lt;p&gt;飛行状態でも地上の敵を攻撃できます。
+飛行状態では地上の敵はこちらを近接攻撃できません。&lt;/p&gt;
+
+&lt;p&gt;実際は地上を歩行しているのでトラップには気をつけてください。&lt;/p&gt;
+
+&lt;p&gt;飛行状態ではスキルが使用不可ですが、ノックバックを受けるとスキルが使用可能になりますので、わざとノックバックするようになっています。&lt;/p&gt;
+
+&lt;p&gt;休息中に飛行すると、休息バフがついた状態で行動できます。
+ただし、攻撃などの操作を行うと休息バフは解除されます。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/hidename/</link>
       <pubDate>Mon, 03 Apr 2017 21:23:13 +0900</pubDate>
@@ -252,68 +357,6 @@
 &lt;p&gt;配色をカスタマイズする設定を追加する予定です。&lt;/p&gt;
 
 &lt;p&gt;某レーダーと違いマップにオーバーレイせず直接描画しているため、既存UIの邪魔をしません。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 飛行アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/fly/</link>
-      <pubDate>Fri, 31 Mar 2017 06:42:00 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/fly/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/5gq04f1jpoju4na/fly.ipf?dl=0&#34;&gt;[v1.1.0]fly.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;amp-youtube data-videoid=&#34;Ad_LIzKk_no&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;p&gt;Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。&lt;/p&gt;
-
-&lt;p&gt;ファイルを開いて一行目に、10 130 200 0 1と入力します。&lt;/p&gt;
-
-&lt;p&gt;設定は半角スペース区切りで、[ボタンのX座標] [ボタンのY座標] [飛距離] [前回飛行中か？] [ボタン表示状態]。&lt;/p&gt;
-
-&lt;p&gt;飛距離は150～200が良いです。100では弓に狙われます。&lt;/p&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
-
-&lt;p&gt;設定[ボタン表示状態]を追加しました。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、[ボタン表示状態]が1の場合のみ、[Fly]ボタンが表示されます。&lt;/p&gt;
-
-&lt;p&gt;ショートカットキーを追加しました。&lt;/p&gt;
-
-&lt;p&gt;ESCAPE+UP(上矢印)で飛行、飛行解除ができます。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると[Fly]ボタンが表示されます。&lt;/p&gt;
-
-&lt;p&gt;ボタンを押すと飛行状態、地上に降りるを繰り返します。&lt;/p&gt;
-
-&lt;p&gt;飛行状態でも地上の敵を攻撃できます。
-飛行状態では地上の敵はこちらを近接攻撃できません。&lt;/p&gt;
-
-&lt;p&gt;実際は地上を歩行しているのでトラップには気をつけてください。&lt;/p&gt;
-
-&lt;p&gt;飛行状態ではスキルが使用不可ですが、ノックバックを受けるとスキルが使用可能になりますので、わざとノックバックするようになっています。&lt;/p&gt;
-
-&lt;p&gt;休息中に飛行すると、休息バフがついた状態で行動できます。
-ただし、攻撃などの操作を行うと休息バフは解除されます。&lt;/p&gt;
 </description>
     </item>
     

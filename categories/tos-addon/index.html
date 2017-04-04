@@ -185,7 +185,7 @@
   "@type": "BlogPosting",
   "headline": "Tos Addon",
   "url": "http://www.weizlogy.gq/categories/tos-addon/",
-  "datePublished": "2017-04-03 21:23:13.0230724 &#43;0900 JST",
+  "datePublished": "2017-04-04 21:30:54.7697035 &#43;0900 JST",
   "author": {
     "@type": "Person",
     "name": "weizlogy"
@@ -198,7 +198,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-04-03 21:23:13.0230724 &#43;0900 JST",
+  "dateModified": "2017-04-04 21:30:54.7697035 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -252,6 +252,9 @@
   
   <strong>Last modified.</strong>
   
+    <div><a href="http://www.weizlogy.gq/tos/addon/fly/">[tree of savior addon] 飛行アドオン</a></div>
+    <div>@2017-04-04 21:30:54.7697035 &#43;0900 JST</div>
+  
     <div><a href="http://www.weizlogy.gq/tos/addon/hidename/">[tree of savior addon] 画面にある自キャラ名を消すアドオン</a></div>
     <div>@2017-04-03 21:23:13.0230724 &#43;0900 JST</div>
   
@@ -263,9 +266,6 @@
   
     <div><a href="http://www.weizlogy.gq/tos/addon/objectdetector/">[tree of savior addon] オブジェクト探索アドオン</a></div>
     <div>@2017-03-31 07:04:18.8603697 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/fly/">[tree of savior addon] 飛行アドオン</a></div>
-    <div>@2017-03-31 06:42:00.555915 &#43;0900 JST</div>
   
     <div><a href="http://www.weizlogy.gq/tos/addon/monsterstatus/">[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</a></div>
     <div>@2017-03-26 18:41:05.1360675 &#43;0900 JST</div>
@@ -289,6 +289,34 @@
 <div class="main">
   <section>
   
+  
+  <div><a href="http://www.weizlogy.gq/tos/addon/fly/">[tree of savior addon] 飛行アドオン</a></div>
+  <pre class="summary">download. [v1.2.0]fly.ipf
+install. README.md
+introduction.  settings. Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。
+以下の初期設定をコピペします。
+fly.config = { pos = {x = 100, y = 100}, jumpPower = 140, showButton = 0, cameraHeight = 50, withPet = 1 };  explanation. pos. ボタンの座標指定です。
+[showButton]が0の場合は無視されます。
+jumpPower. 飛距離です。
+100では弓に狙われます。 150では通常攻撃が届きません。（wizでは140で届きます。）
+showButton. ボタン表示状態です。
+1の場合のみ、飛行ON/OFFボタンを[pos]の座標に表示します。
+cameraHeight. 飛行時のカメラ位置です。
+飛距離によりますが、50～70あたりで自分の影が画面中央あたりに見え、歩行しやすいです。
+0を指定すると、今まで通りの視点になります。
+withPet. ペット飛行有無です。
+1を指定すると、ペットも一緒に飛行します。
+descriptions. v1.2.0 設定ファイルのフォーマット変更、cameraHeight、withPetオプションを実装しました。
+v1.1.0 設定[ボタン表示状態]を追加しました。
+アドオンがロードされると、[ボタン表示状態]が1の場合のみ、[Fly]ボタンが表示されます。
+ショートカットキーを追加しました。
+ESCAPE+UP(上矢印)で飛行、飛行解除ができます。
+v1.0.0 新規作成。
+アドオンがロードされると[Fly]ボタンが表示されます。
+ボタンを押すと飛行状態、地上に降りるを繰り返します。
+飛行状態でも地上の敵を攻撃できます。 飛行状態では地上の敵はこちらを近接攻撃できません。
+実際は地上を歩行しているのでトラップには気をつけてください。
+飛行状態ではスキルが使用不可ですが、ノックバックを受けるとスキルが使用可能になりますので、わざとノックバックするようになっています。</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/hidename/">[tree of savior addon] 画面にある自キャラ名を消すアドオン</a></div>
   <pre class="summary">download. [v1.0.1]hidename.ipf
@@ -339,25 +367,6 @@ v1.0.0 新規作成。
 [*1] アイコン配色とオブジェクトの関係は以下の通りです。
    色 オブジェクト     赤 モンスター   赤点滅 クローバーバフモンスター   青 PC   橙 NPC   橙点滅 宝箱   紫 ルーツクリスタル   白 ドロップアイテム   黒 その他    配色をカスタマイズする設定を追加する予定です。
 某レーダーと違いマップにオーバーレイせず直接描画しているため、既存UIの邪魔をしません。</pre>
-  
-  <div><a href="http://www.weizlogy.gq/tos/addon/fly/">[tree of savior addon] 飛行アドオン</a></div>
-  <pre class="summary">download. [v1.1.0]fly.ipf
-install. README.md
-introduction.  settings. Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。
-ファイルを開いて一行目に、10 130 200 0 1と入力します。
-設定は半角スペース区切りで、[ボタンのX座標] [ボタンのY座標] [飛距離] [前回飛行中か？] [ボタン表示状態]。
-飛距離は150～200が良いです。100では弓に狙われます。
-descriptions. v1.1.0 設定[ボタン表示状態]を追加しました。
-アドオンがロードされると、[ボタン表示状態]が1の場合のみ、[Fly]ボタンが表示されます。
-ショートカットキーを追加しました。
-ESCAPE+UP(上矢印)で飛行、飛行解除ができます。
-v1.0.0 新規作成。
-アドオンがロードされると[Fly]ボタンが表示されます。
-ボタンを押すと飛行状態、地上に降りるを繰り返します。
-飛行状態でも地上の敵を攻撃できます。 飛行状態では地上の敵はこちらを近接攻撃できません。
-実際は地上を歩行しているのでトラップには気をつけてください。
-飛行状態ではスキルが使用不可ですが、ノックバックを受けるとスキルが使用可能になりますので、わざとノックバックするようになっています。
-休息中に飛行すると、休息バフがついた状態で行動できます。 ただし、攻撃などの操作を行うと休息バフは解除されます。</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/monsterstatus/">[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</a></div>
   <pre class="summary"> download. [v2.0.0]monsterstatus.ipf

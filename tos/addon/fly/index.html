@@ -186,7 +186,7 @@
   "@type": "BlogPosting",
   "headline": "[tree of savior addon] 飛行アドオン",
   "url": "http://www.weizlogy.gq/tos/addon/fly/",
-  "datePublished": "2017-03-31 06:42:00.555915 &#43;0900 JST",
+  "datePublished": "2017-04-04 21:30:54.7697035 &#43;0900 JST",
   "author": {
     "@type": "Person",
     "name": "weizlogy"
@@ -199,7 +199,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-31 06:42:00.555915 &#43;0900 JST",
+  "dateModified": "2017-04-04 21:30:54.7697035 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -243,7 +243,7 @@
 
 <h2 id="download">download.</h2>
 
-<p><a href="https://www.dropbox.com/s/5gq04f1jpoju4na/fly.ipf?dl=0">[v1.1.0]fly.ipf</a></p>
+<p><a href="https://www.dropbox.com/s/5gq04f1jpoju4na/fly.ipf?dl=0">[v1.2.0]fly.ipf</a></p>
 
 <h2 id="install">install.</h2>
 
@@ -257,13 +257,56 @@
 
 <p>Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。</p>
 
-<p>ファイルを開いて一行目に、10 130 200 0 1と入力します。</p>
+<p>以下の初期設定をコピペします。</p>
+<div class="highlight"><pre><code class="language-lua" data-lang="lua"><span></span><span class="n">fly</span><span class="p">.</span><span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="n">pos</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">100</span><span class="p">},</span>
+  <span class="n">jumpPower</span> <span class="o">=</span> <span class="mi">140</span><span class="p">,</span>
+  <span class="n">showButton</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="n">cameraHeight</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span>
+  <span class="n">withPet</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="p">};</span>
+</code></pre></div>
 
-<p>設定は半角スペース区切りで、[ボタンのX座標] [ボタンのY座標] [飛距離] [前回飛行中か？] [ボタン表示状態]。</p>
+<h3 id="explanation">explanation.</h3>
 
-<p>飛距離は150～200が良いです。100では弓に狙われます。</p>
+<h4 id="pos">pos.</h4>
+
+<p>ボタンの座標指定です。</p>
+
+<p>[showButton]が0の場合は無視されます。</p>
+
+<h4 id="jumppower">jumpPower.</h4>
+
+<p>飛距離です。</p>
+
+<p>100では弓に狙われます。
+150では通常攻撃が届きません。（wizでは140で届きます。）</p>
+
+<h4 id="showbutton">showButton.</h4>
+
+<p>ボタン表示状態です。</p>
+
+<p>1の場合のみ、飛行ON/OFFボタンを[pos]の座標に表示します。</p>
+
+<h4 id="cameraheight">cameraHeight.</h4>
+
+<p>飛行時のカメラ位置です。</p>
+
+<p>飛距離によりますが、50～70あたりで自分の影が画面中央あたりに見え、歩行しやすいです。</p>
+
+<p>0を指定すると、今まで通りの視点になります。</p>
+
+<h4 id="withpet">withPet.</h4>
+
+<p>ペット飛行有無です。</p>
+
+<p>1を指定すると、ペットも一緒に飛行します。</p>
 
 <h2 id="descriptions">descriptions.</h2>
+
+<h3 id="v1-2-0">v1.2.0</h3>
+
+<p>設定ファイルのフォーマット変更、cameraHeight、withPetオプションを実装しました。</p>
 
 <h3 id="v1-1-0">v1.1.0</h3>
 

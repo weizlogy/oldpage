@@ -253,6 +253,9 @@
   
   <strong>Last modified.</strong>
   
+    <div><a href="http://www.weizlogy.gq/tos/addon/fly/">[tree of savior addon] 飛行アドオン</a></div>
+    <div>@2017-04-04 21:30:54.7697035 &#43;0900 JST</div>
+  
     <div><a href="http://www.weizlogy.gq/tos/addon/hidename/">[tree of savior addon] 画面にある自キャラ名を消すアドオン</a></div>
     <div>@2017-04-03 21:23:13.0230724 &#43;0900 JST</div>
   
@@ -264,9 +267,6 @@
   
     <div><a href="http://www.weizlogy.gq/tos/addon/objectdetector/">[tree of savior addon] オブジェクト探索アドオン</a></div>
     <div>@2017-03-31 07:04:18.8603697 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/fly/">[tree of savior addon] 飛行アドオン</a></div>
-    <div>@2017-03-31 06:42:00.555915 &#43;0900 JST</div>
   
     <div><a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a></div>
     <div>@2017-03-27 03:37:14.6766437 &#43;0900 JST</div>
@@ -316,13 +316,23 @@ v1.0.0 新規作成。
 単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/fly/">[tree of savior addon] 飛行アドオン</a></div>
-  <pre class="summary">download. [v1.1.0]fly.ipf
+  <pre class="summary">download. [v1.2.0]fly.ipf
 install. README.md
 introduction.  settings. Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。
-ファイルを開いて一行目に、10 130 200 0 1と入力します。
-設定は半角スペース区切りで、[ボタンのX座標] [ボタンのY座標] [飛距離] [前回飛行中か？] [ボタン表示状態]。
-飛距離は150～200が良いです。100では弓に狙われます。
-descriptions. v1.1.0 設定[ボタン表示状態]を追加しました。
+以下の初期設定をコピペします。
+fly.config = { pos = {x = 100, y = 100}, jumpPower = 140, showButton = 0, cameraHeight = 50, withPet = 1 };  explanation. pos. ボタンの座標指定です。
+[showButton]が0の場合は無視されます。
+jumpPower. 飛距離です。
+100では弓に狙われます。 150では通常攻撃が届きません。（wizでは140で届きます。）
+showButton. ボタン表示状態です。
+1の場合のみ、飛行ON/OFFボタンを[pos]の座標に表示します。
+cameraHeight. 飛行時のカメラ位置です。
+飛距離によりますが、50～70あたりで自分の影が画面中央あたりに見え、歩行しやすいです。
+0を指定すると、今まで通りの視点になります。
+withPet. ペット飛行有無です。
+1を指定すると、ペットも一緒に飛行します。
+descriptions. v1.2.0 設定ファイルのフォーマット変更、cameraHeight、withPetオプションを実装しました。
+v1.1.0 設定[ボタン表示状態]を追加しました。
 アドオンがロードされると、[ボタン表示状態]が1の場合のみ、[Fly]ボタンが表示されます。
 ショートカットキーを追加しました。
 ESCAPE+UP(上矢印)で飛行、飛行解除ができます。
@@ -331,8 +341,7 @@ v1.0.0 新規作成。
 ボタンを押すと飛行状態、地上に降りるを繰り返します。
 飛行状態でも地上の敵を攻撃できます。 飛行状態では地上の敵はこちらを近接攻撃できません。
 実際は地上を歩行しているのでトラップには気をつけてください。
-飛行状態ではスキルが使用不可ですが、ノックバックを受けるとスキルが使用可能になりますので、わざとノックバックするようになっています。
-休息中に飛行すると、休息バフがついた状態で行動できます。 ただし、攻撃などの操作を行うと休息バフは解除されます。</pre>
+飛行状態ではスキルが使用不可ですが、ノックバックを受けるとスキルが使用可能になりますので、わざとノックバックするようになっています。</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon-dev/create-addon/">[tree of savior addon for developpers] アドオン作成～設置方法まとめ</a></div>
   <pre class="summary">必要なもの  IPF Suite IPFUnpacker  作成手順 1. アドオンの名前を決める &ldquo;xxxaddonxxx&rdquo;としてみます。全て小文字、記号なしが良いです。
