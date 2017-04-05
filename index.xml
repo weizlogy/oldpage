@@ -7,8 +7,42 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Tue, 04 Apr 2017 21:30:54 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 06 Apr 2017 04:46:18 +0900</lastBuildDate>
     <atom:link href="http://www.weizlogy.gq/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/worldmapquest/</link>
+      <pubDate>Thu, 06 Apr 2017 04:46:18 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/worldmapquest/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/worldmapquest-v1.0.0/worldmapquest.ipf&#34;&gt;[v1.0.0]worldmapquest.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/lunp83pa1v4zybh/worldmapquest.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/lunp83pa1v4zybh/worldmapquest.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、ワールドマップの各エリア名上部に受注可能なクエスト数が表示されます。&lt;/p&gt;
+
+&lt;p&gt;introductionの画像では碑石路、いにしえの女神の庭、ドバシア峠、古旗の森、大王の関門、カーライルの霊廟、ガルエット平野に[n]の形式で表示されています。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] 飛行アドオン</title>
@@ -820,29 +854,6 @@ Hello Bazel.
     &lt;span class=&#34;p&#34;&gt;...&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[system development] ubuntu16.04でMonoDevelopを使った開発環境</title>
-      <link>http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:33 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/</guid>
-      <description>&lt;p&gt;LinuxでC#を使うための環境(mono)とIDE(MonoDevelop)をインストールします。&lt;/p&gt;
-
-&lt;p&gt;まずはmonoをインストールします。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-$ &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;deb http://download.mono-project.com/repo/debian wheezy main&amp;quot;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sudo tee /etc/apt/sources.list.d/mono-xamarin.list
-$ sudo apt-get update
-$ sudo apt-get install mono-complete
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;続いてMonoDevelopをインストールします。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-get install monodevelop
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;monodevelopコマンドでIDEを起動します。&lt;/p&gt;
 </description>
     </item>
     

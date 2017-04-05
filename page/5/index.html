@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html ⚡>
 <head>
+	<meta name="generator" content="Hugo 0.19" />
 <meta charset="utf-8">
-<link rel="canonical" href="http://www.weizlogy.gq/404/">
+<link rel="canonical" href="http://www.weizlogy.gq/">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <title>
-404 - Weizlogy
+
+  Weizlogy
+
 </title>
 
 
@@ -187,9 +190,9 @@
 {
   "@context": "http://schema.org"
   "@type": "BlogPosting",
-  "headline": "404 Page not found",
-  "url": "http://www.weizlogy.gq/404/",
-  "datePublished": "0001-01-01 00:00:00 &#43;0000 UTC",
+  "headline": "Weizlogy",
+  "url": "http://www.weizlogy.gq/",
+  "datePublished": "2017-03-26 15:42:56.1612112 &#43;0900 JST",
   "author": {
     "@type": "Person",
     "name": "weizlogy"
@@ -202,7 +205,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "0001-01-01 00:00:00 &#43;0000 UTC",
+  "dateModified": "2017-03-26 15:42:56.1612112 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -257,21 +260,6 @@
   <strong>Last modified.</strong>
   
   <div class="lastmod-title">
-    <div><a href="http://www.weizlogy.gq/">Weizlogy</a></div>
-    <div class="blog-date">@2017/04/06 04:46:18</div>
-  </div>
-  
-  <div class="lastmod-title">
-    <div><a href="http://www.weizlogy.gq/categories/tos-addon/">Tos Addon</a></div>
-    <div class="blog-date">@2017/04/06 04:46:18</div>
-  </div>
-  
-  <div class="lastmod-title">
-    <div><a href="http://www.weizlogy.gq/tos/">Tos</a></div>
-    <div class="blog-date">@2017/04/06 04:46:18</div>
-  </div>
-  
-  <div class="lastmod-title">
     <div><a href="http://www.weizlogy.gq/tos/addon/worldmapquest/">[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</a></div>
     <div class="blog-date">@2017/04/06 04:46:18</div>
   </div>
@@ -302,8 +290,23 @@
   </div>
   
   <div class="lastmod-title">
-    <div><a href="http://www.weizlogy.gq/system/">Systems</a></div>
+    <div><a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a></div>
     <div class="blog-date">@2017/03/27 03:37:14</div>
+  </div>
+  
+  <div class="lastmod-title">
+    <div><a href="http://www.weizlogy.gq/tos/addon/monsterstatus/">[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</a></div>
+    <div class="blog-date">@2017/03/26 06:41:05</div>
+  </div>
+  
+  <div class="lastmod-title">
+    <div><a href="http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/">[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</a></div>
+    <div class="blog-date">@2017/03/26 03:42:59</div>
+  </div>
+  
+  <div class="lastmod-title">
+    <div><a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a></div>
+    <div class="blog-date">@2017/03/26 03:42:56</div>
   </div>
   
   
@@ -312,8 +315,56 @@
 
 <div class="main">
   <section>
-    <h1>404.</h1>
-    <p>page not found.</p>
+  
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a></div>
+  <pre class="summary">掲題の件について、検索キーワードにあがりましたので、簡単にまとめました。
+正式には、以下のErrorが発生しました。
+System.Windows.Data Error: 4 : Cannot find source for binding with reference &lsquo;RelativeSource FindAncestor, AncestorType=&lsquo;System.Windows.Controls.ItemsControl&rsquo;, AncestorLevel=&lsquo;1&rdquo;. BindingExpression:Path=HorizontalContentAlignment; DataItem=null; target element is &lsquo;ListBoxItem&rsquo; (Name=&ldquo;); target property is &lsquo;HorizontalContentAlignment&rsquo; (type &lsquo;HorizontalAlignment&rsquo;)
+System.Windows.Data Error: 4 : Cannot find source for binding with reference &lsquo;RelativeSource FindAncestor, AncestorType=&lsquo;System.Windows.Controls.ItemsControl&rsquo;, AncestorLevel=&lsquo;1&rdquo;. BindingExpression:Path=VerticalContentAlignment; DataItem=null; target element is &lsquo;ListBoxItem&rsquo; (Name=&ldquo;); target property is &lsquo;VerticalContentAlignment&rsquo; (type &lsquo;VerticalAlignment&rsquo;)
+xamlのStyle定義のSetterプロパティでAlignmentを定義していると出るみたいです。 定義を外すとErrorは出ません。 みたいです。というのは、何故なのか理由が分からないためです。
+以下、実際のコードの抜粋です。
+&lt;Style TargetType=&quot;{x:Type ListBoxItem}&quot;&gt; &lt;Setter Property=&quot;HorizontalContentAlignment&quot; Value=&quot;{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&quot;/&gt; &lt;Setter Property=&quot;VerticalContentAlignment&quot; Value=&quot;{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&quot;/&gt;  </pre>
+  
+  
+    
+    <ul class="pagination">
+        
+        <li>
+            <a href="/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        </li>
+        
+        <li
+        >
+        <a href="/page/4/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        </li>
+        
+        <li
+        ><a href="/">1</a></li>
+        
+        <li
+        ><a href="/page/2/">2</a></li>
+        
+        <li
+        ><a href="/page/3/">3</a></li>
+        
+        <li
+        ><a href="/page/4/">4</a></li>
+        
+        <li
+        class="active"><a href="/page/5/">5</a></li>
+        
+        <li
+        class="disabled">
+        <a href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        </li>
+        
+        <li>
+            <a href="/page/5/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        </li>
+        
+    </ul>
+    
   </section>
   <amp-ad type="adsense"
     layout="responsive"
