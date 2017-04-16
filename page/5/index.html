@@ -192,7 +192,7 @@
   "@type": "BlogPosting",
   "headline": "Weizlogy",
   "url": "http://www.weizlogy.gq/",
-  "datePublished": "2017-03-26 15:42:56.1612112 &#43;0900 JST",
+  "datePublished": "2017-03-26 15:42:11.9750674 &#43;0900 JST",
   "author": {
     "@type": "Person",
     "name": "weizlogy"
@@ -205,7 +205,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-26 15:42:56.1612112 &#43;0900 JST",
+  "dateModified": "2017-03-26 15:42:11.9750674 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -247,7 +247,7 @@
   
   <div><a href="/categories/system-dev">system-dev</a> (15)</div>
   
-  <div><a href="/categories/tos-addon">tos-addon</a> (16)</div>
+  <div><a href="/categories/tos-addon">tos-addon</a> (17)</div>
   
   <div><a href="/categories/tos-addon-dev">tos-addon-dev</a> (4)</div>
   
@@ -258,6 +258,11 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div><a href="http://www.weizlogy.gq/tos/addon/skillitemcounter/">[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</a></div>
+    <div class="blog-date">@2017/04/16 11:30:59</div>
+  </div>
   
   <div class="lastmod-title">
     <div><a href="http://www.weizlogy.gq/tos/addon/worldmapquest/">[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</a></div>
@@ -304,11 +309,6 @@
     <div class="blog-date">@2017/03/26 03:42:59</div>
   </div>
   
-  <div class="lastmod-title">
-    <div><a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a></div>
-    <div class="blog-date">@2017/03/26 03:42:56</div>
-  </div>
-  
   
 </div>
 </aside>
@@ -316,6 +316,15 @@
 <div class="main">
   <section>
   
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">[system development] strutsのFormFileからローカルファイルの絶対パスを取得</a></div>
+  <pre class="summary">strutsのFormFileからローカルファイルの絶対パスを取得したいのです。 （取得しても無意味ですが）
+eclipseのデバッガで参照すると、確かにprivate変数に絶対パスを持っていますが、アクセスするためのメソッドがありません。
+リフレクションでアクセス可能です。
+DiskFileItemを使用するために、「commons-fileupload.jar」が必要です。
+struts1.3.10
+java 1.6.0_18
+// formFileの実体は「org.apache.struts.upload.CommonsMultipartRequestHandler.CommonsFormFile」 Field f = formFile.getClass().getDeclaredField(&quot;fileItem&quot;); f.setAccessible(true); // fileItemは「org.apache.commons.fileupload.FileItem」を実装した「org.apache.commons.fileupload.disk.DiskFileItem」 DiskFileItem item = (DiskFileItem) f.get(formFile); System.out.println(item.getName());  </pre>
   
   <div><a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a></div>
   <pre class="summary">掲題の件について、検索キーワードにあがりましたので、簡単にまとめました。

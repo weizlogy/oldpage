@@ -7,8 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Thu, 06 Apr 2017 04:46:18 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 16 Apr 2017 11:30:59 +0900</lastBuildDate>
     <atom:link href="http://www.weizlogy.gq/tos/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/skillitemcounter/</link>
+      <pubDate>Sun, 16 Apr 2017 11:30:59 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/skillitemcounter/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/skillitemcounter-v1.0.0/skillitemcounter.ipf&#34;&gt;[v1.0.0]skillitemcounter.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/7nkaxby6mf76qwr/skillitemcounter.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/7nkaxby6mf76qwr/skillitemcounter.png?dl=1&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、クイックスロットにセットしている、消費アイテムのあるスキルスロット右上に、消費アイテムの個数に応じたスキルの使用回数を追加で表示します。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</title>
@@ -1109,105 +1141,6 @@
 ワープ直後はNPCを選択しないよう留意してください。&lt;/p&gt;
 
 &lt;p&gt;一時消去したNPCは、release後、エリアチェンジで表示できます。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 装備修理時、装備アイコンに耐久度（％）を色分け表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/repairendur/</link>
-      <pubDate>Sun, 26 Mar 2017 15:40:27 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/repairendur/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/repairendur-v1.1.0/repairendur.ipf&#34;&gt;[v1.1.0]repairendur.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://1.bp.blogspot.com/-1pmFYgl40N4/WMBvW1zRsHI/AAAAAAAACpU/8sqEnAesGEIe2gsCjAyO5UXpbsJoHZwhQCLcB/s1600/repairendur1.PNG&#34;&gt;&lt;amp-img src=&#34;https://1.bp.blogspot.com/-1pmFYgl40N4/WMBvW1zRsHI/AAAAAAAACpU/8sqEnAesGEIe2gsCjAyO5UXpbsJoHZwhQCLcB/s320/repairendur1.PNG&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://1.bp.blogspot.com/-7fqCudbXptY/WMBvWp50OZI/AAAAAAAACpQ/huWjvdPaiH0f5cI0M5W18weC534JFuIqgCLcB/s1600/repairendur2_1.png&#34;&gt;&lt;amp-img src=&#34;https://1.bp.blogspot.com/-7fqCudbXptY/WMBvWp50OZI/AAAAAAAACpQ/huWjvdPaiH0f5cI0M5W18weC534JFuIqgCLcB/s320/repairendur2_1.png&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;p&gt;Nexon\TreeofSaviorJP\addons\repairendur\settings.txt を作成します。&lt;/p&gt;
-
-&lt;p&gt;以下の初期設定を&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/repairendur/settings.txt&#34;&gt;settings.txt&lt;/a&gt;コピペします。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;reen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Weapon&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;Lp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;Mp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;Hp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;reen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Armor&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;Lp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;35&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;Mp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;Hp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;reen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;SubWeapon&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;reen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Weapon&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- added v1.1.0&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;reen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;EndurColor&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;Lc&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;FFFF00&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;Mc&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;FF0000&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;Hc&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;000000&amp;quot;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;explanation&#34;&gt;explanation.&lt;/h3&gt;
-
-&lt;p&gt;この設定は装備の耐久度と割合に応じた文字色の設定です。&lt;/p&gt;
-
-&lt;p&gt;[Weapon]、[Armor]は装備の耐久度の色分け用閾値で、Low, Middle, Highの3段階を、武器用と防具用で用意しています。&lt;/p&gt;
-
-&lt;p&gt;[EndurColor]は装備の耐久度閾値に対応する色をRGBで指定します。&lt;/p&gt;
-
-&lt;h3 id=&#34;explanation-of-initial-parameters&#34;&gt;explanation of initial parameters.&lt;/h3&gt;
-
-&lt;p&gt;武器&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;耐久度[30]%以下で[黄]色&lt;/li&gt;
-&lt;li&gt;耐久度[5]%以下で[赤]色&lt;/li&gt;
-&lt;li&gt;耐久度[1]%以下で[黒]色&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;防具&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;耐久度[35]%以下で[黄]色&lt;/li&gt;
-&lt;li&gt;耐久度[10]%以下で[赤]色&lt;/li&gt;
-&lt;li&gt;耐久度[5]%以下で[黒]色&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;サブウェポン&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;武器と同様&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
-
-&lt;p&gt;サブウェポン用の設定を追加しました。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/issues/2&#34;&gt;issue #2&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;初期値は武器の設定値を見るようにしています。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
-
-&lt;p&gt;修理後に以前の耐久度表示が残る問題を修正しました。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、NPC修理、露天修理の装備アイコンに耐久度を設定の閾値に応じた文字色で表示します。&lt;/p&gt;
 </description>
     </item>
     
