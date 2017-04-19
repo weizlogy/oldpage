@@ -192,7 +192,7 @@
   "@type": "BlogPosting",
   "headline": "[tree of savior addon] DPS計測アドオン",
   "url": "http://www.weizlogy.gq/tos/addon/dpsmeter/",
-  "datePublished": "2017-04-02 17:50:13.7606094 &#43;0900 JST",
+  "datePublished": "2017-04-20 05:19:48.9441692 &#43;0900 JST",
   "author": {
     "@type": "Person",
     "name": "weizlogy"
@@ -205,7 +205,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-04-02 17:50:13.7606094 &#43;0900 JST",
+  "dateModified": "2017-04-20 05:19:48.9441692 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -249,7 +249,7 @@
 
 <h2 id="download">download.</h2>
 
-<p><a href="https://github.com/weizlogy/tos/releases/download/dpsmeter-v1.2.0/dpsmeter.ipf">[v1.2.0] dpsmeter.ipf</a></p>
+<p><a href="https://github.com/weizlogy/tos/releases/download/dpsmeter-v1.3.0/dpsmeter.ipf">[v1.3.0] dpsmeter.ipf</a></p>
 
 <h2 id="install">install.</h2>
 
@@ -263,15 +263,36 @@
 
 <h2 id="descriptions">descriptions.</h2>
 
+<h3 id="v1-3-0">v1.3.0</h3>
+
+<h4 id="dps平均値表示を追加">DPS平均値表示を追加</h4>
+
+<h4 id="dps平均値表示に伴い-フォーマットを変更">DPS平均値表示に伴い、フォーマットを変更</h4>
+
+<pre><code>現在のDPS[{淡青}平均DPS][{淡赤}最大DPS] dps
+</code></pre>
+
+<h4 id="モンスター死亡時のsystemメッセージによる通知をデフォルトoffに変更">モンスター死亡時のsystemメッセージによる通知をデフォルトOFFに変更</h4>
+
+<p>表示するには、DPSのUIを右クリック &gt; [toggleChat]を選択します。</p>
+
+<p>選択する度に通知のON/OFFを切り替えます。</p>
+
+<h4 id="dps計測対象を調整">DPS計測対象を調整</h4>
+
+<ul>
+<li>ボコルのゾンビフィーで召喚するゾンビを除外</li>
+</ul>
+
 <h3 id="v1-2-0">v1.2.0</h3>
 
-<p>DPS計測方法を調整。</p>
+<h4 id="dps計測方法を調整">DPS計測方法を調整</h4>
 
 <p>ターゲットアイコン表示が可能な距離まで近づいて、初撃時（を含む。初撃はdamage/1sec換算）からDPS計測を開始します。</p>
 
 <p>ターゲットが死ぬかフレームアウトするまで計測は止まりません。</p>
 
-<p>DPS計測対象を調整。</p>
+<h4 id="dps計測対象を調整-1">DPS計測対象を調整</h4>
 
 <p>旧バージョンではfaction = &ldquo;Monster&rdquo;を計測対象としていましたが不十分でしたので、
 計測対象を拡大し、ペット以外（faction ~= &ldquo;Pet&rdquo;）としました。</p>
@@ -280,10 +301,14 @@
 
 <h3 id="v1-1-0">v1.1.0</h3>
 
+<h4 id="ui表示を追加">UI表示を追加</h4>
+
 <p>現在のDPS、最大DPSをモンスターUI近辺に、以下のフォーマット表示します。</p>
 
 <pre><code>[現在のDPS]([最大DPS]) dps
 </code></pre>
+
+<h4 id="モンスター死亡時のsystemメッセージによる通知を追加">モンスター死亡時のsystemメッセージによる通知を追加</h4>
 
 <p>モンスター死亡時、最大DPSをsystemメッセージで表示します。</p>
 
@@ -291,7 +316,7 @@
 
 <h3 id="v1-0-0">v1.0.0</h3>
 
-<p>新規作成。</p>
+<h4 id="新規作成">新規作成。</h4>
 
 <p>アドオンがロードされるとDPS計測が有効になり、計測結果はsystemメッセージで通知します。</p>
 
@@ -302,13 +327,14 @@
 <ul>
 <li>ソロで戦う。（コンパニオンも出さない）</li>
 <li>混戦しない。</li>
+<li>回復持ちの敵は避ける。</li>
 </ul>
 
  </div>
 
 </article>
 <div class="blog-date">
-  2017/03/20 08:41:36 - 2017/04/02 05:50:13
+  2017/03/20 08:41:36 - 2017/04/20 05:19:48
 </div>
 <amp-ad type="adsense"
   layout="responsive"
