@@ -7,20 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Thu, 20 Apr 2017 05:19:48 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 28 Apr 2017 07:04:42 +0900</lastBuildDate>
     <atom:link href="http://www.weizlogy.gq/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>[tree of savior addon] DPS計測アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/dpsmeter/</link>
-      <pubDate>Thu, 20 Apr 2017 05:19:48 +0900</pubDate>
+      <title>[tree of savior addon] ワープ用クエスト誤完了防止アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/savequest/</link>
+      <pubDate>Fri, 28 Apr 2017 07:04:42 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon/dpsmeter/</guid>
+      <guid>http://www.weizlogy.gq/tos/addon/savequest/</guid>
       <description>
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/dpsmeter-v1.3.0/dpsmeter.ipf&#34;&gt;[v1.3.0] dpsmeter.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/savequest-v1.0.2/savequest.ipf&#34;&gt;[v1.0.2]savequest.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -28,92 +28,74 @@
 
 &lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
 
-&lt;amp-youtube data-videoid=&#34;OoAcSq2FU0A&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
-
 &lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;p&gt;Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。&lt;/p&gt;
+
+&lt;h3 id=&#34;explanation&#34;&gt;explanation.&lt;/h3&gt;
+
+&lt;p&gt;savequestフォルダーにはquests_[cid].txtが自動的に生成され、
+キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。&lt;/p&gt;
 
 &lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
 
-&lt;h3 id=&#34;v1-3-0&#34;&gt;v1.3.0&lt;/h3&gt;
+&lt;h3 id=&#34;v1-0-2&#34;&gt;v1.0.2&lt;/h3&gt;
 
-&lt;h4 id=&#34;dps平均値表示を追加&#34;&gt;DPS平均値表示を追加&lt;/h4&gt;
+&lt;h4 id=&#34;バグ対応&#34;&gt;バグ対応&lt;/h4&gt;
 
-&lt;h4 id=&#34;dps平均値表示に伴い-フォーマットを変更&#34;&gt;DPS平均値表示に伴い、フォーマットを変更&lt;/h4&gt;
+&lt;p&gt;保存したクエスト情報がチーム毎に共有される問題を修正しました。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;現在のDPS[{淡青}平均DPS][{淡赤}最大DPS] dps
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/issues/3&#34;&gt;issue #3&lt;/a&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;モンスター死亡時のsystemメッセージによる通知をデフォルトoffに変更&#34;&gt;モンスター死亡時のsystemメッセージによる通知をデフォルトOFFに変更&lt;/h4&gt;
+&lt;p&gt;本修正により、情報保存形式が変更され、クエスト保存状態が初期化されます。&lt;/p&gt;
 
-&lt;p&gt;表示するには、DPSのUIを右クリック &amp;gt; [toggleChat]を選択します。&lt;/p&gt;
+&lt;p&gt;お手数ですが、再チェックまたは、旧仕様情報（quests.txt）の内容をquests_[cid].txtにコピペしてください。&lt;/p&gt;
 
-&lt;p&gt;選択する度に通知のON/OFFを切り替えます。&lt;/p&gt;
+&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
 
-&lt;h4 id=&#34;dps計測対象を調整&#34;&gt;DPS計測対象を調整&lt;/h4&gt;
+&lt;h4 id=&#34;バグ対応-1&#34;&gt;バグ対応&lt;/h4&gt;
 
-&lt;ul&gt;
-&lt;li&gt;ボコルのゾンビフィーで召喚するゾンビを除外&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;再ログイン時に前回の状態が保存されない問題を修正しました。&lt;/p&gt;
 
-&lt;h3 id=&#34;v1-2-0&#34;&gt;v1.2.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;dps計測方法を調整&#34;&gt;DPS計測方法を調整&lt;/h4&gt;
-
-&lt;p&gt;ターゲットアイコン表示が可能な距離まで近づいて、初撃時（を含む。初撃はdamage/1sec換算）からDPS計測を開始します。&lt;/p&gt;
-
-&lt;p&gt;ターゲットが死ぬかフレームアウトするまで計測は止まりません。&lt;/p&gt;
-
-&lt;h4 id=&#34;dps計測対象を調整-1&#34;&gt;DPS計測対象を調整&lt;/h4&gt;
-
-&lt;p&gt;旧バージョンではfaction = &amp;ldquo;Monster&amp;rdquo;を計測対象としていましたが不十分でしたので、
-計測対象を拡大し、ペット以外（faction ~= &amp;ldquo;Pet&amp;rdquo;）としました。&lt;/p&gt;
-
-&lt;p&gt;IWやルーツクリスタルも対象となってしまいますが、計測されないよりは良いかと。。。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;ui表示を追加&#34;&gt;UI表示を追加&lt;/h4&gt;
-
-&lt;p&gt;現在のDPS、最大DPSをモンスターUI近辺に、以下のフォーマット表示します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[現在のDPS]([最大DPS]) dps
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;モンスター死亡時のsystemメッセージによる通知を追加&#34;&gt;モンスター死亡時のsystemメッセージによる通知を追加&lt;/h4&gt;
-
-&lt;p&gt;モンスター死亡時、最大DPSをsystemメッセージで表示します。&lt;/p&gt;
-
-&lt;p&gt;ターゲットアイコン表示が可能な距離まで近づくとDPS計測を開始、離れると停止します。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/issues/1&#34;&gt;issue #1&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
 
-&lt;h4 id=&#34;新規作成&#34;&gt;新規作成。&lt;/h4&gt;
+&lt;h4 id=&#34;新規作成&#34;&gt;新規作成&lt;/h4&gt;
 
-&lt;p&gt;アドオンがロードされるとDPS計測が有効になり、計測結果はsystemメッセージで通知します。&lt;/p&gt;
+&lt;p&gt;アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、
+ワープ直後の誤完了を防止できます。&lt;/p&gt;
 
-&lt;p&gt;現時点ではコンバットログが取れないので、正確な測定は実現できていません。&lt;/p&gt;
+&lt;h2 id=&#34;usage&#34;&gt;usage.&lt;/h2&gt;
 
-&lt;p&gt;少しでも測定精度を上げたい場合は、以下の点に注意してください。&lt;/p&gt;
+&lt;p&gt;UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、
+メニュー（save, release, cancel）が開きます。&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;ソロで戦う。（コンパニオンも出さない）&lt;/li&gt;
-&lt;li&gt;混戦しない。&lt;/li&gt;
-&lt;li&gt;回復持ちの敵は避ける。&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;saveを選択すると該当クエストのNPCは非表示となります。
+また、save済みのクエストのワープアイコン直下に[saved.]の文字を表示します。&lt;/p&gt;
+
+&lt;p&gt;元に戻すにはreleaseを選択します。&lt;/p&gt;
+
+&lt;h2 id=&#34;cautions&#34;&gt;cautions.&lt;/h2&gt;
+
+&lt;p&gt;念のため、アドオンは補助的な位置づけとし、
+ワープ直後はNPCを選択しないよう留意してください。&lt;/p&gt;
+
+&lt;p&gt;一時消去したNPCは、release後、エリアチェンジで表示できます。&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/skillitemcounter/</link>
-      <pubDate>Sun, 16 Apr 2017 11:30:59 +0900</pubDate>
+      <title>[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/monsterstatus/</link>
+      <pubDate>Fri, 28 Apr 2017 07:04:07 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon/skillitemcounter/</guid>
+      <guid>http://www.weizlogy.gq/tos/addon/monsterstatus/</guid>
       <description>
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/skillitemcounter-v1.0.0/skillitemcounter.ipf&#34;&gt;[v1.0.0]skillitemcounter.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/monsterstatus-v2.1.0/monsterstatus.ipf&#34;&gt;[v2.1.0]monsterstatus.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -121,24 +103,130 @@
 
 &lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/7nkaxby6mf76qwr/skillitemcounter.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/7nkaxby6mf76qwr/skillitemcounter.png?dl=1&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;amp-youtube data-videoid=&#34;IjzyuRoAbQo&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
 
 &lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
 
 &lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
 
+&lt;h3 id=&#34;v2-1-0&#34;&gt;v2.1.0&lt;/h3&gt;
+
+&lt;h4 id=&#34;種族-属性表示追加&#34;&gt;種族、属性表示追加&lt;/h4&gt;
+
+&lt;p&gt;種族、属性の表示を追加しました。&lt;/p&gt;
+
+&lt;h3 id=&#34;v2-0-0&#34;&gt;v2.0.0&lt;/h3&gt;
+
+&lt;h4 id=&#34;討伐数-ドロップアイテム名-アイテム収集率表示追加&#34;&gt;討伐数、ドロップアイテム名、アイテム収集率表示追加&lt;/h4&gt;
+
+&lt;p&gt;冒険日誌から討伐数、ドロップアイテム名、アイテム収集率を取得、
+表示する機能を追加しました。
+また、ドロップアイテム名からアイテムツールチップが開けます。&lt;/p&gt;
+
+&lt;h4 id=&#34;表示ステータス-フォーマット調整&#34;&gt;表示ステータス 、フォーマット調整&lt;/h4&gt;
+
+&lt;p&gt;表示するステータスは現在のところ以下の通りです。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;表示名&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;内容&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ATK&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;物理攻撃力(最大)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;MATK&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;魔法攻撃力(最大)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;DEF&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;物理防御力&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;MDEF&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;魔法防御力&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;UIウィンドウをドラッグで移動できるようになりました。&lt;/p&gt;
+
+&lt;p&gt;設定はログイン中のみ有効です。&lt;/p&gt;
+
 &lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
 
-&lt;p&gt;新規作成。&lt;/p&gt;
+&lt;h4 id=&#34;新規作成&#34;&gt;新規作成&lt;/h4&gt;
 
-&lt;p&gt;アドオンがロードされると、クイックスロットにセットしている、消費アイテムのあるスキルスロット右上に、消費アイテムの個数に応じたスキルの使用回数を追加で表示します。&lt;/p&gt;
+&lt;p&gt;アドオンがロードされると、ターゲットしたモンスターのステータス（*1）が画面上部に表示されます。&lt;/p&gt;
+
+&lt;p&gt;[*1] 表示するステータスは現在のところ以下の通りです。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;表示名&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;内容&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ATK&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;物理攻撃力(最大)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;MATK&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;魔法攻撃力(最大)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;DEF&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;物理防御力&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;MDEF&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;魔法防御力&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;DR&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;回避率&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;CDR&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;クリティカル回避率&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;CATK&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;クリティカル攻撃力&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;CDEF&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;クリティカル防御力&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </description>
     </item>
     
     <item>
       <title>[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/worldmapquest/</link>
-      <pubDate>Thu, 06 Apr 2017 04:46:18 +0900</pubDate>
+      <pubDate>Fri, 28 Apr 2017 05:35:12 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/worldmapquest/</guid>
       <description>
@@ -170,9 +258,422 @@
     </item>
     
     <item>
+      <title>[tree of savior addon] 所持キャラ全員の個人倉庫を見るアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/warehousepicker/</link>
+      <pubDate>Fri, 28 Apr 2017 05:35:06 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/warehousepicker/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/qkoh8lkds1m82d1/warehousepicker.ipf?dl=0&#34;&gt;warehousepicker.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;amp-youtube data-videoid=&#34;K0V5lyVg_WY&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;p&gt;Nexon\TreeofSaviorJP\addons\warehousepicker フォルダーを作成します。&lt;/p&gt;
+
+&lt;p&gt;各所持キャラで個人倉庫を開閉する（正確には閉じる瞬間）と、先ほど作成したフォルダーに個人倉庫のアイテム情報を保存します。&lt;/p&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされた後、いずれかのキャラで個人倉庫を開くと、倉庫左下に[whpk]ボタンが出現します。
+ボタンを押すと、事前に保存された所持キャラの個人倉庫のアイテム情報を表示するダイアログを開きます。&lt;/p&gt;
+
+&lt;p&gt;ダイアログには、事前に個人倉庫のアイテム情報が作成された所持キャラ名のドロップダウンリストが表示されます。
+ドロップダウンリストで選択した所持キャラ名の個人倉庫のアイテム情報（アイテムアイコン、名称、個数）をダイアログ内に表示します。&lt;/p&gt;
+
+&lt;p&gt;最低一度は各所持キャラで個人倉庫を開閉する必要がありますが、それ以降はいずれかのキャラでログインすると全員の個人倉庫を見ることができます。&lt;/p&gt;
+
+&lt;p&gt;今のところチームの区別なくキャラ名のみ表示しますので、複数チームを所持している場合に使い勝手に難があるかもしれません。
+使いにくいようでしたら改善します。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/staminagauge/</link>
+      <pubDate>Fri, 28 Apr 2017 05:34:58 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/staminagauge/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/jpd1fzm70dn0mhb/staminigauge.ipf?dl=0&#34;&gt;staminigauge.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://1.bp.blogspot.com/-PMCi6_WkEYc/WLBRzWOTrgI/AAAAAAAACoI/SR-iP_MqSoYud4xzv1w_zseS7TUpIUSywCLcB/s1600/staminigauge.PNG&#34;&gt;&lt;amp-img src=&#34;https://1.bp.blogspot.com/-PMCi6_WkEYc/WLBRzWOTrgI/AAAAAAAACoI/SR-iP_MqSoYud4xzv1w_zseS7TUpIUSywCLcB/s320/staminigauge.PNG&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。&lt;/p&gt;
+
+&lt;p&gt;若干キャラ名と被りますが、気にしないように。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/skillitemcounter/</link>
+      <pubDate>Fri, 28 Apr 2017 05:34:52 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/skillitemcounter/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/skillitemcounter-v1.0.0/skillitemcounter.ipf&#34;&gt;[v1.0.0]skillitemcounter.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/7nkaxby6mf76qwr/skillitemcounter.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/7nkaxby6mf76qwr/skillitemcounter.png?dl=1&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、クイックスロットにセットしている、消費アイテムのあるスキルスロット右上に、消費アイテムの個数に応じたスキルの使用回数を追加で表示します。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 装備修理時、装備アイコンに耐久度（％）を色分け表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/repairendur/</link>
+      <pubDate>Fri, 28 Apr 2017 05:34:40 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/repairendur/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/repairendur-v1.1.0/repairendur.ipf&#34;&gt;[v1.1.0]repairendur.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://1.bp.blogspot.com/-1pmFYgl40N4/WMBvW1zRsHI/AAAAAAAACpU/8sqEnAesGEIe2gsCjAyO5UXpbsJoHZwhQCLcB/s1600/repairendur1.PNG&#34;&gt;&lt;amp-img src=&#34;https://1.bp.blogspot.com/-1pmFYgl40N4/WMBvW1zRsHI/AAAAAAAACpU/8sqEnAesGEIe2gsCjAyO5UXpbsJoHZwhQCLcB/s320/repairendur1.PNG&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://1.bp.blogspot.com/-7fqCudbXptY/WMBvWp50OZI/AAAAAAAACpQ/huWjvdPaiH0f5cI0M5W18weC534JFuIqgCLcB/s1600/repairendur2_1.png&#34;&gt;&lt;amp-img src=&#34;https://1.bp.blogspot.com/-7fqCudbXptY/WMBvWp50OZI/AAAAAAAACpQ/huWjvdPaiH0f5cI0M5W18weC534JFuIqgCLcB/s320/repairendur2_1.png&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;p&gt;Nexon\TreeofSaviorJP\addons\repairendur\settings.txt を作成します。&lt;/p&gt;
+
+&lt;p&gt;以下の初期設定を&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/repairendur/settings.txt&#34;&gt;settings.txt&lt;/a&gt;コピペします。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;reen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Weapon&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;Lp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;Mp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;Hp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;reen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Armor&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;Lp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;35&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;Mp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;Hp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;reen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;SubWeapon&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;reen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Weapon&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- added v1.1.0&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;reen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;EndurColor&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;Lc&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;FFFF00&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;Mc&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;FF0000&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;n&#34;&gt;Hc&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;000000&amp;quot;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;explanation&#34;&gt;explanation.&lt;/h3&gt;
+
+&lt;p&gt;この設定は装備の耐久度と割合に応じた文字色の設定です。&lt;/p&gt;
+
+&lt;p&gt;[Weapon]、[Armor]は装備の耐久度の色分け用閾値で、Low, Middle, Highの3段階を、武器用と防具用で用意しています。&lt;/p&gt;
+
+&lt;p&gt;[EndurColor]は装備の耐久度閾値に対応する色をRGBで指定します。&lt;/p&gt;
+
+&lt;h3 id=&#34;explanation-of-initial-parameters&#34;&gt;explanation of initial parameters.&lt;/h3&gt;
+
+&lt;p&gt;武器&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;耐久度[30]%以下で[黄]色&lt;/li&gt;
+&lt;li&gt;耐久度[5]%以下で[赤]色&lt;/li&gt;
+&lt;li&gt;耐久度[1]%以下で[黒]色&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;防具&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;耐久度[35]%以下で[黄]色&lt;/li&gt;
+&lt;li&gt;耐久度[10]%以下で[赤]色&lt;/li&gt;
+&lt;li&gt;耐久度[5]%以下で[黒]色&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;サブウェポン&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;武器と同様&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
+
+&lt;p&gt;サブウェポン用の設定を追加しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/issues/2&#34;&gt;issue #2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;初期値は武器の設定値を見るようにしています。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
+
+&lt;p&gt;修理後に以前の耐久度表示が残る問題を修正しました。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、NPC修理、露天修理の装備アイコンに耐久度を設定の閾値に応じた文字色で表示します。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] オブジェクト探索アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/objectdetector/</link>
+      <pubDate>Fri, 28 Apr 2017 05:34:33 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/objectdetector/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/objectdetector-v1.0.1/objectdetector.ipf&#34;&gt;[v1.0.1]objectdetector.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
+
+&lt;p&gt;性能改善しました。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、マップとミニマップに四角形のアイコン[*1]が表示されます。&lt;/p&gt;
+
+&lt;p&gt;[*1] アイコン配色とオブジェクトの関係は以下の通りです。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;色&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;オブジェクト&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;赤&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;モンスター&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;赤点滅&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;クローバーバフモンスター&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;青&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;PC&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;橙&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NPC&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;橙点滅&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;宝箱&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;紫&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ルーツクリスタル&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;白&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ドロップアイテム&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;黒&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;その他&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;配色をカスタマイズする設定を追加する予定です。&lt;/p&gt;
+
+&lt;p&gt;某レーダーと違いマップにオーバーレイせず直接描画しているため、既存UIの邪魔をしません。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] チャット入力欄表示中に所持中のメガホン数を表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/megaphonecount/</link>
+      <pubDate>Fri, 28 Apr 2017 05:34:13 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/megaphonecount/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/bnq1vmaz1knd8j5/megaphonecount.ipf?dl=0&#34;&gt;megaphonecount.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://1.bp.blogspot.com/-dzAFJ2NNsxY/WKBbR0WULvI/AAAAAAAACj0/XUQaXpu_sbQvbRWRPPAE2N2h6JnvNaAEwCLcB/s1600/megaphonecount.PNG&#34;&gt;&lt;amp-img src=&#34;https://1.bp.blogspot.com/-dzAFJ2NNsxY/WKBbR0WULvI/AAAAAAAACj0/XUQaXpu_sbQvbRWRPPAE2N2h6JnvNaAEwCLcB/s320/megaphonecount.PNG&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、チャット入力欄表示中に所持中のメガホン数が表示されます。 それだけです。。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] マーケットデフォルト出品日数変更アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/marketselltimechanger/</link>
+      <pubDate>Fri, 28 Apr 2017 05:34:04 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/marketselltimechanger/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/g54jw30u6tx9117/marketselltimechanger.ipf?dl=0&#34;&gt;marketselltimechanger.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;p&gt;Nexon\TreeofSaviorJP\addons\marketselltimechanger\settings.txt を作成します。&lt;/p&gt;
+
+&lt;p&gt;ファイルを開いて一行目に、（デフォルト1日が良ければ）1と入力します。&lt;/p&gt;
+
+&lt;p&gt;設定は、[デフォルト出品日数]のみ。&lt;/p&gt;
+
+&lt;p&gt;現状、1,3,5,7 が使用でき、それ以外が入力されていた場合は、システムのデフォルト値が採用されます。&lt;/p&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、設定ファイルに記載された値でマーケットのデフォルト出品日数を変更します。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/hidename/</link>
+      <pubDate>Fri, 28 Apr 2017 05:33:55 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/hidename/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/hidename-v1.0.1/hidename.ipf&#34;&gt;[v1.0.1]hidename.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/gzklevo002i3s8x/hidename.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/gzklevo002i3s8x/hidename.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
+
+&lt;p&gt;ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。&lt;/p&gt;
+
+&lt;p&gt;動画を撮るときに設定では非表示にできなかったので。。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>[tree of savior addon] 飛行アドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/fly/</link>
-      <pubDate>Tue, 04 Apr 2017 21:30:54 +0900</pubDate>
+      <pubDate>Fri, 28 Apr 2017 05:33:45 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/fly/</guid>
       <description>
@@ -275,16 +776,16 @@
     </item>
     
     <item>
-      <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/hidename/</link>
-      <pubDate>Mon, 03 Apr 2017 21:23:13 +0900</pubDate>
+      <title>[tree of savior addon] DPS計測アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/dpsmeter/</link>
+      <pubDate>Fri, 28 Apr 2017 05:33:35 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon/hidename/</guid>
+      <guid>http://www.weizlogy.gq/tos/addon/dpsmeter/</guid>
       <description>
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/hidename-v1.0.1/hidename.ipf&#34;&gt;[v1.0.1]hidename.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/dpsmeter-v1.3.0/dpsmeter.ipf&#34;&gt;[v1.3.0] dpsmeter.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -292,30 +793,85 @@
 
 &lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/gzklevo002i3s8x/hidename.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/gzklevo002i3s8x/hidename.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;amp-youtube data-videoid=&#34;OoAcSq2FU0A&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
 
 &lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
 
 &lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
 
-&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
+&lt;h3 id=&#34;v1-3-0&#34;&gt;v1.3.0&lt;/h3&gt;
 
-&lt;p&gt;ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。&lt;/p&gt;
+&lt;h4 id=&#34;dps平均値表示を追加&#34;&gt;DPS平均値表示を追加&lt;/h4&gt;
+
+&lt;h4 id=&#34;dps平均値表示に伴い-フォーマットを変更&#34;&gt;DPS平均値表示に伴い、フォーマットを変更&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;現在のDPS[{淡青}平均DPS][{淡赤}最大DPS] dps
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;モンスター死亡時のsystemメッセージによる通知をデフォルトoffに変更&#34;&gt;モンスター死亡時のsystemメッセージによる通知をデフォルトOFFに変更&lt;/h4&gt;
+
+&lt;p&gt;表示するには、DPSのUIを右クリック &amp;gt; [toggleChat]を選択します。&lt;/p&gt;
+
+&lt;p&gt;選択する度に通知のON/OFFを切り替えます。&lt;/p&gt;
+
+&lt;h4 id=&#34;dps計測対象を調整&#34;&gt;DPS計測対象を調整&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ボコルのゾンビフィーで召喚するゾンビを除外&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;v1-2-0&#34;&gt;v1.2.0&lt;/h3&gt;
+
+&lt;h4 id=&#34;dps計測方法を調整&#34;&gt;DPS計測方法を調整&lt;/h4&gt;
+
+&lt;p&gt;ターゲットアイコン表示が可能な距離まで近づいて、初撃時（を含む。初撃はdamage/1sec換算）からDPS計測を開始します。&lt;/p&gt;
+
+&lt;p&gt;ターゲットが死ぬかフレームアウトするまで計測は止まりません。&lt;/p&gt;
+
+&lt;h4 id=&#34;dps計測対象を調整-1&#34;&gt;DPS計測対象を調整&lt;/h4&gt;
+
+&lt;p&gt;旧バージョンではfaction = &amp;ldquo;Monster&amp;rdquo;を計測対象としていましたが不十分でしたので、
+計測対象を拡大し、ペット以外（faction ~= &amp;ldquo;Pet&amp;rdquo;）としました。&lt;/p&gt;
+
+&lt;p&gt;IWやルーツクリスタルも対象となってしまいますが、計測されないよりは良いかと。。。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
+
+&lt;h4 id=&#34;ui表示を追加&#34;&gt;UI表示を追加&lt;/h4&gt;
+
+&lt;p&gt;現在のDPS、最大DPSをモンスターUI近辺に、以下のフォーマット表示します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[現在のDPS]([最大DPS]) dps
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;モンスター死亡時のsystemメッセージによる通知を追加&#34;&gt;モンスター死亡時のsystemメッセージによる通知を追加&lt;/h4&gt;
+
+&lt;p&gt;モンスター死亡時、最大DPSをsystemメッセージで表示します。&lt;/p&gt;
+
+&lt;p&gt;ターゲットアイコン表示が可能な距離まで近づくとDPS計測を開始、離れると停止します。&lt;/p&gt;
 
 &lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
 
-&lt;p&gt;新規作成。&lt;/p&gt;
+&lt;h4 id=&#34;新規作成&#34;&gt;新規作成。&lt;/h4&gt;
 
-&lt;p&gt;アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。&lt;/p&gt;
+&lt;p&gt;アドオンがロードされるとDPS計測が有効になり、計測結果はsystemメッセージで通知します。&lt;/p&gt;
 
-&lt;p&gt;動画を撮るときに設定では非表示にできなかったので。。。&lt;/p&gt;
+&lt;p&gt;現時点ではコンバットログが取れないので、正確な測定は実現できていません。&lt;/p&gt;
+
+&lt;p&gt;少しでも測定精度を上げたい場合は、以下の点に注意してください。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ソロで戦う。（コンパニオンも出さない）&lt;/li&gt;
+&lt;li&gt;混戦しない。&lt;/li&gt;
+&lt;li&gt;回復持ちの敵は避ける。&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
     <item>
       <title>[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/distance/</link>
-      <pubDate>Mon, 03 Apr 2017 21:08:14 +0900</pubDate>
+      <pubDate>Fri, 28 Apr 2017 05:33:22 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/distance/</guid>
       <description>
@@ -359,16 +915,16 @@
     </item>
     
     <item>
-      <title>[tree of savior addon] オブジェクト探索アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/objectdetector/</link>
-      <pubDate>Fri, 31 Mar 2017 07:04:18 +0900</pubDate>
+      <title>[tree of savior addon] コンパニオンのリングコマンドを拡張するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/customcompanion/</link>
+      <pubDate>Fri, 28 Apr 2017 05:33:15 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon/objectdetector/</guid>
+      <guid>http://www.weizlogy.gq/tos/addon/customcompanion/</guid>
       <description>
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/objectdetector-v1.0.1/objectdetector.ipf&#34;&gt;[v1.0.1]objectdetector.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/1r0bo0z9acwz4ui/customcompanion.ipf?dl=0&#34;&gt;customcompanion.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -376,521 +932,31 @@
 
 &lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;amp-youtube data-videoid=&#34;QaPBalivuk4&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
 
 &lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
 
 &lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
 
-&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
-
-&lt;p&gt;性能改善しました。&lt;/p&gt;
-
 &lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
 
 &lt;p&gt;新規作成。&lt;/p&gt;
 
-&lt;p&gt;アドオンがロードされると、マップとミニマップに四角形のアイコン[*1]が表示されます。&lt;/p&gt;
+&lt;p&gt;アドオンがロードされると、コンパニオンに近づくだけでリングコマンドが出現するようになります。
+今まで通り、コンパニオンから離れるとリングコマンドが消えます。&lt;/p&gt;
 
-&lt;p&gt;[*1] アイコン配色とオブジェクトの関係は以下の通りです。&lt;/p&gt;
+&lt;p&gt;リングコマンドに[自動戦闘ON/OFFトグルアイコン]、[コンパニオン休眠化]のスロットを追加します。
+ホットキーの割り当てはありません。&lt;/p&gt;
 
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;色&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;オブジェクト&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
+&lt;p&gt;騎乗スキルのないキャラ、コンパニオンの場合は、リングコマンドの[騎乗]、[降りる]のスロットを削除します。&lt;/p&gt;
 
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;赤&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;モンスター&lt;/td&gt;
-&lt;/tr&gt;
+&lt;h3 id=&#34;自動戦闘on-off&#34;&gt;自動戦闘ON/OFF&lt;/h3&gt;
 
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;赤点滅&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;クローバーバフモンスター&lt;/td&gt;
-&lt;/tr&gt;
+&lt;p&gt;クリックするたびに自動戦闘のON/OFFを切り替えます。 切り替え結果はチャット上にSYSTEMメッセージで表示します。&lt;/p&gt;
 
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;青&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;PC&lt;/td&gt;
-&lt;/tr&gt;
+&lt;h3 id=&#34;コンパニオン休眠化&#34;&gt;コンパニオン休眠化&lt;/h3&gt;
 
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;橙&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;NPC&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;橙点滅&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;宝箱&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;紫&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;ルーツクリスタル&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;白&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;ドロップアイテム&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;黒&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;その他&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;配色をカスタマイズする設定を追加する予定です。&lt;/p&gt;
-
-&lt;p&gt;某レーダーと違いマップにオーバーレイせず直接描画しているため、既存UIの邪魔をしません。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</title>
-      <link>http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/</link>
-      <pubDate>Mon, 27 Mar 2017 03:37:14 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/</guid>
-      <description>&lt;p&gt;strutsのActionFormには、「map-backed properties」「list-backed properties」という機能があります。&lt;/p&gt;
-
-&lt;p&gt;ActionFormにMapやListのフィールドと適切なアクセサーメソッドを用意することで、JSP-Servlet間のデータ送受信が動的に行われる仕組みです。&lt;/p&gt;
-
-&lt;p&gt;Formのフィールドをいくつも用意しなくていいところが、とても便利です。&lt;/p&gt;
-
-&lt;p&gt;基本的な使い方は、下記公式リンクが分かりやすくなっています。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://struts.apache.org/1.x/userGuide/building_controller.html#map_action_form_classes&#34;&gt;http://struts.apache.org/1.x/userGuide/building_controller.html#map_action_form_classes&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;今回の趣旨は、「map-backed properties」「list-backed properties」を併用することです。
-検索結果等JSPで動的に一覧表示した複数のForm値を、簡単にActionで受け取ることができます。&lt;/p&gt;
-
-&lt;p&gt;struts1.3.10&lt;/p&gt;
-
-&lt;p&gt;java 1.6.0_18&lt;/p&gt;
-
-&lt;p&gt;以下のようなFormクラスを用意します。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;org.apache.commons.beanutils.LazyDynaList&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;org.apache.commons.beanutils.LazyDynaMap&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
-
-&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;HogeForm&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;extends&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ActionForm&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
-
-    &lt;span class=&#34;kd&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;LazyDynaList&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;values&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;LazyDynaList&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;LazyDynaMap&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;);&lt;/span&gt;
-
-    &lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;String&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;getValue&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;values&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;);&lt;/span&gt;
-    &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-
-    &lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;setValue&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Object&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;values&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;set&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;);&lt;/span&gt;
-    &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-
-    &lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;List&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Map&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;getValues&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
-        &lt;span class=&#34;c1&#34;&gt;// LazyDynaList, LazyDynaMapのままでは扱いにくいため、より一般的な型（List, Map）に変換します。&lt;/span&gt;
-        &lt;span class=&#34;n&#34;&gt;List&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Map&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;convertValues&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ArrayList&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Map&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;();&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Object&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;item&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;values&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
-            &lt;span class=&#34;n&#34;&gt;convertValues&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;add&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(((&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;LazyDynaMap&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;item&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getMap&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;());&lt;/span&gt;
-        &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;convertValues&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;JSPでは以下のように出力しておきます。
-Formをsubmitすると、HogeFormのvaluesにList&amp;lt;Map&amp;gt;の形式で値が格納されています。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-jsp&#34; data-lang=&#34;jsp&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;logic:iterate&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;xxx&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;yyy&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;indexId=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;index&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;INPUT&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;hidden&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;value[&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;&amp;lt;%=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;index&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;%&amp;gt;&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;].aaa&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;value=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;&amp;lt;bean:write name=&amp;quot;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;xxx&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;property=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;123&amp;quot;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;&amp;quot; /&amp;gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;INPUT&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;hidden&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;value[&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;&amp;lt;%=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;index&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;%&amp;gt;&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;].bbb&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;value=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;&amp;lt;bean:write name=&amp;quot;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;xxx&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;property=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;456&amp;quot;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;&amp;quot; /&amp;gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;INPUT&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;hidden&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;value[&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;&amp;lt;%=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;index&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;%&amp;gt;&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;].ccc&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;value=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;&amp;lt;bean:write name=&amp;quot;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;xxx&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;property=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;789&amp;quot;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;&amp;quot; /&amp;gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;/logic:iterate&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Actionクラスでは以下のようにアクセス可能です。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ActionForward&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;execute&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;ActionMapping&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;mapping&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ActionForm&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;form&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;HttpServletRequest&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;HttpServletResponse&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
-
-    &lt;span class=&#34;n&#34;&gt;HogeForm&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;hogeForm&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;HogeForm&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;form&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;List&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Map&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;values&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;hogeForm&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getValues&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;();&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;values&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;aaa&amp;quot;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;));&lt;/span&gt;    &lt;span class=&#34;c1&#34;&gt;// 123&lt;/span&gt;
-
-    &lt;span class=&#34;o&#34;&gt;...&lt;/span&gt;
-&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/monsterstatus/</link>
-      <pubDate>Sun, 26 Mar 2017 18:41:05 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/monsterstatus/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/monsterstatus-v2.0.0/monsterstatus.ipf&#34;&gt;[v2.0.0]monsterstatus.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;amp-youtube data-videoid=&#34;IjzyuRoAbQo&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v2-0-0&#34;&gt;v2.0.0&lt;/h3&gt;
-
-&lt;p&gt;冒険日誌から討伐数、ドロップアイテム名、アイテム収集率を取得、
-表示する機能を追加しました。
-また、ドロップアイテム名からアイテムツールチップが開けます。&lt;/p&gt;
-
-&lt;p&gt;表示するステータス 、フォーマットを調整しました。&lt;/p&gt;
-
-&lt;p&gt;表示するステータスは現在のところ以下の通りです。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;表示名&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;内容&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;ATK&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;物理攻撃力(最大)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;MATK&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;魔法攻撃力(最大)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;DEF&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;物理防御力&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;MDEF&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;魔法防御力&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;UIウィンドウをドラッグで移動できるようになりました。&lt;/p&gt;
-
-&lt;p&gt;設定はログイン中のみ有効です。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、ターゲットしたモンスターのステータス（*1）が画面上部に表示されます。&lt;/p&gt;
-
-&lt;p&gt;[*1] 表示するステータスは現在のところ以下の通りです。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;表示名&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;内容&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;ATK&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;物理攻撃力(最大)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;MATK&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;魔法攻撃力(最大)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;DEF&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;物理防御力&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;MDEF&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;魔法防御力&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;DR&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;回避率&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;CDR&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;クリティカル回避率&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;CATK&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;クリティカル攻撃力&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;CDEF&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;クリティカル防御力&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</title>
-      <link>http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:59 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/</guid>
-      <description>&lt;p&gt;Windows APIのIcmp6SendEcho2()をWindows XPで呼び出すときは以下の点に注意が必要です。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://msdn.microsoft.com/en-us/library/windows/desktop/aa366041(v=vs.85).aspx&#34;&gt;Syntax from msdn.&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-C++&#34; data-lang=&#34;C++&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DWORD&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Icmp6SendEcho2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;__in&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;HANDLE&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;IcmpHandle&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;__in_opt&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;HANDLE&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Event&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;__in_opt&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;PIO_APC_ROUTINE&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ApcRoutine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;__in_opt&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;PVOID&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ApcContext&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;__in&lt;/span&gt;      &lt;span class=&#34;k&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sockaddr_in6&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;SourceAddress&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;__in&lt;/span&gt;      &lt;span class=&#34;k&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sockaddr_in6&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DestinationAddress&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;__in&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;LPVOID&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;RequestData&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;__in&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;WORD&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;RequestSize&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;__in_opt&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;PIP_OPTION_INFORMATION&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;RequestOptions&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;__out&lt;/span&gt;     &lt;span class=&#34;n&#34;&gt;LPVOID&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ReplyBuffer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;__in&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;DWORD&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ReplySize&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;__in&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;DWORD&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Timeout&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-&lt;li&gt;第9引数 PIP_OPTION_INFORMATION は必須です。Vista 以降のOSで動かす場合は任意です。（NULLでもよい）&lt;/li&gt;
-&lt;li&gt;第10引数 ReplyBuffer は80byte以上の領域がないとWin32エラーコード122（システム コールに渡されるデータ領域が小さすぎます）が発生します。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;IcmpSendEcho()とは設定値が微妙に異なりますね。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[system development] cannot find source for binding with reference について</title>
-      <link>http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:56 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/</guid>
-      <description>&lt;p&gt;掲題の件について、検索キーワードにあがりましたので、簡単にまとめました。&lt;/p&gt;
-
-&lt;p&gt;正式には、以下のErrorが発生しました。&lt;/p&gt;
-
-&lt;p&gt;System.Windows.Data Error: 4 : Cannot find source for binding with reference &amp;lsquo;RelativeSource FindAncestor, AncestorType=&amp;lsquo;System.Windows.Controls.ItemsControl&amp;rsquo;, AncestorLevel=&amp;lsquo;1&amp;rdquo;. BindingExpression:Path=HorizontalContentAlignment; DataItem=null; target element is &amp;lsquo;ListBoxItem&amp;rsquo; (Name=&amp;ldquo;); target property is &amp;lsquo;HorizontalContentAlignment&amp;rsquo; (type &amp;lsquo;HorizontalAlignment&amp;rsquo;)&lt;/p&gt;
-
-&lt;p&gt;System.Windows.Data Error: 4 : Cannot find source for binding with reference &amp;lsquo;RelativeSource FindAncestor, AncestorType=&amp;lsquo;System.Windows.Controls.ItemsControl&amp;rsquo;, AncestorLevel=&amp;lsquo;1&amp;rdquo;. BindingExpression:Path=VerticalContentAlignment; DataItem=null; target element is &amp;lsquo;ListBoxItem&amp;rsquo; (Name=&amp;ldquo;); target property is &amp;lsquo;VerticalContentAlignment&amp;rsquo; (type &amp;lsquo;VerticalAlignment&amp;rsquo;)&lt;/p&gt;
-
-&lt;p&gt;xamlのStyle定義のSetterプロパティでAlignmentを定義していると出るみたいです。
-定義を外すとErrorは出ません。
-みたいです。というのは、何故なのか理由が分からないためです。&lt;/p&gt;
-
-&lt;p&gt;以下、実際のコードの抜粋です。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;Style&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;TargetType=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;{x:Type ListBoxItem}&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;&amp;lt;Setter&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;Property=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;HorizontalContentAlignment&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;Value=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;&amp;lt;Setter&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;Property=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;VerticalContentAlignment&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;Value=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[system development] TSLで定義される全CipherSuiteの一覧</title>
-      <link>http://www.weizlogy.gq/system/dev/cipher-suites/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:52 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/cipher-suites/</guid>
-      <description>&lt;p&gt;Cipher Suiteの説明はさて置き、一覧を見るために以下のコマンドを使用する例が多々見受けられます。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span&gt;&lt;/span&gt;$ openssl ciphers -v
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;これはopensslが対応するCipherSuiteの一覧であり、実際に存在するCipherSuiteの一覧とは異なります。&lt;/p&gt;
-
-&lt;p&gt;実際に存在するCipherSuiteの一覧は、RFC5426によるとIANA管理とのことで、下記URLがマスターです。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4&#34;&gt;http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[system development] Codeanywhereでbazelを使う</title>
-      <link>http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:48 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;https://codeanywhere.com/&#34;&gt;Codeanywhere&lt;/a&gt;はクラウドIDEで、sudoが許可されたターミナルを使うことができます。
-Google+アカウント連携ですぐに使えます。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://bazel.io/&#34;&gt;bazel&lt;/a&gt;は、mavenやGradleのようなビルドツールで、様々な言語のビルドが可能です。&lt;/p&gt;
-
-&lt;h2 id=&#34;codeanyhwereにbazelをインストール&#34;&gt;Codeanyhwereにbazelをインストール&lt;/h2&gt;
-
-&lt;p&gt;bazelはjdk1.8以降（jdk1.7はサポートされているが非推奨）が必須ですが、Codeanywhereはjdk1.7の環境です。
-今回はjdk1.7のままでインストールします。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span&gt;&lt;/span&gt;cabox@box-codeanywhere:~/workspace$ java -version
-java version &lt;span class=&#34;s2&#34;&gt;&amp;quot;1.7.0_95&amp;quot;&lt;/span&gt;
-OpenJDK Runtime Environment &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;IcedTea &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;.6.4&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;7u95-2.6.4-0ubuntu0.14.04.1&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-OpenJDK &lt;span class=&#34;m&#34;&gt;64&lt;/span&gt;-Bit Server VM &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;build &lt;span class=&#34;m&#34;&gt;24&lt;/span&gt;.95-b01, mixed mode&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://bazel.io/docs/install.html&#34;&gt;Installig Bazel&lt;/a&gt;を参考に、以下のコマンドを打ちます。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;deb [arch=amd64] http://storage.googleapis.com/bazel-apt testing jdk1.7&amp;quot;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sudo tee /etc/apt/sources.list.d/bazel.list
-$ curl https://storage.googleapis.com/bazel-apt/doc/apt-key.pub.gpg &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sudo apt-key add -
-sudo apt-get update &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt-get install bazel
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2 id=&#34;bazelでjavaをビルド&#34;&gt;bazelでjavaをビルド&lt;/h2&gt;
-
-&lt;p&gt;最低限の必要なファイルを作成します。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span&gt;&lt;/span&gt;cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy
-cabox@box-codeanywhere:~/workspace$ touch hello/src/main/java/gq/weizlogy/Main.java
-cabox@box-codeanywhere:~/workspace$ touch hello/WORKSPACE
-cabox@box-codeanywhere:~/workspace$ touch hello/BUILD
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;hello/src/main/java/gq/weizlogy/Main.java&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;kn&#34;&gt;package&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;gq.weizlogy&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Main&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[]&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;args&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
-        &lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;Hello Bazel.&amp;quot;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;);&lt;/span&gt;
-    &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;hello/WORKSPACEは空ファイルで構いません。&lt;/p&gt;
-
-&lt;p&gt;hello/BUILD&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;java_binary (
-    name = &amp;quot;hello&amp;quot;,
-    srcs = glob([&amp;quot;**/*.java&amp;quot;]),
-    main_class = &amp;quot;gq.weizlogy.Main&amp;quot;
-)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ビルドします。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span&gt;&lt;/span&gt;cabox@box-codeanywhere:~/workspace$ &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; hello
-cabox@box-codeanywhere:~/workspace/hello$ bazel build //:hello
-WARNING: Sandboxed execution is not supported on your system and thus hermeticity of actions cannot be guaranteed. See http://bazel.io/docs/bazel-user-manual.html#sandboxing &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; more information. You can turn off this warning via --ignore_unsupported_sandboxing.
-INFO: Found &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; target...
-Target //:hello up-to　date:
-  bazel-bin/hello.jar
-  bazel-bin/hello
-INFO: Elapsed time: &lt;span class=&#34;m&#34;&gt;5&lt;/span&gt;.876s, Critical Path: &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;.20s
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;WARNINGがでています。CodeanywhereのコンテナはSandboxed executionをサポートしていないので、ビルドオプションを付与します。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span&gt;&lt;/span&gt;cabox@box-codeanywhere:~/workspace/hello$ bazel build --ignore_unsupported_sandboxing //:hello
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;実行します。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span&gt;&lt;/span&gt;cabox@box-codeanywhere:~/workspace/hello$ ./bazel-bin/hello
-Hello Bazel.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</title>
-      <link>http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:44 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/</guid>
-      <description>&lt;p&gt;img タグにサーブレットの URL を埋め込んで、画面描画時に呼び出します。
-呼び出した先では画像をバイナリ形式で読み込んで画面に出力します。&lt;/p&gt;
-
-&lt;p&gt;データベースに Blob 型で保存した画像の読み込みも、ロジックは同じです。&lt;/p&gt;
-
-&lt;p&gt;JSPでは&amp;hellip;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-jsp&#34; data-lang=&#34;jsp&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;xxx.do&amp;quot;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;サーバーサイドでは&amp;hellip;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;cm&#34;&gt;/** xxx.do から呼び出される Servlet */&lt;/span&gt;
-&lt;span class=&#34;kd&#34;&gt;protected&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;doGet&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;HttpServletRequest&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;HttpServletResponse&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;throws&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ServletException&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;IOException&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;c1&#34;&gt;// ファイルパスはどこからか入手する&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;String&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;file&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;quot;\\server\image\sample.jpg&amp;quot;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
-  &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;file&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;null&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;equals&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
-  &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-  &lt;span class=&#34;k&#34;&gt;try&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;c1&#34;&gt;// 画像を読み込む&lt;/span&gt;
-    &lt;span class=&#34;kt&#34;&gt;byte&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[]&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;image&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Files&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;readAllBytes&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Paths&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;));&lt;/span&gt;
-　　  &lt;span class=&#34;c1&#34;&gt;// レスポンスヘッダーを設定する&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setContentType&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;image/&amp;quot;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;substring&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;lastIndexOf&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)));&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setContentLength&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;length&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;);&lt;/span&gt;
-    &lt;span class=&#34;c1&#34;&gt;// servlet specification 3.1 によると OutputStream は&lt;/span&gt;
-    &lt;span class=&#34;c1&#34;&gt;// Servlet 終了時にクローズされる&lt;/span&gt;
-    &lt;span class=&#34;c1&#34;&gt;// 従って、ここではクローズしない&lt;/span&gt;
-    &lt;span class=&#34;c1&#34;&gt;// むしろ、ここでクローズすると二重解放になる可能性があるのでは？&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getOutputStream&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;().&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;write&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;);&lt;/span&gt;
-  &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;catch&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;IOException&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;c1&#34;&gt;// ログ出力など&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;throw&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;
-  &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-
-&lt;span class=&#34;kd&#34;&gt;protected&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;doPost&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(...&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;以下略&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[system development] JQueryUIのAutoCompleteを特定操作で強制選択する</title>
-      <link>http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:40 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/</guid>
-      <description>&lt;p&gt;本来は blur 時に強制選択したかったのですが、候補確定時に AutoComplete の対象にフォーカスが当たる挙動を回避できなかったため、エンターキーで代用です。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;obj&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;#autocomplete&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;span class=&#34;nx&#34;&gt;obj&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;on&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;keydown&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-　　&lt;span class=&#34;c1&#34;&gt;// エンターキー以外を無視する&lt;/span&gt;
-  &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;which&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!==&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-  &lt;span class=&#34;c1&#34;&gt;// search メソッドの結果で候補が存在する場合、&lt;/span&gt;
-  &lt;span class=&#34;c1&#34;&gt;// autocompleteopen イベントが発行される&lt;/span&gt;
-  &lt;span class=&#34;c1&#34;&gt;// 候補が 0 件の場合は動作しない&lt;/span&gt;
-  &lt;span class=&#34;nx&#34;&gt;obj&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;on&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;autocompleteopen&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;c1&#34;&gt;// 下矢印キーダウンイベントを作成し、候補の先頭を選択状態にする&lt;/span&gt;
-    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;keyDownEvent&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Event&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;keydown&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-    &lt;span class=&#34;nx&#34;&gt;keyDownEvent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;keyCode&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;ui&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;keyCode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;DOWN&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;nx&#34;&gt;obj&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;trigger&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;keyDownEvent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-    &lt;span class=&#34;c1&#34;&gt;// エンターキーダウンを作成し、選択状態の候補で確定する&lt;/span&gt;
-    &lt;span class=&#34;c1&#34;&gt;// →候補確定時のイベントが発火する&lt;/span&gt;
-    &lt;span class=&#34;nx&#34;&gt;keyDownEvent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;keyCode&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;ui&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;keyCode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;ENTER&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;nx&#34;&gt;obj&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;trigger&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;keyDownEvent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-    &lt;span class=&#34;c1&#34;&gt;// 通常動作時は不要なイベントなので終了時に破棄しておく&lt;/span&gt;
-    &lt;span class=&#34;nx&#34;&gt;obj&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;off&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;autocompleteopen&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;});&lt;/span&gt;
-  &lt;span class=&#34;c1&#34;&gt;// 現在の入力値で検索する&lt;/span&gt;
-  &lt;span class=&#34;nx&#34;&gt;obj&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;autocomplete&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;search&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;});&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;クリックするとコンパニオンを休眠状態にします。 コンパニオンの休眠解除は、今まで通り、コンパニオン情報から行います。&lt;/p&gt;
 </description>
     </item>
     
