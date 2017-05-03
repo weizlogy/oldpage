@@ -10,16 +10,16 @@
     <atom:link href="http://www.weizlogy.gq/categories/tos-addon/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>[tree of savior addon] エリア内ランダムワープアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/wingofbeelze/</link>
-      <pubDate>Wed, 03 May 2017 10:25:29 +0900</pubDate>
+      <title>[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/distance/</link>
+      <pubDate>Wed, 03 May 2017 17:18:29 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon/wingofbeelze/</guid>
+      <guid>http://www.weizlogy.gq/tos/addon/distance/</guid>
       <description>
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/bcuf2x3u2jmwjpo/wingofbeelze.ipf?dl=0&#34;&gt;[v1.0.0]wingofbeelze.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/distance-v1.1.1/distance.ipf&#34;&gt;[v1.1.1] distance.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -27,31 +27,45 @@
 
 &lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
 
+&lt;amp-youtube data-videoid=&#34;IUtCzMMKbXU&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
+
 &lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
 
 &lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-1-1&#34;&gt;v1.1.1&lt;/h3&gt;
+
+&lt;p&gt;性能改善しました。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
+
+&lt;p&gt;メートル単位対応しました。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると近隣（20m範囲内）モンスターに自キャラからの距離がメートル単位で表示されます。&lt;/p&gt;
+
+&lt;p&gt;距離が12mを超えると、表示が消えます。&lt;/p&gt;
 
 &lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
 
 &lt;p&gt;新規作成。&lt;/p&gt;
 
-&lt;p&gt;ESCAPE+LSHIFTでエリア内をランダムにワープします。&lt;/p&gt;
+&lt;p&gt;アドオンがロードされると近隣（500範囲内）モンスターに自キャラからの距離が表示されます。&lt;/p&gt;
 
-&lt;p&gt;ROのヴェルゼブブの羽のようなイメージです。&lt;/p&gt;
+&lt;p&gt;単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/worldmapquest/</link>
-      <pubDate>Mon, 01 May 2017 03:22:56 +0900</pubDate>
+      <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/hidename/</link>
+      <pubDate>Wed, 03 May 2017 17:18:23 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon/worldmapquest/</guid>
+      <guid>http://www.weizlogy.gq/tos/addon/hidename/</guid>
       <description>
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/worldmapquest-v1.1.2/worldmapquest.ipf&#34;&gt;[v1.1.2]worldmapquest.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/hidename-v1.0.1/hidename.ipf&#34;&gt;[v1.0.1] hidename.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -59,130 +73,37 @@
 
 &lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/lunp83pa1v4zybh/worldmapquest.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/lunp83pa1v4zybh/worldmapquest.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/gzklevo002i3s8x/hidename.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/gzklevo002i3s8x/hidename.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
 
 &lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-1-2&#34;&gt;v1.1.2&lt;/h3&gt;
-
-&lt;h4 id=&#34;ワープ用ワールドマップに残クエストオブジェクトが残る問題修正&#34;&gt;ワープ用ワールドマップに残クエストオブジェクトが残る問題修正&lt;/h4&gt;
-
-&lt;p&gt;ワープスクロールやワープ像で表示するワープ用ワールドマップに
-残クエストオブジェクトが残らないよう修正しました。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-1-1&#34;&gt;v1.1.1&lt;/h3&gt;
-
-&lt;h4 id=&#34;パッチ対応&#34;&gt;パッチ対応&lt;/h4&gt;
-
-&lt;p&gt;157576_001001 パッチ適用で使用不可になったので回避対応しました。&lt;/p&gt;
-
-&lt;h4 id=&#34;反復クエストの非表示設定&#34;&gt;反復クエストの非表示設定&lt;/h4&gt;
-
-&lt;p&gt;反復クエストの表示非表示を切り替えるには、
-ワールドマップのクエスト数を右クリック &amp;gt; [toggleRepeatQuest]を選択します。&lt;/p&gt;
-
-&lt;p&gt;選択後、ワールドマップを再表示すると反映されます。&lt;/p&gt;
-
-&lt;p&gt;選択する度に反復クエストの表示非表示を切り替えます。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;新規作成&#34;&gt;新規作成&lt;/h4&gt;
-
-&lt;p&gt;アドオンがロードされると、ワールドマップの各エリア名上部に受注可能なクエスト数が表示されます。&lt;/p&gt;
-
-&lt;p&gt;introductionの画像では碑石路、いにしえの女神の庭、ドバシア峠、古旗の森、大王の関門、カーライルの霊廟、ガルエット平野に[n]の形式で表示されています。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] ワープ用クエスト誤完了防止アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/savequest/</link>
-      <pubDate>Fri, 28 Apr 2017 07:04:42 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/savequest/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/savequest-v1.0.2/savequest.ipf&#34;&gt;[v1.0.2]savequest.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;p&gt;Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。&lt;/p&gt;
-
-&lt;h3 id=&#34;explanation&#34;&gt;explanation.&lt;/h3&gt;
-
-&lt;p&gt;savequestフォルダーにはquests_[cid].txtが自動的に生成され、
-キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。&lt;/p&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-2&#34;&gt;v1.0.2&lt;/h3&gt;
-
-&lt;h4 id=&#34;バグ対応&#34;&gt;バグ対応&lt;/h4&gt;
-
-&lt;p&gt;保存したクエスト情報がチーム毎に共有される問題を修正しました。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/issues/3&#34;&gt;issue #3&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;本修正により、情報保存形式が変更され、クエスト保存状態が初期化されます。&lt;/p&gt;
-
-&lt;p&gt;お手数ですが、再チェックまたは、旧仕様情報（quests.txt）の内容をquests_[cid].txtにコピペしてください。&lt;/p&gt;
 
 &lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
 
-&lt;h4 id=&#34;バグ対応-1&#34;&gt;バグ対応&lt;/h4&gt;
-
-&lt;p&gt;再ログイン時に前回の状態が保存されない問題を修正しました。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/issues/1&#34;&gt;issue #1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。&lt;/p&gt;
 
 &lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
 
-&lt;h4 id=&#34;新規作成&#34;&gt;新規作成&lt;/h4&gt;
+&lt;p&gt;新規作成。&lt;/p&gt;
 
-&lt;p&gt;アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、
-ワープ直後の誤完了を防止できます。&lt;/p&gt;
+&lt;p&gt;アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。&lt;/p&gt;
 
-&lt;h2 id=&#34;usage&#34;&gt;usage.&lt;/h2&gt;
-
-&lt;p&gt;UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、
-メニュー（save, release, cancel）が開きます。&lt;/p&gt;
-
-&lt;p&gt;saveを選択すると該当クエストのNPCは非表示となります。
-また、save済みのクエストのワープアイコン直下に[saved.]の文字を表示します。&lt;/p&gt;
-
-&lt;p&gt;元に戻すにはreleaseを選択します。&lt;/p&gt;
-
-&lt;h2 id=&#34;cautions&#34;&gt;cautions.&lt;/h2&gt;
-
-&lt;p&gt;念のため、アドオンは補助的な位置づけとし、
-ワープ直後はNPCを選択しないよう留意してください。&lt;/p&gt;
-
-&lt;p&gt;一時消去したNPCは、release後、エリアチェンジで表示できます。&lt;/p&gt;
+&lt;p&gt;動画を撮るときに設定では非表示にできなかったので。。。&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/monsterstatus/</link>
-      <pubDate>Fri, 28 Apr 2017 07:04:07 +0900</pubDate>
+      <pubDate>Wed, 03 May 2017 17:18:16 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/monsterstatus/</guid>
       <description>
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/monsterstatus-v2.1.0/monsterstatus.ipf&#34;&gt;[v2.1.0]monsterstatus.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/monsterstatus-v2.1.0/monsterstatus.ipf&#34;&gt;[v2.1.0] monsterstatus.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -311,127 +232,16 @@
     </item>
     
     <item>
-      <title>[tree of savior addon] 所持キャラ全員の個人倉庫を見るアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/warehousepicker/</link>
-      <pubDate>Fri, 28 Apr 2017 05:35:06 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/warehousepicker/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/qkoh8lkds1m82d1/warehousepicker.ipf?dl=0&#34;&gt;warehousepicker.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;amp-youtube data-videoid=&#34;K0V5lyVg_WY&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;p&gt;Nexon\TreeofSaviorJP\addons\warehousepicker フォルダーを作成します。&lt;/p&gt;
-
-&lt;p&gt;各所持キャラで個人倉庫を開閉する（正確には閉じる瞬間）と、先ほど作成したフォルダーに個人倉庫のアイテム情報を保存します。&lt;/p&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされた後、いずれかのキャラで個人倉庫を開くと、倉庫左下に[whpk]ボタンが出現します。
-ボタンを押すと、事前に保存された所持キャラの個人倉庫のアイテム情報を表示するダイアログを開きます。&lt;/p&gt;
-
-&lt;p&gt;ダイアログには、事前に個人倉庫のアイテム情報が作成された所持キャラ名のドロップダウンリストが表示されます。
-ドロップダウンリストで選択した所持キャラ名の個人倉庫のアイテム情報（アイテムアイコン、名称、個数）をダイアログ内に表示します。&lt;/p&gt;
-
-&lt;p&gt;最低一度は各所持キャラで個人倉庫を開閉する必要がありますが、それ以降はいずれかのキャラでログインすると全員の個人倉庫を見ることができます。&lt;/p&gt;
-
-&lt;p&gt;今のところチームの区別なくキャラ名のみ表示しますので、複数チームを所持している場合に使い勝手に難があるかもしれません。
-使いにくいようでしたら改善します。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/staminagauge/</link>
-      <pubDate>Fri, 28 Apr 2017 05:34:58 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/staminagauge/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/jpd1fzm70dn0mhb/staminigauge.ipf?dl=0&#34;&gt;staminigauge.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://1.bp.blogspot.com/-PMCi6_WkEYc/WLBRzWOTrgI/AAAAAAAACoI/SR-iP_MqSoYud4xzv1w_zseS7TUpIUSywCLcB/s1600/staminigauge.PNG&#34;&gt;&lt;amp-img src=&#34;https://1.bp.blogspot.com/-PMCi6_WkEYc/WLBRzWOTrgI/AAAAAAAACoI/SR-iP_MqSoYud4xzv1w_zseS7TUpIUSywCLcB/s320/staminigauge.PNG&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。&lt;/p&gt;
-
-&lt;p&gt;若干キャラ名と被りますが、気にしないように。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/skillitemcounter/</link>
-      <pubDate>Fri, 28 Apr 2017 05:34:52 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/skillitemcounter/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/skillitemcounter-v1.0.0/skillitemcounter.ipf&#34;&gt;[v1.0.0]skillitemcounter.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/7nkaxby6mf76qwr/skillitemcounter.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/7nkaxby6mf76qwr/skillitemcounter.png?dl=1&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、クイックスロットにセットしている、消費アイテムのあるスキルスロット右上に、消費アイテムの個数に応じたスキルの使用回数を追加で表示します。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>[tree of savior addon] 装備修理時、装備アイコンに耐久度（％）を色分け表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/repairendur/</link>
-      <pubDate>Fri, 28 Apr 2017 05:34:40 +0900</pubDate>
+      <pubDate>Wed, 03 May 2017 17:18:10 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/repairendur/</guid>
       <description>
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/repairendur-v1.1.0/repairendur.ipf&#34;&gt;[v1.1.0]repairendur.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/repairendur-v1.1.0/repairendur.ipf&#34;&gt;[v1.1.0] repairendur.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -521,16 +331,16 @@
     </item>
     
     <item>
-      <title>[tree of savior addon] オブジェクト探索アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/objectdetector/</link>
-      <pubDate>Fri, 28 Apr 2017 05:34:33 +0900</pubDate>
+      <title>[tree of savior addon] ワープ用クエスト誤完了防止アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/savequest/</link>
+      <pubDate>Wed, 03 May 2017 17:18:07 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon/objectdetector/</guid>
+      <guid>http://www.weizlogy.gq/tos/addon/savequest/</guid>
       <description>
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/objectdetector-v1.0.1/objectdetector.ipf&#34;&gt;[v1.0.1]objectdetector.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/savequest-v1.0.2/savequest.ipf&#34;&gt;[v1.0.2] savequest.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -538,80 +348,227 @@
 
 &lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。&lt;/p&gt;
+
+&lt;h3 id=&#34;explanation&#34;&gt;explanation.&lt;/h3&gt;
+
+&lt;p&gt;savequestフォルダーにはquests_[cid].txtが自動的に生成され、
+キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。&lt;/p&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-2&#34;&gt;v1.0.2&lt;/h3&gt;
+
+&lt;h4 id=&#34;バグ対応&#34;&gt;バグ対応&lt;/h4&gt;
+
+&lt;p&gt;保存したクエスト情報がチーム毎に共有される問題を修正しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/issues/3&#34;&gt;issue #3&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;本修正により、情報保存形式が変更され、クエスト保存状態が初期化されます。&lt;/p&gt;
+
+&lt;p&gt;お手数ですが、再チェックまたは、旧仕様情報（quests.txt）の内容をquests_[cid].txtにコピペしてください。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
+
+&lt;h4 id=&#34;バグ対応-1&#34;&gt;バグ対応&lt;/h4&gt;
+
+&lt;p&gt;再ログイン時に前回の状態が保存されない問題を修正しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/issues/1&#34;&gt;issue #1&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;h4 id=&#34;新規作成&#34;&gt;新規作成&lt;/h4&gt;
+
+&lt;p&gt;アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、
+ワープ直後の誤完了を防止できます。&lt;/p&gt;
+
+&lt;h2 id=&#34;usage&#34;&gt;usage.&lt;/h2&gt;
+
+&lt;p&gt;UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、
+メニュー（save, release, cancel）が開きます。&lt;/p&gt;
+
+&lt;p&gt;saveを選択すると該当クエストのNPCは非表示となります。
+また、save済みのクエストのワープアイコン直下に[saved.]の文字を表示します。&lt;/p&gt;
+
+&lt;p&gt;元に戻すにはreleaseを選択します。&lt;/p&gt;
+
+&lt;h2 id=&#34;cautions&#34;&gt;cautions.&lt;/h2&gt;
+
+&lt;p&gt;念のため、アドオンは補助的な位置づけとし、
+ワープ直後はNPCを選択しないよう留意してください。&lt;/p&gt;
+
+&lt;p&gt;一時消去したNPCは、release後、エリアチェンジで表示できます。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/skillitemcounter/</link>
+      <pubDate>Wed, 03 May 2017 17:18:02 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/skillitemcounter/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/skillitemcounter-v1.0.0/skillitemcounter.ipf&#34;&gt;[v1.0.0] skillitemcounter.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/7nkaxby6mf76qwr/skillitemcounter.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/7nkaxby6mf76qwr/skillitemcounter.png?dl=1&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
 
 &lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
 
-&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
 
-&lt;p&gt;性能改善しました。&lt;/p&gt;
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、クイックスロットにセットしている、消費アイテムのあるスキルスロット右上に、消費アイテムの個数に応じたスキルの使用回数を追加で表示します。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/worldmapquest/</link>
+      <pubDate>Wed, 03 May 2017 17:17:44 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/worldmapquest/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/worldmapquest-v1.1.2/worldmapquest.ipf&#34;&gt;[v1.1.2] worldmapquest.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/lunp83pa1v4zybh/worldmapquest.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/lunp83pa1v4zybh/worldmapquest.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-1-2&#34;&gt;v1.1.2&lt;/h3&gt;
+
+&lt;h4 id=&#34;ワープ用ワールドマップに残クエストオブジェクトが残る問題修正&#34;&gt;ワープ用ワールドマップに残クエストオブジェクトが残る問題修正&lt;/h4&gt;
+
+&lt;p&gt;ワープスクロールやワープ像で表示するワープ用ワールドマップに
+残クエストオブジェクトが残らないよう修正しました。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-1-1&#34;&gt;v1.1.1&lt;/h3&gt;
+
+&lt;h4 id=&#34;パッチ対応&#34;&gt;パッチ対応&lt;/h4&gt;
+
+&lt;p&gt;157576_001001 パッチ適用で使用不可になったので回避対応しました。&lt;/p&gt;
+
+&lt;h4 id=&#34;反復クエストの非表示設定&#34;&gt;反復クエストの非表示設定&lt;/h4&gt;
+
+&lt;p&gt;反復クエストの表示非表示を切り替えるには、
+ワールドマップのクエスト数を右クリック &amp;gt; [toggleRepeatQuest]を選択します。&lt;/p&gt;
+
+&lt;p&gt;選択後、ワールドマップを再表示すると反映されます。&lt;/p&gt;
+
+&lt;p&gt;選択する度に反復クエストの表示非表示を切り替えます。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;h4 id=&#34;新規作成&#34;&gt;新規作成&lt;/h4&gt;
+
+&lt;p&gt;アドオンがロードされると、ワールドマップの各エリア名上部に受注可能なクエスト数が表示されます。&lt;/p&gt;
+
+&lt;p&gt;introductionの画像では碑石路、いにしえの女神の庭、ドバシア峠、古旗の森、大王の関門、カーライルの霊廟、ガルエット平野に[n]の形式で表示されています。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 所持キャラ全員の個人倉庫を見るアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/warehousepicker/</link>
+      <pubDate>Fri, 28 Apr 2017 05:35:06 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/warehousepicker/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/qkoh8lkds1m82d1/warehousepicker.ipf?dl=0&#34;&gt;warehousepicker.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;amp-youtube data-videoid=&#34;K0V5lyVg_WY&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;p&gt;Nexon\TreeofSaviorJP\addons\warehousepicker フォルダーを作成します。&lt;/p&gt;
+
+&lt;p&gt;各所持キャラで個人倉庫を開閉する（正確には閉じる瞬間）と、先ほど作成したフォルダーに個人倉庫のアイテム情報を保存します。&lt;/p&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
 
 &lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
 
 &lt;p&gt;新規作成。&lt;/p&gt;
 
-&lt;p&gt;アドオンがロードされると、マップとミニマップに四角形のアイコン[*1]が表示されます。&lt;/p&gt;
+&lt;p&gt;アドオンがロードされた後、いずれかのキャラで個人倉庫を開くと、倉庫左下に[whpk]ボタンが出現します。
+ボタンを押すと、事前に保存された所持キャラの個人倉庫のアイテム情報を表示するダイアログを開きます。&lt;/p&gt;
 
-&lt;p&gt;[*1] アイコン配色とオブジェクトの関係は以下の通りです。&lt;/p&gt;
+&lt;p&gt;ダイアログには、事前に個人倉庫のアイテム情報が作成された所持キャラ名のドロップダウンリストが表示されます。
+ドロップダウンリストで選択した所持キャラ名の個人倉庫のアイテム情報（アイテムアイコン、名称、個数）をダイアログ内に表示します。&lt;/p&gt;
 
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;色&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;オブジェクト&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
+&lt;p&gt;最低一度は各所持キャラで個人倉庫を開閉する必要がありますが、それ以降はいずれかのキャラでログインすると全員の個人倉庫を見ることができます。&lt;/p&gt;
 
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;赤&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;モンスター&lt;/td&gt;
-&lt;/tr&gt;
+&lt;p&gt;今のところチームの区別なくキャラ名のみ表示しますので、複数チームを所持している場合に使い勝手に難があるかもしれません。
+使いにくいようでしたら改善します。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/staminagauge/</link>
+      <pubDate>Fri, 28 Apr 2017 05:34:58 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/staminagauge/</guid>
+      <description>
 
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;赤点滅&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;クローバーバフモンスター&lt;/td&gt;
-&lt;/tr&gt;
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;青&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;PC&lt;/td&gt;
-&lt;/tr&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/jpd1fzm70dn0mhb/staminigauge.ipf?dl=0&#34;&gt;staminigauge.ipf&lt;/a&gt;&lt;/p&gt;
 
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;橙&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;NPC&lt;/td&gt;
-&lt;/tr&gt;
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;橙点滅&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;宝箱&lt;/td&gt;
-&lt;/tr&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
 
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;紫&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;ルーツクリスタル&lt;/td&gt;
-&lt;/tr&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
 
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;白&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;ドロップアイテム&lt;/td&gt;
-&lt;/tr&gt;
+&lt;p&gt;&lt;a href=&#34;https://1.bp.blogspot.com/-PMCi6_WkEYc/WLBRzWOTrgI/AAAAAAAACoI/SR-iP_MqSoYud4xzv1w_zseS7TUpIUSywCLcB/s1600/staminigauge.PNG&#34;&gt;&lt;amp-img src=&#34;https://1.bp.blogspot.com/-PMCi6_WkEYc/WLBRzWOTrgI/AAAAAAAACoI/SR-iP_MqSoYud4xzv1w_zseS7TUpIUSywCLcB/s320/staminigauge.PNG&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;黒&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;その他&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
 
-&lt;p&gt;配色をカスタマイズする設定を追加する予定です。&lt;/p&gt;
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
 
-&lt;p&gt;某レーダーと違いマップにオーバーレイせず直接描画しているため、既存UIの邪魔をしません。&lt;/p&gt;
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。&lt;/p&gt;
+
+&lt;p&gt;若干キャラ名と被りますが、気にしないように。&lt;/p&gt;
 </description>
     </item>
     
@@ -682,149 +639,6 @@
 &lt;p&gt;新規作成。&lt;/p&gt;
 
 &lt;p&gt;アドオンがロードされると、設定ファイルに記載された値でマーケットのデフォルト出品日数を変更します。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/hidename/</link>
-      <pubDate>Fri, 28 Apr 2017 05:33:55 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/hidename/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/hidename-v1.0.1/hidename.ipf&#34;&gt;[v1.0.1]hidename.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/gzklevo002i3s8x/hidename.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/gzklevo002i3s8x/hidename.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
-
-&lt;p&gt;ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。&lt;/p&gt;
-
-&lt;p&gt;動画を撮るときに設定では非表示にできなかったので。。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 飛行アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/fly/</link>
-      <pubDate>Fri, 28 Apr 2017 05:33:45 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/fly/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/5gq04f1jpoju4na/fly.ipf?dl=0&#34;&gt;[v1.2.0]fly.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;amp-youtube data-videoid=&#34;Ad_LIzKk_no&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;p&gt;Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。&lt;/p&gt;
-
-&lt;p&gt;以下の初期設定をコピペします。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fly&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;config&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;pos&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;jumpPower&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;140&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;showButton&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;cameraHeight&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;withPet&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;explanation&#34;&gt;explanation.&lt;/h3&gt;
-
-&lt;h4 id=&#34;pos&#34;&gt;pos.&lt;/h4&gt;
-
-&lt;p&gt;ボタンの座標指定です。&lt;/p&gt;
-
-&lt;p&gt;[showButton]が0の場合は無視されます。&lt;/p&gt;
-
-&lt;h4 id=&#34;jumppower&#34;&gt;jumpPower.&lt;/h4&gt;
-
-&lt;p&gt;飛距離です。&lt;/p&gt;
-
-&lt;p&gt;100では弓に狙われます。
-150では通常攻撃が届きません。（wizでは140で届きます。）&lt;/p&gt;
-
-&lt;h4 id=&#34;showbutton&#34;&gt;showButton.&lt;/h4&gt;
-
-&lt;p&gt;ボタン表示状態です。&lt;/p&gt;
-
-&lt;p&gt;1の場合のみ、飛行ON/OFFボタンを[pos]の座標に表示します。&lt;/p&gt;
-
-&lt;h4 id=&#34;cameraheight&#34;&gt;cameraHeight.&lt;/h4&gt;
-
-&lt;p&gt;飛行時のカメラ位置です。&lt;/p&gt;
-
-&lt;p&gt;飛距離によりますが、50～70あたりで自分の影が画面中央あたりに見え、歩行しやすいです。&lt;/p&gt;
-
-&lt;p&gt;0を指定すると、今まで通りの視点になります。&lt;/p&gt;
-
-&lt;h4 id=&#34;withpet&#34;&gt;withPet.&lt;/h4&gt;
-
-&lt;p&gt;ペット飛行有無です。&lt;/p&gt;
-
-&lt;p&gt;1を指定すると、ペットも一緒に飛行します。&lt;/p&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-2-0&#34;&gt;v1.2.0&lt;/h3&gt;
-
-&lt;p&gt;設定ファイルのフォーマット変更、cameraHeight、withPetオプションを実装しました。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
-
-&lt;p&gt;設定[ボタン表示状態]を追加しました。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、[ボタン表示状態]が1の場合のみ、[Fly]ボタンが表示されます。&lt;/p&gt;
-
-&lt;p&gt;ショートカットキーを追加しました。&lt;/p&gt;
-
-&lt;p&gt;ESCAPE+UP(上矢印)で飛行、飛行解除ができます。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると[Fly]ボタンが表示されます。&lt;/p&gt;
-
-&lt;p&gt;ボタンを押すと飛行状態、地上に降りるを繰り返します。&lt;/p&gt;
-
-&lt;p&gt;飛行状態でも地上の敵を攻撃できます。
-飛行状態では地上の敵はこちらを近接攻撃できません。&lt;/p&gt;
-
-&lt;p&gt;実際は地上を歩行しているのでトラップには気をつけてください。&lt;/p&gt;
-
-&lt;p&gt;飛行状態ではスキルが使用不可ですが、ノックバックを受けるとスキルが使用可能になりますので、わざとノックバックするようになっています。&lt;/p&gt;
-
-&lt;p&gt;休息中に飛行すると、休息バフがついた状態で行動できます。
-ただし、攻撃などの操作を行うと休息バフは解除されます。&lt;/p&gt;
 </description>
     </item>
     
@@ -922,16 +736,16 @@
     </item>
     
     <item>
-      <title>[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/distance/</link>
-      <pubDate>Fri, 28 Apr 2017 05:33:22 +0900</pubDate>
+      <title>[tree of savior addon] コンパニオンのリングコマンドを拡張するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/customcompanion/</link>
+      <pubDate>Fri, 28 Apr 2017 05:33:15 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon/distance/</guid>
+      <guid>http://www.weizlogy.gq/tos/addon/customcompanion/</guid>
       <description>
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/distance-v1.1.1/distance.ipf&#34;&gt;[v1.1.1]distance.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/1r0bo0z9acwz4ui/customcompanion.ipf?dl=0&#34;&gt;customcompanion.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -939,31 +753,107 @@
 
 &lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
 
-&lt;amp-youtube data-videoid=&#34;IUtCzMMKbXU&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
+&lt;amp-youtube data-videoid=&#34;QaPBalivuk4&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
 
 &lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
 
 &lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
 
-&lt;h3 id=&#34;v1-1-1&#34;&gt;v1.1.1&lt;/h3&gt;
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
 
-&lt;p&gt;性能改善しました。&lt;/p&gt;
+&lt;p&gt;新規作成。&lt;/p&gt;
 
-&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
+&lt;p&gt;アドオンがロードされると、コンパニオンに近づくだけでリングコマンドが出現するようになります。
+今まで通り、コンパニオンから離れるとリングコマンドが消えます。&lt;/p&gt;
 
-&lt;p&gt;メートル単位対応しました。&lt;/p&gt;
+&lt;p&gt;リングコマンドに[自動戦闘ON/OFFトグルアイコン]、[コンパニオン休眠化]のスロットを追加します。
+ホットキーの割り当てはありません。&lt;/p&gt;
 
-&lt;p&gt;アドオンがロードされると近隣（20m範囲内）モンスターに自キャラからの距離がメートル単位で表示されます。&lt;/p&gt;
+&lt;p&gt;騎乗スキルのないキャラ、コンパニオンの場合は、リングコマンドの[騎乗]、[降りる]のスロットを削除します。&lt;/p&gt;
 
-&lt;p&gt;距離が12mを超えると、表示が消えます。&lt;/p&gt;
+&lt;h3 id=&#34;自動戦闘on-off&#34;&gt;自動戦闘ON/OFF&lt;/h3&gt;
+
+&lt;p&gt;クリックするたびに自動戦闘のON/OFFを切り替えます。 切り替え結果はチャット上にSYSTEMメッセージで表示します。&lt;/p&gt;
+
+&lt;h3 id=&#34;コンパニオン休眠化&#34;&gt;コンパニオン休眠化&lt;/h3&gt;
+
+&lt;p&gt;クリックするとコンパニオンを休眠状態にします。 コンパニオンの休眠解除は、今まで通り、コンパニオン情報から行います。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 特性習得ウィンドウに各特性の最大レベルを表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/customabilityshop/</link>
+      <pubDate>Fri, 28 Apr 2017 05:33:06 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/customabilityshop/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;2/22パッチで最大値が表示されるようになりましたので非公開にします。&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://4.bp.blogspot.com/-D0bmazzRJg4/WJ84fwDr3qI/AAAAAAAACjE/GZQ3PZvawxMq0no4KtWgVgP-M9dWrKymgCLcB/s1600/customabilityshop.PNG&#34;&gt;&lt;amp-img src=&#34;https://4.bp.blogspot.com/-D0bmazzRJg4/WJ84fwDr3qI/AAAAAAAACjE/GZQ3PZvawxMq0no4KtWgVgP-M9dWrKymgCLcB/s320/customabilityshop.PNG&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
 
 &lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
 
 &lt;p&gt;新規作成。&lt;/p&gt;
 
-&lt;p&gt;アドオンがロードされると近隣（500範囲内）モンスターに自キャラからの距離が表示されます。&lt;/p&gt;
+&lt;p&gt;アドオンがロードされると、特性習得ウィンドウに各特性の最大レベルが表示されます。 無くてもいい気がするけど。。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）</title>
+      <link>http://www.weizlogy.gq/tos/addon/console/</link>
+      <pubDate>Fri, 28 Apr 2017 05:32:54 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/console/</guid>
+      <description>
 
-&lt;p&gt;単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。&lt;/p&gt;
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/mkjc554mhp257ne/console.ipf?dl=0&#34;&gt;[v1.1.0] console.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;p&gt;Nexon\TreeofSaviorJP\addons\console\settings.txt を作成します。&lt;/p&gt;
+
+&lt;p&gt;ファイルを開いて一行目に、10 210 1と入力します。
+設定は半角スペース区切りで、[ボタンのX座標] [ボタンのY座標] [ボタン表示状態]。&lt;/p&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
+
+&lt;p&gt;設定[ボタン表示状態]を追加しました。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされるとボタン表示状態が1の場合のみ、[Console]ボタンが表示されます。
+ボタンを押すと抽出を開始します。
+ボタン表示状態はエリアチェンジの度に読み込まれるため、ゲーム起動中にボタン表示を切り替えることも可能です。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると[Console]ボタンが表示されます。ボタンを押すと抽出を開始します。 Nexon\TreeofSaviorJP\data\console.txt に抽出結果が出力されます。
+実際の抽出結果は&lt;a href=&#34;http://www.weizlogy.gq/2016/09/tree-of-savior-lua.html&#34;&gt;別記事&lt;/a&gt;にあります。&lt;/p&gt;
 </description>
     </item>
     

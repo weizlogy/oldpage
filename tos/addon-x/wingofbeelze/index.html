@@ -2,11 +2,11 @@
 <html ⚡>
 <head>
 <meta charset="utf-8">
-<link rel="canonical" href="http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/">
+<link rel="canonical" href="http://www.weizlogy.gq/tos/addon-x/wingofbeelze/">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <title>
 
-  [system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する &ndash; Weizlogy
+  [tree of savior addon] エリア内ランダムワープアドオン &ndash; Weizlogy
 
 </title>
 
@@ -201,9 +201,9 @@
 {
   "@context": "http://schema.org"
   "@type": "BlogPosting",
-  "headline": "[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する",
-  "url": "http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/",
-  "datePublished": "2014-04-15 13:15:00.002 &#43;0900 JST",
+  "headline": "[tree of savior addon] エリア内ランダムワープアドオン",
+  "url": "http://www.weizlogy.gq/tos/addon-x/wingofbeelze/",
+  "datePublished": "2017-05-03 13:12:00 &#43;0900 JST",
   "author": {
     "@type": "Person",
     "name": "weizlogy"
@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-26 15:42:44.0827267 &#43;0900 JST",
+  "dateModified": "1900-01-01 00:00:00 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -254,52 +254,41 @@
 <div>
 <article>
 
- <h1><a href="http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/">[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</a>
+ <h1><a href="http://www.weizlogy.gq/tos/addon-x/wingofbeelze/">[tree of savior addon] エリア内ランダムワープアドオン</a>
+  
+    &ndash;&nbsp;v1.0.0
   
 </h1>
  <div>
-  <p>img タグにサーブレットの URL を埋め込んで、画面描画時に呼び出します。
-呼び出した先では画像をバイナリ形式で読み込んで画面に出力します。</p>
+  
 
-<p>データベースに Blob 型で保存した画像の読み込みも、ロジックは同じです。</p>
+<h2 id="download">download.</h2>
 
-<p>JSPでは&hellip;</p>
-<div class="highlight"><pre><code class="language-jsp" data-lang="jsp"><span></span><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;xxx.do&quot;</span> <span class="nt">/&gt;</span>
-</code></pre></div>
+<p><a href="https://www.dropbox.com/s/bcuf2x3u2jmwjpo/wingofbeelze.ipf?dl=0">[v1.0.0] wingofbeelze.ipf</a></p>
 
-<p>サーバーサイドでは&hellip;</p>
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="cm">/** xxx.do から呼び出される Servlet */</span>
-<span class="kd">protected</span> <span class="kt">void</span> <span class="nf">doGet</span><span class="o">(</span><span class="n">HttpServletRequest</span> <span class="n">request</span><span class="o">,</span> <span class="n">HttpServletResponse</span> <span class="n">response</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">ServletException</span><span class="o">,</span> <span class="n">IOException</span> <span class="o">{</span>
-  <span class="c1">// ファイルパスはどこからか入手する</span>
-  <span class="n">String</span> <span class="n">file</span> <span class="o">=</span> <span class="s">&quot;\\server\image\sample.jpg&quot;</span><span class="o">;</span>
-  <span class="k">if</span> <span class="o">(</span><span class="n">file</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">||</span> <span class="s">&quot;&quot;</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">file</span><span class="o">))</span> <span class="o">{</span>
-    <span class="k">return</span><span class="o">;</span>
-  <span class="o">}</span>
-  <span class="k">try</span> <span class="o">{</span>
-    <span class="c1">// 画像を読み込む</span>
-    <span class="kt">byte</span><span class="o">[]</span> <span class="n">image</span> <span class="o">=</span> <span class="n">Files</span><span class="o">.</span><span class="na">readAllBytes</span><span class="o">(</span><span class="n">Paths</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">file</span><span class="o">));</span>
-　　  <span class="c1">// レスポンスヘッダーを設定する</span>
-    <span class="n">response</span><span class="o">.</span><span class="na">setContentType</span><span class="o">(</span><span class="s">&quot;image/&quot;</span> <span class="o">+</span> <span class="n">file</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="n">file</span><span class="o">.</span><span class="na">lastIndexOf</span><span class="o">(</span><span class="s">&quot;.&quot;</span><span class="o">)));</span>
-    <span class="n">response</span><span class="o">.</span><span class="na">setContentLength</span><span class="o">(</span><span class="n">image</span><span class="o">.</span><span class="na">length</span><span class="o">);</span>
-    <span class="c1">// servlet specification 3.1 によると OutputStream は</span>
-    <span class="c1">// Servlet 終了時にクローズされる</span>
-    <span class="c1">// 従って、ここではクローズしない</span>
-    <span class="c1">// むしろ、ここでクローズすると二重解放になる可能性があるのでは？</span>
-    <span class="n">response</span><span class="o">.</span><span class="na">getOutputStream</span><span class="o">().</span><span class="na">write</span><span class="o">(</span><span class="n">image</span><span class="o">);</span>
-  <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-    <span class="c1">// ログ出力など</span>
-    <span class="k">throw</span> <span class="n">e</span><span class="o">;</span>
-  <span class="o">}</span>
-<span class="o">}</span>
+<h2 id="install">install.</h2>
 
-<span class="kd">protected</span> <span class="kt">void</span> <span class="nf">doPost</span><span class="o">(...</span> <span class="n">以下略</span>
-</code></pre></div>
+<p><a href="https://github.com/weizlogy/tos/blob/master/README.md">README.md</a></p>
+
+<h2 id="introduction">introduction.</h2>
+
+<h2 id="settings">settings.</h2>
+
+<h2 id="descriptions">descriptions.</h2>
+
+<h3 id="v1-0-0">v1.0.0</h3>
+
+<p>新規作成。</p>
+
+<p>ESCAPE+LSHIFTでエリア内をランダムにワープします。</p>
+
+<p>ROのヴェルゼブブの羽のようなイメージです。</p>
 
  </div>
 
 </article>
 <div class="blog-date">
-  2014/04/15 01:15:00 - 2017/03/26 03:42:44
+  2017/05/03 01:12:00 - 1900/01/01 12:00:00
 </div>
 <amp-ad type="adsense"
   layout="responsive"
