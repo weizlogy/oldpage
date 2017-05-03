@@ -48,7 +48,8 @@
     padding-left: 10px;
   }
   div.main {
-    width: 80%;
+     
+    padding-left: 10px;
   }
    
   article > div > h2 {
@@ -63,7 +64,6 @@
   }
    
   section {
-    padding-left: 10px;
     overflow: hidden;
   }
   section > h1 {
@@ -76,20 +76,27 @@
     color: #999;
   }
   aside {
-    float: right;
-    width: 20%;
-    height: 100%;
+    padding-left: 10px;
     margin-top: 10px;
     font-size: 85%;
   }
   aside > div {
     margin-bottom: 10px;
   }
-  div.lastmod-title {
+  .category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .category > div {
+    margin-right: 10px;
+  }
+  .lastmod-title {
     padding-bottom: 10px;
   }
-  div.blog-date {
+  .blog-date {
     color: #999;
+    margin-left: 10px;
   }
    
   .pagination {
@@ -183,35 +190,6 @@
 </style>
 
 
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org"
-  "@type": "BlogPosting",
-  "headline": "404 Page not found",
-  "url": "http://www.weizlogy.gq/404/",
-  "datePublished": "0001-01-01 00:00:00 &#43;0000 UTC",
-  "author": {
-    "@type": "Person",
-    "name": "weizlogy"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Weiβlogy",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "http://www.weizlogy.gq//favicon.ico"
-    }
-  },
-  "dateModified": "0001-01-01 00:00:00 &#43;0000 UTC",
-  "mainEntityOfPage": "1",
-  "image": {
-    "@type": "ImageObject",
-    "url": "http://www.weizlogy.gq//dummy.png",
-    "width": "100",
-    "height": "100"
-  }
-}
-</script>
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -257,87 +235,52 @@
   <strong>Last modified.</strong>
   
   <div class="lastmod-title">
-    <div><a href="http://www.weizlogy.gq/">Weizlogy</a>
+    <div>
+      <a href="http://www.weizlogy.gq/">Weizlogy</a>
     
+    
+      <span class="blog-date">@2017/05/03 10:25:29</span>
     </div>
-    <div class="blog-date">@2017/05/03 10:25:29</div>
   </div>
   
   <div class="lastmod-title">
-    <div><a href="http://www.weizlogy.gq/categories/tos-addon/">Tos Addon</a>
+    <div>
+      <a href="http://www.weizlogy.gq/categories/tos-addon/">Tos Addon</a>
     
+    
+      <span class="blog-date">@2017/05/03 10:25:29</span>
     </div>
-    <div class="blog-date">@2017/05/03 10:25:29</div>
   </div>
   
   <div class="lastmod-title">
-    <div><a href="http://www.weizlogy.gq/tos/">Tos</a>
+    <div>
+      <a href="http://www.weizlogy.gq/tos/">Tos</a>
     
+    
+      <span class="blog-date">@2017/05/03 10:25:29</span>
     </div>
-    <div class="blog-date">@2017/05/03 10:25:29</div>
   </div>
   
   <div class="lastmod-title">
-    <div><a href="http://www.weizlogy.gq/tos/addon/wingofbeelze/">[tree of savior addon] エリア内ランダムワープアドオン</a>
+    <div>
+      <a href="http://www.weizlogy.gq/tos/addon/wingofbeelze/">[tree of savior addon] エリア内ランダムワープアドオン</a>
     
     &ndash;&nbsp;v1.0.0
     
+    
+      <span class="blog-date">@2017/05/03 10:25:29</span>
     </div>
-    <div class="blog-date">@2017/05/03 10:25:29</div>
   </div>
   
   <div class="lastmod-title">
-    <div><a href="http://www.weizlogy.gq/tos/addon/worldmapquest/">[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</a>
+    <div>
+      <a href="http://www.weizlogy.gq/tos/addon/worldmapquest/">[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</a>
     
     &ndash;&nbsp;v1.1.2
     
+    
+      <span class="blog-date">@2017/05/01 03:22:56</span>
     </div>
-    <div class="blog-date">@2017/05/01 03:22:56</div>
-  </div>
-  
-  <div class="lastmod-title">
-    <div><a href="http://www.weizlogy.gq/tos/addon/savequest/">[tree of savior addon] ワープ用クエスト誤完了防止アドオン</a>
-    
-    &ndash;&nbsp;v1.0.2
-    
-    </div>
-    <div class="blog-date">@2017/04/28 07:04:42</div>
-  </div>
-  
-  <div class="lastmod-title">
-    <div><a href="http://www.weizlogy.gq/tos/addon/monsterstatus/">[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</a>
-    
-    &ndash;&nbsp;v2.1.0
-    
-    </div>
-    <div class="blog-date">@2017/04/28 07:04:07</div>
-  </div>
-  
-  <div class="lastmod-title">
-    <div><a href="http://www.weizlogy.gq/tos/addon/warehousepicker/">[tree of savior addon] 所持キャラ全員の個人倉庫を見るアドオン</a>
-    
-    &ndash;&nbsp;v1.0.0
-    
-    </div>
-    <div class="blog-date">@2017/04/28 05:35:06</div>
-  </div>
-  
-  <div class="lastmod-title">
-    <div><a href="http://www.weizlogy.gq/tos/addon/staminagauge/">[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</a>
-    
-    &ndash;&nbsp;v1.0.0
-    
-    </div>
-    <div class="blog-date">@2017/04/28 05:34:58</div>
-  </div>
-  
-  <div class="lastmod-title">
-    <div><a href="http://www.weizlogy.gq/tos/addon/skillitemcounter/">[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</a>
-    
-    &ndash;&nbsp;v1.0.0
-    
-    </div>
-    <div class="blog-date">@2017/04/28 05:34:52</div>
   </div>
   
   
