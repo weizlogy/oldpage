@@ -10,6 +10,38 @@
     <atom:link href="http://www.weizlogy.gq/categories/tos-addon/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>[tree of savior addon] エリア内ランダムワープアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/wingofbeelze/</link>
+      <pubDate>Wed, 03 May 2017 10:25:29 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/wingofbeelze/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/bcuf2x3u2jmwjpo/wingofbeelze.ipf?dl=0&#34;&gt;[v1.0.0]wingofbeelze.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;ESCAPE+LSHIFTでエリア内をランダムにワープします。&lt;/p&gt;
+
+&lt;p&gt;ROのヴェルゼブブの羽のようなイメージです。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/worldmapquest/</link>
       <pubDate>Mon, 01 May 2017 03:22:56 +0900</pubDate>
@@ -932,52 +964,6 @@
 &lt;p&gt;アドオンがロードされると近隣（500範囲内）モンスターに自キャラからの距離が表示されます。&lt;/p&gt;
 
 &lt;p&gt;単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] コンパニオンのリングコマンドを拡張するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/customcompanion/</link>
-      <pubDate>Fri, 28 Apr 2017 05:33:15 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/customcompanion/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/1r0bo0z9acwz4ui/customcompanion.ipf?dl=0&#34;&gt;customcompanion.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;amp-youtube data-videoid=&#34;QaPBalivuk4&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、コンパニオンに近づくだけでリングコマンドが出現するようになります。
-今まで通り、コンパニオンから離れるとリングコマンドが消えます。&lt;/p&gt;
-
-&lt;p&gt;リングコマンドに[自動戦闘ON/OFFトグルアイコン]、[コンパニオン休眠化]のスロットを追加します。
-ホットキーの割り当てはありません。&lt;/p&gt;
-
-&lt;p&gt;騎乗スキルのないキャラ、コンパニオンの場合は、リングコマンドの[騎乗]、[降りる]のスロットを削除します。&lt;/p&gt;
-
-&lt;h3 id=&#34;自動戦闘on-off&#34;&gt;自動戦闘ON/OFF&lt;/h3&gt;
-
-&lt;p&gt;クリックするたびに自動戦闘のON/OFFを切り替えます。 切り替え結果はチャット上にSYSTEMメッセージで表示します。&lt;/p&gt;
-
-&lt;h3 id=&#34;コンパニオン休眠化&#34;&gt;コンパニオン休眠化&lt;/h3&gt;
-
-&lt;p&gt;クリックするとコンパニオンを休眠状態にします。 コンパニオンの休眠解除は、今まで通り、コンパニオン情報から行います。&lt;/p&gt;
 </description>
     </item>
     

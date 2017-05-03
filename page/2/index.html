@@ -205,7 +205,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-04-28 05:34:04.2847824 &#43;0900 JST",
+  "dateModified": "2017-04-28 05:34:58.9683884 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -247,7 +247,7 @@
   
   <div><a href="/categories/system-dev">system-dev</a> (15)</div>
   
-  <div><a href="/categories/tos-addon">tos-addon</a> (17)</div>
+  <div><a href="/categories/tos-addon">tos-addon</a> (18)</div>
   
   <div><a href="/categories/tos-addon-dev">tos-addon-dev</a> (4)</div>
   
@@ -258,6 +258,15 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div><a href="http://www.weizlogy.gq/tos/addon/wingofbeelze/">[tree of savior addon] エリア内ランダムワープアドオン</a>
+    
+    &ndash;&nbsp;v1.0.0
+    
+    </div>
+    <div class="blog-date">@2017/05/03 10:25:29</div>
+  </div>
   
   <div class="lastmod-title">
     <div><a href="http://www.weizlogy.gq/tos/addon/worldmapquest/">[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</a>
@@ -340,15 +349,6 @@
     <div class="blog-date">@2017/04/28 05:34:13</div>
   </div>
   
-  <div class="lastmod-title">
-    <div><a href="http://www.weizlogy.gq/tos/addon/marketselltimechanger/">[tree of savior addon] マーケットデフォルト出品日数変更アドオン</a>
-    
-    &ndash;&nbsp;v1.0.0
-    
-    </div>
-    <div class="blog-date">@2017/04/28 05:34:04</div>
-  </div>
-  
   
 </div>
 </aside>
@@ -356,6 +356,21 @@
 <div class="main">
   <section>
   
+  
+  <div>
+    <a href="http://www.weizlogy.gq/tos/addon/staminagauge/">[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</a>
+    
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+  </div>
+  <pre class="summary">download. staminigauge.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.0 新規作成。
+アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。
+若干キャラ名と被りますが、気にしないように。</pre>
   
   <div>
     <a href="http://www.weizlogy.gq/tos/addon/marketselltimechanger/">[tree of savior addon] マーケットデフォルト出品日数変更アドオン</a>
@@ -488,26 +503,6 @@ http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-paramete
   <pre class="summary">???は可変長です。
 Total block  ------------------- ---------------------------- ------------------------- | Header [156 byte] | Cell Header [136 x N byte] | Row Data [??? x M byte] | ------------------- ---------------------------- -------------------------  N=列数。は、Header blockのCellCountで指定。 M=行数。は、Header blockのRowCountで指定。
 Header block  ---------------------- ------------------- ------------------------ | TableName [128 byte] | Reserve1 [4 byte] | OffsetOfData [4 byte] | ---------------------- ------------------- ------------------------ --------------------------- ------------------- ------------------- | OffsetOfResource [4 byte] | FileSize [4 byte] | Reserve2 [4 byte] | --------------------------- ------------------- ------------------- ------------------- -------------------- -------------------------- | RowCount [2 byte] | CellCount [2 byte] | NumCellCount [2 byte] | ------------------- -------------------- -------------------------- ----------------------- ------------------------------------------- | StrCellCount [2 byte] | Reserve3 [2 byte] | --------------------- | ----------------------- -------------------------------------------           TableName IESテーブル名   Reserve1 予約1   OffsetOfData Cell Header blockのサイズ   OffsetOfResource Row Data blockのサイズ   FileSize IESファイルサイズ   Reserve2 予約2   RowCount 行数   CellCount 列数   NumCellCount 数値列数   StrCellCount 文字列列数   Reserve3 予約3    Cell Header block  ---------------- ------------------- ---------------------- | Name [64 byte] | Name2 [64 byte] | Type [2 byte] | ------ | ---------------- ------------------- ---------------------- ------------------- ------------------- ------------------- | Reserve1 [2 byte] | Reserve2 [4 byte] | Position [2 byte] | ------------------- ------------------- -------------------           Name Cell名   Name2 Cell別名   Type 0：数値Cell、1,2：文字列Cell   Reserve1 予約1   Reserve2 予約2   Position Type内Cell順序    Cell順は、Type昇順、Position昇順。</pre>
-  
-  <div>
-    <a href="http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/">[tree of savior addon for developpers] iesファイルをcsv形式のファイルに変換するソフト</a>
-    
-    
-    
-  </div>
-  <pre class="summary">overviews. Tree Of Saviorのipfファイル内には拡張子がiesのファイルがあります。
-Ipf Suiteでは中身を見ることができますが、extractしても実体はバイナリファイル（かつ、暗号化されている）で、 テキストエディタでもバイナリエディタでも見ても分かりません。
-もちろん、grep検索で引き当てることもできません。
-本ソフトは、iesファイルを解析し、可読性のあるcsvファイルを生成します。
-download. IEStoCSV.zip
-install. ダウンロードしたzipを解凍し、任意の場所に配置します。
-descriptions. コンソールアプリケーションなので、コマンドプロンプトで操作します。
-IEStoCSV.exe &lt;走査ディレクトリ&gt;  サブフォルダを含む走査ディレクトリ配下のiesファイルに対して、対となるcsv形式のファイルを生成します。
-走査ディレクトリ省略時は、本ソフトのある位置を対象とします。
-caution. iesファイル内に韓国語が含まれるので、Excelでは文字化けします。（ExcelはShiftJISですが、生成するcsvはUTF8なので）
-本当は英訳を載せたいのですが、完全無料の翻訳APIがないもので。。。 需要があれば何とかしようと思います。
-acknowledgment. iesファイルフォーマットは、以下のソースコードを参考にさせて頂きました。 ありがとうございます。
-https://github.com/r1emu/IPFUnpacker/blob/master</pre>
   
   
     

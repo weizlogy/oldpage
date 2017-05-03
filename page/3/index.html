@@ -205,7 +205,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-26 15:41:54.1203128 &#43;0900 JST",
+  "dateModified": "2017-03-26 15:41:13.0305514 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -247,7 +247,7 @@
   
   <div><a href="/categories/system-dev">system-dev</a> (15)</div>
   
-  <div><a href="/categories/tos-addon">tos-addon</a> (17)</div>
+  <div><a href="/categories/tos-addon">tos-addon</a> (18)</div>
   
   <div><a href="/categories/tos-addon-dev">tos-addon-dev</a> (4)</div>
   
@@ -258,6 +258,15 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div><a href="http://www.weizlogy.gq/tos/addon/wingofbeelze/">[tree of savior addon] エリア内ランダムワープアドオン</a>
+    
+    &ndash;&nbsp;v1.0.0
+    
+    </div>
+    <div class="blog-date">@2017/05/03 10:25:29</div>
+  </div>
   
   <div class="lastmod-title">
     <div><a href="http://www.weizlogy.gq/tos/addon/worldmapquest/">[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</a>
@@ -340,15 +349,6 @@
     <div class="blog-date">@2017/04/28 05:34:13</div>
   </div>
   
-  <div class="lastmod-title">
-    <div><a href="http://www.weizlogy.gq/tos/addon/marketselltimechanger/">[tree of savior addon] マーケットデフォルト出品日数変更アドオン</a>
-    
-    &ndash;&nbsp;v1.0.0
-    
-    </div>
-    <div class="blog-date">@2017/04/28 05:34:04</div>
-  </div>
-  
   
 </div>
 </aside>
@@ -356,6 +356,26 @@
 <div class="main">
   <section>
   
+  
+  <div>
+    <a href="http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/">[tree of savior addon for developpers] iesファイルをcsv形式のファイルに変換するソフト</a>
+    
+    
+    
+  </div>
+  <pre class="summary">overviews. Tree Of Saviorのipfファイル内には拡張子がiesのファイルがあります。
+Ipf Suiteでは中身を見ることができますが、extractしても実体はバイナリファイル（かつ、暗号化されている）で、 テキストエディタでもバイナリエディタでも見ても分かりません。
+もちろん、grep検索で引き当てることもできません。
+本ソフトは、iesファイルを解析し、可読性のあるcsvファイルを生成します。
+download. IEStoCSV.zip
+install. ダウンロードしたzipを解凍し、任意の場所に配置します。
+descriptions. コンソールアプリケーションなので、コマンドプロンプトで操作します。
+IEStoCSV.exe &lt;走査ディレクトリ&gt;  サブフォルダを含む走査ディレクトリ配下のiesファイルに対して、対となるcsv形式のファイルを生成します。
+走査ディレクトリ省略時は、本ソフトのある位置を対象とします。
+caution. iesファイル内に韓国語が含まれるので、Excelでは文字化けします。（ExcelはShiftJISですが、生成するcsvはUTF8なので）
+本当は英訳を載せたいのですが、完全無料の翻訳APIがないもので。。。 需要があれば何とかしようと思います。
+acknowledgment. iesファイルフォーマットは、以下のソースコードを参考にさせて頂きました。 ありがとうございます。
+https://github.com/r1emu/IPFUnpacker/blob/master</pre>
   
   <div>
     <a href="http://www.weizlogy.gq/system/item/tapete/">[system] Tapete - Windows spotlight画像抽出</a>
@@ -514,27 +534,6 @@ cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cab
 プログラムからのアクセスで必要なリソースIDは、デフォルトネームスペース＋ファイル名となります。 リソースIDはプロパティビューで変更可能です。
 使い方は以下の通りです。
 using (var stream = new System.IO.StreamReader(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream(&quot;[ResourceID]&quot;), true)) { ... }  </pre>
-  
-  <div>
-    <a href="http://www.weizlogy.gq/system/dev/step-counter-is/">[system development] ステップカウンターのあるべき姿を考察する</a>
-    
-    
-    
-  </div>
-  <pre class="summary">ステップカウンターとは？ LOCを計測するツールです。LOCはLines Of Codeの略で、プログラムの規模として扱います。
- 空行（改行など空白だけの行）やコメント行（コメントと空白だけの行）は除く、2つの命令が書かれた行は2行と数える、括弧だけの行を除くなどの換算をした行数を論理LOC (logical LOC) といい、通常はこちらを使う。
-&ndash; https://ja.wikipedia.org/wiki/LOC
- 2つの命令が書かれた行は2行と数える、括弧だけの行を除くなどの換算してますか？ 世にあるステップカウンターは、有効行（実行行）、コメント行、空白行の3種を見ていることが多く、高度な換算はされていないようです。
-そこで、*本来あるべきステップカウンター*を、以下の考察に基づき鋭意作成中です。
-詳細はこちらをご覧ください。
-本来あるべきステップカウンターの想定仕様概要  2つの命令が書かれた行は2行と数える。 括弧だけの行を除く。 ディレクティブは考慮が必要。  本来あるべきステップカウンターの想定仕様詳細 2つの命令が書かれた行は2行と数える C言語系統は命令の終端に&rdquo;;&ldquo;が必要な言語使用のため、その終端記号（または文字）を数えれば良い。また、IF文では&rdquo;{&ldquo;、SWITCH-CASE文では&rdquo;{&ldquo;と&rdquo;:&ldquo;に着目することで命令を計測します。
-ただし、FOR文は3式で1セットの命令であるため、FOR文中の終端記号は無視しなければいけません。 VBやRubyのような言語、HTMLのようなタグが構成要素の場合は検討中です。
-括弧だけの行を除く C言語系統はブロックの終端記号&rdquo;}&ldquo;がありますが、1命令のセットであるため、開始記号&rdquo;{&ldquo;とどちらか一方を測定対象とすべきです。 VBやRubyのような言語の&rdquo;END&rdquo;キーワードも同様です。
-ディレクティブは考慮が必要 Javaのimport文、C#のusingディレクティブは、パッケージ名を省略するためだけに存在するもので、記載の有無がプログラムの動作に影響を与えませんので、命令とは位置付け異なります。
-C言語系統のプリプロセッサーディレクティブは微妙ですが、動作に影響を与えるものもあるため、命令と考えます。
-ただし、&rdquo;#endif&rdquo;、&rdquo;#region&rdquo;、&rdquo;#endregion&rdquo;は非命令とし計測しません。
-C言語の#includeは、必須であることを除き、C#のusingディレクティブ同様、非命令とします。
-考察は続きます。。。</pre>
   
   
     
