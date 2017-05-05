@@ -7,20 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Wed, 03 May 2017 17:18:29 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 05 May 2017 23:23:44 +0900</lastBuildDate>
     <atom:link href="http://www.weizlogy.gq/tos/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/distance/</link>
-      <pubDate>Wed, 03 May 2017 17:18:29 +0900</pubDate>
+      <title>[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/pickiteminfo/</link>
+      <pubDate>Fri, 05 May 2017 23:23:44 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon/distance/</guid>
+      <guid>http://www.weizlogy.gq/tos/addon/pickiteminfo/</guid>
       <description>
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/distance-v1.1.1/distance.ipf&#34;&gt;[v1.1.1] distance.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/pickiteminfo-v1.0.0/pickiteminfo.ipf&#34;&gt;[v1.0.0] pickiteminfo.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -28,45 +28,34 @@
 
 &lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
 
-&lt;amp-youtube data-videoid=&#34;IUtCzMMKbXU&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/no0vqpfqi6ev8h6/pickiteminfo.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/no0vqpfqi6ev8h6/pickiteminfo.png?dl=1&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
 
 &lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
 
-&lt;h3 id=&#34;v1-1-1&#34;&gt;v1.1.1&lt;/h3&gt;
-
-&lt;p&gt;性能改善しました。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
-
-&lt;p&gt;メートル単位対応しました。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると近隣（20m範囲内）モンスターに自キャラからの距離がメートル単位で表示されます。&lt;/p&gt;
-
-&lt;p&gt;距離が12mを超えると、表示が消えます。&lt;/p&gt;
-
 &lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
 
-&lt;p&gt;新規作成。&lt;/p&gt;
+&lt;h4 id=&#34;新規作成&#34;&gt;新規作成&lt;/h4&gt;
 
-&lt;p&gt;アドオンがロードされると近隣（500範囲内）モンスターに自キャラからの距離が表示されます。&lt;/p&gt;
+&lt;p&gt;アドオンがロードされると、ALTキーを押さなくとも、ドロップアイテムの名称が表示されるようになります。&lt;/p&gt;
 
-&lt;p&gt;単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。&lt;/p&gt;
+&lt;p&gt;アイテム名称はレアリティで色が変わります。
+色の変化はColored Item Namesをパク&amp;hellip;参考にしています。&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/hidename/</link>
-      <pubDate>Wed, 03 May 2017 17:18:23 +0900</pubDate>
+      <title>[tree of savior addon] オブジェクト探索アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/objectdetector/</link>
+      <pubDate>Fri, 05 May 2017 23:23:17 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon/hidename/</guid>
+      <guid>http://www.weizlogy.gq/tos/addon/objectdetector/</guid>
       <description>
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/hidename-v1.0.1/hidename.ipf&#34;&gt;[v1.0.1] hidename.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/objectdetector-v1.0.1/objectdetector.ipf&#34;&gt;[v1.0.1] objectdetector.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -74,7 +63,9 @@
 
 &lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/gzklevo002i3s8x/hidename.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/gzklevo002i3s8x/hidename.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
 
@@ -82,29 +73,120 @@
 
 &lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
 
-&lt;p&gt;ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。&lt;/p&gt;
+&lt;p&gt;性能改善しました。&lt;/p&gt;
 
 &lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
 
 &lt;p&gt;新規作成。&lt;/p&gt;
 
-&lt;p&gt;アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。&lt;/p&gt;
+&lt;p&gt;アドオンがロードされると、マップとミニマップに四角形のアイコン[*1]が表示されます。&lt;/p&gt;
 
-&lt;p&gt;動画を撮るときに設定では非表示にできなかったので。。。&lt;/p&gt;
+&lt;p&gt;[*1] アイコン配色とオブジェクトの関係は以下の通りです。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;色&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;オブジェクト&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;赤&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;モンスター&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;赤点滅&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;クローバーバフモンスター&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;青&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;PC&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;橙&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NPC&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;橙点滅&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;宝箱&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;紫&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ルーツクリスタル&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;白&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ドロップアイテム&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;黒&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;その他&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;配色をカスタマイズする設定を追加する予定です。&lt;/p&gt;
+
+&lt;p&gt;某レーダーと違いマップにオーバーレイせず直接描画しているため、既存UIの邪魔をしません。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] エリア内ランダムワープアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</link>
+      <pubDate>Fri, 05 May 2017 23:10:19 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/bcuf2x3u2jmwjpo/wingofbeelze.ipf?dl=0&#34;&gt;[v1.0.1] wingofbeelze.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
+
+&lt;h4 id=&#34;ワープロジック微調整&#34;&gt;ワープロジック微調整&lt;/h4&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;h4 id=&#34;新規作成&#34;&gt;新規作成。&lt;/h4&gt;
+
+&lt;p&gt;ESCAPE+LSHIFTでエリア内をランダムにワープします。&lt;/p&gt;
+
+&lt;p&gt;ROのヴェルゼブブの羽のようなイメージです。&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/monsterstatus/</link>
-      <pubDate>Wed, 03 May 2017 17:18:16 +0900</pubDate>
+      <pubDate>Fri, 05 May 2017 23:08:14 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/monsterstatus/</guid>
       <description>
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/monsterstatus-v2.1.0/monsterstatus.ipf&#34;&gt;[v2.1.0] monsterstatus.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/monsterstatus-v2.2.0/monsterstatus.ipf&#34;&gt;[v2.2.0] monsterstatus.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -117,6 +199,12 @@
 &lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
 
 &lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v2-2-0&#34;&gt;v2.2.0&lt;/h3&gt;
+
+&lt;h4 id=&#34;移動種別表示追加&#34;&gt;移動種別表示追加&lt;/h4&gt;
+
+&lt;p&gt;移動種別の表示を追加し、飛行しているか分かるようにしました。&lt;/p&gt;
 
 &lt;h3 id=&#34;v2-1-0&#34;&gt;v2.1.0&lt;/h3&gt;
 
@@ -229,6 +317,90 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/distance/</link>
+      <pubDate>Wed, 03 May 2017 17:18:29 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/distance/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/distance-v1.1.1/distance.ipf&#34;&gt;[v1.1.1] distance.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;amp-youtube data-videoid=&#34;IUtCzMMKbXU&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-1-1&#34;&gt;v1.1.1&lt;/h3&gt;
+
+&lt;p&gt;性能改善しました。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
+
+&lt;p&gt;メートル単位対応しました。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると近隣（20m範囲内）モンスターに自キャラからの距離がメートル単位で表示されます。&lt;/p&gt;
+
+&lt;p&gt;距離が12mを超えると、表示が消えます。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると近隣（500範囲内）モンスターに自キャラからの距離が表示されます。&lt;/p&gt;
+
+&lt;p&gt;単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/hidename/</link>
+      <pubDate>Wed, 03 May 2017 17:18:23 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/hidename/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/hidename-v1.0.1/hidename.ipf&#34;&gt;[v1.0.1] hidename.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/gzklevo002i3s8x/hidename.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/gzklevo002i3s8x/hidename.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
+
+&lt;p&gt;ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。&lt;/p&gt;
+
+&lt;p&gt;動画を撮るときに設定では非表示にできなかったので。。。&lt;/p&gt;
 </description>
     </item>
     
@@ -495,133 +667,6 @@
     </item>
     
     <item>
-      <title>[tree of savior addon] エリア内ランダムワープアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</link>
-      <pubDate>Wed, 03 May 2017 17:17:31 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/bcuf2x3u2jmwjpo/wingofbeelze.ipf?dl=0&#34;&gt;[v1.0.0] wingofbeelze.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;ESCAPE+LSHIFTでエリア内をランダムにワープします。&lt;/p&gt;
-
-&lt;p&gt;ROのヴェルゼブブの羽のようなイメージです。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] オブジェクト探索アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon-x/objectdetector/</link>
-      <pubDate>Wed, 03 May 2017 17:17:28 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon-x/objectdetector/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/objectdetector-v1.0.1/objectdetector.ipf&#34;&gt;[v1.0.1] objectdetector.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
-
-&lt;p&gt;性能改善しました。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、マップとミニマップに四角形のアイコン[*1]が表示されます。&lt;/p&gt;
-
-&lt;p&gt;[*1] アイコン配色とオブジェクトの関係は以下の通りです。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;色&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;オブジェクト&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;赤&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;モンスター&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;赤点滅&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;クローバーバフモンスター&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;青&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;PC&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;橙&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;NPC&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;橙点滅&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;宝箱&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;紫&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;ルーツクリスタル&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;白&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;ドロップアイテム&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;黒&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;その他&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;配色をカスタマイズする設定を追加する予定です。&lt;/p&gt;
-
-&lt;p&gt;某レーダーと違いマップにオーバーレイせず直接描画しているため、既存UIの邪魔をしません。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>[tree of savior addon] 飛行アドオン</title>
       <link>http://www.weizlogy.gq/tos/addon-x/fly/</link>
       <pubDate>Wed, 03 May 2017 17:17:20 +0900</pubDate>
@@ -872,99 +917,6 @@
 &lt;p&gt;新規作成。&lt;/p&gt;
 
 &lt;p&gt;アドオンがロードされると、設定ファイルに記載された値でマーケットのデフォルト出品日数を変更します。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] DPS計測アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/dpsmeter/</link>
-      <pubDate>Fri, 28 Apr 2017 05:33:35 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/dpsmeter/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/dpsmeter-v1.3.0/dpsmeter.ipf&#34;&gt;[v1.3.0] dpsmeter.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;amp-youtube data-videoid=&#34;OoAcSq2FU0A&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-3-0&#34;&gt;v1.3.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;dps平均値表示を追加&#34;&gt;DPS平均値表示を追加&lt;/h4&gt;
-
-&lt;h4 id=&#34;dps平均値表示に伴い-フォーマットを変更&#34;&gt;DPS平均値表示に伴い、フォーマットを変更&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code&gt;現在のDPS[{淡青}平均DPS][{淡赤}最大DPS] dps
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;モンスター死亡時のsystemメッセージによる通知をデフォルトoffに変更&#34;&gt;モンスター死亡時のsystemメッセージによる通知をデフォルトOFFに変更&lt;/h4&gt;
-
-&lt;p&gt;表示するには、DPSのUIを右クリック &amp;gt; [toggleChat]を選択します。&lt;/p&gt;
-
-&lt;p&gt;選択する度に通知のON/OFFを切り替えます。&lt;/p&gt;
-
-&lt;h4 id=&#34;dps計測対象を調整&#34;&gt;DPS計測対象を調整&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ボコルのゾンビフィーで召喚するゾンビを除外&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;v1-2-0&#34;&gt;v1.2.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;dps計測方法を調整&#34;&gt;DPS計測方法を調整&lt;/h4&gt;
-
-&lt;p&gt;ターゲットアイコン表示が可能な距離まで近づいて、初撃時（を含む。初撃はdamage/1sec換算）からDPS計測を開始します。&lt;/p&gt;
-
-&lt;p&gt;ターゲットが死ぬかフレームアウトするまで計測は止まりません。&lt;/p&gt;
-
-&lt;h4 id=&#34;dps計測対象を調整-1&#34;&gt;DPS計測対象を調整&lt;/h4&gt;
-
-&lt;p&gt;旧バージョンではfaction = &amp;ldquo;Monster&amp;rdquo;を計測対象としていましたが不十分でしたので、
-計測対象を拡大し、ペット以外（faction ~= &amp;ldquo;Pet&amp;rdquo;）としました。&lt;/p&gt;
-
-&lt;p&gt;IWやルーツクリスタルも対象となってしまいますが、計測されないよりは良いかと。。。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;ui表示を追加&#34;&gt;UI表示を追加&lt;/h4&gt;
-
-&lt;p&gt;現在のDPS、最大DPSをモンスターUI近辺に、以下のフォーマット表示します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[現在のDPS]([最大DPS]) dps
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;モンスター死亡時のsystemメッセージによる通知を追加&#34;&gt;モンスター死亡時のsystemメッセージによる通知を追加&lt;/h4&gt;
-
-&lt;p&gt;モンスター死亡時、最大DPSをsystemメッセージで表示します。&lt;/p&gt;
-
-&lt;p&gt;ターゲットアイコン表示が可能な距離まで近づくとDPS計測を開始、離れると停止します。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;新規作成&#34;&gt;新規作成。&lt;/h4&gt;
-
-&lt;p&gt;アドオンがロードされるとDPS計測が有効になり、計測結果はsystemメッセージで通知します。&lt;/p&gt;
-
-&lt;p&gt;現時点ではコンバットログが取れないので、正確な測定は実現できていません。&lt;/p&gt;
-
-&lt;p&gt;少しでも測定精度を上げたい場合は、以下の点に注意してください。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ソロで戦う。（コンパニオンも出さない）&lt;/li&gt;
-&lt;li&gt;混戦しない。&lt;/li&gt;
-&lt;li&gt;回復持ちの敵は避ける。&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

@@ -12,56 +12,20 @@
     <item>
       <title>[tree of savior addon] エリア内ランダムワープアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</link>
-      <pubDate>Wed, 03 May 2017 17:17:31 +0900</pubDate>
+      <pubDate>Fri, 05 May 2017 23:10:19 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</guid>
       <description>
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/bcuf2x3u2jmwjpo/wingofbeelze.ipf?dl=0&#34;&gt;[v1.0.0] wingofbeelze.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/bcuf2x3u2jmwjpo/wingofbeelze.ipf?dl=0&#34;&gt;[v1.0.1] wingofbeelze.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;ESCAPE+LSHIFTでエリア内をランダムにワープします。&lt;/p&gt;
-
-&lt;p&gt;ROのヴェルゼブブの羽のようなイメージです。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] オブジェクト探索アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon-x/objectdetector/</link>
-      <pubDate>Wed, 03 May 2017 17:17:28 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon-x/objectdetector/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/objectdetector-v1.0.1/objectdetector.ipf&#34;&gt;[v1.0.1] objectdetector.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
 
@@ -69,70 +33,15 @@
 
 &lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
 
-&lt;p&gt;性能改善しました。&lt;/p&gt;
+&lt;h4 id=&#34;ワープロジック微調整&#34;&gt;ワープロジック微調整&lt;/h4&gt;
 
 &lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
 
-&lt;p&gt;新規作成。&lt;/p&gt;
+&lt;h4 id=&#34;新規作成&#34;&gt;新規作成。&lt;/h4&gt;
 
-&lt;p&gt;アドオンがロードされると、マップとミニマップに四角形のアイコン[*1]が表示されます。&lt;/p&gt;
+&lt;p&gt;ESCAPE+LSHIFTでエリア内をランダムにワープします。&lt;/p&gt;
 
-&lt;p&gt;[*1] アイコン配色とオブジェクトの関係は以下の通りです。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;色&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;オブジェクト&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;赤&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;モンスター&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;赤点滅&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;クローバーバフモンスター&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;青&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;PC&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;橙&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;NPC&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;橙点滅&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;宝箱&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;紫&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;ルーツクリスタル&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;白&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;ドロップアイテム&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;黒&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;その他&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;配色をカスタマイズする設定を追加する予定です。&lt;/p&gt;
-
-&lt;p&gt;某レーダーと違いマップにオーバーレイせず直接描画しているため、既存UIの邪魔をしません。&lt;/p&gt;
+&lt;p&gt;ROのヴェルゼブブの羽のようなイメージです。&lt;/p&gt;
 </description>
     </item>
     

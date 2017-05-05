@@ -10,16 +10,16 @@
     <atom:link href="http://www.weizlogy.gq/categories/tos-addon/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/distance/</link>
-      <pubDate>Wed, 03 May 2017 17:18:29 +0900</pubDate>
+      <title>[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/pickiteminfo/</link>
+      <pubDate>Fri, 05 May 2017 23:23:44 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon/distance/</guid>
+      <guid>http://www.weizlogy.gq/tos/addon/pickiteminfo/</guid>
       <description>
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/distance-v1.1.1/distance.ipf&#34;&gt;[v1.1.1] distance.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/pickiteminfo-v1.0.0/pickiteminfo.ipf&#34;&gt;[v1.0.0] pickiteminfo.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -27,45 +27,34 @@
 
 &lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
 
-&lt;amp-youtube data-videoid=&#34;IUtCzMMKbXU&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/no0vqpfqi6ev8h6/pickiteminfo.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/no0vqpfqi6ev8h6/pickiteminfo.png?dl=1&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
 
 &lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
 
-&lt;h3 id=&#34;v1-1-1&#34;&gt;v1.1.1&lt;/h3&gt;
-
-&lt;p&gt;性能改善しました。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
-
-&lt;p&gt;メートル単位対応しました。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると近隣（20m範囲内）モンスターに自キャラからの距離がメートル単位で表示されます。&lt;/p&gt;
-
-&lt;p&gt;距離が12mを超えると、表示が消えます。&lt;/p&gt;
-
 &lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
 
-&lt;p&gt;新規作成。&lt;/p&gt;
+&lt;h4 id=&#34;新規作成&#34;&gt;新規作成&lt;/h4&gt;
 
-&lt;p&gt;アドオンがロードされると近隣（500範囲内）モンスターに自キャラからの距離が表示されます。&lt;/p&gt;
+&lt;p&gt;アドオンがロードされると、ALTキーを押さなくとも、ドロップアイテムの名称が表示されるようになります。&lt;/p&gt;
 
-&lt;p&gt;単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。&lt;/p&gt;
+&lt;p&gt;アイテム名称はレアリティで色が変わります。
+色の変化はColored Item Namesをパク&amp;hellip;参考にしています。&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/hidename/</link>
-      <pubDate>Wed, 03 May 2017 17:18:23 +0900</pubDate>
+      <title>[tree of savior addon] オブジェクト探索アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/objectdetector/</link>
+      <pubDate>Fri, 05 May 2017 23:23:17 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon/hidename/</guid>
+      <guid>http://www.weizlogy.gq/tos/addon/objectdetector/</guid>
       <description>
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/hidename-v1.0.1/hidename.ipf&#34;&gt;[v1.0.1] hidename.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/objectdetector-v1.0.1/objectdetector.ipf&#34;&gt;[v1.0.1] objectdetector.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -73,7 +62,9 @@
 
 &lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/gzklevo002i3s8x/hidename.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/gzklevo002i3s8x/hidename.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
 
@@ -81,29 +72,84 @@
 
 &lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
 
-&lt;p&gt;ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。&lt;/p&gt;
+&lt;p&gt;性能改善しました。&lt;/p&gt;
 
 &lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
 
 &lt;p&gt;新規作成。&lt;/p&gt;
 
-&lt;p&gt;アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。&lt;/p&gt;
+&lt;p&gt;アドオンがロードされると、マップとミニマップに四角形のアイコン[*1]が表示されます。&lt;/p&gt;
 
-&lt;p&gt;動画を撮るときに設定では非表示にできなかったので。。。&lt;/p&gt;
+&lt;p&gt;[*1] アイコン配色とオブジェクトの関係は以下の通りです。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;色&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;オブジェクト&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;赤&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;モンスター&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;赤点滅&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;クローバーバフモンスター&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;青&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;PC&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;橙&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NPC&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;橙点滅&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;宝箱&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;紫&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ルーツクリスタル&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;白&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ドロップアイテム&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;黒&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;その他&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;配色をカスタマイズする設定を追加する予定です。&lt;/p&gt;
+
+&lt;p&gt;某レーダーと違いマップにオーバーレイせず直接描画しているため、既存UIの邪魔をしません。&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/monsterstatus/</link>
-      <pubDate>Wed, 03 May 2017 17:18:16 +0900</pubDate>
+      <pubDate>Fri, 05 May 2017 23:08:14 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/monsterstatus/</guid>
       <description>
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/monsterstatus-v2.1.0/monsterstatus.ipf&#34;&gt;[v2.1.0] monsterstatus.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/monsterstatus-v2.2.0/monsterstatus.ipf&#34;&gt;[v2.2.0] monsterstatus.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -116,6 +162,12 @@
 &lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
 
 &lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v2-2-0&#34;&gt;v2.2.0&lt;/h3&gt;
+
+&lt;h4 id=&#34;移動種別表示追加&#34;&gt;移動種別表示追加&lt;/h4&gt;
+
+&lt;p&gt;移動種別の表示を追加し、飛行しているか分かるようにしました。&lt;/p&gt;
 
 &lt;h3 id=&#34;v2-1-0&#34;&gt;v2.1.0&lt;/h3&gt;
 
@@ -228,6 +280,90 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/distance/</link>
+      <pubDate>Wed, 03 May 2017 17:18:29 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/distance/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/distance-v1.1.1/distance.ipf&#34;&gt;[v1.1.1] distance.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;amp-youtube data-videoid=&#34;IUtCzMMKbXU&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-1-1&#34;&gt;v1.1.1&lt;/h3&gt;
+
+&lt;p&gt;性能改善しました。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
+
+&lt;p&gt;メートル単位対応しました。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると近隣（20m範囲内）モンスターに自キャラからの距離がメートル単位で表示されます。&lt;/p&gt;
+
+&lt;p&gt;距離が12mを超えると、表示が消えます。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると近隣（500範囲内）モンスターに自キャラからの距離が表示されます。&lt;/p&gt;
+
+&lt;p&gt;単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/hidename/</link>
+      <pubDate>Wed, 03 May 2017 17:18:23 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/hidename/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/hidename-v1.0.1/hidename.ipf&#34;&gt;[v1.0.1] hidename.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/gzklevo002i3s8x/hidename.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/gzklevo002i3s8x/hidename.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
+
+&lt;p&gt;ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。&lt;/p&gt;
+
+&lt;p&gt;動画を撮るときに設定では非表示にできなかったので。。。&lt;/p&gt;
 </description>
     </item>
     
@@ -778,82 +914,6 @@
 &lt;h3 id=&#34;コンパニオン休眠化&#34;&gt;コンパニオン休眠化&lt;/h3&gt;
 
 &lt;p&gt;クリックするとコンパニオンを休眠状態にします。 コンパニオンの休眠解除は、今まで通り、コンパニオン情報から行います。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 特性習得ウィンドウに各特性の最大レベルを表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/customabilityshop/</link>
-      <pubDate>Fri, 28 Apr 2017 05:33:06 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/customabilityshop/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;2/22パッチで最大値が表示されるようになりましたので非公開にします。&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://4.bp.blogspot.com/-D0bmazzRJg4/WJ84fwDr3qI/AAAAAAAACjE/GZQ3PZvawxMq0no4KtWgVgP-M9dWrKymgCLcB/s1600/customabilityshop.PNG&#34;&gt;&lt;amp-img src=&#34;https://4.bp.blogspot.com/-D0bmazzRJg4/WJ84fwDr3qI/AAAAAAAACjE/GZQ3PZvawxMq0no4KtWgVgP-M9dWrKymgCLcB/s320/customabilityshop.PNG&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、特性習得ウィンドウに各特性の最大レベルが表示されます。 無くてもいい気がするけど。。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）</title>
-      <link>http://www.weizlogy.gq/tos/addon/console/</link>
-      <pubDate>Fri, 28 Apr 2017 05:32:54 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/console/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/mkjc554mhp257ne/console.ipf?dl=0&#34;&gt;[v1.1.0] console.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;p&gt;Nexon\TreeofSaviorJP\addons\console\settings.txt を作成します。&lt;/p&gt;
-
-&lt;p&gt;ファイルを開いて一行目に、10 210 1と入力します。
-設定は半角スペース区切りで、[ボタンのX座標] [ボタンのY座標] [ボタン表示状態]。&lt;/p&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
-
-&lt;p&gt;設定[ボタン表示状態]を追加しました。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされるとボタン表示状態が1の場合のみ、[Console]ボタンが表示されます。
-ボタンを押すと抽出を開始します。
-ボタン表示状態はエリアチェンジの度に読み込まれるため、ゲーム起動中にボタン表示を切り替えることも可能です。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると[Console]ボタンが表示されます。ボタンを押すと抽出を開始します。 Nexon\TreeofSaviorJP\data\console.txt に抽出結果が出力されます。
-実際の抽出結果は&lt;a href=&#34;http://www.weizlogy.gq/2016/09/tree-of-savior-lua.html&#34;&gt;別記事&lt;/a&gt;にあります。&lt;/p&gt;
 </description>
     </item>
     
