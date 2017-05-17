@@ -2,11 +2,11 @@
 <html ⚡>
 <head>
 <meta charset="utf-8">
-<link rel="canonical" href="http://www.weizlogy.gq/tos/addon/staminagauge/">
+<link rel="canonical" href="http://www.weizlogy.gq/site/blogger-to-hugo/">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <title>
 
-  [tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン &ndash; Weizlogy
+  [site management] bloggerからhugo&#43;github pagesに移行した理由 &ndash; Weizlogy
 
 </title>
 
@@ -201,9 +201,9 @@
 {
   "@context": "http://schema.org"
   "@type": "BlogPosting",
-  "headline": "[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン",
-  "url": "http://www.weizlogy.gq/tos/addon/staminagauge/",
-  "datePublished": "2017-02-25 00:33:00.002 &#43;0900 JST",
+  "headline": "[site management] bloggerからhugo&#43;github pagesに移行した理由",
+  "url": "http://www.weizlogy.gq/site/blogger-to-hugo/",
+  "datePublished": "2017-05-06 17:31:42 &#43;0900 JST",
   "author": {
     "@type": "Person",
     "name": "weizlogy"
@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-05-18 07:12:00.2978796 &#43;0900 JST",
+  "dateModified": "2017-05-18 07:09:25.4501906 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -254,49 +254,56 @@
 <div>
 <article>
 
- <h1><a href="http://www.weizlogy.gq/tos/addon/staminagauge/">[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</a>
-  
-    &ndash;&nbsp;v1.0.1
+ <h1><a href="http://www.weizlogy.gq/site/blogger-to-hugo/">[site management] bloggerからhugo&#43;github pagesに移行した理由</a>
   
 </h1>
  <div>
   
 
-<h2 id="download">download.</h2>
+<h2 id="bloggerでサイト運営して困ったこと">bloggerでサイト運営して困ったこと</h2>
 
-<p><a href="https://github.com/weizlogy/tos/releases/download/staminigauge-v1.0.1/staminigauge.ipf">[v1.0.1] staminigauge.ipf</a></p>
+<h3 id="googleサービスの割にamp対応できない">Googleサービスの割にAMP対応できない</h3>
 
-<h2 id="install">install.</h2>
+<p>新テンプレートはもちろん無理で、クラシックテンプレートも完全には対応できません。</p>
 
-<p><a href="https://github.com/weizlogy/tos/blob/master/README.md">README.md</a></p>
+<h3 id="テンプレートが複雑でカスタマイズに時間がかかる">テンプレートが複雑でカスタマイズに時間がかかる</h3>
 
-<h2 id="introduction">introduction.</h2>
+<p>一番シンプルなテンプレートでも1000行以上はあり、コード修正はブラウザ上のテキストエリアで行うという苦行。</p>
 
-<p><a href="https://www.dropbox.com/s/rbcn9uizoiwpw2h/staminagauge.png?dl=1"><amp-img src="https://www.dropbox.com/s/rbcn9uizoiwpw2h/staminagauge.png?dl=1" width="320" height="185" title="" layout="responsive" /></a></p>
+<p>HTML5のレイアウト対応（section, articleなど）も一苦労です。</p>
 
-<h2 id="settings">settings.</h2>
+<h3 id="ページロードに時間がかかる">ページロードに時間がかかる</h3>
 
-<h2 id="descriptions">descriptions.</h2>
+<p>AMPに対応できない一因でもありますが、リッチなUIを実現するためJavascriptが多様されます。</p>
 
-<h3 id="v1-0-1">v1.0.1</h3>
+<h2 id="bloggerで困ったことをhugoで解決する">bloggerで困ったことをhugoで解決する</h2>
 
-<h4 id="ゲージ位置調整">ゲージ位置調整</h4>
+<h3 id="amp対応">AMP対応</h3>
 
-<p>スタミナゲージと名前が被らないよう調整しました。</p>
+<p>hugoにはAMP対応の公開テーマがあるので簡単です。</p>
 
-<h3 id="v1-0-0">v1.0.0</h3>
+<h3 id="テーマのカスタマイズ-自作">テーマのカスタマイズ（自作）</h3>
 
-<h4 id="新規作成">新規作成</h4>
+<p>テーマを<a href="https://github.com/weizlogy/hugo-theme-html5-amp-minimize">自作</a>しました。</p>
 
-<p>アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。</p>
+<p>最小構成でHTML5とAMPに対応し、見た目も中身もシンプルになるように配慮しています。</p>
 
-<p>若干キャラ名と被りますが、気にしないように。</p>
+<h3 id="ページロード">ページロード</h3>
+
+<p>hugoはテーマとマークダウンから静的コンテンツを生成するため、キャッシュが効きやすくページロードに有利です。</p>
+
+<h2 id="ホスティングサービスを選択する">ホスティングサービスを選択する</h2>
+
+<p>GitHub Pagesは静的コンテンツをgit pushするだけで公開できるGitHubのサービスです。</p>
+
+<p>1GBのストレージで100GB/Monthの帯域、1時間に10回ビルドといった制限がありますが、広告なし無料です。
+画像などはdropboxに入れておけば十分活用できます。</p>
 
  </div>
 
 </article>
 <div class="blog-date">
-  2017/02/25 00:33:00 - 2017/05/18 07:12:00
+  2017/05/06 17:31:42 - 2017/05/18 07:09:25
 </div>
 <amp-ad type="adsense"
   layout="responsive"

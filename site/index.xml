@@ -7,8 +7,57 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Sun, 26 Mar 2017 15:41:38 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 18 May 2017 07:09:25 +0900</lastBuildDate>
     <atom:link href="http://www.weizlogy.gq/site/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>[site management] bloggerからhugo&#43;github pagesに移行した理由</title>
+      <link>http://www.weizlogy.gq/site/blogger-to-hugo/</link>
+      <pubDate>Thu, 18 May 2017 07:09:25 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/site/blogger-to-hugo/</guid>
+      <description>
+
+&lt;h2 id=&#34;bloggerでサイト運営して困ったこと&#34;&gt;bloggerでサイト運営して困ったこと&lt;/h2&gt;
+
+&lt;h3 id=&#34;googleサービスの割にamp対応できない&#34;&gt;Googleサービスの割にAMP対応できない&lt;/h3&gt;
+
+&lt;p&gt;新テンプレートはもちろん無理で、クラシックテンプレートも完全には対応できません。&lt;/p&gt;
+
+&lt;h3 id=&#34;テンプレートが複雑でカスタマイズに時間がかかる&#34;&gt;テンプレートが複雑でカスタマイズに時間がかかる&lt;/h3&gt;
+
+&lt;p&gt;一番シンプルなテンプレートでも1000行以上はあり、コード修正はブラウザ上のテキストエリアで行うという苦行。&lt;/p&gt;
+
+&lt;p&gt;HTML5のレイアウト対応（section, articleなど）も一苦労です。&lt;/p&gt;
+
+&lt;h3 id=&#34;ページロードに時間がかかる&#34;&gt;ページロードに時間がかかる&lt;/h3&gt;
+
+&lt;p&gt;AMPに対応できない一因でもありますが、リッチなUIを実現するためJavascriptが多様されます。&lt;/p&gt;
+
+&lt;h2 id=&#34;bloggerで困ったことをhugoで解決する&#34;&gt;bloggerで困ったことをhugoで解決する&lt;/h2&gt;
+
+&lt;h3 id=&#34;amp対応&#34;&gt;AMP対応&lt;/h3&gt;
+
+&lt;p&gt;hugoにはAMP対応の公開テーマがあるので簡単です。&lt;/p&gt;
+
+&lt;h3 id=&#34;テーマのカスタマイズ-自作&#34;&gt;テーマのカスタマイズ（自作）&lt;/h3&gt;
+
+&lt;p&gt;テーマを&lt;a href=&#34;https://github.com/weizlogy/hugo-theme-html5-amp-minimize&#34;&gt;自作&lt;/a&gt;しました。&lt;/p&gt;
+
+&lt;p&gt;最小構成でHTML5とAMPに対応し、見た目も中身もシンプルになるように配慮しています。&lt;/p&gt;
+
+&lt;h3 id=&#34;ページロード&#34;&gt;ページロード&lt;/h3&gt;
+
+&lt;p&gt;hugoはテーマとマークダウンから静的コンテンツを生成するため、キャッシュが効きやすくページロードに有利です。&lt;/p&gt;
+
+&lt;h2 id=&#34;ホスティングサービスを選択する&#34;&gt;ホスティングサービスを選択する&lt;/h2&gt;
+
+&lt;p&gt;GitHub Pagesは静的コンテンツをgit pushするだけで公開できるGitHubのサービスです。&lt;/p&gt;
+
+&lt;p&gt;1GBのストレージで100GB/Monthの帯域、1時間に10回ビルドといった制限がありますが、広告なし無料です。
+画像などはdropboxに入れておけば十分活用できます。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>[site management] bing Web マスターのSEOレポート対策</title>

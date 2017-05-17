@@ -7,8 +7,97 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Fri, 05 May 2017 23:23:44 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 18 May 2017 07:12:00 +0900</lastBuildDate>
     <atom:link href="http://www.weizlogy.gq/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/staminagauge/</link>
+      <pubDate>Thu, 18 May 2017 07:12:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/staminagauge/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/staminigauge-v1.0.1/staminigauge.ipf&#34;&gt;[v1.0.1] staminigauge.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/rbcn9uizoiwpw2h/staminagauge.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/rbcn9uizoiwpw2h/staminagauge.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
+
+&lt;h4 id=&#34;ゲージ位置調整&#34;&gt;ゲージ位置調整&lt;/h4&gt;
+
+&lt;p&gt;スタミナゲージと名前が被らないよう調整しました。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;h4 id=&#34;新規作成&#34;&gt;新規作成&lt;/h4&gt;
+
+&lt;p&gt;アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。&lt;/p&gt;
+
+&lt;p&gt;若干キャラ名と被りますが、気にしないように。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[site management] bloggerからhugo&#43;github pagesに移行した理由</title>
+      <link>http://www.weizlogy.gq/site/blogger-to-hugo/</link>
+      <pubDate>Thu, 18 May 2017 07:09:25 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/site/blogger-to-hugo/</guid>
+      <description>
+
+&lt;h2 id=&#34;bloggerでサイト運営して困ったこと&#34;&gt;bloggerでサイト運営して困ったこと&lt;/h2&gt;
+
+&lt;h3 id=&#34;googleサービスの割にamp対応できない&#34;&gt;Googleサービスの割にAMP対応できない&lt;/h3&gt;
+
+&lt;p&gt;新テンプレートはもちろん無理で、クラシックテンプレートも完全には対応できません。&lt;/p&gt;
+
+&lt;h3 id=&#34;テンプレートが複雑でカスタマイズに時間がかかる&#34;&gt;テンプレートが複雑でカスタマイズに時間がかかる&lt;/h3&gt;
+
+&lt;p&gt;一番シンプルなテンプレートでも1000行以上はあり、コード修正はブラウザ上のテキストエリアで行うという苦行。&lt;/p&gt;
+
+&lt;p&gt;HTML5のレイアウト対応（section, articleなど）も一苦労です。&lt;/p&gt;
+
+&lt;h3 id=&#34;ページロードに時間がかかる&#34;&gt;ページロードに時間がかかる&lt;/h3&gt;
+
+&lt;p&gt;AMPに対応できない一因でもありますが、リッチなUIを実現するためJavascriptが多様されます。&lt;/p&gt;
+
+&lt;h2 id=&#34;bloggerで困ったことをhugoで解決する&#34;&gt;bloggerで困ったことをhugoで解決する&lt;/h2&gt;
+
+&lt;h3 id=&#34;amp対応&#34;&gt;AMP対応&lt;/h3&gt;
+
+&lt;p&gt;hugoにはAMP対応の公開テーマがあるので簡単です。&lt;/p&gt;
+
+&lt;h3 id=&#34;テーマのカスタマイズ-自作&#34;&gt;テーマのカスタマイズ（自作）&lt;/h3&gt;
+
+&lt;p&gt;テーマを&lt;a href=&#34;https://github.com/weizlogy/hugo-theme-html5-amp-minimize&#34;&gt;自作&lt;/a&gt;しました。&lt;/p&gt;
+
+&lt;p&gt;最小構成でHTML5とAMPに対応し、見た目も中身もシンプルになるように配慮しています。&lt;/p&gt;
+
+&lt;h3 id=&#34;ページロード&#34;&gt;ページロード&lt;/h3&gt;
+
+&lt;p&gt;hugoはテーマとマークダウンから静的コンテンツを生成するため、キャッシュが効きやすくページロードに有利です。&lt;/p&gt;
+
+&lt;h2 id=&#34;ホスティングサービスを選択する&#34;&gt;ホスティングサービスを選択する&lt;/h2&gt;
+
+&lt;p&gt;GitHub Pagesは静的コンテンツをgit pushするだけで公開できるGitHubのサービスです。&lt;/p&gt;
+
+&lt;p&gt;1GBのストレージで100GB/Monthの帯域、1時間に10回ビルドといった制限がありますが、広告なし無料です。
+画像などはdropboxに入れておけば十分活用できます。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</title>
@@ -817,40 +906,6 @@
     </item>
     
     <item>
-      <title>[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/staminagauge/</link>
-      <pubDate>Fri, 28 Apr 2017 05:34:58 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/staminagauge/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/jpd1fzm70dn0mhb/staminigauge.ipf?dl=0&#34;&gt;staminigauge.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://1.bp.blogspot.com/-PMCi6_WkEYc/WLBRzWOTrgI/AAAAAAAACoI/SR-iP_MqSoYud4xzv1w_zseS7TUpIUSywCLcB/s1600/staminigauge.PNG&#34;&gt;&lt;amp-img src=&#34;https://1.bp.blogspot.com/-PMCi6_WkEYc/WLBRzWOTrgI/AAAAAAAACoI/SR-iP_MqSoYud4xzv1w_zseS7TUpIUSywCLcB/s320/staminigauge.PNG&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。&lt;/p&gt;
-
-&lt;p&gt;若干キャラ名と被りますが、気にしないように。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>[tree of savior addon] チャット入力欄表示中に所持中のメガホン数を表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/megaphonecount/</link>
       <pubDate>Fri, 28 Apr 2017 05:34:13 +0900</pubDate>
@@ -879,44 +934,6 @@
 &lt;p&gt;新規作成。&lt;/p&gt;
 
 &lt;p&gt;アドオンがロードされると、チャット入力欄表示中に所持中のメガホン数が表示されます。 それだけです。。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] マーケットデフォルト出品日数変更アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/marketselltimechanger/</link>
-      <pubDate>Fri, 28 Apr 2017 05:34:04 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/marketselltimechanger/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/g54jw30u6tx9117/marketselltimechanger.ipf?dl=0&#34;&gt;marketselltimechanger.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;p&gt;Nexon\TreeofSaviorJP\addons\marketselltimechanger\settings.txt を作成します。&lt;/p&gt;
-
-&lt;p&gt;ファイルを開いて一行目に、（デフォルト1日が良ければ）1と入力します。&lt;/p&gt;
-
-&lt;p&gt;設定は、[デフォルト出品日数]のみ。&lt;/p&gt;
-
-&lt;p&gt;現状、1,3,5,7 が使用でき、それ以外が入力されていた場合は、システムのデフォルト値が採用されます。&lt;/p&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、設定ファイルに記載された値でマーケットのデフォルト出品日数を変更します。&lt;/p&gt;
 </description>
     </item>
     

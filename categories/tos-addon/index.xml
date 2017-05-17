@@ -10,6 +10,46 @@
     <atom:link href="http://www.weizlogy.gq/categories/tos-addon/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/staminagauge/</link>
+      <pubDate>Thu, 18 May 2017 07:12:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/staminagauge/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/staminigauge-v1.0.1/staminigauge.ipf&#34;&gt;[v1.0.1] staminigauge.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/rbcn9uizoiwpw2h/staminagauge.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/rbcn9uizoiwpw2h/staminagauge.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
+
+&lt;h4 id=&#34;ゲージ位置調整&#34;&gt;ゲージ位置調整&lt;/h4&gt;
+
+&lt;p&gt;スタミナゲージと名前が被らないよう調整しました。&lt;/p&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;h4 id=&#34;新規作成&#34;&gt;新規作成&lt;/h4&gt;
+
+&lt;p&gt;アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。&lt;/p&gt;
+
+&lt;p&gt;若干キャラ名と被りますが、気にしないように。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/pickiteminfo/</link>
       <pubDate>Fri, 05 May 2017 23:23:44 +0900</pubDate>
@@ -671,40 +711,6 @@
 
 &lt;p&gt;今のところチームの区別なくキャラ名のみ表示しますので、複数チームを所持している場合に使い勝手に難があるかもしれません。
 使いにくいようでしたら改善します。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/staminagauge/</link>
-      <pubDate>Fri, 28 Apr 2017 05:34:58 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/staminagauge/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/jpd1fzm70dn0mhb/staminigauge.ipf?dl=0&#34;&gt;staminigauge.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://1.bp.blogspot.com/-PMCi6_WkEYc/WLBRzWOTrgI/AAAAAAAACoI/SR-iP_MqSoYud4xzv1w_zseS7TUpIUSywCLcB/s1600/staminigauge.PNG&#34;&gt;&lt;amp-img src=&#34;https://1.bp.blogspot.com/-PMCi6_WkEYc/WLBRzWOTrgI/AAAAAAAACoI/SR-iP_MqSoYud4xzv1w_zseS7TUpIUSywCLcB/s320/staminigauge.PNG&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。&lt;/p&gt;
-
-&lt;p&gt;若干キャラ名と被りますが、気にしないように。&lt;/p&gt;
 </description>
     </item>
     

@@ -197,6 +197,35 @@
 </style>
 
 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org"
+  "@type": "BlogPosting",
+  "headline": "Weizlogy",
+  "url": "http://www.weizlogy.gq/",
+  "datePublished": "0001-01-01 00:00:00 &#43;0000 UTC",
+  "author": {
+    "@type": "Person",
+    "name": "weizlogy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Weiβlogy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.weizlogy.gq//favicon.ico"
+    }
+  },
+  "dateModified": "2017-03-26 15:42:52.5177074 &#43;0900 JST",
+  "mainEntityOfPage": "1",
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://www.weizlogy.gq//dummy.png",
+    "width": "100",
+    "height": "100"
+  }
+}
+</script>
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -224,7 +253,7 @@
   <div class="category">
   
   
-    <div class="site-management"><a href="/categories/site-management">site-management</a>(4)</div>
+    <div class="site-management"><a href="/categories/site-management">site-management</a>(5)</div>
   
     <div class="system"><a href="/categories/system">system</a>(2)</div>
   
@@ -244,6 +273,26 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/staminagauge/">[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</a>
+    
+    &ndash;&nbsp;v1.0.1
+    
+    
+      <span class="blog-date">@2017/05/18 07:12:00</span>
+    </div>
+  </div>
+  
+  <div class="lastmod-title">
+    <div class="[site-management]">
+      <a href="http://www.weizlogy.gq/site/blogger-to-hugo/">[site management] bloggerからhugo&#43;github pagesに移行した理由</a>
+    
+    
+      <span class="blog-date">@2017/05/18 07:09:25</span>
+    </div>
+  </div>
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
@@ -278,28 +327,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/distance/">[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</a>
-    
-    &ndash;&nbsp;v1.1.1
-    
-    
-      <span class="blog-date">@2017/05/03 17:18:29</span>
-    </div>
-  </div>
-  
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/hidename/">[tree of savior addon] 画面にある自キャラ名を消すアドオン</a>
-    
-    &ndash;&nbsp;v1.0.1
-    
-    
-      <span class="blog-date">@2017/05/03 17:18:23</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -308,6 +335,17 @@
   <strong>Contents index.</strong>
   <section>
   
+  
+  <div class="[system-dev]">
+    <a href="http://www.weizlogy.gq/system/dev/cipher-suites/">[system development] TSLで定義される全CipherSuiteの一覧</a>
+    
+    
+    
+  </div>
+  <pre class="summary [system-dev]">Cipher Suiteの説明はさて置き、一覧を見るために以下のコマンドを使用する例が多々見受けられます。
+$ openssl ciphers -v  これはopensslが対応するCipherSuiteの一覧であり、実際に存在するCipherSuiteの一覧とは異なります。
+実際に存在するCipherSuiteの一覧は、RFC5426によるとIANA管理とのことで、下記URLがマスターです。
+http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4</pre>
   
   <div class="[tos-addon-dev]">
     <a href="http://www.weizlogy.gq/tos/addon-dev/ies-format/">[tree of savior addon for developpers] iesファイルフォーマット解説</a>
@@ -470,19 +508,6 @@ function XXXADDONXXX_ON_INIT(addon, frame) -- 任意の初期化処理 end  4. �
 http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;APPID={Your API Key}  JSON形式ではJavaで扱いにくいので、&rdquo;mode=xml&rdquo;パラメータでXML形式にします。
 http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;mode=xml&amp;APPID={Your API Key}  気象情報は以下のように返却されます。（例は{city name}=Tokyo）
 &lt;?xml version=&quot;1.0&quot;?&gt; &lt;current&gt; &lt;city id=&quot;1850147&quot; name=&quot;Tokyo&quot;&gt; &lt;coord lat=&quot;35.69&quot; lon=&quot;139.69&quot;/&gt; &lt;country&gt;JP&lt;/country&gt; &lt;sun set=&quot;2016-08-15T09:30:23&quot; rise=&quot;2016-08-14T20:00:21&quot;/&gt; &lt;/city&gt; &lt;temperature unit=&quot;kelvin&quot; max=&quot;304.82&quot; min=&quot;298.71&quot; value=&quot;301.68&quot;/&gt; &lt;humidity unit=&quot;%&quot; value=&quot;85&quot;/&gt; &lt;pressure unit=&quot;hPa&quot; value=&quot;1001&quot;/&gt; &lt;wind&gt; &lt;speed name=&quot;Gentle Breeze&quot; value=&quot;3.41&quot;/&gt; &lt;gusts/&gt; &lt;direction name=&quot;South&quot; value=&quot;179.504&quot; code=&quot;S&quot;/&gt; &lt;/wind&gt; &lt;clouds name=&quot;clear sky&quot; value=&quot;8&quot;/&gt; &lt;visibility/&gt; &lt;precipitation unit=&quot;3h&quot; value=&quot;0.245&quot; mode=&quot;rain&quot;/&gt; &lt;weather value=&quot;light rain&quot; icon=&quot;10d&quot; number=&quot;500&quot;/&gt; &lt;lastupdate value=&quot;2016-08-15T07:41:15&quot;/&gt; &lt;/current&gt;  JavaでOpenWeatherMapのAPIを呼び出す RESTクライアントは色々ありますが、お手軽なApache Commonsのhttpclientとfluent-hcにします。</pre>
-  
-  <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/">[system development] Codeanywhereでbazelを使う</a>
-    
-    
-    
-  </div>
-  <pre class="summary [system-dev]">CodeanywhereはクラウドIDEで、sudoが許可されたターミナルを使うことができます。 Google+アカウント連携ですぐに使えます。
-bazelは、mavenやGradleのようなビルドツールで、様々な言語のビルドが可能です。
-Codeanyhwereにbazelをインストール bazelはjdk1.8以降（jdk1.7はサポートされているが非推奨）が必須ですが、Codeanywhereはjdk1.7の環境です。 今回はjdk1.7のままでインストールします。
-cabox@box-codeanywhere:~/workspace$ java -version java version &quot;1.7.0_95&quot; OpenJDK Runtime Environment (IcedTea 2.6.4) (7u95-2.6.4-0ubuntu0.14.04.1) OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode)  Installig Bazelを参考に、以下のコマンドを打ちます。
-$ echo &quot;deb [arch=amd64] http://storage.googleapis.com/bazel-apt testing jdk1.7&quot; | sudo tee /etc/apt/sources.list.d/bazel.list $ curl https://storage.googleapis.com/bazel-apt/doc/apt-key.pub.gpg | sudo apt-key add - sudo apt-get update &amp;&amp; sudo apt-get install bazel  bazelでjavaをビルド 最低限の必要なファイルを作成します。
-cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cabox@box-codeanywhere:~/workspace$ touch hello/src/main/java/gq/weizlogy/Main.java cabox@box-codeanywhere:~/workspace$ touch hello/WORKSPACE cabox@box-codeanywhere:~/workspace$ touch hello/BUILD  hello/src/main/java/gq/weizlogy/Main.</pre>
   
   
     

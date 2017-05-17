@@ -197,6 +197,35 @@
 </style>
 
 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org"
+  "@type": "BlogPosting",
+  "headline": "Weizlogy",
+  "url": "http://www.weizlogy.gq/",
+  "datePublished": "0001-01-01 00:00:00 &#43;0000 UTC",
+  "author": {
+    "@type": "Person",
+    "name": "weizlogy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Weiβlogy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.weizlogy.gq//favicon.ico"
+    }
+  },
+  "dateModified": "2017-03-26 15:42:48.9878983 &#43;0900 JST",
+  "mainEntityOfPage": "1",
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://www.weizlogy.gq//dummy.png",
+    "width": "100",
+    "height": "100"
+  }
+}
+</script>
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -224,7 +253,7 @@
   <div class="category">
   
   
-    <div class="site-management"><a href="/categories/site-management">site-management</a>(4)</div>
+    <div class="site-management"><a href="/categories/site-management">site-management</a>(5)</div>
   
     <div class="system"><a href="/categories/system">system</a>(2)</div>
   
@@ -244,6 +273,26 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/staminagauge/">[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</a>
+    
+    &ndash;&nbsp;v1.0.1
+    
+    
+      <span class="blog-date">@2017/05/18 07:12:00</span>
+    </div>
+  </div>
+  
+  <div class="lastmod-title">
+    <div class="[site-management]">
+      <a href="http://www.weizlogy.gq/site/blogger-to-hugo/">[site management] bloggerからhugo&#43;github pagesに移行した理由</a>
+    
+    
+      <span class="blog-date">@2017/05/18 07:09:25</span>
+    </div>
+  </div>
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
@@ -278,28 +327,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/distance/">[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</a>
-    
-    &ndash;&nbsp;v1.1.1
-    
-    
-      <span class="blog-date">@2017/05/03 17:18:29</span>
-    </div>
-  </div>
-  
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/hidename/">[tree of savior addon] 画面にある自キャラ名を消すアドオン</a>
-    
-    &ndash;&nbsp;v1.0.1
-    
-    
-      <span class="blog-date">@2017/05/03 17:18:23</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -308,6 +335,19 @@
   <strong>Contents index.</strong>
   <section>
   
+  
+  <div class="[system-dev]">
+    <a href="http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/">[system development] Codeanywhereでbazelを使う</a>
+    
+    
+    
+  </div>
+  <pre class="summary [system-dev]">CodeanywhereはクラウドIDEで、sudoが許可されたターミナルを使うことができます。 Google+アカウント連携ですぐに使えます。
+bazelは、mavenやGradleのようなビルドツールで、様々な言語のビルドが可能です。
+Codeanyhwereにbazelをインストール bazelはjdk1.8以降（jdk1.7はサポートされているが非推奨）が必須ですが、Codeanywhereはjdk1.7の環境です。 今回はjdk1.7のままでインストールします。
+cabox@box-codeanywhere:~/workspace$ java -version java version &quot;1.7.0_95&quot; OpenJDK Runtime Environment (IcedTea 2.6.4) (7u95-2.6.4-0ubuntu0.14.04.1) OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode)  Installig Bazelを参考に、以下のコマンドを打ちます。
+$ echo &quot;deb [arch=amd64] http://storage.googleapis.com/bazel-apt testing jdk1.7&quot; | sudo tee /etc/apt/sources.list.d/bazel.list $ curl https://storage.googleapis.com/bazel-apt/doc/apt-key.pub.gpg | sudo apt-key add - sudo apt-get update &amp;&amp; sudo apt-get install bazel  bazelでjavaをビルド 最低限の必要なファイルを作成します。
+cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cabox@box-codeanywhere:~/workspace$ touch hello/src/main/java/gq/weizlogy/Main.java cabox@box-codeanywhere:~/workspace$ touch hello/WORKSPACE cabox@box-codeanywhere:~/workspace$ touch hello/BUILD  hello/src/main/java/gq/weizlogy/Main.</pre>
   
   <div class="[system-dev]">
     <a href="http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/">[system development] Monodevelopで埋め込みリソースを使う</a>
@@ -427,16 +467,6 @@ JSPでは&hellip;
   </div>
   <pre class="summary [system-dev]">本来は blur 時に強制選択したかったのですが、候補確定時に AutoComplete の対象にフォーカスが当たる挙動を回避できなかったため、エンターキーで代用です。
 var obj = $(&#39;#autocomplete&#39;); obj.on(&#39;keydown&#39;, function(e) { // エンターキー以外を無視する if (e.which !== 13) { return; } // search メソッドの結果で候補が存在する場合、 // autocompleteopen イベントが発行される // 候補が 0 件の場合は動作しない obj.on(&#39;autocompleteopen&#39;, function() { // 下矢印キーダウンイベントを作成し、候補の先頭を選択状態にする var keyDownEvent = $.Event(&#39;keydown&#39;); keyDownEvent.keyCode = $.ui.keyCode.DOWN; obj.trigger(keyDownEvent); // エンターキーダウンを作成し、選択状態の候補で確定する // →候補確定時のイベントが発火する keyDownEvent.keyCode = $.ui.keyCode.ENTER; obj.trigger(keyDownEvent); // 通常動作時は不要なイベントなので終了時に破棄しておく obj.off(&#39;autocompleteopen&#39;); }); // 現在の入力値で検索する obj.autocomplete(&#39;search&#39;); });  </pre>
-  
-  <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/">[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</a>
-    
-    
-    
-  </div>
-  <pre class="summary [system-dev]">Windows APIのIcmp6SendEcho2()をWindows XPで呼び出すときは以下の点に注意が必要です。
-Syntax from msdn.
-DWORD Icmp6SendEcho2( __in HANDLE IcmpHandle, __in_opt HANDLE Event, __in_opt PIO_APC_ROUTINE ApcRoutine, __in_opt PVOID ApcContext, __in struct sockaddr_in6 *SourceAddress, __in struct sockaddr_in6 *DestinationAddress, __in LPVOID RequestData, __in WORD RequestSize, __in_opt PIP_OPTION_INFORMATION RequestOptions, __out LPVOID ReplyBuffer, __in DWORD ReplySize, __in DWORD Timeout );   第9引数 PIP_OPTION_INFORMATION は必須です。Vista 以降のOSで動かす場合は任意です。（NULLでもよい） 第10引数 ReplyBuffer は80byte以上の領域がないとWin32エラーコード122（システム コールに渡されるデータ領域が小さすぎます）が発生します。  IcmpSendEcho()とは設定値が微妙に異なりますね。</pre>
   
   
     
