@@ -196,35 +196,6 @@
 </style>
 
 
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org"
-  "@type": "BlogPosting",
-  "headline": "Tos Addon",
-  "url": "http://www.weizlogy.gq/categories/tos-addon/",
-  "datePublished": "0001-01-01 00:00:00 &#43;0000 UTC",
-  "author": {
-    "@type": "Person",
-    "name": "weizlogy"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Weiβlogy",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "http://www.weizlogy.gq//favicon.ico"
-    }
-  },
-  "dateModified": "2017-05-18 07:12:00.2978796 &#43;0900 JST",
-  "mainEntityOfPage": "1",
-  "image": {
-    "@type": "ImageObject",
-    "url": "http://www.weizlogy.gq//dummy.png",
-    "width": "100",
-    "height": "100"
-  }
-}
-</script>
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -273,6 +244,17 @@
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/savequest/">[tree of savior addon] ワープ用クエスト誤完了防止アドオン</a>
+    
+    &ndash;&nbsp;v1.1.0
+    
+    
+      <span class="blog-date">@2017/05/19 06:53:52</span>
+    </div>
+  </div>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
       <a href="http://www.weizlogy.gq/tos/addon/staminagauge/">[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</a>
     
     &ndash;&nbsp;v1.0.1
@@ -315,17 +297,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/distance/">[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</a>
-    
-    &ndash;&nbsp;v1.1.1
-    
-    
-      <span class="blog-date">@2017/05/03 17:18:29</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -333,6 +304,28 @@
 <div class="main">
   <section>
   
+  
+  <div><a href="http://www.weizlogy.gq/tos/addon/savequest/">[tree of savior addon] ワープ用クエスト誤完了防止アドオン</a></div>
+  <pre class="summary">download. [v1.1.0] savequest.ipf
+install. README.md
+introduction. 
+settings. Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。
+explanation. savequestフォルダーにはquests_[cid].txtが自動的に生成され、 キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。
+descriptions. v1.1.0 クエスト欄操作機能追加 F5キーで表示するクエスト欄でも本アドオンの機能（右クリックメニュー）が使えるようになります。
+ダイレクトクエストワープ機能追加 F5キーで表示するクエスト欄から直接クエストワープできるようになります。
+ワープ可能なクエストの左上にワープアイコンが表示されるので、クリックしてください。
+v1.0.2 バグ対応 保存したクエスト情報がチーム毎に共有される問題を修正しました。
+issue #3
+本修正により、情報保存形式が変更され、クエスト保存状態が初期化されます。
+お手数ですが、再チェックまたは、旧仕様情報（quests.txt）の内容をquests_[cid].txtにコピペしてください。
+v1.0.1 バグ対応 再ログイン時に前回の状態が保存されない問題を修正しました。
+issue #1
+v1.0.0 新規作成 アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、 ワープ直後の誤完了を防止できます。
+usage. UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、 メニュー（save, release, cancel）が開きます。
+saveを選択すると該当クエストのNPCは非表示となります。 また、save済みのクエストのワープアイコン直下に[saved.]の文字を表示します。
+元に戻すにはreleaseを選択します。
+cautions. 念のため、アドオンは補助的な位置づけとし、 ワープ直後はNPCを選択しないよう留意してください。
+一時消去したNPCは、release後、エリアチェンジで表示できます。</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/staminagauge/">[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</a></div>
   <pre class="summary">download. [v1.0.1] staminigauge.ipf
@@ -405,24 +398,6 @@ reen.Weapon = { Lp = 30, Mp = 5, Hp = 1 }; reen.Armor = { Lp = 35, Mp = 10, Hp =
 [Weapon]、[Armor]は装備の耐久度の色分け用閾値で、Low, Middle, Highの3段階を、武器用と防具用で用意しています。
 [EndurColor]は装備の耐久度閾値に対応する色をRGBで指定します。
 explanation of initial parameters. 武器</pre>
-  
-  <div><a href="http://www.weizlogy.gq/tos/addon/savequest/">[tree of savior addon] ワープ用クエスト誤完了防止アドオン</a></div>
-  <pre class="summary">download. [v1.0.2] savequest.ipf
-install. README.md
-introduction. settings. Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。
-explanation. savequestフォルダーにはquests_[cid].txtが自動的に生成され、 キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。
-descriptions. v1.0.2 バグ対応 保存したクエスト情報がチーム毎に共有される問題を修正しました。
-issue #3
-本修正により、情報保存形式が変更され、クエスト保存状態が初期化されます。
-お手数ですが、再チェックまたは、旧仕様情報（quests.txt）の内容をquests_[cid].txtにコピペしてください。
-v1.0.1 バグ対応 再ログイン時に前回の状態が保存されない問題を修正しました。
-issue #1
-v1.0.0 新規作成 アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、 ワープ直後の誤完了を防止できます。
-usage. UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、 メニュー（save, release, cancel）が開きます。
-saveを選択すると該当クエストのNPCは非表示となります。 また、save済みのクエストのワープアイコン直下に[saved.]の文字を表示します。
-元に戻すにはreleaseを選択します。
-cautions. 念のため、アドオンは補助的な位置づけとし、 ワープ直後はNPCを選択しないよう留意してください。
-一時消去したNPCは、release後、エリアチェンジで表示できます。</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/skillitemcounter/">[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</a></div>
   <pre class="summary">download. [v1.0.0] skillitemcounter.ipf
