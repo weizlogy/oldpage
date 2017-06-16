@@ -7,8 +7,207 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Fri, 19 May 2017 06:53:52 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 16 Jun 2017 23:22:27 +0900</lastBuildDate>
     <atom:link href="http://www.weizlogy.gq/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>[tree of savior addon] クイックスロットスキル/アイテム用マクロアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/slotmac/</link>
+      <pubDate>Fri, 16 Jun 2017 23:22:27 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/slotmac/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/slotmac-v1.0.0/slotmac.ipf&#34;&gt;[v1.0.0] slotmac.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;p&gt;Nexon\TreeofSaviorJP\addons\slotmac フォルダーを作成します。&lt;/p&gt;
+
+&lt;p&gt;slotmac フォルダー配下に自キャラの[cid]のフォルダーを作成します。&lt;/p&gt;
+
+&lt;p&gt;操作中のキャラクターのcidが不明な場合は、F3キーで[スキルと特性]ダイアログを開き、右下の[slmc]Reloadボタンを右クリックしてください。&lt;/p&gt;
+
+&lt;p&gt;slotmac フォルダー配下に操作キャラの[cid]のファイルが作成されますので、コピー &amp;gt; ファイル削除 &amp;gt; 新しいフォルダー作成 &amp;gt; フォルダー名変更 &amp;gt; ペースト　としてください。&lt;/p&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;h4 id=&#34;新規作成&#34;&gt;新規作成&lt;/h4&gt;
+
+&lt;p&gt;アドオンがロードされると、クイックスロットにセットしたスキルやアイテムを実行時に指定したマクロを実行できるようになります。&lt;/p&gt;
+
+&lt;p&gt;また、[スキルと特性]ダイアログの右下の[slmc]Reloadボタンが追加されます。左クリックでマクロを再読み込みします。&lt;/p&gt;
+
+&lt;h2 id=&#34;usage&#34;&gt;usage.&lt;/h2&gt;
+
+&lt;h3 id=&#34;マクロファイル作成&#34;&gt;マクロファイル作成&lt;/h3&gt;
+
+&lt;p&gt;キーボード、マウスモードの場合、クイックスロットは左下が1、右上が40となります。(ジョイスティックは&amp;hellip;？)&lt;/p&gt;
+
+&lt;p&gt;cidフォルダー配下に、必要に応じてマクロファイル(slot1.txt ～ slot40.txt)を&lt;strong&gt;UTF8-BOM無&lt;/strong&gt;で作成します。
+マクロファイルがない場合は、今まで通りスロットにセットされたものを実行します。&lt;/p&gt;
+
+&lt;p&gt;UTF8-BOM無がよく分からない人は、下記テンプレートをダウンロードして使ってください。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/slotmac-v1.0.0/slotN.txt&#34;&gt;slotN.txt&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;slot1.txtなら、[A]キーに割り当てのクイックスロットという感じです。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;マクロは一行に一コマンドとなります。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;マクロコマンド一覧&#34;&gt;マクロコマンド一覧&lt;/h3&gt;
+
+&lt;h4 id=&#34;クイックスロット呼び出し&#34;&gt;クイックスロット呼び出し&lt;/h4&gt;
+
+&lt;p&gt;自身または他のクイックスロットを呼び出します。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;skill&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;-- 操作したクイックスロット自身を実行する。&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;skill&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- 10番目のクイックスロット(つまり[;]キー割り当てのもの)を実行する。&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&#34;チャットコマンド&#34;&gt;チャットコマンド&lt;/h4&gt;
+
+&lt;p&gt;[/]から始まるチャットコマンドはすべて使用可能です。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;s&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;test&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- 一般チャットで[test]と発言する。&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;test&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- PTチャットで[test]と発言する。&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;indun&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;-- インスタンスダンジョンダイアログを呼び出す。&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&#34;エコー&#34;&gt;エコー&lt;/h4&gt;
+
+&lt;p&gt;systemチャットで自分にしか見えない発言ができます。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;system&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;test&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- systemチャット[test]と発言する。&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&#34;エモティコン&#34;&gt;エモティコン&lt;/h4&gt;
+
+&lt;p&gt;チャットコマンドやエコーでエモティコンを表示できます。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;s&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;emoticon_0009&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- 一般チャット[脱力エモ]と発言する。&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;エモティコンはクラス名で指定します。
+data\jp.ipf\xml\chat_emoticons.xml に載っていますが、以下に抜粋しておきます。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;1&amp;quot;&lt;/span&gt;  &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0001&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;幸せ&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;2&amp;quot;&lt;/span&gt;  &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0002&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;ケッピー好き&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;3&amp;quot;&lt;/span&gt;  &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0003&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;ケッピー泣く&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;4&amp;quot;&lt;/span&gt;  &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0004&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;コラッ&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;5&amp;quot;&lt;/span&gt;  &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0005&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;怒り&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;6&amp;quot;&lt;/span&gt;  &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0006&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;満足&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;7&amp;quot;&lt;/span&gt;  &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0007&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;コンパ&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;8&amp;quot;&lt;/span&gt;  &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0008&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;笑み&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;9&amp;quot;&lt;/span&gt;  &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0009&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;脱力&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;10&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0010&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;えっ！&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;11&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0011&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;えっ!!!&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;12&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0012&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;おえっ&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;13&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0013&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;イケイケ&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;14&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0014&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;怒り&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;15&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0015&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;爆破&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;16&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0016&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;悲しみ&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;17&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0017&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;左&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;18&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0018&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;右&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;19&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0019&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;狙い&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;20&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0020&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;王子&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;21&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0021&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;疲れた&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;22&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0022&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;ダラッ&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;23&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0023&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;キャーッ&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;24&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0024&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;hi&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;25&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0025&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;bye&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;26&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0026&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;ok&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;27&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0027&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;gg&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;28&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0028&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;暑い&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;29&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0029&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;寒い&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;30&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0030&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;頑張れ1&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;31&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0031&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;頑張れ2&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;32&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0032&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;お腹すいた1&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;33&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0033&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;お腹いっぱい&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;34&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0034&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;えっへん&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;35&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0035&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;感謝&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;36&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0036&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;はて？&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;37&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0037&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;おやすみ&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;38&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0038&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;オッケー&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;39&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0039&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;やだ1&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;40&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0040&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;やだ2&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;41&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0041&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;愛してる&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;42&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0042&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;眠い&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;43&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0043&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;お腹すいた2&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;44&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0044&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;痛い&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;45&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0045&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;ごめん&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;46&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0046&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;グッドラック&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&#34;ポーズ&#34;&gt;ポーズ&lt;/h4&gt;
+
+&lt;p&gt;任意のポーズができます。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pose&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;LOVE&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- [ラブ]のポーズをする。&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;ポーズはクラス名を指定します。
+data\ies.ipf\pose.ies に載っていますが、以下に抜粋しておきます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ClassName
+--
+LOVE
+WIN
+BEST
+FOLLOW
+HELP
+HELLO
+NO
+SORRY
+THANKS
+YES
+BOW1
+BOW2
+CLENCHFIST
+DOUBLEGUNS
+HADOUKEN
+SURPRISE
+CRYING
+BIRDPOSE
+OUTCAST
+QUESTION
+CRAP
+JUMPING
+CUTE
+HULAHULA
+IDK
+NONO
+OUCH
+POPCORN
+JIANGSHI
+CHEERS
+OTL
+POLLEN
+THANKS2
+DANCE
+KICK
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;タイマー&#34;&gt;タイマー&lt;/h4&gt;
+
+&lt;p&gt;クイックスロット実行後一定時間経過で任意のマクロコマンドを呼び出します。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;timer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pose&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;LOVE&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- クイックスロット実行後3秒経過で[ラブ]のポーズをする。&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;タイマーは複数張れますが、全て[クイックスロット実行後一定時間経過]換算で、waitではありません。[#timer# 3 xxx]を二行書いても、xxxが3秒後同時に行われることになります。&lt;/p&gt;
+
+&lt;h2 id=&#34;cautions&#34;&gt;cautions.&lt;/h2&gt;
+
+&lt;p&gt;マクロファイルがUTF8-BOM付の場合、BOMが邪魔で一行目のマクロが認識されません。UTF8以外(MS932など)は、全マクロが認識できません。&lt;/p&gt;
+
+&lt;p&gt;連打するようなクイックスロットにはマクロつけても。。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] ワープ用クエスト誤完了防止アドオン</title>
@@ -916,38 +1115,6 @@
 
 &lt;p&gt;今のところチームの区別なくキャラ名のみ表示しますので、複数チームを所持している場合に使い勝手に難があるかもしれません。
 使いにくいようでしたら改善します。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] チャット入力欄表示中に所持中のメガホン数を表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/megaphonecount/</link>
-      <pubDate>Fri, 28 Apr 2017 05:34:13 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/megaphonecount/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/bnq1vmaz1knd8j5/megaphonecount.ipf?dl=0&#34;&gt;megaphonecount.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://1.bp.blogspot.com/-dzAFJ2NNsxY/WKBbR0WULvI/AAAAAAAACj0/XUQaXpu_sbQvbRWRPPAE2N2h6JnvNaAEwCLcB/s1600/megaphonecount.PNG&#34;&gt;&lt;amp-img src=&#34;https://1.bp.blogspot.com/-dzAFJ2NNsxY/WKBbR0WULvI/AAAAAAAACj0/XUQaXpu_sbQvbRWRPPAE2N2h6JnvNaAEwCLcB/s320/megaphonecount.PNG&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、チャット入力欄表示中に所持中のメガホン数が表示されます。 それだけです。。。&lt;/p&gt;
 </description>
     </item>
     

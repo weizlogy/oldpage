@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html ⚡>
+<head>
+<meta charset="utf-8">
+<link rel="canonical" href="http://www.weizlogy.gq/tos/addon/slotmac/">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<title>
+
+  [tree of savior addon] クイックスロットスキル/アイテム用マクロアドオン &ndash; Weizlogy
+
+</title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+
+
+<style amp-custom>
+   
+  body {
+    font-family: "Noto Sans Japanese", "monospace";
+    font-size: 85%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  h1 > a {
+    text-decoration: none;
+    color: inherit;
+  }
+  header {
+    clear: left;
+  }
+  header > h1 {
+    font-family: 'Lobster', cursive;
+    display: inline;
+    color: #666;
+  }
+  header > h2 {
+    font-family: 'Lobster', cursive;
+    display: inline;
+    margin-left: 10px;
+    color: #999;
+  }
+  footer {
+    clear: left;
+    padding-top: 10px;
+  }
+  footer > p {
+    display: inline;
+    padding-left: 10px;
+  }
+  div.main {
+     
+    padding-left: 10px;
+  }
+   
+  article > div > h2 {
+    padding: 0px 0px 5px 5px;
+    border-left: 7px solid #999;
+    border-bottom: 1px solid #999;
+  }
+  article > div > h3 {
+    padding: 0px 0px 5px 5px;
+    border-left: 7px solid #CCC;
+    border-bottom: 1px solid #CCC;
+  }
+   
+  section {
+    overflow: hidden;
+  }
+  section > h1 {
+    padding: 0px 0px 5px 5px;
+    border-left: 7px solid #999;
+    border-bottom: 1px solid #999;
+  }
+  section > .summary {
+    font-size: 85%;
+    color: #999;
+  }
+  aside {
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 85%;
+  }
+  aside > div {
+    margin-bottom: 10px;
+  }
+  .category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .category > div {
+    margin-right: 10px;
+  }
+  .lastmod-title {
+    padding-bottom: 10px;
+  }
+  .blog-date {
+    color: #999;
+    margin-left: 10px;
+  }
+   
+  .pagination {
+    display: inline-block;
+  }
+  .pagination li {
+    display: inline-block;
+    text-decoration: none;
+  }
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 7px 14px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #000000;
+    margin: 0 4px;
+  }
+  .pagination li.active a {
+    background-color: #F5F5F5;
+    border: 1px solid #000000;
+  }
+   
+  pre {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #999;
+    word-wrap: break-word;
+  }
+  .highlight .c { color: #999988; font-style: italic }  
+  .highlight .err { color: #a61717; background-color: #e3d2d2 }  
+  .highlight .k { color: #000000; font-weight: bold }  
+  .highlight .o { color: #000000; font-weight: bold }  
+  .highlight .cm { color: #999988; font-style: italic }  
+  .highlight .cp { color: #999999; font-weight: bold; font-style: italic }  
+  .highlight .c1 { color: #999988; font-style: italic }  
+  .highlight .cs { color: #999999; font-weight: bold; font-style: italic }  
+  .highlight .gd { color: #000000; background-color: #ffdddd }  
+  .highlight .ge { color: #000000; font-style: italic }  
+  .highlight .gr { color: #aa0000 }  
+  .highlight .gh { color: #999999 }  
+  .highlight .gi { color: #000000; background-color: #ddffdd }  
+  .highlight .go { color: #888888 }  
+  .highlight .gp { color: #555555 }  
+  .highlight .gs { font-weight: bold }  
+  .highlight .gu { color: #aaaaaa }  
+  .highlight .gt { color: #aa0000 }  
+  .highlight .kc { color: #000000; font-weight: bold }  
+  .highlight .kd { color: #000000; font-weight: bold }  
+  .highlight .kn { color: #000000; font-weight: bold }  
+  .highlight .kp { color: #000000; font-weight: bold }  
+  .highlight .kr { color: #000000; font-weight: bold }  
+  .highlight .kt { color: #445588; font-weight: bold }  
+  .highlight .m { color: #009999 }  
+  .highlight .s { color: #d01040 }  
+  .highlight .na { color: #008080 }  
+  .highlight .nb { color: #0086B3 }  
+  .highlight .nc { color: #445588; font-weight: bold }  
+  .highlight .no { color: #008080 }  
+  .highlight .nd { color: #3c5d5d; font-weight: bold }  
+  .highlight .ni { color: #800080 }  
+  .highlight .ne { color: #990000; font-weight: bold }  
+  .highlight .nf { color: #990000; font-weight: bold }  
+  .highlight .nl { color: #990000; font-weight: bold }  
+  .highlight .nn { color: #555555 }  
+  .highlight .nt { color: #000080 }  
+  .highlight .nv { color: #008080 }  
+  .highlight .ow { color: #000000; font-weight: bold }  
+  .highlight .w { color: #bbbbbb }  
+  .highlight .mf { color: #009999 }  
+  .highlight .mh { color: #009999 }  
+  .highlight .mi { color: #009999 }  
+  .highlight .mo { color: #009999 }  
+  .highlight .sb { color: #d01040 }  
+  .highlight .sc { color: #d01040 }  
+  .highlight .sd { color: #d01040 }  
+  .highlight .s2 { color: #d01040 }  
+  .highlight .se { color: #d01040 }  
+  .highlight .sh { color: #d01040 }  
+  .highlight .si { color: #d01040 }  
+  .highlight .sx { color: #d01040 }  
+  .highlight .sr { color: #009926 }  
+  .highlight .s1 { color: #d01040 }  
+  .highlight .ss { color: #990073 }  
+  .highlight .bp { color: #999999 }  
+  .highlight .vc { color: #008080 }  
+  .highlight .vg { color: #008080 }  
+  .highlight .vi { color: #008080 }  
+  .highlight .il { color: #009999 }  
+   
+  .tos-addon-x, .\[tos-addon-x\] {
+    display: none;
+  }
+</style>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org"
+  "@type": "BlogPosting",
+  "headline": "[tree of savior addon] クイックスロットスキル/アイテム用マクロアドオン",
+  "url": "http://www.weizlogy.gq/tos/addon/slotmac/",
+  "datePublished": "2017-06-16 21:15:19 &#43;0900 JST",
+  "author": {
+    "@type": "Person",
+    "name": "weizlogy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Weiβlogy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.weizlogy.gq//favicon.ico"
+    }
+  },
+  "dateModified": "2017-06-16 23:22:27.9312246 &#43;0900 JST",
+  "mainEntityOfPage": "1",
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://www.weizlogy.gq//dummy.png",
+    "width": "100",
+    "height": "100"
+  }
+}
+</script>
+
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+<noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+</head>
+
+<body>
+<div id="container">
+
+<header>
+
+  <h1><a href="http://www.weizlogy.gq/">Weizlogy</a></h1>
+  <h2> - Live in der Zukunft.</h2>
+
+</header>
+
+<aside>
+</aside>
+
+<div>
+<article>
+
+ <h1><a href="http://www.weizlogy.gq/tos/addon/slotmac/">[tree of savior addon] クイックスロットスキル/アイテム用マクロアドオン</a>
+  
+    &ndash;&nbsp;v1.0.0
+  
+</h1>
+ <div>
+  
+
+<h2 id="download">download.</h2>
+
+<p><a href="https://github.com/weizlogy/tos/releases/download/slotmac-v1.0.0/slotmac.ipf">[v1.0.0] slotmac.ipf</a></p>
+
+<h2 id="install">install.</h2>
+
+<p><a href="https://github.com/weizlogy/tos/blob/master/README.md">README.md</a></p>
+
+<h2 id="introduction">introduction.</h2>
+
+<h2 id="settings">settings.</h2>
+
+<p>Nexon\TreeofSaviorJP\addons\slotmac フォルダーを作成します。</p>
+
+<p>slotmac フォルダー配下に自キャラの[cid]のフォルダーを作成します。</p>
+
+<p>操作中のキャラクターのcidが不明な場合は、F3キーで[スキルと特性]ダイアログを開き、右下の[slmc]Reloadボタンを右クリックしてください。</p>
+
+<p>slotmac フォルダー配下に操作キャラの[cid]のファイルが作成されますので、コピー &gt; ファイル削除 &gt; 新しいフォルダー作成 &gt; フォルダー名変更 &gt; ペースト　としてください。</p>
+
+<h2 id="descriptions">descriptions.</h2>
+
+<h3 id="v1-0-0">v1.0.0</h3>
+
+<h4 id="新規作成">新規作成</h4>
+
+<p>アドオンがロードされると、クイックスロットにセットしたスキルやアイテムを実行時に指定したマクロを実行できるようになります。</p>
+
+<p>また、[スキルと特性]ダイアログの右下の[slmc]Reloadボタンが追加されます。左クリックでマクロを再読み込みします。</p>
+
+<h2 id="usage">usage.</h2>
+
+<h3 id="マクロファイル作成">マクロファイル作成</h3>
+
+<p>キーボード、マウスモードの場合、クイックスロットは左下が1、右上が40となります。(ジョイスティックは&hellip;？)</p>
+
+<p>cidフォルダー配下に、必要に応じてマクロファイル(slot1.txt ～ slot40.txt)を<strong>UTF8-BOM無</strong>で作成します。
+マクロファイルがない場合は、今まで通りスロットにセットされたものを実行します。</p>
+
+<p>UTF8-BOM無がよく分からない人は、下記テンプレートをダウンロードして使ってください。</p>
+
+<p><a href="https://github.com/weizlogy/tos/releases/download/slotmac-v1.0.0/slotN.txt">slotN.txt</a></p>
+
+<p>slot1.txtなら、[A]キーに割り当てのクイックスロットという感じです。</p>
+
+<p><strong>マクロは一行に一コマンドとなります。</strong></p>
+
+<h3 id="マクロコマンド一覧">マクロコマンド一覧</h3>
+
+<h4 id="クイックスロット呼び出し">クイックスロット呼び出し</h4>
+
+<p>自身または他のクイックスロットを呼び出します。</p>
+<div class="highlight"><pre><code class="language-lua" data-lang="lua"><span></span><span class="o">#</span><span class="n">skill</span><span class="o">#</span> <span class="mi">0</span>  <span class="c1">-- 操作したクイックスロット自身を実行する。</span>
+<span class="o">#</span><span class="n">skill</span><span class="o">#</span> <span class="mi">10</span> <span class="c1">-- 10番目のクイックスロット(つまり[;]キー割り当てのもの)を実行する。</span>
+</code></pre></div>
+
+<h4 id="チャットコマンド">チャットコマンド</h4>
+
+<p>[/]から始まるチャットコマンドはすべて使用可能です。</p>
+<div class="highlight"><pre><code class="language-lua" data-lang="lua"><span></span><span class="o">/</span><span class="n">s</span> <span class="n">test</span> <span class="c1">-- 一般チャットで[test]と発言する。</span>
+<span class="o">/</span><span class="n">p</span> <span class="n">test</span> <span class="c1">-- PTチャットで[test]と発言する。</span>
+<span class="o">/</span><span class="n">indun</span>  <span class="c1">-- インスタンスダンジョンダイアログを呼び出す。</span>
+<span class="n">e</span><span class="p">.</span><span class="n">t</span><span class="p">.</span><span class="n">c</span><span class="p">...</span>
+</code></pre></div>
+
+<h4 id="エコー">エコー</h4>
+
+<p>systemチャットで自分にしか見えない発言ができます。</p>
+<div class="highlight"><pre><code class="language-lua" data-lang="lua"><span></span><span class="o">#</span><span class="n">system</span><span class="o">#</span> <span class="n">test</span> <span class="c1">-- systemチャット[test]と発言する。</span>
+</code></pre></div>
+
+<h4 id="エモティコン">エモティコン</h4>
+
+<p>チャットコマンドやエコーでエモティコンを表示できます。</p>
+<div class="highlight"><pre><code class="language-lua" data-lang="lua"><span></span><span class="o">/</span><span class="n">s</span> <span class="o">&lt;</span><span class="n">emoticon_0009</span><span class="o">&gt;</span> <span class="c1">-- 一般チャット[脱力エモ]と発言する。</span>
+</code></pre></div>
+
+<p>エモティコンはクラス名で指定します。
+data\jp.ipf\xml\chat_emoticons.xml に載っていますが、以下に抜粋しておきます。</p>
+<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;1&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0001&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;幸せ&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;2&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0002&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;ケッピー好き&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;3&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0003&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;ケッピー泣く&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;4&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0004&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;コラッ&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;5&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0005&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;怒り&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;6&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0006&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;満足&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;7&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0007&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;コンパ&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;8&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0008&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;笑み&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;9&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0009&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;脱力&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;10&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0010&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;えっ！&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;11&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0011&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;えっ!!!&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;12&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0012&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;おえっ&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;13&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0013&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;イケイケ&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;14&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0014&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;怒り&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;15&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0015&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;爆破&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;16&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0016&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;悲しみ&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;17&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0017&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;左&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;18&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0018&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;右&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;19&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0019&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;狙い&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;20&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0020&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;王子&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;21&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0021&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;疲れた&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;22&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0022&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;ダラッ&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;23&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0023&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;キャーッ&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;24&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0024&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;hi&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;25&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0025&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;bye&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;26&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0026&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;ok&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;27&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0027&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;gg&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;28&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0028&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;暑い&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;29&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0029&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;寒い&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;30&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0030&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;頑張れ1&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;31&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0031&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;頑張れ2&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;32&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0032&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;お腹すいた1&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;33&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0033&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;お腹いっぱい&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;34&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0034&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;えっへん&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;35&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0035&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;感謝&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;36&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0036&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;はて？&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;37&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0037&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;おやすみ&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;38&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0038&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;オッケー&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;39&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0039&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;やだ1&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;40&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0040&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;やだ2&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;41&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0041&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;愛してる&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;42&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0042&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;眠い&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;43&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0043&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;お腹すいた2&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;44&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0044&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;痛い&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;45&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0045&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;ごめん&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;46&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0046&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;グッドラック&quot;</span><span class="nt">/&gt;</span>
+</code></pre></div>
+
+<h4 id="ポーズ">ポーズ</h4>
+
+<p>任意のポーズができます。</p>
+<div class="highlight"><pre><code class="language-lua" data-lang="lua"><span></span><span class="o">#</span><span class="n">pose</span><span class="o">#</span> <span class="n">LOVE</span> <span class="c1">-- [ラブ]のポーズをする。</span>
+</code></pre></div>
+
+<p>ポーズはクラス名を指定します。
+data\ies.ipf\pose.ies に載っていますが、以下に抜粋しておきます。</p>
+
+<pre><code>ClassName
+--
+LOVE
+WIN
+BEST
+FOLLOW
+HELP
+HELLO
+NO
+SORRY
+THANKS
+YES
+BOW1
+BOW2
+CLENCHFIST
+DOUBLEGUNS
+HADOUKEN
+SURPRISE
+CRYING
+BIRDPOSE
+OUTCAST
+QUESTION
+CRAP
+JUMPING
+CUTE
+HULAHULA
+IDK
+NONO
+OUCH
+POPCORN
+JIANGSHI
+CHEERS
+OTL
+POLLEN
+THANKS2
+DANCE
+KICK
+</code></pre>
+
+<h4 id="タイマー">タイマー</h4>
+
+<p>クイックスロット実行後一定時間経過で任意のマクロコマンドを呼び出します。</p>
+<div class="highlight"><pre><code class="language-lua" data-lang="lua"><span></span><span class="o">#</span><span class="n">timer</span><span class="o">#</span> <span class="mi">3</span> <span class="o">#</span><span class="n">pose</span><span class="o">#</span> <span class="n">LOVE</span> <span class="c1">-- クイックスロット実行後3秒経過で[ラブ]のポーズをする。</span>
+</code></pre></div>
+
+<p>タイマーは複数張れますが、全て[クイックスロット実行後一定時間経過]換算で、waitではありません。[#timer# 3 xxx]を二行書いても、xxxが3秒後同時に行われることになります。</p>
+
+<h2 id="cautions">cautions.</h2>
+
+<p>マクロファイルがUTF8-BOM付の場合、BOMが邪魔で一行目のマクロが認識されません。UTF8以外(MS932など)は、全マクロが認識できません。</p>
+
+<p>連打するようなクイックスロットにはマクロつけても。。。</p>
+
+ </div>
+
+</article>
+<div class="blog-date">
+  2017/06/16 21:15:19 - 2017/06/16 23:22:27
+</div>
+<amp-ad type="adsense"
+  layout="responsive"
+  width=300
+  height=250
+  data-ad-client="ca-pub-3395565787038716"
+  data-ad-slot="6078244818">
+</amp-ad>
+</div>
+
+<footer>
+
+  <p>© 2010 weizlogy.<p>
+  <p>Powered by hugo &#43; github pages.<p>
+  <p><a href="https://twitter.com/twihamatter">Twitter</a></p>
+<p><a href="https://plus.google.com/+%E7%99%BD%E6%BF%B1%E7%9D%A6%E4%B8%89?hl=ja">Google+</a></p>
+
+
+<amp-analytics type="googleanalytics" id="analytics1">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-565719-7"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
+
+</footer>
+
+</div>
+</body>
+</html>

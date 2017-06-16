@@ -196,6 +196,35 @@
 </style>
 
 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org"
+  "@type": "BlogPosting",
+  "headline": "Tos Addon",
+  "url": "http://www.weizlogy.gq/categories/tos-addon/",
+  "datePublished": "0001-01-01 00:00:00 &#43;0000 UTC",
+  "author": {
+    "@type": "Person",
+    "name": "weizlogy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Weiβlogy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.weizlogy.gq//favicon.ico"
+    }
+  },
+  "dateModified": "2017-06-16 23:22:27.9312246 &#43;0900 JST",
+  "mainEntityOfPage": "1",
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://www.weizlogy.gq//dummy.png",
+    "width": "100",
+    "height": "100"
+  }
+}
+</script>
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -228,7 +257,7 @@
   
   <div><a href="/categories/system-dev">system-dev</a> (15)</div>
   
-  <div><a href="/categories/tos-addon">tos-addon</a> (17)</div>
+  <div><a href="/categories/tos-addon">tos-addon</a> (18)</div>
   
   <div><a href="/categories/tos-addon-dev">tos-addon-dev</a> (4)</div>
   
@@ -241,6 +270,17 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/slotmac/">[tree of savior addon] クイックスロットスキル/アイテム用マクロアドオン</a>
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+      <span class="blog-date">@2017/06/16 23:22:27</span>
+    </div>
+  </div>
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
@@ -286,17 +326,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/monsterstatus/">[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</a>
-    
-    &ndash;&nbsp;v2.2.0
-    
-    
-      <span class="blog-date">@2017/05/05 23:08:14</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -304,6 +333,26 @@
 <div class="main">
   <section>
   
+  
+  <div><a href="http://www.weizlogy.gq/tos/addon/slotmac/">[tree of savior addon] クイックスロットスキル/アイテム用マクロアドオン</a></div>
+  <pre class="summary">download. [v1.0.0] slotmac.ipf
+install. README.md
+introduction. settings. Nexon\TreeofSaviorJP\addons\slotmac フォルダーを作成します。
+slotmac フォルダー配下に自キャラの[cid]のフォルダーを作成します。
+操作中のキャラクターのcidが不明な場合は、F3キーで[スキルと特性]ダイアログを開き、右下の[slmc]Reloadボタンを右クリックしてください。
+slotmac フォルダー配下に操作キャラの[cid]のファイルが作成されますので、コピー &gt; ファイル削除 &gt; 新しいフォルダー作成 &gt; フォルダー名変更 &gt; ペースト　としてください。
+descriptions. v1.0.0 新規作成 アドオンがロードされると、クイックスロットにセットしたスキルやアイテムを実行時に指定したマクロを実行できるようになります。
+また、[スキルと特性]ダイアログの右下の[slmc]Reloadボタンが追加されます。左クリックでマクロを再読み込みします。
+usage. マクロファイル作成 キーボード、マウスモードの場合、クイックスロットは左下が1、右上が40となります。(ジョイスティックは&hellip;？)
+cidフォルダー配下に、必要に応じてマクロファイル(slot1.txt ～ slot40.txt)をUTF8-BOM無で作成します。 マクロファイルがない場合は、今まで通りスロットにセットされたものを実行します。
+UTF8-BOM無がよく分からない人は、下記テンプレートをダウンロードして使ってください。
+slotN.txt
+slot1.txtなら、[A]キーに割り当てのクイックスロットという感じです。
+マクロは一行に一コマンドとなります。
+マクロコマンド一覧 クイックスロット呼び出し 自身または他のクイックスロットを呼び出します。
+#skill# 0 -- 操作したクイックスロット自身を実行する。 #skill# 10 -- 10番目のクイックスロット(つまり[;]キー割り当てのもの)を実行する。  チャットコマンド [/]から始まるチャットコマンドはすべて使用可能です。
+/s test -- 一般チャットで[test]と発言する。 /p test -- PTチャットで[test]と発言する。 /indun -- インスタンスダンジョンダイアログを呼び出す。 e.t.c...  エコー systemチャットで自分にしか見えない発言ができます。
+#system# test -- systemチャット[test]と発言する。  エモティコン チャットコマンドやエコーでエモティコンを表示できます。</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/savequest/">[tree of savior addon] ワープ用クエスト誤完了防止アドオン</a></div>
   <pre class="summary">download. [v1.1.0] savequest.ipf
@@ -405,18 +454,6 @@ install. README.md
 introduction. 
 settings. descriptions. v1.0.0 新規作成。
 アドオンがロードされると、クイックスロットにセットしている、消費アイテムのあるスキルスロット右上に、消費アイテムの個数に応じたスキルの使用回数を追加で表示します。</pre>
-  
-  <div><a href="http://www.weizlogy.gq/tos/addon/worldmapquest/">[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</a></div>
-  <pre class="summary">download. [v1.1.2] worldmapquest.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.1.2 ワープ用ワールドマップに残クエストオブジェクトが残る問題修正 ワープスクロールやワープ像で表示するワープ用ワールドマップに 残クエストオブジェクトが残らないよう修正しました。
-v1.1.1 パッチ対応 157576_001001 パッチ適用で使用不可になったので回避対応しました。
-反復クエストの非表示設定 反復クエストの表示非表示を切り替えるには、 ワールドマップのクエスト数を右クリック &gt; [toggleRepeatQuest]を選択します。
-選択後、ワールドマップを再表示すると反映されます。
-選択する度に反復クエストの表示非表示を切り替えます。
-v1.0.0 新規作成 アドオンがロードされると、ワールドマップの各エリア名上部に受注可能なクエスト数が表示されます。
-introductionの画像では碑石路、いにしえの女神の庭、ドバシア峠、古旗の森、大王の関門、カーライルの霊廟、ガルエット平野に[n]の形式で表示されています。</pre>
   
   
     
