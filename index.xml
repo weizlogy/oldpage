@@ -7,20 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Fri, 16 Jun 2017 23:22:27 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 27 Jun 2017 00:50:51 +0900</lastBuildDate>
     <atom:link href="http://www.weizlogy.gq/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>[tree of savior addon] クイックスロットスキル/アイテム用マクロアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/slotmac/</link>
-      <pubDate>Fri, 16 Jun 2017 23:22:27 +0900</pubDate>
+      <pubDate>Tue, 27 Jun 2017 00:50:51 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/slotmac/</guid>
       <description>
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/slotmac-v1.0.0/slotmac.ipf&#34;&gt;[v1.0.0] slotmac.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/slotmac-v1.1.0/slotmac.ipf&#34;&gt;[v1.1.0] slotmac.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -39,6 +39,20 @@
 &lt;p&gt;slotmac フォルダー配下に操作キャラの[cid]のファイルが作成されますので、コピー &amp;gt; ファイル削除 &amp;gt; 新しいフォルダー作成 &amp;gt; フォルダー名変更 &amp;gt; ペースト　としてください。&lt;/p&gt;
 
 &lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
+
+&lt;h4 id=&#34;equipコマンド追加&#34;&gt;equipコマンド追加&lt;/h4&gt;
+
+&lt;p&gt;equipコマンドにより、クイックスロット実行に合わせて装備を変更できます。&lt;/p&gt;
+
+&lt;p&gt;詳細はマクロコマンド一覧参照。&lt;/p&gt;
+
+&lt;h4 id=&#34;unequipコマンド追加&#34;&gt;unequipコマンド追加&lt;/h4&gt;
+
+&lt;p&gt;unequipコマンドにより、クイックスロット実行に合わせて装備を外せます。&lt;/p&gt;
+
+&lt;p&gt;詳細はマクロコマンド一覧参照。&lt;/p&gt;
 
 &lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
 
@@ -201,11 +215,93 @@ KICK
 
 &lt;p&gt;タイマーは複数張れますが、全て[クイックスロット実行後一定時間経過]換算で、waitではありません。[#timer# 3 xxx]を二行書いても、xxxが3秒後同時に行われることになります。&lt;/p&gt;
 
+&lt;h4 id=&#34;装備&#34;&gt;装備&lt;/h4&gt;
+
+&lt;p&gt;指定部位の装備を、指定した装備に変更します。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;equip&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;RH&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;ターネットソード&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- メインウエポンをターネットソードにする。&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;timer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;skill&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- クイックスロット実行1秒後、スロットスキルを実行する。&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;timer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;equip&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;RH&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;フィフスハンマー&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- クイックスロット実行2秒後、メインウエポンをフィフスハンマーにする。&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;装備変更には少々時間がかかるため、その後のスキル実行はタイマーで調整してください。&lt;/p&gt;
+
+&lt;p&gt;装備部位は以下の通りです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;HAT
+HAT_L
+HAIR
+SHIRT
+GLOVES
+BOOTS
+HELMET
+ARMBAND
+RH
+LH
+OUTER
+OUTERADD1
+OUTERADD2
+BODY
+PANTS
+PANTSADD1
+PANTSADD2
+RING1
+RING2
+NECK
+HAT_T
+LENDS
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;装備解除&#34;&gt;装備解除&lt;/h4&gt;
+
+&lt;p&gt;指定部位の装備を外します。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;unequip&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;RH&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- メインウエポンを外す。&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;h2 id=&#34;cautions&#34;&gt;cautions.&lt;/h2&gt;
 
 &lt;p&gt;マクロファイルがUTF8-BOM付の場合、BOMが邪魔で一行目のマクロが認識されません。UTF8以外(MS932など)は、全マクロが認識できません。&lt;/p&gt;
 
 &lt;p&gt;連打するようなクイックスロットにはマクロつけても。。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] エリア内ランダムワープアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</link>
+      <pubDate>Tue, 27 Jun 2017 00:34:27 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/bcuf2x3u2jmwjpo/wingofbeelze.ipf?dl=0&#34;&gt;[v1.0.2] wingofbeelze.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-2&#34;&gt;v1.0.2&lt;/h3&gt;
+
+&lt;h4 id=&#34;ワープロジック微調整&#34;&gt;ワープロジック微調整&lt;/h4&gt;
+
+&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
+
+&lt;h4 id=&#34;ワープロジック微調整-1&#34;&gt;ワープロジック微調整&lt;/h4&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;h4 id=&#34;新規作成&#34;&gt;新規作成。&lt;/h4&gt;
+
+&lt;p&gt;ESCAPE+LSHIFTでエリア内をランダムにワープします。&lt;/p&gt;
+
+&lt;p&gt;ROのヴェルゼブブの羽のようなイメージです。&lt;/p&gt;
 </description>
     </item>
     
@@ -514,42 +610,6 @@ KICK
 &lt;p&gt;配色をカスタマイズする設定を追加する予定です。&lt;/p&gt;
 
 &lt;p&gt;某レーダーと違いマップにオーバーレイせず直接描画しているため、既存UIの邪魔をしません。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] エリア内ランダムワープアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</link>
-      <pubDate>Fri, 05 May 2017 23:10:19 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/bcuf2x3u2jmwjpo/wingofbeelze.ipf?dl=0&#34;&gt;[v1.0.1] wingofbeelze.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
-
-&lt;h4 id=&#34;ワープロジック微調整&#34;&gt;ワープロジック微調整&lt;/h4&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;新規作成&#34;&gt;新規作成。&lt;/h4&gt;
-
-&lt;p&gt;ESCAPE+LSHIFTでエリア内をランダムにワープします。&lt;/p&gt;
-
-&lt;p&gt;ROのヴェルゼブブの羽のようなイメージです。&lt;/p&gt;
 </description>
     </item>
     
