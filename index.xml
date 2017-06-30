@@ -7,20 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Tue, 27 Jun 2017 00:50:51 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 30 Jun 2017 21:58:49 +0900</lastBuildDate>
     <atom:link href="http://www.weizlogy.gq/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>[tree of savior addon] クイックスロットスキル/アイテム用マクロアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/slotmac/</link>
-      <pubDate>Tue, 27 Jun 2017 00:50:51 +0900</pubDate>
+      <pubDate>Fri, 30 Jun 2017 21:58:49 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/slotmac/</guid>
       <description>
 
 &lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/slotmac-v1.1.0/slotmac.ipf&#34;&gt;[v1.1.0] slotmac.ipf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/slotmac-v1.2.0/slotmac.ipf&#34;&gt;[v1.2.0] slotmac.ipf&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
 
@@ -39,6 +39,25 @@
 &lt;p&gt;slotmac フォルダー配下に操作キャラの[cid]のファイルが作成されますので、コピー &amp;gt; ファイル削除 &amp;gt; 新しいフォルダー作成 &amp;gt; フォルダー名変更 &amp;gt; ペースト　としてください。&lt;/p&gt;
 
 &lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-2-0&#34;&gt;v1.2.0&lt;/h3&gt;
+
+&lt;h4 id=&#34;オーバーヒート対応&#34;&gt;オーバーヒート対応&lt;/h4&gt;
+
+&lt;p&gt;オーバーヒートのあるスキルでは、通常マクロファイルに加えてオーバーヒート用のマクロファイルを
+用意できるようになりました。&lt;/p&gt;
+
+&lt;p&gt;例えばオーバーヒート3のスキルでは、以下のようになります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;初撃 =&amp;gt; オーバーヒート用マクロファイル
+二撃 =&amp;gt; オーバーヒート用マクロファイル
+三撃 =&amp;gt; 通常マクロファイル
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;オーバーヒート用マクロファイルがない場合は、
+マクロファイルのない通常動作（スキル発動のみ）となります。&lt;/p&gt;
+
+&lt;p&gt;オーバーヒート用マクロファイルの詳細はusage参照。&lt;/p&gt;
 
 &lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
 
@@ -78,6 +97,16 @@
 &lt;p&gt;slot1.txtなら、[A]キーに割り当てのクイックスロットという感じです。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;マクロは一行に一コマンドとなります。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;オーバーヒート用マクロファイル&#34;&gt;オーバーヒート用マクロファイル&lt;/h3&gt;
+
+&lt;p&gt;オーバーヒートのあるスキルでは、通常マクロファイルに加えてオーバーヒート用のマクロファイルを
+用意できます。&lt;/p&gt;
+
+&lt;p&gt;オーバーヒート用のマクロファイルの命名規則は以下の通りです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;slot1-oh.txt ～ slot40-oh.txt
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;マクロコマンド一覧&#34;&gt;マクロコマンド一覧&lt;/h3&gt;
 
