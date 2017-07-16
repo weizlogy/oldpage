@@ -7,8 +7,48 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Fri, 14 Jul 2017 00:45:36 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 16 Jul 2017 23:26:44 +0900</lastBuildDate>
     <atom:link href="http://www.weizlogy.gq/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>[tree of savior addon] 召喚物の個体数を表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/summoncounter/</link>
+      <pubDate>Sun, 16 Jul 2017 23:26:44 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/summoncounter/</guid>
+      <description>
+
+&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/summoncounter-v0.0.2/summoncounter.ipf&#34;&gt;[v0.0.2] summoncounter.ipf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/zidbpv5mqap3em7/summoncounter.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/zidbpv5mqap3em7/summoncounter.png?dl=1&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
+
+&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
+
+&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
+
+&lt;p&gt;新規作成。&lt;/p&gt;
+
+&lt;p&gt;アドオンがロードされると、クイックスロットにセットしている召喚系スキルスロット右上に、召喚数/最大値を追加で表示します。&lt;/p&gt;
+
+&lt;h2 id=&#34;cautions&#34;&gt;cautions.&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;エリアチェンジ、ログイン直後で既に存在する召喚物はカウントできません。&lt;/li&gt;
+&lt;li&gt;ゾンビカプセル産のゾンビはカウントできません。&lt;/li&gt;
+&lt;li&gt;コープスタワー特性産の骸骨兵士はカウントできません。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</title>
@@ -1168,51 +1208,6 @@ LENDS
 
 &lt;p&gt;休息中に飛行すると、休息バフがついた状態で行動できます。
 ただし、攻撃などの操作を行うと休息バフは解除されます。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 所持キャラ全員の個人倉庫を見るアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/warehousepicker/</link>
-      <pubDate>Fri, 28 Apr 2017 05:35:06 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/warehousepicker/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/qkoh8lkds1m82d1/warehousepicker.ipf?dl=0&#34;&gt;warehousepicker.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;amp-youtube data-videoid=&#34;K0V5lyVg_WY&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;p&gt;Nexon\TreeofSaviorJP\addons\warehousepicker フォルダーを作成します。&lt;/p&gt;
-
-&lt;p&gt;各所持キャラで個人倉庫を開閉する（正確には閉じる瞬間）と、先ほど作成したフォルダーに個人倉庫のアイテム情報を保存します。&lt;/p&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされた後、いずれかのキャラで個人倉庫を開くと、倉庫左下に[whpk]ボタンが出現します。
-ボタンを押すと、事前に保存された所持キャラの個人倉庫のアイテム情報を表示するダイアログを開きます。&lt;/p&gt;
-
-&lt;p&gt;ダイアログには、事前に個人倉庫のアイテム情報が作成された所持キャラ名のドロップダウンリストが表示されます。
-ドロップダウンリストで選択した所持キャラ名の個人倉庫のアイテム情報（アイテムアイコン、名称、個数）をダイアログ内に表示します。&lt;/p&gt;
-
-&lt;p&gt;最低一度は各所持キャラで個人倉庫を開閉する必要がありますが、それ以降はいずれかのキャラでログインすると全員の個人倉庫を見ることができます。&lt;/p&gt;
-
-&lt;p&gt;今のところチームの区別なくキャラ名のみ表示しますので、複数チームを所持している場合に使い勝手に難があるかもしれません。
-使いにくいようでしたら改善します。&lt;/p&gt;
 </description>
     </item>
     
