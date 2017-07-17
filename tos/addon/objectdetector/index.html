@@ -189,10 +189,6 @@
   .highlight .vg { color: #008080 }  
   .highlight .vi { color: #008080 }  
   .highlight .il { color: #009999 }  
-   
-  .tos-addon-x, .\[tos-addon-x\] {
-    display: none;
-  }
 </style>
 
 
@@ -216,7 +212,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-05-05 23:23:17.040857 &#43;0900 JST",
+  "dateModified": "2017-07-18 00:30:34.6665437 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -256,7 +252,7 @@
 
  <h1><a href="http://www.weizlogy.gq/tos/addon/objectdetector/">[tree of savior addon] オブジェクト探索アドオン</a>
   
-    &ndash;&nbsp;v1.0.1
+    &ndash;&nbsp;v1.1.0
   
 </h1>
  <div>
@@ -264,7 +260,7 @@
 
 <h2 id="download">download.</h2>
 
-<p><a href="https://github.com/weizlogy/tos/releases/download/objectdetector-v1.0.1/objectdetector.ipf">[v1.0.1] objectdetector.ipf</a></p>
+<p><a href="https://github.com/weizlogy/tos/releases/download/objectdetector-v1.1.0/objectdetector.ipf">[v1.1.0] objectdetector.ipf</a></p>
 
 <h2 id="install">install.</h2>
 
@@ -278,15 +274,205 @@
 
 <h2 id="settings">settings.</h2>
 
+<p>Nexon\TreeofSaviorJP\addons\objectdetector\settings.txt を作成します。</p>
+
+<p>以下の初期設定を<a href="https://github.com/weizlogy/tos/blob/master/objectdetector/settings.txt">settings.txt</a>にコピペします。</p>
+<div class="highlight"><pre><code class="language-lua" data-lang="lua"><span></span><span class="c1">-- for monster and npcs.</span>
+<span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">mon</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;FF000000&quot;</span><span class="p">,</span>
+  <span class="n">isVisible</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="p">};</span>
+<span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">mon</span><span class="p">.</span><span class="n">Monster</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;FF660000&quot;</span><span class="p">,</span>
+  <span class="n">isVisible</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="p">};</span>
+<span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">mon</span><span class="p">.</span><span class="n">Monster_Chaos1</span> <span class="o">=</span> <span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">mon</span><span class="p">.</span><span class="n">Monster</span><span class="p">;</span>
+<span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">mon</span><span class="p">.</span><span class="n">Monster_Chaos2</span> <span class="o">=</span> <span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">mon</span><span class="p">.</span><span class="n">Monster</span><span class="p">;</span>
+
+<span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">mon</span><span class="p">.</span><span class="n">Pet</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="n">isVisible</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="p">};</span>
+<span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">mon</span><span class="p">.</span><span class="n">RootCrystal</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;FF330033&quot;</span><span class="p">,</span>
+  <span class="n">isVisible</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="p">};</span>
+<span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">mon</span><span class="p">.</span><span class="n">Neutral</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;FFFF9900&quot;</span><span class="p">,</span>
+  <span class="n">isVisible</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+<span class="p">};</span>
+<span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">mon</span><span class="p">.</span><span class="n">Peaceful</span> <span class="o">=</span> <span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">mon</span><span class="p">.</span><span class="n">Neutral</span><span class="p">;</span>
+<span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">mon</span><span class="p">.</span><span class="n">Our_Forces</span> <span class="o">=</span> <span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">mon</span><span class="p">.</span><span class="n">Neutral</span><span class="p">;</span>
+<span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">mon</span><span class="p">.</span><span class="n">Hidden_tgt</span> <span class="o">=</span> <span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">mon</span><span class="p">.</span><span class="n">Neutral</span><span class="p">;</span>
+
+<span class="c1">-- for players.</span>
+<span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">pc</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;FF0000FF&quot;</span><span class="p">,</span>
+  <span class="n">isVisible</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="p">};</span>
+
+<span class="c1">-- for dropitems.</span>
+<span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">item</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;FF999999&quot;</span><span class="p">,</span>
+  <span class="n">isVisible</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="p">};</span>
+
+<span class="c1">-- for treasures.</span>
+<span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">treasure</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;FFFF9900&quot;</span><span class="p">,</span>
+  <span class="n">isVisible</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="n">isBlink</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="p">};</span>
+
+<span class="c1">-- for clover buffs.</span>
+<span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">clover</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;FF330000&quot;</span><span class="p">,</span>
+  <span class="n">isVisible</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="n">isBlink</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="p">};</span>
+
+<span class="n">obde</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">clover</span><span class="p">.</span><span class="n">EliteMonsterBuff</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;FFFF3333&quot;</span><span class="p">,</span>
+  <span class="n">isVisible</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="p">};</span>
+</code></pre></div>
+
+<h3 id="explanation">explanation.</h3>
+
+<h4 id="params">params</h4>
+
+<h5 id="color">color</h5>
+
+<p>アイコン色をARGBで指定します。</p>
+
+<p>Aは（実装の関係上）FF推奨です。
+透明に近づけると黒くなっていきます。</p>
+
+<h5 id="isvisible">isVisible</h5>
+
+<p>アイコンの表示を制御します。
+1を指定した場合のみ表示します。</p>
+
+<h5 id="isblink">isBlink</h5>
+
+<p>アイコンの点滅を制御します。
+1を指定した場合のみ点滅します。</p>
+
+<p>本設定は[obde.config.mon]以下のみ有効です。</p>
+
+<h4 id="obde-config-mon">obde.config.mon</h4>
+
+<p>モンスターやNPCなどほぼ全てのオブジェクトの基本設定です。</p>
+
+<p>後述のfaction指定設定にない場合、本設定が有効となります。</p>
+
+<h5 id="obde-config-mon-faction">obde.config.mon.[faction]</h5>
+
+<p>オブジェクトのfaction属性毎に用意する設定です。
+factionはアイコンのツールチップ[f=]で確認できます。</p>
+
+<h4 id="obde-config-pc">obde.config.pc</h4>
+
+<p>他PCの基本設定です。</p>
+
+<h4 id="obde-config-item">obde.config.item</h4>
+
+<p>ドロップアイテムの基本設定です。</p>
+
+<h4 id="obde-config-treasure">obde.config.treasure</h4>
+
+<p>宝箱の基本設定です。</p>
+
+<h4 id="obde-config-clover">obde.config.clover</h4>
+
+<p>クローバーバフ持ちの基本設定です。</p>
+
+<p>後述のclassname指定設定にない場合、本設定が有効となります。</p>
+
+<h5 id="obde-config-clover-classname">obde.config.clover.[classname]</h5>
+
+<p>クローバーバフのclassname毎に用意する設定です。
+classnameはアイコンのツールチップ[b=]で確認できます。</p>
+
+<h3 id="explanation-of-initial-parameters">explanation of initial parameters.</h3>
+
+<table>
+<thead>
+<tr>
+<th align="left">色</th>
+<th align="left">オブジェクト</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">赤</td>
+<td align="left">モンスター</td>
+</tr>
+
+<tr>
+<td align="left">赤点滅</td>
+<td align="left">クローバーバフモンスター（エリートは除く）</td>
+</tr>
+
+<tr>
+<td align="left">桃</td>
+<td align="left">エリートクローバーバフモンスター</td>
+</tr>
+
+<tr>
+<td align="left">青</td>
+<td align="left">PC</td>
+</tr>
+
+<tr>
+<td align="left">橙</td>
+<td align="left">NPC</td>
+</tr>
+
+<tr>
+<td align="left">橙点滅</td>
+<td align="left">宝箱</td>
+</tr>
+
+<tr>
+<td align="left">紫</td>
+<td align="left">ルーツクリスタル</td>
+</tr>
+
+<tr>
+<td align="left">白</td>
+<td align="left">ドロップアイテム</td>
+</tr>
+
+<tr>
+<td align="left">黒</td>
+<td align="left">その他</td>
+</tr>
+
+<tr>
+<td align="left">非表示</td>
+<td align="left">ペット</td>
+</tr>
+</tbody>
+</table>
+
 <h2 id="descriptions">descriptions.</h2>
+
+<h3 id="v1-1-0">v1.1.0</h3>
+
+<h4 id="アイコン表示処理の設定ファイル化">アイコン表示処理の設定ファイル化</h4>
+
+<p>アイコンの表示、配色、点滅を設定ファイルでカスタマイズできるようにしました。</p>
+
+<p>設定ファイルがないと動かないので注意してください。</p>
 
 <h3 id="v1-0-1">v1.0.1</h3>
 
-<p>性能改善しました。</p>
+<h4 id="性能改善">性能改善</h4>
 
 <h3 id="v1-0-0">v1.0.0</h3>
 
-<p>新規作成。</p>
+<h4 id="新規作成">新規作成</h4>
 
 <p>アドオンがロードされると、マップとミニマップに四角形のアイコン[*1]が表示されます。</p>
 
@@ -340,10 +526,13 @@
 <td align="left">黒</td>
 <td align="left">その他</td>
 </tr>
+
+<tr>
+<td align="left">非表示</td>
+<td align="left">ペット</td>
+</tr>
 </tbody>
 </table>
-
-<p>配色をカスタマイズする設定を追加する予定です。</p>
 
 <p>某レーダーと違いマップにオーバーレイせず直接描画しているため、既存UIの邪魔をしません。</p>
 
@@ -351,7 +540,7 @@
 
 </article>
 <div class="blog-date">
-  2017/03/27 19:39:27 - 2017/05/05 23:23:17
+  2017/03/27 19:39:27 - 2017/07/18 00:30:34
 </div>
 <amp-ad type="adsense"
   layout="responsive"

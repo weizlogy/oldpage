@@ -2,13 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tos on Weizlogy</title>
-    <link>http://www.weizlogy.gq/tos/index.xml</link>
+    <link>http://www.weizlogy.gq/tos/</link>
     <description>Recent content in Tos on Weizlogy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Sun, 16 Jul 2017 23:26:44 +0900</lastBuildDate>
-    <atom:link href="http://www.weizlogy.gq/tos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Jul 2017 00:30:34 +0900</lastBuildDate>
+    
+	<atom:link href="http://www.weizlogy.gq/tos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[tree of savior addon] オブジェクト探索アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/objectdetector/</link>
+      <pubDate>Tue, 18 Jul 2017 00:30:34 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/objectdetector/</guid>
+      <description>download. [v1.1.0] objectdetector.ipf
+install. README.md
+introduction. 
+
+settings. Nexon\TreeofSaviorJP\addons\objectdetector\settings.txt を作成します。
+以下の初期設定をsettings.txtにコピペします。
+-- for monster and npcs. obde.config.mon = { color = &amp;quot;FF000000&amp;quot;, isVisible = 1 }; obde.config.mon.Monster = { color = &amp;quot;FF660000&amp;quot;, isVisible = 1 }; obde.config.mon.Monster_Chaos1 = obde.config.mon.Monster; obde.config.mon.Monster_Chaos2 = obde.config.mon.Monster; obde.config.mon.Pet = { isVisible = 0 }; obde.config.mon.RootCrystal = { color = &amp;quot;FF330033&amp;quot;, isVisible = 1 }; obde.config.mon.Neutral = { color = &amp;quot;FFFF9900&amp;quot;, isVisible = 1, }; obde.</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] 召喚物の個体数を表示するアドオン</title>
@@ -16,38 +33,12 @@
       <pubDate>Sun, 16 Jul 2017 23:26:44 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/summoncounter/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/summoncounter-v0.0.2/summoncounter.ipf&#34;&gt;[v0.0.2] summoncounter.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/zidbpv5mqap3em7/summoncounter.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/zidbpv5mqap3em7/summoncounter.png?dl=1&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、クイックスロットにセットしている召喚系スキルスロット右上に、召喚数/最大値を追加で表示します。&lt;/p&gt;
-
-&lt;h2 id=&#34;cautions&#34;&gt;cautions.&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;エリアチェンジ、ログイン直後で既に存在する召喚物はカウントできません。&lt;/li&gt;
-&lt;li&gt;ゾンビカプセル産のゾンビはカウントできません。&lt;/li&gt;
-&lt;li&gt;コープスタワー特性産の骸骨兵士はカウントできません。&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> download. [v0.0.2] summoncounter.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.0 新規作成。
+アドオンがロードされると、クイックスロットにセットしている召喚系スキルスロット右上に、召喚数/最大値を追加で表示します。
+cautions.  エリアチェンジ、ログイン直後で既に存在する召喚物はカウントできません。 ゾンビカプセル産のゾンビはカウントできません。 コープスタワー特性産の骸骨兵士はカウントできません。  </description>
     </item>
     
     <item>
@@ -56,63 +47,18 @@
       <pubDate>Fri, 14 Jul 2017 00:45:36 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/worldmapquest/</guid>
-      <description>
+      <description>download. [v1.2.0] worldmapquest.ipf
+install. README.md
+introduction. 
 
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/worldmapquest-v1.2.0/worldmapquest.ipf&#34;&gt;[v1.2.0] worldmapquest.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/lunp83pa1v4zybh/worldmapquest.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/lunp83pa1v4zybh/worldmapquest.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/n17yhkt44we35ec/worldmapquest-warp.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/n17yhkt44we35ec/worldmapquest-warp.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-2-0&#34;&gt;v1.2.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;クエストワープマップモード追加&#34;&gt;クエストワープマップモード追加&lt;/h4&gt;
-
-&lt;p&gt;左ALTを押しながらワールドマップを開くと、クエストワープ可能なマップのみワールドマップ上に表示し、
-ワールドマップからクエストワープを実行できます。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-1-2&#34;&gt;v1.1.2&lt;/h3&gt;
-
-&lt;h4 id=&#34;ワープ用ワールドマップに残クエストオブジェクトが残る問題修正&#34;&gt;ワープ用ワールドマップに残クエストオブジェクトが残る問題修正&lt;/h4&gt;
-
-&lt;p&gt;ワープスクロールやワープ像で表示するワープ用ワールドマップに
-残クエストオブジェクトが残らないよう修正しました。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-1-1&#34;&gt;v1.1.1&lt;/h3&gt;
-
-&lt;h4 id=&#34;パッチ対応&#34;&gt;パッチ対応&lt;/h4&gt;
-
-&lt;p&gt;157576_001001 パッチ適用で使用不可になったので回避対応しました。&lt;/p&gt;
-
-&lt;h4 id=&#34;反復クエストの非表示設定&#34;&gt;反復クエストの非表示設定&lt;/h4&gt;
-
-&lt;p&gt;反復クエストの表示非表示を切り替えるには、
-ワールドマップのクエスト数を右クリック &amp;gt; [toggleRepeatQuest]を選択します。&lt;/p&gt;
-
-&lt;p&gt;選択後、ワールドマップを再表示すると反映されます。&lt;/p&gt;
-
-&lt;p&gt;選択する度に反復クエストの表示非表示を切り替えます。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;新規作成&#34;&gt;新規作成&lt;/h4&gt;
-
-&lt;p&gt;アドオンがロードされると、ワールドマップの各エリア名上部に受注可能なクエスト数が表示されます。&lt;/p&gt;
-
-&lt;p&gt;introductionの画像では碑石路、いにしえの女神の庭、ドバシア峠、古旗の森、大王の関門、カーライルの霊廟、ガルエット平野に[n]の形式で表示されています。&lt;/p&gt;
-</description>
+settings. descriptions. v1.2.0 クエストワープマップモード追加 左ALTを押しながらワールドマップを開くと、クエストワープ可能なマップのみワールドマップ上に表示し、 ワールドマップからクエストワープを実行できます。
+v1.1.2 ワープ用ワールドマップに残クエストオブジェクトが残る問題修正 ワープスクロールやワープ像で表示するワープ用ワールドマップに 残クエストオブジェクトが残らないよう修正しました。
+v1.1.1 パッチ対応 157576_001001 パッチ適用で使用不可になったので回避対応しました。
+反復クエストの非表示設定 反復クエストの表示非表示を切り替えるには、 ワールドマップのクエスト数を右クリック &amp;gt; [toggleRepeatQuest]を選択します。
+選択後、ワールドマップを再表示すると反映されます。
+選択する度に反復クエストの表示非表示を切り替えます。
+v1.0.0 新規作成 アドオンがロードされると、ワールドマップの各エリア名上部に受注可能なクエスト数が表示されます。
+introductionの画像では碑石路、いにしえの女神の庭、ドバシア峠、古旗の森、大王の関門、カーライルの霊廟、ガルエット平野に[n]の形式で表示されています。</description>
     </item>
     
     <item>
@@ -121,282 +67,31 @@
       <pubDate>Fri, 30 Jun 2017 21:58:49 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/slotmac/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/slotmac-v1.2.0/slotmac.ipf&#34;&gt;[v1.2.0] slotmac.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;p&gt;Nexon\TreeofSaviorJP\addons\slotmac フォルダーを作成します。&lt;/p&gt;
-
-&lt;p&gt;slotmac フォルダー配下に自キャラの[cid]のフォルダーを作成します。&lt;/p&gt;
-
-&lt;p&gt;操作中のキャラクターのcidが不明な場合は、F3キーで[スキルと特性]ダイアログを開き、右下の[slmc]Reloadボタンを右クリックしてください。&lt;/p&gt;
-
-&lt;p&gt;slotmac フォルダー配下に操作キャラの[cid]のファイルが作成されますので、コピー &amp;gt; ファイル削除 &amp;gt; 新しいフォルダー作成 &amp;gt; フォルダー名変更 &amp;gt; ペースト　としてください。&lt;/p&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-2-0&#34;&gt;v1.2.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;オーバーヒート対応&#34;&gt;オーバーヒート対応&lt;/h4&gt;
-
-&lt;p&gt;オーバーヒートのあるスキルでは、通常マクロファイルに加えてオーバーヒート用のマクロファイルを
-用意できるようになりました。&lt;/p&gt;
-
-&lt;p&gt;例えばオーバーヒート3のスキルでは、以下のようになります。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;初撃 =&amp;gt; オーバーヒート用マクロファイル
-二撃 =&amp;gt; オーバーヒート用マクロファイル
-三撃 =&amp;gt; 通常マクロファイル
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;オーバーヒート用マクロファイルがない場合は、
-マクロファイルのない通常動作（スキル発動のみ）となります。&lt;/p&gt;
-
-&lt;p&gt;オーバーヒート用マクロファイルの詳細はusage参照。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;equipコマンド追加&#34;&gt;equipコマンド追加&lt;/h4&gt;
-
-&lt;p&gt;equipコマンドにより、クイックスロット実行に合わせて装備を変更できます。&lt;/p&gt;
-
-&lt;p&gt;詳細はマクロコマンド一覧参照。&lt;/p&gt;
-
-&lt;h4 id=&#34;unequipコマンド追加&#34;&gt;unequipコマンド追加&lt;/h4&gt;
-
-&lt;p&gt;unequipコマンドにより、クイックスロット実行に合わせて装備を外せます。&lt;/p&gt;
-
-&lt;p&gt;詳細はマクロコマンド一覧参照。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;新規作成&#34;&gt;新規作成&lt;/h4&gt;
-
-&lt;p&gt;アドオンがロードされると、クイックスロットにセットしたスキルやアイテムを実行時に指定したマクロを実行できるようになります。&lt;/p&gt;
-
-&lt;p&gt;また、[スキルと特性]ダイアログの右下の[slmc]Reloadボタンが追加されます。左クリックでマクロを再読み込みします。&lt;/p&gt;
-
-&lt;h2 id=&#34;usage&#34;&gt;usage.&lt;/h2&gt;
-
-&lt;h3 id=&#34;マクロファイル作成&#34;&gt;マクロファイル作成&lt;/h3&gt;
-
-&lt;p&gt;キーボード、マウスモードの場合、クイックスロットは左下が1、右上が40となります。(ジョイスティックは&amp;hellip;？)&lt;/p&gt;
-
-&lt;p&gt;cidフォルダー配下に、必要に応じてマクロファイル(slot1.txt ～ slot40.txt)を&lt;strong&gt;UTF8-BOM無&lt;/strong&gt;で作成します。
-マクロファイルがない場合は、今まで通りスロットにセットされたものを実行します。&lt;/p&gt;
-
-&lt;p&gt;UTF8-BOM無がよく分からない人は、下記テンプレートをダウンロードして使ってください。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/slotmac-v1.0.0/slotN.txt&#34;&gt;slotN.txt&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;slot1.txtなら、[A]キーに割り当てのクイックスロットという感じです。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;マクロは一行に一コマンドとなります。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;オーバーヒート用マクロファイル&#34;&gt;オーバーヒート用マクロファイル&lt;/h3&gt;
-
-&lt;p&gt;オーバーヒートのあるスキルでは、通常マクロファイルに加えてオーバーヒート用のマクロファイルを
-用意できます。&lt;/p&gt;
-
-&lt;p&gt;オーバーヒート用のマクロファイルの命名規則は以下の通りです。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;slot1-oh.txt ～ slot40-oh.txt
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;マクロコマンド一覧&#34;&gt;マクロコマンド一覧&lt;/h3&gt;
-
-&lt;h4 id=&#34;クイックスロット呼び出し&#34;&gt;クイックスロット呼び出し&lt;/h4&gt;
-
-&lt;p&gt;自身または他のクイックスロットを呼び出します。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;skill&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;-- 操作したクイックスロット自身を実行する。&lt;/span&gt;
-&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;skill&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- 10番目のクイックスロット(つまり[;]キー割り当てのもの)を実行する。&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h4 id=&#34;チャットコマンド&#34;&gt;チャットコマンド&lt;/h4&gt;
-
-&lt;p&gt;[/]から始まるチャットコマンドはすべて使用可能です。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;s&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;test&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- 一般チャットで[test]と発言する。&lt;/span&gt;
-&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;test&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- PTチャットで[test]と発言する。&lt;/span&gt;
-&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;indun&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;-- インスタンスダンジョンダイアログを呼び出す。&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;...&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h4 id=&#34;エコー&#34;&gt;エコー&lt;/h4&gt;
-
-&lt;p&gt;systemチャットで自分にしか見えない発言ができます。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;system&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;test&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- systemチャット[test]と発言する。&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h4 id=&#34;エモティコン&#34;&gt;エモティコン&lt;/h4&gt;
-
-&lt;p&gt;チャットコマンドやエコーでエモティコンを表示できます。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;s&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;emoticon_0009&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- 一般チャット[脱力エモ]と発言する。&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;エモティコンはクラス名で指定します。
-data\jp.ipf\xml\chat_emoticons.xml に載っていますが、以下に抜粋しておきます。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;1&amp;quot;&lt;/span&gt;  &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0001&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;幸せ&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;2&amp;quot;&lt;/span&gt;  &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0002&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;ケッピー好き&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;3&amp;quot;&lt;/span&gt;  &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0003&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;ケッピー泣く&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;4&amp;quot;&lt;/span&gt;  &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0004&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;コラッ&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;5&amp;quot;&lt;/span&gt;  &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0005&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;怒り&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;6&amp;quot;&lt;/span&gt;  &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0006&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;満足&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;7&amp;quot;&lt;/span&gt;  &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0007&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;コンパ&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;8&amp;quot;&lt;/span&gt;  &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0008&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;笑み&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;9&amp;quot;&lt;/span&gt;  &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0009&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;脱力&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;10&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0010&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;えっ！&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;11&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0011&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;えっ!!!&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;12&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0012&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;おえっ&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;13&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0013&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;イケイケ&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;14&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0014&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;怒り&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;15&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0015&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;爆破&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;16&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0016&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;悲しみ&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;17&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0017&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;左&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;18&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0018&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;右&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;19&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0019&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;狙い&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;20&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0020&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;王子&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;21&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0021&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;疲れた&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;22&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0022&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;ダラッ&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;23&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0023&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;キャーッ&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;24&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0024&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;hi&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;25&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0025&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;bye&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;26&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0026&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;ok&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;27&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0027&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;gg&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;28&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0028&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;暑い&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;29&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0029&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;寒い&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;30&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0030&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;頑張れ1&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;31&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0031&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;頑張れ2&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;32&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0032&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;お腹すいた1&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;33&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0033&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;お腹いっぱい&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;34&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0034&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;えっへん&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;35&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0035&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;感謝&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;36&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0036&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;はて？&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;37&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0037&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;おやすみ&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;38&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0038&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;オッケー&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;39&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0039&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;やだ1&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;40&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0040&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;やだ2&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;41&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0041&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;愛してる&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;42&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0042&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;眠い&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;43&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0043&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;お腹すいた2&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;44&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0044&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;痛い&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;45&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0045&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;ごめん&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;Class&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassID=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;46&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;ClassName=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;emoticon_0046&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;IconTokken=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;グッドラック&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h4 id=&#34;ポーズ&#34;&gt;ポーズ&lt;/h4&gt;
-
-&lt;p&gt;任意のポーズができます。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pose&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;LOVE&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- [ラブ]のポーズをする。&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;ポーズはクラス名を指定します。
-data\ies.ipf\pose.ies に載っていますが、以下に抜粋しておきます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ClassName
---
-LOVE
-WIN
-BEST
-FOLLOW
-HELP
-HELLO
-NO
-SORRY
-THANKS
-YES
-BOW1
-BOW2
-CLENCHFIST
-DOUBLEGUNS
-HADOUKEN
-SURPRISE
-CRYING
-BIRDPOSE
-OUTCAST
-QUESTION
-CRAP
-JUMPING
-CUTE
-HULAHULA
-IDK
-NONO
-OUCH
-POPCORN
-JIANGSHI
-CHEERS
-OTL
-POLLEN
-THANKS2
-DANCE
-KICK
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;タイマー&#34;&gt;タイマー&lt;/h4&gt;
-
-&lt;p&gt;クイックスロット実行後一定時間経過で任意のマクロコマンドを呼び出します。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;timer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pose&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;LOVE&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- クイックスロット実行後3秒経過で[ラブ]のポーズをする。&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;タイマーは複数張れますが、全て[クイックスロット実行後一定時間経過]換算で、waitではありません。[#timer# 3 xxx]を二行書いても、xxxが3秒後同時に行われることになります。&lt;/p&gt;
-
-&lt;h4 id=&#34;装備&#34;&gt;装備&lt;/h4&gt;
-
-&lt;p&gt;指定部位の装備を、指定した装備に変更します。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;equip&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;RH&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;ターネットソード&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- メインウエポンをターネットソードにする。&lt;/span&gt;
-&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;timer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;skill&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- クイックスロット実行1秒後、スロットスキルを実行する。&lt;/span&gt;
-&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;timer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;equip&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;RH&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;フィフスハンマー&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- クイックスロット実行2秒後、メインウエポンをフィフスハンマーにする。&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;装備変更には少々時間がかかるため、その後のスキル実行はタイマーで調整してください。&lt;/p&gt;
-
-&lt;p&gt;装備部位は以下の通りです。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;HAT
-HAT_L
-HAIR
-SHIRT
-GLOVES
-BOOTS
-HELMET
-ARMBAND
-RH
-LH
-OUTER
-OUTERADD1
-OUTERADD2
-BODY
-PANTS
-PANTSADD1
-PANTSADD2
-RING1
-RING2
-NECK
-HAT_T
-LENDS
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;装備解除&#34;&gt;装備解除&lt;/h4&gt;
-
-&lt;p&gt;指定部位の装備を外します。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;unequip&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;RH&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- メインウエポンを外す。&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2 id=&#34;cautions&#34;&gt;cautions.&lt;/h2&gt;
-
-&lt;p&gt;マクロファイルがUTF8-BOM付の場合、BOMが邪魔で一行目のマクロが認識されません。UTF8以外(MS932など)は、全マクロが認識できません。&lt;/p&gt;
-
-&lt;p&gt;連打するようなクイックスロットにはマクロつけても。。。&lt;/p&gt;
-</description>
+      <description>download. [v1.2.0] slotmac.ipf
+install. README.md
+introduction. settings. Nexon\TreeofSaviorJP\addons\slotmac フォルダーを作成します。
+slotmac フォルダー配下に自キャラの[cid]のフォルダーを作成します。
+操作中のキャラクターのcidが不明な場合は、F3キーで[スキルと特性]ダイアログを開き、右下の[slmc]Reloadボタンを右クリックしてください。
+slotmac フォルダー配下に操作キャラの[cid]のファイルが作成されますので、コピー &amp;gt; ファイル削除 &amp;gt; 新しいフォルダー作成 &amp;gt; フォルダー名変更 &amp;gt; ペースト　としてください。
+descriptions. v1.2.0 オーバーヒート対応 オーバーヒートのあるスキルでは、通常マクロファイルに加えてオーバーヒート用のマクロファイルを 用意できるようになりました。
+例えばオーバーヒート3のスキルでは、以下のようになります。
+初撃 =&amp;gt; オーバーヒート用マクロファイル 二撃 =&amp;gt; オーバーヒート用マクロファイル 三撃 =&amp;gt; 通常マクロファイル  オーバーヒート用マクロファイルがない場合は、 マクロファイルのない通常動作（スキル発動のみ）となります。
+オーバーヒート用マクロファイルの詳細はusage参照。
+v1.1.0 equipコマンド追加 equipコマンドにより、クイックスロット実行に合わせて装備を変更できます。
+詳細はマクロコマンド一覧参照。
+unequipコマンド追加 unequipコマンドにより、クイックスロット実行に合わせて装備を外せます。
+詳細はマクロコマンド一覧参照。
+v1.0.0 新規作成 アドオンがロードされると、クイックスロットにセットしたスキルやアイテムを実行時に指定したマクロを実行できるようになります。
+また、[スキルと特性]ダイアログの右下の[slmc]Reloadボタンが追加されます。左クリックでマクロを再読み込みします。
+usage. マクロファイル作成 キーボード、マウスモードの場合、クイックスロットは左下が1、右上が40となります。(ジョイスティックは&amp;hellip;？)
+cidフォルダー配下に、必要に応じてマクロファイル(slot1.txt ～ slot40.txt)をUTF8-BOM無で作成します。 マクロファイルがない場合は、今まで通りスロットにセットされたものを実行します。
+UTF8-BOM無がよく分からない人は、下記テンプレートをダウンロードして使ってください。
+slotN.txt
+slot1.txtなら、[A]キーに割り当てのクイックスロットという感じです。
+マクロは一行に一コマンドとなります。
+オーバーヒート用マクロファイル オーバーヒートのあるスキルでは、通常マクロファイルに加えてオーバーヒート用のマクロファイルを 用意できます。
+オーバーヒート用のマクロファイルの命名規則は以下の通りです。
+slot1-oh.txt ～ slot40-oh.</description>
     </item>
     
     <item>
@@ -405,38 +100,10 @@ LENDS
       <pubDate>Tue, 27 Jun 2017 00:34:27 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/bcuf2x3u2jmwjpo/wingofbeelze.ipf?dl=0&#34;&gt;[v1.0.2] wingofbeelze.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-2&#34;&gt;v1.0.2&lt;/h3&gt;
-
-&lt;h4 id=&#34;ワープロジック微調整&#34;&gt;ワープロジック微調整&lt;/h4&gt;
-
-&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
-
-&lt;h4 id=&#34;ワープロジック微調整-1&#34;&gt;ワープロジック微調整&lt;/h4&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;新規作成&#34;&gt;新規作成。&lt;/h4&gt;
-
-&lt;p&gt;ESCAPE+LSHIFTでエリア内をランダムにワープします。&lt;/p&gt;
-
-&lt;p&gt;ROのヴェルゼブブの羽のようなイメージです。&lt;/p&gt;
-</description>
+      <description>download. [v1.0.2] wingofbeelze.ipf
+install. README.md
+introduction. settings. descriptions. v1.0.2 ワープロジック微調整 v1.0.1 ワープロジック微調整 v1.0.0 新規作成。 ESCAPE+LSHIFTでエリア内をランダムにワープします。
+ROのヴェルゼブブの羽のようなイメージです。</description>
     </item>
     
     <item>
@@ -445,87 +112,26 @@ LENDS
       <pubDate>Fri, 19 May 2017 06:53:52 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/savequest/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/savequest-v1.1.0/savequest.ipf&#34;&gt;[v1.1.0] savequest.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/3bz19fmp4wj9nha/savequest.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/3bz19fmp4wj9nha/savequest.png?dl=1&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;p&gt;Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。&lt;/p&gt;
-
-&lt;h3 id=&#34;explanation&#34;&gt;explanation.&lt;/h3&gt;
-
-&lt;p&gt;savequestフォルダーにはquests_[cid].txtが自動的に生成され、
-キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。&lt;/p&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;クエスト欄操作機能追加&#34;&gt;クエスト欄操作機能追加&lt;/h4&gt;
-
-&lt;p&gt;F5キーで表示するクエスト欄でも本アドオンの機能（右クリックメニュー）が使えるようになります。&lt;/p&gt;
-
-&lt;h4 id=&#34;ダイレクトクエストワープ機能追加&#34;&gt;ダイレクトクエストワープ機能追加&lt;/h4&gt;
-
-&lt;p&gt;F5キーで表示するクエスト欄から直接クエストワープできるようになります。&lt;/p&gt;
-
-&lt;p&gt;ワープ可能なクエストの左上にワープアイコンが表示されるので、クリックしてください。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-2&#34;&gt;v1.0.2&lt;/h3&gt;
-
-&lt;h4 id=&#34;バグ対応&#34;&gt;バグ対応&lt;/h4&gt;
-
-&lt;p&gt;保存したクエスト情報がチーム毎に共有される問題を修正しました。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/issues/3&#34;&gt;issue #3&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;本修正により、情報保存形式が変更され、クエスト保存状態が初期化されます。&lt;/p&gt;
-
-&lt;p&gt;お手数ですが、再チェックまたは、旧仕様情報（quests.txt）の内容をquests_[cid].txtにコピペしてください。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
-
-&lt;h4 id=&#34;バグ対応-1&#34;&gt;バグ対応&lt;/h4&gt;
-
-&lt;p&gt;再ログイン時に前回の状態が保存されない問題を修正しました。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/issues/1&#34;&gt;issue #1&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;新規作成&#34;&gt;新規作成&lt;/h4&gt;
-
-&lt;p&gt;アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、
-ワープ直後の誤完了を防止できます。&lt;/p&gt;
-
-&lt;h2 id=&#34;usage&#34;&gt;usage.&lt;/h2&gt;
-
-&lt;p&gt;UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、
-メニュー（save, release, cancel）が開きます。&lt;/p&gt;
-
-&lt;p&gt;saveを選択すると該当クエストのNPCは非表示となります。
-また、save済みのクエストのワープアイコン直下に[saved.]の文字を表示します。&lt;/p&gt;
-
-&lt;p&gt;元に戻すにはreleaseを選択します。&lt;/p&gt;
-
-&lt;h2 id=&#34;cautions&#34;&gt;cautions.&lt;/h2&gt;
-
-&lt;p&gt;念のため、アドオンは補助的な位置づけとし、
-ワープ直後はNPCを選択しないよう留意してください。&lt;/p&gt;
-
-&lt;p&gt;一時消去したNPCは、release後、エリアチェンジで表示できます。&lt;/p&gt;
-</description>
+      <description>download. [v1.1.0] savequest.ipf
+install. README.md
+introduction. 
+settings. Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。
+explanation. savequestフォルダーにはquests_[cid].txtが自動的に生成され、 キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。
+descriptions. v1.1.0 クエスト欄操作機能追加 F5キーで表示するクエスト欄でも本アドオンの機能（右クリックメニュー）が使えるようになります。
+ダイレクトクエストワープ機能追加 F5キーで表示するクエスト欄から直接クエストワープできるようになります。
+ワープ可能なクエストの左上にワープアイコンが表示されるので、クリックしてください。
+v1.0.2 バグ対応 保存したクエスト情報がチーム毎に共有される問題を修正しました。
+issue #3
+本修正により、情報保存形式が変更され、クエスト保存状態が初期化されます。
+お手数ですが、再チェックまたは、旧仕様情報（quests.txt）の内容をquests_[cid].txtにコピペしてください。
+v1.0.1 バグ対応 再ログイン時に前回の状態が保存されない問題を修正しました。
+issue #1
+v1.0.0 新規作成 アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、 ワープ直後の誤完了を防止できます。
+usage. UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、 メニュー（save, release, cancel）が開きます。
+saveを選択すると該当クエストのNPCは非表示となります。 また、save済みのクエストのワープアイコン直下に[saved.]の文字を表示します。
+元に戻すにはreleaseを選択します。
+cautions. 念のため、アドオンは補助的な位置づけとし、 ワープ直後はNPCを選択しないよう留意してください。
+一時消去したNPCは、release後、エリアチェンジで表示できます。</description>
     </item>
     
     <item>
@@ -534,38 +140,12 @@ LENDS
       <pubDate>Thu, 18 May 2017 07:12:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/staminagauge/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/staminigauge-v1.0.1/staminigauge.ipf&#34;&gt;[v1.0.1] staminigauge.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/rbcn9uizoiwpw2h/staminagauge.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/rbcn9uizoiwpw2h/staminagauge.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
-
-&lt;h4 id=&#34;ゲージ位置調整&#34;&gt;ゲージ位置調整&lt;/h4&gt;
-
-&lt;p&gt;スタミナゲージと名前が被らないよう調整しました。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;新規作成&#34;&gt;新規作成&lt;/h4&gt;
-
-&lt;p&gt;アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。&lt;/p&gt;
-
-&lt;p&gt;若干キャラ名と被りますが、気にしないように。&lt;/p&gt;
-</description>
+      <description>download. [v1.0.1] staminigauge.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.1 ゲージ位置調整 スタミナゲージと名前が被らないよう調整しました。
+v1.0.0 新規作成 アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。
+若干キャラ名と被りますが、気にしないように。</description>
     </item>
     
     <item>
@@ -574,128 +154,11 @@ LENDS
       <pubDate>Fri, 05 May 2017 23:23:44 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/pickiteminfo/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/pickiteminfo-v1.0.0/pickiteminfo.ipf&#34;&gt;[v1.0.0] pickiteminfo.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/no0vqpfqi6ev8h6/pickiteminfo.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/no0vqpfqi6ev8h6/pickiteminfo.png?dl=1&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;新規作成&#34;&gt;新規作成&lt;/h4&gt;
-
-&lt;p&gt;アドオンがロードされると、ALTキーを押さなくとも、ドロップアイテムの名称が表示されるようになります。&lt;/p&gt;
-
-&lt;p&gt;アイテム名称はレアリティで色が変わります。
-色の変化はColored Item Namesをパク&amp;hellip;参考にしています。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] オブジェクト探索アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/objectdetector/</link>
-      <pubDate>Fri, 05 May 2017 23:23:17 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/objectdetector/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/objectdetector-v1.0.1/objectdetector.ipf&#34;&gt;[v1.0.1] objectdetector.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/4sw0u14qp0rn1lo/minimap.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/k0rqtejl6vgc4ks/map.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
-
-&lt;p&gt;性能改善しました。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、マップとミニマップに四角形のアイコン[*1]が表示されます。&lt;/p&gt;
-
-&lt;p&gt;[*1] アイコン配色とオブジェクトの関係は以下の通りです。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;色&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;オブジェクト&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;赤&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;モンスター&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;赤点滅&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;クローバーバフモンスター&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;青&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;PC&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;橙&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;NPC&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;橙点滅&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;宝箱&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;紫&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;ルーツクリスタル&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;白&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;ドロップアイテム&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;黒&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;その他&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;配色をカスタマイズする設定を追加する予定です。&lt;/p&gt;
-
-&lt;p&gt;某レーダーと違いマップにオーバーレイせず直接描画しているため、既存UIの邪魔をしません。&lt;/p&gt;
-</description>
+      <description>download. [v1.0.0] pickiteminfo.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.0 新規作成 アドオンがロードされると、ALTキーを押さなくとも、ドロップアイテムの名称が表示されるようになります。
+アイテム名称はレアリティで色が変わります。 色の変化はColored Item Namesをパク&amp;hellip;参考にしています。</description>
     </item>
     
     <item>
@@ -704,142 +167,17 @@ LENDS
       <pubDate>Fri, 05 May 2017 23:08:14 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/monsterstatus/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/monsterstatus-v2.2.0/monsterstatus.ipf&#34;&gt;[v2.2.0] monsterstatus.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;amp-youtube data-videoid=&#34;IjzyuRoAbQo&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v2-2-0&#34;&gt;v2.2.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;移動種別表示追加&#34;&gt;移動種別表示追加&lt;/h4&gt;
-
-&lt;p&gt;移動種別の表示を追加し、飛行しているか分かるようにしました。&lt;/p&gt;
-
-&lt;h3 id=&#34;v2-1-0&#34;&gt;v2.1.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;種族-属性表示追加&#34;&gt;種族、属性表示追加&lt;/h4&gt;
-
-&lt;p&gt;種族、属性の表示を追加しました。&lt;/p&gt;
-
-&lt;h3 id=&#34;v2-0-0&#34;&gt;v2.0.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;討伐数-ドロップアイテム名-アイテム収集率表示追加&#34;&gt;討伐数、ドロップアイテム名、アイテム収集率表示追加&lt;/h4&gt;
-
-&lt;p&gt;冒険日誌から討伐数、ドロップアイテム名、アイテム収集率を取得、
-表示する機能を追加しました。
-また、ドロップアイテム名からアイテムツールチップが開けます。&lt;/p&gt;
-
-&lt;h4 id=&#34;表示ステータス-フォーマット調整&#34;&gt;表示ステータス 、フォーマット調整&lt;/h4&gt;
-
-&lt;p&gt;表示するステータスは現在のところ以下の通りです。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;表示名&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;内容&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;ATK&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;物理攻撃力(最大)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;MATK&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;魔法攻撃力(最大)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;DEF&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;物理防御力&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;MDEF&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;魔法防御力&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;UIウィンドウをドラッグで移動できるようになりました。&lt;/p&gt;
-
-&lt;p&gt;設定はログイン中のみ有効です。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;新規作成&#34;&gt;新規作成&lt;/h4&gt;
-
-&lt;p&gt;アドオンがロードされると、ターゲットしたモンスターのステータス（*1）が画面上部に表示されます。&lt;/p&gt;
-
-&lt;p&gt;[*1] 表示するステータスは現在のところ以下の通りです。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;表示名&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;内容&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;ATK&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;物理攻撃力(最大)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;MATK&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;魔法攻撃力(最大)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;DEF&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;物理防御力&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;MDEF&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;魔法防御力&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;DR&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;回避率&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;CDR&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;クリティカル回避率&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;CATK&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;クリティカル攻撃力&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;CDEF&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;クリティカル防御力&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
+      <description> download. [v2.2.0] monsterstatus.ipf
+install. README.md
+introduction.  settings. descriptions. v2.2.0 移動種別表示追加 移動種別の表示を追加し、飛行しているか分かるようにしました。
+v2.1.0 種族、属性表示追加 種族、属性の表示を追加しました。
+v2.0.0 討伐数、ドロップアイテム名、アイテム収集率表示追加 冒険日誌から討伐数、ドロップアイテム名、アイテム収集率を取得、 表示する機能を追加しました。 また、ドロップアイテム名からアイテムツールチップが開けます。
+表示ステータス 、フォーマット調整 表示するステータスは現在のところ以下の通りです。
+   表示名 内容     ATK 物理攻撃力(最大)   MATK 魔法攻撃力(最大)   DEF 物理防御力   MDEF 魔法防御力    UIウィンドウをドラッグで移動できるようになりました。
+設定はログイン中のみ有効です。
+v1.0.0 新規作成 アドオンがロードされると、ターゲットしたモンスターのステータス（*1）が画面上部に表示されます。
+[*1] 表示するステータスは現在のところ以下の通りです。
+   表示名 内容     ATK 物理攻撃力(最大)   MATK 魔法攻撃力(最大)   DEF 物理防御力   MDEF 魔法防御力   DR 回避率   CDR クリティカル回避率   CATK クリティカル攻撃力   CDEF クリティカル防御力    </description>
     </item>
     
     <item>
@@ -848,44 +186,15 @@ LENDS
       <pubDate>Wed, 03 May 2017 17:18:29 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/distance/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/distance-v1.1.1/distance.ipf&#34;&gt;[v1.1.1] distance.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;amp-youtube data-videoid=&#34;IUtCzMMKbXU&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-1-1&#34;&gt;v1.1.1&lt;/h3&gt;
-
-&lt;p&gt;性能改善しました。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
-
-&lt;p&gt;メートル単位対応しました。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると近隣（20m範囲内）モンスターに自キャラからの距離がメートル単位で表示されます。&lt;/p&gt;
-
-&lt;p&gt;距離が12mを超えると、表示が消えます。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると近隣（500範囲内）モンスターに自キャラからの距離が表示されます。&lt;/p&gt;
-
-&lt;p&gt;単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。&lt;/p&gt;
-</description>
+      <description>download. [v1.1.1] distance.ipf
+install. README.md
+introduction.  settings. descriptions. v1.1.1 性能改善しました。
+v1.1.0 メートル単位対応しました。
+アドオンがロードされると近隣（20m範囲内）モンスターに自キャラからの距離がメートル単位で表示されます。
+距離が12mを超えると、表示が消えます。
+v1.0.0 新規作成。
+アドオンがロードされると近隣（500範囲内）モンスターに自キャラからの距離が表示されます。
+単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。</description>
     </item>
     
     <item>
@@ -894,36 +203,13 @@ LENDS
       <pubDate>Wed, 03 May 2017 17:18:23 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/hidename/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/hidename-v1.0.1/hidename.ipf&#34;&gt;[v1.0.1] hidename.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/gzklevo002i3s8x/hidename.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/gzklevo002i3s8x/hidename.png?dl=1&#34; width=&#34;320&#34; height=&#34;185&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
-
-&lt;p&gt;ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。&lt;/p&gt;
-
-&lt;p&gt;動画を撮るときに設定では非表示にできなかったので。。。&lt;/p&gt;
-</description>
+      <description>download. [v1.0.1] hidename.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.1 ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。
+v1.0.0 新規作成。
+アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。
+動画を撮るときに設定では非表示にできなかったので。。。</description>
     </item>
     
     <item>
@@ -932,97 +218,16 @@ LENDS
       <pubDate>Wed, 03 May 2017 17:18:10 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/repairendur/</guid>
-      <description>
+      <description>download. [v1.1.0] repairendur.ipf
+install. README.md
+introduction. 
 
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/repairendur-v1.1.0/repairendur.ipf&#34;&gt;[v1.1.0] repairendur.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://1.bp.blogspot.com/-1pmFYgl40N4/WMBvW1zRsHI/AAAAAAAACpU/8sqEnAesGEIe2gsCjAyO5UXpbsJoHZwhQCLcB/s1600/repairendur1.PNG&#34;&gt;&lt;amp-img src=&#34;https://1.bp.blogspot.com/-1pmFYgl40N4/WMBvW1zRsHI/AAAAAAAACpU/8sqEnAesGEIe2gsCjAyO5UXpbsJoHZwhQCLcB/s320/repairendur1.PNG&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://1.bp.blogspot.com/-7fqCudbXptY/WMBvWp50OZI/AAAAAAAACpQ/huWjvdPaiH0f5cI0M5W18weC534JFuIqgCLcB/s1600/repairendur2_1.png&#34;&gt;&lt;amp-img src=&#34;https://1.bp.blogspot.com/-7fqCudbXptY/WMBvWp50OZI/AAAAAAAACpQ/huWjvdPaiH0f5cI0M5W18weC534JFuIqgCLcB/s320/repairendur2_1.png&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;p&gt;Nexon\TreeofSaviorJP\addons\repairendur\settings.txt を作成します。&lt;/p&gt;
-
-&lt;p&gt;以下の初期設定を&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/repairendur/settings.txt&#34;&gt;settings.txt&lt;/a&gt;コピペします。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;reen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Weapon&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;Lp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;Mp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;Hp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;reen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Armor&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;Lp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;35&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;Mp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;Hp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;reen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;SubWeapon&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;reen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Weapon&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;-- added v1.1.0&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;reen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;EndurColor&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;Lc&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;FFFF00&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;Mc&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;FF0000&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;Hc&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;000000&amp;quot;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;explanation&#34;&gt;explanation.&lt;/h3&gt;
-
-&lt;p&gt;この設定は装備の耐久度と割合に応じた文字色の設定です。&lt;/p&gt;
-
-&lt;p&gt;[Weapon]、[Armor]は装備の耐久度の色分け用閾値で、Low, Middle, Highの3段階を、武器用と防具用で用意しています。&lt;/p&gt;
-
-&lt;p&gt;[EndurColor]は装備の耐久度閾値に対応する色をRGBで指定します。&lt;/p&gt;
-
-&lt;h3 id=&#34;explanation-of-initial-parameters&#34;&gt;explanation of initial parameters.&lt;/h3&gt;
-
-&lt;p&gt;武器&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;耐久度[30]%以下で[黄]色&lt;/li&gt;
-&lt;li&gt;耐久度[5]%以下で[赤]色&lt;/li&gt;
-&lt;li&gt;耐久度[1]%以下で[黒]色&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;防具&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;耐久度[35]%以下で[黄]色&lt;/li&gt;
-&lt;li&gt;耐久度[10]%以下で[赤]色&lt;/li&gt;
-&lt;li&gt;耐久度[5]%以下で[黒]色&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;サブウェポン&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;武器と同様&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
-
-&lt;p&gt;サブウェポン用の設定を追加しました。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/issues/2&#34;&gt;issue #2&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;初期値は武器の設定値を見るようにしています。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
-
-&lt;p&gt;修理後に以前の耐久度表示が残る問題を修正しました。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、NPC修理、露天修理の装備アイコンに耐久度を設定の閾値に応じた文字色で表示します。&lt;/p&gt;
-</description>
+settings. Nexon\TreeofSaviorJP\addons\repairendur\settings.txt を作成します。
+以下の初期設定をsettings.txtコピペします。
+reen.Weapon = { Lp = 30, Mp = 5, Hp = 1 }; reen.Armor = { Lp = 35, Mp = 10, Hp = 5 }; reen.SubWeapon = reen.Weapon; -- added v1.1.0 reen.EndurColor = { Lc = &amp;quot;FFFF00&amp;quot;, Mc = &amp;quot;FF0000&amp;quot;, Hc = &amp;quot;000000&amp;quot; };  explanation. この設定は装備の耐久度と割合に応じた文字色の設定です。
+[Weapon]、[Armor]は装備の耐久度の色分け用閾値で、Low, Middle, Highの3段階を、武器用と防具用で用意しています。
+[EndurColor]は装備の耐久度閾値に対応する色をRGBで指定します。
+explanation of initial parameters. 武器</description>
     </item>
     
     <item>
@@ -1031,30 +236,11 @@ LENDS
       <pubDate>Wed, 03 May 2017 17:18:02 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/skillitemcounter/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/releases/download/skillitemcounter-v1.0.0/skillitemcounter.ipf&#34;&gt;[v1.0.0] skillitemcounter.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/7nkaxby6mf76qwr/skillitemcounter.png?dl=1&#34;&gt;&lt;amp-img src=&#34;https://www.dropbox.com/s/7nkaxby6mf76qwr/skillitemcounter.png?dl=1&#34; width=&#34;320&#34; height=&#34;184&#34; title=&#34;&#34; layout=&#34;responsive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、クイックスロットにセットしている、消費アイテムのあるスキルスロット右上に、消費アイテムの個数に応じたスキルの使用回数を追加で表示します。&lt;/p&gt;
-</description>
+      <description>download. [v1.0.0] skillitemcounter.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.0 新規作成。
+アドオンがロードされると、クイックスロットにセットしている、消費アイテムのあるスキルスロット右上に、消費アイテムの個数に応じたスキルの使用回数を追加で表示します。</description>
     </item>
     
     <item>
@@ -1063,103 +249,31 @@ LENDS
       <pubDate>Wed, 03 May 2017 17:17:20 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon-x/fly/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/5gq04f1jpoju4na/fly.ipf?dl=0&#34;&gt;[v1.2.0] fly.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;amp-youtube data-videoid=&#34;Ad_LIzKk_no&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;p&gt;Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。&lt;/p&gt;
-
-&lt;p&gt;以下の初期設定をコピペします。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fly&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;config&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;pos&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;jumpPower&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;140&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;showButton&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;cameraHeight&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;withPet&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;explanation&#34;&gt;explanation.&lt;/h3&gt;
-
-&lt;h4 id=&#34;pos&#34;&gt;pos.&lt;/h4&gt;
-
-&lt;p&gt;ボタンの座標指定です。&lt;/p&gt;
-
-&lt;p&gt;[showButton]が0の場合は無視されます。&lt;/p&gt;
-
-&lt;h4 id=&#34;jumppower&#34;&gt;jumpPower.&lt;/h4&gt;
-
-&lt;p&gt;飛距離です。&lt;/p&gt;
-
-&lt;p&gt;100では弓に狙われます。
-150では通常攻撃が届きません。（wizでは140で届きます。）&lt;/p&gt;
-
-&lt;h4 id=&#34;showbutton&#34;&gt;showButton.&lt;/h4&gt;
-
-&lt;p&gt;ボタン表示状態です。&lt;/p&gt;
-
-&lt;p&gt;1の場合のみ、飛行ON/OFFボタンを[pos]の座標に表示します。&lt;/p&gt;
-
-&lt;h4 id=&#34;cameraheight&#34;&gt;cameraHeight.&lt;/h4&gt;
-
-&lt;p&gt;飛行時のカメラ位置です。&lt;/p&gt;
-
-&lt;p&gt;飛距離によりますが、50～70あたりで自分の影が画面中央あたりに見え、歩行しやすいです。&lt;/p&gt;
-
-&lt;p&gt;0を指定すると、今まで通りの視点になります。&lt;/p&gt;
-
-&lt;h4 id=&#34;withpet&#34;&gt;withPet.&lt;/h4&gt;
-
-&lt;p&gt;ペット飛行有無です。&lt;/p&gt;
-
-&lt;p&gt;1を指定すると、ペットも一緒に飛行します。&lt;/p&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-2-0&#34;&gt;v1.2.0&lt;/h3&gt;
-
-&lt;p&gt;設定ファイルのフォーマット変更、cameraHeight、withPetオプションを実装しました。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
-
-&lt;p&gt;設定[ボタン表示状態]を追加しました。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、[ボタン表示状態]が1の場合のみ、[Fly]ボタンが表示されます。&lt;/p&gt;
-
-&lt;p&gt;ショートカットキーを追加しました。&lt;/p&gt;
-
-&lt;p&gt;ESCAPE+UP(上矢印)で飛行、飛行解除ができます。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると[Fly]ボタンが表示されます。&lt;/p&gt;
-
-&lt;p&gt;ボタンを押すと飛行状態、地上に降りるを繰り返します。&lt;/p&gt;
-
-&lt;p&gt;飛行状態でも地上の敵を攻撃できます。
-飛行状態では地上の敵はこちらを近接攻撃できません。&lt;/p&gt;
-
-&lt;p&gt;実際は地上を歩行しているのでトラップには気をつけてください。&lt;/p&gt;
-
-&lt;p&gt;飛行状態ではスキルが使用不可ですが、ノックバックを受けるとスキルが使用可能になりますので、わざとノックバックするようになっています。&lt;/p&gt;
-
-&lt;p&gt;休息中に飛行すると、休息バフがついた状態で行動できます。
-ただし、攻撃などの操作を行うと休息バフは解除されます。&lt;/p&gt;
-</description>
+      <description>download. [v1.2.0] fly.ipf
+install. README.md
+introduction.  settings. Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。
+以下の初期設定をコピペします。
+fly.config = { pos = {x = 100, y = 100}, jumpPower = 140, showButton = 0, cameraHeight = 50, withPet = 1 };  explanation. pos. ボタンの座標指定です。
+[showButton]が0の場合は無視されます。
+jumpPower. 飛距離です。
+100では弓に狙われます。 150では通常攻撃が届きません。（wizでは140で届きます。）
+showButton. ボタン表示状態です。
+1の場合のみ、飛行ON/OFFボタンを[pos]の座標に表示します。
+cameraHeight. 飛行時のカメラ位置です。
+飛距離によりますが、50～70あたりで自分の影が画面中央あたりに見え、歩行しやすいです。
+0を指定すると、今まで通りの視点になります。
+withPet. ペット飛行有無です。
+1を指定すると、ペットも一緒に飛行します。
+descriptions. v1.2.0 設定ファイルのフォーマット変更、cameraHeight、withPetオプションを実装しました。
+v1.1.0 設定[ボタン表示状態]を追加しました。
+アドオンがロードされると、[ボタン表示状態]が1の場合のみ、[Fly]ボタンが表示されます。
+ショートカットキーを追加しました。
+ESCAPE+UP(上矢印)で飛行、飛行解除ができます。
+v1.0.0 新規作成。
+アドオンがロードされると[Fly]ボタンが表示されます。
+ボタンを押すと飛行状態、地上に降りるを繰り返します。
+飛行状態でも地上の敵を攻撃できます。 飛行状態では地上の敵はこちらを近接攻撃できません。
+実際は地上を歩行しているのでトラップには気をつけてください。</description>
     </item>
     
     <item>
@@ -1168,43 +282,179 @@ LENDS
       <pubDate>Fri, 28 Apr 2017 05:35:06 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/warehousepicker/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/qkoh8lkds1m82d1/warehousepicker.ipf?dl=0&#34;&gt;warehousepicker.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;amp-youtube data-videoid=&#34;K0V5lyVg_WY&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;p&gt;Nexon\TreeofSaviorJP\addons\warehousepicker フォルダーを作成します。&lt;/p&gt;
-
-&lt;p&gt;各所持キャラで個人倉庫を開閉する（正確には閉じる瞬間）と、先ほど作成したフォルダーに個人倉庫のアイテム情報を保存します。&lt;/p&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされた後、いずれかのキャラで個人倉庫を開くと、倉庫左下に[whpk]ボタンが出現します。
-ボタンを押すと、事前に保存された所持キャラの個人倉庫のアイテム情報を表示するダイアログを開きます。&lt;/p&gt;
-
-&lt;p&gt;ダイアログには、事前に個人倉庫のアイテム情報が作成された所持キャラ名のドロップダウンリストが表示されます。
-ドロップダウンリストで選択した所持キャラ名の個人倉庫のアイテム情報（アイテムアイコン、名称、個数）をダイアログ内に表示します。&lt;/p&gt;
-
-&lt;p&gt;最低一度は各所持キャラで個人倉庫を開閉する必要がありますが、それ以降はいずれかのキャラでログインすると全員の個人倉庫を見ることができます。&lt;/p&gt;
-
-&lt;p&gt;今のところチームの区別なくキャラ名のみ表示しますので、複数チームを所持している場合に使い勝手に難があるかもしれません。
-使いにくいようでしたら改善します。&lt;/p&gt;
-</description>
+      <description>download. warehousepicker.ipf
+install. README.md
+introduction.  settings. Nexon\TreeofSaviorJP\addons\warehousepicker フォルダーを作成します。
+各所持キャラで個人倉庫を開閉する（正確には閉じる瞬間）と、先ほど作成したフォルダーに個人倉庫のアイテム情報を保存します。
+descriptions. v1.0.0 新規作成。
+アドオンがロードされた後、いずれかのキャラで個人倉庫を開くと、倉庫左下に[whpk]ボタンが出現します。 ボタンを押すと、事前に保存された所持キャラの個人倉庫のアイテム情報を表示するダイアログを開きます。
+ダイアログには、事前に個人倉庫のアイテム情報が作成された所持キャラ名のドロップダウンリストが表示されます。 ドロップダウンリストで選択した所持キャラ名の個人倉庫のアイテム情報（アイテムアイコン、名称、個数）をダイアログ内に表示します。
+最低一度は各所持キャラで個人倉庫を開閉する必要がありますが、それ以降はいずれかのキャラでログインすると全員の個人倉庫を見ることができます。
+今のところチームの区別なくキャラ名のみ表示しますので、複数チームを所持している場合に使い勝手に難があるかもしれません。 使いにくいようでしたら改善します。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] チャット入力欄表示中に所持中のメガホン数を表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/megaphonecount/</link>
+      <pubDate>Fri, 28 Apr 2017 05:34:13 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/megaphonecount/</guid>
+      <description>download. megaphonecount.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.0 新規作成。
+アドオンがロードされると、チャット入力欄表示中に所持中のメガホン数が表示されます。 それだけです。。。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] マーケットデフォルト出品日数変更アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/marketselltimechanger/</link>
+      <pubDate>Fri, 28 Apr 2017 05:34:04 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/marketselltimechanger/</guid>
+      <description>download. marketselltimechanger.ipf
+install. README.md
+introduction. settings. Nexon\TreeofSaviorJP\addons\marketselltimechanger\settings.txt を作成します。
+ファイルを開いて一行目に、（デフォルト1日が良ければ）1と入力します。
+設定は、[デフォルト出品日数]のみ。
+現状、1,3,5,7 が使用でき、それ以外が入力されていた場合は、システムのデフォルト値が採用されます。
+descriptions. v1.0.0 新規作成。
+アドオンがロードされると、設定ファイルに記載された値でマーケットのデフォルト出品日数を変更します。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] DPS計測アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/dpsmeter/</link>
+      <pubDate>Fri, 28 Apr 2017 05:33:35 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/dpsmeter/</guid>
+      <description> download. [v1.3.0] dpsmeter.ipf
+install. README.md
+introduction.  settings. descriptions. v1.3.0 DPS平均値表示を追加 DPS平均値表示に伴い、フォーマットを変更 現在のDPS[{淡青}平均DPS][{淡赤}最大DPS] dps  モンスター死亡時のsystemメッセージによる通知をデフォルトOFFに変更 表示するには、DPSのUIを右クリック &amp;gt; [toggleChat]を選択します。
+選択する度に通知のON/OFFを切り替えます。
+DPS計測対象を調整  ボコルのゾンビフィーで召喚するゾンビを除外  v1.2.0 DPS計測方法を調整 ターゲットアイコン表示が可能な距離まで近づいて、初撃時（を含む。初撃はdamage/1sec換算）からDPS計測を開始します。
+ターゲットが死ぬかフレームアウトするまで計測は止まりません。
+DPS計測対象を調整 旧バージョンではfaction = &amp;ldquo;Monster&amp;rdquo;を計測対象としていましたが不十分でしたので、 計測対象を拡大し、ペット以外（faction ~= &amp;ldquo;Pet&amp;rdquo;）としました。
+IWやルーツクリスタルも対象となってしまいますが、計測されないよりは良いかと。。。
+v1.1.0 UI表示を追加 現在のDPS、最大DPSをモンスターUI近辺に、以下のフォーマット表示します。
+[現在のDPS]([最大DPS]) dps  モンスター死亡時のsystemメッセージによる通知を追加 モンスター死亡時、最大DPSをsystemメッセージで表示します。
+ターゲットアイコン表示が可能な距離まで近づくとDPS計測を開始、離れると停止します。
+v1.0.0 新規作成。 アドオンがロードされるとDPS計測が有効になり、計測結果はsystemメッセージで通知します。
+現時点ではコンバットログが取れないので、正確な測定は実現できていません。
+少しでも測定精度を上げたい場合は、以下の点に注意してください。
+ ソロで戦う。（コンパニオンも出さない） 混戦しない。 回復持ちの敵は避ける。  </description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] コンパニオンのリングコマンドを拡張するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/customcompanion/</link>
+      <pubDate>Fri, 28 Apr 2017 05:33:15 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/customcompanion/</guid>
+      <description>download. customcompanion.ipf
+install. README.md
+introduction.  settings. descriptions. v1.0.0 新規作成。
+アドオンがロードされると、コンパニオンに近づくだけでリングコマンドが出現するようになります。 今まで通り、コンパニオンから離れるとリングコマンドが消えます。
+リングコマンドに[自動戦闘ON/OFFトグルアイコン]、[コンパニオン休眠化]のスロットを追加します。 ホットキーの割り当てはありません。
+騎乗スキルのないキャラ、コンパニオンの場合は、リングコマンドの[騎乗]、[降りる]のスロットを削除します。
+自動戦闘ON/OFF クリックするたびに自動戦闘のON/OFFを切り替えます。 切り替え結果はチャット上にSYSTEMメッセージで表示します。
+コンパニオン休眠化 クリックするとコンパニオンを休眠状態にします。 コンパニオンの休眠解除は、今まで通り、コンパニオン情報から行います。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 特性習得ウィンドウに各特性の最大レベルを表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/customabilityshop/</link>
+      <pubDate>Fri, 28 Apr 2017 05:33:06 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/customabilityshop/</guid>
+      <description>download. 2/22パッチで最大値が表示されるようになりましたので非公開にします。
+install. README.md
+introduction. 
+settings. descriptions. v1.0.0 新規作成。
+アドオンがロードされると、特性習得ウィンドウに各特性の最大レベルが表示されます。 無くてもいい気がするけど。。。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）</title>
+      <link>http://www.weizlogy.gq/tos/addon/console/</link>
+      <pubDate>Fri, 28 Apr 2017 05:32:54 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/console/</guid>
+      <description>download. [v1.1.0] console.ipf
+install. README.md
+introduction. settings. Nexon\TreeofSaviorJP\addons\console\settings.txt を作成します。
+ファイルを開いて一行目に、10 210 1と入力します。 設定は半角スペース区切りで、[ボタンのX座標] [ボタンのY座標] [ボタン表示状態]。
+descriptions. v1.1.0 設定[ボタン表示状態]を追加しました。
+アドオンがロードされるとボタン表示状態が1の場合のみ、[Console]ボタンが表示されます。 ボタンを押すと抽出を開始します。 ボタン表示状態はエリアチェンジの度に読み込まれるため、ゲーム起動中にボタン表示を切り替えることも可能です。
+v1.0.0 新規作成。
+アドオンがロードされると[Console]ボタンが表示されます。ボタンを押すと抽出を開始します。 Nexon\TreeofSaviorJP\data\console.txt に抽出結果が出力されます。 実際の抽出結果は別記事にあります。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon for developpers] アドオンで自作スキンを使用する方法</title>
+      <link>http://www.weizlogy.gq/tos/addon-dev/use-custom-skins/</link>
+      <pubDate>Sun, 26 Mar 2017 15:41:17 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon-dev/use-custom-skins/</guid>
+      <description>ifpファイル内部構成 xxx.ipf ├───addon_d.ipf │ └───xxx │ ├───xxx.lua │ └───xxx.xml └───ui.ipf ├───baseskinset │ └───xxx.xml └───skin └───xxx.tga  addon_d.ipf Tree Of Savior アドオン作成～設置方法まとめ 参照。
+ui.ipf baseskinset 自作スキンの読込とアドオン内部で使用するスキンの定義を行います。
+xxx.xml
+&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;skinset name=&amp;quot;Base&amp;quot;&amp;gt; &amp;lt;imagelist category=&amp;quot;ringcommand&amp;quot;&amp;gt; &amp;lt;image name=&amp;quot;image1&amp;quot; file=&amp;quot;\skin\xxx.tga&amp;quot; imgrect=&amp;quot;211 5 197 195&amp;quot;/&amp;gt; &amp;lt;image name=&amp;quot;image2&amp;quot; file=&amp;quot;\skin\xxx.tga&amp;quot; imgrect=&amp;quot;417 5 197 195&amp;quot;/&amp;gt; &amp;lt;/imagelist&amp;gt; &amp;lt;/skinset&amp;gt;  name アドオン内部で参照するスキン名。
+オリジナルのスキン名と重複しないように気を付けます。
+file スキン読み込み元画像ファイルパス。
+imgrect スキン読み込み元画像ファイル内画像座標。
+半角スペース区切りで四角形の左上と右下の頂点座標を指定します。 =&amp;gt; x, y, width, height
+skin 自作スキン画像ファイルを配置します。
+アドオン実装方法 xml &amp;lt;picture name=&amp;quot;xxx&amp;quot; rect=&amp;quot;0 0 70 30&amp;quot; margin=&amp;quot;0 0 45 0&amp;quot; hittest=&amp;quot;true&amp;quot; image=&amp;quot;image1&amp;quot;/&amp;gt;  lua local pic = GET_CHILD(xxx, &amp;quot;xxx&amp;quot;, &amp;quot;ui::CPicture&amp;quot;); pic:SetImage(&amp;quot;image2&amp;quot;);  tgaファイル 画像ファイルの一つ。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon for developpers] iesファイルをcsv形式のファイルに変換するソフト</title>
+      <link>http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/</link>
+      <pubDate>Sun, 26 Mar 2017 15:41:13 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/</guid>
+      <description>overviews. Tree Of Saviorのipfファイル内には拡張子がiesのファイルがあります。
+Ipf Suiteでは中身を見ることができますが、extractしても実体はバイナリファイル（かつ、暗号化されている）で、 テキストエディタでもバイナリエディタでも見ても分かりません。
+もちろん、grep検索で引き当てることもできません。
+本ソフトは、iesファイルを解析し、可読性のあるcsvファイルを生成します。
+download. IEStoCSV.zip
+install. ダウンロードしたzipを解凍し、任意の場所に配置します。
+descriptions. コンソールアプリケーションなので、コマンドプロンプトで操作します。
+IEStoCSV.exe &amp;lt;走査ディレクトリ&amp;gt;  サブフォルダを含む走査ディレクトリ配下のiesファイルに対して、対となるcsv形式のファイルを生成します。
+走査ディレクトリ省略時は、本ソフトのある位置を対象とします。
+caution. iesファイル内に韓国語が含まれるので、Excelでは文字化けします。（ExcelはShiftJISですが、生成するcsvはUTF8なので）
+本当は英訳を載せたいのですが、完全無料の翻訳APIがないもので。。。 需要があれば何とかしようと思います。
+acknowledgment. iesファイルフォーマットは、以下のソースコードを参考にさせて頂きました。 ありがとうございます。
+https://github.com/r1emu/IPFUnpacker/blob/master</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon for developpers] iesファイルフォーマット解説</title>
+      <link>http://www.weizlogy.gq/tos/addon-dev/ies-format/</link>
+      <pubDate>Sun, 26 Mar 2017 15:41:06 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon-dev/ies-format/</guid>
+      <description>???は可変長です。
+Total block  ------------------- ---------------------------- ------------------------- | Header [156 byte] | Cell Header [136 x N byte] | Row Data [??? x M byte] | ------------------- ---------------------------- -------------------------  N=列数。は、Header blockのCellCountで指定。 M=行数。は、Header blockのRowCountで指定。
+Header block  ---------------------- ------------------- ------------------------ | TableName [128 byte] | Reserve1 [4 byte] | OffsetOfData [4 byte] | ---------------------- ------------------- ------------------------ --------------------------- ------------------- ------------------- | OffsetOfResource [4 byte] | FileSize [4 byte] | Reserve2 [4 byte] | --------------------------- ------------------- ------------------- ------------------- -------------------- -------------------------- | RowCount [2 byte] | CellCount [2 byte] | NumCellCount [2 byte] | ------------------- -------------------- -------------------------- ----------------------- ------------------------------------------- | StrCellCount [2 byte] | Reserve3 [2 byte] | --------------------- | ----------------------- -------------------------------------------           TableName IESテーブル名   Reserve1 予約1   OffsetOfData Cell Header blockのサイズ   OffsetOfResource Row Data blockのサイズ   FileSize IESファイルサイズ   Reserve2 予約2   RowCount 行数   CellCount 列数   NumCellCount 数値列数   StrCellCount 文字列列数   Reserve3 予約3    Cell Header block  ---------------- ------------------- ---------------------- | Name [64 byte] | Name2 [64 byte] | Type [2 byte] | ------ | ---------------- ------------------- ---------------------- ------------------- ------------------- ------------------- | Reserve1 [2 byte] | Reserve2 [4 byte] | Position [2 byte] | ------------------- ------------------- -------------------           Name Cell名   Name2 Cell別名   Type 0：数値Cell、1,2：文字列Cell   Reserve1 予約1   Reserve2 予約2   Position Type内Cell順序    Cell順は、Type昇順、Position昇順。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon for developpers] アドオン作成～設置方法まとめ</title>
+      <link>http://www.weizlogy.gq/tos/addon-dev/create-addon/</link>
+      <pubDate>Sun, 26 Mar 2017 15:40:59 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon-dev/create-addon/</guid>
+      <description>必要なもの  IPF Suite IPFUnpacker  作成手順 1. アドオンの名前を決める &amp;ldquo;xxxaddonxxx&amp;rdquo;としてみます。全て小文字、記号なしが良いです。
+2. アドオンのGUIを作る &amp;ldquo;xxxaddonxxx.xml&amp;rdquo;ファイルを作成します。アドオン名とuiframe@nameの値が一致するようにします。
+&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; ?&amp;gt; &amp;lt;uiframe name=&amp;quot;xxxaddonxxx&amp;quot; x=&amp;quot;10&amp;quot; y=&amp;quot;10&amp;quot; width=&amp;quot;100&amp;quot; height=&amp;quot;100&amp;quot;&amp;gt; &amp;lt;frame title=&amp;quot;XXXaddonXXX&amp;quot; snapclient=&amp;quot;true&amp;quot; snapframe=&amp;quot;true&amp;quot;/&amp;gt; &amp;lt;option closebutton=&amp;quot;false&amp;quot; hideable=&amp;quot;false&amp;quot;/&amp;gt; &amp;lt;input hittest=&amp;quot;true&amp;quot;/&amp;gt; &amp;lt;layer layerlevel=&amp;quot;31&amp;quot; /&amp;gt; &amp;lt;draw blend=&amp;quot;100&amp;quot; drawtitlebar=&amp;quot;false&amp;quot; drawframe=&amp;quot;false&amp;quot;/&amp;gt; &amp;lt;controls&amp;gt; &amp;lt;richtext name=&amp;quot;dummy&amp;quot; /&amp;gt; &amp;lt;/controls&amp;gt; &amp;lt;/uiframe&amp;gt;  3. アドオンのスクリプトを作る &amp;ldquo;xxxaddonxxx.lua&amp;rdquo;ファイルを作成します。アドオン名と関数名の&amp;rdquo;_ON_INIT&amp;rdquo;前までが、大文字で一致するようにします。
+function XXXADDONXXX_ON_INIT(addon, frame) -- 任意の初期化処理 end  4. アドオンをパッケージングする IPFSuite.exeを起動、上部メニューの[New]、[New Container]の順序でボタンを押します。
+[New Container]ボタンを押した後、テキストボックスが出現するので、&amp;rdquo;addon_d.ipf&amp;rdquo;を入力します。
+上部メニューの[Add Folder]ボタンを押します。フォルダ名はアドオン名と同じ&amp;rdquo;xxxaddonxxx&amp;rdquo;とします。
+上部メニューの[Add]ボタンを押します。ファイル選択ダイアログが出現するので、先に作成したxmlとluaファイルを選択します。
+上部メニューの[Save]ボタンを押します。保存するファイル名は&amp;rdquo;xxxaddonxxx.ipf&amp;rdquo;とします。
+5. アドオンを暗号化する IPF Unpackerで暗号化します。&amp;rdquo;Done!</description>
     </item>
     
   </channel>

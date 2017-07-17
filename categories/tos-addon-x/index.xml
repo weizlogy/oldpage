@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tos Addon X on Weizlogy</title>
-    <link>http://www.weizlogy.gq/categories/tos-addon-x/index.xml</link>
+    <link>http://www.weizlogy.gq/categories/tos-addon-x/</link>
     <description>Recent content in Tos Addon X on Weizlogy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <atom:link href="http://www.weizlogy.gq/categories/tos-addon-x/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Jun 2017 00:34:27 +0900</lastBuildDate>
+    
+	<atom:link href="http://www.weizlogy.gq/categories/tos-addon-x/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>[tree of savior addon] エリア内ランダムワープアドオン</title>
@@ -15,38 +18,10 @@
       <pubDate>Tue, 27 Jun 2017 00:34:27 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/bcuf2x3u2jmwjpo/wingofbeelze.ipf?dl=0&#34;&gt;[v1.0.2] wingofbeelze.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-0-2&#34;&gt;v1.0.2&lt;/h3&gt;
-
-&lt;h4 id=&#34;ワープロジック微調整&#34;&gt;ワープロジック微調整&lt;/h4&gt;
-
-&lt;h3 id=&#34;v1-0-1&#34;&gt;v1.0.1&lt;/h3&gt;
-
-&lt;h4 id=&#34;ワープロジック微調整-1&#34;&gt;ワープロジック微調整&lt;/h4&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;h4 id=&#34;新規作成&#34;&gt;新規作成。&lt;/h4&gt;
-
-&lt;p&gt;ESCAPE+LSHIFTでエリア内をランダムにワープします。&lt;/p&gt;
-
-&lt;p&gt;ROのヴェルゼブブの羽のようなイメージです。&lt;/p&gt;
-</description>
+      <description>download. [v1.0.2] wingofbeelze.ipf
+install. README.md
+introduction. settings. descriptions. v1.0.2 ワープロジック微調整 v1.0.1 ワープロジック微調整 v1.0.0 新規作成。 ESCAPE+LSHIFTでエリア内をランダムにワープします。
+ROのヴェルゼブブの羽のようなイメージです。</description>
     </item>
     
     <item>
@@ -55,103 +30,31 @@
       <pubDate>Wed, 03 May 2017 17:17:20 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon-x/fly/</guid>
-      <description>
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/5gq04f1jpoju4na/fly.ipf?dl=0&#34;&gt;[v1.2.0] fly.ipf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/weizlogy/tos/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;amp-youtube data-videoid=&#34;Ad_LIzKk_no&#34; width=&#34;480&#34; height=&#34;270&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-youtube&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;settings.&lt;/h2&gt;
-
-&lt;p&gt;Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。&lt;/p&gt;
-
-&lt;p&gt;以下の初期設定をコピペします。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fly&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;config&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;pos&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;jumpPower&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;140&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;showButton&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;cameraHeight&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;withPet&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;explanation&#34;&gt;explanation.&lt;/h3&gt;
-
-&lt;h4 id=&#34;pos&#34;&gt;pos.&lt;/h4&gt;
-
-&lt;p&gt;ボタンの座標指定です。&lt;/p&gt;
-
-&lt;p&gt;[showButton]が0の場合は無視されます。&lt;/p&gt;
-
-&lt;h4 id=&#34;jumppower&#34;&gt;jumpPower.&lt;/h4&gt;
-
-&lt;p&gt;飛距離です。&lt;/p&gt;
-
-&lt;p&gt;100では弓に狙われます。
-150では通常攻撃が届きません。（wizでは140で届きます。）&lt;/p&gt;
-
-&lt;h4 id=&#34;showbutton&#34;&gt;showButton.&lt;/h4&gt;
-
-&lt;p&gt;ボタン表示状態です。&lt;/p&gt;
-
-&lt;p&gt;1の場合のみ、飛行ON/OFFボタンを[pos]の座標に表示します。&lt;/p&gt;
-
-&lt;h4 id=&#34;cameraheight&#34;&gt;cameraHeight.&lt;/h4&gt;
-
-&lt;p&gt;飛行時のカメラ位置です。&lt;/p&gt;
-
-&lt;p&gt;飛距離によりますが、50～70あたりで自分の影が画面中央あたりに見え、歩行しやすいです。&lt;/p&gt;
-
-&lt;p&gt;0を指定すると、今まで通りの視点になります。&lt;/p&gt;
-
-&lt;h4 id=&#34;withpet&#34;&gt;withPet.&lt;/h4&gt;
-
-&lt;p&gt;ペット飛行有無です。&lt;/p&gt;
-
-&lt;p&gt;1を指定すると、ペットも一緒に飛行します。&lt;/p&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v1-2-0&#34;&gt;v1.2.0&lt;/h3&gt;
-
-&lt;p&gt;設定ファイルのフォーマット変更、cameraHeight、withPetオプションを実装しました。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-1-0&#34;&gt;v1.1.0&lt;/h3&gt;
-
-&lt;p&gt;設定[ボタン表示状態]を追加しました。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると、[ボタン表示状態]が1の場合のみ、[Fly]ボタンが表示されます。&lt;/p&gt;
-
-&lt;p&gt;ショートカットキーを追加しました。&lt;/p&gt;
-
-&lt;p&gt;ESCAPE+UP(上矢印)で飛行、飛行解除ができます。&lt;/p&gt;
-
-&lt;h3 id=&#34;v1-0-0&#34;&gt;v1.0.0&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;アドオンがロードされると[Fly]ボタンが表示されます。&lt;/p&gt;
-
-&lt;p&gt;ボタンを押すと飛行状態、地上に降りるを繰り返します。&lt;/p&gt;
-
-&lt;p&gt;飛行状態でも地上の敵を攻撃できます。
-飛行状態では地上の敵はこちらを近接攻撃できません。&lt;/p&gt;
-
-&lt;p&gt;実際は地上を歩行しているのでトラップには気をつけてください。&lt;/p&gt;
-
-&lt;p&gt;飛行状態ではスキルが使用不可ですが、ノックバックを受けるとスキルが使用可能になりますので、わざとノックバックするようになっています。&lt;/p&gt;
-
-&lt;p&gt;休息中に飛行すると、休息バフがついた状態で行動できます。
-ただし、攻撃などの操作を行うと休息バフは解除されます。&lt;/p&gt;
-</description>
+      <description>download. [v1.2.0] fly.ipf
+install. README.md
+introduction.  settings. Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。
+以下の初期設定をコピペします。
+fly.config = { pos = {x = 100, y = 100}, jumpPower = 140, showButton = 0, cameraHeight = 50, withPet = 1 };  explanation. pos. ボタンの座標指定です。
+[showButton]が0の場合は無視されます。
+jumpPower. 飛距離です。
+100では弓に狙われます。 150では通常攻撃が届きません。（wizでは140で届きます。）
+showButton. ボタン表示状態です。
+1の場合のみ、飛行ON/OFFボタンを[pos]の座標に表示します。
+cameraHeight. 飛行時のカメラ位置です。
+飛距離によりますが、50～70あたりで自分の影が画面中央あたりに見え、歩行しやすいです。
+0を指定すると、今まで通りの視点になります。
+withPet. ペット飛行有無です。
+1を指定すると、ペットも一緒に飛行します。
+descriptions. v1.2.0 設定ファイルのフォーマット変更、cameraHeight、withPetオプションを実装しました。
+v1.1.0 設定[ボタン表示状態]を追加しました。
+アドオンがロードされると、[ボタン表示状態]が1の場合のみ、[Fly]ボタンが表示されます。
+ショートカットキーを追加しました。
+ESCAPE+UP(上矢印)で飛行、飛行解除ができます。
+v1.0.0 新規作成。
+アドオンがロードされると[Fly]ボタンが表示されます。
+ボタンを押すと飛行状態、地上に降りるを繰り返します。
+飛行状態でも地上の敵を攻撃できます。 飛行状態では地上の敵はこちらを近接攻撃できません。
+実際は地上を歩行しているのでトラップには気をつけてください。</description>
     </item>
     
   </channel>

@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tos Addon Dev on Weizlogy</title>
-    <link>http://www.weizlogy.gq/categories/tos-addon-dev/index.xml</link>
+    <link>http://www.weizlogy.gq/categories/tos-addon-dev/</link>
     <description>Recent content in Tos Addon Dev on Weizlogy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <atom:link href="http://www.weizlogy.gq/categories/tos-addon-dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Mar 2017 15:41:17 +0900</lastBuildDate>
+    
+	<atom:link href="http://www.weizlogy.gq/categories/tos-addon-dev/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>[tree of savior addon for developpers] アドオンで自作スキンを使用する方法</title>
@@ -15,81 +18,16 @@
       <pubDate>Sun, 26 Mar 2017 15:41:17 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon-dev/use-custom-skins/</guid>
-      <description>
-
-&lt;h2 id=&#34;ifpファイル内部構成&#34;&gt;ifpファイル内部構成&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;xxx.ipf
-├───addon_d.ipf
-│     └───xxx
-│          ├───xxx.lua
-│          └───xxx.xml
-└───ui.ipf
-      ├───baseskinset
-      │    └───xxx.xml
-      └───skin
-           └───xxx.tga
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;addon-d-ipf&#34;&gt;addon_d.ipf&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.weizlogy.gq/2016/09/tree-of-savior_25.html&#34;&gt;Tree Of Savior アドオン作成～設置方法まとめ&lt;/a&gt;
-参照。&lt;/p&gt;
-
-&lt;h2 id=&#34;ui-ipf&#34;&gt;ui.ipf&lt;/h2&gt;
-
-&lt;h3 id=&#34;baseskinset&#34;&gt;baseskinset&lt;/h3&gt;
-
-&lt;p&gt;自作スキンの読込とアドオン内部で使用するスキンの定義を行います。&lt;/p&gt;
-
-&lt;p&gt;xxx.xml&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;skinset&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;Base&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;nt&#34;&gt;&amp;lt;imagelist&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;category=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;ringcommand&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;nt&#34;&gt;&amp;lt;image&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;image1&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;file=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;\skin\xxx.tga&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;imgrect=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;211 5 197 195&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;nt&#34;&gt;&amp;lt;image&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;image2&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;file=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;\skin\xxx.tga&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;imgrect=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;417 5 197 195&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;/imagelist&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;/skinset&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h4 id=&#34;name&#34;&gt;name&lt;/h4&gt;
-
-&lt;p&gt;アドオン内部で参照するスキン名。&lt;/p&gt;
-
-&lt;p&gt;オリジナルのスキン名と重複しないように気を付けます。&lt;/p&gt;
-
-&lt;h4 id=&#34;file&#34;&gt;file&lt;/h4&gt;
-
-&lt;p&gt;スキン読み込み元画像ファイルパス。&lt;/p&gt;
-
-&lt;h4 id=&#34;imgrect&#34;&gt;imgrect&lt;/h4&gt;
-
-&lt;p&gt;スキン読み込み元画像ファイル内画像座標。&lt;/p&gt;
-
-&lt;p&gt;半角スペース区切りで四角形の左上と右下の頂点座標を指定します。
-=&amp;gt; x, y, width, height&lt;/p&gt;
-
-&lt;h3 id=&#34;skin&#34;&gt;skin&lt;/h3&gt;
-
-&lt;p&gt;自作スキン画像ファイルを配置します。&lt;/p&gt;
-
-&lt;h2 id=&#34;アドオン実装方法&#34;&gt;アドオン実装方法&lt;/h2&gt;
-
-&lt;h3 id=&#34;xml&#34;&gt;xml&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;picture&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;xxx&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;rect=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;0 0 70 30&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;margin=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;0 0 45 0&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;hittest=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;true&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;image=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;image1&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;lua&#34;&gt;lua&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;local&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pic&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GET_CHILD&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;xxx&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;xxx&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;ui::CPicture&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;pic&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;SetImage&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;quot;image2&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2 id=&#34;tgaファイル&#34;&gt;tgaファイル&lt;/h2&gt;
-
-&lt;p&gt;画像ファイルの一つ。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://convertio.co/ja/png-tga/&#34;&gt;https://convertio.co/ja/png-tga/&lt;/a&gt;でtgaと各種画像拡張子の相互変換が可能です。&lt;/p&gt;
-</description>
+      <description>ifpファイル内部構成 xxx.ipf ├───addon_d.ipf │ └───xxx │ ├───xxx.lua │ └───xxx.xml └───ui.ipf ├───baseskinset │ └───xxx.xml └───skin └───xxx.tga  addon_d.ipf Tree Of Savior アドオン作成～設置方法まとめ 参照。
+ui.ipf baseskinset 自作スキンの読込とアドオン内部で使用するスキンの定義を行います。
+xxx.xml
+&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;skinset name=&amp;quot;Base&amp;quot;&amp;gt; &amp;lt;imagelist category=&amp;quot;ringcommand&amp;quot;&amp;gt; &amp;lt;image name=&amp;quot;image1&amp;quot; file=&amp;quot;\skin\xxx.tga&amp;quot; imgrect=&amp;quot;211 5 197 195&amp;quot;/&amp;gt; &amp;lt;image name=&amp;quot;image2&amp;quot; file=&amp;quot;\skin\xxx.tga&amp;quot; imgrect=&amp;quot;417 5 197 195&amp;quot;/&amp;gt; &amp;lt;/imagelist&amp;gt; &amp;lt;/skinset&amp;gt;  name アドオン内部で参照するスキン名。
+オリジナルのスキン名と重複しないように気を付けます。
+file スキン読み込み元画像ファイルパス。
+imgrect スキン読み込み元画像ファイル内画像座標。
+半角スペース区切りで四角形の左上と右下の頂点座標を指定します。 =&amp;gt; x, y, width, height
+skin 自作スキン画像ファイルを配置します。
+アドオン実装方法 xml &amp;lt;picture name=&amp;quot;xxx&amp;quot; rect=&amp;quot;0 0 70 30&amp;quot; margin=&amp;quot;0 0 45 0&amp;quot; hittest=&amp;quot;true&amp;quot; image=&amp;quot;image1&amp;quot;/&amp;gt;  lua local pic = GET_CHILD(xxx, &amp;quot;xxx&amp;quot;, &amp;quot;ui::CPicture&amp;quot;); pic:SetImage(&amp;quot;image2&amp;quot;);  tgaファイル 画像ファイルの一つ。</description>
     </item>
     
     <item>
@@ -98,50 +36,19 @@
       <pubDate>Sun, 26 Mar 2017 15:41:13 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/</guid>
-      <description>
-
-&lt;h2 id=&#34;overviews&#34;&gt;overviews.&lt;/h2&gt;
-
-&lt;p&gt;Tree Of Saviorのipfファイル内には拡張子がiesのファイルがあります。&lt;/p&gt;
-
-&lt;p&gt;Ipf Suiteでは中身を見ることができますが、extractしても実体はバイナリファイル（かつ、暗号化されている）で、
-テキストエディタでもバイナリエディタでも見ても分かりません。&lt;/p&gt;
-
-&lt;p&gt;もちろん、grep検索で引き当てることもできません。&lt;/p&gt;
-
-&lt;p&gt;本ソフトは、iesファイルを解析し、可読性のあるcsvファイルを生成します。&lt;/p&gt;
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/61977sy5a2b1nwl/IEStoCSV.zip?dl=0&#34;&gt;IEStoCSV.zip&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;ダウンロードしたzipを解凍し、任意の場所に配置します。&lt;/p&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;p&gt;コンソールアプリケーションなので、コマンドプロンプトで操作します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;IEStoCSV.exe &amp;lt;走査ディレクトリ&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;サブフォルダを含む走査ディレクトリ配下のiesファイルに対して、対となるcsv形式のファイルを生成します。&lt;/p&gt;
-
-&lt;p&gt;走査ディレクトリ省略時は、本ソフトのある位置を対象とします。&lt;/p&gt;
-
-&lt;h2 id=&#34;caution&#34;&gt;caution.&lt;/h2&gt;
-
-&lt;p&gt;iesファイル内に韓国語が含まれるので、Excelでは文字化けします。（ExcelはShiftJISですが、生成するcsvはUTF8なので）&lt;/p&gt;
-
-&lt;p&gt;本当は英訳を載せたいのですが、完全無料の翻訳APIがないもので。。。 需要があれば何とかしようと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;acknowledgment&#34;&gt;acknowledgment.&lt;/h2&gt;
-
-&lt;p&gt;iesファイルフォーマットは、以下のソースコードを参考にさせて頂きました。 ありがとうございます。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/r1emu/IPFUnpacker/blob/master&#34;&gt;https://github.com/r1emu/IPFUnpacker/blob/master&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>overviews. Tree Of Saviorのipfファイル内には拡張子がiesのファイルがあります。
+Ipf Suiteでは中身を見ることができますが、extractしても実体はバイナリファイル（かつ、暗号化されている）で、 テキストエディタでもバイナリエディタでも見ても分かりません。
+もちろん、grep検索で引き当てることもできません。
+本ソフトは、iesファイルを解析し、可読性のあるcsvファイルを生成します。
+download. IEStoCSV.zip
+install. ダウンロードしたzipを解凍し、任意の場所に配置します。
+descriptions. コンソールアプリケーションなので、コマンドプロンプトで操作します。
+IEStoCSV.exe &amp;lt;走査ディレクトリ&amp;gt;  サブフォルダを含む走査ディレクトリ配下のiesファイルに対して、対となるcsv形式のファイルを生成します。
+走査ディレクトリ省略時は、本ソフトのある位置を対象とします。
+caution. iesファイル内に韓国語が含まれるので、Excelでは文字化けします。（ExcelはShiftJISですが、生成するcsvはUTF8なので）
+本当は英訳を載せたいのですが、完全無料の翻訳APIがないもので。。。 需要があれば何とかしようと思います。
+acknowledgment. iesファイルフォーマットは、以下のソースコードを参考にさせて頂きました。 ありがとうございます。
+https://github.com/r1emu/IPFUnpacker/blob/master</description>
     </item>
     
     <item>
@@ -150,233 +57,9 @@
       <pubDate>Sun, 26 Mar 2017 15:41:06 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon-dev/ies-format/</guid>
-      <description>
-
-&lt;p&gt;???は可変長です。&lt;/p&gt;
-
-&lt;h2 id=&#34;total-block&#34;&gt;Total block&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt; ------------------- ---------------------------- -------------------------
-| Header [156 byte] | Cell Header [136 x N byte] | Row Data [??? x M byte] |
- ------------------- ---------------------------- -------------------------
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;N=列数。は、Header blockのCellCountで指定。 M=行数。は、Header blockのRowCountで指定。&lt;/p&gt;
-
-&lt;h2 id=&#34;header-block&#34;&gt;Header block&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt; ---------------------- ------------------- ------------------------
-| TableName [128 byte] | Reserve1 [4 byte] | OffsetOfData [4 byte]  |
- ---------------------- ------------------- ------------------------
- --------------------------- ------------------- -------------------
-| OffsetOfResource [4 byte] | FileSize [4 byte] | Reserve2 [4 byte] |
- --------------------------- ------------------- -------------------
- ------------------- -------------------- --------------------------
-| RowCount [2 byte] | CellCount [2 byte] | NumCellCount [2 byte]    |
- ------------------- -------------------- --------------------------
- ----------------------- -------------------------------------------
-| StrCellCount [2 byte] | Reserve3 [2 byte] | --------------------- |
- ----------------------- -------------------------------------------
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;TableName&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;IESテーブル名&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Reserve1&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;予約1&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;OffsetOfData&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Cell Header blockのサイズ&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;OffsetOfResource&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Row Data blockのサイズ&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;FileSize&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;IESファイルサイズ&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Reserve2&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;予約2&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;RowCount&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;行数&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;CellCount&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;列数&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;NumCellCount&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;数値列数&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;StrCellCount&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;文字列列数&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Reserve3&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;予約3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&#34;cell-header-block&#34;&gt;Cell Header block&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt; ---------------- ------------------- ----------------------
-| Name [64 byte] | Name2 [64 byte] | Type [2 byte] | ------ |
- ---------------- ------------------- ----------------------
- ------------------- ------------------- -------------------
-| Reserve1 [2 byte] | Reserve2 [4 byte] | Position [2 byte] |
- ------------------- ------------------- -------------------
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Name&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Cell名&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Name2&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Cell別名&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Type&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;0：数値Cell、1,2：文字列Cell&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Reserve1&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;予約1&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Reserve2&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;予約2&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Position&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Type内Cell順序&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Cell順は、Type昇順、Position昇順。&lt;/p&gt;
-
-&lt;h2 id=&#34;row-data-block&#34;&gt;Row Data block&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt; ------------------- ---------------------- --------------------
-| Option [??? byte] | Cell Data [??? byte] | Padding [??? byte] |
- ------------------- ---------------------- --------------------
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Paddingは、文字列Cellの数だけ0x00が付与される。&lt;/p&gt;
-
-&lt;h3 id=&#34;option-block&#34;&gt;Option block&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt; ------------------- --------------- -----------------
-| Reserve1 [4 byte] | Size [2 byte] | Name [??? byte] |
- ------------------- --------------- -----------------
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Reserve1&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;予約1&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Size&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Nameのバイト長&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Name&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Cellオプション名&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&#34;cell-data-block&#34;&gt;Cell Data block&lt;/h3&gt;
-
-&lt;p&gt;数値Cellの場合：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; ----------------
-| Value [4 byte] |
- ----------------
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;文字列Cellの場合：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; --------------- ------------------
-| Size [2 byte] | Value [??? byte] |
- --------------- ------------------
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Size&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Nameのバイト長&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Name&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;列データ&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
+      <description>???は可変長です。
+Total block  ------------------- ---------------------------- ------------------------- | Header [156 byte] | Cell Header [136 x N byte] | Row Data [??? x M byte] | ------------------- ---------------------------- -------------------------  N=列数。は、Header blockのCellCountで指定。 M=行数。は、Header blockのRowCountで指定。
+Header block  ---------------------- ------------------- ------------------------ | TableName [128 byte] | Reserve1 [4 byte] | OffsetOfData [4 byte] | ---------------------- ------------------- ------------------------ --------------------------- ------------------- ------------------- | OffsetOfResource [4 byte] | FileSize [4 byte] | Reserve2 [4 byte] | --------------------------- ------------------- ------------------- ------------------- -------------------- -------------------------- | RowCount [2 byte] | CellCount [2 byte] | NumCellCount [2 byte] | ------------------- -------------------- -------------------------- ----------------------- ------------------------------------------- | StrCellCount [2 byte] | Reserve3 [2 byte] | --------------------- | ----------------------- -------------------------------------------           TableName IESテーブル名   Reserve1 予約1   OffsetOfData Cell Header blockのサイズ   OffsetOfResource Row Data blockのサイズ   FileSize IESファイルサイズ   Reserve2 予約2   RowCount 行数   CellCount 列数   NumCellCount 数値列数   StrCellCount 文字列列数   Reserve3 予約3    Cell Header block  ---------------- ------------------- ---------------------- | Name [64 byte] | Name2 [64 byte] | Type [2 byte] | ------ | ---------------- ------------------- ---------------------- ------------------- ------------------- ------------------- | Reserve1 [2 byte] | Reserve2 [4 byte] | Position [2 byte] | ------------------- ------------------- -------------------           Name Cell名   Name2 Cell別名   Type 0：数値Cell、1,2：文字列Cell   Reserve1 予約1   Reserve2 予約2   Position Type内Cell順序    Cell順は、Type昇順、Position昇順。</description>
     </item>
     
     <item>
@@ -385,75 +68,15 @@
       <pubDate>Sun, 26 Mar 2017 15:40:59 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon-dev/create-addon/</guid>
-      <description>
-
-&lt;h2 id=&#34;必要なもの&#34;&gt;必要なもの&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.tosbase.com/downloads/IPF_Suite.zip.html&#34;&gt;IPF Suite&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/r1emu/IPFUnpacker/releases&#34;&gt;IPFUnpacker&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;作成手順&#34;&gt;作成手順&lt;/h2&gt;
-
-&lt;h3 id=&#34;1-アドオンの名前を決める&#34;&gt;1. アドオンの名前を決める&lt;/h3&gt;
-
-&lt;p&gt;&amp;ldquo;xxxaddonxxx&amp;rdquo;としてみます。全て小文字、記号なしが良いです。&lt;/p&gt;
-
-&lt;h3 id=&#34;2-アドオンのguiを作る&#34;&gt;2. アドオンのGUIを作る&lt;/h3&gt;
-
-&lt;p&gt;&amp;ldquo;xxxaddonxxx.xml&amp;rdquo;ファイルを作成します。アドオン名とuiframe@nameの値が一致するようにします。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; ?&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;uiframe&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;xxxaddonxxx&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;x=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;10&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;y=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;10&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;width=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;100&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;height=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;nt&#34;&gt;&amp;lt;frame&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;title=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;XXXaddonXXX&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;snapclient=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;true&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;snapframe=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;true&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;nt&#34;&gt;&amp;lt;option&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;closebutton=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;false&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;hideable=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;false&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;nt&#34;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;hittest=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;true&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;nt&#34;&gt;&amp;lt;layer&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;layerlevel=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;31&amp;quot;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;nt&#34;&gt;&amp;lt;draw&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;blend=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;100&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;drawtitlebar=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;false&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;drawframe=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;false&amp;quot;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;nt&#34;&gt;&amp;lt;controls&amp;gt;&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;&amp;lt;richtext&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;dummy&amp;quot;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;nt&#34;&gt;&amp;lt;/controls&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;/uiframe&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;3-アドオンのスクリプトを作る&#34;&gt;3. アドオンのスクリプトを作る&lt;/h3&gt;
-
-&lt;p&gt;&amp;ldquo;xxxaddonxxx.lua&amp;rdquo;ファイルを作成します。アドオン名と関数名の&amp;rdquo;_ON_INIT&amp;rdquo;前までが、大文字で一致するようにします。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;XXXADDONXXX_ON_INIT&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;addon&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;frame&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-  &lt;span class=&#34;c1&#34;&gt;-- 任意の初期化処理&lt;/span&gt;
-&lt;span class=&#34;kr&#34;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;4-アドオンをパッケージングする&#34;&gt;4. アドオンをパッケージングする&lt;/h3&gt;
-
-&lt;p&gt;IPFSuite.exeを起動、上部メニューの[New]、[New Container]の順序でボタンを押します。&lt;/p&gt;
-
-&lt;p&gt;[New Container]ボタンを押した後、テキストボックスが出現するので、&amp;rdquo;addon_d.ipf&amp;rdquo;を入力します。&lt;/p&gt;
-
-&lt;p&gt;上部メニューの[Add Folder]ボタンを押します。フォルダ名はアドオン名と同じ&amp;rdquo;xxxaddonxxx&amp;rdquo;とします。&lt;/p&gt;
-
-&lt;p&gt;上部メニューの[Add]ボタンを押します。ファイル選択ダイアログが出現するので、先に作成したxmlとluaファイルを選択します。&lt;/p&gt;
-
-&lt;p&gt;上部メニューの[Save]ボタンを押します。保存するファイル名は&amp;rdquo;xxxaddonxxx.ipf&amp;rdquo;とします。&lt;/p&gt;
-
-&lt;h3 id=&#34;5-アドオンを暗号化する&#34;&gt;5. アドオンを暗号化する&lt;/h3&gt;
-
-&lt;p&gt;IPF Unpackerで暗号化します。&amp;rdquo;Done!&amp;ldquo;と表示されれば成功です。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span&gt;&lt;/span&gt;&amp;gt; ipf_unpack.exe xxxaddonxxx.ipf encrypt
-&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;ipf_unpack.c:291 in main&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; Parsing IPF &lt;span class=&#34;s1&#34;&gt;&amp;#39;xxxaddonxxx.ipf&amp;#39;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;encrypt&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; ...
-&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;ipf_unpack.c:304 in main&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; Done!
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2 id=&#34;設置手順&#34;&gt;設置手順&lt;/h2&gt;
-
-&lt;h3 id=&#34;1-アドオンファイル削除の対策をする&#34;&gt;1. アドオンファイル削除の対策をする&lt;/h3&gt;
-
-&lt;p&gt;このままではクライアント起動時に削除されるため、環境依存文字（📖とか⛄）をファイル名の先頭に付与します。&lt;/p&gt;
-
-&lt;h3 id=&#34;2-アドオンファイルを設置する&#34;&gt;2. アドオンファイルを設置する&lt;/h3&gt;
-
-&lt;p&gt;TreeofSaviorJP\patch、または、TreeofSaviorJP\data、に設置します。&lt;/p&gt;
-</description>
+      <description>必要なもの  IPF Suite IPFUnpacker  作成手順 1. アドオンの名前を決める &amp;ldquo;xxxaddonxxx&amp;rdquo;としてみます。全て小文字、記号なしが良いです。
+2. アドオンのGUIを作る &amp;ldquo;xxxaddonxxx.xml&amp;rdquo;ファイルを作成します。アドオン名とuiframe@nameの値が一致するようにします。
+&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; ?&amp;gt; &amp;lt;uiframe name=&amp;quot;xxxaddonxxx&amp;quot; x=&amp;quot;10&amp;quot; y=&amp;quot;10&amp;quot; width=&amp;quot;100&amp;quot; height=&amp;quot;100&amp;quot;&amp;gt; &amp;lt;frame title=&amp;quot;XXXaddonXXX&amp;quot; snapclient=&amp;quot;true&amp;quot; snapframe=&amp;quot;true&amp;quot;/&amp;gt; &amp;lt;option closebutton=&amp;quot;false&amp;quot; hideable=&amp;quot;false&amp;quot;/&amp;gt; &amp;lt;input hittest=&amp;quot;true&amp;quot;/&amp;gt; &amp;lt;layer layerlevel=&amp;quot;31&amp;quot; /&amp;gt; &amp;lt;draw blend=&amp;quot;100&amp;quot; drawtitlebar=&amp;quot;false&amp;quot; drawframe=&amp;quot;false&amp;quot;/&amp;gt; &amp;lt;controls&amp;gt; &amp;lt;richtext name=&amp;quot;dummy&amp;quot; /&amp;gt; &amp;lt;/controls&amp;gt; &amp;lt;/uiframe&amp;gt;  3. アドオンのスクリプトを作る &amp;ldquo;xxxaddonxxx.lua&amp;rdquo;ファイルを作成します。アドオン名と関数名の&amp;rdquo;_ON_INIT&amp;rdquo;前までが、大文字で一致するようにします。
+function XXXADDONXXX_ON_INIT(addon, frame) -- 任意の初期化処理 end  4. アドオンをパッケージングする IPFSuite.exeを起動、上部メニューの[New]、[New Container]の順序でボタンを押します。
+[New Container]ボタンを押した後、テキストボックスが出現するので、&amp;rdquo;addon_d.ipf&amp;rdquo;を入力します。
+上部メニューの[Add Folder]ボタンを押します。フォルダ名はアドオン名と同じ&amp;rdquo;xxxaddonxxx&amp;rdquo;とします。
+上部メニューの[Add]ボタンを押します。ファイル選択ダイアログが出現するので、先に作成したxmlとluaファイルを選択します。
+上部メニューの[Save]ボタンを押します。保存するファイル名は&amp;rdquo;xxxaddonxxx.ipf&amp;rdquo;とします。
+5. アドオンを暗号化する IPF Unpackerで暗号化します。&amp;rdquo;Done!</description>
     </item>
     
   </channel>

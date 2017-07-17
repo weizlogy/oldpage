@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Weizlogy</title>
+    <link>http://www.weizlogy.gq/categories/</link>
+    <description>Recent content in Categories on Weizlogy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2010 weizlogy.</copyright>
+    
+	<atom:link href="http://www.weizlogy.gq/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Site Management</title>
+      <link>http://www.weizlogy.gq/categories/site-management/</link>
+      <pubDate>Thu, 18 May 2017 07:09:25 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/categories/site-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>System</title>
+      <link>http://www.weizlogy.gq/categories/system/</link>
+      <pubDate>Sun, 26 Mar 2017 15:42:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/categories/system/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>System Dev</title>
+      <link>http://www.weizlogy.gq/categories/system-dev/</link>
+      <pubDate>Mon, 27 Mar 2017 03:37:14 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/categories/system-dev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tos Addon</title>
+      <link>http://www.weizlogy.gq/categories/tos-addon/</link>
+      <pubDate>Tue, 18 Jul 2017 00:30:34 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/categories/tos-addon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tos Addon Dev</title>
+      <link>http://www.weizlogy.gq/categories/tos-addon-dev/</link>
+      <pubDate>Sun, 26 Mar 2017 15:41:17 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/categories/tos-addon-dev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tos Addon X</title>
+      <link>http://www.weizlogy.gq/categories/tos-addon-x/</link>
+      <pubDate>Tue, 27 Jun 2017 00:34:27 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/categories/tos-addon-x/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

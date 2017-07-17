@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>System on Weizlogy</title>
-    <link>http://www.weizlogy.gq/categories/system/index.xml</link>
+    <link>http://www.weizlogy.gq/categories/system/</link>
     <description>Recent content in System on Weizlogy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <atom:link href="http://www.weizlogy.gq/categories/system/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Mar 2017 15:42:00 +0900</lastBuildDate>
+    
+	<atom:link href="http://www.weizlogy.gq/categories/system/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>[system] Schritt - 論理ステップカウンター</title>
@@ -15,77 +18,12 @@
       <pubDate>Sun, 26 Mar 2017 15:42:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/system/item/schritt/</guid>
-      <description>
-
-&lt;h2 id=&#34;overviews&#34;&gt;overviews.&lt;/h2&gt;
-
-&lt;p&gt;Schrittは論理ステップカウンターです。&lt;/p&gt;
-
-&lt;p&gt;従来のステップカウンターは物理行でカウントする方式が主流であるため、書き方により規模に差異が現れます。&lt;/p&gt;
-
-&lt;p&gt;Schrittは論理的に命令をカウントすることで、書き方による規模の差異を抑制することを目的に作られました。&lt;/p&gt;
-
-&lt;p&gt;SchrittはLinux(ubuntu)のMonoを使用し、C#で実装されているため、.Net Frameworkの恩恵を受けられる環境であれば動作します。&lt;/p&gt;
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/8zf41fu9hwf15nk/Schritt-core.exe?dl=0&#34;&gt;Schritt&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;status&#34;&gt;status.&lt;/h2&gt;
-
-&lt;p&gt;| 言語 | 対応バージョン | 状況説明 |
-|:&amp;mdash;||:&amp;mdash;||:&amp;mdash;|
-| C | 0.0.3-α |  |
-| C++ |  | 順次対応予定 |
-| C# | 0.0.1-α |  |
-| Java | 0.0.2-α |  |
-| VB |  | 順次対応予定 |
-| JavaScript |  | 順次対応予定 |
-| HTML |  | 順次対応予定 |
-| CSS |  | 順次対応予定 |
-| Ruby |  | 順次対応予定 |&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;introduction.&lt;/h2&gt;
-
-&lt;p&gt;.Net Framework 4.5以上が必要です。&lt;/p&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;h3 id=&#34;v0-0-4-α&#34;&gt;v0.0.4-α&lt;/h3&gt;
-
-&lt;p&gt;ディレクトリ再帰走査対応。&lt;/p&gt;
-
-&lt;h3 id=&#34;v0-0-3-α&#34;&gt;v0.0.3-α&lt;/h3&gt;
-
-&lt;p&gt;C言語対応。&lt;/p&gt;
-
-&lt;h3 id=&#34;v0-0-2-α&#34;&gt;v0.0.2-α&lt;/h3&gt;
-
-&lt;p&gt;Java言語対応。&lt;/p&gt;
-
-&lt;h3 id=&#34;v0-0-1-α&#34;&gt;v0.0.1-α&lt;/h3&gt;
-
-&lt;p&gt;新規作成。&lt;/p&gt;
-
-&lt;p&gt;実行体に対してコマンドライン引数でステップ数を計測するソースコードのパスまたはディレクトリを指定(複数可)します。
-ディレクトリ指定の場合は、サブフォルダを再帰的に走査します。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span&gt;&lt;/span&gt;Schritt-core.exe test1.cs test2.cs
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;実行結果は標準出力にCSV形式で出力されます。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span&gt;&lt;/span&gt;filename,comment,step
-test1.cs,10,20
-test2.cs,0,5
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2 id=&#34;lisence&#34;&gt;lisence.&lt;/h2&gt;
-
-&lt;p&gt;SchrittはMITライセンスで提供します。&lt;/p&gt;
-
-&lt;h2 id=&#34;limitations&#34;&gt;limitations.&lt;/h2&gt;
-
-&lt;p&gt;ソースコードの文字コードはBOM付きのUnicode、またはBOM無しのUTF-8に対応しています。&lt;/p&gt;
-</description>
+      <description>overviews. Schrittは論理ステップカウンターです。
+従来のステップカウンターは物理行でカウントする方式が主流であるため、書き方により規模に差異が現れます。
+Schrittは論理的に命令をカウントすることで、書き方による規模の差異を抑制することを目的に作られました。
+SchrittはLinux(ubuntu)のMonoを使用し、C#で実装されているため、.Net Frameworkの恩恵を受けられる環境であれば動作します。
+download. Schritt
+status. | 言語 | 対応バージョン | 状況説明 | |:&amp;mdash;||:&amp;mdash;||:&amp;mdash;| | C | 0.0.3-α | | | C++ | | 順次対応予定 | | C# | 0.0.1-α | | | Java | 0.0.2-α | | | VB | | 順次対応予定 | | JavaScript | | 順次対応予定 | | HTML | | 順次対応予定 | | CSS | | 順次対応予定 | | Ruby | | 順次対応予定 |</description>
     </item>
     
     <item>
@@ -94,37 +32,15 @@ test2.cs,0,5
       <pubDate>Sun, 26 Mar 2017 15:41:54 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/system/item/tapete/</guid>
-      <description>
-
-&lt;h2 id=&#34;overviews&#34;&gt;overviews.&lt;/h2&gt;
-
-&lt;p&gt;Windows10のロック画面で使われるspotlight画像を厳選し、&amp;lt;ユーザーディレクトリ&amp;gt;\picture\Tapete フォルダにコピーします。&lt;/p&gt;
-
-&lt;p&gt;コピーは随時発生し、日次で最新状態にリセットします。&lt;/p&gt;
-
-&lt;p&gt;壁紙のスライドショーで使用することを想定し、画像の厳選条件は、4KB以上かつ、
-プライマリースクリーンの解像度以上としています。&lt;/p&gt;
-
-&lt;h2 id=&#34;download&#34;&gt;download.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/ur02vpusc9lb1kl/Tapete-1.0.0.zip?dl=0&#34;&gt;Tapete.zip&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;install.&lt;/h2&gt;
-
-&lt;p&gt;ダウンロードしたzipを解凍し、任意の場所に配置します。&lt;/p&gt;
-
-&lt;h2 id=&#34;descriptions&#34;&gt;descriptions.&lt;/h2&gt;
-
-&lt;p&gt;画面のフォルダパスをクリックすると、該当フォルダをエクスプローラーで開きます。&lt;/p&gt;
-
-&lt;p&gt;最小化すると通知アイコン化します。アイコンをクリックすると復元します。&lt;/p&gt;
-
-&lt;h2 id=&#34;cautions&#34;&gt;cautions.&lt;/h2&gt;
-
-&lt;p&gt;自動起動はしないので、必要に応じてスタートアップに登録してください。&lt;/p&gt;
-
-&lt;p&gt;コピー先は固定なので、ソフトリンクやジャンクションで任意の場所にコピーさせることもできます。&lt;/p&gt;
-</description>
+      <description>overviews. Windows10のロック画面で使われるspotlight画像を厳選し、&amp;lt;ユーザーディレクトリ&amp;gt;\picture\Tapete フォルダにコピーします。
+コピーは随時発生し、日次で最新状態にリセットします。
+壁紙のスライドショーで使用することを想定し、画像の厳選条件は、4KB以上かつ、 プライマリースクリーンの解像度以上としています。
+download. Tapete.zip
+install. ダウンロードしたzipを解凍し、任意の場所に配置します。
+descriptions. 画面のフォルダパスをクリックすると、該当フォルダをエクスプローラーで開きます。
+最小化すると通知アイコン化します。アイコンをクリックすると復元します。
+cautions. 自動起動はしないので、必要に応じてスタートアップに登録してください。
+コピー先は固定なので、ソフトリンクやジャンクションで任意の場所にコピーさせることもできます。</description>
     </item>
     
   </channel>

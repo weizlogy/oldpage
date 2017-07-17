@@ -2,13 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sites on Weizlogy</title>
-    <link>http://www.weizlogy.gq/site/index.xml</link>
+    <link>http://www.weizlogy.gq/site/</link>
     <description>Recent content in Sites on Weizlogy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
     <lastBuildDate>Thu, 18 May 2017 07:09:25 +0900</lastBuildDate>
-    <atom:link href="http://www.weizlogy.gq/site/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://www.weizlogy.gq/site/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>[site management] bloggerからhugo&#43;github pagesに移行した理由</title>
@@ -16,47 +18,16 @@
       <pubDate>Thu, 18 May 2017 07:09:25 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/site/blogger-to-hugo/</guid>
-      <description>
-
-&lt;h2 id=&#34;bloggerでサイト運営して困ったこと&#34;&gt;bloggerでサイト運営して困ったこと&lt;/h2&gt;
-
-&lt;h3 id=&#34;googleサービスの割にamp対応できない&#34;&gt;Googleサービスの割にAMP対応できない&lt;/h3&gt;
-
-&lt;p&gt;新テンプレートはもちろん無理で、クラシックテンプレートも完全には対応できません。&lt;/p&gt;
-
-&lt;h3 id=&#34;テンプレートが複雑でカスタマイズに時間がかかる&#34;&gt;テンプレートが複雑でカスタマイズに時間がかかる&lt;/h3&gt;
-
-&lt;p&gt;一番シンプルなテンプレートでも1000行以上はあり、コード修正はブラウザ上のテキストエリアで行うという苦行。&lt;/p&gt;
-
-&lt;p&gt;HTML5のレイアウト対応（section, articleなど）も一苦労です。&lt;/p&gt;
-
-&lt;h3 id=&#34;ページロードに時間がかかる&#34;&gt;ページロードに時間がかかる&lt;/h3&gt;
-
-&lt;p&gt;AMPに対応できない一因でもありますが、リッチなUIを実現するためJavascriptが多様されます。&lt;/p&gt;
-
-&lt;h2 id=&#34;bloggerで困ったことをhugoで解決する&#34;&gt;bloggerで困ったことをhugoで解決する&lt;/h2&gt;
-
-&lt;h3 id=&#34;amp対応&#34;&gt;AMP対応&lt;/h3&gt;
-
-&lt;p&gt;hugoにはAMP対応の公開テーマがあるので簡単です。&lt;/p&gt;
-
-&lt;h3 id=&#34;テーマのカスタマイズ-自作&#34;&gt;テーマのカスタマイズ（自作）&lt;/h3&gt;
-
-&lt;p&gt;テーマを&lt;a href=&#34;https://github.com/weizlogy/hugo-theme-html5-amp-minimize&#34;&gt;自作&lt;/a&gt;しました。&lt;/p&gt;
-
-&lt;p&gt;最小構成でHTML5とAMPに対応し、見た目も中身もシンプルになるように配慮しています。&lt;/p&gt;
-
-&lt;h3 id=&#34;ページロード&#34;&gt;ページロード&lt;/h3&gt;
-
-&lt;p&gt;hugoはテーマとマークダウンから静的コンテンツを生成するため、キャッシュが効きやすくページロードに有利です。&lt;/p&gt;
-
-&lt;h2 id=&#34;ホスティングサービスを選択する&#34;&gt;ホスティングサービスを選択する&lt;/h2&gt;
-
-&lt;p&gt;GitHub Pagesは静的コンテンツをgit pushするだけで公開できるGitHubのサービスです。&lt;/p&gt;
-
-&lt;p&gt;1GBのストレージで100GB/Monthの帯域、1時間に10回ビルドといった制限がありますが、広告なし無料です。
-画像などはdropboxに入れておけば十分活用できます。&lt;/p&gt;
-</description>
+      <description>bloggerでサイト運営して困ったこと Googleサービスの割にAMP対応できない 新テンプレートはもちろん無理で、クラシックテンプレートも完全には対応できません。
+テンプレートが複雑でカスタマイズに時間がかかる 一番シンプルなテンプレートでも1000行以上はあり、コード修正はブラウザ上のテキストエリアで行うという苦行。
+HTML5のレイアウト対応（section, articleなど）も一苦労です。
+ページロードに時間がかかる AMPに対応できない一因でもありますが、リッチなUIを実現するためJavascriptが多様されます。
+bloggerで困ったことをhugoで解決する AMP対応 hugoにはAMP対応の公開テーマがあるので簡単です。
+テーマのカスタマイズ（自作） テーマを自作しました。
+最小構成でHTML5とAMPに対応し、見た目も中身もシンプルになるように配慮しています。
+ページロード hugoはテーマとマークダウンから静的コンテンツを生成するため、キャッシュが効きやすくページロードに有利です。
+ホスティングサービスを選択する GitHub Pagesは静的コンテンツをgit pushするだけで公開できるGitHubのサービスです。
+1GBのストレージで100GB/Monthの帯域、1時間に10回ビルドといった制限がありますが、広告なし無料です。 画像などはdropboxに入れておけば十分活用できます。</description>
     </item>
     
     <item>
@@ -65,48 +36,17 @@
       <pubDate>Sun, 26 Mar 2017 15:41:38 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/site/seo-bing-webmaster/</guid>
-      <description>
-
-&lt;p&gt;[レポート＆データ] &amp;gt; [SEOレポート]からレポートを確認できます。 簡単なものから順次対策していきます。&lt;/p&gt;
-
-&lt;h2 id=&#34;ページにメタ言語情報がありません&#34;&gt;ページにメタ言語情報がありません。&lt;/h2&gt;
-
-&lt;p&gt;bing Web マスター曰く、&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;メタ言語情報は、ページ コンテンツの意図される対象先の言語と国/地域を理解するためのヒントとして使用されます。これは、サイトが対象の国/地域でホストされていない場合に役立ちます。“content-language” メタ タグを使用して、ページの &amp;lt;head&amp;gt; セクションに文化コードを埋め込みます。たとえば、&amp;lt;meta http-equiv=&amp;ldquo;content-language&amp;rdquo; content=&amp;ldquo;en-gb&amp;rdquo;&amp;gt; は、ページが英語で、イギリスを対象としていることになります。代わりに、&amp;lt;html lang=&amp;ldquo;en-gb&amp;rdquo;&amp;gt; または &amp;lt;title lang=&amp;ldquo;en-gb&amp;rdquo;&amp;gt; を使用することもできます。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;bloggerでは、[テンプレート] &amp;gt; [HTMLの編集]から、htmlタグにlang=&amp;lsquo;ja-jp&amp;rsquo;を追加しましょう。lang属性はダブルクォートではなく&amp;lt;b&amp;gt;シングルクォート&amp;lt;/b&amp;gt;で囲む必要があります。&lt;/p&gt;
-
-&lt;h2 id=&#34;説明がページのヘッド-セクションにありません&#34;&gt;説明がページのヘッド セクションにありません。&lt;/h2&gt;
-
-&lt;p&gt;bing Web マスター曰く、&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;検索エンジンは、&amp;lt;description&amp;gt; タグで提供される説明を検索エンジン結果のページ (SERP) で使用する場合があります。ページのコンテンツを正確に表し、検索ユーザーの目的と関連性が高い説明は、検索におけるページのクリックスルー率を向上するため、トラフィックの増加を期待できます。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;bloggerでは、[設定] › [検索設定} &amp;gt; [メタタグ] &amp;gt; [説明] &amp;gt; [編集]から、[検索向け説明を有効にしますか？]を[はい]として、説明を入力します。&lt;/p&gt;
-
-&lt;h2 id=&#34;ページに複数の-lt-h1-gt-タグが存在しています&#34;&gt;ページに複数の &amp;lt;h1&amp;gt; タグが存在しています。&lt;/h2&gt;
-
-&lt;p&gt;bing Web マスター曰く、&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;ページ ソースから余分な &amp;lt;h1&amp;gt; タグを削除し、1 つの &amp;lt;h1&amp;gt; タグしか存在しないようにします。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;bloggerでは、シンプルテンプレートを使用中ですが、タイトルにh1タグを使用しているため、ブログ本文中にh1タグを使用してはいけません。&lt;/p&gt;
-
-&lt;h2 id=&#34;lt-img-gt-タグで-alt-属性が定義されていません&#34;&gt;&amp;lt;img&amp;gt; タグで ALT 属性が定義されていません。&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;bing Web マスター曰く、 原則として、検索エンジンは画像ファイルを解釈しません。サイト所有者は、&amp;lt;img alt&amp;gt; 属性のテキストを使用して検索エンジンとエンド ユーザーに関連情報を提供することができます。エンド ユーザーが画像を無効にしている場合や画像が正しく読み込まれなかった場合に、Alt テキストが役に立ちます。また、スクリーン リーダーでも Alt テキストが使用されます。Alt テキストが記述的で、画像を正確に示し、ページ コンテンツをサポートしていることを確認してください。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;言わずもがな。&lt;/p&gt;
-</description>
+      <description>[レポート＆データ] &amp;gt; [SEOレポート]からレポートを確認できます。 簡単なものから順次対策していきます。
+ページにメタ言語情報がありません。 bing Web マスター曰く、
+ メタ言語情報は、ページ コンテンツの意図される対象先の言語と国/地域を理解するためのヒントとして使用されます。これは、サイトが対象の国/地域でホストされていない場合に役立ちます。“content-language” メタ タグを使用して、ページの &amp;lt;head&amp;gt; セクションに文化コードを埋め込みます。たとえば、&amp;lt;meta http-equiv=&amp;ldquo;content-language&amp;rdquo; content=&amp;ldquo;en-gb&amp;rdquo;&amp;gt; は、ページが英語で、イギリスを対象としていることになります。代わりに、&amp;lt;html lang=&amp;ldquo;en-gb&amp;rdquo;&amp;gt; または &amp;lt;title lang=&amp;ldquo;en-gb&amp;rdquo;&amp;gt; を使用することもできます。
+ bloggerでは、[テンプレート] &amp;gt; [HTMLの編集]から、htmlタグにlang=&amp;lsquo;ja-jp&amp;rsquo;を追加しましょう。lang属性はダブルクォートではなく&amp;lt;b&amp;gt;シングルクォート&amp;lt;/b&amp;gt;で囲む必要があります。
+説明がページのヘッド セクションにありません。 bing Web マスター曰く、
+ 検索エンジンは、&amp;lt;description&amp;gt; タグで提供される説明を検索エンジン結果のページ (SERP) で使用する場合があります。ページのコンテンツを正確に表し、検索ユーザーの目的と関連性が高い説明は、検索におけるページのクリックスルー率を向上するため、トラフィックの増加を期待できます。
+ bloggerでは、[設定] › [検索設定} &amp;gt; [メタタグ] &amp;gt; [説明] &amp;gt; [編集]から、[検索向け説明を有効にしますか？]を[はい]として、説明を入力します。
+ページに複数の &amp;lt;h1&amp;gt; タグが存在しています。 bing Web マスター曰く、
+ ページ ソースから余分な &amp;lt;h1&amp;gt; タグを削除し、1 つの &amp;lt;h1&amp;gt; タグしか存在しないようにします。
+ bloggerでは、シンプルテンプレートを使用中ですが、タイトルにh1タグを使用しているため、ブログ本文中にh1タグを使用してはいけません。
+&amp;lt;img&amp;gt; タグで ALT 属性が定義されていません。  bing Web マスター曰く、 原則として、検索エンジンは画像ファイルを解釈しません。サイト所有者は、&amp;lt;img alt&amp;gt; 属性のテキストを使用して検索エンジンとエンド ユーザーに関連情報を提供することができます。エンド ユーザーが画像を無効にしている場合や画像が正しく読み込まれなかった場合に、Alt テキストが役に立ちます。また、スクリーン リーダーでも Alt テキストが使用されます。Alt テキストが記述的で、画像を正確に示し、ページ コンテンツをサポートしていることを確認してください。</description>
     </item>
     
     <item>
@@ -115,32 +55,10 @@
       <pubDate>Sun, 26 Mar 2017 15:41:34 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/site/code-prettify-on-github/</guid>
-      <description>&lt;p&gt;code-prettifyはGoogle謹製シンタックスハイライターです。&lt;/p&gt;
-
-&lt;p&gt;以前は以下の構成が必要でした。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!-- prettify --&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;style&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;text/css&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js&amp;#39;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;text/javascript&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;text/javascript&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;prettify&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
- &lt;span class=&#34;nx&#34;&gt;prettyPrint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;addEventListener&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;nb&#34;&gt;window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;addEventListener&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;quot;load&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;prettify&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;attachEvent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;nb&#34;&gt;window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;attachEvent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;quot;onload&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;prettify&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;nb&#34;&gt;window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;onload&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;prettify&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
-&lt;span class=&#34;c&#34;&gt;&amp;lt;!-- prettify --&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;進化後はたった一行で済みます。すごいですね。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-</description>
+      <description>code-prettifyはGoogle謹製シンタックスハイライターです。
+以前は以下の構成が必要でした。
+&amp;lt;!-- prettify --&amp;gt; &amp;lt;style type=&amp;#39;text/css&amp;#39;&amp;gt; @import &amp;quot;http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css&amp;quot;; &amp;lt;/style&amp;gt; &amp;lt;script src=&amp;#39;http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js&amp;#39; type=&amp;#39;text/javascript&amp;#39;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#39;text/javascript&amp;#39;&amp;gt; function prettify() { prettyPrint(); } if (window.addEventListener) { window.addEventListener(&amp;quot;load&amp;quot;, prettify, false); } else if (window.attachEvent) { window.attachEvent(&amp;quot;onload&amp;quot;, prettify); } else { window.onload = prettify; }&amp;lt;/script&amp;gt; &amp;lt;!-- prettify --&amp;gt;  進化後はたった一行で済みます。すごいですね。
+&amp;lt;script src=&amp;quot;https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;  </description>
     </item>
     
     <item>
@@ -149,63 +67,14 @@
       <pubDate>Sun, 26 Mar 2017 15:41:29 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/site/blogger-last-modified/</guid>
-      <description>&lt;p&gt;bloggerのテンプレートタグでは更新日時を取得できないので、&lt;a href=&#34;http://blog2.k05.biz/2013/05/blogger-last-modified.html&#34;&gt;別の方法&lt;/a&gt;を参考に、時刻追加、個別記事表示、一覧記事表示どちらも対応するようにしました。&lt;/p&gt;
-
-&lt;p&gt;ポイントは最終更新日時を挿入する要素のID属性を各投稿記事固有のIDにすることです。&lt;/p&gt;
-
-&lt;p&gt;ここが固定だと、最も早く出現する要素1つにのみ更新日時が表示されてしまいます。&lt;/p&gt;
-
-&lt;p&gt;まず、最終更新日時を表示する領域を決めます。&lt;/p&gt;
-
-&lt;p&gt;[テンプレート] &amp;gt; [HTMLの編集] &amp;gt; [書式テンプレート] &amp;gt; [ウィジェットの移動] &amp;gt; [Blog1&amp;lt;ブログ投稿領域&amp;gt;]に移動します。&lt;/p&gt;
-
-&lt;p&gt;投稿領域近辺が良いと思いますので、&amp;lt;b:includable id=&amp;lsquo;post&amp;rsquo; var=&amp;lsquo;post&amp;rsquo;&amp;gt;&amp;hellip;&amp;lt;/b:includable&amp;gt;を展開し、そこから好きな位置に決めます。
-今回は、投稿日時の近辺にするため、&amp;lt;span class=&amp;lsquo;post-timestamp&amp;rsquo;&amp;gt;と次の要素の間に以下の投稿に依存するコードを埋め込みます。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!-- 最終更新日時 --&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;span&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;expr:id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;data:post.id&amp;#39;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;last-modified updated&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;span&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;text/javascript&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;id&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;&amp;lt;data:post.id/&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;text/javascript&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;sHome&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;&amp;lt;data:blog.homepageUrl/&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-  &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;sURL&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;&amp;lt;data:post.url/&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-  &lt;span class=&#34;nx&#34;&gt;sURL&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;sURL&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;replace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;sHome&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-  &lt;span class=&#34;nx&#34;&gt;sURL&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;/&amp;quot;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;sURL&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-  &lt;span class=&#34;nb&#34;&gt;document&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;write&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;unescape&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;quot;%3Cscript&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;quot; src=&amp;#39;&amp;quot;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;sHome&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;quot;/atom.xml?redirect=false&amp;amp;path=&amp;quot;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;sURL&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;quot;&amp;amp;max-results=1&amp;amp;alt=json-in-script&amp;amp;callback=show_last_modified&amp;#39; type=&amp;#39;text/javascript&amp;#39;&amp;quot;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;unescape&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;quot;%3E%3C/script%3E&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;各投稿のRSSからコールバックされる関数show_last_modifiedは投稿に依存せず不変のため、テンプレートの上部に(投稿の前に宣言できればどこでも良い)一度だけ宣言します。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// &amp;lt;![CDATA[&lt;/span&gt;
-&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;show_last_modified&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;root&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;published&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;  
-  &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;updated&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-  &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;root&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;feed&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;entry&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;length&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;nx&#34;&gt;published&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;root&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;feed&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;entry&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;].&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;published&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;nx&#34;&gt;updated&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;root&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;feed&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;entry&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;].&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;updated&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-  &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;dd_Y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;updated&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;substring&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-  &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;dd_M&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;updated&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;substring&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-  &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;dd_D&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;updated&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;substring&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-  &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;pp_Y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;published&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;substring&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-  &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;pp_M&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;published&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;substring&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-  &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;pp_D&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;published&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;substring&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-  &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;dd_Y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;pp_Y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;dd_M&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;pp_M&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;dd_D&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;pp_D&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;c1&#34;&gt;// 日付が同じときは出力しない&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;dd_H&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;updated&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;substring&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;dd_m&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;updated&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;substring&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;dd_S&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;updated&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;substring&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;updated_dd&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;updated...&amp;quot;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;dd_Y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;/&amp;quot;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;dd_M&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;/&amp;quot;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;dd_D&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot; &amp;quot;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;dd_H&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;:&amp;quot;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;dd_m&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;:&amp;quot;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;dd_S&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;nb&#34;&gt;document&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;getElementById&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;innerHTML&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;updated_dd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-  &lt;span class=&#34;nb&#34;&gt;document&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;getElementById&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;title&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;updated&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//]]&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;保存して正しく動くか確認しましょう。 また、一覧記事表示ではRSSを記事数分ロードするため、一覧表示件数は控えめにしましょう。&lt;/p&gt;
-</description>
+      <description>bloggerのテンプレートタグでは更新日時を取得できないので、別の方法を参考に、時刻追加、個別記事表示、一覧記事表示どちらも対応するようにしました。
+ポイントは最終更新日時を挿入する要素のID属性を各投稿記事固有のIDにすることです。
+ここが固定だと、最も早く出現する要素1つにのみ更新日時が表示されてしまいます。
+まず、最終更新日時を表示する領域を決めます。
+[テンプレート] &amp;gt; [HTMLの編集] &amp;gt; [書式テンプレート] &amp;gt; [ウィジェットの移動] &amp;gt; [Blog1&amp;lt;ブログ投稿領域&amp;gt;]に移動します。
+投稿領域近辺が良いと思いますので、&amp;lt;b:includable id=&amp;lsquo;post&amp;rsquo; var=&amp;lsquo;post&amp;rsquo;&amp;gt;&amp;hellip;&amp;lt;/b:includable&amp;gt;を展開し、そこから好きな位置に決めます。 今回は、投稿日時の近辺にするため、&amp;lt;span class=&amp;lsquo;post-timestamp&amp;rsquo;&amp;gt;と次の要素の間に以下の投稿に依存するコードを埋め込みます。
+&amp;lt;!-- 最終更新日時 --&amp;gt; &amp;lt;span expr:id=&amp;#39;data:post.id&amp;#39; class=&amp;#39;last-modified updated&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;script type=&amp;#39;text/javascript&amp;#39;&amp;gt; var id = &amp;quot;&amp;lt;data:post.id/&amp;gt;&amp;quot;; &amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#39;text/javascript&amp;#39;&amp;gt; var sHome = &amp;quot;&amp;lt;data:blog.homepageUrl/&amp;gt;&amp;quot;; var sURL = &amp;quot;&amp;lt;data:post.url/&amp;gt;&amp;quot;; sURL = sURL.replace(sHome, &amp;quot;&amp;quot;) sURL = &amp;quot;/&amp;quot; + sURL; document.write(unescape(&amp;quot;%3Cscript&amp;quot;)+&amp;quot; src=&amp;#39;&amp;quot;+sHome+&amp;quot;/atom.xml?redirect=false&amp;amp;path=&amp;quot;+sURL+&amp;quot;&amp;amp;max-results=1&amp;amp;alt=json-in-script&amp;amp;callback=show_last_modified&amp;#39; type=&amp;#39;text/javascript&amp;#39;&amp;quot;+unescape(&amp;quot;%3E%3C/script%3E&amp;quot;)); &amp;lt;/script&amp;gt;  各投稿のRSSからコールバックされる関数show_last_modifiedは投稿に依存せず不変のため、テンプレートの上部に(投稿の前に宣言できればどこでも良い)一度だけ宣言します。
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;// &amp;lt;![CDATA[ function show_last_modified(root) { var published = &amp;#39;&amp;#39;; var updated = &amp;#39;&amp;#39;; for (var i = 0; i &amp;lt; root.</description>
     </item>
     
     <item>
@@ -214,52 +83,12 @@
       <pubDate>Sun, 26 Mar 2017 15:41:24 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/site/blogger-blogposting-jsonld/</guid>
-      <description>&lt;p&gt;bloggerのテンプレートで、以下のブログ投稿箇所を検索します。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;b:loop&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;values=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;data:posts&amp;#39;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;var=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;post&amp;#39;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;この直下に以下のスクリプトを挿入します。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!-- schema.org - BlogPosting. --&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;application/ld+json&amp;#39;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
-  {
-    &amp;quot;@context&amp;quot;: &amp;quot;http://schema.org&amp;quot;,
-    &amp;quot;@type&amp;quot;: &amp;quot;BlogPosting&amp;quot;,
-    &amp;quot;headline&amp;quot;: &amp;quot;&lt;span class=&#34;nt&#34;&gt;&amp;lt;data:blog.url/&amp;gt;&lt;/span&gt;&amp;quot;,
-    &amp;quot;url&amp;quot;: &amp;quot;&lt;span class=&#34;nt&#34;&gt;&amp;lt;data:blog.pageTitle/&amp;gt;&lt;/span&gt;&amp;quot;,
-    &amp;quot;datePublished&amp;quot;: &amp;quot;&lt;span class=&#34;nt&#34;&gt;&amp;lt;data:post.timestampISO8601/&amp;gt;&lt;/span&gt;&amp;quot;,
-    &amp;quot;author&amp;quot;: {
-      &amp;quot;@type&amp;quot;: &amp;quot;Person&amp;quot;,
-      &amp;quot;name&amp;quot;: &amp;quot;&lt;span class=&#34;nt&#34;&gt;&amp;lt;data:post.author/&amp;gt;&lt;/span&gt;&amp;quot;
-    },
-    &amp;quot;publisher&amp;quot;: {
-      &amp;quot;@type&amp;quot;: &amp;quot;Organization&amp;quot;,
-      &amp;quot;name&amp;quot;: &amp;quot;Weiβlogy&amp;quot;,
-      &amp;quot;logo&amp;quot;: {
-        &amp;quot;@type&amp;quot;: &amp;quot;ImageObject&amp;quot;,
-        &amp;quot;url&amp;quot;: &amp;quot;http://www.weizlogy.gq/favicon.ico&amp;quot;
-      }
-    },
-    &amp;quot;dateModified&amp;quot;: &amp;quot;&lt;span class=&#34;nt&#34;&gt;&amp;lt;data:post.timestampISO8601/&amp;gt;&lt;/span&gt;&amp;quot;,
-    &amp;quot;mainEntityOfPage&amp;quot;: &amp;quot;1&amp;quot;,
-    &amp;quot;image&amp;quot;: {
-      &amp;quot;@type&amp;quot;: &amp;quot;ImageObject&amp;quot;,
-      &amp;quot;url&amp;quot;: &amp;quot;http://www.weizlogy.gq/dummy.png&amp;quot;,
-      &amp;quot;width&amp;quot;: &amp;quot;100&amp;quot;,
-      &amp;quot;height&amp;quot;: &amp;quot;100&amp;quot;
-    }
-  }
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;publisher, imageは各自修正してください。&lt;/p&gt;
-
-&lt;p&gt;datePublished, dateModifiedは今のところ同じ値になっています。&lt;/p&gt;
-
-&lt;p&gt;feedDataに情報はありますが、Javascriptを経由せず取得するのは難しそうです。&lt;/p&gt;
-
-&lt;p&gt;本当はheaderタグ内に置きたかったのですが、data:postsが b:section class=&amp;lsquo;main&amp;rsquo; id=&amp;lsquo;main&amp;rsquo; 配下でないと
-有効でないという仕様に阻まれました。。。&lt;/p&gt;
-</description>
+      <description>bloggerのテンプレートで、以下のブログ投稿箇所を検索します。
+&amp;lt;b:loop values=&amp;#39;data:posts&amp;#39; var=&amp;#39;post&amp;#39;&amp;gt;  この直下に以下のスクリプトを挿入します。
+&amp;lt;!-- schema.org - BlogPosting. --&amp;gt; &amp;lt;script type=&amp;#39;application/ld+json&amp;#39;&amp;gt; { &amp;quot;@context&amp;quot;: &amp;quot;http://schema.org&amp;quot;, &amp;quot;@type&amp;quot;: &amp;quot;BlogPosting&amp;quot;, &amp;quot;headline&amp;quot;: &amp;quot;&amp;lt;data:blog.url/&amp;gt;&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;&amp;lt;data:blog.pageTitle/&amp;gt;&amp;quot;, &amp;quot;datePublished&amp;quot;: &amp;quot;&amp;lt;data:post.timestampISO8601/&amp;gt;&amp;quot;, &amp;quot;author&amp;quot;: { &amp;quot;@type&amp;quot;: &amp;quot;Person&amp;quot;, &amp;quot;name&amp;quot;: &amp;quot;&amp;lt;data:post.author/&amp;gt;&amp;quot; }, &amp;quot;publisher&amp;quot;: { &amp;quot;@type&amp;quot;: &amp;quot;Organization&amp;quot;, &amp;quot;name&amp;quot;: &amp;quot;Weiβlogy&amp;quot;, &amp;quot;logo&amp;quot;: { &amp;quot;@type&amp;quot;: &amp;quot;ImageObject&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;http://www.weizlogy.gq/favicon.ico&amp;quot; } }, &amp;quot;dateModified&amp;quot;: &amp;quot;&amp;lt;data:post.timestampISO8601/&amp;gt;&amp;quot;, &amp;quot;mainEntityOfPage&amp;quot;: &amp;quot;1&amp;quot;, &amp;quot;image&amp;quot;: { &amp;quot;@type&amp;quot;: &amp;quot;ImageObject&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;http://www.weizlogy.gq/dummy.png&amp;quot;, &amp;quot;width&amp;quot;: &amp;quot;100&amp;quot;, &amp;quot;height&amp;quot;: &amp;quot;100&amp;quot; } } &amp;lt;/script&amp;gt;  publisher, imageは各自修正してください。
+datePublished, dateModifiedは今のところ同じ値になっています。
+feedDataに情報はありますが、Javascriptを経由せず取得するのは難しそうです。
+本当はheaderタグ内に置きたかったのですが、data:postsが b:section class=&amp;lsquo;main&amp;rsquo; id=&amp;lsquo;main&amp;rsquo; 配下でないと 有効でないという仕様に阻まれました。。。</description>
     </item>
     
   </channel>
