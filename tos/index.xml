@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Tue, 18 Jul 2017 00:53:21 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 26 Jul 2017 00:03:59 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/tos/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] ダイスロールアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/dice/</link>
+      <pubDate>Wed, 26 Jul 2017 00:03:59 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/dice/</guid>
+      <description>download. [v1.0.0] dice.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.0 新規作成。 アドオンがロードされると、チャットコマンドで /random と打つと、 0～999の値をランダムに決定し、一般チャット範囲に結果を送信します。</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</title>

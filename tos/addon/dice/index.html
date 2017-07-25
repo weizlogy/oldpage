@@ -2,11 +2,11 @@
 <html ⚡>
 <head>
 <meta charset="utf-8">
-<link rel="canonical" href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">
+<link rel="canonical" href="http://www.weizlogy.gq/tos/addon/dice/">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <title>
 
-  [system development] cannot find source for binding with reference について &ndash; Weizlogy
+  [tree of savior addon] ダイスロールアドオン &ndash; Weizlogy
 
 </title>
 
@@ -201,9 +201,9 @@
 {
   "@context": "http://schema.org"
   "@type": "BlogPosting",
-  "headline": "[system development] cannot find source for binding with reference について",
-  "url": "http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/",
-  "datePublished": "2010-09-11 18:35:00 &#43;0900 JST",
+  "headline": "[tree of savior addon] ダイスロールアドオン",
+  "url": "http://www.weizlogy.gq/tos/addon/dice/",
+  "datePublished": "2017-07-25 05:47:00.001 &#43;0900 JST",
   "author": {
     "@type": "Person",
     "name": "weizlogy"
@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-26 15:42:56.1612112 &#43;0900 JST",
+  "dateModified": "2017-07-26 00:03:59.2091681 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -254,33 +254,42 @@
 <div>
 <article>
 
- <h1><a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a>
+ <h1><a href="http://www.weizlogy.gq/tos/addon/dice/">[tree of savior addon] ダイスロールアドオン</a>
+  
+    &ndash;&nbsp;v1.0.0
   
 </h1>
  <div>
-  <p>掲題の件について、検索キーワードにあがりましたので、簡単にまとめました。</p>
+  
 
-<p>正式には、以下のErrorが発生しました。</p>
+<h2 id="download">download.</h2>
 
-<p>System.Windows.Data Error: 4 : Cannot find source for binding with reference &lsquo;RelativeSource FindAncestor, AncestorType=&lsquo;System.Windows.Controls.ItemsControl&rsquo;, AncestorLevel=&lsquo;1&rdquo;. BindingExpression:Path=HorizontalContentAlignment; DataItem=null; target element is &lsquo;ListBoxItem&rsquo; (Name=&ldquo;); target property is &lsquo;HorizontalContentAlignment&rsquo; (type &lsquo;HorizontalAlignment&rsquo;)</p>
+<p><a href="https://github.com/weizlogy/tos/releases/download/dice-v1.0.0/dice.ipf">[v1.0.0] dice.ipf</a></p>
 
-<p>System.Windows.Data Error: 4 : Cannot find source for binding with reference &lsquo;RelativeSource FindAncestor, AncestorType=&lsquo;System.Windows.Controls.ItemsControl&rsquo;, AncestorLevel=&lsquo;1&rdquo;. BindingExpression:Path=VerticalContentAlignment; DataItem=null; target element is &lsquo;ListBoxItem&rsquo; (Name=&ldquo;); target property is &lsquo;VerticalContentAlignment&rsquo; (type &lsquo;VerticalAlignment&rsquo;)</p>
+<h2 id="install">install.</h2>
 
-<p>xamlのStyle定義のSetterプロパティでAlignmentを定義していると出るみたいです。
-定義を外すとErrorは出ません。
-みたいです。というのは、何故なのか理由が分からないためです。</p>
+<p><a href="https://github.com/weizlogy/tos/blob/master/README.md">README.md</a></p>
 
-<p>以下、実際のコードの抜粋です。</p>
-<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="nt">&lt;Style</span> <span class="na">TargetType=</span><span class="s">&quot;{x:Type ListBoxItem}&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;Setter</span> <span class="na">Property=</span><span class="s">&quot;HorizontalContentAlignment&quot;</span> <span class="na">Value=</span><span class="s">&quot;{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&quot;</span><span class="nt">/&gt;</span>
-    <span class="nt">&lt;Setter</span> <span class="na">Property=</span><span class="s">&quot;VerticalContentAlignment&quot;</span> <span class="na">Value=</span><span class="s">&quot;{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&quot;</span><span class="nt">/&gt;</span>
-</code></pre></div>
+<h2 id="introduction">introduction.</h2>
+
+<p><a href="https://www.dropbox.com/s/tedgfm4w3bl802d/dice.png?dl=1"><amp-img src="https://www.dropbox.com/s/tedgfm4w3bl802d/dice.png?dl=1" width="320" height="185" title="" layout="responsive" /></a></p>
+
+<h2 id="settings">settings.</h2>
+
+<h2 id="descriptions">descriptions.</h2>
+
+<h3 id="v1-0-0">v1.0.0</h3>
+
+<h4 id="新規作成">新規作成。</h4>
+
+<p>アドオンがロードされると、チャットコマンドで /random と打つと、
+0～999の値をランダムに決定し、一般チャット範囲に結果を送信します。</p>
 
  </div>
 
 </article>
 <div class="blog-date">
-  2010/09/11 18:35:00 - 2017/03/26 15:42:56
+  2017/07/25 05:47:00 - 2017/07/26 00:03:59
 </div>
 <amp-ad type="adsense"
   layout="responsive"

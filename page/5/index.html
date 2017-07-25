@@ -190,6 +190,10 @@
   .highlight .vg { color: #008080 }  
   .highlight .vi { color: #008080 }  
   .highlight .il { color: #009999 }  
+   
+  .tos-addon-x, .\[tos-addon-x\] {
+    display: none;
+  }
 </style>
 
 
@@ -212,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-26 15:42:44.0827267 &#43;0900 JST",
+  "dateModified": "2017-03-26 15:42:24.4434868 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -255,7 +259,7 @@
   
     <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
   
-    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(19)</div>
+    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(20)</div>
   
     <div class="tos-addon-dev"><a href="/categories/tos-addon-dev">tos-addon-dev</a>(4)</div>
   
@@ -269,6 +273,17 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/dice/">[tree of savior addon] ダイスロールアドオン</a>
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+      <span class="blog-date">@2017/07/26 00:03:59</span>
+    </div>
+  </div>
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
@@ -314,17 +329,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/slotmac/">[tree of savior addon] クイックスロットスキル/アイテム用マクロアドオン</a>
-    
-    &ndash;&nbsp;v1.2.0
-    
-    
-      <span class="blog-date">@2017/06/30 21:58:49</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -333,6 +337,16 @@
   <strong>Contents index.</strong>
   <section>
   
+  
+  <div class="[system-dev]">
+    <a href="http://www.weizlogy.gq/system/dev/spring-aop-test/">[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</a>
+    
+    
+    
+  </div>
+  <pre class="summary [system-dev]">Interceptor クラスの内容は以下の通りです。
+import org.aspectj.lang.ProceedingJoinPoint; import org.aspectj.lang.annotation.Around; import org.aspectj.lang.annotation.Aspect; @Aspect public class SomeInterceptor { @Around(&quot;execution(* execute(..))&quot;) public Object around(ProceedingJoinPoint pjp) { System.out.println(String.format(&quot;%s.%s start.&quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); Object value = null; try { value = pjp.proceed(); } catch (Throwable e) { e.printStackTrace(); } System.out.println(String.format(&quot;%s.%s ended.&quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); return value; } }  Test クラスの内容は以下の通りです。
+import static org.junit.Assert.*; import java.util.ArrayList; import org.junit.Test; import org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint; import org.springframework.aop.framework.ReflectiveMethodInvocation; import org.springframework.aop.interceptor.SimpleTraceInterceptor; public class SomeInterceptorTest { /** AOP の対象となるメソッドを持つクラス */ private static class AOPTarget { public String execute() { System.</pre>
   
   <div class="[system-dev]">
     <a href="http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/">[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</a>
