@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-06-30 21:58:49.0684581 &#43;0900 JST",
+  "dateModified": "2017-07-30 01:45:43.3514469 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -256,7 +256,7 @@
 
  <h1><a href="http://www.weizlogy.gq/tos/addon/slotmac/">[tree of savior addon] クイックスロットスキル/アイテム用マクロアドオン</a>
   
-    &ndash;&nbsp;v1.2.0
+    &ndash;&nbsp;v1.3.0
   
 </h1>
  <div>
@@ -264,7 +264,7 @@
 
 <h2 id="download">download.</h2>
 
-<p><a href="https://github.com/weizlogy/tos/releases/download/slotmac-v1.2.0/slotmac.ipf">[v1.2.0] slotmac.ipf</a></p>
+<p><a href="https://github.com/weizlogy/tos/releases/download/slotmac-v1.3.0/slotmac.ipf">[v1.3.0] slotmac.ipf</a></p>
 
 <h2 id="install">install.</h2>
 
@@ -283,6 +283,26 @@
 <p>slotmac フォルダー配下に操作キャラの[cid]のファイルが作成されますので、コピー &gt; ファイル削除 &gt; 新しいフォルダー作成 &gt; フォルダー名変更 &gt; ペースト　としてください。</p>
 
 <h2 id="descriptions">descriptions.</h2>
+
+<h3 id="v1-3-0">v1.3.0</h3>
+
+<h4 id="ターゲット情報タグ追加">ターゲット情報タグ追加</h4>
+
+<p>ターゲット中の敵に関する情報を表示するタグを追加しました。</p>
+
+<p>詳細はマクロタグ一覧参照。</p>
+
+<h4 id="自キャラ情報タグ追加">自キャラ情報タグ追加</h4>
+
+<p>自キャラに関する情報を表示するタグを追加しました。</p>
+
+<p>詳細はマクロタグ一覧参照。</p>
+
+<h4 id="スロット情報タグ追加">スロット情報タグ追加</h4>
+
+<p>マクロを実行したスロットに関する情報を表示するタグを追加しました。</p>
+
+<p>詳細はマクロタグ一覧参照。</p>
 
 <h3 id="v1-2-0">v1.2.0</h3>
 
@@ -374,62 +394,6 @@
 
 <p>systemチャットで自分にしか見えない発言ができます。</p>
 <div class="highlight"><pre><code class="language-lua" data-lang="lua"><span></span><span class="o">#</span><span class="n">system</span><span class="o">#</span> <span class="n">test</span> <span class="c1">-- systemチャット[test]と発言する。</span>
-</code></pre></div>
-
-<h4 id="エモティコン">エモティコン</h4>
-
-<p>チャットコマンドやエコーでエモティコンを表示できます。</p>
-<div class="highlight"><pre><code class="language-lua" data-lang="lua"><span></span><span class="o">/</span><span class="n">s</span> <span class="o">&lt;</span><span class="n">emoticon_0009</span><span class="o">&gt;</span> <span class="c1">-- 一般チャット[脱力エモ]と発言する。</span>
-</code></pre></div>
-
-<p>エモティコンはクラス名で指定します。
-data\jp.ipf\xml\chat_emoticons.xml に載っていますが、以下に抜粋しておきます。</p>
-<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;1&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0001&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;幸せ&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;2&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0002&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;ケッピー好き&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;3&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0003&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;ケッピー泣く&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;4&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0004&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;コラッ&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;5&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0005&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;怒り&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;6&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0006&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;満足&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;7&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0007&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;コンパ&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;8&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0008&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;笑み&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;9&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0009&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;脱力&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;10&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0010&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;えっ！&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;11&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0011&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;えっ!!!&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;12&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0012&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;おえっ&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;13&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0013&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;イケイケ&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;14&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0014&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;怒り&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;15&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0015&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;爆破&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;16&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0016&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;悲しみ&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;17&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0017&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;左&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;18&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0018&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;右&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;19&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0019&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;狙い&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;20&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0020&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;王子&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;21&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0021&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;疲れた&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;22&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0022&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;ダラッ&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;23&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0023&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;キャーッ&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;24&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0024&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;hi&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;25&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0025&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;bye&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;26&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0026&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;ok&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;27&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0027&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;gg&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;28&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0028&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;暑い&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;29&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0029&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;寒い&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;30&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0030&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;頑張れ1&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;31&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0031&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;頑張れ2&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;32&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0032&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;お腹すいた1&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;33&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0033&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;お腹いっぱい&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;34&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0034&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;えっへん&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;35&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0035&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;感謝&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;36&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0036&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;はて？&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;37&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0037&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;おやすみ&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;38&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0038&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;オッケー&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;39&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0039&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;やだ1&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;40&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0040&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;やだ2&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;41&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0041&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;愛してる&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;42&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0042&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;眠い&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;43&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0043&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;お腹すいた2&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;44&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0044&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;痛い&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;45&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0045&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;ごめん&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;46&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0046&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;グッドラック&quot;</span><span class="nt">/&gt;</span>
 </code></pre></div>
 
 <h4 id="ポーズ">ポーズ</h4>
@@ -530,6 +494,88 @@ LENDS
 <div class="highlight"><pre><code class="language-lua" data-lang="lua"><span></span><span class="o">#</span><span class="n">unequip</span><span class="o">#</span> <span class="n">RH</span> <span class="c1">-- メインウエポンを外す。</span>
 </code></pre></div>
 
+<h3 id="マクロタグ一覧">マクロタグ一覧</h3>
+
+<h4 id="エモティコン">エモティコン</h4>
+
+<p>チャットコマンドやエコーでエモティコンを表示できます。</p>
+<div class="highlight"><pre><code class="language-lua" data-lang="lua"><span></span><span class="o">/</span><span class="n">s</span> <span class="o">&lt;</span><span class="n">emoticon_0009</span><span class="o">&gt;</span> <span class="c1">-- 一般チャット[脱力エモ]と発言する。</span>
+</code></pre></div>
+
+<p>エモティコンはクラス名で指定します。
+data\jp.ipf\xml\chat_emoticons.xml に載っていますが、以下に抜粋しておきます。</p>
+<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;1&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0001&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;幸せ&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;2&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0002&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;ケッピー好き&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;3&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0003&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;ケッピー泣く&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;4&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0004&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;コラッ&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;5&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0005&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;怒り&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;6&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0006&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;満足&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;7&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0007&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;コンパ&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;8&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0008&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;笑み&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;9&quot;</span>  <span class="na">ClassName=</span><span class="s">&quot;emoticon_0009&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;脱力&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;10&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0010&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;えっ！&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;11&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0011&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;えっ!!!&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;12&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0012&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;おえっ&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;13&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0013&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;イケイケ&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;14&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0014&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;怒り&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;15&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0015&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;爆破&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;16&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0016&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;悲しみ&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;17&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0017&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;左&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;18&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0018&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;右&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;19&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0019&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;狙い&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;20&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0020&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;王子&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;21&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0021&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;疲れた&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;22&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0022&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;ダラッ&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;23&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0023&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;キャーッ&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;24&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0024&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;hi&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;25&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0025&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;bye&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;26&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0026&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;ok&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;27&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0027&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;gg&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;28&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0028&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;暑い&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;29&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0029&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;寒い&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;30&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0030&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;頑張れ1&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;31&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0031&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;頑張れ2&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;32&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0032&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;お腹すいた1&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;33&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0033&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;お腹いっぱい&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;34&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0034&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;えっへん&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;35&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0035&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;感謝&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;36&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0036&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;はて？&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;37&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0037&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;おやすみ&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;38&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0038&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;オッケー&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;39&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0039&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;やだ1&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;40&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0040&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;やだ2&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;41&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0041&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;愛してる&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;42&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0042&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;眠い&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;43&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0043&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;お腹すいた2&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;44&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0044&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;痛い&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;45&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0045&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;ごめん&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;Class</span> <span class="na">ClassID=</span><span class="s">&quot;46&quot;</span> <span class="na">ClassName=</span><span class="s">&quot;emoticon_0046&quot;</span> <span class="na">IconTokken=</span><span class="s">&quot;グッドラック&quot;</span><span class="nt">/&gt;</span>
+</code></pre></div>
+
+<h4 id="ターゲット情報">ターゲット情報</h4>
+
+<p>ターゲット中の敵の名前やステータスを表示できます。</p>
+<div class="highlight"><pre><code class="language-lua" data-lang="lua"><span></span><span class="o">/</span><span class="n">s</span> <span class="o">&lt;</span><span class="n">t</span><span class="o">&gt;</span> <span class="err">発見！</span> <span class="c1">-- 一般チャットで[ターゲット名称] 発見！と発言する。</span>
+<span class="o">/</span><span class="n">s</span> <span class="o">&lt;</span><span class="n">thp</span><span class="o">&gt;</span><span class="p">(</span><span class="o">&lt;</span><span class="n">thpp</span><span class="o">&gt;</span><span class="p">)</span> <span class="c1">-- 一般チャットで[ターゲット残HP(残HP%)]と発言する。</span>
+</code></pre></div>
+
+<h4 id="自キャラ情報">自キャラ情報</h4>
+
+<p>自キャラの名前やステータスを表示できます。</p>
+<div class="highlight"><pre><code class="language-lua" data-lang="lua"><span></span><span class="o">/</span><span class="n">s</span> <span class="o">&lt;</span><span class="n">me</span><span class="o">&gt;</span> <span class="c1">-- 一般チャットで[自キャラ名 自チーム名]と発言する。</span>
+<span class="o">/</span><span class="n">s</span> <span class="o">&lt;</span><span class="n">mec</span><span class="o">&gt;</span> <span class="c1">-- 一般チャットで[自キャラ名]と発言する。</span>
+<span class="o">/</span><span class="n">s</span> <span class="o">&lt;</span><span class="n">met</span><span class="o">&gt;</span> <span class="c1">-- 一般チャットで[自チーム名]と発言する。</span>
+<span class="o">/</span><span class="n">s</span> <span class="o">&lt;</span><span class="n">hp</span><span class="o">&gt;</span><span class="p">(</span><span class="o">&lt;</span><span class="n">hpp</span><span class="o">&gt;</span><span class="p">)</span> <span class="c1">-- 一般チャットで[自キャラ残HP(残HP%)]と発言する。</span>
+<span class="o">/</span><span class="n">s</span> <span class="o">&lt;</span><span class="n">sp</span><span class="o">&gt;</span><span class="p">(</span><span class="o">&lt;</span><span class="n">spp</span><span class="o">&gt;</span><span class="p">)</span> <span class="c1">-- 一般チャットで[自キャラ残HP(残HP%)]と発言する。</span>
+<span class="o">/</span><span class="n">s</span> <span class="o">&lt;</span><span class="n">pos</span><span class="o">&gt;</span> <span class="c1">-- 一般チャットで[自キャラ座標(x,y,z)]と発言する。</span>
+</code></pre></div>
+
+<h4 id="スロット情報">スロット情報</h4>
+
+<p>マクロ実行スロットスキル/アイテムの名前やクールダウンタイムを表示できます。</p>
+<div class="highlight"><pre><code class="language-lua" data-lang="lua"><span></span><span class="o">/</span><span class="n">s</span> <span class="o">&lt;</span><span class="n">sn</span><span class="o">&gt;</span> <span class="n">recast</span> <span class="kr">in</span> <span class="o">&lt;</span><span class="n">scdt</span><span class="o">&gt;</span> <span class="n">sec</span><span class="p">.</span> <span class="c1">-- 一般チャットで[スロットスキル/アイテム名 recast in [スロットスキル/アイテムクールダウンタイム] sec.]と発言する。</span>
+</code></pre></div>
+
 <h2 id="cautions">cautions.</h2>
 
 <p>マクロファイルがUTF8-BOM付の場合、BOMが邪魔で一行目のマクロが認識されません。UTF8以外(MS932など)は、全マクロが認識できません。</p>
@@ -540,7 +586,7 @@ LENDS
 
 </article>
 <div class="blog-date">
-  2017/06/16 21:15:19 - 2017/06/30 21:58:49
+  2017/06/16 21:15:19 - 2017/07/30 01:45:43
 </div>
 <amp-ad type="adsense"
   layout="responsive"

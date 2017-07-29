@@ -7,10 +7,42 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Wed, 26 Jul 2017 00:03:59 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 30 Jul 2017 01:45:43 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/categories/tos-addon/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] クイックスロットスキル/アイテム用マクロアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/slotmac/</link>
+      <pubDate>Sun, 30 Jul 2017 01:45:43 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/slotmac/</guid>
+      <description>download. [v1.3.0] slotmac.ipf
+install. README.md
+introduction. settings. Nexon\TreeofSaviorJP\addons\slotmac フォルダーを作成します。
+slotmac フォルダー配下に自キャラの[cid]のフォルダーを作成します。
+操作中のキャラクターのcidが不明な場合は、F3キーで[スキルと特性]ダイアログを開き、右下の[slmc]Reloadボタンを右クリックしてください。
+slotmac フォルダー配下に操作キャラの[cid]のファイルが作成されますので、コピー &amp;gt; ファイル削除 &amp;gt; 新しいフォルダー作成 &amp;gt; フォルダー名変更 &amp;gt; ペースト　としてください。
+descriptions. v1.3.0 ターゲット情報タグ追加 ターゲット中の敵に関する情報を表示するタグを追加しました。
+詳細はマクロタグ一覧参照。
+自キャラ情報タグ追加 自キャラに関する情報を表示するタグを追加しました。
+詳細はマクロタグ一覧参照。
+スロット情報タグ追加 マクロを実行したスロットに関する情報を表示するタグを追加しました。
+詳細はマクロタグ一覧参照。
+v1.2.0 オーバーヒート対応 オーバーヒートのあるスキルでは、通常マクロファイルに加えてオーバーヒート用のマクロファイルを 用意できるようになりました。
+例えばオーバーヒート3のスキルでは、以下のようになります。
+初撃 =&amp;gt; オーバーヒート用マクロファイル 二撃 =&amp;gt; オーバーヒート用マクロファイル 三撃 =&amp;gt; 通常マクロファイル  オーバーヒート用マクロファイルがない場合は、 マクロファイルのない通常動作（スキル発動のみ）となります。
+オーバーヒート用マクロファイルの詳細はusage参照。
+v1.1.0 equipコマンド追加 equipコマンドにより、クイックスロット実行に合わせて装備を変更できます。
+詳細はマクロコマンド一覧参照。
+unequipコマンド追加 unequipコマンドにより、クイックスロット実行に合わせて装備を外せます。
+詳細はマクロコマンド一覧参照。
+v1.0.0 新規作成 アドオンがロードされると、クイックスロットにセットしたスキルやアイテムを実行時に指定したマクロを実行できるようになります。
+また、[スキルと特性]ダイアログの右下の[slmc]Reloadボタンが追加されます。左クリックでマクロを再読み込みします。
+usage. マクロファイル作成 キーボード、マウスモードの場合、クイックスロットは左下が1、右上が40となります。(ジョイスティックは&amp;hellip;？)
+cidフォルダー配下に、必要に応じてマクロファイル(slot1.txt ～ slot40.txt)をUTF8-BOM無で作成します。 マクロファイルがない場合は、今まで通りスロットにセットされたものを実行します。</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] ダイスロールアドオン</title>
@@ -94,39 +126,6 @@ v1.1.1 パッチ対応 157576_001001 パッチ適用で使用不可になった�
 選択する度に反復クエストの表示非表示を切り替えます。
 v1.0.0 新規作成 アドオンがロードされると、ワールドマップの各エリア名上部に受注可能なクエスト数が表示されます。
 introductionの画像では碑石路、いにしえの女神の庭、ドバシア峠、古旗の森、大王の関門、カーライルの霊廟、ガルエット平野に[n]の形式で表示されています。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] クイックスロットスキル/アイテム用マクロアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/slotmac/</link>
-      <pubDate>Fri, 30 Jun 2017 21:58:49 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/slotmac/</guid>
-      <description>download. [v1.2.0] slotmac.ipf
-install. README.md
-introduction. settings. Nexon\TreeofSaviorJP\addons\slotmac フォルダーを作成します。
-slotmac フォルダー配下に自キャラの[cid]のフォルダーを作成します。
-操作中のキャラクターのcidが不明な場合は、F3キーで[スキルと特性]ダイアログを開き、右下の[slmc]Reloadボタンを右クリックしてください。
-slotmac フォルダー配下に操作キャラの[cid]のファイルが作成されますので、コピー &amp;gt; ファイル削除 &amp;gt; 新しいフォルダー作成 &amp;gt; フォルダー名変更 &amp;gt; ペースト　としてください。
-descriptions. v1.2.0 オーバーヒート対応 オーバーヒートのあるスキルでは、通常マクロファイルに加えてオーバーヒート用のマクロファイルを 用意できるようになりました。
-例えばオーバーヒート3のスキルでは、以下のようになります。
-初撃 =&amp;gt; オーバーヒート用マクロファイル 二撃 =&amp;gt; オーバーヒート用マクロファイル 三撃 =&amp;gt; 通常マクロファイル  オーバーヒート用マクロファイルがない場合は、 マクロファイルのない通常動作（スキル発動のみ）となります。
-オーバーヒート用マクロファイルの詳細はusage参照。
-v1.1.0 equipコマンド追加 equipコマンドにより、クイックスロット実行に合わせて装備を変更できます。
-詳細はマクロコマンド一覧参照。
-unequipコマンド追加 unequipコマンドにより、クイックスロット実行に合わせて装備を外せます。
-詳細はマクロコマンド一覧参照。
-v1.0.0 新規作成 アドオンがロードされると、クイックスロットにセットしたスキルやアイテムを実行時に指定したマクロを実行できるようになります。
-また、[スキルと特性]ダイアログの右下の[slmc]Reloadボタンが追加されます。左クリックでマクロを再読み込みします。
-usage. マクロファイル作成 キーボード、マウスモードの場合、クイックスロットは左下が1、右上が40となります。(ジョイスティックは&amp;hellip;？)
-cidフォルダー配下に、必要に応じてマクロファイル(slot1.txt ～ slot40.txt)をUTF8-BOM無で作成します。 マクロファイルがない場合は、今まで通りスロットにセットされたものを実行します。
-UTF8-BOM無がよく分からない人は、下記テンプレートをダウンロードして使ってください。
-slotN.txt
-slot1.txtなら、[A]キーに割り当てのクイックスロットという感じです。
-マクロは一行に一コマンドとなります。
-オーバーヒート用マクロファイル オーバーヒートのあるスキルでは、通常マクロファイルに加えてオーバーヒート用のマクロファイルを 用意できます。
-オーバーヒート用のマクロファイルの命名規則は以下の通りです。
-slot1-oh.txt ～ slot40-oh.</description>
     </item>
     
     <item>

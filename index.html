@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-07-26 00:03:59.2091681 &#43;0900 JST",
+  "dateModified": "2017-07-30 01:45:43.3514469 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -276,6 +276,17 @@
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/slotmac/">[tree of savior addon] クイックスロットスキル/アイテム用マクロアドオン</a>
+    
+    &ndash;&nbsp;v1.3.0
+    
+    
+      <span class="blog-date">@2017/07/30 01:45:43</span>
+    </div>
+  </div>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
       <a href="http://www.weizlogy.gq/tos/addon/dice/">[tree of savior addon] ダイスロールアドオン</a>
     
     &ndash;&nbsp;v1.0.0
@@ -315,17 +326,6 @@
     
     
       <span class="blog-date">@2017/07/16 23:26:44</span>
-    </div>
-  </div>
-  
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/worldmapquest/">[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</a>
-    
-    &ndash;&nbsp;v1.2.0
-    
-    
-      <span class="blog-date">@2017/07/14 00:45:36</span>
     </div>
   </div>
   
@@ -370,17 +370,23 @@ cautions.  エリアチェンジ、ログイン直後で既に存在する召喚
     <a href="http://www.weizlogy.gq/tos/addon/slotmac/">[tree of savior addon] クイックスロットスキル/アイテム用マクロアドオン</a>
     
     
-    &ndash;&nbsp;v1.2.0
+    &ndash;&nbsp;v1.3.0
     
     
   </div>
-  <pre class="summary [tos-addon]">download. [v1.2.0] slotmac.ipf
+  <pre class="summary [tos-addon]">download. [v1.3.0] slotmac.ipf
 install. README.md
 introduction. settings. Nexon\TreeofSaviorJP\addons\slotmac フォルダーを作成します。
 slotmac フォルダー配下に自キャラの[cid]のフォルダーを作成します。
 操作中のキャラクターのcidが不明な場合は、F3キーで[スキルと特性]ダイアログを開き、右下の[slmc]Reloadボタンを右クリックしてください。
 slotmac フォルダー配下に操作キャラの[cid]のファイルが作成されますので、コピー &gt; ファイル削除 &gt; 新しいフォルダー作成 &gt; フォルダー名変更 &gt; ペースト　としてください。
-descriptions. v1.2.0 オーバーヒート対応 オーバーヒートのあるスキルでは、通常マクロファイルに加えてオーバーヒート用のマクロファイルを 用意できるようになりました。
+descriptions. v1.3.0 ターゲット情報タグ追加 ターゲット中の敵に関する情報を表示するタグを追加しました。
+詳細はマクロタグ一覧参照。
+自キャラ情報タグ追加 自キャラに関する情報を表示するタグを追加しました。
+詳細はマクロタグ一覧参照。
+スロット情報タグ追加 マクロを実行したスロットに関する情報を表示するタグを追加しました。
+詳細はマクロタグ一覧参照。
+v1.2.0 オーバーヒート対応 オーバーヒートのあるスキルでは、通常マクロファイルに加えてオーバーヒート用のマクロファイルを 用意できるようになりました。
 例えばオーバーヒート3のスキルでは、以下のようになります。
 初撃 =&gt; オーバーヒート用マクロファイル 二撃 =&gt; オーバーヒート用マクロファイル 三撃 =&gt; 通常マクロファイル  オーバーヒート用マクロファイルがない場合は、 マクロファイルのない通常動作（スキル発動のみ）となります。
 オーバーヒート用マクロファイルの詳細はusage参照。
@@ -391,14 +397,7 @@ unequipコマンド追加 unequipコマンドにより、クイックスロッ�
 v1.0.0 新規作成 アドオンがロードされると、クイックスロットにセットしたスキルやアイテムを実行時に指定したマクロを実行できるようになります。
 また、[スキルと特性]ダイアログの右下の[slmc]Reloadボタンが追加されます。左クリックでマクロを再読み込みします。
 usage. マクロファイル作成 キーボード、マウスモードの場合、クイックスロットは左下が1、右上が40となります。(ジョイスティックは&hellip;？)
-cidフォルダー配下に、必要に応じてマクロファイル(slot1.txt ～ slot40.txt)をUTF8-BOM無で作成します。 マクロファイルがない場合は、今まで通りスロットにセットされたものを実行します。
-UTF8-BOM無がよく分からない人は、下記テンプレートをダウンロードして使ってください。
-slotN.txt
-slot1.txtなら、[A]キーに割り当てのクイックスロットという感じです。
-マクロは一行に一コマンドとなります。
-オーバーヒート用マクロファイル オーバーヒートのあるスキルでは、通常マクロファイルに加えてオーバーヒート用のマクロファイルを 用意できます。
-オーバーヒート用のマクロファイルの命名規則は以下の通りです。
-slot1-oh.txt ～ slot40-oh.</pre>
+cidフォルダー配下に、必要に応じてマクロファイル(slot1.txt ～ slot40.txt)をUTF8-BOM無で作成します。 マクロファイルがない場合は、今まで通りスロットにセットされたものを実行します。</pre>
   
   <div class="[site-management]">
     <a href="http://www.weizlogy.gq/site/blogger-to-hugo/">[site management] bloggerからhugo&#43;github pagesに移行した理由</a>
