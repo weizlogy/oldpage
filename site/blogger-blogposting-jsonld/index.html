@@ -228,6 +228,17 @@
 </script>
 
 
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="[site management] schema.org構造化データBlogPosting対応 with JSON&#43;LD in blogger" />
+<meta name="twitter:description" content="bloggerのテンプレートで、以下のブログ投稿箇所を検索します。
+&lt;b:loop values=&#39;data:posts&#39; var=&#39;post&#39;&gt;  この直下に以下のスクリプトを挿入します。
+&lt;!-- schema.org - BlogPosting. --&gt; &lt;script type=&#39;application/ld&#43;json&#39;&gt; { &quot;@context&quot;: &quot;http://schema.org&quot;, &quot;@type&quot;: &quot;BlogPosting&quot;, &quot;headline&quot;: &quot;&lt;data:blog.url/&gt;&quot;, &quot;url&quot;: &quot;&lt;data:blog.pageTitle/&gt;&quot;, &quot;datePublished&quot;: &quot;&lt;data:post.timestampISO8601/&gt;&quot;, &quot;author&quot;: { &quot;@type&quot;: &quot;Person&quot;, &quot;name&quot;: &quot;&lt;data:post.author/&gt;&quot; }, &quot;publisher&quot;: { &quot;@type&quot;: &quot;Organization&quot;, &quot;name&quot;: &quot;Weiβlogy&quot;, &quot;logo&quot;: { &quot;@type&quot;: &quot;ImageObject&quot;, &quot;url&quot;: &quot;http://www.weizlogy.gq/favicon.ico&quot; } }, &quot;dateModified&quot;: &quot;&lt;data:post.timestampISO8601/&gt;&quot;, &quot;mainEntityOfPage&quot;: &quot;1&quot;, &quot;image&quot;: { &quot;@type&quot;: &quot;ImageObject&quot;, &quot;url&quot;: &quot;http://www.weizlogy.gq/dummy.png&quot;, &quot;width&quot;: &quot;100&quot;, &quot;height&quot;: &quot;100&quot; } } &lt;/script&gt;  publisher, imageは各自修正してください。
+datePublished, dateModifiedは今のところ同じ値になっています。
+feedDataに情報はありますが、Javascriptを経由せず取得するのは難しそうです。
+本当はheaderタグ内に置きたかったのですが、data:postsが b:section class=&lsquo;main&rsquo; id=&lsquo;main&rsquo; 配下でないと 有効でないという仕様に阻まれました。。。" />
+
+
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 

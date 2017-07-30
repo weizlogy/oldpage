@@ -228,6 +228,36 @@
 </script>
 
 
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="[tree of savior addon] 飛行アドオン" />
+<meta name="twitter:description" content="download. [v1.2.0] fly.ipf
+install. README.md
+introduction.  settings. Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。
+以下の初期設定をコピペします。
+fly.config = { pos = {x = 100, y = 100}, jumpPower = 140, showButton = 0, cameraHeight = 50, withPet = 1 };  explanation. pos. ボタンの座標指定です。
+[showButton]が0の場合は無視されます。
+jumpPower. 飛距離です。
+100では弓に狙われます。 150では通常攻撃が届きません。（wizでは140で届きます。）
+showButton. ボタン表示状態です。
+1の場合のみ、飛行ON/OFFボタンを[pos]の座標に表示します。
+cameraHeight. 飛行時のカメラ位置です。
+飛距離によりますが、50～70あたりで自分の影が画面中央あたりに見え、歩行しやすいです。
+0を指定すると、今まで通りの視点になります。
+withPet. ペット飛行有無です。
+1を指定すると、ペットも一緒に飛行します。
+descriptions. v1.2.0 設定ファイルのフォーマット変更、cameraHeight、withPetオプションを実装しました。
+v1.1.0 設定[ボタン表示状態]を追加しました。
+アドオンがロードされると、[ボタン表示状態]が1の場合のみ、[Fly]ボタンが表示されます。
+ショートカットキーを追加しました。
+ESCAPE&#43;UP(上矢印)で飛行、飛行解除ができます。
+v1.0.0 新規作成。
+アドオンがロードされると[Fly]ボタンが表示されます。
+ボタンを押すと飛行状態、地上に降りるを繰り返します。
+飛行状態でも地上の敵を攻撃できます。 飛行状態では地上の敵はこちらを近接攻撃できません。
+実際は地上を歩行しているのでトラップには気をつけてください。" />
+
+
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 

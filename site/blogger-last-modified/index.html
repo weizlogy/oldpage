@@ -228,6 +228,19 @@
 </script>
 
 
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="[site management] bloggerで最終更新日時を表示する" />
+<meta name="twitter:description" content="bloggerのテンプレートタグでは更新日時を取得できないので、別の方法を参考に、時刻追加、個別記事表示、一覧記事表示どちらも対応するようにしました。
+ポイントは最終更新日時を挿入する要素のID属性を各投稿記事固有のIDにすることです。
+ここが固定だと、最も早く出現する要素1つにのみ更新日時が表示されてしまいます。
+まず、最終更新日時を表示する領域を決めます。
+[テンプレート] &gt; [HTMLの編集] &gt; [書式テンプレート] &gt; [ウィジェットの移動] &gt; [Blog1&lt;ブログ投稿領域&gt;]に移動します。
+投稿領域近辺が良いと思いますので、&lt;b:includable id=&lsquo;post&rsquo; var=&lsquo;post&rsquo;&gt;&hellip;&lt;/b:includable&gt;を展開し、そこから好きな位置に決めます。 今回は、投稿日時の近辺にするため、&lt;span class=&lsquo;post-timestamp&rsquo;&gt;と次の要素の間に以下の投稿に依存するコードを埋め込みます。
+&lt;!-- 最終更新日時 --&gt; &lt;span expr:id=&#39;data:post.id&#39; class=&#39;last-modified updated&#39;&gt;&lt;/span&gt; &lt;script type=&#39;text/javascript&#39;&gt; var id = &quot;&lt;data:post.id/&gt;&quot;; &lt;/script&gt; &lt;script type=&#39;text/javascript&#39;&gt; var sHome = &quot;&lt;data:blog.homepageUrl/&gt;&quot;; var sURL = &quot;&lt;data:post.url/&gt;&quot;; sURL = sURL.replace(sHome, &quot;&quot;) sURL = &quot;/&quot; &#43; sURL; document.write(unescape(&quot;%3Cscript&quot;)&#43;&quot; src=&#39;&quot;&#43;sHome&#43;&quot;/atom.xml?redirect=false&amp;path=&quot;&#43;sURL&#43;&quot;&amp;max-results=1&amp;alt=json-in-script&amp;callback=show_last_modified&#39; type=&#39;text/javascript&#39;&quot;&#43;unescape(&quot;%3E%3C/script%3E&quot;)); &lt;/script&gt;  各投稿のRSSからコールバックされる関数show_last_modifiedは投稿に依存せず不変のため、テンプレートの上部に(投稿の前に宣言できればどこでも良い)一度だけ宣言します。
+&lt;script type=&quot;text/javascript&quot;&gt;// &lt;![CDATA[ function show_last_modified(root) { var published = &#39;&#39;; var updated = &#39;&#39;; for (var i = 0; i &lt; root." />
+
+
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
