@@ -215,7 +215,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-05-03 17:18:29.1001404 &#43;0900 JST",
+  "dateModified": "2017-04-28 05:32:54.575662 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -336,106 +336,15 @@
   <section>
   
   
-  <div><a href="http://www.weizlogy.gq/tos/addon/distance/">[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</a></div>
-  <pre class="summary">download. [v1.1.1] distance.ipf
+  <div><a href="http://www.weizlogy.gq/tos/addon/console/">[tree of savior addon] アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）</a></div>
+  <pre class="summary">download. [v1.1.0] console.ipf
 install. README.md
-introduction.  settings. descriptions. v1.1.1 性能改善しました。
-v1.1.0 メートル単位対応しました。
-アドオンがロードされると近隣（20m範囲内）モンスターに自キャラからの距離がメートル単位で表示されます。
-距離が12mを超えると、表示が消えます。
+introduction. settings. Nexon\TreeofSaviorJP\addons\console\settings.txt を作成します。
+ファイルを開いて一行目に、10 210 1と入力します。 設定は半角スペース区切りで、[ボタンのX座標] [ボタンのY座標] [ボタン表示状態]。
+descriptions. v1.1.0 設定[ボタン表示状態]を追加しました。
+アドオンがロードされるとボタン表示状態が1の場合のみ、[Console]ボタンが表示されます。 ボタンを押すと抽出を開始します。 ボタン表示状態はエリアチェンジの度に読み込まれるため、ゲーム起動中にボタン表示を切り替えることも可能です。
 v1.0.0 新規作成。
-アドオンがロードされると近隣（500範囲内）モンスターに自キャラからの距離が表示されます。
-単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。</pre>
-  
-  <div><a href="http://www.weizlogy.gq/tos/addon/hidename/">[tree of savior addon] 画面にある自キャラ名を消すアドオン</a></div>
-  <pre class="summary">download. [v1.0.1] hidename.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.1 ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。
-v1.0.0 新規作成。
-アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。
-動画を撮るときに設定では非表示にできなかったので。。。</pre>
-  
-  <div><a href="http://www.weizlogy.gq/tos/addon/repairendur/">[tree of savior addon] 装備修理時、装備アイコンに耐久度（％）を色分け表示するアドオン</a></div>
-  <pre class="summary">download. [v1.1.0] repairendur.ipf
-install. README.md
-introduction. 
-
-settings. Nexon\TreeofSaviorJP\addons\repairendur\settings.txt を作成します。
-以下の初期設定をsettings.txtコピペします。
-reen.Weapon = { Lp = 30, Mp = 5, Hp = 1 }; reen.Armor = { Lp = 35, Mp = 10, Hp = 5 }; reen.SubWeapon = reen.Weapon; -- added v1.1.0 reen.EndurColor = { Lc = &quot;FFFF00&quot;, Mc = &quot;FF0000&quot;, Hc = &quot;000000&quot; };  explanation. この設定は装備の耐久度と割合に応じた文字色の設定です。
-[Weapon]、[Armor]は装備の耐久度の色分け用閾値で、Low, Middle, Highの3段階を、武器用と防具用で用意しています。
-[EndurColor]は装備の耐久度閾値に対応する色をRGBで指定します。
-explanation of initial parameters. 武器</pre>
-  
-  <div><a href="http://www.weizlogy.gq/tos/addon/skillitemcounter/">[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</a></div>
-  <pre class="summary">download. [v1.0.0] skillitemcounter.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.0 新規作成。
-アドオンがロードされると、クイックスロットにセットしている、消費アイテムのあるスキルスロット右上に、消費アイテムの個数に応じたスキルの使用回数を追加で表示します。</pre>
-  
-  <div><a href="http://www.weizlogy.gq/tos/addon/warehousepicker/">[tree of savior addon] 所持キャラ全員の個人倉庫を見るアドオン</a></div>
-  <pre class="summary">download. warehousepicker.ipf
-install. README.md
-introduction.  settings. Nexon\TreeofSaviorJP\addons\warehousepicker フォルダーを作成します。
-各所持キャラで個人倉庫を開閉する（正確には閉じる瞬間）と、先ほど作成したフォルダーに個人倉庫のアイテム情報を保存します。
-descriptions. v1.0.0 新規作成。
-アドオンがロードされた後、いずれかのキャラで個人倉庫を開くと、倉庫左下に[whpk]ボタンが出現します。 ボタンを押すと、事前に保存された所持キャラの個人倉庫のアイテム情報を表示するダイアログを開きます。
-ダイアログには、事前に個人倉庫のアイテム情報が作成された所持キャラ名のドロップダウンリストが表示されます。 ドロップダウンリストで選択した所持キャラ名の個人倉庫のアイテム情報（アイテムアイコン、名称、個数）をダイアログ内に表示します。
-最低一度は各所持キャラで個人倉庫を開閉する必要がありますが、それ以降はいずれかのキャラでログインすると全員の個人倉庫を見ることができます。
-今のところチームの区別なくキャラ名のみ表示しますので、複数チームを所持している場合に使い勝手に難があるかもしれません。 使いにくいようでしたら改善します。</pre>
-  
-  <div><a href="http://www.weizlogy.gq/tos/addon/megaphonecount/">[tree of savior addon] チャット入力欄表示中に所持中のメガホン数を表示するアドオン</a></div>
-  <pre class="summary">download. megaphonecount.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.0 新規作成。
-アドオンがロードされると、チャット入力欄表示中に所持中のメガホン数が表示されます。 それだけです。。。</pre>
-  
-  <div><a href="http://www.weizlogy.gq/tos/addon/marketselltimechanger/">[tree of savior addon] マーケットデフォルト出品日数変更アドオン</a></div>
-  <pre class="summary">download. marketselltimechanger.ipf
-install. README.md
-introduction. settings. Nexon\TreeofSaviorJP\addons\marketselltimechanger\settings.txt を作成します。
-ファイルを開いて一行目に、（デフォルト1日が良ければ）1と入力します。
-設定は、[デフォルト出品日数]のみ。
-現状、1,3,5,7 が使用でき、それ以外が入力されていた場合は、システムのデフォルト値が採用されます。
-descriptions. v1.0.0 新規作成。
-アドオンがロードされると、設定ファイルに記載された値でマーケットのデフォルト出品日数を変更します。</pre>
-  
-  <div><a href="http://www.weizlogy.gq/tos/addon/dpsmeter/">[tree of savior addon] DPS計測アドオン</a></div>
-  <pre class="summary"> download. [v1.3.0] dpsmeter.ipf
-install. README.md
-introduction.  settings. descriptions. v1.3.0 DPS平均値表示を追加 DPS平均値表示に伴い、フォーマットを変更 現在のDPS[{淡青}平均DPS][{淡赤}最大DPS] dps  モンスター死亡時のsystemメッセージによる通知をデフォルトOFFに変更 表示するには、DPSのUIを右クリック &gt; [toggleChat]を選択します。
-選択する度に通知のON/OFFを切り替えます。
-DPS計測対象を調整  ボコルのゾンビフィーで召喚するゾンビを除外  v1.2.0 DPS計測方法を調整 ターゲットアイコン表示が可能な距離まで近づいて、初撃時（を含む。初撃はdamage/1sec換算）からDPS計測を開始します。
-ターゲットが死ぬかフレームアウトするまで計測は止まりません。
-DPS計測対象を調整 旧バージョンではfaction = &ldquo;Monster&rdquo;を計測対象としていましたが不十分でしたので、 計測対象を拡大し、ペット以外（faction ~= &ldquo;Pet&rdquo;）としました。
-IWやルーツクリスタルも対象となってしまいますが、計測されないよりは良いかと。。。
-v1.1.0 UI表示を追加 現在のDPS、最大DPSをモンスターUI近辺に、以下のフォーマット表示します。
-[現在のDPS]([最大DPS]) dps  モンスター死亡時のsystemメッセージによる通知を追加 モンスター死亡時、最大DPSをsystemメッセージで表示します。
-ターゲットアイコン表示が可能な距離まで近づくとDPS計測を開始、離れると停止します。
-v1.0.0 新規作成。 アドオンがロードされるとDPS計測が有効になり、計測結果はsystemメッセージで通知します。
-現時点ではコンバットログが取れないので、正確な測定は実現できていません。
-少しでも測定精度を上げたい場合は、以下の点に注意してください。
- ソロで戦う。（コンパニオンも出さない） 混戦しない。 回復持ちの敵は避ける。  </pre>
-  
-  <div><a href="http://www.weizlogy.gq/tos/addon/customcompanion/">[tree of savior addon] コンパニオンのリングコマンドを拡張するアドオン</a></div>
-  <pre class="summary">download. customcompanion.ipf
-install. README.md
-introduction.  settings. descriptions. v1.0.0 新規作成。
-アドオンがロードされると、コンパニオンに近づくだけでリングコマンドが出現するようになります。 今まで通り、コンパニオンから離れるとリングコマンドが消えます。
-リングコマンドに[自動戦闘ON/OFFトグルアイコン]、[コンパニオン休眠化]のスロットを追加します。 ホットキーの割り当てはありません。
-騎乗スキルのないキャラ、コンパニオンの場合は、リングコマンドの[騎乗]、[降りる]のスロットを削除します。
-自動戦闘ON/OFF クリックするたびに自動戦闘のON/OFFを切り替えます。 切り替え結果はチャット上にSYSTEMメッセージで表示します。
-コンパニオン休眠化 クリックするとコンパニオンを休眠状態にします。 コンパニオンの休眠解除は、今まで通り、コンパニオン情報から行います。</pre>
-  
-  <div><a href="http://www.weizlogy.gq/tos/addon/customabilityshop/">[tree of savior addon] 特性習得ウィンドウに各特性の最大レベルを表示するアドオン</a></div>
-  <pre class="summary">download. 2/22パッチで最大値が表示されるようになりましたので非公開にします。
-install. README.md
-introduction. 
-settings. descriptions. v1.0.0 新規作成。
-アドオンがロードされると、特性習得ウィンドウに各特性の最大レベルが表示されます。 無くてもいい気がするけど。。。</pre>
+アドオンがロードされると[Console]ボタンが表示されます。ボタンを押すと抽出を開始します。 Nexon\TreeofSaviorJP\data\console.txt に抽出結果が出力されます。 実際の抽出結果は別記事にあります。</pre>
   
   
 
@@ -447,7 +356,7 @@ settings. descriptions. v1.0.0 新規作成。
     
     <li
     >
-    <a href="/categories/tos-addon/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    <a href="/categories/tos-addon/page/2/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
     </li>
     
     
@@ -472,7 +381,7 @@ settings. descriptions. v1.0.0 新規作成。
     
     
     <li
-    class="active"><a href="/categories/tos-addon/page/2/">2</a></li>
+    ><a href="/categories/tos-addon/page/2/">2</a></li>
     
     
     
@@ -484,12 +393,12 @@ settings. descriptions. v1.0.0 新規作成。
     
     
     <li
-    ><a href="/categories/tos-addon/page/3/">3</a></li>
+    class="active"><a href="/categories/tos-addon/page/3/">3</a></li>
     
     
     <li
-    >
-    <a href="/categories/tos-addon/page/3/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    class="disabled">
+    <a href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
     </li>
     
     <li>

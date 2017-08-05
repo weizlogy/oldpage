@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Sun, 30 Jul 2017 01:45:43 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 06 Aug 2017 01:00:50 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] 本アイテムの改行を正常化するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/fixbookread/</link>
+      <pubDate>Sun, 06 Aug 2017 01:00:50 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/fixbookread/</guid>
+      <description>download. [v1.0.0] fixbookread.ipf
+install. README.md
+introduction. before 
+after 
+settings. descriptions. v1.0.0 新規作成。 アドオンがロードされると、本アイテムのテキスト表示処理を自動修正し、改行を正常化させます。</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] クイックスロットスキル/アイテム用マクロアドオン</title>
