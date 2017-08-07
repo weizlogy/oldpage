@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.weizlogy.gq/tos/addon/skillitemcounter/</loc>
+    <lastmod>2017-08-07T23:42:17+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.weizlogy.gq/tos/addon/fixbookread/</loc>
     <lastmod>2017-08-06T01:00:50+09:00</lastmod>
   </url>
@@ -75,11 +80,6 @@
   <url>
     <loc>http://www.weizlogy.gq/tos/addon/repairendur/</loc>
     <lastmod>2017-05-03T17:18:10+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.weizlogy.gq/tos/addon/skillitemcounter/</loc>
-    <lastmod>2017-05-03T17:18:02+09:00</lastmod>
   </url>
   
   <url>
@@ -289,13 +289,13 @@
   
   <url>
     <loc>http://www.weizlogy.gq/tos/</loc>
-    <lastmod>2017-08-06T01:00:50+09:00</lastmod>
+    <lastmod>2017-08-07T23:42:17+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.weizlogy.gq/categories/tos-addon/</loc>
-    <lastmod>2017-08-06T01:00:50+09:00</lastmod>
+    <lastmod>2017-08-07T23:42:17+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -313,7 +313,7 @@
   
   <url>
     <loc>http://www.weizlogy.gq/</loc>
-    <lastmod>2017-08-06T01:00:50+09:00</lastmod>
+    <lastmod>2017-08-07T23:42:17+09:00</lastmod>
     <priority>0</priority>
   </url>
   

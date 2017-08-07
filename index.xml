@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Sun, 06 Aug 2017 01:00:50 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 07 Aug 2017 23:42:17 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/skillitemcounter/</link>
+      <pubDate>Mon, 07 Aug 2017 23:42:17 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/skillitemcounter/</guid>
+      <description>download. [v1.1.0] skillitemcounter.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.1.0 ポイズンポット使用スキル対応 ポイズンポット消費のあるスキルスロットにも使用回数を表示します。
+v1.0.0 新規作成 アドオンがロードされると、クイックスロットにセットしている、消費アイテムのあるスキルスロット右上に、消費アイテムの個数に応じたスキルの使用回数を追加で表示します。</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] 本アイテムの改行を正常化するアドオン</title>
@@ -274,19 +287,6 @@ reen.Weapon = { Lp = 30, Mp = 5, Hp = 1 }; reen.Armor = { Lp = 35, Mp = 10, Hp =
 [Weapon]、[Armor]は装備の耐久度の色分け用閾値で、Low, Middle, Highの3段階を、武器用と防具用で用意しています。
 [EndurColor]は装備の耐久度閾値に対応する色をRGBで指定します。
 explanation of initial parameters. 武器</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/skillitemcounter/</link>
-      <pubDate>Wed, 03 May 2017 17:18:02 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/skillitemcounter/</guid>
-      <description>download. [v1.0.0] skillitemcounter.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.0 新規作成。
-アドオンがロードされると、クイックスロットにセットしている、消費アイテムのあるスキルスロット右上に、消費アイテムの個数に応じたスキルの使用回数を追加で表示します。</description>
     </item>
     
     <item>
