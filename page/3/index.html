@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-04-28 05:34:13.9759848 &#43;0900 JST",
+  "dateModified": "2017-03-26 15:42:00.4265739 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -255,7 +255,7 @@
   
     <div class="site-management"><a href="/categories/site-management">site-management</a>(5)</div>
   
-    <div class="system"><a href="/categories/system">system</a>(2)</div>
+    <div class="system"><a href="/categories/system">system</a>(3)</div>
   
     <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
   
@@ -273,6 +273,17 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div class="[system]">
+      <a href="http://www.weizlogy.gq/system/item/ccc/">[system] CCC - 色当てゲーム解析ツール</a>
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+      <span class="blog-date">@2017/08/12 00:36:17</span>
+    </div>
+  </div>
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
@@ -318,17 +329,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/monsterstatus/">[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</a>
-    
-    &ndash;&nbsp;v3.0.0
-    
-    
-      <span class="blog-date">@2017/07/18 00:53:21</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -337,6 +337,19 @@
   <strong>Contents index.</strong>
   <section>
   
+  
+  <div class="[system]">
+    <a href="http://www.weizlogy.gq/system/item/schritt/">[system] Schritt - 論理ステップカウンター</a>
+    
+    
+    
+  </div>
+  <pre class="summary [system]">overviews. Schrittは論理ステップカウンターです。
+従来のステップカウンターは物理行でカウントする方式が主流であるため、書き方により規模に差異が現れます。
+Schrittは論理的に命令をカウントすることで、書き方による規模の差異を抑制することを目的に作られました。
+SchrittはLinux(ubuntu)のMonoを使用し、C#で実装されているため、.Net Frameworkの恩恵を受けられる環境であれば動作します。
+download. Schritt
+status. | 言語 | 対応バージョン | 状況説明 | |:&mdash;||:&mdash;||:&mdash;| | C | 0.0.3-α | | | C++ | | 順次対応予定 | | C# | 0.0.1-α | | | Java | 0.0.2-α | | | VB | | 順次対応予定 | | JavaScript | | 順次対応予定 | | HTML | | 順次対応予定 | | CSS | | 順次対応予定 | | Ruby | | 順次対応予定 |</pre>
   
   <div class="[tos-addon]">
     <a href="http://www.weizlogy.gq/tos/addon/megaphonecount/">[tree of savior addon] チャット入力欄表示中に所持中のメガホン数を表示するアドオン</a>
@@ -479,24 +492,6 @@ descriptions. v1.1.0 設定[ボタン表示状態]を追加しました。
 アドオンがロードされるとボタン表示状態が1の場合のみ、[Console]ボタンが表示されます。 ボタンを押すと抽出を開始します。 ボタン表示状態はエリアチェンジの度に読み込まれるため、ゲーム起動中にボタン表示を切り替えることも可能です。
 v1.0.0 新規作成。
 アドオンがロードされると[Console]ボタンが表示されます。ボタンを押すと抽出を開始します。 Nexon\TreeofSaviorJP\data\console.txt に抽出結果が出力されます。 実際の抽出結果は別記事にあります。</pre>
-  
-  <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/">[system development] XAMLでブロック矢印を描画する</a>
-    
-    
-    
-  </div>
-  <pre class="summary [system-dev]">ブロック矢印完成図 
-コード  &lt;Path Stroke=&quot;Black&quot; StrokeThickness=&quot;2&quot; Fill=&quot;Gray&quot; Data=&quot;M 100 100 H 200 V 90 L 230 115 L 200 140 V 130 H 100 V 100 Z&quot; Margin=&quot;-30,-30,0,0&quot; /&gt;  解説 Pathを使って目標の位置付近に描画、Marginで微調整します。
-https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspxを読めば分かりますが簡単です。 一筆書きの要領で、矢印の左上から時計回りに線を引いています。
-「M 100 100」は「X=100,Y=100に移動」します。
-「H 200」は「現在位置からX=200まで描線」します。
-「V 90」は「現在位置からY=90まで描線」します。
-「L 230 115」は「現在位置からX=230,Y=115まで描線」します。
-以下繰り返しの上、 「Z」は「描線の範囲を閉鎖」します。
-座標の算出には、描画開始位置、シャフトの幅と高さ、アローヘッドの出代と角度を決めます。 今回は、描画開始位置=100,100、シャフトの幅=100、高さ=30、アローヘッドの出代=10、角度=60にしました。
-
-アローヘッドの頂点座標の算出は、頂点がシャフトの中央にあることと、三平方の定理を使えばきっちり出せます。 つまり、シャフトの幅は偶数が良いです。</pre>
   
   
 
