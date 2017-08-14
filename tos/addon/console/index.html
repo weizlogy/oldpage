@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-04-28 05:32:54.575662 &#43;0900 JST",
+  "dateModified": "2017-08-14 09:17:38.8955228 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -231,11 +231,17 @@
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="[tree of savior addon] アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）" />
-<meta name="twitter:description" content="download. [v1.1.0] console.ipf
+<meta name="twitter:description" content="download. [v1.2.0] console.ipf
 install. README.md
-introduction. settings. Nexon\TreeofSaviorJP\addons\console\settings.txt を作成します。
-ファイルを開いて一行目に、10 210 1と入力します。 設定は半角スペース区切りで、[ボタンのX座標] [ボタンのY座標] [ボタン表示状態]。
-descriptions. v1.1.0 設定[ボタン表示状態]を追加しました。
+introduction. settings. jtos. cfunc.txtを ダウンロードします。
+Nexon\TreeofSaviorJP\addons\console\cfunc.txt を配置します。
+itos. download cfunc.txt .
+put steamapps\common\TreeOfSavior\addons\console\cfunc.txt .
+descriptions. v1.2.0 GUI除去 GUIがなくなり、settings.txtは無効化されました。
+チャットコマンド追加 GUIに代わり、チャットコマンド[/console]で処理を実行できます。
+抽出フォーマット変更 lua定義関数は引数を表示するようにしました。
+c定義関数はcfunc.txtに定義することで引数を表示できます。
+v1.1.0 設定[ボタン表示状態]を追加しました。
 アドオンがロードされるとボタン表示状態が1の場合のみ、[Console]ボタンが表示されます。 ボタンを押すと抽出を開始します。 ボタン表示状態はエリアチェンジの度に読み込まれるため、ゲーム起動中にボタン表示を切り替えることも可能です。
 v1.0.0 新規作成。
 アドオンがロードされると[Console]ボタンが表示されます。ボタンを押すと抽出を開始します。 Nexon\TreeofSaviorJP\data\console.txt に抽出結果が出力されます。 実際の抽出結果は別記事にあります。" />
@@ -269,7 +275,7 @@ v1.0.0 新規作成。
 
  <h1><a href="http://www.weizlogy.gq/tos/addon/console/">[tree of savior addon] アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）</a>
   
-    &ndash;&nbsp;v1.1.0
+    &ndash;&nbsp;v1.2.0
   
 </h1>
  <div>
@@ -277,7 +283,7 @@ v1.0.0 新規作成。
 
 <h2 id="download">download.</h2>
 
-<p><a href="https://www.dropbox.com/s/mkjc554mhp257ne/console.ipf?dl=0">[v1.1.0] console.ipf</a></p>
+<p><a href="https://github.com/weizlogy/tos/releases/download/console-v1.2.0/console.ipf">[v1.2.0] console.ipf</a></p>
 
 <h2 id="install">install.</h2>
 
@@ -287,12 +293,36 @@ v1.0.0 新規作成。
 
 <h2 id="settings">settings.</h2>
 
-<p>Nexon\TreeofSaviorJP\addons\console\settings.txt を作成します。</p>
+<h3 id="jtos">jtos.</h3>
 
-<p>ファイルを開いて一行目に、10 210 1と入力します。
-設定は半角スペース区切りで、[ボタンのX座標] [ボタンのY座標] [ボタン表示状態]。</p>
+<p><a href="https://github.com/weizlogy/tos/releases/download/console-v1.2.0/cfunc.txt">cfunc.txt</a>を
+ダウンロードします。</p>
+
+<p>Nexon\TreeofSaviorJP\addons\console\cfunc.txt を配置します。</p>
+
+<h3 id="itos">itos.</h3>
+
+<p>download <a href="https://github.com/weizlogy/tos/releases/download/console-v1.2.0/cfunc.txt">cfunc.txt</a> .</p>
+
+<p>put steamapps\common\TreeOfSavior\addons\console\cfunc.txt .</p>
 
 <h2 id="descriptions">descriptions.</h2>
+
+<h3 id="v1-2-0">v1.2.0</h3>
+
+<h4 id="gui除去">GUI除去</h4>
+
+<p>GUIがなくなり、settings.txtは無効化されました。</p>
+
+<h4 id="チャットコマンド追加">チャットコマンド追加</h4>
+
+<p>GUIに代わり、チャットコマンド[/console]で処理を実行できます。</p>
+
+<h4 id="抽出フォーマット変更">抽出フォーマット変更</h4>
+
+<p>lua定義関数は引数を表示するようにしました。</p>
+
+<p>c定義関数はcfunc.txtに定義することで引数を表示できます。</p>
 
 <h3 id="v1-1-0">v1.1.0</h3>
 
@@ -313,7 +343,7 @@ v1.0.0 新規作成。
 
 </article>
 <div class="blog-date">
-  2016/12/10 17:30:00 - 2017/04/28 05:32:54
+  2016/12/10 17:30:00 - 2017/08/14 09:17:38
 </div>
 <amp-ad type="adsense"
   layout="responsive"

@@ -7,10 +7,44 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Mon, 07 Aug 2017 23:42:17 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 14 Aug 2017 09:17:38 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/tos/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）</title>
+      <link>http://www.weizlogy.gq/tos/addon/console/</link>
+      <pubDate>Mon, 14 Aug 2017 09:17:38 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/console/</guid>
+      <description>download. [v1.2.0] console.ipf
+install. README.md
+introduction. settings. jtos. cfunc.txtを ダウンロードします。
+Nexon\TreeofSaviorJP\addons\console\cfunc.txt を配置します。
+itos. download cfunc.txt .
+put steamapps\common\TreeOfSavior\addons\console\cfunc.txt .
+descriptions. v1.2.0 GUI除去 GUIがなくなり、settings.txtは無効化されました。
+チャットコマンド追加 GUIに代わり、チャットコマンド[/console]で処理を実行できます。
+抽出フォーマット変更 lua定義関数は引数を表示するようにしました。
+c定義関数はcfunc.txtに定義することで引数を表示できます。
+v1.1.0 設定[ボタン表示状態]を追加しました。
+アドオンがロードされるとボタン表示状態が1の場合のみ、[Console]ボタンが表示されます。 ボタンを押すと抽出を開始します。 ボタン表示状態はエリアチェンジの度に読み込まれるため、ゲーム起動中にボタン表示を切り替えることも可能です。
+v1.0.0 新規作成。
+アドオンがロードされると[Console]ボタンが表示されます。ボタンを押すと抽出を開始します。 Nexon\TreeofSaviorJP\data\console.txt に抽出結果が出力されます。 実際の抽出結果は別記事にあります。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] ダイスロールアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/dice/</link>
+      <pubDate>Sun, 13 Aug 2017 22:18:22 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/dice/</guid>
+      <description>download. [v1.0.1] dice.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.1 itos対応 v1.0.0 新規作成 アドオンがロードされると、チャットコマンドで /random と打つと、 0～999の値をランダムに決定し、一般チャット範囲に結果を送信します。</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</title>
@@ -68,18 +102,6 @@ v1.0.0 新規作成 アドオンがロードされると、クイックスロッ
 また、[スキルと特性]ダイアログの右下の[slmc]Reloadボタンが追加されます。左クリックでマクロを再読み込みします。
 usage. マクロファイル作成 キーボード、マウスモードの場合、クイックスロットは左下が1、右上が40となります。(ジョイスティックは&amp;hellip;？)
 cidフォルダー配下に、必要に応じてマクロファイル(slot1.txt ～ slot40.txt)をUTF8-BOM無で作成します。 マクロファイルがない場合は、今まで通りスロットにセットされたものを実行します。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] ダイスロールアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/dice/</link>
-      <pubDate>Wed, 26 Jul 2017 00:03:59 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/dice/</guid>
-      <description>download. [v1.0.0] dice.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.0 新規作成。 アドオンがロードされると、チャットコマンドで /random と打つと、 0～999の値をランダムに決定し、一般チャット範囲に結果を送信します。</description>
     </item>
     
     <item>
@@ -400,22 +422,6 @@ install. README.md
 introduction. 
 settings. descriptions. v1.0.0 新規作成。
 アドオンがロードされると、特性習得ウィンドウに各特性の最大レベルが表示されます。 無くてもいい気がするけど。。。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）</title>
-      <link>http://www.weizlogy.gq/tos/addon/console/</link>
-      <pubDate>Fri, 28 Apr 2017 05:32:54 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/console/</guid>
-      <description>download. [v1.1.0] console.ipf
-install. README.md
-introduction. settings. Nexon\TreeofSaviorJP\addons\console\settings.txt を作成します。
-ファイルを開いて一行目に、10 210 1と入力します。 設定は半角スペース区切りで、[ボタンのX座標] [ボタンのY座標] [ボタン表示状態]。
-descriptions. v1.1.0 設定[ボタン表示状態]を追加しました。
-アドオンがロードされるとボタン表示状態が1の場合のみ、[Console]ボタンが表示されます。 ボタンを押すと抽出を開始します。 ボタン表示状態はエリアチェンジの度に読み込まれるため、ゲーム起動中にボタン表示を切り替えることも可能です。
-v1.0.0 新規作成。
-アドオンがロードされると[Console]ボタンが表示されます。ボタンを押すと抽出を開始します。 Nexon\TreeofSaviorJP\data\console.txt に抽出結果が出力されます。 実際の抽出結果は別記事にあります。</description>
     </item>
     
     <item>
