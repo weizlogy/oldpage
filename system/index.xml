@@ -7,10 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Sat, 12 Aug 2017 00:36:17 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 19 Aug 2017 22:43:20 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/system/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[system] RealtimeWhoisView - グローバルIP＋国名表示ツール</title>
+      <link>http://www.weizlogy.gq/system/item/whoisview/</link>
+      <pubDate>Sat, 19 Aug 2017 22:43:20 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/system/item/whoisview/</guid>
+      <description>overviews. グローバルIPとIPアドレスの所属する国名を右上にひっそり表示します。
+download. [v1.0.0] RealtimeWhoisView.exe
+introduction. 
+settings. なし。
+descriptions. v1.0.0 新規作成 exeを実行するとグローバルIPと国名の表示されたウィンドウが右上に出現します。
+一応ドラッグできますが、位置は覚えません。
+VPN等、ネットワークが切り替わると自動的に更新します。
+Proxyは通りません。</description>
+    </item>
     
     <item>
       <title>[system] CCC - 色当てゲーム解析ツール</title>
