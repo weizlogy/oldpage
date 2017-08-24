@@ -7,10 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Sat, 19 Aug 2017 22:43:20 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 25 Aug 2017 00:01:41 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/pickiteminfo/</link>
+      <pubDate>Fri, 25 Aug 2017 00:01:41 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/pickiteminfo/</guid>
+      <description>download. [v1.0.1] pickiteminfo.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.1 名称表示位置調整 8&amp;frasl;23 UPDATEにより、ALTキーでアイテム名称表示がずれるようになった影響で同じようにずれる問題に対応しました。
+名称の動きが若干不穏ですが、ALTキーでアイテム名称表示がずれる問題が解決するまでの暫定対処となります。
+v1.0.0 新規作成 アドオンがロードされると、ALTキーを押さなくとも、ドロップアイテムの名称が表示されるようになります。
+アイテム名称はレアリティで色が変わります。 色の変化はColored Item Namesをパク&amp;hellip;参考にしています。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/staminagauge/</link>
+      <pubDate>Thu, 24 Aug 2017 23:35:18 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/staminagauge/</guid>
+      <description>download. [v1.0.2] staminigauge.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.2 ゲージ位置調整 8&amp;frasl;23 UPDATEに対応してゲージを調整しました。
+v1.0.1 ゲージ位置調整 スタミナゲージと名前が被らないよう調整しました。
+v1.0.0 新規作成 アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。
+若干キャラ名と被りますが、気にしないように。</description>
+    </item>
     
     <item>
       <title>[system] RealtimeWhoisView - グローバルIP＋国名表示ツール</title>
@@ -254,20 +284,6 @@ cautions. 念のため、アドオンは補助的な位置づけとし、 ワー
     </item>
     
     <item>
-      <title>[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/staminagauge/</link>
-      <pubDate>Thu, 18 May 2017 07:12:00 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/staminagauge/</guid>
-      <description>download. [v1.0.1] staminigauge.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.1 ゲージ位置調整 スタミナゲージと名前が被らないよう調整しました。
-v1.0.0 新規作成 アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。
-若干キャラ名と被りますが、気にしないように。</description>
-    </item>
-    
-    <item>
       <title>[site management] bloggerからhugo&#43;github pagesに移行した理由</title>
       <link>http://www.weizlogy.gq/site/blogger-to-hugo/</link>
       <pubDate>Thu, 18 May 2017 07:09:25 +0900</pubDate>
@@ -283,19 +299,6 @@ bloggerで困ったことをhugoで解決する AMP対応 hugoにはAMP対応の
 ページロード hugoはテーマとマークダウンから静的コンテンツを生成するため、キャッシュが効きやすくページロードに有利です。
 ホスティングサービスを選択する GitHub Pagesは静的コンテンツをgit pushするだけで公開できるGitHubのサービスです。
 1GBのストレージで100GB/Monthの帯域、1時間に10回ビルドといった制限がありますが、広告なし無料です。 画像などはdropboxに入れておけば十分活用できます。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/pickiteminfo/</link>
-      <pubDate>Fri, 05 May 2017 23:23:44 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/pickiteminfo/</guid>
-      <description>download. [v1.0.0] pickiteminfo.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.0 新規作成 アドオンがロードされると、ALTキーを押さなくとも、ドロップアイテムの名称が表示されるようになります。
-アイテム名称はレアリティで色が変わります。 色の変化はColored Item Namesをパク&amp;hellip;参考にしています。</description>
     </item>
     
     <item>
