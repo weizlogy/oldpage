@@ -7,30 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Fri, 25 Aug 2017 00:01:41 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 31 Aug 2017 00:04:45 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/categories/tos-addon/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/pickiteminfo/</link>
-      <pubDate>Fri, 25 Aug 2017 00:01:41 +0900</pubDate>
+      <title>[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/worldmapquest/</link>
+      <pubDate>Thu, 31 Aug 2017 00:04:45 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon/pickiteminfo/</guid>
-      <description>download. [v1.0.1] pickiteminfo.ipf
+      <guid>http://www.weizlogy.gq/tos/addon/worldmapquest/</guid>
+      <description>download. [v1.2.0] worldmapquest.ipf
 install. README.md
 introduction. 
-settings. descriptions. v1.0.1 名称表示位置調整 8&amp;frasl;23 UPDATEにより、ALTキーでアイテム名称表示がずれるようになった影響で同じようにずれる問題に対応しました。
-名称の動きが若干不穏ですが、ALTキーでアイテム名称表示がずれる問題が解決するまでの暫定対処となります。
-v1.0.0 新規作成 アドオンがロードされると、ALTキーを押さなくとも、ドロップアイテムの名称が表示されるようになります。
-アイテム名称はレアリティで色が変わります。 色の変化はColored Item Namesをパク&amp;hellip;参考にしています。</description>
+
+settings. descriptions. v1.2.0 クエストワープマップモード追加 左ALTを押しながらワールドマップを開くと、クエストワープ可能なマップのみワールドマップ上に表示し、 ワールドマップからクエストワープを実行できます。
+v1.1.2 ワープ用ワールドマップに残クエストオブジェクトが残る問題修正 ワープスクロールやワープ像で表示するワープ用ワールドマップに 残クエストオブジェクトが残らないよう修正しました。
+v1.1.1 パッチ対応 157576_001001 パッチ適用で使用不可になったので回避対応しました。
+反復クエストの非表示設定 反復クエストの表示非表示を切り替えるには、 ワールドマップのクエスト数を右クリック &amp;gt; [toggleRepeatQuest]を選択します。
+選択後、ワールドマップを再表示すると反映されます。
+選択する度に反復クエストの表示非表示を切り替えます。
+v1.0.0 新規作成 アドオンがロードされると、ワールドマップの各エリア名上部に受注可能なクエスト数が表示されます。
+introductionの画像では碑石路、いにしえの女神の庭、ドバシア峠、古旗の森、大王の関門、カーライルの霊廟、ガルエット平野に[n]の形式で表示されています。</description>
     </item>
     
     <item>
       <title>[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/staminagauge/</link>
-      <pubDate>Thu, 24 Aug 2017 23:35:18 +0900</pubDate>
+      <pubDate>Thu, 31 Aug 2017 00:04:28 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/staminagauge/</guid>
       <description>download. [v1.0.2] staminigauge.ipf
@@ -43,69 +48,9 @@ v1.0.0 新規作成 アドオンがロードされると、キャラの足元に
     </item>
     
     <item>
-      <title>[tree of savior addon] アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）</title>
-      <link>http://www.weizlogy.gq/tos/addon/console/</link>
-      <pubDate>Mon, 14 Aug 2017 09:17:38 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/console/</guid>
-      <description>download. [v1.2.0] console.ipf
-install. README.md
-introduction. settings. jtos. cfunc.txtを ダウンロードします。
-Nexon\TreeofSaviorJP\addons\console\cfunc.txt を配置します。
-itos. download cfunc.txt .
-put steamapps\common\TreeOfSavior\addons\console\cfunc.txt .
-descriptions. v1.2.0 GUI除去 GUIがなくなり、settings.txtは無効化されました。
-チャットコマンド追加 GUIに代わり、チャットコマンド[/console]で処理を実行できます。
-抽出フォーマット変更 lua定義関数は引数を表示するようにしました。
-c定義関数はcfunc.txtに定義することで引数を表示できます。
-v1.1.0 設定[ボタン表示状態]を追加しました。
-アドオンがロードされるとボタン表示状態が1の場合のみ、[Console]ボタンが表示されます。 ボタンを押すと抽出を開始します。 ボタン表示状態はエリアチェンジの度に読み込まれるため、ゲーム起動中にボタン表示を切り替えることも可能です。
-v1.0.0 新規作成。
-アドオンがロードされると[Console]ボタンが表示されます。ボタンを押すと抽出を開始します。 Nexon\TreeofSaviorJP\data\console.txt に抽出結果が出力されます。 実際の抽出結果は別記事にあります。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] ダイスロールアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/dice/</link>
-      <pubDate>Sun, 13 Aug 2017 22:18:22 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/dice/</guid>
-      <description>download. [v1.0.1] dice.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.1 itos対応 v1.0.0 新規作成 アドオンがロードされると、チャットコマンドで /random と打つと、 0～999の値をランダムに決定し、一般チャット範囲に結果を送信します。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/skillitemcounter/</link>
-      <pubDate>Mon, 07 Aug 2017 23:42:17 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/skillitemcounter/</guid>
-      <description>download. [v1.1.0] skillitemcounter.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.1.0 ポイズンポット使用スキル対応 ポイズンポット消費のあるスキルスロットにも使用回数を表示します。
-v1.0.0 新規作成 アドオンがロードされると、クイックスロットにセットしている、消費アイテムのあるスキルスロット右上に、消費アイテムの個数に応じたスキルの使用回数を追加で表示します。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 本アイテムの改行を正常化するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/fixbookread/</link>
-      <pubDate>Sun, 06 Aug 2017 01:00:50 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/fixbookread/</guid>
-      <description>download. [v1.0.0] fixbookread.ipf
-install. README.md
-introduction. before 
-after 
-settings. descriptions. v1.0.0 新規作成。 アドオンがロードされると、本アイテムのテキスト表示処理を自動修正し、改行を正常化させます。</description>
-    </item>
-    
-    <item>
       <title>[tree of savior addon] クイックスロットスキル/アイテム用マクロアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/slotmac/</link>
-      <pubDate>Sun, 30 Jul 2017 01:45:43 +0900</pubDate>
+      <pubDate>Thu, 31 Aug 2017 00:04:17 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/slotmac/</guid>
       <description>download. [v1.3.0] slotmac.ipf
@@ -135,19 +80,95 @@ cidフォルダー配下に、必要に応じてマクロファイル(slot1.txt 
     </item>
     
     <item>
+      <title>[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/skillitemcounter/</link>
+      <pubDate>Thu, 31 Aug 2017 00:04:05 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/skillitemcounter/</guid>
+      <description>download. [v1.1.0] skillitemcounter.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.1.0 ポイズンポット使用スキル対応 ポイズンポット消費のあるスキルスロットにも使用回数を表示します。
+v1.0.0 新規作成 アドオンがロードされると、クイックスロットにセットしている、消費アイテムのあるスキルスロット右上に、消費アイテムの個数に応じたスキルの使用回数を追加で表示します。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] ワープ用クエスト誤完了防止アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/savequest/</link>
+      <pubDate>Thu, 31 Aug 2017 00:03:53 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/savequest/</guid>
+      <description>download. [v1.1.0] savequest.ipf
+install. README.md
+introduction. 
+settings. Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。
+explanation. savequestフォルダーにはquests_[cid].txtが自動的に生成され、 キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。
+descriptions. v1.1.0 クエスト欄操作機能追加 F5キーで表示するクエスト欄でも本アドオンの機能（右クリックメニュー）が使えるようになります。
+ダイレクトクエストワープ機能追加 F5キーで表示するクエスト欄から直接クエストワープできるようになります。
+ワープ可能なクエストの左上にワープアイコンが表示されるので、クリックしてください。
+v1.0.2 バグ対応 保存したクエスト情報がチーム毎に共有される問題を修正しました。
+issue #3
+本修正により、情報保存形式が変更され、クエスト保存状態が初期化されます。
+お手数ですが、再チェックまたは、旧仕様情報（quests.txt）の内容をquests_[cid].txtにコピペしてください。
+v1.0.1 バグ対応 再ログイン時に前回の状態が保存されない問題を修正しました。
+issue #1
+v1.0.0 新規作成 アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、 ワープ直後の誤完了を防止できます。
+usage. UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、 メニュー（save, release, cancel）が開きます。
+saveを選択すると該当クエストのNPCは非表示となります。 また、save済みのクエストのワープアイコン直下に[saved.]の文字を表示します。
+元に戻すにはreleaseを選択します。
+cautions. 念のため、アドオンは補助的な位置づけとし、 ワープ直後はNPCを選択しないよう留意してください。
+一時消去したNPCは、release後、エリアチェンジで表示できます。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 装備修理時、装備アイコンに耐久度（％）を色分け表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/repairendur/</link>
+      <pubDate>Thu, 31 Aug 2017 00:03:37 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/repairendur/</guid>
+      <description>download. [v1.1.0] repairendur.ipf
+install. README.md
+introduction. 
+
+settings. Nexon\TreeofSaviorJP\addons\repairendur\settings.txt を作成します。
+以下の初期設定をsettings.txtコピペします。
+reen.Weapon = { Lp = 30, Mp = 5, Hp = 1 }; reen.Armor = { Lp = 35, Mp = 10, Hp = 5 }; reen.SubWeapon = reen.Weapon; -- added v1.1.0 reen.EndurColor = { Lc = &amp;quot;FFFF00&amp;quot;, Mc = &amp;quot;FF0000&amp;quot;, Hc = &amp;quot;000000&amp;quot; };  explanation. この設定は装備の耐久度と割合に応じた文字色の設定です。
+[Weapon]、[Armor]は装備の耐久度の色分け用閾値で、Low, Middle, Highの3段階を、武器用と防具用で用意しています。
+[EndurColor]は装備の耐久度閾値に対応する色をRGBで指定します。
+explanation of initial parameters. 武器</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/pickiteminfo/</link>
+      <pubDate>Thu, 31 Aug 2017 00:03:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/pickiteminfo/</guid>
+      <description>download. [v1.0.1] pickiteminfo.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.1 名称表示位置調整 8&amp;frasl;23 UPDATEにより、ALTキーでアイテム名称表示がずれるようになった影響で同じようにずれる問題に対応しました。
+名称の動きが若干不穏ですが、ALTキーでアイテム名称表示がずれる問題が解決するまでの暫定対処となります。
+v1.0.0 新規作成 アドオンがロードされると、ALTキーを押さなくとも、ドロップアイテムの名称が表示されるようになります。
+アイテム名称はレアリティで色が変わります。 色の変化はColored Item Namesをパク&amp;hellip;参考にしています。</description>
+    </item>
+    
+    <item>
       <title>[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/monsterstatus/</link>
-      <pubDate>Tue, 18 Jul 2017 00:53:21 +0900</pubDate>
+      <pubDate>Thu, 31 Aug 2017 00:02:48 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/monsterstatus/</guid>
       <description> download. [v3.0.0] monsterstatus.ipf
+[v2.1.0] monsterstatus.ipf
 install. README.md
 introduction.  settings. descriptions. v3.0.0 ダメージ表示対応 ステータスの代わりにダメージの期待値を表示します。
 ダメージの期待値表示は物理、クリティカル、魔法の三種類です。 クリティカルの期待値には確率を表示します。
 経験値表示追加 キャラクター経験値とクラス経験値の表示を追加しました。
 フレーム背景透過対応 フレームの透過率を上げて、表示を改善しました。
 v2.2.0 移動種別表示追加 移動種別の表示を追加し、飛行しているか分かるようにしました。
-v2.1.0 種族、属性表示追加 種族、属性の表示を追加しました。
+種族、属性表示追加 種族、属性の表示を追加しました。
+v2.1.0 コンパクトなv2系のサポートを始めました。
 v2.0.0 討伐数、ドロップアイテム名、アイテム収集率表示追加 冒険日誌から討伐数、ドロップアイテム名、アイテム収集率を取得、 表示する機能を追加しました。 また、ドロップアイテム名からアイテムツールチップが開けます。
 表示ステータス 、フォーマット調整 表示するステータスは現在のところ以下の通りです。
    表示名 内容     ATK 物理攻撃力(最大)   MATK 魔法攻撃力(最大)   DEF 物理防御力   MDEF 魔法防御力    UIウィンドウをドラッグで移動できるようになりました。
@@ -155,6 +176,108 @@ v2.0.0 討伐数、ドロップアイテム名、アイテム収集率表示追�
 v1.0.0 新規作成 アドオンがロードされると、ターゲットしたモンスターのステータス（*1）が画面上部に表示されます。
 [*1] 表示するステータスは現在のところ以下の通りです。
    表示名 内容     ATK 物理攻撃力(最大)   MATK 魔法攻撃力(最大)   DEF 物理防御力   MDEF 魔法防御力   DR 回避率   CDR クリティカル回避率   CATK クリティカル攻撃力   CDEF クリティカル防御力    </description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/hidename/</link>
+      <pubDate>Thu, 31 Aug 2017 00:02:02 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/hidename/</guid>
+      <description>download. [v1.0.1] hidename.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.1 ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。
+v1.0.0 新規作成。
+アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。
+動画を撮るときに設定では非表示にできなかったので。。。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 本アイテムの改行を正常化するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/fixbookread/</link>
+      <pubDate>Thu, 31 Aug 2017 00:01:49 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/fixbookread/</guid>
+      <description>download. [v1.0.0] fixbookread.ipf
+install. README.md
+introduction. before 
+after 
+settings. descriptions. v1.0.0 新規作成。 アドオンがロードされると、本アイテムのテキスト表示処理を自動修正し、改行を正常化させます。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] DPS計測アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/dpsmeter/</link>
+      <pubDate>Thu, 31 Aug 2017 00:01:39 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/dpsmeter/</guid>
+      <description> download. [v1.3.0] dpsmeter.ipf
+install. README.md
+introduction.  settings. descriptions. v1.3.0 DPS平均値表示を追加 DPS平均値表示に伴い、フォーマットを変更 現在のDPS[{淡青}平均DPS][{淡赤}最大DPS] dps  モンスター死亡時のsystemメッセージによる通知をデフォルトOFFに変更 表示するには、DPSのUIを右クリック &amp;gt; [toggleChat]を選択します。
+選択する度に通知のON/OFFを切り替えます。
+DPS計測対象を調整  ボコルのゾンビフィーで召喚するゾンビを除外  v1.2.0 DPS計測方法を調整 ターゲットアイコン表示が可能な距離まで近づいて、初撃時（を含む。初撃はdamage/1sec換算）からDPS計測を開始します。
+ターゲットが死ぬかフレームアウトするまで計測は止まりません。
+DPS計測対象を調整 旧バージョンではfaction = &amp;ldquo;Monster&amp;rdquo;を計測対象としていましたが不十分でしたので、 計測対象を拡大し、ペット以外（faction ~= &amp;ldquo;Pet&amp;rdquo;）としました。
+IWやルーツクリスタルも対象となってしまいますが、計測されないよりは良いかと。。。
+v1.1.0 UI表示を追加 現在のDPS、最大DPSをモンスターUI近辺に、以下のフォーマット表示します。
+[現在のDPS]([最大DPS]) dps  モンスター死亡時のsystemメッセージによる通知を追加 モンスター死亡時、最大DPSをsystemメッセージで表示します。
+ターゲットアイコン表示が可能な距離まで近づくとDPS計測を開始、離れると停止します。
+v1.0.0 新規作成。 アドオンがロードされるとDPS計測が有効になり、計測結果はsystemメッセージで通知します。
+現時点ではコンバットログが取れないので、正確な測定は実現できていません。
+少しでも測定精度を上げたい場合は、以下の点に注意してください。
+ ソロで戦う。（コンパニオンも出さない） 混戦しない。 回復持ちの敵は避ける。  </description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/distance/</link>
+      <pubDate>Thu, 31 Aug 2017 00:01:30 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/distance/</guid>
+      <description>download. [v1.1.1] distance.ipf
+install. README.md
+introduction.  settings. descriptions. v1.1.1 性能改善しました。
+v1.1.0 メートル単位対応しました。
+アドオンがロードされると近隣（20m範囲内）モンスターに自キャラからの距離がメートル単位で表示されます。
+距離が12mを超えると、表示が消えます。
+v1.0.0 新規作成。
+アドオンがロードされると近隣（500範囲内）モンスターに自キャラからの距離が表示されます。
+単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] ダイスロールアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/dice/</link>
+      <pubDate>Thu, 31 Aug 2017 00:01:17 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/dice/</guid>
+      <description>download. [v1.0.1] dice.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.1 itos対応 v1.0.0 新規作成 アドオンがロードされると、チャットコマンドで /random と打つと、 0～999の値をランダムに決定し、一般チャット範囲に結果を送信します。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）</title>
+      <link>http://www.weizlogy.gq/tos/addon/console/</link>
+      <pubDate>Thu, 31 Aug 2017 00:01:04 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/console/</guid>
+      <description>download. [v1.2.0] console.ipf
+install. README.md
+introduction. settings. jtos. cfunc.txtを ダウンロードします。
+Nexon\TreeofSaviorJP\addons\console\cfunc.txt を配置します。
+itos. download cfunc.txt .
+put steamapps\common\TreeOfSavior\addons\console\cfunc.txt .
+descriptions. v1.2.0 GUI除去 GUIがなくなり、settings.txtは無効化されました。
+チャットコマンド追加 GUIに代わり、チャットコマンド[/console]で処理を実行できます。
+抽出フォーマット変更 lua定義関数は引数を表示するようにしました。
+c定義関数はcfunc.txtに定義することで引数を表示できます。
+v1.1.0 設定[ボタン表示状態]を追加しました。
+アドオンがロードされるとボタン表示状態が1の場合のみ、[Console]ボタンが表示されます。 ボタンを押すと抽出を開始します。 ボタン表示状態はエリアチェンジの度に読み込まれるため、ゲーム起動中にボタン表示を切り替えることも可能です。
+v1.0.0 新規作成。
+アドオンがロードされると[Console]ボタンが表示されます。ボタンを押すと抽出を開始します。 Nexon\TreeofSaviorJP\data\console.txt に抽出結果が出力されます。 実際の抽出結果は別記事にあります。</description>
     </item>
     
     <item>
@@ -184,104 +307,6 @@ introduction.
 settings. descriptions. v1.0.0 新規作成。
 アドオンがロードされると、クイックスロットにセットしている召喚系スキルスロット右上に、召喚数/最大値を追加で表示します。
 cautions.  エリアチェンジ、ログイン直後で既に存在する召喚物はカウントできません。 ゾンビカプセル産のゾンビはカウントできません。 コープスタワー特性産の骸骨兵士はカウントできません。  </description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/worldmapquest/</link>
-      <pubDate>Fri, 14 Jul 2017 00:45:36 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/worldmapquest/</guid>
-      <description>download. [v1.2.0] worldmapquest.ipf
-install. README.md
-introduction. 
-
-settings. descriptions. v1.2.0 クエストワープマップモード追加 左ALTを押しながらワールドマップを開くと、クエストワープ可能なマップのみワールドマップ上に表示し、 ワールドマップからクエストワープを実行できます。
-v1.1.2 ワープ用ワールドマップに残クエストオブジェクトが残る問題修正 ワープスクロールやワープ像で表示するワープ用ワールドマップに 残クエストオブジェクトが残らないよう修正しました。
-v1.1.1 パッチ対応 157576_001001 パッチ適用で使用不可になったので回避対応しました。
-反復クエストの非表示設定 反復クエストの表示非表示を切り替えるには、 ワールドマップのクエスト数を右クリック &amp;gt; [toggleRepeatQuest]を選択します。
-選択後、ワールドマップを再表示すると反映されます。
-選択する度に反復クエストの表示非表示を切り替えます。
-v1.0.0 新規作成 アドオンがロードされると、ワールドマップの各エリア名上部に受注可能なクエスト数が表示されます。
-introductionの画像では碑石路、いにしえの女神の庭、ドバシア峠、古旗の森、大王の関門、カーライルの霊廟、ガルエット平野に[n]の形式で表示されています。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] ワープ用クエスト誤完了防止アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/savequest/</link>
-      <pubDate>Fri, 19 May 2017 06:53:52 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/savequest/</guid>
-      <description>download. [v1.1.0] savequest.ipf
-install. README.md
-introduction. 
-settings. Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。
-explanation. savequestフォルダーにはquests_[cid].txtが自動的に生成され、 キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。
-descriptions. v1.1.0 クエスト欄操作機能追加 F5キーで表示するクエスト欄でも本アドオンの機能（右クリックメニュー）が使えるようになります。
-ダイレクトクエストワープ機能追加 F5キーで表示するクエスト欄から直接クエストワープできるようになります。
-ワープ可能なクエストの左上にワープアイコンが表示されるので、クリックしてください。
-v1.0.2 バグ対応 保存したクエスト情報がチーム毎に共有される問題を修正しました。
-issue #3
-本修正により、情報保存形式が変更され、クエスト保存状態が初期化されます。
-お手数ですが、再チェックまたは、旧仕様情報（quests.txt）の内容をquests_[cid].txtにコピペしてください。
-v1.0.1 バグ対応 再ログイン時に前回の状態が保存されない問題を修正しました。
-issue #1
-v1.0.0 新規作成 アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、 ワープ直後の誤完了を防止できます。
-usage. UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、 メニュー（save, release, cancel）が開きます。
-saveを選択すると該当クエストのNPCは非表示となります。 また、save済みのクエストのワープアイコン直下に[saved.]の文字を表示します。
-元に戻すにはreleaseを選択します。
-cautions. 念のため、アドオンは補助的な位置づけとし、 ワープ直後はNPCを選択しないよう留意してください。
-一時消去したNPCは、release後、エリアチェンジで表示できます。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/distance/</link>
-      <pubDate>Wed, 03 May 2017 17:18:29 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/distance/</guid>
-      <description>download. [v1.1.1] distance.ipf
-install. README.md
-introduction.  settings. descriptions. v1.1.1 性能改善しました。
-v1.1.0 メートル単位対応しました。
-アドオンがロードされると近隣（20m範囲内）モンスターに自キャラからの距離がメートル単位で表示されます。
-距離が12mを超えると、表示が消えます。
-v1.0.0 新規作成。
-アドオンがロードされると近隣（500範囲内）モンスターに自キャラからの距離が表示されます。
-単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/hidename/</link>
-      <pubDate>Wed, 03 May 2017 17:18:23 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/hidename/</guid>
-      <description>download. [v1.0.1] hidename.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.1 ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。
-v1.0.0 新規作成。
-アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。
-動画を撮るときに設定では非表示にできなかったので。。。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 装備修理時、装備アイコンに耐久度（％）を色分け表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/repairendur/</link>
-      <pubDate>Wed, 03 May 2017 17:18:10 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/repairendur/</guid>
-      <description>download. [v1.1.0] repairendur.ipf
-install. README.md
-introduction. 
-
-settings. Nexon\TreeofSaviorJP\addons\repairendur\settings.txt を作成します。
-以下の初期設定をsettings.txtコピペします。
-reen.Weapon = { Lp = 30, Mp = 5, Hp = 1 }; reen.Armor = { Lp = 35, Mp = 10, Hp = 5 }; reen.SubWeapon = reen.Weapon; -- added v1.1.0 reen.EndurColor = { Lc = &amp;quot;FFFF00&amp;quot;, Mc = &amp;quot;FF0000&amp;quot;, Hc = &amp;quot;000000&amp;quot; };  explanation. この設定は装備の耐久度と割合に応じた文字色の設定です。
-[Weapon]、[Armor]は装備の耐久度の色分け用閾値で、Low, Middle, Highの3段階を、武器用と防具用で用意しています。
-[EndurColor]は装備の耐久度閾値に対応する色をRGBで指定します。
-explanation of initial parameters. 武器</description>
     </item>
     
     <item>
@@ -328,29 +353,6 @@ introduction. settings. Nexon\TreeofSaviorJP\addons\marketselltimechanger\settin
 現状、1,3,5,7 が使用でき、それ以外が入力されていた場合は、システムのデフォルト値が採用されます。
 descriptions. v1.0.0 新規作成。
 アドオンがロードされると、設定ファイルに記載された値でマーケットのデフォルト出品日数を変更します。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] DPS計測アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/dpsmeter/</link>
-      <pubDate>Fri, 28 Apr 2017 05:33:35 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/dpsmeter/</guid>
-      <description> download. [v1.3.0] dpsmeter.ipf
-install. README.md
-introduction.  settings. descriptions. v1.3.0 DPS平均値表示を追加 DPS平均値表示に伴い、フォーマットを変更 現在のDPS[{淡青}平均DPS][{淡赤}最大DPS] dps  モンスター死亡時のsystemメッセージによる通知をデフォルトOFFに変更 表示するには、DPSのUIを右クリック &amp;gt; [toggleChat]を選択します。
-選択する度に通知のON/OFFを切り替えます。
-DPS計測対象を調整  ボコルのゾンビフィーで召喚するゾンビを除外  v1.2.0 DPS計測方法を調整 ターゲットアイコン表示が可能な距離まで近づいて、初撃時（を含む。初撃はdamage/1sec換算）からDPS計測を開始します。
-ターゲットが死ぬかフレームアウトするまで計測は止まりません。
-DPS計測対象を調整 旧バージョンではfaction = &amp;ldquo;Monster&amp;rdquo;を計測対象としていましたが不十分でしたので、 計測対象を拡大し、ペット以外（faction ~= &amp;ldquo;Pet&amp;rdquo;）としました。
-IWやルーツクリスタルも対象となってしまいますが、計測されないよりは良いかと。。。
-v1.1.0 UI表示を追加 現在のDPS、最大DPSをモンスターUI近辺に、以下のフォーマット表示します。
-[現在のDPS]([最大DPS]) dps  モンスター死亡時のsystemメッセージによる通知を追加 モンスター死亡時、最大DPSをsystemメッセージで表示します。
-ターゲットアイコン表示が可能な距離まで近づくとDPS計測を開始、離れると停止します。
-v1.0.0 新規作成。 アドオンがロードされるとDPS計測が有効になり、計測結果はsystemメッセージで通知します。
-現時点ではコンバットログが取れないので、正確な測定は実現できていません。
-少しでも測定精度を上げたい場合は、以下の点に注意してください。
- ソロで戦う。（コンパニオンも出さない） 混戦しない。 回復持ちの敵は避ける。  </description>
     </item>
     
     <item>
