@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Thu, 31 Aug 2017 21:36:03 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 31 Aug 2017 21:43:46 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,10 +15,10 @@
     <item>
       <title>[tree of savior addon] コレクション画面の[N]マークを非表示にするアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/rmnewcollectionmark/</link>
-      <pubDate>Thu, 31 Aug 2017 21:36:03 +0900</pubDate>
+      <pubDate>Thu, 31 Aug 2017 21:43:46 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/rmnewcollectionmark/</guid>
-      <description>download. [v1.0.0] dice.ipf
+      <description>download. [v1.0.0] rmnewcollectionmark.ipf
 install. README.md
 introduction. 
 settings. descriptions. v1.0.0 新規作成 アドオンがロードされると、コレクション画面で[N]マークが表示されなくなります。
