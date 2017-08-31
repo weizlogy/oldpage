@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-26 15:42:56.1612112 &#43;0900 JST",
+  "dateModified": "2017-03-26 15:42:11.9750674 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -259,7 +259,7 @@
   
     <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
   
-    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(21)</div>
+    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(22)</div>
   
     <div class="tos-addon-dev"><a href="/categories/tos-addon-dev">tos-addon-dev</a>(4)</div>
   
@@ -273,6 +273,17 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/rmnewcollectionmark/">[tree of savior addon] コレクション画面の[N]マークを非表示にするアドオン</a>
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+      <span class="blog-date">@2017/08/31 21:36:03</span>
+    </div>
+  </div>
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
@@ -318,17 +329,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/skillitemcounter/">[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</a>
-    
-    &ndash;&nbsp;v1.1.0
-    
-    
-      <span class="blog-date">@2017/08/31 00:04:05</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -337,6 +337,20 @@
   <strong>Contents index.</strong>
   <section>
   
+  
+  <div class="[system-dev]">
+    <a href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">[system development] strutsのFormFileからローカルファイルの絶対パスを取得</a>
+    
+    
+    
+  </div>
+  <pre class="summary [system-dev]">strutsのFormFileからローカルファイルの絶対パスを取得したいのです。 （取得しても無意味ですが）
+eclipseのデバッガで参照すると、確かにprivate変数に絶対パスを持っていますが、アクセスするためのメソッドがありません。
+リフレクションでアクセス可能です。
+DiskFileItemを使用するために、「commons-fileupload.jar」が必要です。
+struts1.3.10
+java 1.6.0_18
+// formFileの実体は「org.apache.struts.upload.CommonsMultipartRequestHandler.CommonsFormFile」 Field f = formFile.getClass().getDeclaredField(&quot;fileItem&quot;); f.setAccessible(true); // fileItemは「org.apache.commons.fileupload.FileItem」を実装した「org.apache.commons.fileupload.disk.DiskFileItem」 DiskFileItem item = (DiskFileItem) f.get(formFile); System.out.println(item.getName());  </pre>
   
   <div class="[system-dev]">
     <a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a>

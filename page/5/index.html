@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-26 15:41:34.6922884 &#43;0900 JST",
+  "dateModified": "2017-03-26 15:41:29.5934921 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -259,7 +259,7 @@
   
     <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
   
-    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(21)</div>
+    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(22)</div>
   
     <div class="tos-addon-dev"><a href="/categories/tos-addon-dev">tos-addon-dev</a>(4)</div>
   
@@ -273,6 +273,17 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/rmnewcollectionmark/">[tree of savior addon] コレクション画面の[N]マークを非表示にするアドオン</a>
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+      <span class="blog-date">@2017/08/31 21:36:03</span>
+    </div>
+  </div>
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
@@ -318,17 +329,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/skillitemcounter/">[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</a>
-    
-    &ndash;&nbsp;v1.1.0
-    
-    
-      <span class="blog-date">@2017/08/31 00:04:05</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -337,6 +337,21 @@
   <strong>Contents index.</strong>
   <section>
   
+  
+  <div class="[site-management]">
+    <a href="http://www.weizlogy.gq/site/blogger-last-modified/">[site management] bloggerで最終更新日時を表示する</a>
+    
+    
+    
+  </div>
+  <pre class="summary [site-management]">bloggerのテンプレートタグでは更新日時を取得できないので、別の方法を参考に、時刻追加、個別記事表示、一覧記事表示どちらも対応するようにしました。
+ポイントは最終更新日時を挿入する要素のID属性を各投稿記事固有のIDにすることです。
+ここが固定だと、最も早く出現する要素1つにのみ更新日時が表示されてしまいます。
+まず、最終更新日時を表示する領域を決めます。
+[テンプレート] &gt; [HTMLの編集] &gt; [書式テンプレート] &gt; [ウィジェットの移動] &gt; [Blog1&lt;ブログ投稿領域&gt;]に移動します。
+投稿領域近辺が良いと思いますので、&lt;b:includable id=&lsquo;post&rsquo; var=&lsquo;post&rsquo;&gt;&hellip;&lt;/b:includable&gt;を展開し、そこから好きな位置に決めます。 今回は、投稿日時の近辺にするため、&lt;span class=&lsquo;post-timestamp&rsquo;&gt;と次の要素の間に以下の投稿に依存するコードを埋め込みます。
+&lt;!-- 最終更新日時 --&gt; &lt;span expr:id=&#39;data:post.id&#39; class=&#39;last-modified updated&#39;&gt;&lt;/span&gt; &lt;script type=&#39;text/javascript&#39;&gt; var id = &quot;&lt;data:post.id/&gt;&quot;; &lt;/script&gt; &lt;script type=&#39;text/javascript&#39;&gt; var sHome = &quot;&lt;data:blog.homepageUrl/&gt;&quot;; var sURL = &quot;&lt;data:post.url/&gt;&quot;; sURL = sURL.replace(sHome, &quot;&quot;) sURL = &quot;/&quot; + sURL; document.write(unescape(&quot;%3Cscript&quot;)+&quot; src=&#39;&quot;+sHome+&quot;/atom.xml?redirect=false&amp;path=&quot;+sURL+&quot;&amp;max-results=1&amp;alt=json-in-script&amp;callback=show_last_modified&#39; type=&#39;text/javascript&#39;&quot;+unescape(&quot;%3E%3C/script%3E&quot;)); &lt;/script&gt;  各投稿のRSSからコールバックされる関数show_last_modifiedは投稿に依存せず不変のため、テンプレートの上部に(投稿の前に宣言できればどこでも良い)一度だけ宣言します。
+&lt;script type=&quot;text/javascript&quot;&gt;// &lt;![CDATA[ function show_last_modified(root) { var published = &#39;&#39;; var updated = &#39;&#39;; for (var i = 0; i &lt; root.</pre>
   
   <div class="[site-management]">
     <a href="http://www.weizlogy.gq/site/code-prettify-on-github/">[site management] code-prettifyがgithubに移行し進化していたので対応した</a>
@@ -450,20 +465,6 @@ struts1.3.10
 java 1.6.0_18
 以下のようなFormクラスを用意します。
 import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.beanutils.LazyDynaMap; public HogeForm extends ActionForm { private LazyDynaList values = new LazyDynaList(LazyDynaMap.class); public String getValue(int index) { return values.get(index); } public void setValue(int index, Object value) { return values.set(index, value); } public List&lt;Map&lt;String, String&gt;&gt; getValues() { // LazyDynaList, LazyDynaMapのままでは扱いにくいため、より一般的な型（List, Map）に変換します。 List&lt;Map&lt;String, String&gt;&gt; convertValues = new ArrayList&lt;Map&lt;String, String&gt;&gt;(); for (Object item : values) { convertValues.</pre>
-  
-  <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">[system development] strutsのFormFileからローカルファイルの絶対パスを取得</a>
-    
-    
-    
-  </div>
-  <pre class="summary [system-dev]">strutsのFormFileからローカルファイルの絶対パスを取得したいのです。 （取得しても無意味ですが）
-eclipseのデバッガで参照すると、確かにprivate変数に絶対パスを持っていますが、アクセスするためのメソッドがありません。
-リフレクションでアクセス可能です。
-DiskFileItemを使用するために、「commons-fileupload.jar」が必要です。
-struts1.3.10
-java 1.6.0_18
-// formFileの実体は「org.apache.struts.upload.CommonsMultipartRequestHandler.CommonsFormFile」 Field f = formFile.getClass().getDeclaredField(&quot;fileItem&quot;); f.setAccessible(true); // fileItemは「org.apache.commons.fileupload.FileItem」を実装した「org.apache.commons.fileupload.disk.DiskFileItem」 DiskFileItem item = (DiskFileItem) f.get(formFile); System.out.println(item.getName());  </pre>
   
   
 

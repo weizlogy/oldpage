@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Thu, 31 Aug 2017 01:33:57 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 31 Aug 2017 21:36:03 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/categories/tos-addon/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] コレクション画面の[N]マークを非表示にするアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/rmnewcollectionmark/</link>
+      <pubDate>Thu, 31 Aug 2017 21:36:03 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/rmnewcollectionmark/</guid>
+      <description>download. [v1.0.0] dice.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.0 新規作成 アドオンがロードされると、コレクション画面で[N]マークが表示されなくなります。
+サブキャラ育成時にコレクション画面を開くと[N]マークがビッシリで消すのが大変だったので。。。</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] ダイスロールアドオン</title>
