@@ -7,10 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Thu, 31 Aug 2017 21:43:46 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 06 Sep 2017 01:10:54 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/tos/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] ワープ用クエスト誤完了防止アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/savequest/</link>
+      <pubDate>Wed, 06 Sep 2017 01:10:54 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/savequest/</guid>
+      <description>download. [v1.1.1] savequest.ipf
+install. README.md
+introduction. 
+settings. Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。
+explanation. savequestフォルダーにはquests_[cid].txtが自動的に生成され、 キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。
+descriptions. v1.1.1 一部クエストが保存できない不具合の修正 おそらくメインクエはほとんど保存できなかったと思いますが、保存できるようになります。
+v1.1.0 クエスト欄操作機能追加 F5キーで表示するクエスト欄でも本アドオンの機能（右クリックメニュー）が使えるようになります。
+ダイレクトクエストワープ機能追加 F5キーで表示するクエスト欄から直接クエストワープできるようになります。
+ワープ可能なクエストの左上にワープアイコンが表示されるので、クリックしてください。
+v1.0.2 バグ対応 保存したクエスト情報がチーム毎に共有される問題を修正しました。
+issue #3
+本修正により、情報保存形式が変更され、クエスト保存状態が初期化されます。
+お手数ですが、再チェックまたは、旧仕様情報（quests.txt）の内容をquests_[cid].txtにコピペしてください。
+v1.0.1 バグ対応 再ログイン時に前回の状態が保存されない問題を修正しました。
+issue #1
+v1.0.0 新規作成 アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、 ワープ直後の誤完了を防止できます。
+usage. UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、 メニュー（save, release, cancel）が開きます。
+saveを選択すると該当クエストのNPCは非表示となります。 また、save済みのクエストのワープアイコン直下に[saved.]の文字を表示します。
+元に戻すにはreleaseを選択します。
+cautions. 念のため、アドオンは補助的な位置づけとし、 ワープ直後はNPCを選択しないよう留意してください。
+一時消去したNPCは、release後、エリアチェンジで表示できます。</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] コレクション画面の[N]マークを非表示にするアドオン</title>
@@ -116,34 +145,6 @@ install. README.md
 introduction. 
 settings. descriptions. v1.1.0 ポイズンポット使用スキル対応 ポイズンポット消費のあるスキルスロットにも使用回数を表示します。
 v1.0.0 新規作成 アドオンがロードされると、クイックスロットにセットしている、消費アイテムのあるスキルスロット右上に、消費アイテムの個数に応じたスキルの使用回数を追加で表示します。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] ワープ用クエスト誤完了防止アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/savequest/</link>
-      <pubDate>Thu, 31 Aug 2017 00:03:53 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/savequest/</guid>
-      <description>download. [v1.1.0] savequest.ipf
-install. README.md
-introduction. 
-settings. Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。
-explanation. savequestフォルダーにはquests_[cid].txtが自動的に生成され、 キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。
-descriptions. v1.1.0 クエスト欄操作機能追加 F5キーで表示するクエスト欄でも本アドオンの機能（右クリックメニュー）が使えるようになります。
-ダイレクトクエストワープ機能追加 F5キーで表示するクエスト欄から直接クエストワープできるようになります。
-ワープ可能なクエストの左上にワープアイコンが表示されるので、クリックしてください。
-v1.0.2 バグ対応 保存したクエスト情報がチーム毎に共有される問題を修正しました。
-issue #3
-本修正により、情報保存形式が変更され、クエスト保存状態が初期化されます。
-お手数ですが、再チェックまたは、旧仕様情報（quests.txt）の内容をquests_[cid].txtにコピペしてください。
-v1.0.1 バグ対応 再ログイン時に前回の状態が保存されない問題を修正しました。
-issue #1
-v1.0.0 新規作成 アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、 ワープ直後の誤完了を防止できます。
-usage. UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、 メニュー（save, release, cancel）が開きます。
-saveを選択すると該当クエストのNPCは非表示となります。 また、save済みのクエストのワープアイコン直下に[saved.]の文字を表示します。
-元に戻すにはreleaseを選択します。
-cautions. 念のため、アドオンは補助的な位置づけとし、 ワープ直後はNPCを選択しないよう留意してください。
-一時消去したNPCは、release後、エリアチェンジで表示できます。</description>
     </item>
     
     <item>
