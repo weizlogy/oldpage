@@ -7,10 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Wed, 06 Sep 2017 01:10:54 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 09 Sep 2017 21:51:00 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/tos/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] 召喚物の個体数を表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/summoncounter/</link>
+      <pubDate>Sat, 09 Sep 2017 21:51:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/summoncounter/</guid>
+      <description>download. [v1.0.0] summoncounter.ipf
+install. README.md
+introduction. 
+
+
+
+settings. Nexon\TreeofSaviorJP\addons\summoncounter\settings.txt を作成します。
+以下の初期設定をsettings.txtコピペします。
+suco.config = { Bokor_Zombify = { mode = &amp;quot;hpbar&amp;quot;, loc_frame = { x = 450, y = 80 }, loc_bar = { x = 0, y = 0 } }, Necromancer_RaiseDead = { mode = &amp;quot;icon1&amp;quot;, loc = &amp;quot;left&amp;quot;, loc1 = { x = 0, y = 30 }, loc2 = { x = 0, y = 70 }, loc3 = { x = 0, y = 110 }, loc4 = { x = -40, y = 50 }, loc5 = { x = -40, y = 90 } }, Necromancer_RaiseSkullarcher = { mode = &amp;quot;icon1&amp;quot;, loc = &amp;quot;right&amp;quot;, loc1 = { x = 0, y = 30 }, loc2 = { x = 0, y = 70 }, loc3 = { x = 0, y = 110 }, loc4 = { x = 40, y = 50 }, loc5 = { x = 40, y = 90 } }, Necromancer_CreateShoggoth = { mode = &amp;quot;icon2&amp;quot;, loc = &amp;quot;down&amp;quot;, loc1 = { x = 0, y = 0 } } };  explanation.</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] ワープ用クエスト誤完了防止アドオン</title>
@@ -308,20 +325,6 @@ introduction.
 settings. Nexon\TreeofSaviorJP\addons\objectdetector\settings.txt を作成します。
 以下の初期設定をsettings.txtにコピペします。
 -- for monster and npcs. obde.config.mon = { color = &amp;quot;FF000000&amp;quot;, isVisible = 1 }; obde.config.mon.Monster = { color = &amp;quot;FF660000&amp;quot;, isVisible = 1 }; obde.config.mon.Monster_Chaos1 = obde.config.mon.Monster; obde.config.mon.Monster_Chaos2 = obde.config.mon.Monster; obde.config.mon.Pet = { isVisible = 0 }; obde.config.mon.RootCrystal = { color = &amp;quot;FF330033&amp;quot;, isVisible = 1 }; obde.config.mon.Neutral = { color = &amp;quot;FFFF9900&amp;quot;, isVisible = 1, }; obde.</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 召喚物の個体数を表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/summoncounter/</link>
-      <pubDate>Sun, 16 Jul 2017 23:26:44 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/summoncounter/</guid>
-      <description> download. [v0.0.2] summoncounter.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.0 新規作成。
-アドオンがロードされると、クイックスロットにセットしている召喚系スキルスロット右上に、召喚数/最大値を追加で表示します。
-cautions.  エリアチェンジ、ログイン直後で既に存在する召喚物はカウントできません。 ゾンビカプセル産のゾンビはカウントできません。 コープスタワー特性産の骸骨兵士はカウントできません。  </description>
     </item>
     
     <item>

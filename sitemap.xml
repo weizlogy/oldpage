@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.weizlogy.gq/tos/addon/summoncounter/</loc>
+    <lastmod>2017-09-09T21:51:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.weizlogy.gq/tos/addon/savequest/</loc>
     <lastmod>2017-09-06T01:10:54+09:00</lastmod>
   </url>
@@ -90,11 +95,6 @@
   <url>
     <loc>http://www.weizlogy.gq/tos/addon/objectdetector/</loc>
     <lastmod>2017-07-18T00:30:34+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.weizlogy.gq/tos/addon/summoncounter/</loc>
-    <lastmod>2017-07-16T23:26:44+09:00</lastmod>
   </url>
   
   <url>
@@ -304,13 +304,13 @@
   
   <url>
     <loc>http://www.weizlogy.gq/tos/</loc>
-    <lastmod>2017-09-06T01:10:54+09:00</lastmod>
+    <lastmod>2017-09-09T21:51:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.weizlogy.gq/categories/tos-addon/</loc>
-    <lastmod>2017-09-06T01:10:54+09:00</lastmod>
+    <lastmod>2017-09-09T21:51:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -328,7 +328,7 @@
   
   <url>
     <loc>http://www.weizlogy.gq/</loc>
-    <lastmod>2017-09-06T01:10:54+09:00</lastmod>
+    <lastmod>2017-09-09T21:51:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
