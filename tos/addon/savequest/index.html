@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-09-10 08:50:35.4523431 &#43;0900 JST",
+  "dateModified": "2017-09-10 23:59:09.0791057 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -231,13 +231,14 @@
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="[tree of savior addon] ワープ用クエスト誤完了防止アドオン" />
-<meta name="twitter:description" content="download. [v1.2.0] savequest.ipf
+<meta name="twitter:description" content="download. [v1.2.1] savequest.ipf
 install. README.md
 introduction. 
 
 settings. Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。
 explanation. savequestフォルダーには下記ファイルが自動的に生成され、 キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。
- quests_[cid].txt quests_scl_[cid].txt  descriptions. v1.2.0 クエストワープショートカット作成機能追加 右クリックメニューにshortcutが追加されました。 本機能によりクエストワープのショートカットフレームを任意の場所に追加、削除できます。
+ quests_[cid].txt quests_scl_[cid].txt  descriptions. v1.2.1 クエストワープショートカット位置固定機能追加 クエストワープのショートカットフレームを位置固定できるようにしました。
+v1.2.0 クエストワープショートカット作成機能追加 右クリックメニューにshortcutが追加されました。 本機能によりクエストワープのショートカットフレームを任意の場所に追加、削除できます。
 v1.1.1 一部クエストが保存できない不具合の修正 おそらくメインクエはほとんど保存できなかったと思いますが、保存できるようになります。
 v1.1.0 クエスト欄操作機能追加 F5キーで表示するクエスト欄でも本アドオンの機能（右クリックメニュー）が使えるようになります。
 ダイレクトクエストワープ機能追加 F5キーで表示するクエスト欄から直接クエストワープできるようになります。
@@ -249,15 +250,13 @@ issue #3
 v1.0.1 バグ対応 再ログイン時に前回の状態が保存されない問題を修正しました。
 issue #1
 v1.0.0 新規作成 アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、 ワープ直後の誤完了を防止できます。
-usage. UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、 メニュー（save, release, shortcut, cancel）が開きます。
+usage. UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、 メニュー（Save, Release, Shortcut, Cancel）が開きます。
 save &amp; release. saveを選択すると該当クエストのNPCは非表示となります。 また、save済みのクエストのワープアイコン直下に[saved.]の文字を表示します。
 元に戻すにはreleaseを選択します。
 shortcut. shortcutを選択すると画面右上近辺にワープアイコン＋マップ名の小さなフレームが出現します。
 フレームはドラッグで好きな位置に移動できます。移動位置は自動保存され再ログイン時に復元します。
 ワープアイコンにマウスカーソルを当てるとクエスト名をツールチップ表示します。
-ワープアイコンを右クリックするとショートカットを削除します。
-クエスト完了、破棄に連動していないため、不要になったショートカットは手動で削除してください。
-cautions. 念のため、アドオンは補助的な位置づけとし、 ワープ直後はNPCを選択しないよう留意してください。" />
+ワープアイコンを右クリックするとメニュー（(Un)Lock, Remove, Cancel）が表示されます。" />
 
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
@@ -288,7 +287,7 @@ cautions. 念のため、アドオンは補助的な位置づけとし、 ワー
 
  <h1><a href="http://www.weizlogy.gq/tos/addon/savequest/">[tree of savior addon] ワープ用クエスト誤完了防止アドオン</a>
   
-    &ndash;&nbsp;v1.2.0
+    &ndash;&nbsp;v1.2.1
   
 </h1>
  <div>
@@ -296,7 +295,7 @@ cautions. 念のため、アドオンは補助的な位置づけとし、 ワー
 
 <h2 id="download">download.</h2>
 
-<p><a href="https://github.com/weizlogy/tos/releases/download/savequest/savequest-v1.2.0.ipf">[v1.2.0] savequest.ipf</a></p>
+<p><a href="https://github.com/weizlogy/tos/releases/download/savequest/savequest-v1.2.1.ipf">[v1.2.1] savequest.ipf</a></p>
 
 <h2 id="install">install.</h2>
 
@@ -323,6 +322,12 @@ cautions. 念のため、アドオンは補助的な位置づけとし、 ワー
 </ul>
 
 <h2 id="descriptions">descriptions.</h2>
+
+<h3 id="v1-2-1">v1.2.1</h3>
+
+<h4 id="クエストワープショートカット位置固定機能追加">クエストワープショートカット位置固定機能追加</h4>
+
+<p>クエストワープのショートカットフレームを位置固定できるようにしました。</p>
 
 <h3 id="v1-2-0">v1.2.0</h3>
 
@@ -379,7 +384,7 @@ cautions. 念のため、アドオンは補助的な位置づけとし、 ワー
 <h2 id="usage">usage.</h2>
 
 <p>UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、
-メニュー（save, release, shortcut, cancel）が開きます。</p>
+メニュー（Save, Release, Shortcut, Cancel）が開きます。</p>
 
 <h3 id="save-release">save &amp; release.</h3>
 
@@ -396,7 +401,17 @@ cautions. 念のため、アドオンは補助的な位置づけとし、 ワー
 
 <p>ワープアイコンにマウスカーソルを当てるとクエスト名をツールチップ表示します。</p>
 
-<p>ワープアイコンを右クリックするとショートカットを削除します。</p>
+<p>ワープアイコンを右クリックするとメニュー（(Un)Lock, Remove, Cancel）が表示されます。</p>
+
+<h4 id="un-lock">(Un)Lock</h4>
+
+<p>ショートカットフレームを位置固定、または固定解除します。</p>
+
+<p>現在の位置固定状態に応じてトグル表示します。</p>
+
+<h4 id="remove">Remove</h4>
+
+<p>ショートカットフレームを削除します。</p>
 
 <p><strong>クエスト完了、破棄に連動していないため、不要になったショートカットは手動で削除してください。</strong></p>
 
@@ -411,7 +426,7 @@ cautions. 念のため、アドオンは補助的な位置づけとし、 ワー
 
 </article>
 <div class="blog-date">
-  2017/03/24 05:28:54 - 2017/09/10 08:50:35
+  2017/03/24 05:28:54 - 2017/09/10 23:59:09
 </div>
 <amp-ad type="adsense"
   layout="responsive"
