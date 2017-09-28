@@ -7,10 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Mon, 18 Sep 2017 03:02:31 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 28 Sep 2017 21:45:09 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/categories/tos-addon/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/hidename/</link>
+      <pubDate>Thu, 28 Sep 2017 21:45:09 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/hidename/</guid>
+      <description>download. [v1.0.2] hidename.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.2 ギルド名も非表示にします。
+v1.0.1 ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。
+v1.0.0 新規作成 アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。
+動画を撮るときに設定では非表示にできなかったので。。。</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] 召喚物の個体数を表示するアドオン</title>
@@ -223,21 +238,6 @@ v2.0.0 討伐数、ドロップアイテム名、アイテム収集率表示追�
 v1.0.0 新規作成 アドオンがロードされると、ターゲットしたモンスターのステータス（*1）が画面上部に表示されます。
 [*1] 表示するステータスは現在のところ以下の通りです。
    表示名 内容     ATK 物理攻撃力(最大)   MATK 魔法攻撃力(最大)   DEF 物理防御力   MDEF 魔法防御力   DR 回避率   CDR クリティカル回避率   CATK クリティカル攻撃力   CDEF クリティカル防御力    </description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/hidename/</link>
-      <pubDate>Thu, 31 Aug 2017 00:02:02 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/hidename/</guid>
-      <description>download. [v1.0.1] hidename.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.1 ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。
-v1.0.0 新規作成。
-アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。
-動画を撮るときに設定では非表示にできなかったので。。。</description>
     </item>
     
     <item>
