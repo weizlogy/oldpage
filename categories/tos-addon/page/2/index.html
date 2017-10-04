@@ -215,7 +215,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-08-31 00:03:00.2188873 &#43;0900 JST",
+  "dateModified": "2017-08-31 00:03:37.4438395 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -275,6 +275,17 @@
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/monsterstatus/">[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</a>
+    
+    &ndash;&nbsp;v3.0.1
+    
+    
+      <span class="blog-date">@2017/10/04 21:53:51</span>
+    </div>
+  </div>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
       <a href="http://www.weizlogy.gq/tos/addon/hidename/">[tree of savior addon] 画面にある自キャラ名を消すアドオン</a>
     
     &ndash;&nbsp;v1.0.2
@@ -317,17 +328,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/dice/">[tree of savior addon] ダイスロールアドオン</a>
-    
-    &ndash;&nbsp;v1.1.0
-    
-    
-      <span class="blog-date">@2017/08/31 01:33:57</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -335,6 +335,18 @@
 <div class="main">
   <section>
   
+  
+  <div><a href="http://www.weizlogy.gq/tos/addon/repairendur/">[tree of savior addon] 装備修理時、装備アイコンに耐久度（％）を色分け表示するアドオン</a></div>
+  <pre class="summary">download. [v1.1.0] repairendur.ipf
+install. README.md
+introduction. 
+
+settings. Nexon\TreeofSaviorJP\addons\repairendur\settings.txt を作成します。
+以下の初期設定をsettings.txtコピペします。
+reen.Weapon = { Lp = 30, Mp = 5, Hp = 1 }; reen.Armor = { Lp = 35, Mp = 10, Hp = 5 }; reen.SubWeapon = reen.Weapon; -- added v1.1.0 reen.EndurColor = { Lc = &quot;FFFF00&quot;, Mc = &quot;FF0000&quot;, Hc = &quot;000000&quot; };  explanation. この設定は装備の耐久度と割合に応じた文字色の設定です。
+[Weapon]、[Armor]は装備の耐久度の色分け用閾値で、Low, Middle, Highの3段階を、武器用と防具用で用意しています。
+[EndurColor]は装備の耐久度閾値に対応する色をRGBで指定します。
+explanation of initial parameters. 武器</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/pickiteminfo/">[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</a></div>
   <pre class="summary">download. [v1.0.1] pickiteminfo.ipf
@@ -344,25 +356,6 @@ settings. descriptions. v1.0.1 名称表示位置調整 8&frasl;23 UPDATEによ�
 名称の動きが若干不穏ですが、ALTキーでアイテム名称表示がずれる問題が解決するまでの暫定対処となります。
 v1.0.0 新規作成 アドオンがロードされると、ALTキーを押さなくとも、ドロップアイテムの名称が表示されるようになります。
 アイテム名称はレアリティで色が変わります。 色の変化はColored Item Namesをパク&hellip;参考にしています。</pre>
-  
-  <div><a href="http://www.weizlogy.gq/tos/addon/monsterstatus/">[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</a></div>
-  <pre class="summary"> download. [v3.0.0] monsterstatus.ipf
-[v2.1.0] monsterstatus.ipf
-install. README.md
-introduction.  settings. descriptions. v3.0.0 ダメージ表示対応 ステータスの代わりにダメージの期待値を表示します。
-ダメージの期待値表示は物理、クリティカル、魔法の三種類です。 クリティカルの期待値には確率を表示します。
-経験値表示追加 キャラクター経験値とクラス経験値の表示を追加しました。
-フレーム背景透過対応 フレームの透過率を上げて、表示を改善しました。
-v2.2.0 移動種別表示追加 移動種別の表示を追加し、飛行しているか分かるようにしました。
-種族、属性表示追加 種族、属性の表示を追加しました。
-v2.1.0 コンパクトなv2系のサポートを始めました。
-v2.0.0 討伐数、ドロップアイテム名、アイテム収集率表示追加 冒険日誌から討伐数、ドロップアイテム名、アイテム収集率を取得、 表示する機能を追加しました。 また、ドロップアイテム名からアイテムツールチップが開けます。
-表示ステータス 、フォーマット調整 表示するステータスは現在のところ以下の通りです。
-   表示名 内容     ATK 物理攻撃力(最大)   MATK 魔法攻撃力(最大)   DEF 物理防御力   MDEF 魔法防御力    UIウィンドウをドラッグで移動できるようになりました。
-設定はログイン中のみ有効です。
-v1.0.0 新規作成 アドオンがロードされると、ターゲットしたモンスターのステータス（*1）が画面上部に表示されます。
-[*1] 表示するステータスは現在のところ以下の通りです。
-   表示名 内容     ATK 物理攻撃力(最大)   MATK 魔法攻撃力(最大)   DEF 物理防御力   MDEF 魔法防御力   DR 回避率   CDR クリティカル回避率   CATK クリティカル攻撃力   CDEF クリティカル防御力    </pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/fixbookread/">[tree of savior addon] 本アイテムの改行を正常化するアドオン</a></div>
   <pre class="summary">download. [v1.0.0] fixbookread.ipf

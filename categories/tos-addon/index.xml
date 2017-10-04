@@ -7,10 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Thu, 28 Sep 2017 21:45:09 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 04 Oct 2017 21:53:51 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/categories/tos-addon/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/monsterstatus/</link>
+      <pubDate>Wed, 04 Oct 2017 21:53:51 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/monsterstatus/</guid>
+      <description>download. [v3.0.1] monsterstatus.ipf
+[v2.1.1] monsterstatus.ipf
+install. README.md
+introduction.  settings. descriptions. v3.0.1 冒険日誌改変対応 [itos] 冒険日誌改変に対応しました。
+v3.0.0 ダメージ表示対応 ステータスの代わりにダメージの期待値を表示します。
+ダメージの期待値表示は物理、クリティカル、魔法の三種類です。 クリティカルの期待値には確率を表示します。
+経験値表示追加 キャラクター経験値とクラス経験値の表示を追加しました。
+フレーム背景透過対応 フレームの透過率を上げて、表示を改善しました。
+v2.2.0 移動種別表示追加 移動種別の表示を追加し、飛行しているか分かるようにしました。
+種族、属性表示追加 種族、属性の表示を追加しました。
+v2.1.1 冒険日誌改変対応 [itos] 冒険日誌改変に対応しました。
+v2.1.0 コンパクトなv2系のサポートを始めました。
+v2.0.0 討伐数、ドロップアイテム名、アイテム収集率表示追加 冒険日誌から討伐数、ドロップアイテム名、アイテム収集率を取得、 表示する機能を追加しました。 また、ドロップアイテム名からアイテムツールチップが開けます。
+表示ステータス 、フォーマット調整 表示するステータスは現在のところ以下の通りです。
+   表示名 内容     ATK 物理攻撃力(最大)   MATK 魔法攻撃力(最大)   DEF 物理防御力   MDEF 魔法防御力    UIウィンドウをドラッグで移動できるようになりました。</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
@@ -213,31 +236,6 @@ settings. descriptions. v1.0.1 名称表示位置調整 8&amp;frasl;23 UPDATEに
 名称の動きが若干不穏ですが、ALTキーでアイテム名称表示がずれる問題が解決するまでの暫定対処となります。
 v1.0.0 新規作成 アドオンがロードされると、ALTキーを押さなくとも、ドロップアイテムの名称が表示されるようになります。
 アイテム名称はレアリティで色が変わります。 色の変化はColored Item Namesをパク&amp;hellip;参考にしています。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/monsterstatus/</link>
-      <pubDate>Thu, 31 Aug 2017 00:02:48 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/monsterstatus/</guid>
-      <description> download. [v3.0.0] monsterstatus.ipf
-[v2.1.0] monsterstatus.ipf
-install. README.md
-introduction.  settings. descriptions. v3.0.0 ダメージ表示対応 ステータスの代わりにダメージの期待値を表示します。
-ダメージの期待値表示は物理、クリティカル、魔法の三種類です。 クリティカルの期待値には確率を表示します。
-経験値表示追加 キャラクター経験値とクラス経験値の表示を追加しました。
-フレーム背景透過対応 フレームの透過率を上げて、表示を改善しました。
-v2.2.0 移動種別表示追加 移動種別の表示を追加し、飛行しているか分かるようにしました。
-種族、属性表示追加 種族、属性の表示を追加しました。
-v2.1.0 コンパクトなv2系のサポートを始めました。
-v2.0.0 討伐数、ドロップアイテム名、アイテム収集率表示追加 冒険日誌から討伐数、ドロップアイテム名、アイテム収集率を取得、 表示する機能を追加しました。 また、ドロップアイテム名からアイテムツールチップが開けます。
-表示ステータス 、フォーマット調整 表示するステータスは現在のところ以下の通りです。
-   表示名 内容     ATK 物理攻撃力(最大)   MATK 魔法攻撃力(最大)   DEF 物理防御力   MDEF 魔法防御力    UIウィンドウをドラッグで移動できるようになりました。
-設定はログイン中のみ有効です。
-v1.0.0 新規作成 アドオンがロードされると、ターゲットしたモンスターのステータス（*1）が画面上部に表示されます。
-[*1] 表示するステータスは現在のところ以下の通りです。
-   表示名 内容     ATK 物理攻撃力(最大)   MATK 魔法攻撃力(最大)   DEF 物理防御力   MDEF 魔法防御力   DR 回避率   CDR クリティカル回避率   CATK クリティカル攻撃力   CDEF クリティカル防御力    </description>
     </item>
     
     <item>
