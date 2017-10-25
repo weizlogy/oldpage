@@ -3,13 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.weizlogy.gq/tos/addon/pickiteminfo/</loc>
-    <lastmod>2017-10-15T22:39:25+09:00</lastmod>
+    <loc>http://www.weizlogy.gq/tos/addon/dpsmeter/</loc>
+    <lastmod>2017-10-25T23:29:20+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.weizlogy.gq/tos/addon/monsterstatus/</loc>
-    <lastmod>2017-10-04T21:53:51+09:00</lastmod>
+    <lastmod>2017-10-25T23:18:36+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/tos/addon/staminagauge/</loc>
+    <lastmod>2017-10-25T23:02:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/tos/addon/pickiteminfo/</loc>
+    <lastmod>2017-10-15T22:39:25+09:00</lastmod>
   </url>
   
   <url>
@@ -43,11 +53,6 @@
   </url>
   
   <url>
-    <loc>http://www.weizlogy.gq/tos/addon/staminagauge/</loc>
-    <lastmod>2017-08-31T00:04:28+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.weizlogy.gq/tos/addon/slotmac/</loc>
     <lastmod>2017-08-31T00:04:17+09:00</lastmod>
   </url>
@@ -65,11 +70,6 @@
   <url>
     <loc>http://www.weizlogy.gq/tos/addon/fixbookread/</loc>
     <lastmod>2017-08-31T00:01:49+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.weizlogy.gq/tos/addon/dpsmeter/</loc>
-    <lastmod>2017-08-31T00:01:39+09:00</lastmod>
   </url>
   
   <url>
@@ -304,13 +304,13 @@
   
   <url>
     <loc>http://www.weizlogy.gq/tos/</loc>
-    <lastmod>2017-10-15T22:39:25+09:00</lastmod>
+    <lastmod>2017-10-25T23:29:20+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.weizlogy.gq/categories/tos-addon/</loc>
-    <lastmod>2017-10-15T22:39:25+09:00</lastmod>
+    <lastmod>2017-10-25T23:29:20+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -328,7 +328,7 @@
   
   <url>
     <loc>http://www.weizlogy.gq/</loc>
-    <lastmod>2017-10-15T22:39:25+09:00</lastmod>
+    <lastmod>2017-10-25T23:29:20+09:00</lastmod>
     <priority>0</priority>
   </url>
   
