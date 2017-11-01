@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Wed, 25 Oct 2017 23:29:20 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 02 Nov 2017 00:50:46 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/categories/tos-addon/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] 召喚獣にオベイで使えるスキルのツールチップを表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/summonskilltooltip/</link>
+      <pubDate>Thu, 02 Nov 2017 00:50:46 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/summonskilltooltip/</guid>
+      <description>download. [v1.0.0] summonskilltooltip.ipf
+install. README.md
+introduction. 
+v1.0.0 新規作成 アドオンがロードされると、召喚獣にオベイした際に使えるクイックスロットのスキル（降りるを除く）にツールチップを表示できるようにします。
+通常のスキル同様、マウスホバーで表示されます。
+ツールチップでは、該当スキルのクラスタイプ、攻撃タイプ、スキル威力、クールダウンタイムを表示します。</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] DPS計測アドオン</title>

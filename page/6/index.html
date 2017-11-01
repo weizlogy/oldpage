@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-26 15:42:11.9750674 &#43;0900 JST",
+  "dateModified": "2017-03-27 03:37:14.6766437 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -259,7 +259,7 @@
   
     <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
   
-    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(22)</div>
+    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(23)</div>
   
     <div class="tos-addon-dev"><a href="/categories/tos-addon-dev">tos-addon-dev</a>(4)</div>
   
@@ -273,6 +273,17 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/summonskilltooltip/">[tree of savior addon] 召喚獣にオベイで使えるスキルのツールチップを表示するアドオン</a>
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+      <span class="blog-date">@2017/11/02 00:50:46</span>
+    </div>
+  </div>
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
@@ -318,17 +329,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/hidename/">[tree of savior addon] 画面にある自キャラ名を消すアドオン</a>
-    
-    &ndash;&nbsp;v1.0.2
-    
-    
-      <span class="blog-date">@2017/09/28 21:45:09</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -337,6 +337,23 @@
   <strong>Contents index.</strong>
   <section>
   
+  
+  <div class="[system-dev]">
+    <a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a>
+    
+    
+    
+  </div>
+  <pre class="summary [system-dev]">strutsのActionFormには、「map-backed properties」「list-backed properties」という機能があります。
+ActionFormにMapやListのフィールドと適切なアクセサーメソッドを用意することで、JSP-Servlet間のデータ送受信が動的に行われる仕組みです。
+Formのフィールドをいくつも用意しなくていいところが、とても便利です。
+基本的な使い方は、下記公式リンクが分かりやすくなっています。
+http://struts.apache.org/1.x/userGuide/building_controller.html#map_action_form_classes
+今回の趣旨は、「map-backed properties」「list-backed properties」を併用することです。 検索結果等JSPで動的に一覧表示した複数のForm値を、簡単にActionで受け取ることができます。
+struts1.3.10
+java 1.6.0_18
+以下のようなFormクラスを用意します。
+import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.beanutils.LazyDynaMap; public HogeForm extends ActionForm { private LazyDynaList values = new LazyDynaList(LazyDynaMap.class); public String getValue(int index) { return values.get(index); } public void setValue(int index, Object value) { return values.set(index, value); } public List&lt;Map&lt;String, String&gt;&gt; getValues() { // LazyDynaList, LazyDynaMapのままでは扱いにくいため、より一般的な型（List, Map）に変換します。 List&lt;Map&lt;String, String&gt;&gt; convertValues = new ArrayList&lt;Map&lt;String, String&gt;&gt;(); for (Object item : values) { convertValues.</pre>
   
   <div class="[system-dev]">
     <a href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">[system development] strutsのFormFileからローカルファイルの絶対パスを取得</a>
