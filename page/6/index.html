@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-27 03:37:14.6766437 &#43;0900 JST",
+  "dateModified": "2017-03-26 15:42:08.4783658 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -259,7 +259,7 @@
   
     <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
   
-    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(23)</div>
+    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(24)</div>
   
     <div class="tos-addon-dev"><a href="/categories/tos-addon-dev">tos-addon-dev</a>(4)</div>
   
@@ -273,6 +273,17 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/previewguildemblem/">[tree of savior addon] ギルドマスター以外でもギルドエンブレムのプレビューができるアドオン</a>
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+      <span class="blog-date">@2017/11/08 00:56:38</span>
+    </div>
+  </div>
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
@@ -318,17 +329,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/pickiteminfo/">[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</a>
-    
-    &ndash;&nbsp;v1.0.2
-    
-    
-      <span class="blog-date">@2017/10/15 22:39:25</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -337,6 +337,21 @@
   <strong>Contents index.</strong>
   <section>
   
+  
+  <div class="[system-dev]">
+    <a href="http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/">[system development] BeanUtils.describe()で配列を扱いたい</a>
+    
+    
+    
+  </div>
+  <pre class="summary [system-dev]">題名の通り、BeanUtils.describe()で配列を扱いたいのです。主にStringの配列。
+BeanUtils.describe()を使うと、クラスのフィールドをMapに変換してくれますが「文字列として表現可能な形式のもの」に限ります。
+Stringの配列については配列の先頭を出力し、残りは切り捨てられます。
+※{&ldquo;a&rdquo;, &ldquo;b&rdquo;, &ldquo;c&rdquo;}という配列がある場合、&rdquo;a&rdquo;以外の値が切り捨てられます。
+これは、BeanUtilsBeanの仕様となっております。
+ただし、「commons beanUtils 1.8.0」以降は以下の回避策があります。
+BeanUtilsBean.setInstance(new BeanUtilsBean2()); ArrayConverter converter = new ArrayConverter(String[].class, new StringConverter(), 0); // OnlyFirstToStringがtrueの場合、配列の先頭だけ使用します converter.setOnlyFirstToString(false); ConvertUtils.register(converter, String[].class);  上記処理はインスタンスを共有するため、他に影響がある場合は後処理も必要です。
+ConvertUtils.deregister(String[].class); BeanUtilsBean.setInstance(new BeanUtilsBean());  Converterインターフェースを実装したクラスを作成し、ConvertUtilsにregistすると、独自の変換も可能です。</pre>
   
   <div class="[system-dev]">
     <a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a>

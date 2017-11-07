@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-26 15:41:54.1203128 &#43;0900 JST",
+  "dateModified": "2017-03-26 15:41:13.0305514 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -259,7 +259,7 @@
   
     <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
   
-    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(23)</div>
+    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(24)</div>
   
     <div class="tos-addon-dev"><a href="/categories/tos-addon-dev">tos-addon-dev</a>(4)</div>
   
@@ -273,6 +273,17 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/previewguildemblem/">[tree of savior addon] ギルドマスター以外でもギルドエンブレムのプレビューができるアドオン</a>
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+      <span class="blog-date">@2017/11/08 00:56:38</span>
+    </div>
+  </div>
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
@@ -318,17 +329,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/pickiteminfo/">[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</a>
-    
-    &ndash;&nbsp;v1.0.2
-    
-    
-      <span class="blog-date">@2017/10/15 22:39:25</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -337,6 +337,26 @@
   <strong>Contents index.</strong>
   <section>
   
+  
+  <div class="[tos-addon-dev]">
+    <a href="http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/">[tree of savior addon for developpers] iesファイルをcsv形式のファイルに変換するソフト</a>
+    
+    
+    
+  </div>
+  <pre class="summary [tos-addon-dev]">overviews. Tree Of Saviorのipfファイル内には拡張子がiesのファイルがあります。
+Ipf Suiteでは中身を見ることができますが、extractしても実体はバイナリファイル（かつ、暗号化されている）で、 テキストエディタでもバイナリエディタでも見ても分かりません。
+もちろん、grep検索で引き当てることもできません。
+本ソフトは、iesファイルを解析し、可読性のあるcsvファイルを生成します。
+download. IEStoCSV.zip
+install. ダウンロードしたzipを解凍し、任意の場所に配置します。
+descriptions. コンソールアプリケーションなので、コマンドプロンプトで操作します。
+IEStoCSV.exe &lt;走査ディレクトリ&gt;  サブフォルダを含む走査ディレクトリ配下のiesファイルに対して、対となるcsv形式のファイルを生成します。
+走査ディレクトリ省略時は、本ソフトのある位置を対象とします。
+caution. iesファイル内に韓国語が含まれるので、Excelでは文字化けします。（ExcelはShiftJISですが、生成するcsvはUTF8なので）
+本当は英訳を載せたいのですが、完全無料の翻訳APIがないもので。。。 需要があれば何とかしようと思います。
+acknowledgment. iesファイルフォーマットは、以下のソースコードを参考にさせて頂きました。 ありがとうございます。
+https://github.com/r1emu/IPFUnpacker/blob/master</pre>
   
   <div class="[system]">
     <a href="http://www.weizlogy.gq/system/item/tapete/">[system] Tapete - Windows spotlight画像抽出</a>
@@ -505,18 +525,6 @@ Codeanyhwereにbazelをインストール bazelはjdk1.8以降（jdk1.7はサポ
 cabox@box-codeanywhere:~/workspace$ java -version java version &quot;1.7.0_95&quot; OpenJDK Runtime Environment (IcedTea 2.6.4) (7u95-2.6.4-0ubuntu0.14.04.1) OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode)  Installig Bazelを参考に、以下のコマンドを打ちます。
 $ echo &quot;deb [arch=amd64] http://storage.googleapis.com/bazel-apt testing jdk1.7&quot; | sudo tee /etc/apt/sources.list.d/bazel.list $ curl https://storage.googleapis.com/bazel-apt/doc/apt-key.pub.gpg | sudo apt-key add - sudo apt-get update &amp;&amp; sudo apt-get install bazel  bazelでjavaをビルド 最低限の必要なファイルを作成します。
 cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cabox@box-codeanywhere:~/workspace$ touch hello/src/main/java/gq/weizlogy/Main.java cabox@box-codeanywhere:~/workspace$ touch hello/WORKSPACE cabox@box-codeanywhere:~/workspace$ touch hello/BUILD  hello/src/main/java/gq/weizlogy/Main.</pre>
-  
-  <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/">[system development] Monodevelopで埋め込みリソースを使う</a>
-    
-    
-    
-  </div>
-  <pre class="summary [system-dev]">ソリューションエクスプローラーで対象のファイルを右クリックします。
-「ビルドアクション &gt; EmbeddedResource」を選択します。以上です。
-プログラムからのアクセスで必要なリソースIDは、デフォルトネームスペース＋ファイル名となります。 リソースIDはプロパティビューで変更可能です。
-使い方は以下の通りです。
-using (var stream = new System.IO.StreamReader(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream(&quot;[ResourceID]&quot;), true)) { ... }  </pre>
   
   
 

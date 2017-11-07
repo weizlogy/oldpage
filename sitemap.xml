@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.weizlogy.gq/tos/addon/previewguildemblem/</loc>
+    <lastmod>2017-11-08T00:56:38+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.weizlogy.gq/tos/addon/summonskilltooltip/</loc>
     <lastmod>2017-11-02T00:50:46+09:00</lastmod>
   </url>
@@ -309,13 +314,13 @@
   
   <url>
     <loc>http://www.weizlogy.gq/tos/</loc>
-    <lastmod>2017-11-02T00:50:46+09:00</lastmod>
+    <lastmod>2017-11-08T00:56:38+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.weizlogy.gq/categories/tos-addon/</loc>
-    <lastmod>2017-11-02T00:50:46+09:00</lastmod>
+    <lastmod>2017-11-08T00:56:38+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -333,7 +338,7 @@
   
   <url>
     <loc>http://www.weizlogy.gq/</loc>
-    <lastmod>2017-11-02T00:50:46+09:00</lastmod>
+    <lastmod>2017-11-08T00:56:38+09:00</lastmod>
     <priority>0</priority>
   </url>
   
