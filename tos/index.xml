@@ -7,10 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Fri, 17 Nov 2017 00:29:28 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 22 Nov 2017 00:55:55 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/tos/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/pickiteminfo/</link>
+      <pubDate>Wed, 22 Nov 2017 00:55:55 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/pickiteminfo/</guid>
+      <description>download. [v1.0.3] pickiteminfo.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.3 リーク対応 アイテム名を表示しているフレームが破棄されない問題を修正しました。
+v1.0.2 名称表示位置調整 v1.0.1のずれが治ったのに合わせて再調整しました。
+v1.0.1 名称表示位置調整 8&amp;frasl;23 UPDATEにより、ALTキーでアイテム名称表示がずれるようになった影響で同じようにずれる問題に対応しました。
+名称の動きが若干不穏ですが、ALTキーでアイテム名称表示がずれる問題が解決するまでの暫定対処となります。
+v1.0.0 新規作成 アドオンがロードされると、ALTキーを押さなくとも、ドロップアイテムの名称が表示されるようになります。
+アイテム名称はレアリティで色が変わります。 色の変化はColored Item Namesをパク&amp;hellip;参考にしています。</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] ギルドマスター以外でもギルドエンブレムのプレビューができるアドオン</title>
@@ -106,22 +123,6 @@ v1.0.2 ゲージ位置調整 8&amp;frasl;23 UPDATEに対応してゲージを調
 v1.0.1 ゲージ位置調整 スタミナゲージと名前が被らないよう調整しました。
 v1.0.0 新規作成 アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。
 若干キャラ名と被りますが、気にしないように。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/pickiteminfo/</link>
-      <pubDate>Sun, 15 Oct 2017 22:39:25 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/pickiteminfo/</guid>
-      <description>download. [v1.0.2] pickiteminfo.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.2 名称表示位置調整 v1.0.1のずれが治ったのに合わせて再調整しました。
-v1.0.1 名称表示位置調整 8&amp;frasl;23 UPDATEにより、ALTキーでアイテム名称表示がずれるようになった影響で同じようにずれる問題に対応しました。
-名称の動きが若干不穏ですが、ALTキーでアイテム名称表示がずれる問題が解決するまでの暫定対処となります。
-v1.0.0 新規作成 アドオンがロードされると、ALTキーを押さなくとも、ドロップアイテムの名称が表示されるようになります。
-アイテム名称はレアリティで色が変わります。 色の変化はColored Item Namesをパク&amp;hellip;参考にしています。</description>
     </item>
     
     <item>
