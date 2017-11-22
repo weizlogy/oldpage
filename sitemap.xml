@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.weizlogy.gq/system/item/twitter-stylish/</loc>
+    <lastmod>2017-11-22T23:09:37+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.weizlogy.gq/tos/addon/pickiteminfo/</loc>
     <lastmod>2017-11-22T00:55:55+09:00</lastmod>
   </url>
@@ -291,7 +296,7 @@
   
   <url>
     <loc>http://www.weizlogy.gq/categories/system/</loc>
-    <lastmod>2017-08-19T22:43:20+09:00</lastmod>
+    <lastmod>2017-11-22T23:09:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -303,7 +308,7 @@
   
   <url>
     <loc>http://www.weizlogy.gq/system/</loc>
-    <lastmod>2017-08-19T22:43:20+09:00</lastmod>
+    <lastmod>2017-11-22T23:09:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -338,7 +343,7 @@
   
   <url>
     <loc>http://www.weizlogy.gq/</loc>
-    <lastmod>2017-11-22T00:55:55+09:00</lastmod>
+    <lastmod>2017-11-22T23:09:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   

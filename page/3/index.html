@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-10-25 23:02:01.2956061 &#43;0900 JST",
+  "dateModified": "2017-03-26 15:41:24.4447534 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -255,7 +255,7 @@
   
     <div class="site-management"><a href="/categories/site-management">site-management</a>(5)</div>
   
-    <div class="system"><a href="/categories/system">system</a>(4)</div>
+    <div class="system"><a href="/categories/system">system</a>(5)</div>
   
     <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
   
@@ -273,6 +273,17 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div class="[system]">
+      <a href="http://www.weizlogy.gq/system/item/twitter-stylish/">[system] Windows10でTwitter公式webページをStylishでキレイに見せる</a>
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+      <span class="blog-date">@2017/11/22 23:09:37</span>
+    </div>
+  </div>
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
@@ -318,17 +329,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/monsterstatus/">[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</a>
-    
-    &ndash;&nbsp;v3.0.2
-    
-    
-      <span class="blog-date">@2017/10/25 23:18:36</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -337,6 +337,19 @@
   <strong>Contents index.</strong>
   <section>
   
+  
+  <div class="[site-management]">
+    <a href="http://www.weizlogy.gq/site/blogger-blogposting-jsonld/">[site management] schema.org構造化データBlogPosting対応 with JSON&#43;LD in blogger</a>
+    
+    
+    
+  </div>
+  <pre class="summary [site-management]">bloggerのテンプレートで、以下のブログ投稿箇所を検索します。
+&lt;b:loop values=&#39;data:posts&#39; var=&#39;post&#39;&gt;  この直下に以下のスクリプトを挿入します。
+&lt;!-- schema.org - BlogPosting. --&gt; &lt;script type=&#39;application/ld+json&#39;&gt; { &quot;@context&quot;: &quot;http://schema.org&quot;, &quot;@type&quot;: &quot;BlogPosting&quot;, &quot;headline&quot;: &quot;&lt;data:blog.url/&gt;&quot;, &quot;url&quot;: &quot;&lt;data:blog.pageTitle/&gt;&quot;, &quot;datePublished&quot;: &quot;&lt;data:post.timestampISO8601/&gt;&quot;, &quot;author&quot;: { &quot;@type&quot;: &quot;Person&quot;, &quot;name&quot;: &quot;&lt;data:post.author/&gt;&quot; }, &quot;publisher&quot;: { &quot;@type&quot;: &quot;Organization&quot;, &quot;name&quot;: &quot;Weiβlogy&quot;, &quot;logo&quot;: { &quot;@type&quot;: &quot;ImageObject&quot;, &quot;url&quot;: &quot;http://www.weizlogy.gq/favicon.ico&quot; } }, &quot;dateModified&quot;: &quot;&lt;data:post.timestampISO8601/&gt;&quot;, &quot;mainEntityOfPage&quot;: &quot;1&quot;, &quot;image&quot;: { &quot;@type&quot;: &quot;ImageObject&quot;, &quot;url&quot;: &quot;http://www.weizlogy.gq/dummy.png&quot;, &quot;width&quot;: &quot;100&quot;, &quot;height&quot;: &quot;100&quot; } } &lt;/script&gt;  publisher, imageは各自修正してください。
+datePublished, dateModifiedは今のところ同じ値になっています。
+feedDataに情報はありますが、Javascriptを経由せず取得するのは難しそうです。
+本当はheaderタグ内に置きたかったのですが、data:postsが b:section class=&lsquo;main&rsquo; id=&lsquo;main&rsquo; 配下でないと 有効でないという仕様に阻まれました。。。</pre>
   
   <div class="[tos-addon]">
     <a href="http://www.weizlogy.gq/tos/addon/staminagauge/">[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</a>
@@ -484,16 +497,6 @@ $ openssl ciphers -v  これはopensslが対応するCipherSuiteの一覧であ�
 実際に存在するCipherSuiteの一覧は、RFC5426によるとIANA管理とのことで、下記URLがマスターです。
 http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4</pre>
   
-  <div class="[tos-addon-dev]">
-    <a href="http://www.weizlogy.gq/tos/addon-dev/ies-format/">[tree of savior addon for developpers] iesファイルフォーマット解説</a>
-    
-    
-    
-  </div>
-  <pre class="summary [tos-addon-dev]">???は可変長です。
-Total block  ------------------- ---------------------------- ------------------------- | Header [156 byte] | Cell Header [136 x N byte] | Row Data [??? x M byte] | ------------------- ---------------------------- -------------------------  N=列数。は、Header blockのCellCountで指定。 M=行数。は、Header blockのRowCountで指定。
-Header block  ---------------------- ------------------- ------------------------ | TableName [128 byte] | Reserve1 [4 byte] | OffsetOfData [4 byte] | ---------------------- ------------------- ------------------------ --------------------------- ------------------- ------------------- | OffsetOfResource [4 byte] | FileSize [4 byte] | Reserve2 [4 byte] | --------------------------- ------------------- ------------------- ------------------- -------------------- -------------------------- | RowCount [2 byte] | CellCount [2 byte] | NumCellCount [2 byte] | ------------------- -------------------- -------------------------- ----------------------- ------------------------------------------- | StrCellCount [2 byte] | Reserve3 [2 byte] | --------------------- | ----------------------- -------------------------------------------           TableName IESテーブル名   Reserve1 予約1   OffsetOfData Cell Header blockのサイズ   OffsetOfResource Row Data blockのサイズ   FileSize IESファイルサイズ   Reserve2 予約2   RowCount 行数   CellCount 列数   NumCellCount 数値列数   StrCellCount 文字列列数   Reserve3 予約3    Cell Header block  ---------------- ------------------- ---------------------- | Name [64 byte] | Name2 [64 byte] | Type [2 byte] | ------ | ---------------- ------------------- ---------------------- ------------------- ------------------- ------------------- | Reserve1 [2 byte] | Reserve2 [4 byte] | Position [2 byte] | ------------------- ------------------- -------------------           Name Cell名   Name2 Cell別名   Type 0：数値Cell、1,2：文字列Cell   Reserve1 予約1   Reserve2 予約2   Position Type内Cell順序    Cell順は、Type昇順、Position昇順。</pre>
-  
   
 
 <ul class="pagination">
@@ -605,7 +608,7 @@ Header block  ---------------------- ------------------- -----------------------
   <p>© 2010 weizlogy.<p>
   <p>Powered by hugo &#43; github pages.<p>
   <p><a href="https://twitter.com/twihamatter">Twitter</a></p>
-<p><a href="https://plus.google.com/+%E7%99%BD%E6%BF%B1%E7%9D%A6%E4%B8%89?hl=ja">Google+</a></p>
+<p><a href="https://plus.google.com/u/0/111668640363056183135">Google+</a></p>
 
 
 <amp-analytics type="googleanalytics" id="analytics1">

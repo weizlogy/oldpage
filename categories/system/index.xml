@@ -7,10 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Sat, 19 Aug 2017 22:43:20 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 22 Nov 2017 23:09:37 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/categories/system/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[system] Windows10でTwitter公式webページをStylishでキレイに見せる</title>
+      <link>http://www.weizlogy.gq/system/item/twitter-stylish/</link>
+      <pubDate>Wed, 22 Nov 2017 23:09:37 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/system/item/twitter-stylish/</guid>
+      <description>overviews. Windows10でTwitter公式webページを対象に、Google ChromeのStylishアドオンでフォント調整を行い、キレイに見せます。
+Macは元からキレイだから良いよね。。。
+introduction. 適用前 
+適用後 
+settings. Stylishインストール Google Chromeの機能拡張でStylishをインストールします。
+Stylishでスタイル作成 コード body.ja, .TweetTextSize.TweetTextSize--normal, .ProfileHeaderCard-bio, .TweetTextSize .twitter-hashtag b, .TweetTextSize .twitter-atreply b, .with-icn b, .Trends .context-trend-item .trend-item-context, .Trends .context-trend-item .trend-item-stats, b, .new-tweets-bar, .ProfileCard-bio, .FollowStatus { font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Verdana&amp;quot;, &amp;quot;Yu Gothic&amp;quot;, Meiryo, sans-serif; font-weight: 600; }  適用先 次で始まるURL　https://twitter.com
+保存！！！ descriptions. v1.0.0 新規作成 Windows10で標準採用された游ゴシックをベースに英数字は&amp;rsquo;Helvetica Neue&amp;rsquo;を使います。
+游ゴシックは、レギュラーサイズではフォントの線が細くなりボヤッとした印象を受けるため、ウェイトを掛けてくっきりはっきり見えるようにしました。</description>
+    </item>
     
     <item>
       <title>[system] RealtimeWhoisView - グローバルIP＋国名表示ツール</title>
