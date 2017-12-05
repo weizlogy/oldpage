@@ -7,10 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Wed, 22 Nov 2017 23:09:37 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 05 Dec 2017 23:50:31 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] オブジェクト探索アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/objectdetector/</link>
+      <pubDate>Tue, 05 Dec 2017 23:50:31 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/objectdetector/</guid>
+      <description>download. [v1.2.0] objectdetector.ipf
+install. README.md
+introduction. 
+
+settings. Nexon\TreeofSaviorJP\addons\objectdetector\settings.txt を作成します。
+以下の初期設定をsettings.txtにコピペします。
+-- for monster and npcs. obde.config.mon = { color = &amp;quot;FF000000&amp;quot;, isVisible = 1 }; obde.config.mon.Monster = { color = &amp;quot;FF660000&amp;quot;, isVisible = 1 }; obde.config.mon.Monster_Chaos1 = obde.config.mon.Monster; obde.config.mon.Monster_Chaos2 = obde.config.mon.Monster; obde.config.mon.Pet = { isVisible = 0 }; obde.config.mon.RootCrystal = { color = &amp;quot;FF330033&amp;quot;, isVisible = 1 }; obde.config.mon.Neutral = { color = &amp;quot;FFFF9900&amp;quot;, isVisible = 1, }; obde.</description>
+    </item>
     
     <item>
       <title>[system] Windows10でTwitter公式webページをStylishでキレイに見せる</title>
@@ -401,21 +416,6 @@ DキーUp モードをDifferentMode（黒枠）に切り替えます。
 SキーUp モードをSameMode（赤枠）に切り替えます。
 TキーUp 一時的にウィンドウ領域全体を透過、透過解除を繰り返します。
 ESCキーUp キャプチャー結果をクリアします。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] オブジェクト探索アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/objectdetector/</link>
-      <pubDate>Tue, 18 Jul 2017 00:30:34 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/objectdetector/</guid>
-      <description>download. [v1.1.0] objectdetector.ipf
-install. README.md
-introduction. 
-
-settings. Nexon\TreeofSaviorJP\addons\objectdetector\settings.txt を作成します。
-以下の初期設定をsettings.txtにコピペします。
--- for monster and npcs. obde.config.mon = { color = &amp;quot;FF000000&amp;quot;, isVisible = 1 }; obde.config.mon.Monster = { color = &amp;quot;FF660000&amp;quot;, isVisible = 1 }; obde.config.mon.Monster_Chaos1 = obde.config.mon.Monster; obde.config.mon.Monster_Chaos2 = obde.config.mon.Monster; obde.config.mon.Pet = { isVisible = 0 }; obde.config.mon.RootCrystal = { color = &amp;quot;FF330033&amp;quot;, isVisible = 1 }; obde.config.mon.Neutral = { color = &amp;quot;FFFF9900&amp;quot;, isVisible = 1, }; obde.</description>
     </item>
     
     <item>

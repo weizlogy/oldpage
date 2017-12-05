@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.weizlogy.gq/tos/addon/objectdetector/</loc>
+    <lastmod>2017-12-05T23:50:31+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.weizlogy.gq/system/item/twitter-stylish/</loc>
     <lastmod>2017-11-22T23:09:37+09:00</lastmod>
   </url>
@@ -105,11 +110,6 @@
   <url>
     <loc>http://www.weizlogy.gq/system/item/ccc/</loc>
     <lastmod>2017-08-12T00:36:17+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.weizlogy.gq/tos/addon/objectdetector/</loc>
-    <lastmod>2017-07-18T00:30:34+09:00</lastmod>
   </url>
   
   <url>
@@ -319,13 +319,13 @@
   
   <url>
     <loc>http://www.weizlogy.gq/tos/</loc>
-    <lastmod>2017-11-22T00:55:55+09:00</lastmod>
+    <lastmod>2017-12-05T23:50:31+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.weizlogy.gq/categories/tos-addon/</loc>
-    <lastmod>2017-11-22T00:55:55+09:00</lastmod>
+    <lastmod>2017-12-05T23:50:31+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -343,7 +343,7 @@
   
   <url>
     <loc>http://www.weizlogy.gq/</loc>
-    <lastmod>2017-11-22T23:09:37+09:00</lastmod>
+    <lastmod>2017-12-05T23:50:31+09:00</lastmod>
     <priority>0</priority>
   </url>
   

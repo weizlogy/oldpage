@@ -7,10 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Wed, 22 Nov 2017 00:55:55 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 05 Dec 2017 23:50:31 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/tos/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] オブジェクト探索アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/objectdetector/</link>
+      <pubDate>Tue, 05 Dec 2017 23:50:31 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/objectdetector/</guid>
+      <description>download. [v1.2.0] objectdetector.ipf
+install. README.md
+introduction. 
+
+settings. Nexon\TreeofSaviorJP\addons\objectdetector\settings.txt を作成します。
+以下の初期設定をsettings.txtにコピペします。
+-- for monster and npcs. obde.config.mon = { color = &amp;quot;FF000000&amp;quot;, isVisible = 1 }; obde.config.mon.Monster = { color = &amp;quot;FF660000&amp;quot;, isVisible = 1 }; obde.config.mon.Monster_Chaos1 = obde.config.mon.Monster; obde.config.mon.Monster_Chaos2 = obde.config.mon.Monster; obde.config.mon.Pet = { isVisible = 0 }; obde.config.mon.RootCrystal = { color = &amp;quot;FF330033&amp;quot;, isVisible = 1 }; obde.config.mon.Neutral = { color = &amp;quot;FFFF9900&amp;quot;, isVisible = 1, }; obde.</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</title>
@@ -348,21 +363,6 @@ v1.1.0 設定[ボタン表示状態]を追加しました。
 アドオンがロードされるとボタン表示状態が1の場合のみ、[Console]ボタンが表示されます。 ボタンを押すと抽出を開始します。 ボタン表示状態はエリアチェンジの度に読み込まれるため、ゲーム起動中にボタン表示を切り替えることも可能です。
 v1.0.0 新規作成。
 アドオンがロードされると[Console]ボタンが表示されます。ボタンを押すと抽出を開始します。 Nexon\TreeofSaviorJP\data\console.txt に抽出結果が出力されます。 実際の抽出結果は別記事にあります。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] オブジェクト探索アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/objectdetector/</link>
-      <pubDate>Tue, 18 Jul 2017 00:30:34 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/objectdetector/</guid>
-      <description>download. [v1.1.0] objectdetector.ipf
-install. README.md
-introduction. 
-
-settings. Nexon\TreeofSaviorJP\addons\objectdetector\settings.txt を作成します。
-以下の初期設定をsettings.txtにコピペします。
--- for monster and npcs. obde.config.mon = { color = &amp;quot;FF000000&amp;quot;, isVisible = 1 }; obde.config.mon.Monster = { color = &amp;quot;FF660000&amp;quot;, isVisible = 1 }; obde.config.mon.Monster_Chaos1 = obde.config.mon.Monster; obde.config.mon.Monster_Chaos2 = obde.config.mon.Monster; obde.config.mon.Pet = { isVisible = 0 }; obde.config.mon.RootCrystal = { color = &amp;quot;FF330033&amp;quot;, isVisible = 1 }; obde.config.mon.Neutral = { color = &amp;quot;FFFF9900&amp;quot;, isVisible = 1, }; obde.</description>
     </item>
     
     <item>
