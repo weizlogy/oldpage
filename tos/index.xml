@@ -7,10 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Tue, 05 Dec 2017 23:50:31 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 12 Dec 2017 22:30:33 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/tos/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] Heads Up Displayをコンパクトにするアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/compactheadsupdisplay/</link>
+      <pubDate>Tue, 12 Dec 2017 22:30:33 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/compactheadsupdisplay/</guid>
+      <description>download. [v1.0.0] compactheadsupdisplay.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.0 新規作成 アドオンがロードされると、Heads Up Display（自ジョブアイコン、HPなどがあるフレーム）からHPバーを取り去り、コンパクトにします。 （ジョブアイコンとレベルだけにします）
+レベル部分を掴めばドラッグできます</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/hidename/</link>
+      <pubDate>Tue, 12 Dec 2017 22:05:28 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/hidename/</guid>
+      <description>download. [v1.0.3] hidename.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.3 ギルドエンブレムも非表示にします。
+v1.0.2 ギルド名も非表示にします。
+v1.0.1 ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。
+v1.0.0 新規作成 アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。
+動画を撮るときに設定では非表示にできなかったので。。。</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] オブジェクト探索アドオン</title>
@@ -138,21 +167,6 @@ v1.0.2 ゲージ位置調整 8&amp;frasl;23 UPDATEに対応してゲージを調
 v1.0.1 ゲージ位置調整 スタミナゲージと名前が被らないよう調整しました。
 v1.0.0 新規作成 アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。
 若干キャラ名と被りますが、気にしないように。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/hidename/</link>
-      <pubDate>Thu, 28 Sep 2017 21:45:09 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/hidename/</guid>
-      <description>download. [v1.0.2] hidename.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.2 ギルド名も非表示にします。
-v1.0.1 ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。
-v1.0.0 新規作成 アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。
-動画を撮るときに設定では非表示にできなかったので。。。</description>
     </item>
     
     <item>

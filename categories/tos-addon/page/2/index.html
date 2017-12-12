@@ -215,7 +215,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-08-31 21:43:46.305965 &#43;0900 JST",
+  "dateModified": "2017-09-17 21:16:18.9769896 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -258,7 +258,7 @@
   
     <div class="system-dev"><a href="/categories/system-dev">system-dev</a> (15)</div>
   
-    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a> (24)</div>
+    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a> (25)</div>
   
     <div class="tos-addon-dev"><a href="/categories/tos-addon-dev">tos-addon-dev</a> (4)</div>
   
@@ -272,6 +272,28 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/compactheadsupdisplay/">[tree of savior addon] Heads Up Displayをコンパクトにするアドオン</a>
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+      <span class="blog-date">@2017/12/12 22:30:33</span>
+    </div>
+  </div>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/hidename/">[tree of savior addon] 画面にある自キャラ名を消すアドオン</a>
+    
+    &ndash;&nbsp;v1.0.3
+    
+    
+      <span class="blog-date">@2017/12/12 22:05:28</span>
+    </div>
+  </div>
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
@@ -306,28 +328,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/summonskilltooltip/">[tree of savior addon] 召喚獣にオベイで使えるスキルのツールチップを表示するアドオン</a>
-    
-    &ndash;&nbsp;v1.0.0
-    
-    
-      <span class="blog-date">@2017/11/02 00:50:46</span>
-    </div>
-  </div>
-  
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/dpsmeter/">[tree of savior addon] DPS計測アドオン</a>
-    
-    &ndash;&nbsp;v1.3.1
-    
-    
-      <span class="blog-date">@2017/10/25 23:29:20</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -335,6 +335,32 @@
 <div class="main">
   <section>
   
+  
+  <div><a href="http://www.weizlogy.gq/tos/addon/savequest/">[tree of savior addon] ワープ用クエスト誤完了防止アドオン</a></div>
+  <pre class="summary">download. [v1.2.2] savequest.ipf
+install. README.md
+introduction. 
+
+settings. Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。
+explanation. savequestフォルダーには下記ファイルが自動的に生成され、 キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。
+ quests_[cid].txt quests_scl_[cid].txt  descriptions. v1.2.2 パーティー共有機能追加 クエストワープのショートカットフレームから右クリックメニューでパーティー共有/共有解除できるようになります。
+ショートカットフレームレイヤーレベル調整 ショートカットフレームのレイヤーレベルを999 -&gt; 199に変更しました。
+worldmapのレイヤーレベルが200なので、それの下という感じです。
+v1.2.1 クエストワープショートカット位置固定機能追加 クエストワープのショートカットフレームを位置固定できるようにしました。
+v1.2.0 クエストワープショートカット作成機能追加 右クリックメニューにshortcutが追加されました。 本機能によりクエストワープのショートカットフレームを任意の場所に追加、削除できます。
+v1.1.1 一部クエストが保存できない不具合の修正 おそらくメインクエはほとんど保存できなかったと思いますが、保存できるようになります。
+v1.1.0 クエスト欄操作機能追加 F5キーで表示するクエスト欄でも本アドオンの機能（右クリックメニュー）が使えるようになります。
+ダイレクトクエストワープ機能追加 F5キーで表示するクエスト欄から直接クエストワープできるようになります。
+ワープ可能なクエストの左上にワープアイコンが表示されるので、クリックしてください。
+v1.0.2 バグ対応 保存したクエスト情報がチーム毎に共有される問題を修正しました。
+issue #3
+本修正により、情報保存形式が変更され、クエスト保存状態が初期化されます。
+お手数ですが、再チェックまたは、旧仕様情報（quests.txt）の内容をquests_[cid].txtにコピペしてください。
+v1.0.1 バグ対応 再ログイン時に前回の状態が保存されない問題を修正しました。
+issue #1
+v1.0.0 新規作成 アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、 ワープ直後の誤完了を防止できます。
+usage. UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、 メニュー（Save, Release, Shortcut, Cancel）が開きます。
+save &amp; release. saveを選択すると該当クエストのNPCは非表示となります。 また、save済みのクエストのワープアイコン直下に[saved.</pre>
   
   <div><a href="http://www.weizlogy.gq/tos/addon/rmnewcollectionmark/">[tree of savior addon] コレクション画面の[N]マークを非表示にするアドオン</a></div>
   <pre class="summary">download. [v1.0.0] rmnewcollectionmark.ipf
@@ -442,17 +468,6 @@ v1.1.0 設定[ボタン表示状態]を追加しました。
 アドオンがロードされるとボタン表示状態が1の場合のみ、[Console]ボタンが表示されます。 ボタンを押すと抽出を開始します。 ボタン表示状態はエリアチェンジの度に読み込まれるため、ゲーム起動中にボタン表示を切り替えることも可能です。
 v1.0.0 新規作成。
 アドオンがロードされると[Console]ボタンが表示されます。ボタンを押すと抽出を開始します。 Nexon\TreeofSaviorJP\data\console.txt に抽出結果が出力されます。 実際の抽出結果は別記事にあります。</pre>
-  
-  <div><a href="http://www.weizlogy.gq/tos/addon/warehousepicker/">[tree of savior addon] 所持キャラ全員の個人倉庫を見るアドオン</a></div>
-  <pre class="summary">download. warehousepicker.ipf
-install. README.md
-introduction.  settings. Nexon\TreeofSaviorJP\addons\warehousepicker フォルダーを作成します。
-各所持キャラで個人倉庫を開閉する（正確には閉じる瞬間）と、先ほど作成したフォルダーに個人倉庫のアイテム情報を保存します。
-descriptions. v1.0.0 新規作成。
-アドオンがロードされた後、いずれかのキャラで個人倉庫を開くと、倉庫左下に[whpk]ボタンが出現します。 ボタンを押すと、事前に保存された所持キャラの個人倉庫のアイテム情報を表示するダイアログを開きます。
-ダイアログには、事前に個人倉庫のアイテム情報が作成された所持キャラ名のドロップダウンリストが表示されます。 ドロップダウンリストで選択した所持キャラ名の個人倉庫のアイテム情報（アイテムアイコン、名称、個数）をダイアログ内に表示します。
-最低一度は各所持キャラで個人倉庫を開閉する必要がありますが、それ以降はいずれかのキャラでログインすると全員の個人倉庫を見ることができます。
-今のところチームの区別なくキャラ名のみ表示しますので、複数チームを所持している場合に使い勝手に難があるかもしれません。 使いにくいようでしたら改善します。</pre>
   
   
 
