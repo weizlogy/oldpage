@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-04-28 05:33:15.5021915 &#43;0900 JST",
+  "dateModified": "2017-03-26 15:41:17.5030553 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -259,7 +259,7 @@
   
     <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
   
-    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(25)</div>
+    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(26)</div>
   
     <div class="tos-addon-dev"><a href="/categories/tos-addon-dev">tos-addon-dev</a>(4)</div>
   
@@ -273,6 +273,17 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/showbuffsellertype/">[tree of savior addon] 商店のフキダシに商店名を付けるアドオン</a>
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+      <span class="blog-date">@2017/12/26 00:50:26</span>
+    </div>
+  </div>
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
@@ -318,17 +329,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/pickiteminfo/">[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</a>
-    
-    &ndash;&nbsp;v1.0.3
-    
-    
-      <span class="blog-date">@2017/11/22 00:55:55</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -337,6 +337,23 @@
   <strong>Contents index.</strong>
   <section>
   
+  
+  <div class="[tos-addon-dev]">
+    <a href="http://www.weizlogy.gq/tos/addon-dev/use-custom-skins/">[tree of savior addon for developpers] アドオンで自作スキンを使用する方法</a>
+    
+    
+    
+  </div>
+  <pre class="summary [tos-addon-dev]">ifpファイル内部構成 xxx.ipf ├───addon_d.ipf │ └───xxx │ ├───xxx.lua │ └───xxx.xml └───ui.ipf ├───baseskinset │ └───xxx.xml └───skin └───xxx.tga  addon_d.ipf Tree Of Savior アドオン作成～設置方法まとめ 参照。
+ui.ipf baseskinset 自作スキンの読込とアドオン内部で使用するスキンの定義を行います。
+xxx.xml
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;skinset name=&quot;Base&quot;&gt; &lt;imagelist category=&quot;ringcommand&quot;&gt; &lt;image name=&quot;image1&quot; file=&quot;\skin\xxx.tga&quot; imgrect=&quot;211 5 197 195&quot;/&gt; &lt;image name=&quot;image2&quot; file=&quot;\skin\xxx.tga&quot; imgrect=&quot;417 5 197 195&quot;/&gt; &lt;/imagelist&gt; &lt;/skinset&gt;  name アドオン内部で参照するスキン名。
+オリジナルのスキン名と重複しないように気を付けます。
+file スキン読み込み元画像ファイルパス。
+imgrect スキン読み込み元画像ファイル内画像座標。
+半角スペース区切りで四角形の左上と右下の頂点座標を指定します。 =&gt; x, y, width, height
+skin 自作スキン画像ファイルを配置します。
+アドオン実装方法 xml &lt;picture name=&quot;xxx&quot; rect=&quot;0 0 70 30&quot; margin=&quot;0 0 45 0&quot; hittest=&quot;true&quot; image=&quot;image1&quot;/&gt;  lua local pic = GET_CHILD(xxx, &quot;xxx&quot;, &quot;ui::CPicture&quot;); pic:SetImage(&quot;image2&quot;);  tgaファイル 画像ファイルの一つ。</pre>
   
   <div class="[tos-addon]">
     <a href="http://www.weizlogy.gq/tos/addon/customcompanion/">[tree of savior addon] コンパニオンのリングコマンドを拡張するアドオン</a>
@@ -486,23 +503,6 @@ v2.1.0 コンパクトなv2系のサポートを始めました。
 v2.0.0 討伐数、ドロップアイテム名、アイテム収集率表示追加 冒険日誌から討伐数、ドロップアイテム名、アイテム収集率を取得、 表示する機能を追加しました。 また、ドロップアイテム名からアイテムツールチップが開けます。
 表示ステータス 、フォーマット調整 表示するステータスは現在のところ以下の通りです。
    表示名 内容     ATK 物理攻撃力(最大)   MATK 魔法攻撃力(最大)   DEF 物理防御力   MDEF 魔法防御力    UIウィンドウをドラッグで移動できるようになりました。</pre>
-  
-  <div class="[tos-addon]">
-    <a href="http://www.weizlogy.gq/tos/addon/hidename/">[tree of savior addon] 画面にある自キャラ名を消すアドオン</a>
-    
-    
-    &ndash;&nbsp;v1.0.3
-    
-    
-  </div>
-  <pre class="summary [tos-addon]">download. [v1.0.3] hidename.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.3 ギルドエンブレムも非表示にします。
-v1.0.2 ギルド名も非表示にします。
-v1.0.1 ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。
-v1.0.0 新規作成 アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。
-動画を撮るときに設定では非表示にできなかったので。。。</pre>
   
   
 

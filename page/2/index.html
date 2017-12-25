@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-05-18 07:09:25.4501906 &#43;0900 JST",
+  "dateModified": "2017-08-31 00:04:17.3669866 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -259,7 +259,7 @@
   
     <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
   
-    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(25)</div>
+    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(26)</div>
   
     <div class="tos-addon-dev"><a href="/categories/tos-addon-dev">tos-addon-dev</a>(4)</div>
   
@@ -273,6 +273,17 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/showbuffsellertype/">[tree of savior addon] 商店のフキダシに商店名を付けるアドオン</a>
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+      <span class="blog-date">@2017/12/26 00:50:26</span>
+    </div>
+  </div>
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
@@ -318,17 +329,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/pickiteminfo/">[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</a>
-    
-    &ndash;&nbsp;v1.0.3
-    
-    
-      <span class="blog-date">@2017/11/22 00:55:55</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -337,6 +337,39 @@
   <strong>Contents index.</strong>
   <section>
   
+  
+  <div class="[tos-addon]">
+    <a href="http://www.weizlogy.gq/tos/addon/slotmac/">[tree of savior addon] クイックスロットスキル/アイテム用マクロアドオン</a>
+    
+    
+    &ndash;&nbsp;v1.3.0
+    
+    
+  </div>
+  <pre class="summary [tos-addon]">download. [v1.3.0] slotmac.ipf
+install. README.md
+introduction. settings. Nexon\TreeofSaviorJP\addons\slotmac フォルダーを作成します。
+slotmac フォルダー配下に自キャラの[cid]のフォルダーを作成します。
+操作中のキャラクターのcidが不明な場合は、F3キーで[スキルと特性]ダイアログを開き、右下の[slmc]Reloadボタンを右クリックしてください。
+slotmac フォルダー配下に操作キャラの[cid]のファイルが作成されますので、コピー &gt; ファイル削除 &gt; 新しいフォルダー作成 &gt; フォルダー名変更 &gt; ペースト　としてください。
+descriptions. v1.3.0 ターゲット情報タグ追加 ターゲット中の敵に関する情報を表示するタグを追加しました。
+詳細はマクロタグ一覧参照。
+自キャラ情報タグ追加 自キャラに関する情報を表示するタグを追加しました。
+詳細はマクロタグ一覧参照。
+スロット情報タグ追加 マクロを実行したスロットに関する情報を表示するタグを追加しました。
+詳細はマクロタグ一覧参照。
+v1.2.0 オーバーヒート対応 オーバーヒートのあるスキルでは、通常マクロファイルに加えてオーバーヒート用のマクロファイルを 用意できるようになりました。
+例えばオーバーヒート3のスキルでは、以下のようになります。
+初撃 =&gt; オーバーヒート用マクロファイル 二撃 =&gt; オーバーヒート用マクロファイル 三撃 =&gt; 通常マクロファイル  オーバーヒート用マクロファイルがない場合は、 マクロファイルのない通常動作（スキル発動のみ）となります。
+オーバーヒート用マクロファイルの詳細はusage参照。
+v1.1.0 equipコマンド追加 equipコマンドにより、クイックスロット実行に合わせて装備を変更できます。
+詳細はマクロコマンド一覧参照。
+unequipコマンド追加 unequipコマンドにより、クイックスロット実行に合わせて装備を外せます。
+詳細はマクロコマンド一覧参照。
+v1.0.0 新規作成 アドオンがロードされると、クイックスロットにセットしたスキルやアイテムを実行時に指定したマクロを実行できるようになります。
+また、[スキルと特性]ダイアログの右下の[slmc]Reloadボタンが追加されます。左クリックでマクロを再読み込みします。
+usage. マクロファイル作成 キーボード、マウスモードの場合、クイックスロットは左下が1、右上が40となります。(ジョイスティックは&hellip;？)
+cidフォルダー配下に、必要に応じてマクロファイル(slot1.txt ～ slot40.txt)をUTF8-BOM無で作成します。 マクロファイルがない場合は、今まで通りスロットにセットされたものを実行します。</pre>
   
   <div class="[site-management]">
     <a href="http://www.weizlogy.gq/site/blogger-to-hugo/">[site management] bloggerからhugo&#43;github pagesに移行した理由</a>
@@ -514,23 +547,6 @@ reen.Weapon = { Lp = 30, Mp = 5, Hp = 1 }; reen.Armor = { Lp = 35, Mp = 10, Hp =
 [Weapon]、[Armor]は装備の耐久度の色分け用閾値で、Low, Middle, Highの3段階を、武器用と防具用で用意しています。
 [EndurColor]は装備の耐久度閾値に対応する色をRGBで指定します。
 explanation of initial parameters. 武器</pre>
-  
-  <div class="[tos-addon-dev]">
-    <a href="http://www.weizlogy.gq/tos/addon-dev/use-custom-skins/">[tree of savior addon for developpers] アドオンで自作スキンを使用する方法</a>
-    
-    
-    
-  </div>
-  <pre class="summary [tos-addon-dev]">ifpファイル内部構成 xxx.ipf ├───addon_d.ipf │ └───xxx │ ├───xxx.lua │ └───xxx.xml └───ui.ipf ├───baseskinset │ └───xxx.xml └───skin └───xxx.tga  addon_d.ipf Tree Of Savior アドオン作成～設置方法まとめ 参照。
-ui.ipf baseskinset 自作スキンの読込とアドオン内部で使用するスキンの定義を行います。
-xxx.xml
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;skinset name=&quot;Base&quot;&gt; &lt;imagelist category=&quot;ringcommand&quot;&gt; &lt;image name=&quot;image1&quot; file=&quot;\skin\xxx.tga&quot; imgrect=&quot;211 5 197 195&quot;/&gt; &lt;image name=&quot;image2&quot; file=&quot;\skin\xxx.tga&quot; imgrect=&quot;417 5 197 195&quot;/&gt; &lt;/imagelist&gt; &lt;/skinset&gt;  name アドオン内部で参照するスキン名。
-オリジナルのスキン名と重複しないように気を付けます。
-file スキン読み込み元画像ファイルパス。
-imgrect スキン読み込み元画像ファイル内画像座標。
-半角スペース区切りで四角形の左上と右下の頂点座標を指定します。 =&gt; x, y, width, height
-skin 自作スキン画像ファイルを配置します。
-アドオン実装方法 xml &lt;picture name=&quot;xxx&quot; rect=&quot;0 0 70 30&quot; margin=&quot;0 0 45 0&quot; hittest=&quot;true&quot; image=&quot;image1&quot;/&gt;  lua local pic = GET_CHILD(xxx, &quot;xxx&quot;, &quot;ui::CPicture&quot;); pic:SetImage(&quot;image2&quot;);  tgaファイル 画像ファイルの一つ。</pre>
   
   
 

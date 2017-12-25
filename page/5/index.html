@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-26 15:42:27.9532414 &#43;0900 JST",
+  "dateModified": "2017-03-26 15:40:59.8402069 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -259,7 +259,7 @@
   
     <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
   
-    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(25)</div>
+    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(26)</div>
   
     <div class="tos-addon-dev"><a href="/categories/tos-addon-dev">tos-addon-dev</a>(4)</div>
   
@@ -273,6 +273,17 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/showbuffsellertype/">[tree of savior addon] 商店のフキダシに商店名を付けるアドオン</a>
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+      <span class="blog-date">@2017/12/26 00:50:26</span>
+    </div>
+  </div>
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
@@ -318,17 +329,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/pickiteminfo/">[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</a>
-    
-    &ndash;&nbsp;v1.0.3
-    
-    
-      <span class="blog-date">@2017/11/22 00:55:55</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -337,6 +337,22 @@
   <strong>Contents index.</strong>
   <section>
   
+  
+  <div class="[tos-addon-dev]">
+    <a href="http://www.weizlogy.gq/tos/addon-dev/create-addon/">[tree of savior addon for developpers] アドオン作成～設置方法まとめ</a>
+    
+    
+    
+  </div>
+  <pre class="summary [tos-addon-dev]">必要なもの  IPF Suite IPFUnpacker  作成手順 1. アドオンの名前を決める &ldquo;xxxaddonxxx&rdquo;としてみます。全て小文字、記号なしが良いです。
+2. アドオンのGUIを作る &ldquo;xxxaddonxxx.xml&rdquo;ファイルを作成します。アドオン名とuiframe@nameの値が一致するようにします。
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt; &lt;uiframe name=&quot;xxxaddonxxx&quot; x=&quot;10&quot; y=&quot;10&quot; width=&quot;100&quot; height=&quot;100&quot;&gt; &lt;frame title=&quot;XXXaddonXXX&quot; snapclient=&quot;true&quot; snapframe=&quot;true&quot;/&gt; &lt;option closebutton=&quot;false&quot; hideable=&quot;false&quot;/&gt; &lt;input hittest=&quot;true&quot;/&gt; &lt;layer layerlevel=&quot;31&quot; /&gt; &lt;draw blend=&quot;100&quot; drawtitlebar=&quot;false&quot; drawframe=&quot;false&quot;/&gt; &lt;controls&gt; &lt;richtext name=&quot;dummy&quot; /&gt; &lt;/controls&gt; &lt;/uiframe&gt;  3. アドオンのスクリプトを作る &ldquo;xxxaddonxxx.lua&rdquo;ファイルを作成します。アドオン名と関数名の&rdquo;_ON_INIT&rdquo;前までが、大文字で一致するようにします。
+function XXXADDONXXX_ON_INIT(addon, frame) -- 任意の初期化処理 end  4. アドオンをパッケージングする IPFSuite.exeを起動、上部メニューの[New]、[New Container]の順序でボタンを押します。
+[New Container]ボタンを押した後、テキストボックスが出現するので、&rdquo;addon_d.ipf&rdquo;を入力します。
+上部メニューの[Add Folder]ボタンを押します。フォルダ名はアドオン名と同じ&rdquo;xxxaddonxxx&rdquo;とします。
+上部メニューの[Add]ボタンを押します。ファイル選択ダイアログが出現するので、先に作成したxmlとluaファイルを選択します。
+上部メニューの[Save]ボタンを押します。保存するファイル名は&rdquo;xxxaddonxxx.ipf&rdquo;とします。
+5. アドオンを暗号化する IPF Unpackerで暗号化します。&rdquo;Done!</pre>
   
   <div class="[system-dev]">
     <a href="http://www.weizlogy.gq/system/dev/openweathermap-with-java-bazel/">[system development] Codeaywhere&#43;Java&#43;bazelでOpenWeatherMapのAPIを使用し現在の気象情報を取得する</a>
@@ -461,18 +477,6 @@ $ sudo apt-get install monodevelop  monodevelopコマンドでIDEを起動しま
   <pre class="summary [system-dev]">Interceptor クラスの内容は以下の通りです。
 import org.aspectj.lang.ProceedingJoinPoint; import org.aspectj.lang.annotation.Around; import org.aspectj.lang.annotation.Aspect; @Aspect public class SomeInterceptor { @Around(&quot;execution(* execute(..))&quot;) public Object around(ProceedingJoinPoint pjp) { System.out.println(String.format(&quot;%s.%s start.&quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); Object value = null; try { value = pjp.proceed(); } catch (Throwable e) { e.printStackTrace(); } System.out.println(String.format(&quot;%s.%s ended.&quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); return value; } }  Test クラスの内容は以下の通りです。
 import static org.junit.Assert.*; import java.util.ArrayList; import org.junit.Test; import org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint; import org.springframework.aop.framework.ReflectiveMethodInvocation; import org.springframework.aop.interceptor.SimpleTraceInterceptor; public class SomeInterceptorTest { /** AOP の対象となるメソッドを持つクラス */ private static class AOPTarget { public String execute() { System.</pre>
-  
-  <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/">[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</a>
-    
-    
-    
-  </div>
-  <pre class="summary [system-dev]">img タグにサーブレットの URL を埋め込んで、画面描画時に呼び出します。 呼び出した先では画像をバイナリ形式で読み込んで画面に出力します。
-データベースに Blob 型で保存した画像の読み込みも、ロジックは同じです。
-JSPでは&hellip;
-&lt;img src=&quot;xxx.do&quot; /&gt;  サーバーサイドでは&hellip;
-/** xxx.do から呼び出される Servlet */ protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { // ファイルパスはどこからか入手する String file = &quot;\\server\image\sample.jpg&quot;; if (file == null || &quot;&quot;.equals(file)) { return; } try { // 画像を読み込む byte[] image = Files.readAllBytes(Paths.get(file)); // レスポンスヘッダーを設定する response.setContentType(&quot;image/&quot; + file.substring(file.lastIndexOf(&quot;.&quot;))); response.setContentLength(image.length); // servlet specification 3.1 によると OutputStream は // Servlet 終了時にクローズされる // 従って、ここではクローズしない // むしろ、ここでクローズすると二重解放になる可能性があるのでは？ response.</pre>
   
   
 
