@@ -7,10 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Tue, 26 Dec 2017 00:50:26 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jan 2018 21:55:45 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/tos/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] 召喚物の個体数を表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/summoncounter/</link>
+      <pubDate>Sun, 07 Jan 2018 21:55:45 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/summoncounter/</guid>
+      <description>download. [v1.0.3] summoncounter.ipf
+install. README.md
+introduction. 
+
+
+
+settings. Nexon\TreeofSaviorJP\addons\summoncounter\settings.txt を作成します。
+以下の初期設定をsettings.txtコピペします。
+suco.config = { Bokor_Zombify = { mode = &amp;quot;hpbar&amp;quot;, loc_frame = { x = 450, y = 80 }, loc_bar = { x = 0, y = 0 } }, Necromancer_RaiseDead = { mode = &amp;quot;icon1&amp;quot;, loc = &amp;quot;left&amp;quot;, loc1 = { x = 0, y = 30 }, loc2 = { x = 0, y = 70 }, loc3 = { x = 0, y = 110 }, loc4 = { x = -40, y = 50 }, loc5 = { x = -40, y = 90 } }, Necromancer_RaiseSkullarcher = { mode = &amp;quot;icon1&amp;quot;, loc = &amp;quot;right&amp;quot;, loc1 = { x = 0, y = 30 }, loc2 = { x = 0, y = 70 }, loc3 = { x = 0, y = 110 }, loc4 = { x = 40, y = 50 }, loc5 = { x = 40, y = 90 } }, Necromancer_CreateShoggoth = { mode = &amp;quot;icon2&amp;quot;, loc = &amp;quot;down&amp;quot;, loc1 = { x = 0, y = 0 } } };  explanation.</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] 商店のフキダシに商店名を付けるアドオン</title>
@@ -179,23 +196,6 @@ v1.0.2 ゲージ位置調整 8&amp;frasl;23 UPDATEに対応してゲージを調
 v1.0.1 ゲージ位置調整 スタミナゲージと名前が被らないよう調整しました。
 v1.0.0 新規作成 アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。
 若干キャラ名と被りますが、気にしないように。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 召喚物の個体数を表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/summoncounter/</link>
-      <pubDate>Mon, 18 Sep 2017 03:02:31 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/summoncounter/</guid>
-      <description>download. [v1.0.2] summoncounter.ipf
-install. README.md
-introduction. 
-
-
-
-settings. Nexon\TreeofSaviorJP\addons\summoncounter\settings.txt を作成します。
-以下の初期設定をsettings.txtコピペします。
-suco.config = { Bokor_Zombify = { mode = &amp;quot;hpbar&amp;quot;, loc_frame = { x = 450, y = 80 }, loc_bar = { x = 0, y = 0 } }, Necromancer_RaiseDead = { mode = &amp;quot;icon1&amp;quot;, loc = &amp;quot;left&amp;quot;, loc1 = { x = 0, y = 30 }, loc2 = { x = 0, y = 70 }, loc3 = { x = 0, y = 110 }, loc4 = { x = -40, y = 50 }, loc5 = { x = -40, y = 90 } }, Necromancer_RaiseSkullarcher = { mode = &amp;quot;icon1&amp;quot;, loc = &amp;quot;right&amp;quot;, loc1 = { x = 0, y = 30 }, loc2 = { x = 0, y = 70 }, loc3 = { x = 0, y = 110 }, loc4 = { x = 40, y = 50 }, loc5 = { x = 40, y = 90 } }, Necromancer_CreateShoggoth = { mode = &amp;quot;icon2&amp;quot;, loc = &amp;quot;down&amp;quot;, loc1 = { x = 0, y = 0 } } };  explanation.</description>
     </item>
     
     <item>
