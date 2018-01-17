@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2018-01-07 21:55:45.911983 &#43;0900 JST",
+  "dateModified": "2017-08-31 01:33:57.4711976 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -259,7 +259,7 @@
   
     <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
   
-    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(27)</div>
+    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(28)</div>
   
     <div class="tos-addon-dev"><a href="/categories/tos-addon-dev">tos-addon-dev</a>(4)</div>
   
@@ -273,6 +273,17 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/showhiddenmap/">[tree of savior addon] 表示されないマップを表示するアドオン</a>
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+      <span class="blog-date">@2018/01/17 22:19:41</span>
+    </div>
+  </div>
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
@@ -318,17 +329,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/compactheadsupdisplay/">[tree of savior addon] Heads Up Displayをコンパクトにするアドオン</a>
-    
-    &ndash;&nbsp;v1.0.0
-    
-    
-      <span class="blog-date">@2017/12/12 22:30:33</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -337,6 +337,20 @@
   <strong>Contents index.</strong>
   <section>
   
+  
+  <div class="[tos-addon]">
+    <a href="http://www.weizlogy.gq/tos/addon/dice/">[tree of savior addon] ダイスロールアドオン</a>
+    
+    
+    &ndash;&nbsp;v1.1.0
+    
+    
+  </div>
+  <pre class="summary [tos-addon]">download. [v1.1.0] dice.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.1.0 カスタムレンジ対応 チャットコマンドで /random set &lt;最小&gt; &lt;最大&gt; と打つと、ランダムの範囲を変更できます。
+/random set 1 6 -- ６面ダイス状態 /random set 1 10 -- １０面ダイス状態 /random set -- デフォルトに戻ります  v1.0.1 itos対応 v1.0.0 新規作成 アドオンがロードされると、チャットコマンドで /random と打つと、 0～999の値をランダムに決定し、一般チャット範囲に結果を送信します。</pre>
   
   <div class="[tos-addon]">
     <a href="http://www.weizlogy.gq/tos/addon/summoncounter/">[tree of savior addon] 召喚物の個体数を表示するアドオン</a>
@@ -520,32 +534,6 @@ issue #1
 v1.0.0 新規作成 アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、 ワープ直後の誤完了を防止できます。
 usage. UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、 メニュー（Save, Release, Shortcut, Cancel）が開きます。
 save &amp; release. saveを選択すると該当クエストのNPCは非表示となります。 また、save済みのクエストのワープアイコン直下に[saved.</pre>
-  
-  <div class="[tos-addon]">
-    <a href="http://www.weizlogy.gq/tos/addon/dpsmeter/">[tree of savior addon] DPS計測アドオン</a>
-    
-    
-    &ndash;&nbsp;v1.3.1
-    
-    
-  </div>
-  <pre class="summary [tos-addon]"> download. [v1.3.1] dpsmeter.ipf
-install. README.md
-introduction.  settings. descriptions. v1.3.1 DPS計測ON/OFF追加 初期状態をOFFとしました。
-チャットコマンドにてON/OFFを切り替えます。
-/dpsm on -- 計測開始 /dpsm off -- 計測停止  v1.3.0 DPS平均値表示を追加 DPS平均値表示に伴い、フォーマットを変更 現在のDPS[{淡青}平均DPS][{淡赤}最大DPS] dps  モンスター死亡時のsystemメッセージによる通知をデフォルトOFFに変更 表示するには、DPSのUIを右クリック &gt; [toggleChat]を選択します。
-選択する度に通知のON/OFFを切り替えます。
-DPS計測対象を調整  ボコルのゾンビフィーで召喚するゾンビを除外  v1.2.0 DPS計測方法を調整 ターゲットアイコン表示が可能な距離まで近づいて、初撃時（を含む。初撃はdamage/1sec換算）からDPS計測を開始します。
-ターゲットが死ぬかフレームアウトするまで計測は止まりません。
-DPS計測対象を調整 旧バージョンではfaction = &ldquo;Monster&rdquo;を計測対象としていましたが不十分でしたので、 計測対象を拡大し、ペット以外（faction ~= &ldquo;Pet&rdquo;）としました。
-IWやルーツクリスタルも対象となってしまいますが、計測されないよりは良いかと。。。
-v1.1.0 UI表示を追加 現在のDPS、最大DPSをモンスターUI近辺に、以下のフォーマット表示します。
-[現在のDPS]([最大DPS]) dps  モンスター死亡時のsystemメッセージによる通知を追加 モンスター死亡時、最大DPSをsystemメッセージで表示します。
-ターゲットアイコン表示が可能な距離まで近づくとDPS計測を開始、離れると停止します。
-v1.0.0 新規作成。 アドオンがロードされるとDPS計測が有効になり、計測結果はsystemメッセージで通知します。
-現時点ではコンバットログが取れないので、正確な測定は実現できていません。
-少しでも測定精度を上げたい場合は、以下の点に注意してください。
- ソロで戦う。（コンパニオンも出さない） 混戦しない。 回復持ちの敵は避ける。  </pre>
   
   
 
