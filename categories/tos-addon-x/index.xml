@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Tue, 27 Jun 2017 00:34:27 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jan 2018 22:39:24 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/categories/tos-addon-x/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,12 +15,13 @@
     <item>
       <title>[tree of savior addon] エリア内ランダムワープアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</link>
-      <pubDate>Tue, 27 Jun 2017 00:34:27 +0900</pubDate>
+      <pubDate>Wed, 17 Jan 2018 22:39:24 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</guid>
-      <description>download. [v1.0.2] wingofbeelze.ipf
+      <description>download. [v1.0.3] wingofbeelze.ipf
 install. README.md
-introduction. settings. descriptions. v1.0.2 ワープロジック微調整 v1.0.1 ワープロジック微調整 v1.0.0 新規作成。 ESCAPE+LSHIFTでエリア内をランダムにワープします。
+introduction. settings. descriptions. v1.0.3 選択位置ワープ機能追加 マップ上でALT＋左クリックすると、その位置にワープします。
+v1.0.2 ワープロジック微調整 v1.0.1 ワープロジック微調整 v1.0.0 新規作成。 ESCAPE+LSHIFTでエリア内をランダムにワープします。
 ROのヴェルゼブブの羽のようなイメージです。</description>
     </item>
     

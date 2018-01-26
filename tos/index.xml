@@ -7,10 +7,54 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Wed, 17 Jan 2018 22:19:41 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jan 2018 07:50:46 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/tos/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] パーティーメンバーの一覧に追加情報を表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/partyinfoex/</link>
+      <pubDate>Sat, 27 Jan 2018 07:50:46 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/partyinfoex/</guid>
+      <description>download. [v1.0.0] pickiteminfo.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.0 新規作成 アドオンがロードされると、パーティーメンバー一覧にSPゲージを表示します。
+他に表示したい情報ありますか？ リクエストは適宜受け付けています。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/pickiteminfo/</link>
+      <pubDate>Sat, 27 Jan 2018 07:37:26 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/pickiteminfo/</guid>
+      <description>download. [v1.0.4] pickiteminfo.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.4 アイテム名途切れ修正 アイテム名が途切れる問題を修正しました。
+v1.0.3 リーク対応 アイテム名を表示しているフレームが破棄されない問題を修正しました。
+v1.0.2 名称表示位置調整 v1.0.1のずれが治ったのに合わせて再調整しました。
+v1.0.1 名称表示位置調整 8&amp;frasl;23 UPDATEにより、ALTキーでアイテム名称表示がずれるようになった影響で同じようにずれる問題に対応しました。
+名称の動きが若干不穏ですが、ALTキーでアイテム名称表示がずれる問題が解決するまでの暫定対処となります。
+v1.0.0 新規作成 アドオンがロードされると、ALTキーを押さなくとも、ドロップアイテムの名称が表示されるようになります。
+アイテム名称はレアリティで色が変わります。 色の変化はColored Item Namesをパク&amp;hellip;参考にしています。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] エリア内ランダムワープアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</link>
+      <pubDate>Wed, 17 Jan 2018 22:39:24 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</guid>
+      <description>download. [v1.0.3] wingofbeelze.ipf
+install. README.md
+introduction. settings. descriptions. v1.0.3 選択位置ワープ機能追加 マップ上でALT＋左クリックすると、その位置にワープします。
+v1.0.2 ワープロジック微調整 v1.0.1 ワープロジック微調整 v1.0.0 新規作成。 ESCAPE+LSHIFTでエリア内をランダムにワープします。
+ROのヴェルゼブブの羽のようなイメージです。</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] 表示されないマップを表示するアドオン</title>
@@ -107,23 +151,6 @@ v1.0.2 ギルド名も非表示にします。
 v1.0.1 ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。
 v1.0.0 新規作成 アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。
 動画を撮るときに設定では非表示にできなかったので。。。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/pickiteminfo/</link>
-      <pubDate>Wed, 22 Nov 2017 00:55:55 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/pickiteminfo/</guid>
-      <description>download. [v1.0.3] pickiteminfo.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.3 リーク対応 アイテム名を表示しているフレームが破棄されない問題を修正しました。
-v1.0.2 名称表示位置調整 v1.0.1のずれが治ったのに合わせて再調整しました。
-v1.0.1 名称表示位置調整 8&amp;frasl;23 UPDATEにより、ALTキーでアイテム名称表示がずれるようになった影響で同じようにずれる問題に対応しました。
-名称の動きが若干不穏ですが、ALTキーでアイテム名称表示がずれる問題が解決するまでの暫定対処となります。
-v1.0.0 新規作成 アドオンがロードされると、ALTキーを押さなくとも、ドロップアイテムの名称が表示されるようになります。
-アイテム名称はレアリティで色が変わります。 色の変化はColored Item Namesをパク&amp;hellip;参考にしています。</description>
     </item>
     
     <item>
@@ -413,18 +440,6 @@ v1.1.0 設定[ボタン表示状態]を追加しました。
 アドオンがロードされるとボタン表示状態が1の場合のみ、[Console]ボタンが表示されます。 ボタンを押すと抽出を開始します。 ボタン表示状態はエリアチェンジの度に読み込まれるため、ゲーム起動中にボタン表示を切り替えることも可能です。
 v1.0.0 新規作成。
 アドオンがロードされると[Console]ボタンが表示されます。ボタンを押すと抽出を開始します。 Nexon\TreeofSaviorJP\data\console.txt に抽出結果が出力されます。 実際の抽出結果は別記事にあります。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] エリア内ランダムワープアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</link>
-      <pubDate>Tue, 27 Jun 2017 00:34:27 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</guid>
-      <description>download. [v1.0.2] wingofbeelze.ipf
-install. README.md
-introduction. settings. descriptions. v1.0.2 ワープロジック微調整 v1.0.1 ワープロジック微調整 v1.0.0 新規作成。 ESCAPE+LSHIFTでエリア内をランダムにワープします。
-ROのヴェルゼブブの羽のようなイメージです。</description>
     </item>
     
     <item>

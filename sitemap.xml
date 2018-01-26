@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.weizlogy.gq/tos/addon/partyinfoex/</loc>
+    <lastmod>2018-01-27T07:50:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/tos/addon/pickiteminfo/</loc>
+    <lastmod>2018-01-27T07:37:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</loc>
+    <lastmod>1900-01-01T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.weizlogy.gq/tos/addon/showhiddenmap/</loc>
     <lastmod>2018-01-17T22:19:41+09:00</lastmod>
   </url>
@@ -40,11 +55,6 @@
   <url>
     <loc>http://www.weizlogy.gq/system/item/twitter-stylish/</loc>
     <lastmod>2017-11-22T23:09:37+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.weizlogy.gq/tos/addon/pickiteminfo/</loc>
-    <lastmod>2017-11-22T00:55:55+09:00</lastmod>
   </url>
   
   <url>
@@ -130,11 +140,6 @@
   <url>
     <loc>http://www.weizlogy.gq/system/item/ccc/</loc>
     <lastmod>2017-08-12T00:36:17+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</loc>
-    <lastmod>1900-01-01T00:00:00+09:00</lastmod>
   </url>
   
   <url>
@@ -339,13 +344,13 @@
   
   <url>
     <loc>http://www.weizlogy.gq/tos/</loc>
-    <lastmod>2018-01-17T22:19:41+09:00</lastmod>
+    <lastmod>2018-01-27T07:50:46+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.weizlogy.gq/categories/tos-addon/</loc>
-    <lastmod>2018-01-17T22:19:41+09:00</lastmod>
+    <lastmod>2018-01-27T07:50:46+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -363,7 +368,7 @@
   
   <url>
     <loc>http://www.weizlogy.gq/</loc>
-    <lastmod>2018-01-17T22:19:41+09:00</lastmod>
+    <lastmod>2018-01-27T07:50:46+09:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-10-25 23:29:20.1110126 &#43;0900 JST",
+  "dateModified": "2017-09-17 21:16:18.9769896 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -259,7 +259,7 @@
   
     <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
   
-    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(28)</div>
+    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(29)</div>
   
     <div class="tos-addon-dev"><a href="/categories/tos-addon-dev">tos-addon-dev</a>(4)</div>
   
@@ -273,6 +273,28 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/partyinfoex/">[tree of savior addon] パーティーメンバーの一覧に追加情報を表示するアドオン</a>
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+      <span class="blog-date">@2018/01/27 07:50:46</span>
+    </div>
+  </div>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/pickiteminfo/">[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</a>
+    
+    &ndash;&nbsp;v1.0.4
+    
+    
+      <span class="blog-date">@2018/01/27 07:37:26</span>
+    </div>
+  </div>
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
@@ -307,28 +329,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/summoncounter/">[tree of savior addon] 召喚物の個体数を表示するアドオン</a>
-    
-    &ndash;&nbsp;v1.0.3
-    
-    
-      <span class="blog-date">@2018/01/07 21:55:45</span>
-    </div>
-  </div>
-  
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/showbuffsellertype/">[tree of savior addon] 商店のフキダシに商店名を付けるアドオン</a>
-    
-    &ndash;&nbsp;v1.0.0
-    
-    
-      <span class="blog-date">@2017/12/26 00:50:26</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -337,6 +337,39 @@
   <strong>Contents index.</strong>
   <section>
   
+  
+  <div class="[tos-addon]">
+    <a href="http://www.weizlogy.gq/tos/addon/savequest/">[tree of savior addon] ワープ用クエスト誤完了防止アドオン</a>
+    
+    
+    &ndash;&nbsp;v1.2.2
+    
+    
+  </div>
+  <pre class="summary [tos-addon]">download. [v1.2.2] savequest.ipf
+install. README.md
+introduction. 
+
+settings. Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。
+explanation. savequestフォルダーには下記ファイルが自動的に生成され、 キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。
+ quests_[cid].txt quests_scl_[cid].txt  descriptions. v1.2.2 パーティー共有機能追加 クエストワープのショートカットフレームから右クリックメニューでパーティー共有/共有解除できるようになります。
+ショートカットフレームレイヤーレベル調整 ショートカットフレームのレイヤーレベルを999 -&gt; 199に変更しました。
+worldmapのレイヤーレベルが200なので、それの下という感じです。
+v1.2.1 クエストワープショートカット位置固定機能追加 クエストワープのショートカットフレームを位置固定できるようにしました。
+v1.2.0 クエストワープショートカット作成機能追加 右クリックメニューにshortcutが追加されました。 本機能によりクエストワープのショートカットフレームを任意の場所に追加、削除できます。
+v1.1.1 一部クエストが保存できない不具合の修正 おそらくメインクエはほとんど保存できなかったと思いますが、保存できるようになります。
+v1.1.0 クエスト欄操作機能追加 F5キーで表示するクエスト欄でも本アドオンの機能（右クリックメニュー）が使えるようになります。
+ダイレクトクエストワープ機能追加 F5キーで表示するクエスト欄から直接クエストワープできるようになります。
+ワープ可能なクエストの左上にワープアイコンが表示されるので、クリックしてください。
+v1.0.2 バグ対応 保存したクエスト情報がチーム毎に共有される問題を修正しました。
+issue #3
+本修正により、情報保存形式が変更され、クエスト保存状態が初期化されます。
+お手数ですが、再チェックまたは、旧仕様情報（quests.txt）の内容をquests_[cid].txtにコピペしてください。
+v1.0.1 バグ対応 再ログイン時に前回の状態が保存されない問題を修正しました。
+issue #1
+v1.0.0 新規作成 アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、 ワープ直後の誤完了を防止できます。
+usage. UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、 メニュー（Save, Release, Shortcut, Cancel）が開きます。
+save &amp; release. saveを選択すると該当クエストのNPCは非表示となります。 また、save済みのクエストのワープアイコン直下に[saved.</pre>
   
   <div class="[tos-addon]">
     <a href="http://www.weizlogy.gq/tos/addon/dpsmeter/">[tree of savior addon] DPS計測アドオン</a>
@@ -494,20 +527,6 @@ Schrittは論理的に命令をカウントすることで、書き方による�
 SchrittはLinux(ubuntu)のMonoを使用し、C#で実装されているため、.Net Frameworkの恩恵を受けられる環境であれば動作します。
 download. Schritt
 status. | 言語 | 対応バージョン | 状況説明 | |:&mdash;||:&mdash;||:&mdash;| | C | 0.0.3-α | | | C++ | | 順次対応予定 | | C# | 0.0.1-α | | | Java | 0.0.2-α | | | VB | | 順次対応予定 | | JavaScript | | 順次対応予定 | | HTML | | 順次対応予定 | | CSS | | 順次対応予定 | | Ruby | | 順次対応予定 |</pre>
-  
-  <div class="[tos-addon]">
-    <a href="http://www.weizlogy.gq/tos/addon/megaphonecount/">[tree of savior addon] チャット入力欄表示中に所持中のメガホン数を表示するアドオン</a>
-    
-    
-    &ndash;&nbsp;v1.0.0
-    
-    
-  </div>
-  <pre class="summary [tos-addon]">download. megaphonecount.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.0 新規作成。
-アドオンがロードされると、チャット入力欄表示中に所持中のメガホン数が表示されます。 それだけです。。。</pre>
   
   
 
