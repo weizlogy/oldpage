@@ -7,18 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Sat, 27 Jan 2018 07:50:46 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 31 Jan 2018 23:54:05 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>[tree of savior addon] 表示されないマップを表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/showhiddenmap/</link>
+      <pubDate>Wed, 31 Jan 2018 23:54:05 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/showhiddenmap/</guid>
+      <description>download. [v1.0.1] showhiddenmap.ipf
+install. README.md
+introduction. settings. descriptions. v1.0.1 マップ更新ロジック修正 FPS_UPDATE-&amp;gt;RunUpdateScript(0.2)に変更することでスムーズ具合が向上しました。（ぬるぬるとは言ってない）
+v1.0.0 新規作成 アドオンがロードされると、（ミニ）マップが表示されないマップで（ミニ）マップが表示されるようになります。 とある事情で、通常マップに比べるとちょっとマップ位置更新がスムーズではありませんが&amp;hellip;
+というのも、MAP_CHARACTER_UPDATEのイベントが発生しないっぽいので、FPS_UPDATEで代用しているためだったり。</description>
+    </item>
+    
+    <item>
       <title>[tree of savior addon] パーティーメンバーの一覧に追加情報を表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/partyinfoex/</link>
-      <pubDate>Sat, 27 Jan 2018 07:50:46 +0900</pubDate>
+      <pubDate>Wed, 31 Jan 2018 23:51:18 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/partyinfoex/</guid>
-      <description>download. [v1.0.0] pickiteminfo.ipf
+      <description>download. [v1.0.0] partyinfoex.ipf
 install. README.md
 introduction. 
 settings. descriptions. v1.0.0 新規作成 アドオンがロードされると、パーティーメンバー一覧にSPゲージを表示します。
@@ -54,18 +67,6 @@ install. README.md
 introduction. settings. descriptions. v1.0.3 選択位置ワープ機能追加 マップ上でALT＋左クリックすると、その位置にワープします。
 v1.0.2 ワープロジック微調整 v1.0.1 ワープロジック微調整 v1.0.0 新規作成。 ESCAPE+LSHIFTでエリア内をランダムにワープします。
 ROのヴェルゼブブの羽のようなイメージです。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 表示されないマップを表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/showhiddenmap/</link>
-      <pubDate>Wed, 17 Jan 2018 22:19:41 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/showhiddenmap/</guid>
-      <description>download. [v1.0.0] showhiddenmap.ipf
-install. README.md
-introduction. settings. descriptions. v1.0.0 新規作成 アドオンがロードされると、（ミニ）マップが表示されないマップで（ミニ）マップが表示されるようになります。 とある事情で、通常マップに比べるとちょっとマップ位置更新がスムーズではありませんが&amp;hellip;
-というのも、MAP_CHARACTER_UPDATEのイベントが発生しないっぽいので、FPS_UPDATEで代用しているためだったり。</description>
     </item>
     
     <item>
