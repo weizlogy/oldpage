@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.weizlogy.gq/tos/addon/monsterstatus/</loc>
+    <lastmod>2018-02-06T22:26:09+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.weizlogy.gq/tos/addon/partyinfoex/</loc>
     <lastmod>2018-02-01T21:44:37+09:00</lastmod>
   </url>
@@ -70,11 +75,6 @@
   <url>
     <loc>http://www.weizlogy.gq/tos/addon/dpsmeter/</loc>
     <lastmod>2017-10-25T23:29:20+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.weizlogy.gq/tos/addon/monsterstatus/</loc>
-    <lastmod>2017-10-25T23:18:36+09:00</lastmod>
   </url>
   
   <url>
@@ -344,13 +344,13 @@
   
   <url>
     <loc>http://www.weizlogy.gq/tos/</loc>
-    <lastmod>2018-02-01T21:44:37+09:00</lastmod>
+    <lastmod>2018-02-06T22:26:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.weizlogy.gq/categories/tos-addon/</loc>
-    <lastmod>2018-02-01T21:44:37+09:00</lastmod>
+    <lastmod>2018-02-06T22:26:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -368,7 +368,7 @@
   
   <url>
     <loc>http://www.weizlogy.gq/</loc>
-    <lastmod>2018-02-01T21:44:37+09:00</lastmod>
+    <lastmod>2018-02-06T22:26:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
