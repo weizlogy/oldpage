@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-26 15:41:38.3196269 &#43;0900 JST",
+  "dateModified": "2017-03-26 15:41:34.6922884 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -259,7 +259,7 @@
   
     <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
   
-    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(29)</div>
+    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(30)</div>
   
     <div class="tos-addon-dev"><a href="/categories/tos-addon-dev">tos-addon-dev</a>(4)</div>
   
@@ -273,6 +273,17 @@
 <div>
   
   <strong>Last modified.</strong>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/stealthymaster/">[tree of savior addon] いいねせずキャラ情報を見るアドオン</a>
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+      <span class="blog-date">@2018/02/10 09:01:48</span>
+    </div>
+  </div>
   
   <div class="lastmod-title">
     <div class="[tos-addon]">
@@ -318,17 +329,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/minigaugetext/">[tree of savior addon] キャラクター下HP/SPバーテキスト表示アドオン</a>
-    
-    &ndash;&nbsp;v1.0.0
-    
-    
-      <span class="blog-date">@2018/01/16 01:52:18</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -337,6 +337,17 @@
   <strong>Contents index.</strong>
   <section>
   
+  
+  <div class="[site-management]">
+    <a href="http://www.weizlogy.gq/site/code-prettify-on-github/">[site management] code-prettifyがgithubに移行し進化していたので対応した</a>
+    
+    
+    
+  </div>
+  <pre class="summary [site-management]">code-prettifyはGoogle謹製シンタックスハイライターです。
+以前は以下の構成が必要でした。
+&lt;!-- prettify --&gt; &lt;style type=&#39;text/css&#39;&gt; @import &quot;http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css&quot;; &lt;/style&gt; &lt;script src=&#39;http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js&#39; type=&#39;text/javascript&#39;&gt;&lt;/script&gt; &lt;script type=&#39;text/javascript&#39;&gt; function prettify() { prettyPrint(); } if (window.addEventListener) { window.addEventListener(&quot;load&quot;, prettify, false); } else if (window.attachEvent) { window.attachEvent(&quot;onload&quot;, prettify); } else { window.onload = prettify; }&lt;/script&gt; &lt;!-- prettify --&gt;  進化後はたった一行で済みます。すごいですね。
+&lt;script src=&quot;https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js&quot;&gt;&lt;/script&gt;  </pre>
   
   <div class="[site-management]">
     <a href="http://www.weizlogy.gq/site/seo-bing-webmaster/">[site management] bing Web マスターのSEOレポート対策</a>
@@ -454,20 +465,6 @@ struts1.3.10
 java 1.6.0_18
 // formFileの実体は「org.apache.struts.upload.CommonsMultipartRequestHandler.CommonsFormFile」 Field f = formFile.getClass().getDeclaredField(&quot;fileItem&quot;); f.setAccessible(true); // fileItemは「org.apache.commons.fileupload.FileItem」を実装した「org.apache.commons.fileupload.disk.DiskFileItem」 DiskFileItem item = (DiskFileItem) f.get(formFile); System.out.println(item.getName());  </pre>
   
-  <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a>
-    
-    
-    
-  </div>
-  <pre class="summary [system-dev]">掲題の件について、検索キーワードにあがりましたので、簡単にまとめました。
-正式には、以下のErrorが発生しました。
-System.Windows.Data Error: 4 : Cannot find source for binding with reference &lsquo;RelativeSource FindAncestor, AncestorType=&lsquo;System.Windows.Controls.ItemsControl&rsquo;, AncestorLevel=&lsquo;1&rdquo;. BindingExpression:Path=HorizontalContentAlignment; DataItem=null; target element is &lsquo;ListBoxItem&rsquo; (Name=&ldquo;); target property is &lsquo;HorizontalContentAlignment&rsquo; (type &lsquo;HorizontalAlignment&rsquo;)
-System.Windows.Data Error: 4 : Cannot find source for binding with reference &lsquo;RelativeSource FindAncestor, AncestorType=&lsquo;System.Windows.Controls.ItemsControl&rsquo;, AncestorLevel=&lsquo;1&rdquo;. BindingExpression:Path=VerticalContentAlignment; DataItem=null; target element is &lsquo;ListBoxItem&rsquo; (Name=&ldquo;); target property is &lsquo;VerticalContentAlignment&rsquo; (type &lsquo;VerticalAlignment&rsquo;)
-xamlのStyle定義のSetterプロパティでAlignmentを定義していると出るみたいです。 定義を外すとErrorは出ません。 みたいです。というのは、何故なのか理由が分からないためです。
-以下、実際のコードの抜粋です。
-&lt;Style TargetType=&quot;{x:Type ListBoxItem}&quot;&gt; &lt;Setter Property=&quot;HorizontalContentAlignment&quot; Value=&quot;{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&quot;/&gt; &lt;Setter Property=&quot;VerticalContentAlignment&quot; Value=&quot;{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&quot;/&gt;  </pre>
-  
   
 
 <ul class="pagination">
@@ -553,13 +550,25 @@ xamlのStyle定義のSetterプロパティでAlignmentを定義していると�
     class="active"><a href="/page/6/">6</a></li>
     
     
+    
+    
+    
+     
+        
+        
+    
+    
     <li
-    class="disabled">
-    <a href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    ><a href="/page/7/">7</a></li>
+    
+    
+    <li
+    >
+    <a href="/page/7/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
     </li>
     
     <li>
-        <a href="/page/6/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/page/7/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
     </li>
     
 </ul>

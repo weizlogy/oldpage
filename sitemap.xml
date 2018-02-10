@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.weizlogy.gq/tos/addon/stealthymaster/</loc>
+    <lastmod>2018-02-10T09:01:48+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.weizlogy.gq/tos/addon/monsterstatus/</loc>
     <lastmod>2018-02-06T22:26:09+09:00</lastmod>
   </url>
@@ -344,13 +349,13 @@
   
   <url>
     <loc>http://www.weizlogy.gq/tos/</loc>
-    <lastmod>2018-02-06T22:26:09+09:00</lastmod>
+    <lastmod>2018-02-10T09:01:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.weizlogy.gq/categories/tos-addon/</loc>
-    <lastmod>2018-02-06T22:26:09+09:00</lastmod>
+    <lastmod>2018-02-10T09:01:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -368,7 +373,7 @@
   
   <url>
     <loc>http://www.weizlogy.gq/</loc>
-    <lastmod>2018-02-06T22:26:09+09:00</lastmod>
+    <lastmod>2018-02-10T09:01:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   

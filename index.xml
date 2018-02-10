@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Tue, 06 Feb 2018 22:26:09 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 10 Feb 2018 09:01:48 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] いいねせずキャラ情報を見るアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/stealthymaster/</link>
+      <pubDate>Sat, 10 Feb 2018 09:01:48 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/stealthymaster/</guid>
+      <description>download. [v1.0.0] stealthymaster.ipf
+install. README.md
+introduction. settings. descriptions. v1.0.0 新規作成 アドオンがロードされると、キャラ情報を表示する既存処理を上書きして、いいねがされないようにします。</description>
+    </item>
     
     <item>
       <title>[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</title>
