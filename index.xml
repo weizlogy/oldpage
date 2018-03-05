@@ -6,8 +6,7 @@
     <description>Recent content on Weizlogy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Sat, 10 Feb 2018 09:01:48 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 10 Feb 2018 08:58:15 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +14,7 @@
     <item>
       <title>[tree of savior addon] いいねせずキャラ情報を見るアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/stealthymaster/</link>
-      <pubDate>Sat, 10 Feb 2018 09:01:48 +0900</pubDate>
+      <pubDate>Sat, 10 Feb 2018 08:58:15 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/stealthymaster/</guid>
       <description>download. [v1.0.0] stealthymaster.ipf
@@ -24,39 +23,9 @@ introduction. settings. descriptions. v1.0.0 新規作成 アドオンがロー�
     </item>
     
     <item>
-      <title>[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/monsterstatus/</link>
-      <pubDate>Tue, 06 Feb 2018 22:26:09 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/monsterstatus/</guid>
-      <description>download. [v3.0.3] monsterstatus.ipf
-[v2.1.3] monsterstatus.ipf
-install. README.md
-introduction.  settings. Nexon\TreeofSaviorJP\addons\monsterstatus\location.txt を作成します。
-descriptions. v3.0.3 ドロップアイテム表示制限対応 未鑑定アイテムは表示されないように修正しました。
-フレーム位置保存対応 フレーム位置の保存/復元に対応しました。
-v3.0.2 冒険日誌改変対応 [jtos] 冒険日誌改変に対応しました。
-v3.0.1 冒険日誌改変対応 [itos] 冒険日誌改変に対応しました。
-v3.0.0 ダメージ表示対応 ステータスの代わりにダメージの期待値を表示します。
-ダメージの期待値表示は物理、クリティカル、魔法の三種類です。 クリティカルの期待値には確率を表示します。
-経験値表示追加 キャラクター経験値とクラス経験値の表示を追加しました。
-フレーム背景透過対応 フレームの透過率を上げて、表示を改善しました。
-v2.2.0 移動種別表示追加 移動種別の表示を追加し、飛行しているか分かるようにしました。
-種族、属性表示追加 種族、属性の表示を追加しました。
-v2.1.3 ドロップアイテム表示制限対応 未鑑定アイテムは表示されないように修正しました。
-フレーム位置保存対応 フレーム位置の保存/復元に対応しました。
-v2.1.2 冒険日誌改変対応 [jtos] 冒険日誌改変に対応しました。
-v2.1.1 冒険日誌改変対応 [itos] 冒険日誌改変に対応しました。
-v2.1.0 コンパクトなv2系のサポートを始めました。
-v2.0.0 討伐数、ドロップアイテム名、アイテム収集率表示追加 冒険日誌から討伐数、ドロップアイテム名、アイテム収集率を取得、 表示する機能を追加しました。 また、ドロップアイテム名からアイテムツールチップが開けます。
-表示ステータス 、フォーマット調整 表示するステータスは現在のところ以下の通りです。
-   表示名 内容     ATK 物理攻撃力(最大)   MATK 魔法攻撃力(最大)   DEF 物理防御力   MDEF 魔法防御力    UIウィンドウをドラッグで移動できるようになりました。</description>
-    </item>
-    
-    <item>
       <title>[tree of savior addon] パーティーメンバーの一覧に追加情報を表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/partyinfoex/</link>
-      <pubDate>Thu, 01 Feb 2018 21:44:37 +0900</pubDate>
+      <pubDate>Sat, 27 Jan 2018 07:38:47 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/partyinfoex/</guid>
       <description>download. [v1.1.0] partyinfoex.ipf
@@ -70,7 +39,7 @@ v1.0.0 新規作成 アドオンがロードされると、パーティーメン
     <item>
       <title>[tree of savior addon] 表示されないマップを表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/showhiddenmap/</link>
-      <pubDate>Wed, 31 Jan 2018 23:54:05 +0900</pubDate>
+      <pubDate>Wed, 17 Jan 2018 22:13:20 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/showhiddenmap/</guid>
       <description>download. [v1.0.1] showhiddenmap.ipf
@@ -81,40 +50,9 @@ v1.0.0 新規作成 アドオンがロードされると、（ミニ）マップ
     </item>
     
     <item>
-      <title>[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/pickiteminfo/</link>
-      <pubDate>Sat, 27 Jan 2018 07:37:26 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/pickiteminfo/</guid>
-      <description>download. [v1.0.4] pickiteminfo.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.4 アイテム名途切れ修正 アイテム名が途切れる問題を修正しました。
-v1.0.3 リーク対応 アイテム名を表示しているフレームが破棄されない問題を修正しました。
-v1.0.2 名称表示位置調整 v1.0.1のずれが治ったのに合わせて再調整しました。
-v1.0.1 名称表示位置調整 8&amp;frasl;23 UPDATEにより、ALTキーでアイテム名称表示がずれるようになった影響で同じようにずれる問題に対応しました。
-名称の動きが若干不穏ですが、ALTキーでアイテム名称表示がずれる問題が解決するまでの暫定対処となります。
-v1.0.0 新規作成 アドオンがロードされると、ALTキーを押さなくとも、ドロップアイテムの名称が表示されるようになります。
-アイテム名称はレアリティで色が変わります。 色の変化はColored Item Namesをパク&amp;hellip;参考にしています。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] エリア内ランダムワープアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</link>
-      <pubDate>Wed, 17 Jan 2018 22:39:24 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</guid>
-      <description>download. [v1.0.3] wingofbeelze.ipf
-install. README.md
-introduction. settings. descriptions. v1.0.3 選択位置ワープ機能追加 マップ上でALT＋左クリックすると、その位置にワープします。
-v1.0.2 ワープロジック微調整 v1.0.1 ワープロジック微調整 v1.0.0 新規作成。 ESCAPE+LSHIFTでエリア内をランダムにワープします。
-ROのヴェルゼブブの羽のようなイメージです。</description>
-    </item>
-    
-    <item>
       <title>[tree of savior addon] キャラクター下HP/SPバーテキスト表示アドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/minigaugetext/</link>
-      <pubDate>Tue, 16 Jan 2018 01:52:18 +0900</pubDate>
+      <pubDate>Tue, 16 Jan 2018 01:34:09 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/minigaugetext/</guid>
       <description>download. [v1.0.0] minigaugetext.ipf
@@ -124,41 +62,9 @@ settings. descriptions. v1.0.0 新規作成 キャラクター下のHP/SPバー�
     </item>
     
     <item>
-      <title>[tree of savior addon] オブジェクト探索アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/objectdetector/</link>
-      <pubDate>Tue, 16 Jan 2018 01:34:46 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/objectdetector/</guid>
-      <description>download. [v1.3.0] objectdetector.ipf
-install. README.md
-introduction. 
-
-settings. Nexon\TreeofSaviorJP\addons\objectdetector\settings.txt を作成します。
-以下の初期設定をsettings.txtにコピペします。
--- for monster and npcs. obde.config.mon = { color = &amp;quot;FF000000&amp;quot;, isVisible = 1 }; obde.config.mon.Monster = { color = &amp;quot;FF660000&amp;quot;, isVisible = 1 }; obde.config.mon.Monster_Chaos1 = obde.config.mon.Monster; obde.config.mon.Monster_Chaos2 = obde.config.mon.Monster; obde.config.mon.Pet = { isVisible = 0 }; obde.config.mon.RootCrystal = { color = &amp;quot;FF330033&amp;quot;, isVisible = 1 }; obde.config.mon.Neutral = { color = &amp;quot;FFFF9900&amp;quot;, isVisible = 1, }; obde.</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 召喚物の個体数を表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/summoncounter/</link>
-      <pubDate>Sun, 07 Jan 2018 21:55:45 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/summoncounter/</guid>
-      <description>download. [v1.0.3] summoncounter.ipf
-install. README.md
-introduction. 
-
-
-
-settings. Nexon\TreeofSaviorJP\addons\summoncounter\settings.txt を作成します。
-以下の初期設定をsettings.txtコピペします。
-suco.config = { Bokor_Zombify = { mode = &amp;quot;hpbar&amp;quot;, loc_frame = { x = 450, y = 80 }, loc_bar = { x = 0, y = 0 } }, Necromancer_RaiseDead = { mode = &amp;quot;icon1&amp;quot;, loc = &amp;quot;left&amp;quot;, loc1 = { x = 0, y = 30 }, loc2 = { x = 0, y = 70 }, loc3 = { x = 0, y = 110 }, loc4 = { x = -40, y = 50 }, loc5 = { x = -40, y = 90 } }, Necromancer_RaiseSkullarcher = { mode = &amp;quot;icon1&amp;quot;, loc = &amp;quot;right&amp;quot;, loc1 = { x = 0, y = 30 }, loc2 = { x = 0, y = 70 }, loc3 = { x = 0, y = 110 }, loc4 = { x = 40, y = 50 }, loc5 = { x = 40, y = 90 } }, Necromancer_CreateShoggoth = { mode = &amp;quot;icon2&amp;quot;, loc = &amp;quot;down&amp;quot;, loc1 = { x = 0, y = 0 } } };  explanation.</description>
-    </item>
-    
-    <item>
       <title>[tree of savior addon] 商店のフキダシに商店名を付けるアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/showbuffsellertype/</link>
-      <pubDate>Tue, 26 Dec 2017 00:50:26 +0900</pubDate>
+      <pubDate>Tue, 26 Dec 2017 00:36:58 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/showbuffsellertype/</guid>
       <description>download. [v1.0.0] showbuffsellertype.ipf
@@ -170,7 +76,7 @@ settings. descriptions. v1.0.0 新規作成 アドオンがロードされると
     <item>
       <title>[tree of savior addon] Heads Up Displayをコンパクトにするアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/compactheadsupdisplay/</link>
-      <pubDate>Tue, 12 Dec 2017 22:30:33 +0900</pubDate>
+      <pubDate>Tue, 12 Dec 2017 22:05:16 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/compactheadsupdisplay/</guid>
       <description>download. [v1.0.0] compactheadsupdisplay.ipf
@@ -181,25 +87,9 @@ settings. descriptions. v1.0.0 新規作成 アドオンがロードされると
     </item>
     
     <item>
-      <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/hidename/</link>
-      <pubDate>Tue, 12 Dec 2017 22:05:28 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/hidename/</guid>
-      <description>download. [v1.0.3] hidename.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.3 ギルドエンブレムも非表示にします。
-v1.0.2 ギルド名も非表示にします。
-v1.0.1 ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。
-v1.0.0 新規作成 アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。
-動画を撮るときに設定では非表示にできなかったので。。。</description>
-    </item>
-    
-    <item>
       <title>[system] Windows10でTwitter公式webページをStylishでキレイに見せる</title>
       <link>http://www.weizlogy.gq/system/item/twitter-stylish/</link>
-      <pubDate>Wed, 22 Nov 2017 23:09:37 +0900</pubDate>
+      <pubDate>Wed, 22 Nov 2017 22:22:09 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/system/item/twitter-stylish/</guid>
       <description>overviews. Windows10でTwitter公式webページを対象に、Google ChromeのStylishアドオンでフォント調整を行い、キレイに見せます。
@@ -207,7 +97,7 @@ Macは元からキレイだから良いよね。。。
 introduction. 適用前 
 適用後 
 settings. Stylishインストール Google Chromeの機能拡張でStylishをインストールします。
-Stylishでスタイル作成 コード body.ja, .TweetTextSize.TweetTextSize--normal, .ProfileHeaderCard-bio, .TweetTextSize .twitter-hashtag b, .TweetTextSize .twitter-atreply b, .with-icn b, .Trends .context-trend-item .trend-item-context, .Trends .context-trend-item .trend-item-stats, b, .new-tweets-bar, .ProfileCard-bio, .FollowStatus { font-family: &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Verdana&amp;quot;, &amp;quot;Yu Gothic&amp;quot;, Meiryo, sans-serif; font-weight: 600; }  適用先 次で始まるURL　https://twitter.com
+Stylishでスタイル作成 コード body.ja, .TweetTextSize.TweetTextSize--normal, .ProfileHeaderCard-bio, .TweetTextSize .twitter-hashtag b, .TweetTextSize .twitter-atreply b, .with-icn b, .Trends .context-trend-item .trend-item-context, .Trends .context-trend-item .trend-item-stats, b, .new-tweets-bar, .ProfileCard-bio, .FollowStatus { font-family: &amp;#34;Helvetica Neue&amp;#34;, &amp;#34;Verdana&amp;#34;, &amp;#34;Yu Gothic&amp;#34;, Meiryo, sans-serif; font-weight: 600; } 適用先 次で始まるURL　https://twitter.com
 保存！！！ descriptions. v1.0.0 新規作成 Windows10で標準採用された游ゴシックをベースに英数字は&amp;rsquo;Helvetica Neue&amp;rsquo;を使います。
 游ゴシックは、レギュラーサイズではフォントの線が細くなりボヤッとした印象を受けるため、ウェイトを掛けてくっきりはっきり見えるようにしました。</description>
     </item>
@@ -215,7 +105,7 @@ Stylishでスタイル作成 コード body.ja, .TweetTextSize.TweetTextSize--no
     <item>
       <title>[tree of savior addon] ギルドマスター以外でもギルドエンブレムのプレビューができるアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/previewguildemblem/</link>
-      <pubDate>Fri, 17 Nov 2017 00:29:28 +0900</pubDate>
+      <pubDate>Wed, 08 Nov 2017 00:48:29 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/previewguildemblem/</guid>
       <description>download. [v1.1.0] previewguildemblem.ipf
@@ -231,7 +121,7 @@ v1.0.0 新規作成 アドオンがロードされると、ギルドマスター
     <item>
       <title>[tree of savior addon] 召喚獣にオベイで使えるスキルのツールチップを表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/summonskilltooltip/</link>
-      <pubDate>Thu, 02 Nov 2017 00:50:46 +0900</pubDate>
+      <pubDate>Thu, 02 Nov 2017 00:21:48 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/summonskilltooltip/</guid>
       <description>download. [v1.0.0] summonskilltooltip.ipf
@@ -243,82 +133,9 @@ v1.0.0 新規作成 アドオンがロードされると、召喚獣にオベイ
     </item>
     
     <item>
-      <title>[tree of savior addon] DPS計測アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/dpsmeter/</link>
-      <pubDate>Wed, 25 Oct 2017 23:29:20 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/dpsmeter/</guid>
-      <description> download. [v1.3.1] dpsmeter.ipf
-install. README.md
-introduction.  settings. descriptions. v1.3.1 DPS計測ON/OFF追加 初期状態をOFFとしました。
-チャットコマンドにてON/OFFを切り替えます。
-/dpsm on -- 計測開始 /dpsm off -- 計測停止  v1.3.0 DPS平均値表示を追加 DPS平均値表示に伴い、フォーマットを変更 現在のDPS[{淡青}平均DPS][{淡赤}最大DPS] dps  モンスター死亡時のsystemメッセージによる通知をデフォルトOFFに変更 表示するには、DPSのUIを右クリック &amp;gt; [toggleChat]を選択します。
-選択する度に通知のON/OFFを切り替えます。
-DPS計測対象を調整  ボコルのゾンビフィーで召喚するゾンビを除外  v1.2.0 DPS計測方法を調整 ターゲットアイコン表示が可能な距離まで近づいて、初撃時（を含む。初撃はdamage/1sec換算）からDPS計測を開始します。
-ターゲットが死ぬかフレームアウトするまで計測は止まりません。
-DPS計測対象を調整 旧バージョンではfaction = &amp;ldquo;Monster&amp;rdquo;を計測対象としていましたが不十分でしたので、 計測対象を拡大し、ペット以外（faction ~= &amp;ldquo;Pet&amp;rdquo;）としました。
-IWやルーツクリスタルも対象となってしまいますが、計測されないよりは良いかと。。。
-v1.1.0 UI表示を追加 現在のDPS、最大DPSをモンスターUI近辺に、以下のフォーマット表示します。
-[現在のDPS]([最大DPS]) dps  モンスター死亡時のsystemメッセージによる通知を追加 モンスター死亡時、最大DPSをsystemメッセージで表示します。
-ターゲットアイコン表示が可能な距離まで近づくとDPS計測を開始、離れると停止します。
-v1.0.0 新規作成。 アドオンがロードされるとDPS計測が有効になり、計測結果はsystemメッセージで通知します。
-現時点ではコンバットログが取れないので、正確な測定は実現できていません。
-少しでも測定精度を上げたい場合は、以下の点に注意してください。
- ソロで戦う。（コンパニオンも出さない） 混戦しない。 回復持ちの敵は避ける。  </description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/staminagauge/</link>
-      <pubDate>Wed, 25 Oct 2017 23:02:01 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/staminagauge/</guid>
-      <description>download. [v1.0.3] staminigauge.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.3 ゲージ位置調整 10&amp;frasl;25 UPDATEに対応してゲージを調整しました。
-v1.0.2 ゲージ位置調整 8&amp;frasl;23 UPDATEに対応してゲージを調整しました。
-v1.0.1 ゲージ位置調整 スタミナゲージと名前が被らないよう調整しました。
-v1.0.0 新規作成 アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。
-若干キャラ名と被りますが、気にしないように。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] ワープ用クエスト誤完了防止アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/savequest/</link>
-      <pubDate>Sun, 17 Sep 2017 21:16:18 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/savequest/</guid>
-      <description>download. [v1.2.2] savequest.ipf
-install. README.md
-introduction. 
-
-settings. Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。
-explanation. savequestフォルダーには下記ファイルが自動的に生成され、 キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。
- quests_[cid].txt quests_scl_[cid].txt  descriptions. v1.2.2 パーティー共有機能追加 クエストワープのショートカットフレームから右クリックメニューでパーティー共有/共有解除できるようになります。
-ショートカットフレームレイヤーレベル調整 ショートカットフレームのレイヤーレベルを999 -&amp;gt; 199に変更しました。
-worldmapのレイヤーレベルが200なので、それの下という感じです。
-v1.2.1 クエストワープショートカット位置固定機能追加 クエストワープのショートカットフレームを位置固定できるようにしました。
-v1.2.0 クエストワープショートカット作成機能追加 右クリックメニューにshortcutが追加されました。 本機能によりクエストワープのショートカットフレームを任意の場所に追加、削除できます。
-v1.1.1 一部クエストが保存できない不具合の修正 おそらくメインクエはほとんど保存できなかったと思いますが、保存できるようになります。
-v1.1.0 クエスト欄操作機能追加 F5キーで表示するクエスト欄でも本アドオンの機能（右クリックメニュー）が使えるようになります。
-ダイレクトクエストワープ機能追加 F5キーで表示するクエスト欄から直接クエストワープできるようになります。
-ワープ可能なクエストの左上にワープアイコンが表示されるので、クリックしてください。
-v1.0.2 バグ対応 保存したクエスト情報がチーム毎に共有される問題を修正しました。
-issue #3
-本修正により、情報保存形式が変更され、クエスト保存状態が初期化されます。
-お手数ですが、再チェックまたは、旧仕様情報（quests.txt）の内容をquests_[cid].txtにコピペしてください。
-v1.0.1 バグ対応 再ログイン時に前回の状態が保存されない問題を修正しました。
-issue #1
-v1.0.0 新規作成 アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、 ワープ直後の誤完了を防止できます。
-usage. UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、 メニュー（Save, Release, Shortcut, Cancel）が開きます。
-save &amp;amp; release. saveを選択すると該当クエストのNPCは非表示となります。 また、save済みのクエストのワープアイコン直下に[saved.</description>
-    </item>
-    
-    <item>
       <title>[tree of savior addon] コレクション画面の[N]マークを非表示にするアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/rmnewcollectionmark/</link>
-      <pubDate>Thu, 31 Aug 2017 21:43:46 +0900</pubDate>
+      <pubDate>Thu, 31 Aug 2017 21:25:07 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/rmnewcollectionmark/</guid>
       <description>download. [v1.0.0] rmnewcollectionmark.ipf
@@ -329,42 +146,73 @@ settings. descriptions. v1.0.0 新規作成 アドオンがロードされると
     </item>
     
     <item>
+      <title>[system] CCC - 色当てゲーム解析ツール</title>
+      <link>http://www.weizlogy.gq/system/item/ccc/</link>
+      <pubDate>Fri, 11 Aug 2017 23:51:21 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/system/item/ccc/</guid>
+      <description>overviews. KOLOR、The Colorのような 色当てゲームを解析し正解を表示します。
+download. [v1.0.0] CCC.exe
+introduction. 
+settings. なし。
+descriptions. v1.0.0 新規作成 exeを実行すると半透明ウィンドウが表示されます。 ウィンドウはドラッグ、リサイズ（右下）が可能で、色当て対象領域上に配置します。
+Enterキーでキャプチャーし解析結果を表示します。 正解部分は透過されているため、そのままクリック等のアクションが可能です。 正解以外は正解の反転色で塗りつぶされます。
+KOLORのように同色を探す場合はSameMode、The Colorのように異色を探す場合はDifferentModeを使用して下さい。
+usage. EnterキーDown キャプチャー結果をクリアします。
+EnterキーUp 現在のウィンドウ領域をキャプチャーし解析結果を表示します。
+DキーUp モードをDifferentMode（黒枠）に切り替えます。
+SキーUp モードをSameMode（赤枠）に切り替えます。
+TキーUp 一時的にウィンドウ領域全体を透過、透過解除を繰り返します。
+ESCキーUp キャプチャー結果をクリアします。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 本アイテムの改行を正常化するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/fixbookread/</link>
+      <pubDate>Sun, 06 Aug 2017 00:53:42 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/fixbookread/</guid>
+      <description>download. [v1.0.0] fixbookread.ipf
+install. README.md
+introduction. before 
+after 
+settings. descriptions. v1.0.0 新規作成。 アドオンがロードされると、本アイテムのテキスト表示処理を自動修正し、改行を正常化させます。</description>
+    </item>
+    
+    <item>
       <title>[tree of savior addon] ダイスロールアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/dice/</link>
-      <pubDate>Thu, 31 Aug 2017 01:33:57 +0900</pubDate>
+      <pubDate>Tue, 25 Jul 2017 05:47:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/dice/</guid>
       <description>download. [v1.1.0] dice.ipf
 install. README.md
 introduction. 
 settings. descriptions. v1.1.0 カスタムレンジ対応 チャットコマンドで /random set &amp;lt;最小&amp;gt; &amp;lt;最大&amp;gt; と打つと、ランダムの範囲を変更できます。
-/random set 1 6 -- ６面ダイス状態 /random set 1 10 -- １０面ダイス状態 /random set -- デフォルトに戻ります  v1.0.1 itos対応 v1.0.0 新規作成 アドオンがロードされると、チャットコマンドで /random と打つと、 0～999の値をランダムに決定し、一般チャット範囲に結果を送信します。</description>
+/random set 1 6 -- ６面ダイス状態 /random set 1 10 -- １０面ダイス状態 /random set -- デフォルトに戻ります v1.0.1 itos対応 v1.0.0 新規作成 アドオンがロードされると、チャットコマンドで /random と打つと、 0～999の値をランダムに決定し、一般チャット範囲に結果を送信します。</description>
     </item>
     
     <item>
-      <title>[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/worldmapquest/</link>
-      <pubDate>Thu, 31 Aug 2017 00:04:45 +0900</pubDate>
+      <title>[tree of savior addon] 召喚物の個体数を表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/summoncounter/</link>
+      <pubDate>Sun, 16 Jul 2017 23:14:23 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon/worldmapquest/</guid>
-      <description>download. [v1.2.0] worldmapquest.ipf
+      <guid>http://www.weizlogy.gq/tos/addon/summoncounter/</guid>
+      <description>download. [v1.0.3] summoncounter.ipf
 install. README.md
 introduction. 
 
-settings. descriptions. v1.2.0 クエストワープマップモード追加 左ALTを押しながらワールドマップを開くと、クエストワープ可能なマップのみワールドマップ上に表示し、 ワールドマップからクエストワープを実行できます。
-v1.1.2 ワープ用ワールドマップに残クエストオブジェクトが残る問題修正 ワープスクロールやワープ像で表示するワープ用ワールドマップに 残クエストオブジェクトが残らないよう修正しました。
-v1.1.1 パッチ対応 157576_001001 パッチ適用で使用不可になったので回避対応しました。
-反復クエストの非表示設定 反復クエストの表示非表示を切り替えるには、 ワールドマップのクエスト数を右クリック &amp;gt; [toggleRepeatQuest]を選択します。
-選択後、ワールドマップを再表示すると反映されます。
-選択する度に反復クエストの表示非表示を切り替えます。
-v1.0.0 新規作成 アドオンがロードされると、ワールドマップの各エリア名上部に受注可能なクエスト数が表示されます。
-introductionの画像では碑石路、いにしえの女神の庭、ドバシア峠、古旗の森、大王の関門、カーライルの霊廟、ガルエット平野に[n]の形式で表示されています。</description>
+
+
+settings. Nexon\TreeofSaviorJP\addons\summoncounter\settings.txt を作成します。
+以下の初期設定をsettings.txtコピペします。
+suco.config = { Bokor_Zombify = { mode = &amp;#34;hpbar&amp;#34;, loc_frame = { x = 450, y = 80 }, loc_bar = { x = 0, y = 0 } }, Necromancer_RaiseDead = { mode = &amp;#34;icon1&amp;#34;, loc = &amp;#34;left&amp;#34;, loc1 = { x = 0, y = 30 }, loc2 = { x = 0, y = 70 }, loc3 = { x = 0, y = 110 }, loc4 = { x = -40, y = 50 }, loc5 = { x = -40, y = 90 } }, Necromancer_RaiseSkullarcher = { mode = &amp;#34;icon1&amp;#34;, loc = &amp;#34;right&amp;#34;, loc1 = { x = 0, y = 30 }, loc2 = { x = 0, y = 70 }, loc3 = { x = 0, y = 110 }, loc4 = { x = 40, y = 50 }, loc5 = { x = 40, y = 90 } }, Necromancer_CreateShoggoth = { mode = &amp;#34;icon2&amp;#34;, loc = &amp;#34;down&amp;#34;, loc1 = { x = 0, y = 0 } } }; explanation.</description>
     </item>
     
     <item>
       <title>[tree of savior addon] クイックスロットスキル/アイテム用マクロアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/slotmac/</link>
-      <pubDate>Thu, 31 Aug 2017 00:04:17 +0900</pubDate>
+      <pubDate>Fri, 16 Jun 2017 21:15:19 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/slotmac/</guid>
       <description>download. [v1.3.0] slotmac.ipf
@@ -394,22 +242,165 @@ cidフォルダー配下に、必要に応じてマクロファイル(slot1.txt 
     </item>
     
     <item>
-      <title>[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/skillitemcounter/</link>
-      <pubDate>Thu, 31 Aug 2017 00:04:05 +0900</pubDate>
+      <title>[site management] bloggerからhugo&#43;github pagesに移行した理由</title>
+      <link>http://www.weizlogy.gq/site/blogger-to-hugo/</link>
+      <pubDate>Sat, 06 May 2017 17:31:42 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon/skillitemcounter/</guid>
-      <description>download. [v1.1.0] skillitemcounter.ipf
+      <guid>http://www.weizlogy.gq/site/blogger-to-hugo/</guid>
+      <description>bloggerでサイト運営して困ったこと Googleサービスの割にAMP対応できない 新テンプレートはもちろん無理で、クラシックテンプレートも完全には対応できません。
+テンプレートが複雑でカスタマイズに時間がかかる 一番シンプルなテンプレートでも1000行以上はあり、コード修正はブラウザ上のテキストエリアで行うという苦行。
+HTML5のレイアウト対応（section, articleなど）も一苦労です。
+ページロードに時間がかかる AMPに対応できない一因でもありますが、リッチなUIを実現するためJavascriptが多様されます。
+bloggerで困ったことをhugoで解決する AMP対応 hugoにはAMP対応の公開テーマがあるので簡単です。
+テーマのカスタマイズ（自作） テーマを自作しました。
+最小構成でHTML5とAMPに対応し、見た目も中身もシンプルになるように配慮しています。
+ページロード hugoはテーマとマークダウンから静的コンテンツを生成するため、キャッシュが効きやすくページロードに有利です。
+ホスティングサービスを選択する GitHub Pagesは静的コンテンツをgit pushするだけで公開できるGitHubのサービスです。
+1GBのストレージで100GB/Monthの帯域、1時間に10回ビルドといった制限がありますが、広告なし無料です。 画像などはdropboxに入れておけば十分活用できます。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/pickiteminfo/</link>
+      <pubDate>Fri, 05 May 2017 23:14:15 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/pickiteminfo/</guid>
+      <description>download. [v1.0.4] pickiteminfo.ipf
 install. README.md
 introduction. 
-settings. descriptions. v1.1.0 ポイズンポット使用スキル対応 ポイズンポット消費のあるスキルスロットにも使用回数を表示します。
+settings. descriptions. v1.0.4 アイテム名途切れ修正 アイテム名が途切れる問題を修正しました。
+v1.0.3 リーク対応 アイテム名を表示しているフレームが破棄されない問題を修正しました。
+v1.0.2 名称表示位置調整 v1.0.1のずれが治ったのに合わせて再調整しました。
+v1.0.1 名称表示位置調整 8&amp;frasl;23 UPDATEにより、ALTキーでアイテム名称表示がずれるようになった影響で同じようにずれる問題に対応しました。
+名称の動きが若干不穏ですが、ALTキーでアイテム名称表示がずれる問題が解決するまでの暫定対処となります。
+v1.0.0 新規作成 アドオンがロードされると、ALTキーを押さなくとも、ドロップアイテムの名称が表示されるようになります。
+アイテム名称はレアリティで色が変わります。 色の変化はColored Item Namesをパク&amp;hellip;参考にしています。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] エリア内ランダムワープアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</link>
+      <pubDate>Wed, 03 May 2017 13:12:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</guid>
+      <description>download. [v1.0.3] wingofbeelze.ipf
+install. README.md
+introduction. settings. descriptions. v1.0.3 選択位置ワープ機能追加 マップ上でALT＋左クリックすると、その位置にワープします。
+v1.0.2 ワープロジック微調整 v1.0.1 ワープロジック微調整 v1.0.0 新規作成。 ESCAPE+LSHIFTでエリア内をランダムにワープします。
+ROのヴェルゼブブの羽のようなイメージです。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/skillitemcounter/</link>
+      <pubDate>Sun, 16 Apr 2017 11:11:02 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/skillitemcounter/</guid>
+      <description>download. [v1.1.1] skillitemcounter.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.1.1 使用回数が表示されない問題の修正 詳細は#19を参照してください。
+joypad対応 joypadのquickslotに対応しました。（遅
+v1.1.0 ポイズンポット使用スキル対応 ポイズンポット消費のあるスキルスロットにも使用回数を表示します。
 v1.0.0 新規作成 アドオンがロードされると、クイックスロットにセットしている、消費アイテムのあるスキルスロット右上に、消費アイテムの個数に応じたスキルの使用回数を追加で表示します。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/worldmapquest/</link>
+      <pubDate>Thu, 06 Apr 2017 04:28:09 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/worldmapquest/</guid>
+      <description>download. [v1.2.0] worldmapquest.ipf
+install. README.md
+introduction. 
+
+settings. descriptions. v1.2.0 クエストワープマップモード追加 左ALTを押しながらワールドマップを開くと、クエストワープ可能なマップのみワールドマップ上に表示し、 ワールドマップからクエストワープを実行できます。
+v1.1.2 ワープ用ワールドマップに残クエストオブジェクトが残る問題修正 ワープスクロールやワープ像で表示するワープ用ワールドマップに 残クエストオブジェクトが残らないよう修正しました。
+v1.1.1 パッチ対応 157576_001001 パッチ適用で使用不可になったので回避対応しました。
+反復クエストの非表示設定 反復クエストの表示非表示を切り替えるには、 ワールドマップのクエスト数を右クリック &amp;gt; [toggleRepeatQuest]を選択します。
+選択後、ワールドマップを再表示すると反映されます。
+選択する度に反復クエストの表示非表示を切り替えます。
+v1.0.0 新規作成 アドオンがロードされると、ワールドマップの各エリア名上部に受注可能なクエスト数が表示されます。
+introductionの画像では碑石路、いにしえの女神の庭、ドバシア峠、古旗の森、大王の関門、カーライルの霊廟、ガルエット平野に[n]の形式で表示されています。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] オブジェクト探索アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/objectdetector/</link>
+      <pubDate>Mon, 27 Mar 2017 19:39:27 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/objectdetector/</guid>
+      <description>download. [v1.3.0] objectdetector.ipf
+install. README.md
+introduction. 
+
+settings. Nexon\TreeofSaviorJP\addons\objectdetector\settings.txt を作成します。
+以下の初期設定をsettings.txtにコピペします。
+-- for monster and npcs. obde.config.mon = { color = &amp;#34;FF000000&amp;#34;, isVisible = 1 }; obde.config.mon.Monster = { color = &amp;#34;FF660000&amp;#34;, isVisible = 1 }; obde.config.mon.Monster_Chaos1 = obde.config.mon.Monster; obde.config.mon.Monster_Chaos2 = obde.config.mon.Monster; obde.config.mon.Pet = { isVisible = 0 }; obde.config.mon.RootCrystal = { color = &amp;#34;FF330033&amp;#34;, isVisible = 1 }; obde.config.mon.Neutral = { color = &amp;#34;FFFF9900&amp;#34;, isVisible = 1, }; obde.</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] ワープ用クエスト誤完了防止アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/savequest/</link>
+      <pubDate>Fri, 24 Mar 2017 05:28:54 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/savequest/</guid>
+      <description>download. [v1.2.2] savequest.ipf
+install. README.md
+introduction. 
+
+settings. Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。
+explanation. savequestフォルダーには下記ファイルが自動的に生成され、 キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。
+ quests_[cid].txt quests_scl_[cid].txt  descriptions. v1.2.2 パーティー共有機能追加 クエストワープのショートカットフレームから右クリックメニューでパーティー共有/共有解除できるようになります。
+ショートカットフレームレイヤーレベル調整 ショートカットフレームのレイヤーレベルを999 -&amp;gt; 199に変更しました。
+worldmapのレイヤーレベルが200なので、それの下という感じです。
+v1.2.1 クエストワープショートカット位置固定機能追加 クエストワープのショートカットフレームを位置固定できるようにしました。
+v1.2.0 クエストワープショートカット作成機能追加 右クリックメニューにshortcutが追加されました。 本機能によりクエストワープのショートカットフレームを任意の場所に追加、削除できます。
+v1.1.1 一部クエストが保存できない不具合の修正 おそらくメインクエはほとんど保存できなかったと思いますが、保存できるようになります。
+v1.1.0 クエスト欄操作機能追加 F5キーで表示するクエスト欄でも本アドオンの機能（右クリックメニュー）が使えるようになります。
+ダイレクトクエストワープ機能追加 F5キーで表示するクエスト欄から直接クエストワープできるようになります。
+ワープ可能なクエストの左上にワープアイコンが表示されるので、クリックしてください。
+v1.0.2 バグ対応 保存したクエスト情報がチーム毎に共有される問題を修正しました。
+issue #3
+本修正により、情報保存形式が変更され、クエスト保存状態が初期化されます。
+お手数ですが、再チェックまたは、旧仕様情報（quests.txt）の内容をquests_[cid].txtにコピペしてください。
+v1.0.1 バグ対応 再ログイン時に前回の状態が保存されない問題を修正しました。
+issue #1
+v1.0.0 新規作成 アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、 ワープ直後の誤完了を防止できます。
+usage. UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、 メニュー（Save, Release, Shortcut, Cancel）が開きます。
+save &amp;amp; release. saveを選択すると該当クエストのNPCは非表示となります。 また、save済みのクエストのワープアイコン直下に[saved.</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] DPS計測アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/dpsmeter/</link>
+      <pubDate>Mon, 20 Mar 2017 08:41:36 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/dpsmeter/</guid>
+      <description> download. [v1.3.1] dpsmeter.ipf
+install. README.md
+introduction.  settings. descriptions. v1.3.1 DPS計測ON/OFF追加 初期状態をOFFとしました。
+チャットコマンドにてON/OFFを切り替えます。
+/dpsm on -- 計測開始 /dpsm off -- 計測停止 v1.3.0 DPS平均値表示を追加 DPS平均値表示に伴い、フォーマットを変更 現在のDPS[{淡青}平均DPS][{淡赤}最大DPS] dps  モンスター死亡時のsystemメッセージによる通知をデフォルトOFFに変更 表示するには、DPSのUIを右クリック &amp;gt; [toggleChat]を選択します。
+選択する度に通知のON/OFFを切り替えます。
+DPS計測対象を調整  ボコルのゾンビフィーで召喚するゾンビを除外  v1.2.0 DPS計測方法を調整 ターゲットアイコン表示が可能な距離まで近づいて、初撃時（を含む。初撃はdamage/1sec換算）からDPS計測を開始します。
+ターゲットが死ぬかフレームアウトするまで計測は止まりません。
+DPS計測対象を調整 旧バージョンではfaction = &amp;ldquo;Monster&amp;rdquo;を計測対象としていましたが不十分でしたので、 計測対象を拡大し、ペット以外（faction ~= &amp;ldquo;Pet&amp;rdquo;）としました。
+IWやルーツクリスタルも対象となってしまいますが、計測されないよりは良いかと。。。
+v1.1.0 UI表示を追加 現在のDPS、最大DPSをモンスターUI近辺に、以下のフォーマット表示します。
+[現在のDPS]([最大DPS]) dps  モンスター死亡時のsystemメッセージによる通知を追加 モンスター死亡時、最大DPSをsystemメッセージで表示します。
+ターゲットアイコン表示が可能な距離まで近づくとDPS計測を開始、離れると停止します。
+v1.0.0 新規作成。 アドオンがロードされるとDPS計測が有効になり、計測結果はsystemメッセージで通知します。
+現時点ではコンバットログが取れないので、正確な測定は実現できていません。
+少しでも測定精度を上げたい場合は、以下の点に注意してください。
+ ソロで戦う。（コンパニオンも出さない） 混戦しない。 回復持ちの敵は避ける。  </description>
     </item>
     
     <item>
       <title>[tree of savior addon] 装備修理時、装備アイコンに耐久度（％）を色分け表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/repairendur/</link>
-      <pubDate>Thu, 31 Aug 2017 00:03:37 +0900</pubDate>
+      <pubDate>Thu, 09 Mar 2017 05:55:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/repairendur/</guid>
       <description>download. [v1.1.0] repairendur.ipf
@@ -418,46 +409,277 @@ introduction.
 
 settings. Nexon\TreeofSaviorJP\addons\repairendur\settings.txt を作成します。
 以下の初期設定をsettings.txtコピペします。
-reen.Weapon = { Lp = 30, Mp = 5, Hp = 1 }; reen.Armor = { Lp = 35, Mp = 10, Hp = 5 }; reen.SubWeapon = reen.Weapon; -- added v1.1.0 reen.EndurColor = { Lc = &amp;quot;FFFF00&amp;quot;, Mc = &amp;quot;FF0000&amp;quot;, Hc = &amp;quot;000000&amp;quot; };  explanation. この設定は装備の耐久度と割合に応じた文字色の設定です。
+reen.Weapon = { Lp = 30, Mp = 5, Hp = 1 }; reen.Armor = { Lp = 35, Mp = 10, Hp = 5 }; reen.SubWeapon = reen.Weapon; -- added v1.1.0 reen.EndurColor = { Lc = &amp;#34;FFFF00&amp;#34;, Mc = &amp;#34;FF0000&amp;#34;, Hc = &amp;#34;000000&amp;#34; }; explanation. この設定は装備の耐久度と割合に応じた文字色の設定です。
 [Weapon]、[Armor]は装備の耐久度の色分け用閾値で、Low, Middle, Highの3段階を、武器用と防具用で用意しています。
 [EndurColor]は装備の耐久度閾値に対応する色をRGBで指定します。
-explanation of initial parameters. 武器</description>
+explanation of initial parameters. 武器
+ 耐久度[30]%以下で[黄]色 耐久度[5]%以下で[赤]色 耐久度[1]%以下で[黒]色  防具</description>
     </item>
     
     <item>
-      <title>[tree of savior addon] 本アイテムの改行を正常化するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/fixbookread/</link>
-      <pubDate>Thu, 31 Aug 2017 00:01:49 +0900</pubDate>
+      <title>[tree of savior addon for developpers] アドオンで自作スキンを使用する方法</title>
+      <link>http://www.weizlogy.gq/tos/addon-dev/use-custom-skins/</link>
+      <pubDate>Sun, 05 Mar 2017 14:19:00 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon/fixbookread/</guid>
-      <description>download. [v1.0.0] fixbookread.ipf
-install. README.md
-introduction. before 
-after 
-settings. descriptions. v1.0.0 新規作成。 アドオンがロードされると、本アイテムのテキスト表示処理を自動修正し、改行を正常化させます。</description>
+      <guid>http://www.weizlogy.gq/tos/addon-dev/use-custom-skins/</guid>
+      <description>ifpファイル内部構成 xxx.ipf ├───addon_d.ipf │ └───xxx │ ├───xxx.lua │ └───xxx.xml └───ui.ipf ├───baseskinset │ └───xxx.xml └───skin └───xxx.tga  addon_d.ipf Tree Of Savior アドオン作成～設置方法まとめ 参照。
+ui.ipf baseskinset 自作スキンの読込とアドオン内部で使用するスキンの定義を行います。
+xxx.xml
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;skinset name=&amp;#34;Base&amp;#34;&amp;gt; &amp;lt;imagelist category=&amp;#34;ringcommand&amp;#34;&amp;gt; &amp;lt;image name=&amp;#34;image1&amp;#34; file=&amp;#34;\skin\xxx.tga&amp;#34; imgrect=&amp;#34;211 5 197 195&amp;#34;/&amp;gt; &amp;lt;image name=&amp;#34;image2&amp;#34; file=&amp;#34;\skin\xxx.tga&amp;#34; imgrect=&amp;#34;417 5 197 195&amp;#34;/&amp;gt; &amp;lt;/imagelist&amp;gt; &amp;lt;/skinset&amp;gt; name アドオン内部で参照するスキン名。
+オリジナルのスキン名と重複しないように気を付けます。
+file スキン読み込み元画像ファイルパス。
+imgrect スキン読み込み元画像ファイル内画像座標。
+半角スペース区切りで四角形の左上と右下の頂点座標を指定します。 =&amp;gt; x, y, width, height
+skin 自作スキン画像ファイルを配置します。
+アドオン実装方法 xml &amp;lt;picture name=&amp;#34;xxx&amp;#34; rect=&amp;#34;0 0 70 30&amp;#34; margin=&amp;#34;0 0 45 0&amp;#34; hittest=&amp;#34;true&amp;#34; image=&amp;#34;image1&amp;#34;/&amp;gt; lua local pic = GET_CHILD(xxx, &amp;#34;xxx&amp;#34;, &amp;#34;ui::CPicture&amp;#34;); pic:SetImage(&amp;#34;image2&amp;#34;); tgaファイル 画像ファイルの一つ。</description>
     </item>
     
     <item>
-      <title>[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/distance/</link>
-      <pubDate>Thu, 31 Aug 2017 00:01:30 +0900</pubDate>
+      <title>[tree of savior addon] コンパニオンのリングコマンドを拡張するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/customcompanion/</link>
+      <pubDate>Sun, 05 Mar 2017 07:56:00 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon/distance/</guid>
-      <description>download. [v1.1.1] distance.ipf
+      <guid>http://www.weizlogy.gq/tos/addon/customcompanion/</guid>
+      <description>download. customcompanion.ipf
 install. README.md
-introduction.  settings. descriptions. v1.1.1 性能改善しました。
-v1.1.0 メートル単位対応しました。
-アドオンがロードされると近隣（20m範囲内）モンスターに自キャラからの距離がメートル単位で表示されます。
-距離が12mを超えると、表示が消えます。
-v1.0.0 新規作成。
-アドオンがロードされると近隣（500範囲内）モンスターに自キャラからの距離が表示されます。
-単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。</description>
+introduction.  settings. descriptions. v1.0.0 新規作成。
+アドオンがロードされると、コンパニオンに近づくだけでリングコマンドが出現するようになります。 今まで通り、コンパニオンから離れるとリングコマンドが消えます。
+リングコマンドに[自動戦闘ON/OFFトグルアイコン]、[コンパニオン休眠化]のスロットを追加します。 ホットキーの割り当てはありません。
+騎乗スキルのないキャラ、コンパニオンの場合は、リングコマンドの[騎乗]、[降りる]のスロットを削除します。
+自動戦闘ON/OFF クリックするたびに自動戦闘のON/OFFを切り替えます。 切り替え結果はチャット上にSYSTEMメッセージで表示します。
+コンパニオン休眠化 クリックするとコンパニオンを休眠状態にします。 コンパニオンの休眠解除は、今まで通り、コンパニオン情報から行います。</description>
+    </item>
+    
+    <item>
+      <title>[site management] schema.org構造化データBlogPosting対応 with JSON&#43;LD in blogger</title>
+      <link>http://www.weizlogy.gq/site/blogger-blogposting-jsonld/</link>
+      <pubDate>Sun, 26 Feb 2017 12:54:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/site/blogger-blogposting-jsonld/</guid>
+      <description>bloggerのテンプレートで、以下のブログ投稿箇所を検索します。
+&amp;lt;b:loop values=&amp;#39;data:posts&amp;#39; var=&amp;#39;post&amp;#39;&amp;gt; この直下に以下のスクリプトを挿入します。
+&amp;lt;!-- schema.org - BlogPosting. --&amp;gt; &amp;lt;script type=&amp;#39;application/ld+json&amp;#39;&amp;gt; { &amp;#34;@context&amp;#34;: &amp;#34;http://schema.org&amp;#34;, &amp;#34;@type&amp;#34;: &amp;#34;BlogPosting&amp;#34;, &amp;#34;headline&amp;#34;: &amp;#34;&amp;lt;data:blog.url/&amp;gt;&amp;#34;, &amp;#34;url&amp;#34;: &amp;#34;&amp;lt;data:blog.pageTitle/&amp;gt;&amp;#34;, &amp;#34;datePublished&amp;#34;: &amp;#34;&amp;lt;data:post.timestampISO8601/&amp;gt;&amp;#34;, &amp;#34;author&amp;#34;: { &amp;#34;@type&amp;#34;: &amp;#34;Person&amp;#34;, &amp;#34;name&amp;#34;: &amp;#34;&amp;lt;data:post.author/&amp;gt;&amp;#34; }, &amp;#34;publisher&amp;#34;: { &amp;#34;@type&amp;#34;: &amp;#34;Organization&amp;#34;, &amp;#34;name&amp;#34;: &amp;#34;Weiβlogy&amp;#34;, &amp;#34;logo&amp;#34;: { &amp;#34;@type&amp;#34;: &amp;#34;ImageObject&amp;#34;, &amp;#34;url&amp;#34;: &amp;#34;http://www.weizlogy.gq/favicon.ico&amp;#34; } }, &amp;#34;dateModified&amp;#34;: &amp;#34;&amp;lt;data:post.timestampISO8601/&amp;gt;&amp;#34;, &amp;#34;mainEntityOfPage&amp;#34;: &amp;#34;1&amp;#34;, &amp;#34;image&amp;#34;: { &amp;#34;@type&amp;#34;: &amp;#34;ImageObject&amp;#34;, &amp;#34;url&amp;#34;: &amp;#34;http://www.weizlogy.gq/dummy.png&amp;#34;, &amp;#34;width&amp;#34;: &amp;#34;100&amp;#34;, &amp;#34;height&amp;#34;: &amp;#34;100&amp;#34; } } &amp;lt;/script&amp;gt; publisher, imageは各自修正してください。
+datePublished, dateModifiedは今のところ同じ値になっています。
+feedDataに情報はありますが、Javascriptを経由せず取得するのは難しそうです。
+本当はheaderタグ内に置きたかったのですが、data:postsが b:section class=&amp;lsquo;main&amp;rsquo; id=&amp;lsquo;main&amp;rsquo; 配下でないと 有効でないという仕様に阻まれました。。。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/staminagauge/</link>
+      <pubDate>Sat, 25 Feb 2017 00:33:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/staminagauge/</guid>
+      <description>download. [v1.0.3] staminigauge.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.3 ゲージ位置調整 10&amp;frasl;25 UPDATEに対応してゲージを調整しました。
+v1.0.2 ゲージ位置調整 8&amp;frasl;23 UPDATEに対応してゲージを調整しました。
+v1.0.1 ゲージ位置調整 スタミナゲージと名前が被らないよう調整しました。
+v1.0.0 新規作成 アドオンがロードされると、キャラの足元に黄色のスタミナゲージが追加されます。
+若干キャラ名と被りますが、気にしないように。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] マーケットデフォルト出品日数変更アドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/marketselltimechanger/</link>
+      <pubDate>Thu, 23 Feb 2017 23:34:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/marketselltimechanger/</guid>
+      <description>download. marketselltimechanger.ipf
+install. README.md
+introduction. settings. Nexon\TreeofSaviorJP\addons\marketselltimechanger\settings.txt を作成します。
+ファイルを開いて一行目に、（デフォルト1日が良ければ）1と入力します。
+設定は、[デフォルト出品日数]のみ。
+現状、1,3,5,7 が使用でき、それ以外が入力されていた場合は、システムのデフォルト値が採用されます。
+descriptions. v1.0.0 新規作成。
+アドオンがロードされると、設定ファイルに記載された値でマーケットのデフォルト出品日数を変更します。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 所持キャラ全員の個人倉庫を見るアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/warehousepicker/</link>
+      <pubDate>Sun, 19 Feb 2017 17:42:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/warehousepicker/</guid>
+      <description>download. warehousepicker.ipf
+install. README.md
+introduction.  settings. Nexon\TreeofSaviorJP\addons\warehousepicker フォルダーを作成します。
+各所持キャラで個人倉庫を開閉する（正確には閉じる瞬間）と、先ほど作成したフォルダーに個人倉庫のアイテム情報を保存します。
+descriptions. v1.0.0 新規作成。
+アドオンがロードされた後、いずれかのキャラで個人倉庫を開くと、倉庫左下に[whpk]ボタンが出現します。 ボタンを押すと、事前に保存された所持キャラの個人倉庫のアイテム情報を表示するダイアログを開きます。
+ダイアログには、事前に個人倉庫のアイテム情報が作成された所持キャラ名のドロップダウンリストが表示されます。 ドロップダウンリストで選択した所持キャラ名の個人倉庫のアイテム情報（アイテムアイコン、名称、個数）をダイアログ内に表示します。
+最低一度は各所持キャラで個人倉庫を開閉する必要がありますが、それ以降はいずれかのキャラでログインすると全員の個人倉庫を見ることができます。
+今のところチームの区別なくキャラ名のみ表示しますので、複数チームを所持している場合に使い勝手に難があるかもしれません。 使いにくいようでしたら改善します。</description>
+    </item>
+    
+    <item>
+      <title>[system] Schritt - 論理ステップカウンター</title>
+      <link>http://www.weizlogy.gq/system/item/schritt/</link>
+      <pubDate>Mon, 13 Feb 2017 17:32:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/system/item/schritt/</guid>
+      <description>overviews. Schrittは論理ステップカウンターです。
+従来のステップカウンターは物理行でカウントする方式が主流であるため、書き方により規模に差異が現れます。
+Schrittは論理的に命令をカウントすることで、書き方による規模の差異を抑制することを目的に作られました。
+SchrittはLinux(ubuntu)のMonoを使用し、C#で実装されているため、.Net Frameworkの恩恵を受けられる環境であれば動作します。
+download. Schritt
+status. | 言語 | 対応バージョン | 状況説明 | |:&amp;mdash;||:&amp;mdash;||:&amp;mdash;| | C | 0.0.3-α | | | C++ | | 順次対応予定 | | C# | 0.0.1-α | | | Java | 0.0.2-α | | | VB | | 順次対応予定 | | JavaScript | | 順次対応予定 | | HTML | | 順次対応予定 | | CSS | | 順次対応予定 | | Ruby | | 順次対応予定 |</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] チャット入力欄表示中に所持中のメガホン数を表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/megaphonecount/</link>
+      <pubDate>Sun, 12 Feb 2017 21:56:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/megaphonecount/</guid>
+      <description>download. megaphonecount.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.0 新規作成。
+アドオンがロードされると、チャット入力欄表示中に所持中のメガホン数が表示されます。 それだけです。。。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 特性習得ウィンドウに各特性の最大レベルを表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/customabilityshop/</link>
+      <pubDate>Sun, 12 Feb 2017 02:29:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/customabilityshop/</guid>
+      <description>download. 2/22パッチで最大値が表示されるようになりましたので非公開にします。
+install. README.md
+introduction. 
+settings. descriptions. v1.0.0 新規作成。
+アドオンがロードされると、特性習得ウィンドウに各特性の最大レベルが表示されます。 無くてもいい気がするけど。。。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/monsterstatus/</link>
+      <pubDate>Thu, 09 Feb 2017 05:57:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/monsterstatus/</guid>
+      <description>download. [v3.0.3] monsterstatus.ipf
+[v2.1.3] monsterstatus.ipf
+install. README.md
+introduction.  settings. Nexon\TreeofSaviorJP\addons\monsterstatus\location.txt を作成します。
+descriptions. v3.0.3 ドロップアイテム表示制限対応 未鑑定アイテムは表示されないように修正しました。
+フレーム位置保存対応 フレーム位置の保存/復元に対応しました。
+v3.0.2 冒険日誌改変対応 [jtos] 冒険日誌改変に対応しました。
+v3.0.1 冒険日誌改変対応 [itos] 冒険日誌改変に対応しました。
+v3.0.0 ダメージ表示対応 ステータスの代わりにダメージの期待値を表示します。
+ダメージの期待値表示は物理、クリティカル、魔法の三種類です。 クリティカルの期待値には確率を表示します。
+経験値表示追加 キャラクター経験値とクラス経験値の表示を追加しました。
+フレーム背景透過対応 フレームの透過率を上げて、表示を改善しました。
+v2.2.0 移動種別表示追加 移動種別の表示を追加し、飛行しているか分かるようにしました。
+種族、属性表示追加 種族、属性の表示を追加しました。
+v2.1.3 ドロップアイテム表示制限対応 未鑑定アイテムは表示されないように修正しました。
+フレーム位置保存対応 フレーム位置の保存/復元に対応しました。
+v2.1.2 冒険日誌改変対応 [jtos] 冒険日誌改変に対応しました。
+v2.1.1 冒険日誌改変対応 [itos] 冒険日誌改変に対応しました。
+v2.1.0 コンパクトなv2系のサポートを始めました。
+v2.0.0 討伐数、ドロップアイテム名、アイテム収集率表示追加 冒険日誌から討伐数、ドロップアイテム名、アイテム収集率を取得、 表示する機能を追加しました。 また、ドロップアイテム名からアイテムツールチップが開けます。
+表示ステータス 、フォーマット調整 表示するステータスは現在のところ以下の通りです。
+   表示名 内容     ATK 物理攻撃力(最大)   MATK 魔法攻撃力(最大)   DEF 物理防御力   MDEF 魔法防御力    UIウィンドウをドラッグで移動できるようになりました。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/hidename/</link>
+      <pubDate>Sun, 05 Feb 2017 18:08:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/hidename/</guid>
+      <description>download. [v1.0.3] hidename.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.3 ギルドエンブレムも非表示にします。
+v1.0.2 ギルド名も非表示にします。
+v1.0.1 ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。
+v1.0.0 新規作成 アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。
+動画を撮るときに設定では非表示にできなかったので。。。</description>
+    </item>
+    
+    <item>
+      <title>[system development] TSLで定義される全CipherSuiteの一覧</title>
+      <link>http://www.weizlogy.gq/system/dev/cipher-suites/</link>
+      <pubDate>Tue, 31 Jan 2017 21:59:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/system/dev/cipher-suites/</guid>
+      <description>Cipher Suiteの説明はさて置き、一覧を見るために以下のコマンドを使用する例が多々見受けられます。
+$ openssl ciphers -v これはopensslが対応するCipherSuiteの一覧であり、実際に存在するCipherSuiteの一覧とは異なります。
+実際に存在するCipherSuiteの一覧は、RFC5426によるとIANA管理とのことで、下記URLがマスターです。
+http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon for developpers] iesファイルフォーマット解説</title>
+      <link>http://www.weizlogy.gq/tos/addon-dev/ies-format/</link>
+      <pubDate>Sat, 31 Dec 2016 17:29:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon-dev/ies-format/</guid>
+      <description>???は可変長です。
+Total block  ------------------- ---------------------------- ------------------------- | Header [156 byte] | Cell Header [136 x N byte] | Row Data [??? x M byte] | ------------------- ---------------------------- -------------------------  N=列数。は、Header blockのCellCountで指定。 M=行数。は、Header blockのRowCountで指定。
+Header block  ---------------------- ------------------- ------------------------ | TableName [128 byte] | Reserve1 [4 byte] | OffsetOfData [4 byte] | ---------------------- ------------------- ------------------------ --------------------------- ------------------- ------------------- | OffsetOfResource [4 byte] | FileSize [4 byte] | Reserve2 [4 byte] | --------------------------- ------------------- ------------------- ------------------- -------------------- -------------------------- | RowCount [2 byte] | CellCount [2 byte] | NumCellCount [2 byte] | ------------------- -------------------- -------------------------- ----------------------- ------------------------------------------- | StrCellCount [2 byte] | Reserve3 [2 byte] | --------------------- | ----------------------- -------------------------------------------           TableName IESテーブル名   Reserve1 予約1   OffsetOfData Cell Header blockのサイズ   OffsetOfResource Row Data blockのサイズ   FileSize IESファイルサイズ   Reserve2 予約2   RowCount 行数   CellCount 列数   NumCellCount 数値列数   StrCellCount 文字列列数   Reserve3 予約3    Cell Header block  ---------------- ------------------- ---------------------- | Name [64 byte] | Name2 [64 byte] | Type [2 byte] | ------ | ---------------- ------------------- ---------------------- ------------------- ------------------- ------------------- | Reserve1 [2 byte] | Reserve2 [4 byte] | Position [2 byte] | ------------------- ------------------- -------------------           Name Cell名   Name2 Cell別名   Type 0：数値Cell、1,2：文字列Cell   Reserve1 予約1   Reserve2 予約2   Position Type内Cell順序    Cell順は、Type昇順、Position昇順。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon for developpers] iesファイルをcsv形式のファイルに変換するソフト</title>
+      <link>http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/</link>
+      <pubDate>Sat, 31 Dec 2016 15:42:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/</guid>
+      <description>overviews. Tree Of Saviorのipfファイル内には拡張子がiesのファイルがあります。
+Ipf Suiteでは中身を見ることができますが、extractしても実体はバイナリファイル（かつ、暗号化されている）で、 テキストエディタでもバイナリエディタでも見ても分かりません。
+もちろん、grep検索で引き当てることもできません。
+本ソフトは、iesファイルを解析し、可読性のあるcsvファイルを生成します。
+download. IEStoCSV.zip
+install. ダウンロードしたzipを解凍し、任意の場所に配置します。
+descriptions. コンソールアプリケーションなので、コマンドプロンプトで操作します。
+IEStoCSV.exe &amp;lt;走査ディレクトリ&amp;gt;  サブフォルダを含む走査ディレクトリ配下のiesファイルに対して、対となるcsv形式のファイルを生成します。
+走査ディレクトリ省略時は、本ソフトのある位置を対象とします。
+caution. iesファイル内に韓国語が含まれるので、Excelでは文字化けします。（ExcelはShiftJISですが、生成するcsvはUTF8なので）
+本当は英訳を載せたいのですが、完全無料の翻訳APIがないもので。。。 需要があれば何とかしようと思います。
+acknowledgment. iesファイルフォーマットは、以下のソースコードを参考にさせて頂きました。 ありがとうございます。
+https://github.com/r1emu/IPFUnpacker/blob/master</description>
+    </item>
+    
+    <item>
+      <title>[system] RealtimeWhoisView - グローバルIP＋国名表示ツール</title>
+      <link>http://www.weizlogy.gq/system/item/whoisview/</link>
+      <pubDate>Sun, 18 Dec 2016 16:55:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/system/item/whoisview/</guid>
+      <description>overviews. グローバルIPとIPアドレスの所属する国名を右上にひっそり表示します。
+download. [v1.0.0] RealtimeWhoisView.exe
+introduction. 
+settings. なし。
+descriptions. v1.0.0 新規作成 exeを実行するとグローバルIPと国名の表示されたウィンドウが右上に出現します。
+一応ドラッグできますが、位置は覚えません。
+VPN等、ネットワークが切り替わると自動的に更新します。
+Proxyは通りません。</description>
+    </item>
+    
+    <item>
+      <title>[system] Tapete - Windows spotlight画像抽出</title>
+      <link>http://www.weizlogy.gq/system/item/tapete/</link>
+      <pubDate>Sun, 18 Dec 2016 16:55:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/system/item/tapete/</guid>
+      <description>overviews. Windows10のロック画面で使われるspotlight画像を厳選し、&amp;lt;ユーザーディレクトリ&amp;gt;\picture\Tapete フォルダにコピーします。
+コピーは随時発生し、日次で最新状態にリセットします。
+壁紙のスライドショーで使用することを想定し、画像の厳選条件は、4KB以上かつ、 プライマリースクリーンの解像度以上としています。
+download. Tapete.zip
+install. ダウンロードしたzipを解凍し、任意の場所に配置します。
+descriptions. 画面のフォルダパスをクリックすると、該当フォルダをエクスプローラーで開きます。
+最小化すると通知アイコン化します。アイコンをクリックすると復元します。
+cautions. 自動起動はしないので、必要に応じてスタートアップに登録してください。
+コピー先は固定なので、ソフトリンクやジャンクションで任意の場所にコピーさせることもできます。</description>
     </item>
     
     <item>
       <title>[tree of savior addon] アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）</title>
       <link>http://www.weizlogy.gq/tos/addon/console/</link>
-      <pubDate>Thu, 31 Aug 2017 00:01:04 +0900</pubDate>
+      <pubDate>Sat, 10 Dec 2016 17:30:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/console/</guid>
       <description>download. [v1.2.0] console.ipf
@@ -477,71 +699,52 @@ v1.0.0 新規作成。
     </item>
     
     <item>
-      <title>[system] RealtimeWhoisView - グローバルIP＋国名表示ツール</title>
-      <link>http://www.weizlogy.gq/system/item/whoisview/</link>
-      <pubDate>Sat, 19 Aug 2017 22:43:20 +0900</pubDate>
+      <title>[system development] XAMLでブロック矢印を描画する</title>
+      <link>http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/</link>
+      <pubDate>Sun, 04 Dec 2016 22:45:00 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/system/item/whoisview/</guid>
-      <description>overviews. グローバルIPとIPアドレスの所属する国名を右上にひっそり表示します。
-download. [v1.0.0] RealtimeWhoisView.exe
-introduction. 
-settings. なし。
-descriptions. v1.0.0 新規作成 exeを実行するとグローバルIPと国名の表示されたウィンドウが右上に出現します。
-一応ドラッグできますが、位置は覚えません。
-VPN等、ネットワークが切り替わると自動的に更新します。
-Proxyは通りません。</description>
+      <guid>http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/</guid>
+      <description>ブロック矢印完成図 
+コード &amp;lt;Path Stroke=&amp;#34;Black&amp;#34; StrokeThickness=&amp;#34;2&amp;#34; Fill=&amp;#34;Gray&amp;#34; Data=&amp;#34;M 100 100 H 200 V 90 L 230 115 L 200 140 V 130 H 100 V 100 Z&amp;#34; Margin=&amp;#34;-30,-30,0,0&amp;#34; /&amp;gt; 解説 Pathを使って目標の位置付近に描画、Marginで微調整します。
+https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspxを読めば分かりますが簡単です。 一筆書きの要領で、矢印の左上から時計回りに線を引いています。
+「M 100 100」は「X=100,Y=100に移動」します。
+「H 200」は「現在位置からX=200まで描線」します。
+「V 90」は「現在位置からY=90まで描線」します。
+「L 230 115」は「現在位置からX=230,Y=115まで描線」します。
+以下繰り返しの上、 「Z」は「描線の範囲を閉鎖」します。
+座標の算出には、描画開始位置、シャフトの幅と高さ、アローヘッドの出代と角度を決めます。 今回は、描画開始位置=100,100、シャフトの幅=100、高さ=30、アローヘッドの出代=10、角度=60にしました。
+
+アローヘッドの頂点座標の算出は、頂点がシャフトの中央にあることと、三平方の定理を使えばきっちり出せます。 つまり、シャフトの幅は偶数が良いです。</description>
     </item>
     
     <item>
-      <title>[system] CCC - 色当てゲーム解析ツール</title>
-      <link>http://www.weizlogy.gq/system/item/ccc/</link>
-      <pubDate>Sat, 12 Aug 2017 00:36:17 +0900</pubDate>
+      <title>[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/distance/</link>
+      <pubDate>Sun, 13 Nov 2016 18:00:00 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/system/item/ccc/</guid>
-      <description>overviews. KOLOR、The Colorのような 色当てゲームを解析し正解を表示します。
-download. [v1.0.0] CCC.exe
-introduction. 
-settings. なし。
-descriptions. v1.0.0 新規作成 exeを実行すると半透明ウィンドウが表示されます。 ウィンドウはドラッグ、リサイズ（右下）が可能で、色当て対象領域上に配置します。
-Enterキーでキャプチャーし解析結果を表示します。 正解部分は透過されているため、そのままクリック等のアクションが可能です。 正解以外は正解の反転色で塗りつぶされます。
-KOLORのように同色を探す場合はSameMode、The Colorのように異色を探す場合はDifferentModeを使用して下さい。
-usage. EnterキーDown キャプチャー結果をクリアします。
-EnterキーUp 現在のウィンドウ領域をキャプチャーし解析結果を表示します。
-DキーUp モードをDifferentMode（黒枠）に切り替えます。
-SキーUp モードをSameMode（赤枠）に切り替えます。
-TキーUp 一時的にウィンドウ領域全体を透過、透過解除を繰り返します。
-ESCキーUp キャプチャー結果をクリアします。</description>
-    </item>
-    
-    <item>
-      <title>[site management] bloggerからhugo&#43;github pagesに移行した理由</title>
-      <link>http://www.weizlogy.gq/site/blogger-to-hugo/</link>
-      <pubDate>Thu, 18 May 2017 07:09:25 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/site/blogger-to-hugo/</guid>
-      <description>bloggerでサイト運営して困ったこと Googleサービスの割にAMP対応できない 新テンプレートはもちろん無理で、クラシックテンプレートも完全には対応できません。
-テンプレートが複雑でカスタマイズに時間がかかる 一番シンプルなテンプレートでも1000行以上はあり、コード修正はブラウザ上のテキストエリアで行うという苦行。
-HTML5のレイアウト対応（section, articleなど）も一苦労です。
-ページロードに時間がかかる AMPに対応できない一因でもありますが、リッチなUIを実現するためJavascriptが多様されます。
-bloggerで困ったことをhugoで解決する AMP対応 hugoにはAMP対応の公開テーマがあるので簡単です。
-テーマのカスタマイズ（自作） テーマを自作しました。
-最小構成でHTML5とAMPに対応し、見た目も中身もシンプルになるように配慮しています。
-ページロード hugoはテーマとマークダウンから静的コンテンツを生成するため、キャッシュが効きやすくページロードに有利です。
-ホスティングサービスを選択する GitHub Pagesは静的コンテンツをgit pushするだけで公開できるGitHubのサービスです。
-1GBのストレージで100GB/Monthの帯域、1時間に10回ビルドといった制限がありますが、広告なし無料です。 画像などはdropboxに入れておけば十分活用できます。</description>
+      <guid>http://www.weizlogy.gq/tos/addon/distance/</guid>
+      <description>download. [v1.1.1] distance.ipf
+install. README.md
+introduction.  settings. descriptions. v1.1.1 性能改善しました。
+v1.1.0 メートル単位対応しました。
+アドオンがロードされると近隣（20m範囲内）モンスターに自キャラからの距離がメートル単位で表示されます。
+距離が12mを超えると、表示が消えます。
+v1.0.0 新規作成。
+アドオンがロードされると近隣（500範囲内）モンスターに自キャラからの距離が表示されます。
+単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。</description>
     </item>
     
     <item>
       <title>[tree of savior addon] 飛行アドオン</title>
       <link>http://www.weizlogy.gq/tos/addon-x/fly/</link>
-      <pubDate>Wed, 03 May 2017 17:17:20 +0900</pubDate>
+      <pubDate>Sun, 09 Oct 2016 19:39:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon-x/fly/</guid>
       <description>download. [v1.2.0] fly.ipf
 install. README.md
 introduction.  settings. Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。
 以下の初期設定をコピペします。
-fly.config = { pos = {x = 100, y = 100}, jumpPower = 140, showButton = 0, cameraHeight = 50, withPet = 1 };  explanation. pos. ボタンの座標指定です。
+fly.config = { pos = {x = 100, y = 100}, jumpPower = 140, showButton = 0, cameraHeight = 50, withPet = 1 }; explanation. pos. ボタンの座標指定です。
 [showButton]が0の場合は無視されます。
 jumpPower. 飛距離です。
 100では弓に狙われます。 150では通常攻撃が届きません。（wizでは140で届きます。）
@@ -561,206 +764,32 @@ v1.0.0 新規作成。
 アドオンがロードされると[Fly]ボタンが表示されます。
 ボタンを押すと飛行状態、地上に降りるを繰り返します。
 飛行状態でも地上の敵を攻撃できます。 飛行状態では地上の敵はこちらを近接攻撃できません。
-実際は地上を歩行しているのでトラップには気をつけてください。</description>
+実際は地上を歩行しているのでトラップには気をつけてください。
+飛行状態ではスキルが使用不可ですが、ノックバックを受けるとスキルが使用可能になりますので、わざとノックバックするようになっています。</description>
     </item>
     
     <item>
-      <title>[tree of savior addon] 所持キャラ全員の個人倉庫を見るアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/warehousepicker/</link>
-      <pubDate>Fri, 28 Apr 2017 05:35:06 +0900</pubDate>
+      <title>[tree of savior addon for developpers] アドオン作成～設置方法まとめ</title>
+      <link>http://www.weizlogy.gq/tos/addon-dev/create-addon/</link>
+      <pubDate>Sun, 25 Sep 2016 07:41:00 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon/warehousepicker/</guid>
-      <description>download. warehousepicker.ipf
-install. README.md
-introduction.  settings. Nexon\TreeofSaviorJP\addons\warehousepicker フォルダーを作成します。
-各所持キャラで個人倉庫を開閉する（正確には閉じる瞬間）と、先ほど作成したフォルダーに個人倉庫のアイテム情報を保存します。
-descriptions. v1.0.0 新規作成。
-アドオンがロードされた後、いずれかのキャラで個人倉庫を開くと、倉庫左下に[whpk]ボタンが出現します。 ボタンを押すと、事前に保存された所持キャラの個人倉庫のアイテム情報を表示するダイアログを開きます。
-ダイアログには、事前に個人倉庫のアイテム情報が作成された所持キャラ名のドロップダウンリストが表示されます。 ドロップダウンリストで選択した所持キャラ名の個人倉庫のアイテム情報（アイテムアイコン、名称、個数）をダイアログ内に表示します。
-最低一度は各所持キャラで個人倉庫を開閉する必要がありますが、それ以降はいずれかのキャラでログインすると全員の個人倉庫を見ることができます。
-今のところチームの区別なくキャラ名のみ表示しますので、複数チームを所持している場合に使い勝手に難があるかもしれません。 使いにくいようでしたら改善します。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] チャット入力欄表示中に所持中のメガホン数を表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/megaphonecount/</link>
-      <pubDate>Fri, 28 Apr 2017 05:34:13 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/megaphonecount/</guid>
-      <description>download. megaphonecount.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.0.0 新規作成。
-アドオンがロードされると、チャット入力欄表示中に所持中のメガホン数が表示されます。 それだけです。。。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] マーケットデフォルト出品日数変更アドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/marketselltimechanger/</link>
-      <pubDate>Fri, 28 Apr 2017 05:34:04 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/marketselltimechanger/</guid>
-      <description>download. marketselltimechanger.ipf
-install. README.md
-introduction. settings. Nexon\TreeofSaviorJP\addons\marketselltimechanger\settings.txt を作成します。
-ファイルを開いて一行目に、（デフォルト1日が良ければ）1と入力します。
-設定は、[デフォルト出品日数]のみ。
-現状、1,3,5,7 が使用でき、それ以外が入力されていた場合は、システムのデフォルト値が採用されます。
-descriptions. v1.0.0 新規作成。
-アドオンがロードされると、設定ファイルに記載された値でマーケットのデフォルト出品日数を変更します。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] コンパニオンのリングコマンドを拡張するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/customcompanion/</link>
-      <pubDate>Fri, 28 Apr 2017 05:33:15 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/customcompanion/</guid>
-      <description>download. customcompanion.ipf
-install. README.md
-introduction.  settings. descriptions. v1.0.0 新規作成。
-アドオンがロードされると、コンパニオンに近づくだけでリングコマンドが出現するようになります。 今まで通り、コンパニオンから離れるとリングコマンドが消えます。
-リングコマンドに[自動戦闘ON/OFFトグルアイコン]、[コンパニオン休眠化]のスロットを追加します。 ホットキーの割り当てはありません。
-騎乗スキルのないキャラ、コンパニオンの場合は、リングコマンドの[騎乗]、[降りる]のスロットを削除します。
-自動戦闘ON/OFF クリックするたびに自動戦闘のON/OFFを切り替えます。 切り替え結果はチャット上にSYSTEMメッセージで表示します。
-コンパニオン休眠化 クリックするとコンパニオンを休眠状態にします。 コンパニオンの休眠解除は、今まで通り、コンパニオン情報から行います。</description>
-    </item>
-    
-    <item>
-      <title>[tree of savior addon] 特性習得ウィンドウに各特性の最大レベルを表示するアドオン</title>
-      <link>http://www.weizlogy.gq/tos/addon/customabilityshop/</link>
-      <pubDate>Fri, 28 Apr 2017 05:33:06 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon/customabilityshop/</guid>
-      <description>download. 2/22パッチで最大値が表示されるようになりましたので非公開にします。
-install. README.md
-introduction. 
-settings. descriptions. v1.0.0 新規作成。
-アドオンがロードされると、特性習得ウィンドウに各特性の最大レベルが表示されます。 無くてもいい気がするけど。。。</description>
-    </item>
-    
-    <item>
-      <title>[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</title>
-      <link>http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/</link>
-      <pubDate>Mon, 27 Mar 2017 03:37:14 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/</guid>
-      <description>strutsのActionFormには、「map-backed properties」「list-backed properties」という機能があります。
-ActionFormにMapやListのフィールドと適切なアクセサーメソッドを用意することで、JSP-Servlet間のデータ送受信が動的に行われる仕組みです。
-Formのフィールドをいくつも用意しなくていいところが、とても便利です。
-基本的な使い方は、下記公式リンクが分かりやすくなっています。
-http://struts.apache.org/1.x/userGuide/building_controller.html#map_action_form_classes
-今回の趣旨は、「map-backed properties」「list-backed properties」を併用することです。 検索結果等JSPで動的に一覧表示した複数のForm値を、簡単にActionで受け取ることができます。
-struts1.3.10
-java 1.6.0_18
-以下のようなFormクラスを用意します。
-import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.beanutils.LazyDynaMap; public HogeForm extends ActionForm { private LazyDynaList values = new LazyDynaList(LazyDynaMap.class); public String getValue(int index) { return values.get(index); } public void setValue(int index, Object value) { return values.set(index, value); } public List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; getValues() { // LazyDynaList, LazyDynaMapのままでは扱いにくいため、より一般的な型（List, Map）に変換します。 List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; convertValues = new ArrayList&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt;(); for (Object item : values) { convertValues.</description>
-    </item>
-    
-    <item>
-      <title>[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</title>
-      <link>http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:59 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/</guid>
-      <description>Windows APIのIcmp6SendEcho2()をWindows XPで呼び出すときは以下の点に注意が必要です。
-Syntax from msdn.
-DWORD Icmp6SendEcho2( __in HANDLE IcmpHandle, __in_opt HANDLE Event, __in_opt PIO_APC_ROUTINE ApcRoutine, __in_opt PVOID ApcContext, __in struct sockaddr_in6 *SourceAddress, __in struct sockaddr_in6 *DestinationAddress, __in LPVOID RequestData, __in WORD RequestSize, __in_opt PIP_OPTION_INFORMATION RequestOptions, __out LPVOID ReplyBuffer, __in DWORD ReplySize, __in DWORD Timeout );   第9引数 PIP_OPTION_INFORMATION は必須です。Vista 以降のOSで動かす場合は任意です。（NULLでもよい） 第10引数 ReplyBuffer は80byte以上の領域がないとWin32エラーコード122（システム コールに渡されるデータ領域が小さすぎます）が発生します。  IcmpSendEcho()とは設定値が微妙に異なりますね。</description>
-    </item>
-    
-    <item>
-      <title>[system development] cannot find source for binding with reference について</title>
-      <link>http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:56 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/</guid>
-      <description>掲題の件について、検索キーワードにあがりましたので、簡単にまとめました。
-正式には、以下のErrorが発生しました。
-System.Windows.Data Error: 4 : Cannot find source for binding with reference &amp;lsquo;RelativeSource FindAncestor, AncestorType=&amp;lsquo;System.Windows.Controls.ItemsControl&amp;rsquo;, AncestorLevel=&amp;lsquo;1&amp;rdquo;. BindingExpression:Path=HorizontalContentAlignment; DataItem=null; target element is &amp;lsquo;ListBoxItem&amp;rsquo; (Name=&amp;ldquo;); target property is &amp;lsquo;HorizontalContentAlignment&amp;rsquo; (type &amp;lsquo;HorizontalAlignment&amp;rsquo;)
-System.Windows.Data Error: 4 : Cannot find source for binding with reference &amp;lsquo;RelativeSource FindAncestor, AncestorType=&amp;lsquo;System.Windows.Controls.ItemsControl&amp;rsquo;, AncestorLevel=&amp;lsquo;1&amp;rdquo;. BindingExpression:Path=VerticalContentAlignment; DataItem=null; target element is &amp;lsquo;ListBoxItem&amp;rsquo; (Name=&amp;ldquo;); target property is &amp;lsquo;VerticalContentAlignment&amp;rsquo; (type &amp;lsquo;VerticalAlignment&amp;rsquo;)
-xamlのStyle定義のSetterプロパティでAlignmentを定義していると出るみたいです。 定義を外すとErrorは出ません。 みたいです。というのは、何故なのか理由が分からないためです。
-以下、実際のコードの抜粋です。
-&amp;lt;Style TargetType=&amp;quot;{x:Type ListBoxItem}&amp;quot;&amp;gt; &amp;lt;Setter Property=&amp;quot;HorizontalContentAlignment&amp;quot; Value=&amp;quot;{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&amp;quot;/&amp;gt; &amp;lt;Setter Property=&amp;quot;VerticalContentAlignment&amp;quot; Value=&amp;quot;{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&amp;quot;/&amp;gt;  </description>
-    </item>
-    
-    <item>
-      <title>[system development] TSLで定義される全CipherSuiteの一覧</title>
-      <link>http://www.weizlogy.gq/system/dev/cipher-suites/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:52 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/cipher-suites/</guid>
-      <description>Cipher Suiteの説明はさて置き、一覧を見るために以下のコマンドを使用する例が多々見受けられます。
-$ openssl ciphers -v  これはopensslが対応するCipherSuiteの一覧であり、実際に存在するCipherSuiteの一覧とは異なります。
-実際に存在するCipherSuiteの一覧は、RFC5426によるとIANA管理とのことで、下記URLがマスターです。
-http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4</description>
-    </item>
-    
-    <item>
-      <title>[system development] Codeanywhereでbazelを使う</title>
-      <link>http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:48 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/</guid>
-      <description>CodeanywhereはクラウドIDEで、sudoが許可されたターミナルを使うことができます。 Google+アカウント連携ですぐに使えます。
-bazelは、mavenやGradleのようなビルドツールで、様々な言語のビルドが可能です。
-Codeanyhwereにbazelをインストール bazelはjdk1.8以降（jdk1.7はサポートされているが非推奨）が必須ですが、Codeanywhereはjdk1.7の環境です。 今回はjdk1.7のままでインストールします。
-cabox@box-codeanywhere:~/workspace$ java -version java version &amp;quot;1.7.0_95&amp;quot; OpenJDK Runtime Environment (IcedTea 2.6.4) (7u95-2.6.4-0ubuntu0.14.04.1) OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode)  Installig Bazelを参考に、以下のコマンドを打ちます。
-$ echo &amp;quot;deb [arch=amd64] http://storage.googleapis.com/bazel-apt testing jdk1.7&amp;quot; | sudo tee /etc/apt/sources.list.d/bazel.list $ curl https://storage.googleapis.com/bazel-apt/doc/apt-key.pub.gpg | sudo apt-key add - sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install bazel  bazelでjavaをビルド 最低限の必要なファイルを作成します。
-cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cabox@box-codeanywhere:~/workspace$ touch hello/src/main/java/gq/weizlogy/Main.java cabox@box-codeanywhere:~/workspace$ touch hello/WORKSPACE cabox@box-codeanywhere:~/workspace$ touch hello/BUILD  hello/src/main/java/gq/weizlogy/Main.</description>
-    </item>
-    
-    <item>
-      <title>[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</title>
-      <link>http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:44 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/</guid>
-      <description>img タグにサーブレットの URL を埋め込んで、画面描画時に呼び出します。 呼び出した先では画像をバイナリ形式で読み込んで画面に出力します。
-データベースに Blob 型で保存した画像の読み込みも、ロジックは同じです。
-JSPでは&amp;hellip;
-&amp;lt;img src=&amp;quot;xxx.do&amp;quot; /&amp;gt;  サーバーサイドでは&amp;hellip;
-/** xxx.do から呼び出される Servlet */ protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { // ファイルパスはどこからか入手する String file = &amp;quot;\\server\image\sample.jpg&amp;quot;; if (file == null || &amp;quot;&amp;quot;.equals(file)) { return; } try { // 画像を読み込む byte[] image = Files.readAllBytes(Paths.get(file)); // レスポンスヘッダーを設定する response.setContentType(&amp;quot;image/&amp;quot; + file.substring(file.lastIndexOf(&amp;quot;.&amp;quot;))); response.setContentLength(image.length); // servlet specification 3.1 によると OutputStream は // Servlet 終了時にクローズされる // 従って、ここではクローズしない // むしろ、ここでクローズすると二重解放になる可能性があるのでは？ response.</description>
-    </item>
-    
-    <item>
-      <title>[system development] JQueryUIのAutoCompleteを特定操作で強制選択する</title>
-      <link>http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:40 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/</guid>
-      <description>本来は blur 時に強制選択したかったのですが、候補確定時に AutoComplete の対象にフォーカスが当たる挙動を回避できなかったため、エンターキーで代用です。
-var obj = $(&amp;#39;#autocomplete&amp;#39;); obj.on(&amp;#39;keydown&amp;#39;, function(e) { // エンターキー以外を無視する if (e.which !== 13) { return; } // search メソッドの結果で候補が存在する場合、 // autocompleteopen イベントが発行される // 候補が 0 件の場合は動作しない obj.on(&amp;#39;autocompleteopen&amp;#39;, function() { // 下矢印キーダウンイベントを作成し、候補の先頭を選択状態にする var keyDownEvent = $.Event(&amp;#39;keydown&amp;#39;); keyDownEvent.keyCode = $.ui.keyCode.DOWN; obj.trigger(keyDownEvent); // エンターキーダウンを作成し、選択状態の候補で確定する // →候補確定時のイベントが発火する keyDownEvent.keyCode = $.ui.keyCode.ENTER; obj.trigger(keyDownEvent); // 通常動作時は不要なイベントなので終了時に破棄しておく obj.off(&amp;#39;autocompleteopen&amp;#39;); }); // 現在の入力値で検索する obj.autocomplete(&amp;#39;search&amp;#39;); });  </description>
-    </item>
-    
-    <item>
-      <title>[system development] Monodevelopで埋め込みリソースを使う</title>
-      <link>http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:36 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/</guid>
-      <description>ソリューションエクスプローラーで対象のファイルを右クリックします。
-「ビルドアクション &amp;gt; EmbeddedResource」を選択します。以上です。
-プログラムからのアクセスで必要なリソースIDは、デフォルトネームスペース＋ファイル名となります。 リソースIDはプロパティビューで変更可能です。
-使い方は以下の通りです。
-using (var stream = new System.IO.StreamReader(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream(&amp;quot;[ResourceID]&amp;quot;), true)) { ... }  </description>
-    </item>
-    
-    <item>
-      <title>[system development] ubuntu16.04でMonoDevelopを使った開発環境</title>
-      <link>http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:33 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/</guid>
-      <description>LinuxでC#を使うための環境(mono)とIDE(MonoDevelop)をインストールします。
-まずはmonoをインストールします。
-$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF $ echo &amp;quot;deb http://download.mono-project.com/repo/debian wheezy main&amp;quot; | sudo tee /etc/apt/sources.list.d/mono-xamarin.list $ sudo apt-get update $ sudo apt-get install mono-complete  続いてMonoDevelopをインストールします。
-$ sudo apt-get install monodevelop  monodevelopコマンドでIDEを起動します。</description>
+      <guid>http://www.weizlogy.gq/tos/addon-dev/create-addon/</guid>
+      <description>必要なもの  IPF Suite IPFUnpacker  作成手順 1. アドオンの名前を決める &amp;ldquo;xxxaddonxxx&amp;rdquo;としてみます。全て小文字、記号なしが良いです。
+2. アドオンのGUIを作る &amp;ldquo;xxxaddonxxx.xml&amp;rdquo;ファイルを作成します。アドオン名とuiframe@nameの値が一致するようにします。
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34; ?&amp;gt; &amp;lt;uiframe name=&amp;#34;xxxaddonxxx&amp;#34; x=&amp;#34;10&amp;#34; y=&amp;#34;10&amp;#34; width=&amp;#34;100&amp;#34; height=&amp;#34;100&amp;#34;&amp;gt; &amp;lt;frame title=&amp;#34;XXXaddonXXX&amp;#34; snapclient=&amp;#34;true&amp;#34; snapframe=&amp;#34;true&amp;#34;/&amp;gt; &amp;lt;option closebutton=&amp;#34;false&amp;#34; hideable=&amp;#34;false&amp;#34;/&amp;gt; &amp;lt;input hittest=&amp;#34;true&amp;#34;/&amp;gt; &amp;lt;layer layerlevel=&amp;#34;31&amp;#34; /&amp;gt; &amp;lt;draw blend=&amp;#34;100&amp;#34; drawtitlebar=&amp;#34;false&amp;#34; drawframe=&amp;#34;false&amp;#34;/&amp;gt; &amp;lt;controls&amp;gt; &amp;lt;richtext name=&amp;#34;dummy&amp;#34; /&amp;gt; &amp;lt;/controls&amp;gt; &amp;lt;/uiframe&amp;gt; 3. アドオンのスクリプトを作る &amp;ldquo;xxxaddonxxx.lua&amp;rdquo;ファイルを作成します。アドオン名と関数名の&amp;rdquo;_ON_INIT&amp;rdquo;前までが、大文字で一致するようにします。
+function XXXADDONXXX_ON_INIT(addon, frame) -- 任意の初期化処理 end 4. アドオンをパッケージングする IPFSuite.exeを起動、上部メニューの[New]、[New Container]の順序でボタンを押します。
+[New Container]ボタンを押した後、テキストボックスが出現するので、&amp;rdquo;addon_d.ipf&amp;rdquo;を入力します。
+上部メニューの[Add Folder]ボタンを押します。フォルダ名はアドオン名と同じ&amp;rdquo;xxxaddonxxx&amp;rdquo;とします。
+上部メニューの[Add]ボタンを押します。ファイル選択ダイアログが出現するので、先に作成したxmlとluaファイルを選択します。
+上部メニューの[Save]ボタンを押します。保存するファイル名は&amp;rdquo;xxxaddonxxx.ipf&amp;rdquo;とします。
+5. アドオンを暗号化する IPF Unpackerで暗号化します。&amp;rdquo;Done!&amp;ldquo;と表示されれば成功です。
+&amp;gt; ipf_unpack.</description>
     </item>
     
     <item>
       <title>[system development] Codeaywhere&#43;Java&#43;bazelでOpenWeatherMapのAPIを使用し現在の気象情報を取得する</title>
       <link>http://www.weizlogy.gq/system/dev/openweathermap-with-java-bazel/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:27 +0900</pubDate>
+      <pubDate>Sun, 21 Aug 2016 11:20:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/system/dev/openweathermap-with-java-bazel/</guid>
       <description>OpenWeatherMapの使い方 OpenWeatherMapは各種気象情報提供サービスです。
@@ -768,24 +797,40 @@ $ sudo apt-get install monodevelop  monodevelopコマンドでIDEを起動しま
 今回は現在のみなので、Current weather data APIを使用します。 RESTサービスになっており、以下のURLで情報がJSON形式で取得できます。（{city name}は英語で）
 http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;amp;APPID={Your API Key}  JSON形式ではJavaで扱いにくいので、&amp;rdquo;mode=xml&amp;rdquo;パラメータでXML形式にします。
 http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;amp;mode=xml&amp;amp;APPID={Your API Key}  気象情報は以下のように返却されます。（例は{city name}=Tokyo）
-&amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt; &amp;lt;current&amp;gt; &amp;lt;city id=&amp;quot;1850147&amp;quot; name=&amp;quot;Tokyo&amp;quot;&amp;gt; &amp;lt;coord lat=&amp;quot;35.69&amp;quot; lon=&amp;quot;139.69&amp;quot;/&amp;gt; &amp;lt;country&amp;gt;JP&amp;lt;/country&amp;gt; &amp;lt;sun set=&amp;quot;2016-08-15T09:30:23&amp;quot; rise=&amp;quot;2016-08-14T20:00:21&amp;quot;/&amp;gt; &amp;lt;/city&amp;gt; &amp;lt;temperature unit=&amp;quot;kelvin&amp;quot; max=&amp;quot;304.82&amp;quot; min=&amp;quot;298.71&amp;quot; value=&amp;quot;301.68&amp;quot;/&amp;gt; &amp;lt;humidity unit=&amp;quot;%&amp;quot; value=&amp;quot;85&amp;quot;/&amp;gt; &amp;lt;pressure unit=&amp;quot;hPa&amp;quot; value=&amp;quot;1001&amp;quot;/&amp;gt; &amp;lt;wind&amp;gt; &amp;lt;speed name=&amp;quot;Gentle Breeze&amp;quot; value=&amp;quot;3.41&amp;quot;/&amp;gt; &amp;lt;gusts/&amp;gt; &amp;lt;direction name=&amp;quot;South&amp;quot; value=&amp;quot;179.504&amp;quot; code=&amp;quot;S&amp;quot;/&amp;gt; &amp;lt;/wind&amp;gt; &amp;lt;clouds name=&amp;quot;clear sky&amp;quot; value=&amp;quot;8&amp;quot;/&amp;gt; &amp;lt;visibility/&amp;gt; &amp;lt;precipitation unit=&amp;quot;3h&amp;quot; value=&amp;quot;0.245&amp;quot; mode=&amp;quot;rain&amp;quot;/&amp;gt; &amp;lt;weather value=&amp;quot;light rain&amp;quot; icon=&amp;quot;10d&amp;quot; number=&amp;quot;500&amp;quot;/&amp;gt; &amp;lt;lastupdate value=&amp;quot;2016-08-15T07:41:15&amp;quot;/&amp;gt; &amp;lt;/current&amp;gt;  JavaでOpenWeatherMapのAPIを呼び出す RESTクライアントは色々ありますが、お手軽なApache Commonsのhttpclientとfluent-hcにします。</description>
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34;?&amp;gt; &amp;lt;current&amp;gt; &amp;lt;city id=&amp;#34;1850147&amp;#34; name=&amp;#34;Tokyo&amp;#34;&amp;gt; &amp;lt;coord lat=&amp;#34;35.69&amp;#34; lon=&amp;#34;139.69&amp;#34;/&amp;gt; &amp;lt;country&amp;gt;JP&amp;lt;/country&amp;gt; &amp;lt;sun set=&amp;#34;2016-08-15T09:30:23&amp;#34; rise=&amp;#34;2016-08-14T20:00:21&amp;#34;/&amp;gt; &amp;lt;/city&amp;gt; &amp;lt;temperature unit=&amp;#34;kelvin&amp;#34; max=&amp;#34;304.82&amp;#34; min=&amp;#34;298.71&amp;#34; value=&amp;#34;301.68&amp;#34;/&amp;gt; &amp;lt;humidity unit=&amp;#34;%&amp;#34; value=&amp;#34;85&amp;#34;/&amp;gt; &amp;lt;pressure unit=&amp;#34;hPa&amp;#34; value=&amp;#34;1001&amp;#34;/&amp;gt; &amp;lt;wind&amp;gt; &amp;lt;speed name=&amp;#34;Gentle Breeze&amp;#34; value=&amp;#34;3.41&amp;#34;/&amp;gt; &amp;lt;gusts/&amp;gt; &amp;lt;direction name=&amp;#34;South&amp;#34; value=&amp;#34;179.504&amp;#34; code=&amp;#34;S&amp;#34;/&amp;gt; &amp;lt;/wind&amp;gt; &amp;lt;clouds name=&amp;#34;clear sky&amp;#34; value=&amp;#34;8&amp;#34;/&amp;gt; &amp;lt;visibility/&amp;gt; &amp;lt;precipitation unit=&amp;#34;3h&amp;#34; value=&amp;#34;0.245&amp;#34; mode=&amp;#34;rain&amp;#34;/&amp;gt; &amp;lt;weather value=&amp;#34;light rain&amp;#34; icon=&amp;#34;10d&amp;#34; number=&amp;#34;500&amp;#34;/&amp;gt; &amp;lt;lastupdate value=&amp;#34;2016-08-15T07:41:15&amp;#34;/&amp;gt; &amp;lt;/current&amp;gt; JavaでOpenWeatherMapのAPIを呼び出す RESTクライアントは色々ありますが、お手軽なApache Commonsのhttpclientとfluent-hcにします。</description>
     </item>
     
     <item>
-      <title>[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</title>
-      <link>http://www.weizlogy.gq/system/dev/spring-aop-test/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:24 +0900</pubDate>
+      <title>[system development] Codeanywhereでbazelを使う</title>
+      <link>http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/</link>
+      <pubDate>Sat, 13 Aug 2016 17:06:00 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/system/dev/spring-aop-test/</guid>
-      <description>Interceptor クラスの内容は以下の通りです。
-import org.aspectj.lang.ProceedingJoinPoint; import org.aspectj.lang.annotation.Around; import org.aspectj.lang.annotation.Aspect; @Aspect public class SomeInterceptor { @Around(&amp;quot;execution(* execute(..))&amp;quot;) public Object around(ProceedingJoinPoint pjp) { System.out.println(String.format(&amp;quot;%s.%s start.&amp;quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); Object value = null; try { value = pjp.proceed(); } catch (Throwable e) { e.printStackTrace(); } System.out.println(String.format(&amp;quot;%s.%s ended.&amp;quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); return value; } }  Test クラスの内容は以下の通りです。
-import static org.junit.Assert.*; import java.util.ArrayList; import org.junit.Test; import org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint; import org.springframework.aop.framework.ReflectiveMethodInvocation; import org.springframework.aop.interceptor.SimpleTraceInterceptor; public class SomeInterceptorTest { /** AOP の対象となるメソッドを持つクラス */ private static class AOPTarget { public String execute() { System.</description>
+      <guid>http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/</guid>
+      <description>CodeanywhereはクラウドIDEで、sudoが許可されたターミナルを使うことができます。 Google+アカウント連携ですぐに使えます。
+bazelは、mavenやGradleのようなビルドツールで、様々な言語のビルドが可能です。
+Codeanyhwereにbazelをインストール bazelはjdk1.8以降（jdk1.7はサポートされているが非推奨）が必須ですが、Codeanywhereはjdk1.7の環境です。 今回はjdk1.7のままでインストールします。
+cabox@box-codeanywhere:~/workspace$ java -version java version &amp;#34;1.7.0_95&amp;#34; OpenJDK Runtime Environment (IcedTea 2.6.4) (7u95-2.6.4-0ubuntu0.14.04.1) OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode) Installig Bazelを参考に、以下のコマンドを打ちます。
+$ echo &amp;#34;deb [arch=amd64] http://storage.googleapis.com/bazel-apt testing jdk1.7&amp;#34; | sudo tee /etc/apt/sources.list.d/bazel.list $ curl https://storage.googleapis.com/bazel-apt/doc/apt-key.pub.gpg | sudo apt-key add - sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install bazel bazelでjavaをビルド 最低限の必要なファイルを作成します。
+cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cabox@box-codeanywhere:~/workspace$ touch hello/src/main/java/gq/weizlogy/Main.java cabox@box-codeanywhere:~/workspace$ touch hello/WORKSPACE cabox@box-codeanywhere:~/workspace$ touch hello/BUILD hello/src/main/java/gq/weizlogy/Main.</description>
+    </item>
+    
+    <item>
+      <title>[system development] Monodevelopで埋め込みリソースを使う</title>
+      <link>http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/</link>
+      <pubDate>Sun, 31 Jul 2016 16:11:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/</guid>
+      <description>ソリューションエクスプローラーで対象のファイルを右クリックします。
+「ビルドアクション &amp;gt; EmbeddedResource」を選択します。以上です。
+プログラムからのアクセスで必要なリソースIDは、デフォルトネームスペース＋ファイル名となります。 リソースIDはプロパティビューで変更可能です。
+使い方は以下の通りです。
+using (var stream = new System.IO.StreamReader(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream(&amp;#34;[ResourceID]&amp;#34;), true)) { ... }</description>
     </item>
     
     <item>
       <title>[system development] ステップカウンターのあるべき姿を考察する</title>
       <link>http://www.weizlogy.gq/system/dev/step-counter-is/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:20 +0900</pubDate>
+      <pubDate>Fri, 29 Jul 2016 00:14:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/system/dev/step-counter-is/</guid>
       <description>ステップカウンターとは？ LOCを計測するツールです。LOCはLines Of Codeの略で、プログラムの規模として扱います。
@@ -805,90 +850,37 @@ C言語の#includeは、必須であることを除き、C#のusingディレク�
     </item>
     
     <item>
-      <title>[system development] strutsのFormFileからローカルファイルの絶対パスを取得</title>
-      <link>http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:11 +0900</pubDate>
+      <title>[site management] bloggerで最終更新日時を表示する</title>
+      <link>http://www.weizlogy.gq/site/blogger-last-modified/</link>
+      <pubDate>Thu, 16 Jun 2016 22:00:00 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/</guid>
-      <description>strutsのFormFileからローカルファイルの絶対パスを取得したいのです。 （取得しても無意味ですが）
-eclipseのデバッガで参照すると、確かにprivate変数に絶対パスを持っていますが、アクセスするためのメソッドがありません。
-リフレクションでアクセス可能です。
-DiskFileItemを使用するために、「commons-fileupload.jar」が必要です。
-struts1.3.10
-java 1.6.0_18
-// formFileの実体は「org.apache.struts.upload.CommonsMultipartRequestHandler.CommonsFormFile」 Field f = formFile.getClass().getDeclaredField(&amp;quot;fileItem&amp;quot;); f.setAccessible(true); // fileItemは「org.apache.commons.fileupload.FileItem」を実装した「org.apache.commons.fileupload.disk.DiskFileItem」 DiskFileItem item = (DiskFileItem) f.get(formFile); System.out.println(item.getName());  </description>
+      <guid>http://www.weizlogy.gq/site/blogger-last-modified/</guid>
+      <description>bloggerのテンプレートタグでは更新日時を取得できないので、別の方法を参考に、時刻追加、個別記事表示、一覧記事表示どちらも対応するようにしました。
+ポイントは最終更新日時を挿入する要素のID属性を各投稿記事固有のIDにすることです。
+ここが固定だと、最も早く出現する要素1つにのみ更新日時が表示されてしまいます。
+まず、最終更新日時を表示する領域を決めます。
+[テンプレート] &amp;gt; [HTMLの編集] &amp;gt; [書式テンプレート] &amp;gt; [ウィジェットの移動] &amp;gt; [Blog1&amp;lt;ブログ投稿領域&amp;gt;]に移動します。
+投稿領域近辺が良いと思いますので、&amp;lt;b:includable id=&amp;lsquo;post&amp;rsquo; var=&amp;lsquo;post&amp;rsquo;&amp;gt;&amp;hellip;&amp;lt;/b:includable&amp;gt;を展開し、そこから好きな位置に決めます。 今回は、投稿日時の近辺にするため、&amp;lt;span class=&amp;lsquo;post-timestamp&amp;rsquo;&amp;gt;と次の要素の間に以下の投稿に依存するコードを埋め込みます。
+&amp;lt;!-- 最終更新日時 --&amp;gt; &amp;lt;span expr:id=&amp;#39;data:post.id&amp;#39; class=&amp;#39;last-modified updated&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;script type=&amp;#39;text/javascript&amp;#39;&amp;gt; var id = &amp;#34;&amp;lt;data:post.id/&amp;gt;&amp;#34;; &amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#39;text/javascript&amp;#39;&amp;gt; var sHome = &amp;#34;&amp;lt;data:blog.homepageUrl/&amp;gt;&amp;#34;; var sURL = &amp;#34;&amp;lt;data:post.url/&amp;gt;&amp;#34;; sURL = sURL.replace(sHome, &amp;#34;&amp;#34;) sURL = &amp;#34;/&amp;#34; + sURL; document.write(unescape(&amp;#34;%3Cscript&amp;#34;)+&amp;#34; src=&amp;#39;&amp;#34;+sHome+&amp;#34;/atom.xml?redirect=false&amp;amp;amp;path=&amp;#34;+sURL+&amp;#34;&amp;amp;amp;max-results=1&amp;amp;amp;alt=json-in-script&amp;amp;amp;callback=show_last_modified&amp;#39; type=&amp;#39;text/javascript&amp;#39;&amp;#34;+unescape(&amp;#34;%3E%3C/script%3E&amp;#34;)); &amp;lt;/script&amp;gt; 各投稿のRSSからコールバックされる関数show_last_modifiedは投稿に依存せず不変のため、テンプレートの上部に(投稿の前に宣言できればどこでも良い)一度だけ宣言します。
+&amp;lt;script type=&amp;#34;text/javascript&amp;#34;&amp;gt;// &amp;lt;![CDATA[ function show_last_modified(root) { var published = &amp;#39;&amp;#39;; var updated = &amp;#39;&amp;#39;; for (var i = 0; i &amp;lt; root.</description>
     </item>
     
     <item>
-      <title>[system development] BeanUtils.describe()で配列を扱いたい</title>
-      <link>http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:08 +0900</pubDate>
+      <title>[site management] code-prettifyがgithubに移行し進化していたので対応した</title>
+      <link>http://www.weizlogy.gq/site/code-prettify-on-github/</link>
+      <pubDate>Wed, 15 Jun 2016 23:16:00 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/</guid>
-      <description>題名の通り、BeanUtils.describe()で配列を扱いたいのです。主にStringの配列。
-BeanUtils.describe()を使うと、クラスのフィールドをMapに変換してくれますが「文字列として表現可能な形式のもの」に限ります。
-Stringの配列については配列の先頭を出力し、残りは切り捨てられます。
-※{&amp;ldquo;a&amp;rdquo;, &amp;ldquo;b&amp;rdquo;, &amp;ldquo;c&amp;rdquo;}という配列がある場合、&amp;rdquo;a&amp;rdquo;以外の値が切り捨てられます。
-これは、BeanUtilsBeanの仕様となっております。
-ただし、「commons beanUtils 1.8.0」以降は以下の回避策があります。
-BeanUtilsBean.setInstance(new BeanUtilsBean2()); ArrayConverter converter = new ArrayConverter(String[].class, new StringConverter(), 0); // OnlyFirstToStringがtrueの場合、配列の先頭だけ使用します converter.setOnlyFirstToString(false); ConvertUtils.register(converter, String[].class);  上記処理はインスタンスを共有するため、他に影響がある場合は後処理も必要です。
-ConvertUtils.deregister(String[].class); BeanUtilsBean.setInstance(new BeanUtilsBean());  Converterインターフェースを実装したクラスを作成し、ConvertUtilsにregistすると、独自の変換も可能です。</description>
-    </item>
-    
-    <item>
-      <title>[system development] XAMLでブロック矢印を描画する</title>
-      <link>http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:04 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/</guid>
-      <description>ブロック矢印完成図 
-コード  &amp;lt;Path Stroke=&amp;quot;Black&amp;quot; StrokeThickness=&amp;quot;2&amp;quot; Fill=&amp;quot;Gray&amp;quot; Data=&amp;quot;M 100 100 H 200 V 90 L 230 115 L 200 140 V 130 H 100 V 100 Z&amp;quot; Margin=&amp;quot;-30,-30,0,0&amp;quot; /&amp;gt;  解説 Pathを使って目標の位置付近に描画、Marginで微調整します。
-https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspxを読めば分かりますが簡単です。 一筆書きの要領で、矢印の左上から時計回りに線を引いています。
-「M 100 100」は「X=100,Y=100に移動」します。
-「H 200」は「現在位置からX=200まで描線」します。
-「V 90」は「現在位置からY=90まで描線」します。
-「L 230 115」は「現在位置からX=230,Y=115まで描線」します。
-以下繰り返しの上、 「Z」は「描線の範囲を閉鎖」します。
-座標の算出には、描画開始位置、シャフトの幅と高さ、アローヘッドの出代と角度を決めます。 今回は、描画開始位置=100,100、シャフトの幅=100、高さ=30、アローヘッドの出代=10、角度=60にしました。
-
-アローヘッドの頂点座標の算出は、頂点がシャフトの中央にあることと、三平方の定理を使えばきっちり出せます。 つまり、シャフトの幅は偶数が良いです。</description>
-    </item>
-    
-    <item>
-      <title>[system] Schritt - 論理ステップカウンター</title>
-      <link>http://www.weizlogy.gq/system/item/schritt/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:00 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/item/schritt/</guid>
-      <description>overviews. Schrittは論理ステップカウンターです。
-従来のステップカウンターは物理行でカウントする方式が主流であるため、書き方により規模に差異が現れます。
-Schrittは論理的に命令をカウントすることで、書き方による規模の差異を抑制することを目的に作られました。
-SchrittはLinux(ubuntu)のMonoを使用し、C#で実装されているため、.Net Frameworkの恩恵を受けられる環境であれば動作します。
-download. Schritt
-status. | 言語 | 対応バージョン | 状況説明 | |:&amp;mdash;||:&amp;mdash;||:&amp;mdash;| | C | 0.0.3-α | | | C++ | | 順次対応予定 | | C# | 0.0.1-α | | | Java | 0.0.2-α | | | VB | | 順次対応予定 | | JavaScript | | 順次対応予定 | | HTML | | 順次対応予定 | | CSS | | 順次対応予定 | | Ruby | | 順次対応予定 |</description>
-    </item>
-    
-    <item>
-      <title>[system] Tapete - Windows spotlight画像抽出</title>
-      <link>http://www.weizlogy.gq/system/item/tapete/</link>
-      <pubDate>Sun, 26 Mar 2017 15:41:54 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/item/tapete/</guid>
-      <description>overviews. Windows10のロック画面で使われるspotlight画像を厳選し、&amp;lt;ユーザーディレクトリ&amp;gt;\picture\Tapete フォルダにコピーします。
-コピーは随時発生し、日次で最新状態にリセットします。
-壁紙のスライドショーで使用することを想定し、画像の厳選条件は、4KB以上かつ、 プライマリースクリーンの解像度以上としています。
-download. Tapete.zip
-install. ダウンロードしたzipを解凍し、任意の場所に配置します。
-descriptions. 画面のフォルダパスをクリックすると、該当フォルダをエクスプローラーで開きます。
-最小化すると通知アイコン化します。アイコンをクリックすると復元します。
-cautions. 自動起動はしないので、必要に応じてスタートアップに登録してください。
-コピー先は固定なので、ソフトリンクやジャンクションで任意の場所にコピーさせることもできます。</description>
+      <guid>http://www.weizlogy.gq/site/code-prettify-on-github/</guid>
+      <description>code-prettifyはGoogle謹製シンタックスハイライターです。
+以前は以下の構成が必要でした。
+&amp;lt;!-- prettify --&amp;gt; &amp;lt;style type=&amp;#39;text/css&amp;#39;&amp;gt; @import &amp;#34;http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css&amp;#34;; &amp;lt;/style&amp;gt; &amp;lt;script src=&amp;#39;http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js&amp;#39; type=&amp;#39;text/javascript&amp;#39;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#39;text/javascript&amp;#39;&amp;gt; function prettify() { prettyPrint(); } if (window.addEventListener) { window.addEventListener(&amp;#34;load&amp;#34;, prettify, false); } else if (window.attachEvent) { window.attachEvent(&amp;#34;onload&amp;#34;, prettify); } else { window.onload = prettify; }&amp;lt;/script&amp;gt; &amp;lt;!-- prettify --&amp;gt; 進化後はたった一行で済みます。すごいですね。
+&amp;lt;script src=&amp;#34;https://cdn.</description>
     </item>
     
     <item>
       <title>[site management] bing Web マスターのSEOレポート対策</title>
       <link>http://www.weizlogy.gq/site/seo-bing-webmaster/</link>
-      <pubDate>Sun, 26 Mar 2017 15:41:38 +0900</pubDate>
+      <pubDate>Mon, 13 Jun 2016 22:31:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/site/seo-bing-webmaster/</guid>
       <description>[レポート＆データ] &amp;gt; [SEOレポート]からレポートを確認できます。 簡単なものから順次対策していきます。
@@ -905,112 +897,124 @@ cautions. 自動起動はしないので、必要に応じてスタートアッ�
     </item>
     
     <item>
-      <title>[site management] code-prettifyがgithubに移行し進化していたので対応した</title>
-      <link>http://www.weizlogy.gq/site/code-prettify-on-github/</link>
-      <pubDate>Sun, 26 Mar 2017 15:41:34 +0900</pubDate>
+      <title>[system development] ubuntu16.04でMonoDevelopを使った開発環境</title>
+      <link>http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/</link>
+      <pubDate>Sun, 12 Jun 2016 10:56:00 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/site/code-prettify-on-github/</guid>
-      <description>code-prettifyはGoogle謹製シンタックスハイライターです。
-以前は以下の構成が必要でした。
-&amp;lt;!-- prettify --&amp;gt; &amp;lt;style type=&amp;#39;text/css&amp;#39;&amp;gt; @import &amp;quot;http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css&amp;quot;; &amp;lt;/style&amp;gt; &amp;lt;script src=&amp;#39;http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js&amp;#39; type=&amp;#39;text/javascript&amp;#39;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#39;text/javascript&amp;#39;&amp;gt; function prettify() { prettyPrint(); } if (window.addEventListener) { window.addEventListener(&amp;quot;load&amp;quot;, prettify, false); } else if (window.attachEvent) { window.attachEvent(&amp;quot;onload&amp;quot;, prettify); } else { window.onload = prettify; }&amp;lt;/script&amp;gt; &amp;lt;!-- prettify --&amp;gt;  進化後はたった一行で済みます。すごいですね。
-&amp;lt;script src=&amp;quot;https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;  </description>
+      <guid>http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/</guid>
+      <description>LinuxでC#を使うための環境(mono)とIDE(MonoDevelop)をインストールします。
+まずはmonoをインストールします。
+$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF $ echo &amp;#34;deb http://download.mono-project.com/repo/debian wheezy main&amp;#34; | sudo tee /etc/apt/sources.list.d/mono-xamarin.list $ sudo apt-get update $ sudo apt-get install mono-complete 続いてMonoDevelopをインストールします。
+$ sudo apt-get install monodevelop monodevelopコマンドでIDEを起動します。</description>
     </item>
     
     <item>
-      <title>[site management] bloggerで最終更新日時を表示する</title>
-      <link>http://www.weizlogy.gq/site/blogger-last-modified/</link>
-      <pubDate>Sun, 26 Mar 2017 15:41:29 +0900</pubDate>
+      <title>[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</title>
+      <link>http://www.weizlogy.gq/system/dev/spring-aop-test/</link>
+      <pubDate>Fri, 02 May 2014 12:58:00 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/site/blogger-last-modified/</guid>
-      <description>bloggerのテンプレートタグでは更新日時を取得できないので、別の方法を参考に、時刻追加、個別記事表示、一覧記事表示どちらも対応するようにしました。
-ポイントは最終更新日時を挿入する要素のID属性を各投稿記事固有のIDにすることです。
-ここが固定だと、最も早く出現する要素1つにのみ更新日時が表示されてしまいます。
-まず、最終更新日時を表示する領域を決めます。
-[テンプレート] &amp;gt; [HTMLの編集] &amp;gt; [書式テンプレート] &amp;gt; [ウィジェットの移動] &amp;gt; [Blog1&amp;lt;ブログ投稿領域&amp;gt;]に移動します。
-投稿領域近辺が良いと思いますので、&amp;lt;b:includable id=&amp;lsquo;post&amp;rsquo; var=&amp;lsquo;post&amp;rsquo;&amp;gt;&amp;hellip;&amp;lt;/b:includable&amp;gt;を展開し、そこから好きな位置に決めます。 今回は、投稿日時の近辺にするため、&amp;lt;span class=&amp;lsquo;post-timestamp&amp;rsquo;&amp;gt;と次の要素の間に以下の投稿に依存するコードを埋め込みます。
-&amp;lt;!-- 最終更新日時 --&amp;gt; &amp;lt;span expr:id=&amp;#39;data:post.id&amp;#39; class=&amp;#39;last-modified updated&amp;#39;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;script type=&amp;#39;text/javascript&amp;#39;&amp;gt; var id = &amp;quot;&amp;lt;data:post.id/&amp;gt;&amp;quot;; &amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#39;text/javascript&amp;#39;&amp;gt; var sHome = &amp;quot;&amp;lt;data:blog.homepageUrl/&amp;gt;&amp;quot;; var sURL = &amp;quot;&amp;lt;data:post.url/&amp;gt;&amp;quot;; sURL = sURL.replace(sHome, &amp;quot;&amp;quot;) sURL = &amp;quot;/&amp;quot; + sURL; document.write(unescape(&amp;quot;%3Cscript&amp;quot;)+&amp;quot; src=&amp;#39;&amp;quot;+sHome+&amp;quot;/atom.xml?redirect=false&amp;amp;path=&amp;quot;+sURL+&amp;quot;&amp;amp;max-results=1&amp;amp;alt=json-in-script&amp;amp;callback=show_last_modified&amp;#39; type=&amp;#39;text/javascript&amp;#39;&amp;quot;+unescape(&amp;quot;%3E%3C/script%3E&amp;quot;)); &amp;lt;/script&amp;gt;  各投稿のRSSからコールバックされる関数show_last_modifiedは投稿に依存せず不変のため、テンプレートの上部に(投稿の前に宣言できればどこでも良い)一度だけ宣言します。
-&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;// &amp;lt;![CDATA[ function show_last_modified(root) { var published = &amp;#39;&amp;#39;; var updated = &amp;#39;&amp;#39;; for (var i = 0; i &amp;lt; root.</description>
+      <guid>http://www.weizlogy.gq/system/dev/spring-aop-test/</guid>
+      <description>Interceptor クラスの内容は以下の通りです。
+import org.aspectj.lang.ProceedingJoinPoint; import org.aspectj.lang.annotation.Around; import org.aspectj.lang.annotation.Aspect; @Aspect public class SomeInterceptor { @Around(&amp;#34;execution(* execute(..))&amp;#34;) public Object around(ProceedingJoinPoint pjp) { System.out.println(String.format(&amp;#34;%s.%s start.&amp;#34;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); Object value = null; try { value = pjp.proceed(); } catch (Throwable e) { e.printStackTrace(); } System.out.println(String.format(&amp;#34;%s.%s ended.&amp;#34;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); return value; } } Test クラスの内容は以下の通りです。
+import static org.junit.Assert.*; import java.util.ArrayList; import org.junit.Test; import org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint; import org.springframework.aop.framework.ReflectiveMethodInvocation; import org.springframework.aop.interceptor.SimpleTraceInterceptor; public class SomeInterceptorTest { /** AOP の対象となるメソッドを持つクラス */ private static class AOPTarget { public String execute() { System.</description>
     </item>
     
     <item>
-      <title>[site management] schema.org構造化データBlogPosting対応 with JSON&#43;LD in blogger</title>
-      <link>http://www.weizlogy.gq/site/blogger-blogposting-jsonld/</link>
-      <pubDate>Sun, 26 Mar 2017 15:41:24 +0900</pubDate>
+      <title>[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</title>
+      <link>http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/</link>
+      <pubDate>Tue, 15 Apr 2014 13:15:00 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/site/blogger-blogposting-jsonld/</guid>
-      <description>bloggerのテンプレートで、以下のブログ投稿箇所を検索します。
-&amp;lt;b:loop values=&amp;#39;data:posts&amp;#39; var=&amp;#39;post&amp;#39;&amp;gt;  この直下に以下のスクリプトを挿入します。
-&amp;lt;!-- schema.org - BlogPosting. --&amp;gt; &amp;lt;script type=&amp;#39;application/ld+json&amp;#39;&amp;gt; { &amp;quot;@context&amp;quot;: &amp;quot;http://schema.org&amp;quot;, &amp;quot;@type&amp;quot;: &amp;quot;BlogPosting&amp;quot;, &amp;quot;headline&amp;quot;: &amp;quot;&amp;lt;data:blog.url/&amp;gt;&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;&amp;lt;data:blog.pageTitle/&amp;gt;&amp;quot;, &amp;quot;datePublished&amp;quot;: &amp;quot;&amp;lt;data:post.timestampISO8601/&amp;gt;&amp;quot;, &amp;quot;author&amp;quot;: { &amp;quot;@type&amp;quot;: &amp;quot;Person&amp;quot;, &amp;quot;name&amp;quot;: &amp;quot;&amp;lt;data:post.author/&amp;gt;&amp;quot; }, &amp;quot;publisher&amp;quot;: { &amp;quot;@type&amp;quot;: &amp;quot;Organization&amp;quot;, &amp;quot;name&amp;quot;: &amp;quot;Weiβlogy&amp;quot;, &amp;quot;logo&amp;quot;: { &amp;quot;@type&amp;quot;: &amp;quot;ImageObject&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;http://www.weizlogy.gq/favicon.ico&amp;quot; } }, &amp;quot;dateModified&amp;quot;: &amp;quot;&amp;lt;data:post.timestampISO8601/&amp;gt;&amp;quot;, &amp;quot;mainEntityOfPage&amp;quot;: &amp;quot;1&amp;quot;, &amp;quot;image&amp;quot;: { &amp;quot;@type&amp;quot;: &amp;quot;ImageObject&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;http://www.weizlogy.gq/dummy.png&amp;quot;, &amp;quot;width&amp;quot;: &amp;quot;100&amp;quot;, &amp;quot;height&amp;quot;: &amp;quot;100&amp;quot; } } &amp;lt;/script&amp;gt;  publisher, imageは各自修正してください。
-datePublished, dateModifiedは今のところ同じ値になっています。
-feedDataに情報はありますが、Javascriptを経由せず取得するのは難しそうです。
-本当はheaderタグ内に置きたかったのですが、data:postsが b:section class=&amp;lsquo;main&amp;rsquo; id=&amp;lsquo;main&amp;rsquo; 配下でないと 有効でないという仕様に阻まれました。。。</description>
+      <guid>http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/</guid>
+      <description>img タグにサーブレットの URL を埋め込んで、画面描画時に呼び出します。 呼び出した先では画像をバイナリ形式で読み込んで画面に出力します。
+データベースに Blob 型で保存した画像の読み込みも、ロジックは同じです。
+JSPでは&amp;hellip;
+&amp;lt;img src=&amp;#34;xxx.do&amp;#34; /&amp;gt; サーバーサイドでは&amp;hellip;
+/** xxx.do から呼び出される Servlet */ protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { // ファイルパスはどこからか入手する  String file = &amp;#34;\\server\image\sample.jpg&amp;#34;; if (file == null || &amp;#34;&amp;#34;.equals(file)) { return; } try { // 画像を読み込む  byte[] image = Files.readAllBytes(Paths.get(file)); // レスポンスヘッダーを設定する  response.setContentType(&amp;#34;image/&amp;#34; + file.substring(file.lastIndexOf(&amp;#34;.&amp;#34;))); response.setContentLength(image.length); // servlet specification 3.1 によると OutputStream は  // Servlet 終了時にクローズされる  // 従って、ここではクローズしない  // むしろ、ここでクローズすると二重解放になる可能性があるのでは？  response.</description>
     </item>
     
     <item>
-      <title>[tree of savior addon for developpers] アドオンで自作スキンを使用する方法</title>
-      <link>http://www.weizlogy.gq/tos/addon-dev/use-custom-skins/</link>
-      <pubDate>Sun, 26 Mar 2017 15:41:17 +0900</pubDate>
+      <title>[system development] JQueryUIのAutoCompleteを特定操作で強制選択する</title>
+      <link>http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/</link>
+      <pubDate>Wed, 19 Mar 2014 12:39:00 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon-dev/use-custom-skins/</guid>
-      <description>ifpファイル内部構成 xxx.ipf ├───addon_d.ipf │ └───xxx │ ├───xxx.lua │ └───xxx.xml └───ui.ipf ├───baseskinset │ └───xxx.xml └───skin └───xxx.tga  addon_d.ipf Tree Of Savior アドオン作成～設置方法まとめ 参照。
-ui.ipf baseskinset 自作スキンの読込とアドオン内部で使用するスキンの定義を行います。
-xxx.xml
-&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;skinset name=&amp;quot;Base&amp;quot;&amp;gt; &amp;lt;imagelist category=&amp;quot;ringcommand&amp;quot;&amp;gt; &amp;lt;image name=&amp;quot;image1&amp;quot; file=&amp;quot;\skin\xxx.tga&amp;quot; imgrect=&amp;quot;211 5 197 195&amp;quot;/&amp;gt; &amp;lt;image name=&amp;quot;image2&amp;quot; file=&amp;quot;\skin\xxx.tga&amp;quot; imgrect=&amp;quot;417 5 197 195&amp;quot;/&amp;gt; &amp;lt;/imagelist&amp;gt; &amp;lt;/skinset&amp;gt;  name アドオン内部で参照するスキン名。
-オリジナルのスキン名と重複しないように気を付けます。
-file スキン読み込み元画像ファイルパス。
-imgrect スキン読み込み元画像ファイル内画像座標。
-半角スペース区切りで四角形の左上と右下の頂点座標を指定します。 =&amp;gt; x, y, width, height
-skin 自作スキン画像ファイルを配置します。
-アドオン実装方法 xml &amp;lt;picture name=&amp;quot;xxx&amp;quot; rect=&amp;quot;0 0 70 30&amp;quot; margin=&amp;quot;0 0 45 0&amp;quot; hittest=&amp;quot;true&amp;quot; image=&amp;quot;image1&amp;quot;/&amp;gt;  lua local pic = GET_CHILD(xxx, &amp;quot;xxx&amp;quot;, &amp;quot;ui::CPicture&amp;quot;); pic:SetImage(&amp;quot;image2&amp;quot;);  tgaファイル 画像ファイルの一つ。</description>
+      <guid>http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/</guid>
+      <description>本来は blur 時に強制選択したかったのですが、候補確定時に AutoComplete の対象にフォーカスが当たる挙動を回避できなかったため、エンターキーで代用です。
+var obj = $(&amp;#39;#autocomplete&amp;#39;); obj.on(&amp;#39;keydown&amp;#39;, function(e) { // エンターキー以外を無視する  if (e.which !== 13) { return; } // search メソッドの結果で候補が存在する場合、  // autocompleteopen イベントが発行される  // 候補が 0 件の場合は動作しない  obj.on(&amp;#39;autocompleteopen&amp;#39;, function() { // 下矢印キーダウンイベントを作成し、候補の先頭を選択状態にする  var keyDownEvent = $.Event(&amp;#39;keydown&amp;#39;); keyDownEvent.keyCode = $.ui.keyCode.DOWN; obj.trigger(keyDownEvent); // エンターキーダウンを作成し、選択状態の候補で確定する  // →候補確定時のイベントが発火する  keyDownEvent.keyCode = $.ui.keyCode.ENTER; obj.trigger(keyDownEvent); // 通常動作時は不要なイベントなので終了時に破棄しておく  obj.off(&amp;#39;autocompleteopen&amp;#39;); }); // 現在の入力値で検索する  obj.autocomplete(&amp;#39;search&amp;#39;); });</description>
     </item>
     
     <item>
-      <title>[tree of savior addon for developpers] iesファイルをcsv形式のファイルに変換するソフト</title>
-      <link>http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/</link>
-      <pubDate>Sun, 26 Mar 2017 15:41:13 +0900</pubDate>
+      <title>[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</title>
+      <link>http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/</link>
+      <pubDate>Sat, 10 Mar 2012 14:48:00 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/</guid>
-      <description>overviews. Tree Of Saviorのipfファイル内には拡張子がiesのファイルがあります。
-Ipf Suiteでは中身を見ることができますが、extractしても実体はバイナリファイル（かつ、暗号化されている）で、 テキストエディタでもバイナリエディタでも見ても分かりません。
-もちろん、grep検索で引き当てることもできません。
-本ソフトは、iesファイルを解析し、可読性のあるcsvファイルを生成します。
-download. IEStoCSV.zip
-install. ダウンロードしたzipを解凍し、任意の場所に配置します。
-descriptions. コンソールアプリケーションなので、コマンドプロンプトで操作します。
-IEStoCSV.exe &amp;lt;走査ディレクトリ&amp;gt;  サブフォルダを含む走査ディレクトリ配下のiesファイルに対して、対となるcsv形式のファイルを生成します。
-走査ディレクトリ省略時は、本ソフトのある位置を対象とします。
-caution. iesファイル内に韓国語が含まれるので、Excelでは文字化けします。（ExcelはShiftJISですが、生成するcsvはUTF8なので）
-本当は英訳を載せたいのですが、完全無料の翻訳APIがないもので。。。 需要があれば何とかしようと思います。
-acknowledgment. iesファイルフォーマットは、以下のソースコードを参考にさせて頂きました。 ありがとうございます。
-https://github.com/r1emu/IPFUnpacker/blob/master</description>
+      <guid>http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/</guid>
+      <description>Windows APIのIcmp6SendEcho2()をWindows XPで呼び出すときは以下の点に注意が必要です。
+Syntax from msdn.
+DWORD Icmp6SendEcho2( __in HANDLE IcmpHandle, __in_opt HANDLE Event, __in_opt PIO_APC_ROUTINE ApcRoutine, __in_opt PVOID ApcContext, __in struct sockaddr_in6 *SourceAddress, __in struct sockaddr_in6 *DestinationAddress, __in LPVOID RequestData, __in WORD RequestSize, __in_opt PIP_OPTION_INFORMATION RequestOptions, __out LPVOID ReplyBuffer, __in DWORD ReplySize, __in DWORD Timeout );  第9引数 PIP_OPTION_INFORMATION は必須です。Vista 以降のOSで動かす場合は任意です。（NULLでもよい） 第10引数 ReplyBuffer は80byte以上の領域がないとWin32エラーコード122（システム コールに渡されるデータ領域が小さすぎます）が発生します。  IcmpSendEcho()とは設定値が微妙に異なりますね。</description>
     </item>
     
     <item>
-      <title>[tree of savior addon for developpers] iesファイルフォーマット解説</title>
-      <link>http://www.weizlogy.gq/tos/addon-dev/ies-format/</link>
-      <pubDate>Sun, 26 Mar 2017 15:41:06 +0900</pubDate>
+      <title>[system development] BeanUtils.describe()で配列を扱いたい</title>
+      <link>http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/</link>
+      <pubDate>Sat, 10 Sep 2011 00:03:00 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon-dev/ies-format/</guid>
-      <description>???は可変長です。
-Total block  ------------------- ---------------------------- ------------------------- | Header [156 byte] | Cell Header [136 x N byte] | Row Data [??? x M byte] | ------------------- ---------------------------- -------------------------  N=列数。は、Header blockのCellCountで指定。 M=行数。は、Header blockのRowCountで指定。
-Header block  ---------------------- ------------------- ------------------------ | TableName [128 byte] | Reserve1 [4 byte] | OffsetOfData [4 byte] | ---------------------- ------------------- ------------------------ --------------------------- ------------------- ------------------- | OffsetOfResource [4 byte] | FileSize [4 byte] | Reserve2 [4 byte] | --------------------------- ------------------- ------------------- ------------------- -------------------- -------------------------- | RowCount [2 byte] | CellCount [2 byte] | NumCellCount [2 byte] | ------------------- -------------------- -------------------------- ----------------------- ------------------------------------------- | StrCellCount [2 byte] | Reserve3 [2 byte] | --------------------- | ----------------------- -------------------------------------------           TableName IESテーブル名   Reserve1 予約1   OffsetOfData Cell Header blockのサイズ   OffsetOfResource Row Data blockのサイズ   FileSize IESファイルサイズ   Reserve2 予約2   RowCount 行数   CellCount 列数   NumCellCount 数値列数   StrCellCount 文字列列数   Reserve3 予約3    Cell Header block  ---------------- ------------------- ---------------------- | Name [64 byte] | Name2 [64 byte] | Type [2 byte] | ------ | ---------------- ------------------- ---------------------- ------------------- ------------------- ------------------- | Reserve1 [2 byte] | Reserve2 [4 byte] | Position [2 byte] | ------------------- ------------------- -------------------           Name Cell名   Name2 Cell別名   Type 0：数値Cell、1,2：文字列Cell   Reserve1 予約1   Reserve2 予約2   Position Type内Cell順序    Cell順は、Type昇順、Position昇順。</description>
+      <guid>http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/</guid>
+      <description>題名の通り、BeanUtils.describe()で配列を扱いたいのです。主にStringの配列。
+BeanUtils.describe()を使うと、クラスのフィールドをMapに変換してくれますが「文字列として表現可能な形式のもの」に限ります。
+Stringの配列については配列の先頭を出力し、残りは切り捨てられます。
+※{&amp;ldquo;a&amp;rdquo;, &amp;ldquo;b&amp;rdquo;, &amp;ldquo;c&amp;rdquo;}という配列がある場合、&amp;rdquo;a&amp;rdquo;以外の値が切り捨てられます。
+これは、BeanUtilsBeanの仕様となっております。
+ただし、「commons beanUtils 1.8.0」以降は以下の回避策があります。
+BeanUtilsBean.setInstance(new BeanUtilsBean2()); ArrayConverter converter = new ArrayConverter(String[].class, new StringConverter(), 0); // OnlyFirstToStringがtrueの場合、配列の先頭だけ使用します converter.setOnlyFirstToString(false); ConvertUtils.register(converter, String[].class); 上記処理はインスタンスを共有するため、他に影響がある場合は後処理も必要です。
+ConvertUtils.deregister(String[].class); BeanUtilsBean.setInstance(new BeanUtilsBean()); Converterインターフェースを実装したクラスを作成し、ConvertUtilsにregistすると、独自の変換も可能です。</description>
     </item>
     
     <item>
-      <title>[tree of savior addon for developpers] アドオン作成～設置方法まとめ</title>
-      <link>http://www.weizlogy.gq/tos/addon-dev/create-addon/</link>
-      <pubDate>Sun, 26 Mar 2017 15:40:59 +0900</pubDate>
+      <title>[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</title>
+      <link>http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/</link>
+      <pubDate>Sun, 15 May 2011 01:21:00 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/tos/addon-dev/create-addon/</guid>
-      <description>必要なもの  IPF Suite IPFUnpacker  作成手順 1. アドオンの名前を決める &amp;ldquo;xxxaddonxxx&amp;rdquo;としてみます。全て小文字、記号なしが良いです。
-2. アドオンのGUIを作る &amp;ldquo;xxxaddonxxx.xml&amp;rdquo;ファイルを作成します。アドオン名とuiframe@nameの値が一致するようにします。
-&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; ?&amp;gt; &amp;lt;uiframe name=&amp;quot;xxxaddonxxx&amp;quot; x=&amp;quot;10&amp;quot; y=&amp;quot;10&amp;quot; width=&amp;quot;100&amp;quot; height=&amp;quot;100&amp;quot;&amp;gt; &amp;lt;frame title=&amp;quot;XXXaddonXXX&amp;quot; snapclient=&amp;quot;true&amp;quot; snapframe=&amp;quot;true&amp;quot;/&amp;gt; &amp;lt;option closebutton=&amp;quot;false&amp;quot; hideable=&amp;quot;false&amp;quot;/&amp;gt; &amp;lt;input hittest=&amp;quot;true&amp;quot;/&amp;gt; &amp;lt;layer layerlevel=&amp;quot;31&amp;quot; /&amp;gt; &amp;lt;draw blend=&amp;quot;100&amp;quot; drawtitlebar=&amp;quot;false&amp;quot; drawframe=&amp;quot;false&amp;quot;/&amp;gt; &amp;lt;controls&amp;gt; &amp;lt;richtext name=&amp;quot;dummy&amp;quot; /&amp;gt; &amp;lt;/controls&amp;gt; &amp;lt;/uiframe&amp;gt;  3. アドオンのスクリプトを作る &amp;ldquo;xxxaddonxxx.lua&amp;rdquo;ファイルを作成します。アドオン名と関数名の&amp;rdquo;_ON_INIT&amp;rdquo;前までが、大文字で一致するようにします。
-function XXXADDONXXX_ON_INIT(addon, frame) -- 任意の初期化処理 end  4. アドオンをパッケージングする IPFSuite.exeを起動、上部メニューの[New]、[New Container]の順序でボタンを押します。
-[New Container]ボタンを押した後、テキストボックスが出現するので、&amp;rdquo;addon_d.ipf&amp;rdquo;を入力します。
-上部メニューの[Add Folder]ボタンを押します。フォルダ名はアドオン名と同じ&amp;rdquo;xxxaddonxxx&amp;rdquo;とします。
-上部メニューの[Add]ボタンを押します。ファイル選択ダイアログが出現するので、先に作成したxmlとluaファイルを選択します。
-上部メニューの[Save]ボタンを押します。保存するファイル名は&amp;rdquo;xxxaddonxxx.ipf&amp;rdquo;とします。
-5. アドオンを暗号化する IPF Unpackerで暗号化します。&amp;rdquo;Done!</description>
+      <guid>http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/</guid>
+      <description>strutsのActionFormには、「map-backed properties」「list-backed properties」という機能があります。
+ActionFormにMapやListのフィールドと適切なアクセサーメソッドを用意することで、JSP-Servlet間のデータ送受信が動的に行われる仕組みです。
+Formのフィールドをいくつも用意しなくていいところが、とても便利です。
+基本的な使い方は、下記公式リンクが分かりやすくなっています。
+http://struts.apache.org/1.x/userGuide/building_controller.html#map_action_form_classes
+今回の趣旨は、「map-backed properties」「list-backed properties」を併用することです。 検索結果等JSPで動的に一覧表示した複数のForm値を、簡単にActionで受け取ることができます。
+struts1.3.10
+java 1.6.0_18
+以下のようなFormクラスを用意します。
+import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.beanutils.LazyDynaMap; public HogeForm extends ActionForm { private LazyDynaList values = new LazyDynaList(LazyDynaMap.class); public String getValue(int index) { return values.get(index); } public void setValue(int index, Object value) { return values.set(index, value); } public List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; getValues() { // LazyDynaList, LazyDynaMapのままでは扱いにくいため、より一般的な型（List, Map）に変換します。  List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; convertValues = new ArrayList&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt;(); for (Object item : values) { convertValues.</description>
+    </item>
+    
+    <item>
+      <title>[system development] strutsのFormFileからローカルファイルの絶対パスを取得</title>
+      <link>http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/</link>
+      <pubDate>Sun, 24 Apr 2011 01:02:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/</guid>
+      <description>strutsのFormFileからローカルファイルの絶対パスを取得したいのです。 （取得しても無意味ですが）
+eclipseのデバッガで参照すると、確かにprivate変数に絶対パスを持っていますが、アクセスするためのメソッドがありません。
+リフレクションでアクセス可能です。
+DiskFileItemを使用するために、「commons-fileupload.jar」が必要です。
+struts1.3.10
+java 1.6.0_18
+// formFileの実体は「org.apache.struts.upload.CommonsMultipartRequestHandler.CommonsFormFile」 Field f = formFile.getClass().getDeclaredField(&amp;#34;fileItem&amp;#34;); f.setAccessible(true); // fileItemは「org.apache.commons.fileupload.FileItem」を実装した「org.apache.commons.fileupload.disk.DiskFileItem」 DiskFileItem item = (DiskFileItem) f.get(formFile); System.</description>
+    </item>
+    
+    <item>
+      <title>[system development] cannot find source for binding with reference について</title>
+      <link>http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/</link>
+      <pubDate>Sat, 11 Sep 2010 18:35:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/</guid>
+      <description>掲題の件について、検索キーワードにあがりましたので、簡単にまとめました。
+正式には、以下のErrorが発生しました。
+System.Windows.Data Error: 4 : Cannot find source for binding with reference &amp;lsquo;RelativeSource FindAncestor, AncestorType=&amp;lsquo;System.Windows.Controls.ItemsControl&amp;rsquo;, AncestorLevel=&amp;lsquo;1&amp;rdquo;. BindingExpression:Path=HorizontalContentAlignment; DataItem=null; target element is &amp;lsquo;ListBoxItem&amp;rsquo; (Name=&amp;ldquo;); target property is &amp;lsquo;HorizontalContentAlignment&amp;rsquo; (type &amp;lsquo;HorizontalAlignment&amp;rsquo;)
+System.Windows.Data Error: 4 : Cannot find source for binding with reference &amp;lsquo;RelativeSource FindAncestor, AncestorType=&amp;lsquo;System.Windows.Controls.ItemsControl&amp;rsquo;, AncestorLevel=&amp;lsquo;1&amp;rdquo;. BindingExpression:Path=VerticalContentAlignment; DataItem=null; target element is &amp;lsquo;ListBoxItem&amp;rsquo; (Name=&amp;ldquo;); target property is &amp;lsquo;VerticalContentAlignment&amp;rsquo; (type &amp;lsquo;VerticalAlignment&amp;rsquo;)
+xamlのStyle定義のSetterプロパティでAlignmentを定義していると出るみたいです。 定義を外すとErrorは出ません。 みたいです。というのは、何故なのか理由が分からないためです。
+以下、実際のコードの抜粋です。
+&amp;lt;Style TargetType=&amp;#34;{x:Type ListBoxItem}&amp;#34;&amp;gt; &amp;lt;Setter Property=&amp;#34;HorizontalContentAlignment&amp;#34; Value=&amp;#34;{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&amp;#34;/&amp;gt; &amp;lt;Setter Property=&amp;#34;VerticalContentAlignment&amp;#34; Value=&amp;#34;{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&amp;#34;/&amp;gt;</description>
     </item>
     
   </channel>

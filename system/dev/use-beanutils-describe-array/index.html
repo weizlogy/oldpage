@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-26 15:42:08.4783658 &#43;0900 JST",
+  "dateModified": "2018-03-06 02:03:15 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -237,8 +237,8 @@ Stringの配列については配列の先頭を出力し、残りは切り捨�
 ※{&ldquo;a&rdquo;, &ldquo;b&rdquo;, &ldquo;c&rdquo;}という配列がある場合、&rdquo;a&rdquo;以外の値が切り捨てられます。
 これは、BeanUtilsBeanの仕様となっております。
 ただし、「commons beanUtils 1.8.0」以降は以下の回避策があります。
-BeanUtilsBean.setInstance(new BeanUtilsBean2()); ArrayConverter converter = new ArrayConverter(String[].class, new StringConverter(), 0); // OnlyFirstToStringがtrueの場合、配列の先頭だけ使用します converter.setOnlyFirstToString(false); ConvertUtils.register(converter, String[].class);  上記処理はインスタンスを共有するため、他に影響がある場合は後処理も必要です。
-ConvertUtils.deregister(String[].class); BeanUtilsBean.setInstance(new BeanUtilsBean());  Converterインターフェースを実装したクラスを作成し、ConvertUtilsにregistすると、独自の変換も可能です。" />
+BeanUtilsBean.setInstance(new BeanUtilsBean2()); ArrayConverter converter = new ArrayConverter(String[].class, new StringConverter(), 0); // OnlyFirstToStringがtrueの場合、配列の先頭だけ使用します converter.setOnlyFirstToString(false); ConvertUtils.register(converter, String[].class); 上記処理はインスタンスを共有するため、他に影響がある場合は後処理も必要です。
+ConvertUtils.deregister(String[].class); BeanUtilsBean.setInstance(new BeanUtilsBean()); Converterインターフェースを実装したクラスを作成し、ConvertUtilsにregistすると、独自の変換も可能です。" />
 
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
@@ -282,25 +282,21 @@ ConvertUtils.deregister(String[].class); BeanUtilsBean.setInstance(new BeanUtils
 <p>これは、BeanUtilsBeanの仕様となっております。</p>
 
 <p>ただし、「commons beanUtils 1.8.0」以降は以下の回避策があります。</p>
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="n">BeanUtilsBean</span><span class="o">.</span><span class="na">setInstance</span><span class="o">(</span><span class="k">new</span> <span class="n">BeanUtilsBean2</span><span class="o">());</span>
-<span class="n">ArrayConverter</span> <span class="n">converter</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayConverter</span><span class="o">(</span><span class="n">String</span><span class="o">[].</span><span class="na">class</span><span class="o">,</span> <span class="k">new</span> <span class="n">StringConverter</span><span class="o">(),</span> <span class="mi">0</span><span class="o">);</span>
-<span class="c1">// OnlyFirstToStringがtrueの場合、配列の先頭だけ使用します</span>
-<span class="n">converter</span><span class="o">.</span><span class="na">setOnlyFirstToString</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
-<span class="n">ConvertUtils</span><span class="o">.</span><span class="na">register</span><span class="o">(</span><span class="n">converter</span><span class="o">,</span> <span class="n">String</span><span class="o">[].</span><span class="na">class</span><span class="o">);</span>
-</code></pre></div>
-
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">BeanUtilsBean</span><span class="o">.</span><span class="na">setInstance</span><span class="o">(</span><span class="k">new</span> <span class="n">BeanUtilsBean2</span><span class="o">());</span>
+<span class="n">ArrayConverter</span> <span class="n">converter</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayConverter</span><span class="o">(</span><span class="n">String</span><span class="o">[].</span><span class="na">class</span><span class="o">,</span> <span class="k">new</span> <span class="n">StringConverter</span><span class="o">(),</span> <span class="n">0</span><span class="o">);</span>
+<span class="c1">// OnlyFirstToStringがtrueの場合、配列の先頭だけ使用します
+</span><span class="c1"></span><span class="n">converter</span><span class="o">.</span><span class="na">setOnlyFirstToString</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
+<span class="n">ConvertUtils</span><span class="o">.</span><span class="na">register</span><span class="o">(</span><span class="n">converter</span><span class="o">,</span> <span class="n">String</span><span class="o">[].</span><span class="na">class</span><span class="o">);</span></code></pre></div>
 <p>上記処理はインスタンスを共有するため、他に影響がある場合は後処理も必要です。</p>
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="n">ConvertUtils</span><span class="o">.</span><span class="na">deregister</span><span class="o">(</span><span class="n">String</span><span class="o">[].</span><span class="na">class</span><span class="o">);</span>
-<span class="n">BeanUtilsBean</span><span class="o">.</span><span class="na">setInstance</span><span class="o">(</span><span class="k">new</span> <span class="n">BeanUtilsBean</span><span class="o">());</span>
-</code></pre></div>
-
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">ConvertUtils</span><span class="o">.</span><span class="na">deregister</span><span class="o">(</span><span class="n">String</span><span class="o">[].</span><span class="na">class</span><span class="o">);</span>
+<span class="n">BeanUtilsBean</span><span class="o">.</span><span class="na">setInstance</span><span class="o">(</span><span class="k">new</span> <span class="n">BeanUtilsBean</span><span class="o">());</span></code></pre></div>
 <p>Converterインターフェースを実装したクラスを作成し、ConvertUtilsにregistすると、独自の変換も可能です。</p>
 
  </div>
 
 </article>
 <div class="blog-date">
-  2011/09/10 00:03:00 - 2017/03/26 15:42:08
+  2011/09/10 00:03:00 - 2018/03/06 02:03:15
 </div>
 <amp-ad type="adsense"
   layout="responsive"

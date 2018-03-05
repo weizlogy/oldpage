@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-26 15:40:59.8402069 &#43;0900 JST",
+  "dateModified": "2018-03-06 02:03:15 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -233,13 +233,14 @@
 <meta name="twitter:title" content="[tree of savior addon for developpers] アドオン作成～設置方法まとめ" />
 <meta name="twitter:description" content="必要なもの  IPF Suite IPFUnpacker  作成手順 1. アドオンの名前を決める &ldquo;xxxaddonxxx&rdquo;としてみます。全て小文字、記号なしが良いです。
 2. アドオンのGUIを作る &ldquo;xxxaddonxxx.xml&rdquo;ファイルを作成します。アドオン名とuiframe@nameの値が一致するようにします。
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt; &lt;uiframe name=&quot;xxxaddonxxx&quot; x=&quot;10&quot; y=&quot;10&quot; width=&quot;100&quot; height=&quot;100&quot;&gt; &lt;frame title=&quot;XXXaddonXXX&quot; snapclient=&quot;true&quot; snapframe=&quot;true&quot;/&gt; &lt;option closebutton=&quot;false&quot; hideable=&quot;false&quot;/&gt; &lt;input hittest=&quot;true&quot;/&gt; &lt;layer layerlevel=&quot;31&quot; /&gt; &lt;draw blend=&quot;100&quot; drawtitlebar=&quot;false&quot; drawframe=&quot;false&quot;/&gt; &lt;controls&gt; &lt;richtext name=&quot;dummy&quot; /&gt; &lt;/controls&gt; &lt;/uiframe&gt;  3. アドオンのスクリプトを作る &ldquo;xxxaddonxxx.lua&rdquo;ファイルを作成します。アドオン名と関数名の&rdquo;_ON_INIT&rdquo;前までが、大文字で一致するようにします。
-function XXXADDONXXX_ON_INIT(addon, frame) -- 任意の初期化処理 end  4. アドオンをパッケージングする IPFSuite.exeを起動、上部メニューの[New]、[New Container]の順序でボタンを押します。
+&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; ?&gt; &lt;uiframe name=&#34;xxxaddonxxx&#34; x=&#34;10&#34; y=&#34;10&#34; width=&#34;100&#34; height=&#34;100&#34;&gt; &lt;frame title=&#34;XXXaddonXXX&#34; snapclient=&#34;true&#34; snapframe=&#34;true&#34;/&gt; &lt;option closebutton=&#34;false&#34; hideable=&#34;false&#34;/&gt; &lt;input hittest=&#34;true&#34;/&gt; &lt;layer layerlevel=&#34;31&#34; /&gt; &lt;draw blend=&#34;100&#34; drawtitlebar=&#34;false&#34; drawframe=&#34;false&#34;/&gt; &lt;controls&gt; &lt;richtext name=&#34;dummy&#34; /&gt; &lt;/controls&gt; &lt;/uiframe&gt; 3. アドオンのスクリプトを作る &ldquo;xxxaddonxxx.lua&rdquo;ファイルを作成します。アドオン名と関数名の&rdquo;_ON_INIT&rdquo;前までが、大文字で一致するようにします。
+function XXXADDONXXX_ON_INIT(addon, frame) -- 任意の初期化処理 end 4. アドオンをパッケージングする IPFSuite.exeを起動、上部メニューの[New]、[New Container]の順序でボタンを押します。
 [New Container]ボタンを押した後、テキストボックスが出現するので、&rdquo;addon_d.ipf&rdquo;を入力します。
 上部メニューの[Add Folder]ボタンを押します。フォルダ名はアドオン名と同じ&rdquo;xxxaddonxxx&rdquo;とします。
 上部メニューの[Add]ボタンを押します。ファイル選択ダイアログが出現するので、先に作成したxmlとluaファイルを選択します。
 上部メニューの[Save]ボタンを押します。保存するファイル名は&rdquo;xxxaddonxxx.ipf&rdquo;とします。
-5. アドオンを暗号化する IPF Unpackerで暗号化します。&rdquo;Done!" />
+5. アドオンを暗号化する IPF Unpackerで暗号化します。&rdquo;Done!&ldquo;と表示されれば成功です。
+&gt; ipf_unpack." />
 
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
@@ -290,27 +291,23 @@ function XXXADDONXXX_ON_INIT(addon, frame) -- 任意の初期化処理 end  4. �
 <h3 id="2-アドオンのguiを作る">2. アドオンのGUIを作る</h3>
 
 <p>&ldquo;xxxaddonxxx.xml&rdquo;ファイルを作成します。アドオン名とuiframe@nameの値が一致するようにします。</p>
-<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
-<span class="nt">&lt;uiframe</span> <span class="na">name=</span><span class="s">&quot;xxxaddonxxx&quot;</span> <span class="na">x=</span><span class="s">&quot;10&quot;</span> <span class="na">y=</span><span class="s">&quot;10&quot;</span> <span class="na">width=</span><span class="s">&quot;100&quot;</span> <span class="na">height=</span><span class="s">&quot;100&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;frame</span> <span class="na">title=</span><span class="s">&quot;XXXaddonXXX&quot;</span> <span class="na">snapclient=</span><span class="s">&quot;true&quot;</span> <span class="na">snapframe=</span><span class="s">&quot;true&quot;</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;option</span> <span class="na">closebutton=</span><span class="s">&quot;false&quot;</span> <span class="na">hideable=</span><span class="s">&quot;false&quot;</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">hittest=</span><span class="s">&quot;true&quot;</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;layer</span> <span class="na">layerlevel=</span><span class="s">&quot;31&quot;</span> <span class="nt">/&gt;</span>
-  <span class="nt">&lt;draw</span> <span class="na">blend=</span><span class="s">&quot;100&quot;</span> <span class="na">drawtitlebar=</span><span class="s">&quot;false&quot;</span> <span class="na">drawframe=</span><span class="s">&quot;false&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; ?&gt;</span>
+<span class="nt">&lt;uiframe</span> <span class="na">name=</span><span class="s">&#34;xxxaddonxxx&#34;</span> <span class="na">x=</span><span class="s">&#34;10&#34;</span> <span class="na">y=</span><span class="s">&#34;10&#34;</span> <span class="na">width=</span><span class="s">&#34;100&#34;</span> <span class="na">height=</span><span class="s">&#34;100&#34;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;frame</span> <span class="na">title=</span><span class="s">&#34;XXXaddonXXX&#34;</span> <span class="na">snapclient=</span><span class="s">&#34;true&#34;</span> <span class="na">snapframe=</span><span class="s">&#34;true&#34;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">closebutton=</span><span class="s">&#34;false&#34;</span> <span class="na">hideable=</span><span class="s">&#34;false&#34;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">hittest=</span><span class="s">&#34;true&#34;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;layer</span> <span class="na">layerlevel=</span><span class="s">&#34;31&#34;</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;draw</span> <span class="na">blend=</span><span class="s">&#34;100&#34;</span> <span class="na">drawtitlebar=</span><span class="s">&#34;false&#34;</span> <span class="na">drawframe=</span><span class="s">&#34;false&#34;</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;controls&gt;</span>
-    <span class="nt">&lt;richtext</span> <span class="na">name=</span><span class="s">&quot;dummy&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;richtext</span> <span class="na">name=</span><span class="s">&#34;dummy&#34;</span> <span class="nt">/&gt;</span>
   <span class="nt">&lt;/controls&gt;</span>
-<span class="nt">&lt;/uiframe&gt;</span>
-</code></pre></div>
-
+<span class="nt">&lt;/uiframe&gt;</span></code></pre></div>
 <h3 id="3-アドオンのスクリプトを作る">3. アドオンのスクリプトを作る</h3>
 
 <p>&ldquo;xxxaddonxxx.lua&rdquo;ファイルを作成します。アドオン名と関数名の&rdquo;_ON_INIT&rdquo;前までが、大文字で一致するようにします。</p>
-<div class="highlight"><pre><code class="language-lua" data-lang="lua"><span></span><span class="kr">function</span> <span class="nf">XXXADDONXXX_ON_INIT</span><span class="p">(</span><span class="n">addon</span><span class="p">,</span> <span class="n">frame</span><span class="p">)</span>
+<div class="highlight"><pre class="chroma"><code class="language-lua" data-lang="lua"><span class="kr">function</span> <span class="nf">XXXADDONXXX_ON_INIT</span><span class="p">(</span><span class="n">addon</span><span class="p">,</span> <span class="n">frame</span><span class="p">)</span>
   <span class="c1">-- 任意の初期化処理</span>
-<span class="kr">end</span>
-</code></pre></div>
-
+<span class="kr">end</span></code></pre></div>
 <h3 id="4-アドオンをパッケージングする">4. アドオンをパッケージングする</h3>
 
 <p>IPFSuite.exeを起動、上部メニューの[New]、[New Container]の順序でボタンを押します。</p>
@@ -326,11 +323,9 @@ function XXXADDONXXX_ON_INIT(addon, frame) -- 任意の初期化処理 end  4. �
 <h3 id="5-アドオンを暗号化する">5. アドオンを暗号化する</h3>
 
 <p>IPF Unpackerで暗号化します。&rdquo;Done!&ldquo;と表示されれば成功です。</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span></span>&gt; ipf_unpack.exe xxxaddonxxx.ipf encrypt
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">&gt; ipf_unpack.exe xxxaddonxxx.ipf encrypt
 <span class="o">[</span>ipf_unpack.c:291 in main<span class="o">]</span> Parsing IPF <span class="s1">&#39;xxxaddonxxx.ipf&#39;</span> <span class="o">(</span>encrypt<span class="o">)</span> ...
-<span class="o">[</span>ipf_unpack.c:304 in main<span class="o">]</span> Done!
-</code></pre></div>
-
+<span class="o">[</span>ipf_unpack.c:304 in main<span class="o">]</span> Done!</code></pre></div>
 <h2 id="設置手順">設置手順</h2>
 
 <h3 id="1-アドオンファイル削除の対策をする">1. アドオンファイル削除の対策をする</h3>
@@ -345,7 +340,7 @@ function XXXADDONXXX_ON_INIT(addon, frame) -- 任意の初期化処理 end  4. �
 
 </article>
 <div class="blog-date">
-  2016/09/25 07:41:00 - 2017/03/26 15:40:59
+  2016/09/25 07:41:00 - 2018/03/06 02:03:15
 </div>
 <amp-ad type="adsense"
   layout="responsive"

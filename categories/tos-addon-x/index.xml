@@ -6,8 +6,7 @@
     <description>Recent content in Tos Addon X on Weizlogy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Wed, 17 Jan 2018 22:39:24 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 03 May 2017 13:12:00 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/categories/tos-addon-x/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +14,7 @@
     <item>
       <title>[tree of savior addon] エリア内ランダムワープアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</link>
-      <pubDate>Wed, 17 Jan 2018 22:39:24 +0900</pubDate>
+      <pubDate>Wed, 03 May 2017 13:12:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon-x/wingofbeelze/</guid>
       <description>download. [v1.0.3] wingofbeelze.ipf
@@ -28,14 +27,14 @@ ROのヴェルゼブブの羽のようなイメージです。</description>
     <item>
       <title>[tree of savior addon] 飛行アドオン</title>
       <link>http://www.weizlogy.gq/tos/addon-x/fly/</link>
-      <pubDate>Wed, 03 May 2017 17:17:20 +0900</pubDate>
+      <pubDate>Sun, 09 Oct 2016 19:39:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon-x/fly/</guid>
       <description>download. [v1.2.0] fly.ipf
 install. README.md
 introduction.  settings. Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。
 以下の初期設定をコピペします。
-fly.config = { pos = {x = 100, y = 100}, jumpPower = 140, showButton = 0, cameraHeight = 50, withPet = 1 };  explanation. pos. ボタンの座標指定です。
+fly.config = { pos = {x = 100, y = 100}, jumpPower = 140, showButton = 0, cameraHeight = 50, withPet = 1 }; explanation. pos. ボタンの座標指定です。
 [showButton]が0の場合は無視されます。
 jumpPower. 飛距離です。
 100では弓に狙われます。 150では通常攻撃が届きません。（wizでは140で届きます。）
@@ -55,7 +54,8 @@ v1.0.0 新規作成。
 アドオンがロードされると[Fly]ボタンが表示されます。
 ボタンを押すと飛行状態、地上に降りるを繰り返します。
 飛行状態でも地上の敵を攻撃できます。 飛行状態では地上の敵はこちらを近接攻撃できません。
-実際は地上を歩行しているのでトラップには気をつけてください。</description>
+実際は地上を歩行しているのでトラップには気をつけてください。
+飛行状態ではスキルが使用不可ですが、ノックバックを受けるとスキルが使用可能になりますので、わざとノックバックするようになっています。</description>
     </item>
     
   </channel>

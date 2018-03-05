@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-26 15:42:48.9878983 &#43;0900 JST",
+  "dateModified": "2018-03-06 02:03:15 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -234,9 +234,9 @@
 <meta name="twitter:description" content="CodeanywhereはクラウドIDEで、sudoが許可されたターミナルを使うことができます。 Google&#43;アカウント連携ですぐに使えます。
 bazelは、mavenやGradleのようなビルドツールで、様々な言語のビルドが可能です。
 Codeanyhwereにbazelをインストール bazelはjdk1.8以降（jdk1.7はサポートされているが非推奨）が必須ですが、Codeanywhereはjdk1.7の環境です。 今回はjdk1.7のままでインストールします。
-cabox@box-codeanywhere:~/workspace$ java -version java version &quot;1.7.0_95&quot; OpenJDK Runtime Environment (IcedTea 2.6.4) (7u95-2.6.4-0ubuntu0.14.04.1) OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode)  Installig Bazelを参考に、以下のコマンドを打ちます。
-$ echo &quot;deb [arch=amd64] http://storage.googleapis.com/bazel-apt testing jdk1.7&quot; | sudo tee /etc/apt/sources.list.d/bazel.list $ curl https://storage.googleapis.com/bazel-apt/doc/apt-key.pub.gpg | sudo apt-key add - sudo apt-get update &amp;&amp; sudo apt-get install bazel  bazelでjavaをビルド 最低限の必要なファイルを作成します。
-cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cabox@box-codeanywhere:~/workspace$ touch hello/src/main/java/gq/weizlogy/Main.java cabox@box-codeanywhere:~/workspace$ touch hello/WORKSPACE cabox@box-codeanywhere:~/workspace$ touch hello/BUILD  hello/src/main/java/gq/weizlogy/Main." />
+cabox@box-codeanywhere:~/workspace$ java -version java version &#34;1.7.0_95&#34; OpenJDK Runtime Environment (IcedTea 2.6.4) (7u95-2.6.4-0ubuntu0.14.04.1) OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode) Installig Bazelを参考に、以下のコマンドを打ちます。
+$ echo &#34;deb [arch=amd64] http://storage.googleapis.com/bazel-apt testing jdk1.7&#34; | sudo tee /etc/apt/sources.list.d/bazel.list $ curl https://storage.googleapis.com/bazel-apt/doc/apt-key.pub.gpg | sudo apt-key add - sudo apt-get update &amp;&amp; sudo apt-get install bazel bazelでjavaをビルド 最低限の必要なファイルを作成します。
+cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cabox@box-codeanywhere:~/workspace$ touch hello/src/main/java/gq/weizlogy/Main.java cabox@box-codeanywhere:~/workspace$ touch hello/WORKSPACE cabox@box-codeanywhere:~/workspace$ touch hello/BUILD hello/src/main/java/gq/weizlogy/Main." />
 
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
@@ -280,36 +280,28 @@ Google+アカウント連携ですぐに使えます。</p>
 
 <p>bazelはjdk1.8以降（jdk1.7はサポートされているが非推奨）が必須ですが、Codeanywhereはjdk1.7の環境です。
 今回はjdk1.7のままでインストールします。</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span></span>cabox@box-codeanywhere:~/workspace$ java -version
-java version <span class="s2">&quot;1.7.0_95&quot;</span>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cabox@box-codeanywhere:~/workspace$ java -version
+java version <span class="s2">&#34;1.7.0_95&#34;</span>
 OpenJDK Runtime Environment <span class="o">(</span>IcedTea <span class="m">2</span>.6.4<span class="o">)</span> <span class="o">(</span>7u95-2.6.4-0ubuntu0.14.04.1<span class="o">)</span>
-OpenJDK <span class="m">64</span>-Bit Server VM <span class="o">(</span>build <span class="m">24</span>.95-b01, mixed mode<span class="o">)</span>
-</code></pre></div>
-
+OpenJDK <span class="m">64</span>-Bit Server VM <span class="o">(</span>build <span class="m">24</span>.95-b01, mixed mode<span class="o">)</span></code></pre></div>
 <p><a href="http://bazel.io/docs/install.html">Installig Bazel</a>を参考に、以下のコマンドを打ちます。</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span></span>$ <span class="nb">echo</span> <span class="s2">&quot;deb [arch=amd64] http://storage.googleapis.com/bazel-apt testing jdk1.7&quot;</span> <span class="p">|</span> sudo tee /etc/apt/sources.list.d/bazel.list
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">echo</span> <span class="s2">&#34;deb [arch=amd64] http://storage.googleapis.com/bazel-apt testing jdk1.7&#34;</span> <span class="p">|</span> sudo tee /etc/apt/sources.list.d/bazel.list
 $ curl https://storage.googleapis.com/bazel-apt/doc/apt-key.pub.gpg <span class="p">|</span> sudo apt-key add -
-sudo apt-get update <span class="o">&amp;&amp;</span> sudo apt-get install bazel
-</code></pre></div>
-
+sudo apt-get update <span class="o">&amp;&amp;</span> sudo apt-get install bazel</code></pre></div>
 <h2 id="bazelでjavaをビルド">bazelでjavaをビルド</h2>
 
 <p>最低限の必要なファイルを作成します。</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span></span>cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy
 cabox@box-codeanywhere:~/workspace$ touch hello/src/main/java/gq/weizlogy/Main.java
 cabox@box-codeanywhere:~/workspace$ touch hello/WORKSPACE
-cabox@box-codeanywhere:~/workspace$ touch hello/BUILD
-</code></pre></div>
-
+cabox@box-codeanywhere:~/workspace$ touch hello/BUILD</code></pre></div>
 <p>hello/src/main/java/gq/weizlogy/Main.java</p>
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="kn">package</span> <span class="nn">gq.weizlogy</span><span class="o">;</span>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">gq.weizlogy</span><span class="o">;</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Hello Bazel.&quot;</span><span class="o">);</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Hello Bazel.&#34;</span><span class="o">);</span>
     <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div>
-
+<span class="o">}</span></code></pre></div>
 <p>hello/WORKSPACEは空ファイルで構いません。</p>
 
 <p>hello/BUILD</p>
@@ -322,30 +314,24 @@ cabox@box-codeanywhere:~/workspace$ touch hello/BUILD
 </code></pre>
 
 <p>ビルドします。</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span></span>cabox@box-codeanywhere:~/workspace$ <span class="nb">cd</span> hello
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cabox@box-codeanywhere:~/workspace$ <span class="nb">cd</span> hello
 cabox@box-codeanywhere:~/workspace/hello$ bazel build //:hello
 WARNING: Sandboxed execution is not supported on your system and thus hermeticity of actions cannot be guaranteed. See http://bazel.io/docs/bazel-user-manual.html#sandboxing <span class="k">for</span> more information. You can turn off this warning via --ignore_unsupported_sandboxing.
 INFO: Found <span class="m">1</span> target...
 Target //:hello up-to　date:
   bazel-bin/hello.jar
   bazel-bin/hello
-INFO: Elapsed time: <span class="m">5</span>.876s, Critical Path: <span class="m">1</span>.20s
-</code></pre></div>
-
+INFO: Elapsed time: <span class="m">5</span>.876s, Critical Path: <span class="m">1</span>.20s</code></pre></div>
 <p>WARNINGがでています。CodeanywhereのコンテナはSandboxed executionをサポートしていないので、ビルドオプションを付与します。</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span></span>cabox@box-codeanywhere:~/workspace/hello$ bazel build --ignore_unsupported_sandboxing //:hello
-</code></pre></div>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cabox@box-codeanywhere:~/workspace/hello$ bazel build --ignore_unsupported_sandboxing //:hello</code></pre></div>
 <p>実行します。</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span></span>cabox@box-codeanywhere:~/workspace/hello$ ./bazel-bin/hello
-Hello Bazel.
-</code></pre></div>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cabox@box-codeanywhere:~/workspace/hello$ ./bazel-bin/hello
+Hello Bazel.</code></pre></div>
  </div>
 
 </article>
 <div class="blog-date">
-  2016/08/13 17:06:00 - 2017/03/26 15:42:48
+  2016/08/13 17:06:00 - 2018/03/06 02:03:15
 </div>
 <amp-ad type="adsense"
   layout="responsive"

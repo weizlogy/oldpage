@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-26 15:41:24.4447534 &#43;0900 JST",
+  "dateModified": "2018-03-06 02:03:15 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -232,8 +232,8 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="[site management] schema.org構造化データBlogPosting対応 with JSON&#43;LD in blogger" />
 <meta name="twitter:description" content="bloggerのテンプレートで、以下のブログ投稿箇所を検索します。
-&lt;b:loop values=&#39;data:posts&#39; var=&#39;post&#39;&gt;  この直下に以下のスクリプトを挿入します。
-&lt;!-- schema.org - BlogPosting. --&gt; &lt;script type=&#39;application/ld&#43;json&#39;&gt; { &quot;@context&quot;: &quot;http://schema.org&quot;, &quot;@type&quot;: &quot;BlogPosting&quot;, &quot;headline&quot;: &quot;&lt;data:blog.url/&gt;&quot;, &quot;url&quot;: &quot;&lt;data:blog.pageTitle/&gt;&quot;, &quot;datePublished&quot;: &quot;&lt;data:post.timestampISO8601/&gt;&quot;, &quot;author&quot;: { &quot;@type&quot;: &quot;Person&quot;, &quot;name&quot;: &quot;&lt;data:post.author/&gt;&quot; }, &quot;publisher&quot;: { &quot;@type&quot;: &quot;Organization&quot;, &quot;name&quot;: &quot;Weiβlogy&quot;, &quot;logo&quot;: { &quot;@type&quot;: &quot;ImageObject&quot;, &quot;url&quot;: &quot;http://www.weizlogy.gq/favicon.ico&quot; } }, &quot;dateModified&quot;: &quot;&lt;data:post.timestampISO8601/&gt;&quot;, &quot;mainEntityOfPage&quot;: &quot;1&quot;, &quot;image&quot;: { &quot;@type&quot;: &quot;ImageObject&quot;, &quot;url&quot;: &quot;http://www.weizlogy.gq/dummy.png&quot;, &quot;width&quot;: &quot;100&quot;, &quot;height&quot;: &quot;100&quot; } } &lt;/script&gt;  publisher, imageは各自修正してください。
+&lt;b:loop values=&#39;data:posts&#39; var=&#39;post&#39;&gt; この直下に以下のスクリプトを挿入します。
+&lt;!-- schema.org - BlogPosting. --&gt; &lt;script type=&#39;application/ld&#43;json&#39;&gt; { &#34;@context&#34;: &#34;http://schema.org&#34;, &#34;@type&#34;: &#34;BlogPosting&#34;, &#34;headline&#34;: &#34;&lt;data:blog.url/&gt;&#34;, &#34;url&#34;: &#34;&lt;data:blog.pageTitle/&gt;&#34;, &#34;datePublished&#34;: &#34;&lt;data:post.timestampISO8601/&gt;&#34;, &#34;author&#34;: { &#34;@type&#34;: &#34;Person&#34;, &#34;name&#34;: &#34;&lt;data:post.author/&gt;&#34; }, &#34;publisher&#34;: { &#34;@type&#34;: &#34;Organization&#34;, &#34;name&#34;: &#34;Weiβlogy&#34;, &#34;logo&#34;: { &#34;@type&#34;: &#34;ImageObject&#34;, &#34;url&#34;: &#34;http://www.weizlogy.gq/favicon.ico&#34; } }, &#34;dateModified&#34;: &#34;&lt;data:post.timestampISO8601/&gt;&#34;, &#34;mainEntityOfPage&#34;: &#34;1&#34;, &#34;image&#34;: { &#34;@type&#34;: &#34;ImageObject&#34;, &#34;url&#34;: &#34;http://www.weizlogy.gq/dummy.png&#34;, &#34;width&#34;: &#34;100&#34;, &#34;height&#34;: &#34;100&#34; } } &lt;/script&gt; publisher, imageは各自修正してください。
 datePublished, dateModifiedは今のところ同じ値になっています。
 feedDataに情報はありますが、Javascriptを経由せず取得するのは難しそうです。
 本当はheaderタグ内に置きたかったのですが、data:postsが b:section class=&lsquo;main&rsquo; id=&lsquo;main&rsquo; 配下でないと 有効でないという仕様に阻まれました。。。" />
@@ -270,42 +270,38 @@ feedDataに情報はありますが、Javascriptを経由せず取得するの�
 </h1>
  <div>
   <p>bloggerのテンプレートで、以下のブログ投稿箇所を検索します。</p>
-<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="nt">&lt;b:loop</span> <span class="na">values=</span><span class="s">&#39;data:posts&#39;</span> <span class="na">var=</span><span class="s">&#39;post&#39;</span><span class="nt">&gt;</span>
-</code></pre></div>
-
+<div class="highlight"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;b:loop</span> <span class="na">values=</span><span class="s">&#39;data:posts&#39;</span> <span class="na">var=</span><span class="s">&#39;post&#39;</span><span class="nt">&gt;</span></code></pre></div>
 <p>この直下に以下のスクリプトを挿入します。</p>
-<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span></span><span class="c">&lt;!-- schema.org - BlogPosting. --&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- schema.org - BlogPosting. --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">&#39;application/ld+json&#39;</span><span class="nt">&gt;</span>
   {
-    &quot;@context&quot;: &quot;http://schema.org&quot;,
-    &quot;@type&quot;: &quot;BlogPosting&quot;,
-    &quot;headline&quot;: &quot;<span class="nt">&lt;data:blog.url/&gt;</span>&quot;,
-    &quot;url&quot;: &quot;<span class="nt">&lt;data:blog.pageTitle/&gt;</span>&quot;,
-    &quot;datePublished&quot;: &quot;<span class="nt">&lt;data:post.timestampISO8601/&gt;</span>&quot;,
-    &quot;author&quot;: {
-      &quot;@type&quot;: &quot;Person&quot;,
-      &quot;name&quot;: &quot;<span class="nt">&lt;data:post.author/&gt;</span>&quot;
+    &#34;@context&#34;: &#34;http://schema.org&#34;,
+    &#34;@type&#34;: &#34;BlogPosting&#34;,
+    &#34;headline&#34;: &#34;<span class="nt">&lt;data:blog.url/&gt;</span>&#34;,
+    &#34;url&#34;: &#34;<span class="nt">&lt;data:blog.pageTitle/&gt;</span>&#34;,
+    &#34;datePublished&#34;: &#34;<span class="nt">&lt;data:post.timestampISO8601/&gt;</span>&#34;,
+    &#34;author&#34;: {
+      &#34;@type&#34;: &#34;Person&#34;,
+      &#34;name&#34;: &#34;<span class="nt">&lt;data:post.author/&gt;</span>&#34;
     },
-    &quot;publisher&quot;: {
-      &quot;@type&quot;: &quot;Organization&quot;,
-      &quot;name&quot;: &quot;Weiβlogy&quot;,
-      &quot;logo&quot;: {
-        &quot;@type&quot;: &quot;ImageObject&quot;,
-        &quot;url&quot;: &quot;http://www.weizlogy.gq/favicon.ico&quot;
+    &#34;publisher&#34;: {
+      &#34;@type&#34;: &#34;Organization&#34;,
+      &#34;name&#34;: &#34;Weiβlogy&#34;,
+      &#34;logo&#34;: {
+        &#34;@type&#34;: &#34;ImageObject&#34;,
+        &#34;url&#34;: &#34;http://www.weizlogy.gq/favicon.ico&#34;
       }
     },
-    &quot;dateModified&quot;: &quot;<span class="nt">&lt;data:post.timestampISO8601/&gt;</span>&quot;,
-    &quot;mainEntityOfPage&quot;: &quot;1&quot;,
-    &quot;image&quot;: {
-      &quot;@type&quot;: &quot;ImageObject&quot;,
-      &quot;url&quot;: &quot;http://www.weizlogy.gq/dummy.png&quot;,
-      &quot;width&quot;: &quot;100&quot;,
-      &quot;height&quot;: &quot;100&quot;
+    &#34;dateModified&#34;: &#34;<span class="nt">&lt;data:post.timestampISO8601/&gt;</span>&#34;,
+    &#34;mainEntityOfPage&#34;: &#34;1&#34;,
+    &#34;image&#34;: {
+      &#34;@type&#34;: &#34;ImageObject&#34;,
+      &#34;url&#34;: &#34;http://www.weizlogy.gq/dummy.png&#34;,
+      &#34;width&#34;: &#34;100&#34;,
+      &#34;height&#34;: &#34;100&#34;
     }
   }
-<span class="nt">&lt;/script&gt;</span>
-</code></pre></div>
-
+<span class="nt">&lt;/script&gt;</span></code></pre></div>
 <p>publisher, imageは各自修正してください。</p>
 
 <p>datePublished, dateModifiedは今のところ同じ値になっています。</p>
@@ -319,7 +315,7 @@ feedDataに情報はありますが、Javascriptを経由せず取得するの�
 
 </article>
 <div class="blog-date">
-  2017/02/26 12:54:00 - 2017/03/26 15:41:24
+  2017/02/26 12:54:00 - 2018/03/06 02:03:15
 </div>
 <amp-ad type="adsense"
   layout="responsive"

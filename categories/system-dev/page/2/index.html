@@ -215,7 +215,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-26 15:42:24.4434868 &#43;0900 JST",
+  "dateModified": "2018-03-06 02:03:15 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -275,10 +275,37 @@
   
   <div class="lastmod-title">
     <div class="[system-dev]">
+      <a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a>
+    
+    
+      <span class="blog-date">@2018/03/06 02:03:15</span>
+    </div>
+  </div>
+  
+  <div class="lastmod-title">
+    <div class="[system-dev]">
+      <a href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">[system development] strutsのFormFileからローカルファイルの絶対パスを取得</a>
+    
+    
+      <span class="blog-date">@2018/03/06 02:03:15</span>
+    </div>
+  </div>
+  
+  <div class="lastmod-title">
+    <div class="[system-dev]">
       <a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a>
     
     
-      <span class="blog-date">@2017/03/27 03:37:14</span>
+      <span class="blog-date">@2018/03/06 02:03:15</span>
+    </div>
+  </div>
+  
+  <div class="lastmod-title">
+    <div class="[system-dev]">
+      <a href="http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/">[system development] BeanUtils.describe()で配列を扱いたい</a>
+    
+    
+      <span class="blog-date">@2018/03/06 02:03:15</span>
     </div>
   </div>
   
@@ -287,34 +314,7 @@
       <a href="http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/">[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</a>
     
     
-      <span class="blog-date">@2017/03/26 15:42:59</span>
-    </div>
-  </div>
-  
-  <div class="lastmod-title">
-    <div class="[system-dev]">
-      <a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a>
-    
-    
-      <span class="blog-date">@2017/03/26 15:42:56</span>
-    </div>
-  </div>
-  
-  <div class="lastmod-title">
-    <div class="[system-dev]">
-      <a href="http://www.weizlogy.gq/system/dev/cipher-suites/">[system development] TSLで定義される全CipherSuiteの一覧</a>
-    
-    
-      <span class="blog-date">@2017/03/26 15:42:52</span>
-    </div>
-  </div>
-  
-  <div class="lastmod-title">
-    <div class="[system-dev]">
-      <a href="http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/">[system development] Codeanywhereでbazelを使う</a>
-    
-    
-      <span class="blog-date">@2017/03/26 15:42:48</span>
+      <span class="blog-date">@2018/03/06 02:03:15</span>
     </div>
   </div>
   
@@ -326,35 +326,10 @@
   <section>
   
   
-  <div><a href="http://www.weizlogy.gq/system/dev/spring-aop-test/">[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</a></div>
-  <pre class="summary">Interceptor クラスの内容は以下の通りです。
-import org.aspectj.lang.ProceedingJoinPoint; import org.aspectj.lang.annotation.Around; import org.aspectj.lang.annotation.Aspect; @Aspect public class SomeInterceptor { @Around(&quot;execution(* execute(..))&quot;) public Object around(ProceedingJoinPoint pjp) { System.out.println(String.format(&quot;%s.%s start.&quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); Object value = null; try { value = pjp.proceed(); } catch (Throwable e) { e.printStackTrace(); } System.out.println(String.format(&quot;%s.%s ended.&quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); return value; } }  Test クラスの内容は以下の通りです。
-import static org.junit.Assert.*; import java.util.ArrayList; import org.junit.Test; import org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint; import org.springframework.aop.framework.ReflectiveMethodInvocation; import org.springframework.aop.interceptor.SimpleTraceInterceptor; public class SomeInterceptorTest { /** AOP の対象となるメソッドを持つクラス */ private static class AOPTarget { public String execute() { System.</pre>
-  
-  <div><a href="http://www.weizlogy.gq/system/dev/step-counter-is/">[system development] ステップカウンターのあるべき姿を考察する</a></div>
-  <pre class="summary">ステップカウンターとは？ LOCを計測するツールです。LOCはLines Of Codeの略で、プログラムの規模として扱います。
- 空行（改行など空白だけの行）やコメント行（コメントと空白だけの行）は除く、2つの命令が書かれた行は2行と数える、括弧だけの行を除くなどの換算をした行数を論理LOC (logical LOC) といい、通常はこちらを使う。
-&ndash; https://ja.wikipedia.org/wiki/LOC
- 2つの命令が書かれた行は2行と数える、括弧だけの行を除くなどの換算してますか？ 世にあるステップカウンターは、有効行（実行行）、コメント行、空白行の3種を見ていることが多く、高度な換算はされていないようです。
-そこで、*本来あるべきステップカウンター*を、以下の考察に基づき鋭意作成中です。
-詳細はこちらをご覧ください。
-本来あるべきステップカウンターの想定仕様概要  2つの命令が書かれた行は2行と数える。 括弧だけの行を除く。 ディレクティブは考慮が必要。  本来あるべきステップカウンターの想定仕様詳細 2つの命令が書かれた行は2行と数える C言語系統は命令の終端に&rdquo;;&ldquo;が必要な言語使用のため、その終端記号（または文字）を数えれば良い。また、IF文では&rdquo;{&ldquo;、SWITCH-CASE文では&rdquo;{&ldquo;と&rdquo;:&ldquo;に着目することで命令を計測します。
-ただし、FOR文は3式で1セットの命令であるため、FOR文中の終端記号は無視しなければいけません。 VBやRubyのような言語、HTMLのようなタグが構成要素の場合は検討中です。
-括弧だけの行を除く C言語系統はブロックの終端記号&rdquo;}&ldquo;がありますが、1命令のセットであるため、開始記号&rdquo;{&ldquo;とどちらか一方を測定対象とすべきです。 VBやRubyのような言語の&rdquo;END&rdquo;キーワードも同様です。
-ディレクティブは考慮が必要 Javaのimport文、C#のusingディレクティブは、パッケージ名を省略するためだけに存在するもので、記載の有無がプログラムの動作に影響を与えませんので、命令とは位置付け異なります。
-C言語系統のプリプロセッサーディレクティブは微妙ですが、動作に影響を与えるものもあるため、命令と考えます。
-ただし、&rdquo;#endif&rdquo;、&rdquo;#region&rdquo;、&rdquo;#endregion&rdquo;は非命令とし計測しません。
-C言語の#includeは、必須であることを除き、C#のusingディレクティブ同様、非命令とします。
-考察は続きます。。。</pre>
-  
-  <div><a href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">[system development] strutsのFormFileからローカルファイルの絶対パスを取得</a></div>
-  <pre class="summary">strutsのFormFileからローカルファイルの絶対パスを取得したいのです。 （取得しても無意味ですが）
-eclipseのデバッガで参照すると、確かにprivate変数に絶対パスを持っていますが、アクセスするためのメソッドがありません。
-リフレクションでアクセス可能です。
-DiskFileItemを使用するために、「commons-fileupload.jar」が必要です。
-struts1.3.10
-java 1.6.0_18
-// formFileの実体は「org.apache.struts.upload.CommonsMultipartRequestHandler.CommonsFormFile」 Field f = formFile.getClass().getDeclaredField(&quot;fileItem&quot;); f.setAccessible(true); // fileItemは「org.apache.commons.fileupload.FileItem」を実装した「org.apache.commons.fileupload.disk.DiskFileItem」 DiskFileItem item = (DiskFileItem) f.get(formFile); System.out.println(item.getName());  </pre>
+  <div><a href="http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/">[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</a></div>
+  <pre class="summary">Windows APIのIcmp6SendEcho2()をWindows XPで呼び出すときは以下の点に注意が必要です。
+Syntax from msdn.
+DWORD Icmp6SendEcho2( __in HANDLE IcmpHandle, __in_opt HANDLE Event, __in_opt PIO_APC_ROUTINE ApcRoutine, __in_opt PVOID ApcContext, __in struct sockaddr_in6 *SourceAddress, __in struct sockaddr_in6 *DestinationAddress, __in LPVOID RequestData, __in WORD RequestSize, __in_opt PIP_OPTION_INFORMATION RequestOptions, __out LPVOID ReplyBuffer, __in DWORD ReplySize, __in DWORD Timeout );  第9引数 PIP_OPTION_INFORMATION は必須です。Vista 以降のOSで動かす場合は任意です。（NULLでもよい） 第10引数 ReplyBuffer は80byte以上の領域がないとWin32エラーコード122（システム コールに渡されるデータ領域が小さすぎます）が発生します。  IcmpSendEcho()とは設定値が微妙に異なりますね。</pre>
   
   <div><a href="http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/">[system development] BeanUtils.describe()で配列を扱いたい</a></div>
   <pre class="summary">題名の通り、BeanUtils.describe()で配列を扱いたいのです。主にStringの配列。
@@ -363,21 +338,38 @@ Stringの配列については配列の先頭を出力し、残りは切り捨�
 ※{&ldquo;a&rdquo;, &ldquo;b&rdquo;, &ldquo;c&rdquo;}という配列がある場合、&rdquo;a&rdquo;以外の値が切り捨てられます。
 これは、BeanUtilsBeanの仕様となっております。
 ただし、「commons beanUtils 1.8.0」以降は以下の回避策があります。
-BeanUtilsBean.setInstance(new BeanUtilsBean2()); ArrayConverter converter = new ArrayConverter(String[].class, new StringConverter(), 0); // OnlyFirstToStringがtrueの場合、配列の先頭だけ使用します converter.setOnlyFirstToString(false); ConvertUtils.register(converter, String[].class);  上記処理はインスタンスを共有するため、他に影響がある場合は後処理も必要です。
-ConvertUtils.deregister(String[].class); BeanUtilsBean.setInstance(new BeanUtilsBean());  Converterインターフェースを実装したクラスを作成し、ConvertUtilsにregistすると、独自の変換も可能です。</pre>
+BeanUtilsBean.setInstance(new BeanUtilsBean2()); ArrayConverter converter = new ArrayConverter(String[].class, new StringConverter(), 0); // OnlyFirstToStringがtrueの場合、配列の先頭だけ使用します converter.setOnlyFirstToString(false); ConvertUtils.register(converter, String[].class); 上記処理はインスタンスを共有するため、他に影響がある場合は後処理も必要です。
+ConvertUtils.deregister(String[].class); BeanUtilsBean.setInstance(new BeanUtilsBean()); Converterインターフェースを実装したクラスを作成し、ConvertUtilsにregistすると、独自の変換も可能です。</pre>
   
-  <div><a href="http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/">[system development] XAMLでブロック矢印を描画する</a></div>
-  <pre class="summary">ブロック矢印完成図 
-コード  &lt;Path Stroke=&quot;Black&quot; StrokeThickness=&quot;2&quot; Fill=&quot;Gray&quot; Data=&quot;M 100 100 H 200 V 90 L 230 115 L 200 140 V 130 H 100 V 100 Z&quot; Margin=&quot;-30,-30,0,0&quot; /&gt;  解説 Pathを使って目標の位置付近に描画、Marginで微調整します。
-https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspxを読めば分かりますが簡単です。 一筆書きの要領で、矢印の左上から時計回りに線を引いています。
-「M 100 100」は「X=100,Y=100に移動」します。
-「H 200」は「現在位置からX=200まで描線」します。
-「V 90」は「現在位置からY=90まで描線」します。
-「L 230 115」は「現在位置からX=230,Y=115まで描線」します。
-以下繰り返しの上、 「Z」は「描線の範囲を閉鎖」します。
-座標の算出には、描画開始位置、シャフトの幅と高さ、アローヘッドの出代と角度を決めます。 今回は、描画開始位置=100,100、シャフトの幅=100、高さ=30、アローヘッドの出代=10、角度=60にしました。
-
-アローヘッドの頂点座標の算出は、頂点がシャフトの中央にあることと、三平方の定理を使えばきっちり出せます。 つまり、シャフトの幅は偶数が良いです。</pre>
+  <div><a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a></div>
+  <pre class="summary">strutsのActionFormには、「map-backed properties」「list-backed properties」という機能があります。
+ActionFormにMapやListのフィールドと適切なアクセサーメソッドを用意することで、JSP-Servlet間のデータ送受信が動的に行われる仕組みです。
+Formのフィールドをいくつも用意しなくていいところが、とても便利です。
+基本的な使い方は、下記公式リンクが分かりやすくなっています。
+http://struts.apache.org/1.x/userGuide/building_controller.html#map_action_form_classes
+今回の趣旨は、「map-backed properties」「list-backed properties」を併用することです。 検索結果等JSPで動的に一覧表示した複数のForm値を、簡単にActionで受け取ることができます。
+struts1.3.10
+java 1.6.0_18
+以下のようなFormクラスを用意します。
+import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.beanutils.LazyDynaMap; public HogeForm extends ActionForm { private LazyDynaList values = new LazyDynaList(LazyDynaMap.class); public String getValue(int index) { return values.get(index); } public void setValue(int index, Object value) { return values.set(index, value); } public List&lt;Map&lt;String, String&gt;&gt; getValues() { // LazyDynaList, LazyDynaMapのままでは扱いにくいため、より一般的な型（List, Map）に変換します。  List&lt;Map&lt;String, String&gt;&gt; convertValues = new ArrayList&lt;Map&lt;String, String&gt;&gt;(); for (Object item : values) { convertValues.</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">[system development] strutsのFormFileからローカルファイルの絶対パスを取得</a></div>
+  <pre class="summary">strutsのFormFileからローカルファイルの絶対パスを取得したいのです。 （取得しても無意味ですが）
+eclipseのデバッガで参照すると、確かにprivate変数に絶対パスを持っていますが、アクセスするためのメソッドがありません。
+リフレクションでアクセス可能です。
+DiskFileItemを使用するために、「commons-fileupload.jar」が必要です。
+struts1.3.10
+java 1.6.0_18
+// formFileの実体は「org.apache.struts.upload.CommonsMultipartRequestHandler.CommonsFormFile」 Field f = formFile.getClass().getDeclaredField(&#34;fileItem&#34;); f.setAccessible(true); // fileItemは「org.apache.commons.fileupload.FileItem」を実装した「org.apache.commons.fileupload.disk.DiskFileItem」 DiskFileItem item = (DiskFileItem) f.get(formFile); System.</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a></div>
+  <pre class="summary">掲題の件について、検索キーワードにあがりましたので、簡単にまとめました。
+正式には、以下のErrorが発生しました。
+System.Windows.Data Error: 4 : Cannot find source for binding with reference &lsquo;RelativeSource FindAncestor, AncestorType=&lsquo;System.Windows.Controls.ItemsControl&rsquo;, AncestorLevel=&lsquo;1&rdquo;. BindingExpression:Path=HorizontalContentAlignment; DataItem=null; target element is &lsquo;ListBoxItem&rsquo; (Name=&ldquo;); target property is &lsquo;HorizontalContentAlignment&rsquo; (type &lsquo;HorizontalAlignment&rsquo;)
+System.Windows.Data Error: 4 : Cannot find source for binding with reference &lsquo;RelativeSource FindAncestor, AncestorType=&lsquo;System.Windows.Controls.ItemsControl&rsquo;, AncestorLevel=&lsquo;1&rdquo;. BindingExpression:Path=VerticalContentAlignment; DataItem=null; target element is &lsquo;ListBoxItem&rsquo; (Name=&ldquo;); target property is &lsquo;VerticalContentAlignment&rsquo; (type &lsquo;VerticalAlignment&rsquo;)
+xamlのStyle定義のSetterプロパティでAlignmentを定義していると出るみたいです。 定義を外すとErrorは出ません。 みたいです。というのは、何故なのか理由が分からないためです。
+以下、実際のコードの抜粋です。
+&lt;Style TargetType=&#34;{x:Type ListBoxItem}&#34;&gt; &lt;Setter Property=&#34;HorizontalContentAlignment&#34; Value=&#34;{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&#34;/&gt; &lt;Setter Property=&#34;VerticalContentAlignment&#34; Value=&#34;{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&#34;/&gt;</pre>
   
   
 
@@ -396,7 +388,7 @@ https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspxを読めば
     
     
     
-     
+    
         
         
     
@@ -408,7 +400,7 @@ https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspxを読めば
     
     
     
-     
+    
         
         
     

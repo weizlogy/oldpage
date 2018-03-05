@@ -6,134 +6,46 @@
     <description>Recent content in System Dev on Weizlogy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Mon, 27 Mar 2017 03:37:14 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 31 Jan 2017 21:59:00 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/categories/system-dev/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</title>
-      <link>http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/</link>
-      <pubDate>Mon, 27 Mar 2017 03:37:14 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/</guid>
-      <description>strutsのActionFormには、「map-backed properties」「list-backed properties」という機能があります。
-ActionFormにMapやListのフィールドと適切なアクセサーメソッドを用意することで、JSP-Servlet間のデータ送受信が動的に行われる仕組みです。
-Formのフィールドをいくつも用意しなくていいところが、とても便利です。
-基本的な使い方は、下記公式リンクが分かりやすくなっています。
-http://struts.apache.org/1.x/userGuide/building_controller.html#map_action_form_classes
-今回の趣旨は、「map-backed properties」「list-backed properties」を併用することです。 検索結果等JSPで動的に一覧表示した複数のForm値を、簡単にActionで受け取ることができます。
-struts1.3.10
-java 1.6.0_18
-以下のようなFormクラスを用意します。
-import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.beanutils.LazyDynaMap; public HogeForm extends ActionForm { private LazyDynaList values = new LazyDynaList(LazyDynaMap.class); public String getValue(int index) { return values.get(index); } public void setValue(int index, Object value) { return values.set(index, value); } public List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; getValues() { // LazyDynaList, LazyDynaMapのままでは扱いにくいため、より一般的な型（List, Map）に変換します。 List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; convertValues = new ArrayList&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt;(); for (Object item : values) { convertValues.</description>
-    </item>
-    
-    <item>
-      <title>[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</title>
-      <link>http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:59 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/</guid>
-      <description>Windows APIのIcmp6SendEcho2()をWindows XPで呼び出すときは以下の点に注意が必要です。
-Syntax from msdn.
-DWORD Icmp6SendEcho2( __in HANDLE IcmpHandle, __in_opt HANDLE Event, __in_opt PIO_APC_ROUTINE ApcRoutine, __in_opt PVOID ApcContext, __in struct sockaddr_in6 *SourceAddress, __in struct sockaddr_in6 *DestinationAddress, __in LPVOID RequestData, __in WORD RequestSize, __in_opt PIP_OPTION_INFORMATION RequestOptions, __out LPVOID ReplyBuffer, __in DWORD ReplySize, __in DWORD Timeout );   第9引数 PIP_OPTION_INFORMATION は必須です。Vista 以降のOSで動かす場合は任意です。（NULLでもよい） 第10引数 ReplyBuffer は80byte以上の領域がないとWin32エラーコード122（システム コールに渡されるデータ領域が小さすぎます）が発生します。  IcmpSendEcho()とは設定値が微妙に異なりますね。</description>
-    </item>
-    
-    <item>
-      <title>[system development] cannot find source for binding with reference について</title>
-      <link>http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:56 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/</guid>
-      <description>掲題の件について、検索キーワードにあがりましたので、簡単にまとめました。
-正式には、以下のErrorが発生しました。
-System.Windows.Data Error: 4 : Cannot find source for binding with reference &amp;lsquo;RelativeSource FindAncestor, AncestorType=&amp;lsquo;System.Windows.Controls.ItemsControl&amp;rsquo;, AncestorLevel=&amp;lsquo;1&amp;rdquo;. BindingExpression:Path=HorizontalContentAlignment; DataItem=null; target element is &amp;lsquo;ListBoxItem&amp;rsquo; (Name=&amp;ldquo;); target property is &amp;lsquo;HorizontalContentAlignment&amp;rsquo; (type &amp;lsquo;HorizontalAlignment&amp;rsquo;)
-System.Windows.Data Error: 4 : Cannot find source for binding with reference &amp;lsquo;RelativeSource FindAncestor, AncestorType=&amp;lsquo;System.Windows.Controls.ItemsControl&amp;rsquo;, AncestorLevel=&amp;lsquo;1&amp;rdquo;. BindingExpression:Path=VerticalContentAlignment; DataItem=null; target element is &amp;lsquo;ListBoxItem&amp;rsquo; (Name=&amp;ldquo;); target property is &amp;lsquo;VerticalContentAlignment&amp;rsquo; (type &amp;lsquo;VerticalAlignment&amp;rsquo;)
-xamlのStyle定義のSetterプロパティでAlignmentを定義していると出るみたいです。 定義を外すとErrorは出ません。 みたいです。というのは、何故なのか理由が分からないためです。
-以下、実際のコードの抜粋です。
-&amp;lt;Style TargetType=&amp;quot;{x:Type ListBoxItem}&amp;quot;&amp;gt; &amp;lt;Setter Property=&amp;quot;HorizontalContentAlignment&amp;quot; Value=&amp;quot;{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&amp;quot;/&amp;gt; &amp;lt;Setter Property=&amp;quot;VerticalContentAlignment&amp;quot; Value=&amp;quot;{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&amp;quot;/&amp;gt;  </description>
-    </item>
-    
-    <item>
       <title>[system development] TSLで定義される全CipherSuiteの一覧</title>
       <link>http://www.weizlogy.gq/system/dev/cipher-suites/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:52 +0900</pubDate>
+      <pubDate>Tue, 31 Jan 2017 21:59:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/system/dev/cipher-suites/</guid>
       <description>Cipher Suiteの説明はさて置き、一覧を見るために以下のコマンドを使用する例が多々見受けられます。
-$ openssl ciphers -v  これはopensslが対応するCipherSuiteの一覧であり、実際に存在するCipherSuiteの一覧とは異なります。
+$ openssl ciphers -v これはopensslが対応するCipherSuiteの一覧であり、実際に存在するCipherSuiteの一覧とは異なります。
 実際に存在するCipherSuiteの一覧は、RFC5426によるとIANA管理とのことで、下記URLがマスターです。
 http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4</description>
     </item>
     
     <item>
-      <title>[system development] Codeanywhereでbazelを使う</title>
-      <link>http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:48 +0900</pubDate>
+      <title>[system development] XAMLでブロック矢印を描画する</title>
+      <link>http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/</link>
+      <pubDate>Sun, 04 Dec 2016 22:45:00 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/</guid>
-      <description>CodeanywhereはクラウドIDEで、sudoが許可されたターミナルを使うことができます。 Google+アカウント連携ですぐに使えます。
-bazelは、mavenやGradleのようなビルドツールで、様々な言語のビルドが可能です。
-Codeanyhwereにbazelをインストール bazelはjdk1.8以降（jdk1.7はサポートされているが非推奨）が必須ですが、Codeanywhereはjdk1.7の環境です。 今回はjdk1.7のままでインストールします。
-cabox@box-codeanywhere:~/workspace$ java -version java version &amp;quot;1.7.0_95&amp;quot; OpenJDK Runtime Environment (IcedTea 2.6.4) (7u95-2.6.4-0ubuntu0.14.04.1) OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode)  Installig Bazelを参考に、以下のコマンドを打ちます。
-$ echo &amp;quot;deb [arch=amd64] http://storage.googleapis.com/bazel-apt testing jdk1.7&amp;quot; | sudo tee /etc/apt/sources.list.d/bazel.list $ curl https://storage.googleapis.com/bazel-apt/doc/apt-key.pub.gpg | sudo apt-key add - sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install bazel  bazelでjavaをビルド 最低限の必要なファイルを作成します。
-cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cabox@box-codeanywhere:~/workspace$ touch hello/src/main/java/gq/weizlogy/Main.java cabox@box-codeanywhere:~/workspace$ touch hello/WORKSPACE cabox@box-codeanywhere:~/workspace$ touch hello/BUILD  hello/src/main/java/gq/weizlogy/Main.</description>
-    </item>
-    
-    <item>
-      <title>[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</title>
-      <link>http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:44 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/</guid>
-      <description>img タグにサーブレットの URL を埋め込んで、画面描画時に呼び出します。 呼び出した先では画像をバイナリ形式で読み込んで画面に出力します。
-データベースに Blob 型で保存した画像の読み込みも、ロジックは同じです。
-JSPでは&amp;hellip;
-&amp;lt;img src=&amp;quot;xxx.do&amp;quot; /&amp;gt;  サーバーサイドでは&amp;hellip;
-/** xxx.do から呼び出される Servlet */ protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { // ファイルパスはどこからか入手する String file = &amp;quot;\\server\image\sample.jpg&amp;quot;; if (file == null || &amp;quot;&amp;quot;.equals(file)) { return; } try { // 画像を読み込む byte[] image = Files.readAllBytes(Paths.get(file)); // レスポンスヘッダーを設定する response.setContentType(&amp;quot;image/&amp;quot; + file.substring(file.lastIndexOf(&amp;quot;.&amp;quot;))); response.setContentLength(image.length); // servlet specification 3.1 によると OutputStream は // Servlet 終了時にクローズされる // 従って、ここではクローズしない // むしろ、ここでクローズすると二重解放になる可能性があるのでは？ response.</description>
-    </item>
-    
-    <item>
-      <title>[system development] JQueryUIのAutoCompleteを特定操作で強制選択する</title>
-      <link>http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:40 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/</guid>
-      <description>本来は blur 時に強制選択したかったのですが、候補確定時に AutoComplete の対象にフォーカスが当たる挙動を回避できなかったため、エンターキーで代用です。
-var obj = $(&amp;#39;#autocomplete&amp;#39;); obj.on(&amp;#39;keydown&amp;#39;, function(e) { // エンターキー以外を無視する if (e.which !== 13) { return; } // search メソッドの結果で候補が存在する場合、 // autocompleteopen イベントが発行される // 候補が 0 件の場合は動作しない obj.on(&amp;#39;autocompleteopen&amp;#39;, function() { // 下矢印キーダウンイベントを作成し、候補の先頭を選択状態にする var keyDownEvent = $.Event(&amp;#39;keydown&amp;#39;); keyDownEvent.keyCode = $.ui.keyCode.DOWN; obj.trigger(keyDownEvent); // エンターキーダウンを作成し、選択状態の候補で確定する // →候補確定時のイベントが発火する keyDownEvent.keyCode = $.ui.keyCode.ENTER; obj.trigger(keyDownEvent); // 通常動作時は不要なイベントなので終了時に破棄しておく obj.off(&amp;#39;autocompleteopen&amp;#39;); }); // 現在の入力値で検索する obj.autocomplete(&amp;#39;search&amp;#39;); });  </description>
-    </item>
-    
-    <item>
-      <title>[system development] Monodevelopで埋め込みリソースを使う</title>
-      <link>http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:36 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/</guid>
-      <description>ソリューションエクスプローラーで対象のファイルを右クリックします。
-「ビルドアクション &amp;gt; EmbeddedResource」を選択します。以上です。
-プログラムからのアクセスで必要なリソースIDは、デフォルトネームスペース＋ファイル名となります。 リソースIDはプロパティビューで変更可能です。
-使い方は以下の通りです。
-using (var stream = new System.IO.StreamReader(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream(&amp;quot;[ResourceID]&amp;quot;), true)) { ... }  </description>
-    </item>
-    
-    <item>
-      <title>[system development] ubuntu16.04でMonoDevelopを使った開発環境</title>
-      <link>http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:33 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/</guid>
-      <description>LinuxでC#を使うための環境(mono)とIDE(MonoDevelop)をインストールします。
-まずはmonoをインストールします。
-$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF $ echo &amp;quot;deb http://download.mono-project.com/repo/debian wheezy main&amp;quot; | sudo tee /etc/apt/sources.list.d/mono-xamarin.list $ sudo apt-get update $ sudo apt-get install mono-complete  続いてMonoDevelopをインストールします。
-$ sudo apt-get install monodevelop  monodevelopコマンドでIDEを起動します。</description>
+      <guid>http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/</guid>
+      <description>ブロック矢印完成図 
+コード &amp;lt;Path Stroke=&amp;#34;Black&amp;#34; StrokeThickness=&amp;#34;2&amp;#34; Fill=&amp;#34;Gray&amp;#34; Data=&amp;#34;M 100 100 H 200 V 90 L 230 115 L 200 140 V 130 H 100 V 100 Z&amp;#34; Margin=&amp;#34;-30,-30,0,0&amp;#34; /&amp;gt; 解説 Pathを使って目標の位置付近に描画、Marginで微調整します。
+https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspxを読めば分かりますが簡単です。 一筆書きの要領で、矢印の左上から時計回りに線を引いています。
+「M 100 100」は「X=100,Y=100に移動」します。
+「H 200」は「現在位置からX=200まで描線」します。
+「V 90」は「現在位置からY=90まで描線」します。
+「L 230 115」は「現在位置からX=230,Y=115まで描線」します。
+以下繰り返しの上、 「Z」は「描線の範囲を閉鎖」します。
+座標の算出には、描画開始位置、シャフトの幅と高さ、アローヘッドの出代と角度を決めます。 今回は、描画開始位置=100,100、シャフトの幅=100、高さ=30、アローヘッドの出代=10、角度=60にしました。
+
+アローヘッドの頂点座標の算出は、頂点がシャフトの中央にあることと、三平方の定理を使えばきっちり出せます。 つまり、シャフトの幅は偶数が良いです。</description>
     </item>
     
     <item>
       <title>[system development] Codeaywhere&#43;Java&#43;bazelでOpenWeatherMapのAPIを使用し現在の気象情報を取得する</title>
       <link>http://www.weizlogy.gq/system/dev/openweathermap-with-java-bazel/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:27 +0900</pubDate>
+      <pubDate>Sun, 21 Aug 2016 11:20:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/system/dev/openweathermap-with-java-bazel/</guid>
       <description>OpenWeatherMapの使い方 OpenWeatherMapは各種気象情報提供サービスです。
@@ -141,24 +53,40 @@ $ sudo apt-get install monodevelop  monodevelopコマンドでIDEを起動しま
 今回は現在のみなので、Current weather data APIを使用します。 RESTサービスになっており、以下のURLで情報がJSON形式で取得できます。（{city name}は英語で）
 http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;amp;APPID={Your API Key}  JSON形式ではJavaで扱いにくいので、&amp;rdquo;mode=xml&amp;rdquo;パラメータでXML形式にします。
 http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;amp;mode=xml&amp;amp;APPID={Your API Key}  気象情報は以下のように返却されます。（例は{city name}=Tokyo）
-&amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt; &amp;lt;current&amp;gt; &amp;lt;city id=&amp;quot;1850147&amp;quot; name=&amp;quot;Tokyo&amp;quot;&amp;gt; &amp;lt;coord lat=&amp;quot;35.69&amp;quot; lon=&amp;quot;139.69&amp;quot;/&amp;gt; &amp;lt;country&amp;gt;JP&amp;lt;/country&amp;gt; &amp;lt;sun set=&amp;quot;2016-08-15T09:30:23&amp;quot; rise=&amp;quot;2016-08-14T20:00:21&amp;quot;/&amp;gt; &amp;lt;/city&amp;gt; &amp;lt;temperature unit=&amp;quot;kelvin&amp;quot; max=&amp;quot;304.82&amp;quot; min=&amp;quot;298.71&amp;quot; value=&amp;quot;301.68&amp;quot;/&amp;gt; &amp;lt;humidity unit=&amp;quot;%&amp;quot; value=&amp;quot;85&amp;quot;/&amp;gt; &amp;lt;pressure unit=&amp;quot;hPa&amp;quot; value=&amp;quot;1001&amp;quot;/&amp;gt; &amp;lt;wind&amp;gt; &amp;lt;speed name=&amp;quot;Gentle Breeze&amp;quot; value=&amp;quot;3.41&amp;quot;/&amp;gt; &amp;lt;gusts/&amp;gt; &amp;lt;direction name=&amp;quot;South&amp;quot; value=&amp;quot;179.504&amp;quot; code=&amp;quot;S&amp;quot;/&amp;gt; &amp;lt;/wind&amp;gt; &amp;lt;clouds name=&amp;quot;clear sky&amp;quot; value=&amp;quot;8&amp;quot;/&amp;gt; &amp;lt;visibility/&amp;gt; &amp;lt;precipitation unit=&amp;quot;3h&amp;quot; value=&amp;quot;0.245&amp;quot; mode=&amp;quot;rain&amp;quot;/&amp;gt; &amp;lt;weather value=&amp;quot;light rain&amp;quot; icon=&amp;quot;10d&amp;quot; number=&amp;quot;500&amp;quot;/&amp;gt; &amp;lt;lastupdate value=&amp;quot;2016-08-15T07:41:15&amp;quot;/&amp;gt; &amp;lt;/current&amp;gt;  JavaでOpenWeatherMapのAPIを呼び出す RESTクライアントは色々ありますが、お手軽なApache Commonsのhttpclientとfluent-hcにします。</description>
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34;?&amp;gt; &amp;lt;current&amp;gt; &amp;lt;city id=&amp;#34;1850147&amp;#34; name=&amp;#34;Tokyo&amp;#34;&amp;gt; &amp;lt;coord lat=&amp;#34;35.69&amp;#34; lon=&amp;#34;139.69&amp;#34;/&amp;gt; &amp;lt;country&amp;gt;JP&amp;lt;/country&amp;gt; &amp;lt;sun set=&amp;#34;2016-08-15T09:30:23&amp;#34; rise=&amp;#34;2016-08-14T20:00:21&amp;#34;/&amp;gt; &amp;lt;/city&amp;gt; &amp;lt;temperature unit=&amp;#34;kelvin&amp;#34; max=&amp;#34;304.82&amp;#34; min=&amp;#34;298.71&amp;#34; value=&amp;#34;301.68&amp;#34;/&amp;gt; &amp;lt;humidity unit=&amp;#34;%&amp;#34; value=&amp;#34;85&amp;#34;/&amp;gt; &amp;lt;pressure unit=&amp;#34;hPa&amp;#34; value=&amp;#34;1001&amp;#34;/&amp;gt; &amp;lt;wind&amp;gt; &amp;lt;speed name=&amp;#34;Gentle Breeze&amp;#34; value=&amp;#34;3.41&amp;#34;/&amp;gt; &amp;lt;gusts/&amp;gt; &amp;lt;direction name=&amp;#34;South&amp;#34; value=&amp;#34;179.504&amp;#34; code=&amp;#34;S&amp;#34;/&amp;gt; &amp;lt;/wind&amp;gt; &amp;lt;clouds name=&amp;#34;clear sky&amp;#34; value=&amp;#34;8&amp;#34;/&amp;gt; &amp;lt;visibility/&amp;gt; &amp;lt;precipitation unit=&amp;#34;3h&amp;#34; value=&amp;#34;0.245&amp;#34; mode=&amp;#34;rain&amp;#34;/&amp;gt; &amp;lt;weather value=&amp;#34;light rain&amp;#34; icon=&amp;#34;10d&amp;#34; number=&amp;#34;500&amp;#34;/&amp;gt; &amp;lt;lastupdate value=&amp;#34;2016-08-15T07:41:15&amp;#34;/&amp;gt; &amp;lt;/current&amp;gt; JavaでOpenWeatherMapのAPIを呼び出す RESTクライアントは色々ありますが、お手軽なApache Commonsのhttpclientとfluent-hcにします。</description>
     </item>
     
     <item>
-      <title>[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</title>
-      <link>http://www.weizlogy.gq/system/dev/spring-aop-test/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:24 +0900</pubDate>
+      <title>[system development] Codeanywhereでbazelを使う</title>
+      <link>http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/</link>
+      <pubDate>Sat, 13 Aug 2016 17:06:00 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/system/dev/spring-aop-test/</guid>
-      <description>Interceptor クラスの内容は以下の通りです。
-import org.aspectj.lang.ProceedingJoinPoint; import org.aspectj.lang.annotation.Around; import org.aspectj.lang.annotation.Aspect; @Aspect public class SomeInterceptor { @Around(&amp;quot;execution(* execute(..))&amp;quot;) public Object around(ProceedingJoinPoint pjp) { System.out.println(String.format(&amp;quot;%s.%s start.&amp;quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); Object value = null; try { value = pjp.proceed(); } catch (Throwable e) { e.printStackTrace(); } System.out.println(String.format(&amp;quot;%s.%s ended.&amp;quot;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); return value; } }  Test クラスの内容は以下の通りです。
-import static org.junit.Assert.*; import java.util.ArrayList; import org.junit.Test; import org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint; import org.springframework.aop.framework.ReflectiveMethodInvocation; import org.springframework.aop.interceptor.SimpleTraceInterceptor; public class SomeInterceptorTest { /** AOP の対象となるメソッドを持つクラス */ private static class AOPTarget { public String execute() { System.</description>
+      <guid>http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/</guid>
+      <description>CodeanywhereはクラウドIDEで、sudoが許可されたターミナルを使うことができます。 Google+アカウント連携ですぐに使えます。
+bazelは、mavenやGradleのようなビルドツールで、様々な言語のビルドが可能です。
+Codeanyhwereにbazelをインストール bazelはjdk1.8以降（jdk1.7はサポートされているが非推奨）が必須ですが、Codeanywhereはjdk1.7の環境です。 今回はjdk1.7のままでインストールします。
+cabox@box-codeanywhere:~/workspace$ java -version java version &amp;#34;1.7.0_95&amp;#34; OpenJDK Runtime Environment (IcedTea 2.6.4) (7u95-2.6.4-0ubuntu0.14.04.1) OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode) Installig Bazelを参考に、以下のコマンドを打ちます。
+$ echo &amp;#34;deb [arch=amd64] http://storage.googleapis.com/bazel-apt testing jdk1.7&amp;#34; | sudo tee /etc/apt/sources.list.d/bazel.list $ curl https://storage.googleapis.com/bazel-apt/doc/apt-key.pub.gpg | sudo apt-key add - sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install bazel bazelでjavaをビルド 最低限の必要なファイルを作成します。
+cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cabox@box-codeanywhere:~/workspace$ touch hello/src/main/java/gq/weizlogy/Main.java cabox@box-codeanywhere:~/workspace$ touch hello/WORKSPACE cabox@box-codeanywhere:~/workspace$ touch hello/BUILD hello/src/main/java/gq/weizlogy/Main.</description>
+    </item>
+    
+    <item>
+      <title>[system development] Monodevelopで埋め込みリソースを使う</title>
+      <link>http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/</link>
+      <pubDate>Sun, 31 Jul 2016 16:11:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/</guid>
+      <description>ソリューションエクスプローラーで対象のファイルを右クリックします。
+「ビルドアクション &amp;gt; EmbeddedResource」を選択します。以上です。
+プログラムからのアクセスで必要なリソースIDは、デフォルトネームスペース＋ファイル名となります。 リソースIDはプロパティビューで変更可能です。
+使い方は以下の通りです。
+using (var stream = new System.IO.StreamReader(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream(&amp;#34;[ResourceID]&amp;#34;), true)) { ... }</description>
     </item>
     
     <item>
       <title>[system development] ステップカウンターのあるべき姿を考察する</title>
       <link>http://www.weizlogy.gq/system/dev/step-counter-is/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:20 +0900</pubDate>
+      <pubDate>Fri, 29 Jul 2016 00:14:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/system/dev/step-counter-is/</guid>
       <description>ステップカウンターとは？ LOCを計測するツールです。LOCはLines Of Codeの略で、プログラムの規模として扱います。
@@ -178,24 +106,66 @@ C言語の#includeは、必須であることを除き、C#のusingディレク�
     </item>
     
     <item>
-      <title>[system development] strutsのFormFileからローカルファイルの絶対パスを取得</title>
-      <link>http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:11 +0900</pubDate>
+      <title>[system development] ubuntu16.04でMonoDevelopを使った開発環境</title>
+      <link>http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/</link>
+      <pubDate>Sun, 12 Jun 2016 10:56:00 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/</guid>
-      <description>strutsのFormFileからローカルファイルの絶対パスを取得したいのです。 （取得しても無意味ですが）
-eclipseのデバッガで参照すると、確かにprivate変数に絶対パスを持っていますが、アクセスするためのメソッドがありません。
-リフレクションでアクセス可能です。
-DiskFileItemを使用するために、「commons-fileupload.jar」が必要です。
-struts1.3.10
-java 1.6.0_18
-// formFileの実体は「org.apache.struts.upload.CommonsMultipartRequestHandler.CommonsFormFile」 Field f = formFile.getClass().getDeclaredField(&amp;quot;fileItem&amp;quot;); f.setAccessible(true); // fileItemは「org.apache.commons.fileupload.FileItem」を実装した「org.apache.commons.fileupload.disk.DiskFileItem」 DiskFileItem item = (DiskFileItem) f.get(formFile); System.out.println(item.getName());  </description>
+      <guid>http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/</guid>
+      <description>LinuxでC#を使うための環境(mono)とIDE(MonoDevelop)をインストールします。
+まずはmonoをインストールします。
+$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF $ echo &amp;#34;deb http://download.mono-project.com/repo/debian wheezy main&amp;#34; | sudo tee /etc/apt/sources.list.d/mono-xamarin.list $ sudo apt-get update $ sudo apt-get install mono-complete 続いてMonoDevelopをインストールします。
+$ sudo apt-get install monodevelop monodevelopコマンドでIDEを起動します。</description>
+    </item>
+    
+    <item>
+      <title>[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</title>
+      <link>http://www.weizlogy.gq/system/dev/spring-aop-test/</link>
+      <pubDate>Fri, 02 May 2014 12:58:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/system/dev/spring-aop-test/</guid>
+      <description>Interceptor クラスの内容は以下の通りです。
+import org.aspectj.lang.ProceedingJoinPoint; import org.aspectj.lang.annotation.Around; import org.aspectj.lang.annotation.Aspect; @Aspect public class SomeInterceptor { @Around(&amp;#34;execution(* execute(..))&amp;#34;) public Object around(ProceedingJoinPoint pjp) { System.out.println(String.format(&amp;#34;%s.%s start.&amp;#34;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); Object value = null; try { value = pjp.proceed(); } catch (Throwable e) { e.printStackTrace(); } System.out.println(String.format(&amp;#34;%s.%s ended.&amp;#34;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); return value; } } Test クラスの内容は以下の通りです。
+import static org.junit.Assert.*; import java.util.ArrayList; import org.junit.Test; import org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint; import org.springframework.aop.framework.ReflectiveMethodInvocation; import org.springframework.aop.interceptor.SimpleTraceInterceptor; public class SomeInterceptorTest { /** AOP の対象となるメソッドを持つクラス */ private static class AOPTarget { public String execute() { System.</description>
+    </item>
+    
+    <item>
+      <title>[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</title>
+      <link>http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/</link>
+      <pubDate>Tue, 15 Apr 2014 13:15:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/</guid>
+      <description>img タグにサーブレットの URL を埋め込んで、画面描画時に呼び出します。 呼び出した先では画像をバイナリ形式で読み込んで画面に出力します。
+データベースに Blob 型で保存した画像の読み込みも、ロジックは同じです。
+JSPでは&amp;hellip;
+&amp;lt;img src=&amp;#34;xxx.do&amp;#34; /&amp;gt; サーバーサイドでは&amp;hellip;
+/** xxx.do から呼び出される Servlet */ protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { // ファイルパスはどこからか入手する  String file = &amp;#34;\\server\image\sample.jpg&amp;#34;; if (file == null || &amp;#34;&amp;#34;.equals(file)) { return; } try { // 画像を読み込む  byte[] image = Files.readAllBytes(Paths.get(file)); // レスポンスヘッダーを設定する  response.setContentType(&amp;#34;image/&amp;#34; + file.substring(file.lastIndexOf(&amp;#34;.&amp;#34;))); response.setContentLength(image.length); // servlet specification 3.1 によると OutputStream は  // Servlet 終了時にクローズされる  // 従って、ここではクローズしない  // むしろ、ここでクローズすると二重解放になる可能性があるのでは？  response.</description>
+    </item>
+    
+    <item>
+      <title>[system development] JQueryUIのAutoCompleteを特定操作で強制選択する</title>
+      <link>http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/</link>
+      <pubDate>Wed, 19 Mar 2014 12:39:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/</guid>
+      <description>本来は blur 時に強制選択したかったのですが、候補確定時に AutoComplete の対象にフォーカスが当たる挙動を回避できなかったため、エンターキーで代用です。
+var obj = $(&amp;#39;#autocomplete&amp;#39;); obj.on(&amp;#39;keydown&amp;#39;, function(e) { // エンターキー以外を無視する  if (e.which !== 13) { return; } // search メソッドの結果で候補が存在する場合、  // autocompleteopen イベントが発行される  // 候補が 0 件の場合は動作しない  obj.on(&amp;#39;autocompleteopen&amp;#39;, function() { // 下矢印キーダウンイベントを作成し、候補の先頭を選択状態にする  var keyDownEvent = $.Event(&amp;#39;keydown&amp;#39;); keyDownEvent.keyCode = $.ui.keyCode.DOWN; obj.trigger(keyDownEvent); // エンターキーダウンを作成し、選択状態の候補で確定する  // →候補確定時のイベントが発火する  keyDownEvent.keyCode = $.ui.keyCode.ENTER; obj.trigger(keyDownEvent); // 通常動作時は不要なイベントなので終了時に破棄しておく  obj.off(&amp;#39;autocompleteopen&amp;#39;); }); // 現在の入力値で検索する  obj.autocomplete(&amp;#39;search&amp;#39;); });</description>
+    </item>
+    
+    <item>
+      <title>[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</title>
+      <link>http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/</link>
+      <pubDate>Sat, 10 Mar 2012 14:48:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/</guid>
+      <description>Windows APIのIcmp6SendEcho2()をWindows XPで呼び出すときは以下の点に注意が必要です。
+Syntax from msdn.
+DWORD Icmp6SendEcho2( __in HANDLE IcmpHandle, __in_opt HANDLE Event, __in_opt PIO_APC_ROUTINE ApcRoutine, __in_opt PVOID ApcContext, __in struct sockaddr_in6 *SourceAddress, __in struct sockaddr_in6 *DestinationAddress, __in LPVOID RequestData, __in WORD RequestSize, __in_opt PIP_OPTION_INFORMATION RequestOptions, __out LPVOID ReplyBuffer, __in DWORD ReplySize, __in DWORD Timeout );  第9引数 PIP_OPTION_INFORMATION は必須です。Vista 以降のOSで動かす場合は任意です。（NULLでもよい） 第10引数 ReplyBuffer は80byte以上の領域がないとWin32エラーコード122（システム コールに渡されるデータ領域が小さすぎます）が発生します。  IcmpSendEcho()とは設定値が微妙に異なりますね。</description>
     </item>
     
     <item>
       <title>[system development] BeanUtils.describe()で配列を扱いたい</title>
       <link>http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:08 +0900</pubDate>
+      <pubDate>Sat, 10 Sep 2011 00:03:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/</guid>
       <description>題名の通り、BeanUtils.describe()で配列を扱いたいのです。主にStringの配列。
@@ -204,27 +174,56 @@ Stringの配列については配列の先頭を出力し、残りは切り捨�
 ※{&amp;ldquo;a&amp;rdquo;, &amp;ldquo;b&amp;rdquo;, &amp;ldquo;c&amp;rdquo;}という配列がある場合、&amp;rdquo;a&amp;rdquo;以外の値が切り捨てられます。
 これは、BeanUtilsBeanの仕様となっております。
 ただし、「commons beanUtils 1.8.0」以降は以下の回避策があります。
-BeanUtilsBean.setInstance(new BeanUtilsBean2()); ArrayConverter converter = new ArrayConverter(String[].class, new StringConverter(), 0); // OnlyFirstToStringがtrueの場合、配列の先頭だけ使用します converter.setOnlyFirstToString(false); ConvertUtils.register(converter, String[].class);  上記処理はインスタンスを共有するため、他に影響がある場合は後処理も必要です。
-ConvertUtils.deregister(String[].class); BeanUtilsBean.setInstance(new BeanUtilsBean());  Converterインターフェースを実装したクラスを作成し、ConvertUtilsにregistすると、独自の変換も可能です。</description>
+BeanUtilsBean.setInstance(new BeanUtilsBean2()); ArrayConverter converter = new ArrayConverter(String[].class, new StringConverter(), 0); // OnlyFirstToStringがtrueの場合、配列の先頭だけ使用します converter.setOnlyFirstToString(false); ConvertUtils.register(converter, String[].class); 上記処理はインスタンスを共有するため、他に影響がある場合は後処理も必要です。
+ConvertUtils.deregister(String[].class); BeanUtilsBean.setInstance(new BeanUtilsBean()); Converterインターフェースを実装したクラスを作成し、ConvertUtilsにregistすると、独自の変換も可能です。</description>
     </item>
     
     <item>
-      <title>[system development] XAMLでブロック矢印を描画する</title>
-      <link>http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/</link>
-      <pubDate>Sun, 26 Mar 2017 15:42:04 +0900</pubDate>
+      <title>[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</title>
+      <link>http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/</link>
+      <pubDate>Sun, 15 May 2011 01:21:00 +0900</pubDate>
       
-      <guid>http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/</guid>
-      <description>ブロック矢印完成図 
-コード  &amp;lt;Path Stroke=&amp;quot;Black&amp;quot; StrokeThickness=&amp;quot;2&amp;quot; Fill=&amp;quot;Gray&amp;quot; Data=&amp;quot;M 100 100 H 200 V 90 L 230 115 L 200 140 V 130 H 100 V 100 Z&amp;quot; Margin=&amp;quot;-30,-30,0,0&amp;quot; /&amp;gt;  解説 Pathを使って目標の位置付近に描画、Marginで微調整します。
-https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspxを読めば分かりますが簡単です。 一筆書きの要領で、矢印の左上から時計回りに線を引いています。
-「M 100 100」は「X=100,Y=100に移動」します。
-「H 200」は「現在位置からX=200まで描線」します。
-「V 90」は「現在位置からY=90まで描線」します。
-「L 230 115」は「現在位置からX=230,Y=115まで描線」します。
-以下繰り返しの上、 「Z」は「描線の範囲を閉鎖」します。
-座標の算出には、描画開始位置、シャフトの幅と高さ、アローヘッドの出代と角度を決めます。 今回は、描画開始位置=100,100、シャフトの幅=100、高さ=30、アローヘッドの出代=10、角度=60にしました。
-
-アローヘッドの頂点座標の算出は、頂点がシャフトの中央にあることと、三平方の定理を使えばきっちり出せます。 つまり、シャフトの幅は偶数が良いです。</description>
+      <guid>http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/</guid>
+      <description>strutsのActionFormには、「map-backed properties」「list-backed properties」という機能があります。
+ActionFormにMapやListのフィールドと適切なアクセサーメソッドを用意することで、JSP-Servlet間のデータ送受信が動的に行われる仕組みです。
+Formのフィールドをいくつも用意しなくていいところが、とても便利です。
+基本的な使い方は、下記公式リンクが分かりやすくなっています。
+http://struts.apache.org/1.x/userGuide/building_controller.html#map_action_form_classes
+今回の趣旨は、「map-backed properties」「list-backed properties」を併用することです。 検索結果等JSPで動的に一覧表示した複数のForm値を、簡単にActionで受け取ることができます。
+struts1.3.10
+java 1.6.0_18
+以下のようなFormクラスを用意します。
+import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.beanutils.LazyDynaMap; public HogeForm extends ActionForm { private LazyDynaList values = new LazyDynaList(LazyDynaMap.class); public String getValue(int index) { return values.get(index); } public void setValue(int index, Object value) { return values.set(index, value); } public List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; getValues() { // LazyDynaList, LazyDynaMapのままでは扱いにくいため、より一般的な型（List, Map）に変換します。  List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; convertValues = new ArrayList&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt;(); for (Object item : values) { convertValues.</description>
+    </item>
+    
+    <item>
+      <title>[system development] strutsのFormFileからローカルファイルの絶対パスを取得</title>
+      <link>http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/</link>
+      <pubDate>Sun, 24 Apr 2011 01:02:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/</guid>
+      <description>strutsのFormFileからローカルファイルの絶対パスを取得したいのです。 （取得しても無意味ですが）
+eclipseのデバッガで参照すると、確かにprivate変数に絶対パスを持っていますが、アクセスするためのメソッドがありません。
+リフレクションでアクセス可能です。
+DiskFileItemを使用するために、「commons-fileupload.jar」が必要です。
+struts1.3.10
+java 1.6.0_18
+// formFileの実体は「org.apache.struts.upload.CommonsMultipartRequestHandler.CommonsFormFile」 Field f = formFile.getClass().getDeclaredField(&amp;#34;fileItem&amp;#34;); f.setAccessible(true); // fileItemは「org.apache.commons.fileupload.FileItem」を実装した「org.apache.commons.fileupload.disk.DiskFileItem」 DiskFileItem item = (DiskFileItem) f.get(formFile); System.</description>
+    </item>
+    
+    <item>
+      <title>[system development] cannot find source for binding with reference について</title>
+      <link>http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/</link>
+      <pubDate>Sat, 11 Sep 2010 18:35:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/</guid>
+      <description>掲題の件について、検索キーワードにあがりましたので、簡単にまとめました。
+正式には、以下のErrorが発生しました。
+System.Windows.Data Error: 4 : Cannot find source for binding with reference &amp;lsquo;RelativeSource FindAncestor, AncestorType=&amp;lsquo;System.Windows.Controls.ItemsControl&amp;rsquo;, AncestorLevel=&amp;lsquo;1&amp;rdquo;. BindingExpression:Path=HorizontalContentAlignment; DataItem=null; target element is &amp;lsquo;ListBoxItem&amp;rsquo; (Name=&amp;ldquo;); target property is &amp;lsquo;HorizontalContentAlignment&amp;rsquo; (type &amp;lsquo;HorizontalAlignment&amp;rsquo;)
+System.Windows.Data Error: 4 : Cannot find source for binding with reference &amp;lsquo;RelativeSource FindAncestor, AncestorType=&amp;lsquo;System.Windows.Controls.ItemsControl&amp;rsquo;, AncestorLevel=&amp;lsquo;1&amp;rdquo;. BindingExpression:Path=VerticalContentAlignment; DataItem=null; target element is &amp;lsquo;ListBoxItem&amp;rsquo; (Name=&amp;ldquo;); target property is &amp;lsquo;VerticalContentAlignment&amp;rsquo; (type &amp;lsquo;VerticalAlignment&amp;rsquo;)
+xamlのStyle定義のSetterプロパティでAlignmentを定義していると出るみたいです。 定義を外すとErrorは出ません。 みたいです。というのは、何故なのか理由が分からないためです。
+以下、実際のコードの抜粋です。
+&amp;lt;Style TargetType=&amp;#34;{x:Type ListBoxItem}&amp;#34;&amp;gt; &amp;lt;Setter Property=&amp;#34;HorizontalContentAlignment&amp;#34; Value=&amp;#34;{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&amp;#34;/&amp;gt; &amp;lt;Setter Property=&amp;#34;VerticalContentAlignment&amp;#34; Value=&amp;#34;{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&amp;#34;/&amp;gt;</description>
     </item>
     
   </channel>

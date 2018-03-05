@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-27 03:37:14.6766437 &#43;0900 JST",
+  "dateModified": "2018-03-06 02:03:15 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -240,7 +240,7 @@ http://struts.apache.org/1.x/userGuide/building_controller.html#map_action_form_
 struts1.3.10
 java 1.6.0_18
 以下のようなFormクラスを用意します。
-import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.beanutils.LazyDynaMap; public HogeForm extends ActionForm { private LazyDynaList values = new LazyDynaList(LazyDynaMap.class); public String getValue(int index) { return values.get(index); } public void setValue(int index, Object value) { return values.set(index, value); } public List&lt;Map&lt;String, String&gt;&gt; getValues() { // LazyDynaList, LazyDynaMapのままでは扱いにくいため、より一般的な型（List, Map）に変換します。 List&lt;Map&lt;String, String&gt;&gt; convertValues = new ArrayList&lt;Map&lt;String, String&gt;&gt;(); for (Object item : values) { convertValues." />
+import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.beanutils.LazyDynaMap; public HogeForm extends ActionForm { private LazyDynaList values = new LazyDynaList(LazyDynaMap.class); public String getValue(int index) { return values.get(index); } public void setValue(int index, Object value) { return values.set(index, value); } public List&lt;Map&lt;String, String&gt;&gt; getValues() { // LazyDynaList, LazyDynaMapのままでは扱いにくいため、より一般的な型（List, Map）に変換します。  List&lt;Map&lt;String, String&gt;&gt; convertValues = new ArrayList&lt;Map&lt;String, String&gt;&gt;(); for (Object item : values) { convertValues." />
 
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
@@ -291,7 +291,7 @@ import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.bean
 <p>java 1.6.0_18</p>
 
 <p>以下のようなFormクラスを用意します。</p>
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="kn">import</span> <span class="nn">org.apache.commons.beanutils.LazyDynaList</span><span class="o">;</span>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kn">import</span> <span class="nn">org.apache.commons.beanutils.LazyDynaList</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">org.apache.commons.beanutils.LazyDynaMap</span><span class="o">;</span>
 
 <span class="kd">public</span> <span class="n">HogeForm</span> <span class="kd">extends</span> <span class="n">ActionForm</span> <span class="o">{</span>
@@ -307,42 +307,36 @@ import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.bean
     <span class="o">}</span>
 
     <span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;&gt;</span> <span class="nf">getValues</span><span class="o">()</span> <span class="o">{</span>
-        <span class="c1">// LazyDynaList, LazyDynaMapのままでは扱いにくいため、より一般的な型（List, Map）に変換します。</span>
-        <span class="n">List</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;&gt;</span> <span class="n">convertValues</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;&gt;();</span>
+        <span class="c1">// LazyDynaList, LazyDynaMapのままでは扱いにくいため、より一般的な型（List, Map）に変換します。
+</span><span class="c1"></span>        <span class="n">List</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;&gt;</span> <span class="n">convertValues</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;&gt;();</span>
         <span class="k">for</span> <span class="o">(</span><span class="n">Object</span> <span class="n">item</span> <span class="o">:</span> <span class="n">values</span><span class="o">)</span> <span class="o">{</span>
             <span class="n">convertValues</span><span class="o">.</span><span class="na">add</span><span class="o">(((</span><span class="n">LazyDynaMap</span><span class="o">)</span> <span class="n">item</span><span class="o">).</span><span class="na">getMap</span><span class="o">());</span>
         <span class="o">}</span>
         <span class="k">return</span> <span class="n">convertValues</span><span class="o">;</span>
     <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div>
-
+<span class="o">}</span></code></pre></div>
 <p>JSPでは以下のように出力しておきます。
 Formをsubmitすると、HogeFormのvaluesにList&lt;Map&gt;の形式で値が格納されています。</p>
-<div class="highlight"><pre><code class="language-jsp" data-lang="jsp"><span></span><span class="nt">&lt;logic:iterate</span> <span class="na">id=</span><span class="s">&quot;xxx&quot;</span> <span class="na">name=</span><span class="s">&quot;yyy&quot;</span> <span class="na">indexId=</span><span class="s">&quot;index&quot;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;INPUT</span> <span class="na">type=</span><span class="s">&quot;hidden&quot;</span> <span class="na">name=</span><span class="s">&quot;value[</span><span class="k">&lt;%=</span> <span class="n">index</span> <span class="k">%&gt;</span><span class="s">].aaa&quot;</span> <span class="na">value=</span><span class="s">&quot;&lt;bean:write name=&quot;</span><span class="err">xxx&quot;</span> <span class="na">property=</span><span class="s">&quot;123&quot;</span> <span class="nt">/&gt;</span>&quot; /&gt;
-<span class="nt">&lt;INPUT</span> <span class="na">type=</span><span class="s">&quot;hidden&quot;</span> <span class="na">name=</span><span class="s">&quot;value[</span><span class="k">&lt;%=</span> <span class="n">index</span> <span class="k">%&gt;</span><span class="s">].bbb&quot;</span> <span class="na">value=</span><span class="s">&quot;&lt;bean:write name=&quot;</span><span class="err">xxx&quot;</span> <span class="na">property=</span><span class="s">&quot;456&quot;</span> <span class="nt">/&gt;</span>&quot; /&gt;
-<span class="nt">&lt;INPUT</span> <span class="na">type=</span><span class="s">&quot;hidden&quot;</span> <span class="na">name=</span><span class="s">&quot;value[</span><span class="k">&lt;%=</span> <span class="n">index</span> <span class="k">%&gt;</span><span class="s">].ccc&quot;</span> <span class="na">value=</span><span class="s">&quot;&lt;bean:write name=&quot;</span><span class="err">xxx&quot;</span> <span class="na">property=</span><span class="s">&quot;789&quot;</span> <span class="nt">/&gt;</span>&quot; /&gt;
-<span class="nt">&lt;/logic:iterate&gt;</span>
-</code></pre></div>
-
+<div class="highlight"><pre class="chroma"><code class="language-jsp" data-lang="jsp">&lt;logic:iterate id=&#34;xxx&#34; name=&#34;yyy&#34; indexId=&#34;index&#34;&gt;
+&lt;INPUT type=&#34;hidden&#34; name=&#34;value[&lt;%= index %&gt;].aaa&#34; value=&#34;&lt;bean:write name=&#34;xxx&#34; property=&#34;123&#34; /&gt;&#34; /&gt;
+&lt;INPUT type=&#34;hidden&#34; name=&#34;value[&lt;%= index %&gt;].bbb&#34; value=&#34;&lt;bean:write name=&#34;xxx&#34; property=&#34;456&#34; /&gt;&#34; /&gt;
+&lt;INPUT type=&#34;hidden&#34; name=&#34;value[&lt;%= index %&gt;].ccc&#34; value=&#34;&lt;bean:write name=&#34;xxx&#34; property=&#34;789&#34; /&gt;&#34; /&gt;
+&lt;/logic:iterate&gt;</code></pre></div>
 <p>Actionクラスでは以下のようにアクセス可能です。</p>
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span></span><span class="kd">public</span> <span class="n">ActionForward</span> <span class="nf">execute</span><span class="o">(</span>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="n">ActionForward</span> <span class="nf">execute</span><span class="o">(</span>
     <span class="n">ActionMapping</span> <span class="n">mapping</span><span class="o">,</span> <span class="n">ActionForm</span> <span class="n">form</span><span class="o">,</span> <span class="n">HttpServletRequest</span> <span class="n">request</span><span class="o">,</span> <span class="n">HttpServletResponse</span> <span class="n">response</span><span class="o">)</span> <span class="o">{</span>
 
     <span class="n">HogeForm</span> <span class="n">hogeForm</span> <span class="o">=</span> <span class="o">(</span><span class="n">HogeForm</span><span class="o">)</span> <span class="n">form</span><span class="o">;</span>
     <span class="n">List</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;&gt;</span> <span class="n">values</span> <span class="o">=</span> <span class="n">hogeForm</span><span class="o">.</span><span class="na">getValues</span><span class="o">();</span>
-    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">values</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">).</span><span class="na">get</span><span class="o">(</span><span class="s">&quot;aaa&quot;</span><span class="o">));</span>    <span class="c1">// 123</span>
-
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">values</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">0</span><span class="o">).</span><span class="na">get</span><span class="o">(</span><span class="s">&#34;aaa&#34;</span><span class="o">));</span>    <span class="c1">// 123
+</span><span class="c1"></span>
     <span class="o">...</span>
-<span class="o">}</span>
-</code></pre></div>
-
+<span class="o">}</span></code></pre></div>
  </div>
 
 </article>
 <div class="blog-date">
-  2011/05/15 01:21:00 - 2017/03/27 03:37:14
+  2011/05/15 01:21:00 - 2018/03/06 02:03:15
 </div>
 <amp-ad type="adsense"
   layout="responsive"

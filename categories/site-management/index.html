@@ -215,7 +215,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-05-18 07:09:25.4501906 &#43;0900 JST",
+  "dateModified": "2018-03-06 02:03:15 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -275,19 +275,10 @@
   
   <div class="lastmod-title">
     <div class="[site-management]">
-      <a href="http://www.weizlogy.gq/site/blogger-to-hugo/">[site management] bloggerからhugo&#43;github pagesに移行した理由</a>
-    
-    
-      <span class="blog-date">@2017/05/18 07:09:25</span>
-    </div>
-  </div>
-  
-  <div class="lastmod-title">
-    <div class="[site-management]">
       <a href="http://www.weizlogy.gq/site/seo-bing-webmaster/">[site management] bing Web マスターのSEOレポート対策</a>
     
     
-      <span class="blog-date">@2017/03/26 15:41:38</span>
+      <span class="blog-date">@2018/03/06 02:03:15</span>
     </div>
   </div>
   
@@ -296,7 +287,7 @@
       <a href="http://www.weizlogy.gq/site/code-prettify-on-github/">[site management] code-prettifyがgithubに移行し進化していたので対応した</a>
     
     
-      <span class="blog-date">@2017/03/26 15:41:34</span>
+      <span class="blog-date">@2018/03/06 02:03:15</span>
     </div>
   </div>
   
@@ -305,7 +296,7 @@
       <a href="http://www.weizlogy.gq/site/blogger-last-modified/">[site management] bloggerで最終更新日時を表示する</a>
     
     
-      <span class="blog-date">@2017/03/26 15:41:29</span>
+      <span class="blog-date">@2018/03/06 02:03:15</span>
     </div>
   </div>
   
@@ -314,7 +305,16 @@
       <a href="http://www.weizlogy.gq/site/blogger-blogposting-jsonld/">[site management] schema.org構造化データBlogPosting対応 with JSON&#43;LD in blogger</a>
     
     
-      <span class="blog-date">@2017/03/26 15:41:24</span>
+      <span class="blog-date">@2018/03/06 02:03:15</span>
+    </div>
+  </div>
+  
+  <div class="lastmod-title">
+    <div class="[site-management]">
+      <a href="http://www.weizlogy.gq/site/blogger-to-hugo/">[site management] bloggerからhugo&#43;github pagesに移行した理由</a>
+    
+    
+      <span class="blog-date">@2018/03/06 02:03:15</span>
     </div>
   </div>
   
@@ -338,6 +338,30 @@ bloggerで困ったことをhugoで解決する AMP対応 hugoにはAMP対応の
 ホスティングサービスを選択する GitHub Pagesは静的コンテンツをgit pushするだけで公開できるGitHubのサービスです。
 1GBのストレージで100GB/Monthの帯域、1時間に10回ビルドといった制限がありますが、広告なし無料です。 画像などはdropboxに入れておけば十分活用できます。</pre>
   
+  <div><a href="http://www.weizlogy.gq/site/blogger-blogposting-jsonld/">[site management] schema.org構造化データBlogPosting対応 with JSON&#43;LD in blogger</a></div>
+  <pre class="summary">bloggerのテンプレートで、以下のブログ投稿箇所を検索します。
+&lt;b:loop values=&#39;data:posts&#39; var=&#39;post&#39;&gt; この直下に以下のスクリプトを挿入します。
+&lt;!-- schema.org - BlogPosting. --&gt; &lt;script type=&#39;application/ld+json&#39;&gt; { &#34;@context&#34;: &#34;http://schema.org&#34;, &#34;@type&#34;: &#34;BlogPosting&#34;, &#34;headline&#34;: &#34;&lt;data:blog.url/&gt;&#34;, &#34;url&#34;: &#34;&lt;data:blog.pageTitle/&gt;&#34;, &#34;datePublished&#34;: &#34;&lt;data:post.timestampISO8601/&gt;&#34;, &#34;author&#34;: { &#34;@type&#34;: &#34;Person&#34;, &#34;name&#34;: &#34;&lt;data:post.author/&gt;&#34; }, &#34;publisher&#34;: { &#34;@type&#34;: &#34;Organization&#34;, &#34;name&#34;: &#34;Weiβlogy&#34;, &#34;logo&#34;: { &#34;@type&#34;: &#34;ImageObject&#34;, &#34;url&#34;: &#34;http://www.weizlogy.gq/favicon.ico&#34; } }, &#34;dateModified&#34;: &#34;&lt;data:post.timestampISO8601/&gt;&#34;, &#34;mainEntityOfPage&#34;: &#34;1&#34;, &#34;image&#34;: { &#34;@type&#34;: &#34;ImageObject&#34;, &#34;url&#34;: &#34;http://www.weizlogy.gq/dummy.png&#34;, &#34;width&#34;: &#34;100&#34;, &#34;height&#34;: &#34;100&#34; } } &lt;/script&gt; publisher, imageは各自修正してください。
+datePublished, dateModifiedは今のところ同じ値になっています。
+feedDataに情報はありますが、Javascriptを経由せず取得するのは難しそうです。
+本当はheaderタグ内に置きたかったのですが、data:postsが b:section class=&lsquo;main&rsquo; id=&lsquo;main&rsquo; 配下でないと 有効でないという仕様に阻まれました。。。</pre>
+  
+  <div><a href="http://www.weizlogy.gq/site/blogger-last-modified/">[site management] bloggerで最終更新日時を表示する</a></div>
+  <pre class="summary">bloggerのテンプレートタグでは更新日時を取得できないので、別の方法を参考に、時刻追加、個別記事表示、一覧記事表示どちらも対応するようにしました。
+ポイントは最終更新日時を挿入する要素のID属性を各投稿記事固有のIDにすることです。
+ここが固定だと、最も早く出現する要素1つにのみ更新日時が表示されてしまいます。
+まず、最終更新日時を表示する領域を決めます。
+[テンプレート] &gt; [HTMLの編集] &gt; [書式テンプレート] &gt; [ウィジェットの移動] &gt; [Blog1&lt;ブログ投稿領域&gt;]に移動します。
+投稿領域近辺が良いと思いますので、&lt;b:includable id=&lsquo;post&rsquo; var=&lsquo;post&rsquo;&gt;&hellip;&lt;/b:includable&gt;を展開し、そこから好きな位置に決めます。 今回は、投稿日時の近辺にするため、&lt;span class=&lsquo;post-timestamp&rsquo;&gt;と次の要素の間に以下の投稿に依存するコードを埋め込みます。
+&lt;!-- 最終更新日時 --&gt; &lt;span expr:id=&#39;data:post.id&#39; class=&#39;last-modified updated&#39;&gt;&lt;/span&gt; &lt;script type=&#39;text/javascript&#39;&gt; var id = &#34;&lt;data:post.id/&gt;&#34;; &lt;/script&gt; &lt;script type=&#39;text/javascript&#39;&gt; var sHome = &#34;&lt;data:blog.homepageUrl/&gt;&#34;; var sURL = &#34;&lt;data:post.url/&gt;&#34;; sURL = sURL.replace(sHome, &#34;&#34;) sURL = &#34;/&#34; + sURL; document.write(unescape(&#34;%3Cscript&#34;)+&#34; src=&#39;&#34;+sHome+&#34;/atom.xml?redirect=false&amp;amp;path=&#34;+sURL+&#34;&amp;amp;max-results=1&amp;amp;alt=json-in-script&amp;amp;callback=show_last_modified&#39; type=&#39;text/javascript&#39;&#34;+unescape(&#34;%3E%3C/script%3E&#34;)); &lt;/script&gt; 各投稿のRSSからコールバックされる関数show_last_modifiedは投稿に依存せず不変のため、テンプレートの上部に(投稿の前に宣言できればどこでも良い)一度だけ宣言します。
+&lt;script type=&#34;text/javascript&#34;&gt;// &lt;![CDATA[ function show_last_modified(root) { var published = &#39;&#39;; var updated = &#39;&#39;; for (var i = 0; i &lt; root.</pre>
+  
+  <div><a href="http://www.weizlogy.gq/site/code-prettify-on-github/">[site management] code-prettifyがgithubに移行し進化していたので対応した</a></div>
+  <pre class="summary">code-prettifyはGoogle謹製シンタックスハイライターです。
+以前は以下の構成が必要でした。
+&lt;!-- prettify --&gt; &lt;style type=&#39;text/css&#39;&gt; @import &#34;http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css&#34;; &lt;/style&gt; &lt;script src=&#39;http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js&#39; type=&#39;text/javascript&#39;&gt;&lt;/script&gt; &lt;script type=&#39;text/javascript&#39;&gt; function prettify() { prettyPrint(); } if (window.addEventListener) { window.addEventListener(&#34;load&#34;, prettify, false); } else if (window.attachEvent) { window.attachEvent(&#34;onload&#34;, prettify); } else { window.onload = prettify; }&lt;/script&gt; &lt;!-- prettify --&gt; 進化後はたった一行で済みます。すごいですね。
+&lt;script src=&#34;https://cdn.</pre>
+  
   <div><a href="http://www.weizlogy.gq/site/seo-bing-webmaster/">[site management] bing Web マスターのSEOレポート対策</a></div>
   <pre class="summary">[レポート＆データ] &gt; [SEOレポート]からレポートを確認できます。 簡単なものから順次対策していきます。
 ページにメタ言語情報がありません。 bing Web マスター曰く、
@@ -350,30 +374,6 @@ bloggerで困ったことをhugoで解決する AMP対応 hugoにはAMP対応の
  ページ ソースから余分な &lt;h1&gt; タグを削除し、1 つの &lt;h1&gt; タグしか存在しないようにします。
  bloggerでは、シンプルテンプレートを使用中ですが、タイトルにh1タグを使用しているため、ブログ本文中にh1タグを使用してはいけません。
 &lt;img&gt; タグで ALT 属性が定義されていません。  bing Web マスター曰く、 原則として、検索エンジンは画像ファイルを解釈しません。サイト所有者は、&lt;img alt&gt; 属性のテキストを使用して検索エンジンとエンド ユーザーに関連情報を提供することができます。エンド ユーザーが画像を無効にしている場合や画像が正しく読み込まれなかった場合に、Alt テキストが役に立ちます。また、スクリーン リーダーでも Alt テキストが使用されます。Alt テキストが記述的で、画像を正確に示し、ページ コンテンツをサポートしていることを確認してください。</pre>
-  
-  <div><a href="http://www.weizlogy.gq/site/code-prettify-on-github/">[site management] code-prettifyがgithubに移行し進化していたので対応した</a></div>
-  <pre class="summary">code-prettifyはGoogle謹製シンタックスハイライターです。
-以前は以下の構成が必要でした。
-&lt;!-- prettify --&gt; &lt;style type=&#39;text/css&#39;&gt; @import &quot;http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css&quot;; &lt;/style&gt; &lt;script src=&#39;http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js&#39; type=&#39;text/javascript&#39;&gt;&lt;/script&gt; &lt;script type=&#39;text/javascript&#39;&gt; function prettify() { prettyPrint(); } if (window.addEventListener) { window.addEventListener(&quot;load&quot;, prettify, false); } else if (window.attachEvent) { window.attachEvent(&quot;onload&quot;, prettify); } else { window.onload = prettify; }&lt;/script&gt; &lt;!-- prettify --&gt;  進化後はたった一行で済みます。すごいですね。
-&lt;script src=&quot;https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js&quot;&gt;&lt;/script&gt;  </pre>
-  
-  <div><a href="http://www.weizlogy.gq/site/blogger-last-modified/">[site management] bloggerで最終更新日時を表示する</a></div>
-  <pre class="summary">bloggerのテンプレートタグでは更新日時を取得できないので、別の方法を参考に、時刻追加、個別記事表示、一覧記事表示どちらも対応するようにしました。
-ポイントは最終更新日時を挿入する要素のID属性を各投稿記事固有のIDにすることです。
-ここが固定だと、最も早く出現する要素1つにのみ更新日時が表示されてしまいます。
-まず、最終更新日時を表示する領域を決めます。
-[テンプレート] &gt; [HTMLの編集] &gt; [書式テンプレート] &gt; [ウィジェットの移動] &gt; [Blog1&lt;ブログ投稿領域&gt;]に移動します。
-投稿領域近辺が良いと思いますので、&lt;b:includable id=&lsquo;post&rsquo; var=&lsquo;post&rsquo;&gt;&hellip;&lt;/b:includable&gt;を展開し、そこから好きな位置に決めます。 今回は、投稿日時の近辺にするため、&lt;span class=&lsquo;post-timestamp&rsquo;&gt;と次の要素の間に以下の投稿に依存するコードを埋め込みます。
-&lt;!-- 最終更新日時 --&gt; &lt;span expr:id=&#39;data:post.id&#39; class=&#39;last-modified updated&#39;&gt;&lt;/span&gt; &lt;script type=&#39;text/javascript&#39;&gt; var id = &quot;&lt;data:post.id/&gt;&quot;; &lt;/script&gt; &lt;script type=&#39;text/javascript&#39;&gt; var sHome = &quot;&lt;data:blog.homepageUrl/&gt;&quot;; var sURL = &quot;&lt;data:post.url/&gt;&quot;; sURL = sURL.replace(sHome, &quot;&quot;) sURL = &quot;/&quot; + sURL; document.write(unescape(&quot;%3Cscript&quot;)+&quot; src=&#39;&quot;+sHome+&quot;/atom.xml?redirect=false&amp;path=&quot;+sURL+&quot;&amp;max-results=1&amp;alt=json-in-script&amp;callback=show_last_modified&#39; type=&#39;text/javascript&#39;&quot;+unescape(&quot;%3E%3C/script%3E&quot;)); &lt;/script&gt;  各投稿のRSSからコールバックされる関数show_last_modifiedは投稿に依存せず不変のため、テンプレートの上部に(投稿の前に宣言できればどこでも良い)一度だけ宣言します。
-&lt;script type=&quot;text/javascript&quot;&gt;// &lt;![CDATA[ function show_last_modified(root) { var published = &#39;&#39;; var updated = &#39;&#39;; for (var i = 0; i &lt; root.</pre>
-  
-  <div><a href="http://www.weizlogy.gq/site/blogger-blogposting-jsonld/">[site management] schema.org構造化データBlogPosting対応 with JSON&#43;LD in blogger</a></div>
-  <pre class="summary">bloggerのテンプレートで、以下のブログ投稿箇所を検索します。
-&lt;b:loop values=&#39;data:posts&#39; var=&#39;post&#39;&gt;  この直下に以下のスクリプトを挿入します。
-&lt;!-- schema.org - BlogPosting. --&gt; &lt;script type=&#39;application/ld+json&#39;&gt; { &quot;@context&quot;: &quot;http://schema.org&quot;, &quot;@type&quot;: &quot;BlogPosting&quot;, &quot;headline&quot;: &quot;&lt;data:blog.url/&gt;&quot;, &quot;url&quot;: &quot;&lt;data:blog.pageTitle/&gt;&quot;, &quot;datePublished&quot;: &quot;&lt;data:post.timestampISO8601/&gt;&quot;, &quot;author&quot;: { &quot;@type&quot;: &quot;Person&quot;, &quot;name&quot;: &quot;&lt;data:post.author/&gt;&quot; }, &quot;publisher&quot;: { &quot;@type&quot;: &quot;Organization&quot;, &quot;name&quot;: &quot;Weiβlogy&quot;, &quot;logo&quot;: { &quot;@type&quot;: &quot;ImageObject&quot;, &quot;url&quot;: &quot;http://www.weizlogy.gq/favicon.ico&quot; } }, &quot;dateModified&quot;: &quot;&lt;data:post.timestampISO8601/&gt;&quot;, &quot;mainEntityOfPage&quot;: &quot;1&quot;, &quot;image&quot;: { &quot;@type&quot;: &quot;ImageObject&quot;, &quot;url&quot;: &quot;http://www.weizlogy.gq/dummy.png&quot;, &quot;width&quot;: &quot;100&quot;, &quot;height&quot;: &quot;100&quot; } } &lt;/script&gt;  publisher, imageは各自修正してください。
-datePublished, dateModifiedは今のところ同じ値になっています。
-feedDataに情報はありますが、Javascriptを経由せず取得するのは難しそうです。
-本当はheaderタグ内に置きたかったのですが、data:postsが b:section class=&lsquo;main&rsquo; id=&lsquo;main&rsquo; 配下でないと 有効でないという仕様に阻まれました。。。</pre>
   
   
 

@@ -6,8 +6,7 @@
     <description>Recent content in Tos Addon Dev on Weizlogy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2010 weizlogy.</copyright>
-    <lastBuildDate>Sun, 26 Mar 2017 15:41:17 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 05 Mar 2017 14:19:00 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/categories/tos-addon-dev/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,25 +14,36 @@
     <item>
       <title>[tree of savior addon for developpers] アドオンで自作スキンを使用する方法</title>
       <link>http://www.weizlogy.gq/tos/addon-dev/use-custom-skins/</link>
-      <pubDate>Sun, 26 Mar 2017 15:41:17 +0900</pubDate>
+      <pubDate>Sun, 05 Mar 2017 14:19:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon-dev/use-custom-skins/</guid>
       <description>ifpファイル内部構成 xxx.ipf ├───addon_d.ipf │ └───xxx │ ├───xxx.lua │ └───xxx.xml └───ui.ipf ├───baseskinset │ └───xxx.xml └───skin └───xxx.tga  addon_d.ipf Tree Of Savior アドオン作成～設置方法まとめ 参照。
 ui.ipf baseskinset 自作スキンの読込とアドオン内部で使用するスキンの定義を行います。
 xxx.xml
-&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;skinset name=&amp;quot;Base&amp;quot;&amp;gt; &amp;lt;imagelist category=&amp;quot;ringcommand&amp;quot;&amp;gt; &amp;lt;image name=&amp;quot;image1&amp;quot; file=&amp;quot;\skin\xxx.tga&amp;quot; imgrect=&amp;quot;211 5 197 195&amp;quot;/&amp;gt; &amp;lt;image name=&amp;quot;image2&amp;quot; file=&amp;quot;\skin\xxx.tga&amp;quot; imgrect=&amp;quot;417 5 197 195&amp;quot;/&amp;gt; &amp;lt;/imagelist&amp;gt; &amp;lt;/skinset&amp;gt;  name アドオン内部で参照するスキン名。
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;skinset name=&amp;#34;Base&amp;#34;&amp;gt; &amp;lt;imagelist category=&amp;#34;ringcommand&amp;#34;&amp;gt; &amp;lt;image name=&amp;#34;image1&amp;#34; file=&amp;#34;\skin\xxx.tga&amp;#34; imgrect=&amp;#34;211 5 197 195&amp;#34;/&amp;gt; &amp;lt;image name=&amp;#34;image2&amp;#34; file=&amp;#34;\skin\xxx.tga&amp;#34; imgrect=&amp;#34;417 5 197 195&amp;#34;/&amp;gt; &amp;lt;/imagelist&amp;gt; &amp;lt;/skinset&amp;gt; name アドオン内部で参照するスキン名。
 オリジナルのスキン名と重複しないように気を付けます。
 file スキン読み込み元画像ファイルパス。
 imgrect スキン読み込み元画像ファイル内画像座標。
 半角スペース区切りで四角形の左上と右下の頂点座標を指定します。 =&amp;gt; x, y, width, height
 skin 自作スキン画像ファイルを配置します。
-アドオン実装方法 xml &amp;lt;picture name=&amp;quot;xxx&amp;quot; rect=&amp;quot;0 0 70 30&amp;quot; margin=&amp;quot;0 0 45 0&amp;quot; hittest=&amp;quot;true&amp;quot; image=&amp;quot;image1&amp;quot;/&amp;gt;  lua local pic = GET_CHILD(xxx, &amp;quot;xxx&amp;quot;, &amp;quot;ui::CPicture&amp;quot;); pic:SetImage(&amp;quot;image2&amp;quot;);  tgaファイル 画像ファイルの一つ。</description>
+アドオン実装方法 xml &amp;lt;picture name=&amp;#34;xxx&amp;#34; rect=&amp;#34;0 0 70 30&amp;#34; margin=&amp;#34;0 0 45 0&amp;#34; hittest=&amp;#34;true&amp;#34; image=&amp;#34;image1&amp;#34;/&amp;gt; lua local pic = GET_CHILD(xxx, &amp;#34;xxx&amp;#34;, &amp;#34;ui::CPicture&amp;#34;); pic:SetImage(&amp;#34;image2&amp;#34;); tgaファイル 画像ファイルの一つ。</description>
+    </item>
+    
+    <item>
+      <title>[tree of savior addon for developpers] iesファイルフォーマット解説</title>
+      <link>http://www.weizlogy.gq/tos/addon-dev/ies-format/</link>
+      <pubDate>Sat, 31 Dec 2016 17:29:00 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon-dev/ies-format/</guid>
+      <description>???は可変長です。
+Total block  ------------------- ---------------------------- ------------------------- | Header [156 byte] | Cell Header [136 x N byte] | Row Data [??? x M byte] | ------------------- ---------------------------- -------------------------  N=列数。は、Header blockのCellCountで指定。 M=行数。は、Header blockのRowCountで指定。
+Header block  ---------------------- ------------------- ------------------------ | TableName [128 byte] | Reserve1 [4 byte] | OffsetOfData [4 byte] | ---------------------- ------------------- ------------------------ --------------------------- ------------------- ------------------- | OffsetOfResource [4 byte] | FileSize [4 byte] | Reserve2 [4 byte] | --------------------------- ------------------- ------------------- ------------------- -------------------- -------------------------- | RowCount [2 byte] | CellCount [2 byte] | NumCellCount [2 byte] | ------------------- -------------------- -------------------------- ----------------------- ------------------------------------------- | StrCellCount [2 byte] | Reserve3 [2 byte] | --------------------- | ----------------------- -------------------------------------------           TableName IESテーブル名   Reserve1 予約1   OffsetOfData Cell Header blockのサイズ   OffsetOfResource Row Data blockのサイズ   FileSize IESファイルサイズ   Reserve2 予約2   RowCount 行数   CellCount 列数   NumCellCount 数値列数   StrCellCount 文字列列数   Reserve3 予約3    Cell Header block  ---------------- ------------------- ---------------------- | Name [64 byte] | Name2 [64 byte] | Type [2 byte] | ------ | ---------------- ------------------- ---------------------- ------------------- ------------------- ------------------- | Reserve1 [2 byte] | Reserve2 [4 byte] | Position [2 byte] | ------------------- ------------------- -------------------           Name Cell名   Name2 Cell別名   Type 0：数値Cell、1,2：文字列Cell   Reserve1 予約1   Reserve2 予約2   Position Type内Cell順序    Cell順は、Type昇順、Position昇順。</description>
     </item>
     
     <item>
       <title>[tree of savior addon for developpers] iesファイルをcsv形式のファイルに変換するソフト</title>
       <link>http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/</link>
-      <pubDate>Sun, 26 Mar 2017 15:41:13 +0900</pubDate>
+      <pubDate>Sat, 31 Dec 2016 15:42:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/</guid>
       <description>overviews. Tree Of Saviorのipfファイル内には拡張子がiesのファイルがあります。
@@ -52,31 +62,21 @@ https://github.com/r1emu/IPFUnpacker/blob/master</description>
     </item>
     
     <item>
-      <title>[tree of savior addon for developpers] iesファイルフォーマット解説</title>
-      <link>http://www.weizlogy.gq/tos/addon-dev/ies-format/</link>
-      <pubDate>Sun, 26 Mar 2017 15:41:06 +0900</pubDate>
-      
-      <guid>http://www.weizlogy.gq/tos/addon-dev/ies-format/</guid>
-      <description>???は可変長です。
-Total block  ------------------- ---------------------------- ------------------------- | Header [156 byte] | Cell Header [136 x N byte] | Row Data [??? x M byte] | ------------------- ---------------------------- -------------------------  N=列数。は、Header blockのCellCountで指定。 M=行数。は、Header blockのRowCountで指定。
-Header block  ---------------------- ------------------- ------------------------ | TableName [128 byte] | Reserve1 [4 byte] | OffsetOfData [4 byte] | ---------------------- ------------------- ------------------------ --------------------------- ------------------- ------------------- | OffsetOfResource [4 byte] | FileSize [4 byte] | Reserve2 [4 byte] | --------------------------- ------------------- ------------------- ------------------- -------------------- -------------------------- | RowCount [2 byte] | CellCount [2 byte] | NumCellCount [2 byte] | ------------------- -------------------- -------------------------- ----------------------- ------------------------------------------- | StrCellCount [2 byte] | Reserve3 [2 byte] | --------------------- | ----------------------- -------------------------------------------           TableName IESテーブル名   Reserve1 予約1   OffsetOfData Cell Header blockのサイズ   OffsetOfResource Row Data blockのサイズ   FileSize IESファイルサイズ   Reserve2 予約2   RowCount 行数   CellCount 列数   NumCellCount 数値列数   StrCellCount 文字列列数   Reserve3 予約3    Cell Header block  ---------------- ------------------- ---------------------- | Name [64 byte] | Name2 [64 byte] | Type [2 byte] | ------ | ---------------- ------------------- ---------------------- ------------------- ------------------- ------------------- | Reserve1 [2 byte] | Reserve2 [4 byte] | Position [2 byte] | ------------------- ------------------- -------------------           Name Cell名   Name2 Cell別名   Type 0：数値Cell、1,2：文字列Cell   Reserve1 予約1   Reserve2 予約2   Position Type内Cell順序    Cell順は、Type昇順、Position昇順。</description>
-    </item>
-    
-    <item>
       <title>[tree of savior addon for developpers] アドオン作成～設置方法まとめ</title>
       <link>http://www.weizlogy.gq/tos/addon-dev/create-addon/</link>
-      <pubDate>Sun, 26 Mar 2017 15:40:59 +0900</pubDate>
+      <pubDate>Sun, 25 Sep 2016 07:41:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon-dev/create-addon/</guid>
       <description>必要なもの  IPF Suite IPFUnpacker  作成手順 1. アドオンの名前を決める &amp;ldquo;xxxaddonxxx&amp;rdquo;としてみます。全て小文字、記号なしが良いです。
 2. アドオンのGUIを作る &amp;ldquo;xxxaddonxxx.xml&amp;rdquo;ファイルを作成します。アドオン名とuiframe@nameの値が一致するようにします。
-&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; ?&amp;gt; &amp;lt;uiframe name=&amp;quot;xxxaddonxxx&amp;quot; x=&amp;quot;10&amp;quot; y=&amp;quot;10&amp;quot; width=&amp;quot;100&amp;quot; height=&amp;quot;100&amp;quot;&amp;gt; &amp;lt;frame title=&amp;quot;XXXaddonXXX&amp;quot; snapclient=&amp;quot;true&amp;quot; snapframe=&amp;quot;true&amp;quot;/&amp;gt; &amp;lt;option closebutton=&amp;quot;false&amp;quot; hideable=&amp;quot;false&amp;quot;/&amp;gt; &amp;lt;input hittest=&amp;quot;true&amp;quot;/&amp;gt; &amp;lt;layer layerlevel=&amp;quot;31&amp;quot; /&amp;gt; &amp;lt;draw blend=&amp;quot;100&amp;quot; drawtitlebar=&amp;quot;false&amp;quot; drawframe=&amp;quot;false&amp;quot;/&amp;gt; &amp;lt;controls&amp;gt; &amp;lt;richtext name=&amp;quot;dummy&amp;quot; /&amp;gt; &amp;lt;/controls&amp;gt; &amp;lt;/uiframe&amp;gt;  3. アドオンのスクリプトを作る &amp;ldquo;xxxaddonxxx.lua&amp;rdquo;ファイルを作成します。アドオン名と関数名の&amp;rdquo;_ON_INIT&amp;rdquo;前までが、大文字で一致するようにします。
-function XXXADDONXXX_ON_INIT(addon, frame) -- 任意の初期化処理 end  4. アドオンをパッケージングする IPFSuite.exeを起動、上部メニューの[New]、[New Container]の順序でボタンを押します。
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34; ?&amp;gt; &amp;lt;uiframe name=&amp;#34;xxxaddonxxx&amp;#34; x=&amp;#34;10&amp;#34; y=&amp;#34;10&amp;#34; width=&amp;#34;100&amp;#34; height=&amp;#34;100&amp;#34;&amp;gt; &amp;lt;frame title=&amp;#34;XXXaddonXXX&amp;#34; snapclient=&amp;#34;true&amp;#34; snapframe=&amp;#34;true&amp;#34;/&amp;gt; &amp;lt;option closebutton=&amp;#34;false&amp;#34; hideable=&amp;#34;false&amp;#34;/&amp;gt; &amp;lt;input hittest=&amp;#34;true&amp;#34;/&amp;gt; &amp;lt;layer layerlevel=&amp;#34;31&amp;#34; /&amp;gt; &amp;lt;draw blend=&amp;#34;100&amp;#34; drawtitlebar=&amp;#34;false&amp;#34; drawframe=&amp;#34;false&amp;#34;/&amp;gt; &amp;lt;controls&amp;gt; &amp;lt;richtext name=&amp;#34;dummy&amp;#34; /&amp;gt; &amp;lt;/controls&amp;gt; &amp;lt;/uiframe&amp;gt; 3. アドオンのスクリプトを作る &amp;ldquo;xxxaddonxxx.lua&amp;rdquo;ファイルを作成します。アドオン名と関数名の&amp;rdquo;_ON_INIT&amp;rdquo;前までが、大文字で一致するようにします。
+function XXXADDONXXX_ON_INIT(addon, frame) -- 任意の初期化処理 end 4. アドオンをパッケージングする IPFSuite.exeを起動、上部メニューの[New]、[New Container]の順序でボタンを押します。
 [New Container]ボタンを押した後、テキストボックスが出現するので、&amp;rdquo;addon_d.ipf&amp;rdquo;を入力します。
 上部メニューの[Add Folder]ボタンを押します。フォルダ名はアドオン名と同じ&amp;rdquo;xxxaddonxxx&amp;rdquo;とします。
 上部メニューの[Add]ボタンを押します。ファイル選択ダイアログが出現するので、先に作成したxmlとluaファイルを選択します。
 上部メニューの[Save]ボタンを押します。保存するファイル名は&amp;rdquo;xxxaddonxxx.ipf&amp;rdquo;とします。
-5. アドオンを暗号化する IPF Unpackerで暗号化します。&amp;rdquo;Done!</description>
+5. アドオンを暗号化する IPF Unpackerで暗号化します。&amp;rdquo;Done!&amp;ldquo;と表示されれば成功です。
+&amp;gt; ipf_unpack.</description>
     </item>
     
   </channel>

@@ -216,7 +216,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-26 15:41:29.5934921 &#43;0900 JST",
+  "dateModified": "2018-03-06 02:03:15 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -237,8 +237,8 @@
 まず、最終更新日時を表示する領域を決めます。
 [テンプレート] &gt; [HTMLの編集] &gt; [書式テンプレート] &gt; [ウィジェットの移動] &gt; [Blog1&lt;ブログ投稿領域&gt;]に移動します。
 投稿領域近辺が良いと思いますので、&lt;b:includable id=&lsquo;post&rsquo; var=&lsquo;post&rsquo;&gt;&hellip;&lt;/b:includable&gt;を展開し、そこから好きな位置に決めます。 今回は、投稿日時の近辺にするため、&lt;span class=&lsquo;post-timestamp&rsquo;&gt;と次の要素の間に以下の投稿に依存するコードを埋め込みます。
-&lt;!-- 最終更新日時 --&gt; &lt;span expr:id=&#39;data:post.id&#39; class=&#39;last-modified updated&#39;&gt;&lt;/span&gt; &lt;script type=&#39;text/javascript&#39;&gt; var id = &quot;&lt;data:post.id/&gt;&quot;; &lt;/script&gt; &lt;script type=&#39;text/javascript&#39;&gt; var sHome = &quot;&lt;data:blog.homepageUrl/&gt;&quot;; var sURL = &quot;&lt;data:post.url/&gt;&quot;; sURL = sURL.replace(sHome, &quot;&quot;) sURL = &quot;/&quot; &#43; sURL; document.write(unescape(&quot;%3Cscript&quot;)&#43;&quot; src=&#39;&quot;&#43;sHome&#43;&quot;/atom.xml?redirect=false&amp;path=&quot;&#43;sURL&#43;&quot;&amp;max-results=1&amp;alt=json-in-script&amp;callback=show_last_modified&#39; type=&#39;text/javascript&#39;&quot;&#43;unescape(&quot;%3E%3C/script%3E&quot;)); &lt;/script&gt;  各投稿のRSSからコールバックされる関数show_last_modifiedは投稿に依存せず不変のため、テンプレートの上部に(投稿の前に宣言できればどこでも良い)一度だけ宣言します。
-&lt;script type=&quot;text/javascript&quot;&gt;// &lt;![CDATA[ function show_last_modified(root) { var published = &#39;&#39;; var updated = &#39;&#39;; for (var i = 0; i &lt; root." />
+&lt;!-- 最終更新日時 --&gt; &lt;span expr:id=&#39;data:post.id&#39; class=&#39;last-modified updated&#39;&gt;&lt;/span&gt; &lt;script type=&#39;text/javascript&#39;&gt; var id = &#34;&lt;data:post.id/&gt;&#34;; &lt;/script&gt; &lt;script type=&#39;text/javascript&#39;&gt; var sHome = &#34;&lt;data:blog.homepageUrl/&gt;&#34;; var sURL = &#34;&lt;data:post.url/&gt;&#34;; sURL = sURL.replace(sHome, &#34;&#34;) sURL = &#34;/&#34; &#43; sURL; document.write(unescape(&#34;%3Cscript&#34;)&#43;&#34; src=&#39;&#34;&#43;sHome&#43;&#34;/atom.xml?redirect=false&amp;amp;path=&#34;&#43;sURL&#43;&#34;&amp;amp;max-results=1&amp;amp;alt=json-in-script&amp;amp;callback=show_last_modified&#39; type=&#39;text/javascript&#39;&#34;&#43;unescape(&#34;%3E%3C/script%3E&#34;)); &lt;/script&gt; 各投稿のRSSからコールバックされる関数show_last_modifiedは投稿に依存せず不変のため、テンプレートの上部に(投稿の前に宣言できればどこでも良い)一度だけ宣言します。
+&lt;script type=&#34;text/javascript&#34;&gt;// &lt;![CDATA[ function show_last_modified(root) { var published = &#39;&#39;; var updated = &#39;&#39;; for (var i = 0; i &lt; root." />
 
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
@@ -283,23 +283,21 @@
 
 <p>投稿領域近辺が良いと思いますので、&lt;b:includable id=&lsquo;post&rsquo; var=&lsquo;post&rsquo;&gt;&hellip;&lt;/b:includable&gt;を展開し、そこから好きな位置に決めます。
 今回は、投稿日時の近辺にするため、&lt;span class=&lsquo;post-timestamp&rsquo;&gt;と次の要素の間に以下の投稿に依存するコードを埋め込みます。</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span></span><span class="c">&lt;!-- 最終更新日時 --&gt;</span>
-<span class="p">&lt;</span><span class="nt">span</span> <span class="na">expr:id</span><span class="o">=</span><span class="s">&#39;data:post.id&#39;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;last-modified updated&#39;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;text/javascript&#39;</span><span class="p">&gt;</span>
-  <span class="kd">var</span> <span class="nx">id</span> <span class="o">=</span> <span class="s2">&quot;&lt;data:post.id/&gt;&quot;</span><span class="p">;</span>
-<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;text/javascript&#39;</span><span class="p">&gt;</span>
-  <span class="kd">var</span> <span class="nx">sHome</span> <span class="o">=</span> <span class="s2">&quot;&lt;data:blog.homepageUrl/&gt;&quot;</span><span class="p">;</span>
-  <span class="kd">var</span> <span class="nx">sURL</span> <span class="o">=</span> <span class="s2">&quot;&lt;data:post.url/&gt;&quot;</span><span class="p">;</span>
-  <span class="nx">sURL</span> <span class="o">=</span> <span class="nx">sURL</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">sHome</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
-  <span class="nx">sURL</span> <span class="o">=</span> <span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nx">sURL</span><span class="p">;</span>
-  <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">unescape</span><span class="p">(</span><span class="s2">&quot;%3Cscript&quot;</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; src=&#39;&quot;</span><span class="o">+</span><span class="nx">sHome</span><span class="o">+</span><span class="s2">&quot;/atom.xml?redirect=false&amp;path=&quot;</span><span class="o">+</span><span class="nx">sURL</span><span class="o">+</span><span class="s2">&quot;&amp;max-results=1&amp;alt=json-in-script&amp;callback=show_last_modified&#39; type=&#39;text/javascript&#39;&quot;</span><span class="o">+</span><span class="nx">unescape</span><span class="p">(</span><span class="s2">&quot;%3E%3C/script%3E&quot;</span><span class="p">));</span>
-<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div>
-
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- 最終更新日時 --&gt;</span>
+<span class="p">&lt;</span><span class="nt">span</span> <span class="na">expr:id</span><span class="o">=</span><span class="s">&#39;data:post.id&#39;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;last-modified updated&#39;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;text/javascript&#39;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="kd">var</span> <span class="nx">id</span> <span class="o">=</span> <span class="s2">&#34;&lt;data:post.id/&gt;&#34;</span><span class="p">;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;text/javascript&#39;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="kd">var</span> <span class="nx">sHome</span> <span class="o">=</span> <span class="s2">&#34;&lt;data:blog.homepageUrl/&gt;&#34;</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">sURL</span> <span class="o">=</span> <span class="s2">&#34;&lt;data:post.url/&gt;&#34;</span><span class="p">;</span>
+  <span class="nx">sURL</span> <span class="o">=</span> <span class="nx">sURL</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">sHome</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)</span>
+  <span class="nx">sURL</span> <span class="o">=</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="nx">sURL</span><span class="p">;</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">unescape</span><span class="p">(</span><span class="s2">&#34;%3Cscript&#34;</span><span class="p">)</span><span class="o">+</span><span class="s2">&#34; src=&#39;&#34;</span><span class="o">+</span><span class="nx">sHome</span><span class="o">+</span><span class="s2">&#34;/atom.xml?redirect=false&amp;amp;path=&#34;</span><span class="o">+</span><span class="nx">sURL</span><span class="o">+</span><span class="s2">&#34;&amp;amp;max-results=1&amp;amp;alt=json-in-script&amp;amp;callback=show_last_modified&#39; type=&#39;text/javascript&#39;&#34;</span><span class="o">+</span><span class="nx">unescape</span><span class="p">(</span><span class="s2">&#34;%3E%3C/script%3E&#34;</span><span class="p">));</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></div>
 <p>各投稿のRSSからコールバックされる関数show_last_modifiedは投稿に依存せず不変のため、テンプレートの上部に(投稿の前に宣言できればどこでも良い)一度だけ宣言します。</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span><span class="c1">// &lt;![CDATA[</span>
-<span class="kd">function</span> <span class="nx">show_last_modified</span><span class="p">(</span><span class="nx">root</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span><span class="p"></span><span class="p">&gt;</span><span class="c1">// &lt;![CDATA[
+</span><span class="c1"></span><span class="kd">function</span> <span class="nx">show_last_modified</span><span class="p">(</span><span class="nx">root</span><span class="p">)</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">published</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>  
   <span class="kd">var</span> <span class="nx">updated</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
   <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">root</span><span class="p">.</span><span class="nx">feed</span><span class="p">.</span><span class="nx">entry</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
@@ -313,26 +311,24 @@
   <span class="kd">var</span> <span class="nx">pp_M</span> <span class="o">=</span> <span class="nx">published</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">);</span>
   <span class="kd">var</span> <span class="nx">pp_D</span> <span class="o">=</span> <span class="nx">published</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">);</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">dd_Y</span> <span class="o">==</span> <span class="nx">pp_Y</span> <span class="o">&amp;&amp;</span> <span class="nx">dd_M</span> <span class="o">==</span> <span class="nx">pp_M</span> <span class="o">&amp;&amp;</span> <span class="nx">dd_D</span> <span class="o">==</span> <span class="nx">pp_D</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// 日付が同じときは出力しない</span>
-  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1">// 日付が同じときは出力しない
+</span><span class="c1"></span>  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">dd_H</span> <span class="o">=</span> <span class="nx">updated</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="mi">13</span><span class="p">);</span>
     <span class="kd">var</span> <span class="nx">dd_m</span> <span class="o">=</span> <span class="nx">updated</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="mi">16</span><span class="p">);</span>
     <span class="kd">var</span> <span class="nx">dd_S</span> <span class="o">=</span> <span class="nx">updated</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="mi">19</span><span class="p">);</span>
-    <span class="kd">var</span> <span class="nx">updated_dd</span> <span class="o">=</span> <span class="s2">&quot;updated...&quot;</span><span class="o">+</span> <span class="nx">dd_Y</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nx">dd_M</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nx">dd_D</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="nx">dd_H</span> <span class="o">+</span> <span class="s2">&quot;:&quot;</span> <span class="o">+</span> <span class="nx">dd_m</span> <span class="o">+</span> <span class="s2">&quot;:&quot;</span> <span class="o">+</span> <span class="nx">dd_S</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">updated_dd</span> <span class="o">=</span> <span class="s2">&#34;updated...&#34;</span><span class="o">+</span> <span class="nx">dd_Y</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="nx">dd_M</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="nx">dd_D</span> <span class="o">+</span> <span class="s2">&#34; &#34;</span> <span class="o">+</span> <span class="nx">dd_H</span> <span class="o">+</span> <span class="s2">&#34;:&#34;</span> <span class="o">+</span> <span class="nx">dd_m</span> <span class="o">+</span> <span class="s2">&#34;:&#34;</span> <span class="o">+</span> <span class="nx">dd_S</span><span class="p">;</span>
     <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">updated_dd</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">).</span><span class="nx">title</span> <span class="o">=</span> <span class="nx">updated</span><span class="p">;</span>
-<span class="p">}</span> <span class="c1">//]]&gt;</span>
-<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div>
-
+<span class="p">}</span> <span class="c1">//]]&gt;
+</span><span class="c1"></span><span class="p">&lt;</span><span class="p">/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></div>
 <p>保存して正しく動くか確認しましょう。 また、一覧記事表示ではRSSを記事数分ロードするため、一覧表示件数は控えめにしましょう。</p>
 
  </div>
 
 </article>
 <div class="blog-date">
-  2016/06/16 22:00:00 - 2017/03/26 15:41:29
+  2016/06/16 22:00:00 - 2018/03/06 02:03:15
 </div>
 <amp-ad type="adsense"
   layout="responsive"

@@ -215,7 +215,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2017-03-27 03:37:14.6766437 &#43;0900 JST",
+  "dateModified": "2018-03-06 02:03:15 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -275,10 +275,37 @@
   
   <div class="lastmod-title">
     <div class="[system-dev]">
+      <a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a>
+    
+    
+      <span class="blog-date">@2018/03/06 02:03:15</span>
+    </div>
+  </div>
+  
+  <div class="lastmod-title">
+    <div class="[system-dev]">
+      <a href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">[system development] strutsのFormFileからローカルファイルの絶対パスを取得</a>
+    
+    
+      <span class="blog-date">@2018/03/06 02:03:15</span>
+    </div>
+  </div>
+  
+  <div class="lastmod-title">
+    <div class="[system-dev]">
       <a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a>
     
     
-      <span class="blog-date">@2017/03/27 03:37:14</span>
+      <span class="blog-date">@2018/03/06 02:03:15</span>
+    </div>
+  </div>
+  
+  <div class="lastmod-title">
+    <div class="[system-dev]">
+      <a href="http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/">[system development] BeanUtils.describe()で配列を扱いたい</a>
+    
+    
+      <span class="blog-date">@2018/03/06 02:03:15</span>
     </div>
   </div>
   
@@ -287,34 +314,7 @@
       <a href="http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/">[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</a>
     
     
-      <span class="blog-date">@2017/03/26 15:42:59</span>
-    </div>
-  </div>
-  
-  <div class="lastmod-title">
-    <div class="[system-dev]">
-      <a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a>
-    
-    
-      <span class="blog-date">@2017/03/26 15:42:56</span>
-    </div>
-  </div>
-  
-  <div class="lastmod-title">
-    <div class="[system-dev]">
-      <a href="http://www.weizlogy.gq/system/dev/cipher-suites/">[system development] TSLで定義される全CipherSuiteの一覧</a>
-    
-    
-      <span class="blog-date">@2017/03/26 15:42:52</span>
-    </div>
-  </div>
-  
-  <div class="lastmod-title">
-    <div class="[system-dev]">
-      <a href="http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/">[system development] Codeanywhereでbazelを使う</a>
-    
-    
-      <span class="blog-date">@2017/03/26 15:42:48</span>
+      <span class="blog-date">@2018/03/06 02:03:15</span>
     </div>
   </div>
   
@@ -326,69 +326,24 @@
   <section>
   
   
-  <div><a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a></div>
-  <pre class="summary">strutsのActionFormには、「map-backed properties」「list-backed properties」という機能があります。
-ActionFormにMapやListのフィールドと適切なアクセサーメソッドを用意することで、JSP-Servlet間のデータ送受信が動的に行われる仕組みです。
-Formのフィールドをいくつも用意しなくていいところが、とても便利です。
-基本的な使い方は、下記公式リンクが分かりやすくなっています。
-http://struts.apache.org/1.x/userGuide/building_controller.html#map_action_form_classes
-今回の趣旨は、「map-backed properties」「list-backed properties」を併用することです。 検索結果等JSPで動的に一覧表示した複数のForm値を、簡単にActionで受け取ることができます。
-struts1.3.10
-java 1.6.0_18
-以下のようなFormクラスを用意します。
-import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.beanutils.LazyDynaMap; public HogeForm extends ActionForm { private LazyDynaList values = new LazyDynaList(LazyDynaMap.class); public String getValue(int index) { return values.get(index); } public void setValue(int index, Object value) { return values.set(index, value); } public List&lt;Map&lt;String, String&gt;&gt; getValues() { // LazyDynaList, LazyDynaMapのままでは扱いにくいため、より一般的な型（List, Map）に変換します。 List&lt;Map&lt;String, String&gt;&gt; convertValues = new ArrayList&lt;Map&lt;String, String&gt;&gt;(); for (Object item : values) { convertValues.</pre>
-  
-  <div><a href="http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/">[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</a></div>
-  <pre class="summary">Windows APIのIcmp6SendEcho2()をWindows XPで呼び出すときは以下の点に注意が必要です。
-Syntax from msdn.
-DWORD Icmp6SendEcho2( __in HANDLE IcmpHandle, __in_opt HANDLE Event, __in_opt PIO_APC_ROUTINE ApcRoutine, __in_opt PVOID ApcContext, __in struct sockaddr_in6 *SourceAddress, __in struct sockaddr_in6 *DestinationAddress, __in LPVOID RequestData, __in WORD RequestSize, __in_opt PIP_OPTION_INFORMATION RequestOptions, __out LPVOID ReplyBuffer, __in DWORD ReplySize, __in DWORD Timeout );   第9引数 PIP_OPTION_INFORMATION は必須です。Vista 以降のOSで動かす場合は任意です。（NULLでもよい） 第10引数 ReplyBuffer は80byte以上の領域がないとWin32エラーコード122（システム コールに渡されるデータ領域が小さすぎます）が発生します。  IcmpSendEcho()とは設定値が微妙に異なりますね。</pre>
-  
-  <div><a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a></div>
-  <pre class="summary">掲題の件について、検索キーワードにあがりましたので、簡単にまとめました。
-正式には、以下のErrorが発生しました。
-System.Windows.Data Error: 4 : Cannot find source for binding with reference &lsquo;RelativeSource FindAncestor, AncestorType=&lsquo;System.Windows.Controls.ItemsControl&rsquo;, AncestorLevel=&lsquo;1&rdquo;. BindingExpression:Path=HorizontalContentAlignment; DataItem=null; target element is &lsquo;ListBoxItem&rsquo; (Name=&ldquo;); target property is &lsquo;HorizontalContentAlignment&rsquo; (type &lsquo;HorizontalAlignment&rsquo;)
-System.Windows.Data Error: 4 : Cannot find source for binding with reference &lsquo;RelativeSource FindAncestor, AncestorType=&lsquo;System.Windows.Controls.ItemsControl&rsquo;, AncestorLevel=&lsquo;1&rdquo;. BindingExpression:Path=VerticalContentAlignment; DataItem=null; target element is &lsquo;ListBoxItem&rsquo; (Name=&ldquo;); target property is &lsquo;VerticalContentAlignment&rsquo; (type &lsquo;VerticalAlignment&rsquo;)
-xamlのStyle定義のSetterプロパティでAlignmentを定義していると出るみたいです。 定義を外すとErrorは出ません。 みたいです。というのは、何故なのか理由が分からないためです。
-以下、実際のコードの抜粋です。
-&lt;Style TargetType=&quot;{x:Type ListBoxItem}&quot;&gt; &lt;Setter Property=&quot;HorizontalContentAlignment&quot; Value=&quot;{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&quot;/&gt; &lt;Setter Property=&quot;VerticalContentAlignment&quot; Value=&quot;{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&quot;/&gt;  </pre>
-  
   <div><a href="http://www.weizlogy.gq/system/dev/cipher-suites/">[system development] TSLで定義される全CipherSuiteの一覧</a></div>
   <pre class="summary">Cipher Suiteの説明はさて置き、一覧を見るために以下のコマンドを使用する例が多々見受けられます。
-$ openssl ciphers -v  これはopensslが対応するCipherSuiteの一覧であり、実際に存在するCipherSuiteの一覧とは異なります。
+$ openssl ciphers -v これはopensslが対応するCipherSuiteの一覧であり、実際に存在するCipherSuiteの一覧とは異なります。
 実際に存在するCipherSuiteの一覧は、RFC5426によるとIANA管理とのことで、下記URLがマスターです。
 http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4</pre>
   
-  <div><a href="http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/">[system development] Codeanywhereでbazelを使う</a></div>
-  <pre class="summary">CodeanywhereはクラウドIDEで、sudoが許可されたターミナルを使うことができます。 Google+アカウント連携ですぐに使えます。
-bazelは、mavenやGradleのようなビルドツールで、様々な言語のビルドが可能です。
-Codeanyhwereにbazelをインストール bazelはjdk1.8以降（jdk1.7はサポートされているが非推奨）が必須ですが、Codeanywhereはjdk1.7の環境です。 今回はjdk1.7のままでインストールします。
-cabox@box-codeanywhere:~/workspace$ java -version java version &quot;1.7.0_95&quot; OpenJDK Runtime Environment (IcedTea 2.6.4) (7u95-2.6.4-0ubuntu0.14.04.1) OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode)  Installig Bazelを参考に、以下のコマンドを打ちます。
-$ echo &quot;deb [arch=amd64] http://storage.googleapis.com/bazel-apt testing jdk1.7&quot; | sudo tee /etc/apt/sources.list.d/bazel.list $ curl https://storage.googleapis.com/bazel-apt/doc/apt-key.pub.gpg | sudo apt-key add - sudo apt-get update &amp;&amp; sudo apt-get install bazel  bazelでjavaをビルド 最低限の必要なファイルを作成します。
-cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cabox@box-codeanywhere:~/workspace$ touch hello/src/main/java/gq/weizlogy/Main.java cabox@box-codeanywhere:~/workspace$ touch hello/WORKSPACE cabox@box-codeanywhere:~/workspace$ touch hello/BUILD  hello/src/main/java/gq/weizlogy/Main.</pre>
-  
-  <div><a href="http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/">[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</a></div>
-  <pre class="summary">img タグにサーブレットの URL を埋め込んで、画面描画時に呼び出します。 呼び出した先では画像をバイナリ形式で読み込んで画面に出力します。
-データベースに Blob 型で保存した画像の読み込みも、ロジックは同じです。
-JSPでは&hellip;
-&lt;img src=&quot;xxx.do&quot; /&gt;  サーバーサイドでは&hellip;
-/** xxx.do から呼び出される Servlet */ protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { // ファイルパスはどこからか入手する String file = &quot;\\server\image\sample.jpg&quot;; if (file == null || &quot;&quot;.equals(file)) { return; } try { // 画像を読み込む byte[] image = Files.readAllBytes(Paths.get(file)); // レスポンスヘッダーを設定する response.setContentType(&quot;image/&quot; + file.substring(file.lastIndexOf(&quot;.&quot;))); response.setContentLength(image.length); // servlet specification 3.1 によると OutputStream は // Servlet 終了時にクローズされる // 従って、ここではクローズしない // むしろ、ここでクローズすると二重解放になる可能性があるのでは？ response.</pre>
-  
-  <div><a href="http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/">[system development] JQueryUIのAutoCompleteを特定操作で強制選択する</a></div>
-  <pre class="summary">本来は blur 時に強制選択したかったのですが、候補確定時に AutoComplete の対象にフォーカスが当たる挙動を回避できなかったため、エンターキーで代用です。
-var obj = $(&#39;#autocomplete&#39;); obj.on(&#39;keydown&#39;, function(e) { // エンターキー以外を無視する if (e.which !== 13) { return; } // search メソッドの結果で候補が存在する場合、 // autocompleteopen イベントが発行される // 候補が 0 件の場合は動作しない obj.on(&#39;autocompleteopen&#39;, function() { // 下矢印キーダウンイベントを作成し、候補の先頭を選択状態にする var keyDownEvent = $.Event(&#39;keydown&#39;); keyDownEvent.keyCode = $.ui.keyCode.DOWN; obj.trigger(keyDownEvent); // エンターキーダウンを作成し、選択状態の候補で確定する // →候補確定時のイベントが発火する keyDownEvent.keyCode = $.ui.keyCode.ENTER; obj.trigger(keyDownEvent); // 通常動作時は不要なイベントなので終了時に破棄しておく obj.off(&#39;autocompleteopen&#39;); }); // 現在の入力値で検索する obj.autocomplete(&#39;search&#39;); });  </pre>
-  
-  <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/">[system development] Monodevelopで埋め込みリソースを使う</a></div>
-  <pre class="summary">ソリューションエクスプローラーで対象のファイルを右クリックします。
-「ビルドアクション &gt; EmbeddedResource」を選択します。以上です。
-プログラムからのアクセスで必要なリソースIDは、デフォルトネームスペース＋ファイル名となります。 リソースIDはプロパティビューで変更可能です。
-使い方は以下の通りです。
-using (var stream = new System.IO.StreamReader(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream(&quot;[ResourceID]&quot;), true)) { ... }  </pre>
-  
-  <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/">[system development] ubuntu16.04でMonoDevelopを使った開発環境</a></div>
-  <pre class="summary">LinuxでC#を使うための環境(mono)とIDE(MonoDevelop)をインストールします。
-まずはmonoをインストールします。
-$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF $ echo &quot;deb http://download.mono-project.com/repo/debian wheezy main&quot; | sudo tee /etc/apt/sources.list.d/mono-xamarin.list $ sudo apt-get update $ sudo apt-get install mono-complete  続いてMonoDevelopをインストールします。
-$ sudo apt-get install monodevelop  monodevelopコマンドでIDEを起動します。</pre>
+  <div><a href="http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/">[system development] XAMLでブロック矢印を描画する</a></div>
+  <pre class="summary">ブロック矢印完成図 
+コード &lt;Path Stroke=&#34;Black&#34; StrokeThickness=&#34;2&#34; Fill=&#34;Gray&#34; Data=&#34;M 100 100 H 200 V 90 L 230 115 L 200 140 V 130 H 100 V 100 Z&#34; Margin=&#34;-30,-30,0,0&#34; /&gt; 解説 Pathを使って目標の位置付近に描画、Marginで微調整します。
+https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspxを読めば分かりますが簡単です。 一筆書きの要領で、矢印の左上から時計回りに線を引いています。
+「M 100 100」は「X=100,Y=100に移動」します。
+「H 200」は「現在位置からX=200まで描線」します。
+「V 90」は「現在位置からY=90まで描線」します。
+「L 230 115」は「現在位置からX=230,Y=115まで描線」します。
+以下繰り返しの上、 「Z」は「描線の範囲を閉鎖」します。
+座標の算出には、描画開始位置、シャフトの幅と高さ、アローヘッドの出代と角度を決めます。 今回は、描画開始位置=100,100、シャフトの幅=100、高さ=30、アローヘッドの出代=10、角度=60にしました。
+
+アローヘッドの頂点座標の算出は、頂点がシャフトの中央にあることと、三平方の定理を使えばきっちり出せます。 つまり、シャフトの幅は偶数が良いです。</pre>
   
   <div><a href="http://www.weizlogy.gq/system/dev/openweathermap-with-java-bazel/">[system development] Codeaywhere&#43;Java&#43;bazelでOpenWeatherMapのAPIを使用し現在の気象情報を取得する</a></div>
   <pre class="summary">OpenWeatherMapの使い方 OpenWeatherMapは各種気象情報提供サービスです。
@@ -396,7 +351,60 @@ $ sudo apt-get install monodevelop  monodevelopコマンドでIDEを起動しま
 今回は現在のみなので、Current weather data APIを使用します。 RESTサービスになっており、以下のURLで情報がJSON形式で取得できます。（{city name}は英語で）
 http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;APPID={Your API Key}  JSON形式ではJavaで扱いにくいので、&rdquo;mode=xml&rdquo;パラメータでXML形式にします。
 http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;mode=xml&amp;APPID={Your API Key}  気象情報は以下のように返却されます。（例は{city name}=Tokyo）
-&lt;?xml version=&quot;1.0&quot;?&gt; &lt;current&gt; &lt;city id=&quot;1850147&quot; name=&quot;Tokyo&quot;&gt; &lt;coord lat=&quot;35.69&quot; lon=&quot;139.69&quot;/&gt; &lt;country&gt;JP&lt;/country&gt; &lt;sun set=&quot;2016-08-15T09:30:23&quot; rise=&quot;2016-08-14T20:00:21&quot;/&gt; &lt;/city&gt; &lt;temperature unit=&quot;kelvin&quot; max=&quot;304.82&quot; min=&quot;298.71&quot; value=&quot;301.68&quot;/&gt; &lt;humidity unit=&quot;%&quot; value=&quot;85&quot;/&gt; &lt;pressure unit=&quot;hPa&quot; value=&quot;1001&quot;/&gt; &lt;wind&gt; &lt;speed name=&quot;Gentle Breeze&quot; value=&quot;3.41&quot;/&gt; &lt;gusts/&gt; &lt;direction name=&quot;South&quot; value=&quot;179.504&quot; code=&quot;S&quot;/&gt; &lt;/wind&gt; &lt;clouds name=&quot;clear sky&quot; value=&quot;8&quot;/&gt; &lt;visibility/&gt; &lt;precipitation unit=&quot;3h&quot; value=&quot;0.245&quot; mode=&quot;rain&quot;/&gt; &lt;weather value=&quot;light rain&quot; icon=&quot;10d&quot; number=&quot;500&quot;/&gt; &lt;lastupdate value=&quot;2016-08-15T07:41:15&quot;/&gt; &lt;/current&gt;  JavaでOpenWeatherMapのAPIを呼び出す RESTクライアントは色々ありますが、お手軽なApache Commonsのhttpclientとfluent-hcにします。</pre>
+&lt;?xml version=&#34;1.0&#34;?&gt; &lt;current&gt; &lt;city id=&#34;1850147&#34; name=&#34;Tokyo&#34;&gt; &lt;coord lat=&#34;35.69&#34; lon=&#34;139.69&#34;/&gt; &lt;country&gt;JP&lt;/country&gt; &lt;sun set=&#34;2016-08-15T09:30:23&#34; rise=&#34;2016-08-14T20:00:21&#34;/&gt; &lt;/city&gt; &lt;temperature unit=&#34;kelvin&#34; max=&#34;304.82&#34; min=&#34;298.71&#34; value=&#34;301.68&#34;/&gt; &lt;humidity unit=&#34;%&#34; value=&#34;85&#34;/&gt; &lt;pressure unit=&#34;hPa&#34; value=&#34;1001&#34;/&gt; &lt;wind&gt; &lt;speed name=&#34;Gentle Breeze&#34; value=&#34;3.41&#34;/&gt; &lt;gusts/&gt; &lt;direction name=&#34;South&#34; value=&#34;179.504&#34; code=&#34;S&#34;/&gt; &lt;/wind&gt; &lt;clouds name=&#34;clear sky&#34; value=&#34;8&#34;/&gt; &lt;visibility/&gt; &lt;precipitation unit=&#34;3h&#34; value=&#34;0.245&#34; mode=&#34;rain&#34;/&gt; &lt;weather value=&#34;light rain&#34; icon=&#34;10d&#34; number=&#34;500&#34;/&gt; &lt;lastupdate value=&#34;2016-08-15T07:41:15&#34;/&gt; &lt;/current&gt; JavaでOpenWeatherMapのAPIを呼び出す RESTクライアントは色々ありますが、お手軽なApache Commonsのhttpclientとfluent-hcにします。</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/">[system development] Codeanywhereでbazelを使う</a></div>
+  <pre class="summary">CodeanywhereはクラウドIDEで、sudoが許可されたターミナルを使うことができます。 Google+アカウント連携ですぐに使えます。
+bazelは、mavenやGradleのようなビルドツールで、様々な言語のビルドが可能です。
+Codeanyhwereにbazelをインストール bazelはjdk1.8以降（jdk1.7はサポートされているが非推奨）が必須ですが、Codeanywhereはjdk1.7の環境です。 今回はjdk1.7のままでインストールします。
+cabox@box-codeanywhere:~/workspace$ java -version java version &#34;1.7.0_95&#34; OpenJDK Runtime Environment (IcedTea 2.6.4) (7u95-2.6.4-0ubuntu0.14.04.1) OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode) Installig Bazelを参考に、以下のコマンドを打ちます。
+$ echo &#34;deb [arch=amd64] http://storage.googleapis.com/bazel-apt testing jdk1.7&#34; | sudo tee /etc/apt/sources.list.d/bazel.list $ curl https://storage.googleapis.com/bazel-apt/doc/apt-key.pub.gpg | sudo apt-key add - sudo apt-get update &amp;&amp; sudo apt-get install bazel bazelでjavaをビルド 最低限の必要なファイルを作成します。
+cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cabox@box-codeanywhere:~/workspace$ touch hello/src/main/java/gq/weizlogy/Main.java cabox@box-codeanywhere:~/workspace$ touch hello/WORKSPACE cabox@box-codeanywhere:~/workspace$ touch hello/BUILD hello/src/main/java/gq/weizlogy/Main.</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/">[system development] Monodevelopで埋め込みリソースを使う</a></div>
+  <pre class="summary">ソリューションエクスプローラーで対象のファイルを右クリックします。
+「ビルドアクション &gt; EmbeddedResource」を選択します。以上です。
+プログラムからのアクセスで必要なリソースIDは、デフォルトネームスペース＋ファイル名となります。 リソースIDはプロパティビューで変更可能です。
+使い方は以下の通りです。
+using (var stream = new System.IO.StreamReader(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream(&#34;[ResourceID]&#34;), true)) { ... }</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/step-counter-is/">[system development] ステップカウンターのあるべき姿を考察する</a></div>
+  <pre class="summary">ステップカウンターとは？ LOCを計測するツールです。LOCはLines Of Codeの略で、プログラムの規模として扱います。
+ 空行（改行など空白だけの行）やコメント行（コメントと空白だけの行）は除く、2つの命令が書かれた行は2行と数える、括弧だけの行を除くなどの換算をした行数を論理LOC (logical LOC) といい、通常はこちらを使う。
+&ndash; https://ja.wikipedia.org/wiki/LOC
+ 2つの命令が書かれた行は2行と数える、括弧だけの行を除くなどの換算してますか？ 世にあるステップカウンターは、有効行（実行行）、コメント行、空白行の3種を見ていることが多く、高度な換算はされていないようです。
+そこで、*本来あるべきステップカウンター*を、以下の考察に基づき鋭意作成中です。
+詳細はこちらをご覧ください。
+本来あるべきステップカウンターの想定仕様概要  2つの命令が書かれた行は2行と数える。 括弧だけの行を除く。 ディレクティブは考慮が必要。  本来あるべきステップカウンターの想定仕様詳細 2つの命令が書かれた行は2行と数える C言語系統は命令の終端に&rdquo;;&ldquo;が必要な言語使用のため、その終端記号（または文字）を数えれば良い。また、IF文では&rdquo;{&ldquo;、SWITCH-CASE文では&rdquo;{&ldquo;と&rdquo;:&ldquo;に着目することで命令を計測します。
+ただし、FOR文は3式で1セットの命令であるため、FOR文中の終端記号は無視しなければいけません。 VBやRubyのような言語、HTMLのようなタグが構成要素の場合は検討中です。
+括弧だけの行を除く C言語系統はブロックの終端記号&rdquo;}&ldquo;がありますが、1命令のセットであるため、開始記号&rdquo;{&ldquo;とどちらか一方を測定対象とすべきです。 VBやRubyのような言語の&rdquo;END&rdquo;キーワードも同様です。
+ディレクティブは考慮が必要 Javaのimport文、C#のusingディレクティブは、パッケージ名を省略するためだけに存在するもので、記載の有無がプログラムの動作に影響を与えませんので、命令とは位置付け異なります。
+C言語系統のプリプロセッサーディレクティブは微妙ですが、動作に影響を与えるものもあるため、命令と考えます。
+ただし、&rdquo;#endif&rdquo;、&rdquo;#region&rdquo;、&rdquo;#endregion&rdquo;は非命令とし計測しません。
+C言語の#includeは、必須であることを除き、C#のusingディレクティブ同様、非命令とします。
+考察は続きます。。。</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/">[system development] ubuntu16.04でMonoDevelopを使った開発環境</a></div>
+  <pre class="summary">LinuxでC#を使うための環境(mono)とIDE(MonoDevelop)をインストールします。
+まずはmonoをインストールします。
+$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF $ echo &#34;deb http://download.mono-project.com/repo/debian wheezy main&#34; | sudo tee /etc/apt/sources.list.d/mono-xamarin.list $ sudo apt-get update $ sudo apt-get install mono-complete 続いてMonoDevelopをインストールします。
+$ sudo apt-get install monodevelop monodevelopコマンドでIDEを起動します。</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/spring-aop-test/">[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</a></div>
+  <pre class="summary">Interceptor クラスの内容は以下の通りです。
+import org.aspectj.lang.ProceedingJoinPoint; import org.aspectj.lang.annotation.Around; import org.aspectj.lang.annotation.Aspect; @Aspect public class SomeInterceptor { @Around(&#34;execution(* execute(..))&#34;) public Object around(ProceedingJoinPoint pjp) { System.out.println(String.format(&#34;%s.%s start.&#34;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); Object value = null; try { value = pjp.proceed(); } catch (Throwable e) { e.printStackTrace(); } System.out.println(String.format(&#34;%s.%s ended.&#34;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); return value; } } Test クラスの内容は以下の通りです。
+import static org.junit.Assert.*; import java.util.ArrayList; import org.junit.Test; import org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint; import org.springframework.aop.framework.ReflectiveMethodInvocation; import org.springframework.aop.interceptor.SimpleTraceInterceptor; public class SomeInterceptorTest { /** AOP の対象となるメソッドを持つクラス */ private static class AOPTarget { public String execute() { System.</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/">[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</a></div>
+  <pre class="summary">img タグにサーブレットの URL を埋め込んで、画面描画時に呼び出します。 呼び出した先では画像をバイナリ形式で読み込んで画面に出力します。
+データベースに Blob 型で保存した画像の読み込みも、ロジックは同じです。
+JSPでは&hellip;
+&lt;img src=&#34;xxx.do&#34; /&gt; サーバーサイドでは&hellip;
+/** xxx.do から呼び出される Servlet */ protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { // ファイルパスはどこからか入手する  String file = &#34;\\server\image\sample.jpg&#34;; if (file == null || &#34;&#34;.equals(file)) { return; } try { // 画像を読み込む  byte[] image = Files.readAllBytes(Paths.get(file)); // レスポンスヘッダーを設定する  response.setContentType(&#34;image/&#34; + file.substring(file.lastIndexOf(&#34;.&#34;))); response.setContentLength(image.length); // servlet specification 3.1 によると OutputStream は  // Servlet 終了時にクローズされる  // 従って、ここではクローズしない  // むしろ、ここでクローズすると二重解放になる可能性があるのでは？  response.</pre>
+  
+  <div><a href="http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/">[system development] JQueryUIのAutoCompleteを特定操作で強制選択する</a></div>
+  <pre class="summary">本来は blur 時に強制選択したかったのですが、候補確定時に AutoComplete の対象にフォーカスが当たる挙動を回避できなかったため、エンターキーで代用です。
+var obj = $(&#39;#autocomplete&#39;); obj.on(&#39;keydown&#39;, function(e) { // エンターキー以外を無視する  if (e.which !== 13) { return; } // search メソッドの結果で候補が存在する場合、  // autocompleteopen イベントが発行される  // 候補が 0 件の場合は動作しない  obj.on(&#39;autocompleteopen&#39;, function() { // 下矢印キーダウンイベントを作成し、候補の先頭を選択状態にする  var keyDownEvent = $.Event(&#39;keydown&#39;); keyDownEvent.keyCode = $.ui.keyCode.DOWN; obj.trigger(keyDownEvent); // エンターキーダウンを作成し、選択状態の候補で確定する  // →候補確定時のイベントが発火する  keyDownEvent.keyCode = $.ui.keyCode.ENTER; obj.trigger(keyDownEvent); // 通常動作時は不要なイベントなので終了時に破棄しておく  obj.off(&#39;autocompleteopen&#39;); }); // 現在の入力値で検索する  obj.autocomplete(&#39;search&#39;); });</pre>
   
   
 
@@ -415,7 +423,7 @@ http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;mode=xml&amp;AP
     
     
     
-     
+    
         
         
     
@@ -427,7 +435,7 @@ http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;mode=xml&amp;AP
     
     
     
-     
+    
         
         
     
