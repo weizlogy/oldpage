@@ -346,13 +346,14 @@ settings. Nexon\TreeofSaviorJP\addons\objectdetector\settings.txt を作成し�
       <pubDate>Fri, 24 Mar 2017 05:28:54 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/savequest/</guid>
-      <description>download. [v1.2.3] savequest.ipf
+      <description>download. [v1.2.4] savequest.ipf
 install. README.md
 introduction. 
 
 settings. Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。
 explanation. savequestフォルダーには下記ファイルが自動的に生成され、 キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。
- quests_[cid].txt quests_scl_[cid].txt  descriptions. v1.2.3 ショートカットフレームレイヤーレベル動的調整機能追加 ショートカットフレーム上でマウスホイールをくるくるするとレイヤーレベルが動的に変わります。 現在値はチャット上に表示（ちょっと邪魔&amp;hellip;）します。
+ quests_[cid].txt quests_scl_[cid].txt  descriptions. v1.2.4 ショートカットフレームレイヤーレベル一括変更機能追加 ショートカットフレームの（ワープマーカー）右クリックメニューに「FlattenLayerLv」コマンドを追加しました。
+v1.2.3 ショートカットフレームレイヤーレベル動的調整機能追加 ショートカットフレーム上でマウスホイールをくるくるするとレイヤーレベルが動的に変わります。 現在値はチャット上に表示（ちょっと邪魔&amp;hellip;）します。
 レイヤーレベルはショートカットフレームを移動させた時に保存します（くるくるしただけでは保存しない！）ので、お忘れなきよう&amp;hellip;
 v1.2.2 パーティー共有機能追加 クエストワープのショートカットフレームから右クリックメニューでパーティー共有/共有解除できるようになります。
 ショートカットフレームレイヤーレベル調整 ショートカットフレームのレイヤーレベルを999 -&amp;gt; 199に変更しました。
