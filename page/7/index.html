@@ -259,7 +259,7 @@
   
     <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
   
-    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(30)</div>
+    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(31)</div>
   
     <div class="tos-addon-dev"><a href="/categories/tos-addon-dev">tos-addon-dev</a>(4)</div>
   
@@ -281,7 +281,18 @@
     &ndash;&nbsp;v1.2.4
     
     
-      <span class="blog-date">@2018/03/30 01:04:57</span>
+      <span class="blog-date">@2018/04/11 23:59:13</span>
+    </div>
+  </div>
+  
+  <div class="lastmod-title">
+    <div class="[tos-addon]">
+      <a href="http://www.weizlogy.gq/tos/addon/costumeplay/">[tree of savior addon] GUI操作で装備を保存/復元するアドオン</a>
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+      <span class="blog-date">@2018/04/11 23:59:13</span>
     </div>
   </div>
   
@@ -314,15 +325,6 @@
     </div>
   </div>
   
-  <div class="lastmod-title">
-    <div class="[system-dev]">
-      <a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a>
-    
-    
-      <span class="blog-date">@2018/03/06 02:03:15</span>
-    </div>
-  </div>
-  
   
 </div>
 </aside>
@@ -331,6 +333,20 @@
   <strong>Contents index.</strong>
   <section>
   
+  
+  <div class="[system-dev]">
+    <a href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">[system development] strutsのFormFileからローカルファイルの絶対パスを取得</a>
+    
+    
+    
+  </div>
+  <pre class="summary [system-dev]">strutsのFormFileからローカルファイルの絶対パスを取得したいのです。 （取得しても無意味ですが）
+eclipseのデバッガで参照すると、確かにprivate変数に絶対パスを持っていますが、アクセスするためのメソッドがありません。
+リフレクションでアクセス可能です。
+DiskFileItemを使用するために、「commons-fileupload.jar」が必要です。
+struts1.3.10
+java 1.6.0_18
+// formFileの実体は「org.apache.struts.upload.CommonsMultipartRequestHandler.CommonsFormFile」 Field f = formFile.getClass().getDeclaredField(&#34;fileItem&#34;); f.setAccessible(true); // fileItemは「org.apache.commons.fileupload.FileItem」を実装した「org.apache.commons.fileupload.disk.DiskFileItem」 DiskFileItem item = (DiskFileItem) f.get(formFile); System.</pre>
   
   <div class="[system-dev]">
     <a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a>

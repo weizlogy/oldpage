@@ -6,10 +6,25 @@
     <description>Recent content in Tos on Weizlogy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Feb 2018 08:58:15 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 11 Apr 2018 23:48:28 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/tos/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[tree of savior addon] GUI操作で装備を保存/復元するアドオン</title>
+      <link>http://www.weizlogy.gq/tos/addon/costumeplay/</link>
+      <pubDate>Wed, 11 Apr 2018 23:48:28 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/tos/addon/costumeplay/</guid>
+      <description> download. [v1.0.0] costumeplay.ipf
+install. README.md
+introduction. 
+settings. Nexon\TreeofSaviorJP\addons\costumeplay フォルダーを作成します。
+descriptions. costumeplayフォルダーには下記ファイルが自動的に生成され、 キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。
+ [cid]  v1.0.0 新規作成 GUI操作で装備を保存/復元します。
+usage. 保存方法  インベントリの左側にアドオンのフレームが表示されます。 名前を入力して[save]を押すと現在の装備を保存します。  復元方法  画面右下のインベントリアイコンを右クリックするとメニューが出現します。 メニューには保存時に入力した名前がリストアップされるので任意のものを選択します。  その他  見た目に影響しない防具やリングなどは初期状態で復元しない状態です。（装備名が灰色） アドオンフレームの装備名をクリックすると、一時的に復元状態を変更します。  </description>
+    </item>
     
     <item>
       <title>[tree of savior addon] いいねせずキャラ情報を見るアドオン</title>
