@@ -293,13 +293,14 @@ settings. Nexon\TreeofSaviorJP\addons\objectdetector\settings.txt を作成し�
       <pubDate>Fri, 24 Mar 2017 05:28:54 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/savequest/</guid>
-      <description>download. [v1.2.4] savequest.ipf
+      <description>download. [v1.2.5] savequest.ipf
 install. README.md
 introduction. 
 
 settings. Nexon\TreeofSaviorJP\addons\savequest フォルダーを作成します。
 explanation. savequestフォルダーには下記ファイルが自動的に生成され、 キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。
- quests_[cid].txt quests_scl_[cid].txt  descriptions. v1.2.4 ショートカットフレームレイヤーレベル一括変更機能追加 ショートカットフレームの（ワープマーカー）右クリックメニューに「FlattenLayerLv」コマンドを追加しました。
+ quests_[cid].txt quests_scl_[cid].txt  descriptions. v1.2.5 保存済みクエストを破棄しても保存状態が残る問題を修正 保存済みクエストを破棄しても保存状態が残るため、再受注してもNPCが消えたままでした。 保存済みクエストを破棄すると保存状態も破棄するように修正しました。
+v1.2.4 ショートカットフレームレイヤーレベル一括変更機能追加 ショートカットフレームの（ワープマーカー）右クリックメニューに「FlattenLayerLv」コマンドを追加しました。
 v1.2.3 ショートカットフレームレイヤーレベル動的調整機能追加 ショートカットフレーム上でマウスホイールをくるくるするとレイヤーレベルが動的に変わります。 現在値はチャット上に表示（ちょっと邪魔&amp;hellip;）します。
 レイヤーレベルはショートカットフレームを移動させた時に保存します（くるくるしただけでは保存しない！）ので、お忘れなきよう&amp;hellip;
 v1.2.2 パーティー共有機能追加 クエストワープのショートカットフレームから右クリックメニューでパーティー共有/共有解除できるようになります。
@@ -317,8 +318,7 @@ issue #3
 お手数ですが、再チェックまたは、旧仕様情報（quests.txt）の内容をquests_[cid].txtにコピペしてください。
 v1.0.1 バグ対応 再ログイン時に前回の状態が保存されない問題を修正しました。
 issue #1
-v1.0.0 新規作成 アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、 ワープ直後の誤完了を防止できます。
-usage. UI右のクエスト一覧にある条件を満たしたクエストのタイトルを右クリックすると、 メニュー（Save, Release, Shortcut, Cancel）が開きます。</description>
+v1.0.0 新規作成 アドオンがロードされると、任意の完了済みかつワープ可能なクエストのNPCを一時消去し、 ワープ直後の誤完了を防止できます。</description>
     </item>
     
     <item>
