@@ -176,7 +176,7 @@ settings. descriptions. v1.1.0 カスタムレンジ対応 チャットコマン
       <pubDate>Sun, 16 Jul 2017 23:14:23 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/summoncounter/</guid>
-      <description>download. [v1.0.3] summoncounter.ipf
+      <description>download. [v1.0.4] summoncounter.ipf
 install. README.md
 introduction. 
 
@@ -256,10 +256,10 @@ ROのヴェルゼブブの羽のようなイメージです。</description>
       <pubDate>Sun, 16 Apr 2017 11:11:02 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/skillitemcounter/</guid>
-      <description>download. [v1.1.1] skillitemcounter.ipf
+      <description>download. [v1.1.2] skillitemcounter.ipf
 install. README.md
 introduction. 
-settings. descriptions. v1.1.1 使用回数が表示されない問題の修正 詳細は#19を参照してください。
+settings. descriptions. v1.1.2 6/27アップデート対応 v1.1.1 使用回数が表示されない問題の修正 詳細は#19を参照してください。
 joypad対応 joypadのquickslotに対応しました。（遅
 v1.1.0 ポイズンポット使用スキル対応 ポイズンポット消費のあるスキルスロットにも使用回数を表示します。
 v1.0.0 新規作成 アドオンがロードされると、クイックスロットにセットしている、消費アイテムのあるスキルスロット右上に、消費アイテムの個数に応じたスキルの使用回数を追加で表示します。</description>
