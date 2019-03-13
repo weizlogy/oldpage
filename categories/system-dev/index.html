@@ -16,183 +16,194 @@
 
 
 <style amp-custom>
-   
-  body {
-    font-family: "Noto Sans Japanese", "monospace";
-    font-size: 85%;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  h1 > a {
-    text-decoration: none;
-    color: inherit;
-  }
-  header {
-    clear: left;
-  }
-  header > h1 {
-    font-family: 'Lobster', cursive;
-    display: inline;
-    color: #666;
-  }
-  header > h2 {
-    font-family: 'Lobster', cursive;
-    display: inline;
-    margin-left: 10px;
-    color: #999;
-  }
-  footer {
-    clear: left;
-    padding-top: 10px;
-  }
-  footer > p {
-    display: inline;
-    padding-left: 10px;
-  }
-  div.main {
-     
-    padding-left: 10px;
-  }
-   
-  article > div > h2 {
-    padding: 0px 0px 5px 5px;
-    border-left: 7px solid #999;
-    border-bottom: 1px solid #999;
-  }
-  article > div > h3 {
-    padding: 0px 0px 5px 5px;
-    border-left: 7px solid #CCC;
-    border-bottom: 1px solid #CCC;
-  }
-   
-  section {
-    overflow: hidden;
-  }
-  section > h1 {
-    padding: 0px 0px 5px 5px;
-    border-left: 7px solid #999;
-    border-bottom: 1px solid #999;
-  }
-  section > .summary {
-    font-size: 85%;
-    color: #999;
-  }
-  aside {
-    padding-left: 10px;
-    margin-top: 10px;
-    font-size: 85%;
-  }
-  aside > div {
-    margin-bottom: 10px;
-  }
-  .category {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .category > div {
-    margin-right: 10px;
-  }
-  .lastmod-title {
-    padding-bottom: 10px;
-  }
-  .blog-date {
-    color: #999;
-    margin-left: 10px;
-  }
-   
-  .pagination {
-    display: inline-block;
-  }
-  .pagination li {
-    display: inline-block;
-    text-decoration: none;
-  }
-  .pagination a {
-    color: black;
-    float: left;
-    padding: 7px 14px;
-    text-decoration: none;
-    transition: background-color .3s;
-    border: 1px solid #000000;
-    margin: 0 4px;
-  }
-  .pagination li.active a {
-    background-color: #F5F5F5;
-    border: 1px solid #000000;
-  }
-   
-  pre {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 5px;
-    border: 1px solid #999;
-    word-wrap: break-word;
-  }
-  .highlight .c { color: #999988; font-style: italic }  
-  .highlight .err { color: #a61717; background-color: #e3d2d2 }  
-  .highlight .k { color: #000000; font-weight: bold }  
-  .highlight .o { color: #000000; font-weight: bold }  
-  .highlight .cm { color: #999988; font-style: italic }  
-  .highlight .cp { color: #999999; font-weight: bold; font-style: italic }  
-  .highlight .c1 { color: #999988; font-style: italic }  
-  .highlight .cs { color: #999999; font-weight: bold; font-style: italic }  
-  .highlight .gd { color: #000000; background-color: #ffdddd }  
-  .highlight .ge { color: #000000; font-style: italic }  
-  .highlight .gr { color: #aa0000 }  
-  .highlight .gh { color: #999999 }  
-  .highlight .gi { color: #000000; background-color: #ddffdd }  
-  .highlight .go { color: #888888 }  
-  .highlight .gp { color: #555555 }  
-  .highlight .gs { font-weight: bold }  
-  .highlight .gu { color: #aaaaaa }  
-  .highlight .gt { color: #aa0000 }  
-  .highlight .kc { color: #000000; font-weight: bold }  
-  .highlight .kd { color: #000000; font-weight: bold }  
-  .highlight .kn { color: #000000; font-weight: bold }  
-  .highlight .kp { color: #000000; font-weight: bold }  
-  .highlight .kr { color: #000000; font-weight: bold }  
-  .highlight .kt { color: #445588; font-weight: bold }  
-  .highlight .m { color: #009999 }  
-  .highlight .s { color: #d01040 }  
-  .highlight .na { color: #008080 }  
-  .highlight .nb { color: #0086B3 }  
-  .highlight .nc { color: #445588; font-weight: bold }  
-  .highlight .no { color: #008080 }  
-  .highlight .nd { color: #3c5d5d; font-weight: bold }  
-  .highlight .ni { color: #800080 }  
-  .highlight .ne { color: #990000; font-weight: bold }  
-  .highlight .nf { color: #990000; font-weight: bold }  
-  .highlight .nl { color: #990000; font-weight: bold }  
-  .highlight .nn { color: #555555 }  
-  .highlight .nt { color: #000080 }  
-  .highlight .nv { color: #008080 }  
-  .highlight .ow { color: #000000; font-weight: bold }  
-  .highlight .w { color: #bbbbbb }  
-  .highlight .mf { color: #009999 }  
-  .highlight .mh { color: #009999 }  
-  .highlight .mi { color: #009999 }  
-  .highlight .mo { color: #009999 }  
-  .highlight .sb { color: #d01040 }  
-  .highlight .sc { color: #d01040 }  
-  .highlight .sd { color: #d01040 }  
-  .highlight .s2 { color: #d01040 }  
-  .highlight .se { color: #d01040 }  
-  .highlight .sh { color: #d01040 }  
-  .highlight .si { color: #d01040 }  
-  .highlight .sx { color: #d01040 }  
-  .highlight .sr { color: #009926 }  
-  .highlight .s1 { color: #d01040 }  
-  .highlight .ss { color: #990073 }  
-  .highlight .bp { color: #999999 }  
-  .highlight .vc { color: #008080 }  
-  .highlight .vg { color: #008080 }  
-  .highlight .vi { color: #008080 }  
-  .highlight .il { color: #009999 }  
-   
-  .tos-addon-x, .\[tos-addon-x\] {
-    display: none;
-  }
+<!-- @style-ignore -->
+/* part of base. */
+body {
+  font-family: "Noto Sans Japanese", "monospace";
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+h1 {
+  font-size: 3.0em;
+}
+h1 > a {
+  text-decoration: none;
+  color: inherit;
+}
+h1::first-letter {
+  font-size: 3.5em;
+  color: orange;
+}
+
+header {
+  clear: left;
+}
+header > h1 {
+  font-family: 'Lobster', cursive;
+  display: inline;
+  color: #666;
+}
+header > h2 {
+  font-family: 'Lobster', cursive;
+  display: inline;
+  margin-left: 10px;
+  color: #999;
+}
+
+footer {
+  clear: left;
+  padding-top: 10px;
+}
+footer > p {
+  display: inline;
+  padding-left: 10px;
+}
+div.main {
+  /*width: 80%;*/
+  padding-left: 10px;
+}
+/* part of single. */
+article > div > h2 {
+  padding: 0px 0px 5px 5px;
+  border-left: 7px solid #999;
+  border-bottom: 1px solid #999;
+}
+article > div > h3 {
+  padding: 0px 0px 5px 5px;
+  border-left: 7px solid #CCC;
+  border-bottom: 1px solid #CCC;
+}
+/* part of list. */
+section {
+  overflow: hidden;
+}
+section > h1 {
+  padding: 0px 0px 5px 5px;
+  border-left: 7px solid #999;
+  border-bottom: 1px solid #999;
+}
+section > .summary {
+  font-size: 85%;
+  color: #999;
+}
+aside {
+  padding-left: 10px;
+  margin-top: 10px;
+  font-size: 85%;
+}
+aside > div {
+  margin-bottom: 10px;
+}
+.category {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.category > div {
+  margin-right: 10px;
+}
+.lastmod-title {
+  padding-bottom: 10px;
+}
+.blog-date {
+  color: #999;
+  margin-left: 10px;
+}
+/* part of code pagination. */
+.pagination {
+  display: inline-block;
+}
+.pagination li {
+  display: inline-block;
+  text-decoration: none;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 7px 14px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #000000;
+  margin: 0 4px;
+}
+.pagination li.active a {
+  background-color: #F5F5F5;
+  border: 1px solid #000000;
+}
+/* part of code highlighing. */
+pre {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #999;
+  word-wrap: break-word;
+}
+.highlight .c { color: #999988; font-style: italic } /* Comment */
+.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight .k { color: #000000; font-weight: bold } /* Keyword */
+.highlight .o { color: #000000; font-weight: bold } /* Operator */
+.highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #999999; font-weight: bold; font-style: italic } /* Comment.Preproc */
+.highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.highlight .ge { color: #000000; font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #aa0000 } /* Generic.Error */
+.highlight .gh { color: #999999 } /* Generic.Heading */
+.highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #555555 } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+.highlight .gt { color: #aa0000 } /* Generic.Traceback */
+.highlight .kc { color: #000000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #000000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #000000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #000000; font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { color: #000000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #009999 } /* Literal.Number */
+.highlight .s { color: #d01040 } /* Literal.String */
+.highlight .na { color: #008080 } /* Name.Attribute */
+.highlight .nb { color: #0086B3 } /* Name.Builtin */
+.highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+.highlight .no { color: #008080 } /* Name.Constant */
+.highlight .nd { color: #3c5d5d; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #800080 } /* Name.Entity */
+.highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+.highlight .nl { color: #990000; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #555555 } /* Name.Namespace */
+.highlight .nt { color: #000080 } /* Name.Tag */
+.highlight .nv { color: #008080 } /* Name.Variable */
+.highlight .ow { color: #000000; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #009999 } /* Literal.Number.Float */
+.highlight .mh { color: #009999 } /* Literal.Number.Hex */
+.highlight .mi { color: #009999 } /* Literal.Number.Integer */
+.highlight .mo { color: #009999 } /* Literal.Number.Oct */
+.highlight .sb { color: #d01040 } /* Literal.String.Backtick */
+.highlight .sc { color: #d01040 } /* Literal.String.Char */
+.highlight .sd { color: #d01040 } /* Literal.String.Doc */
+.highlight .s2 { color: #d01040 } /* Literal.String.Double */
+.highlight .se { color: #d01040 } /* Literal.String.Escape */
+.highlight .sh { color: #d01040 } /* Literal.String.Heredoc */
+.highlight .si { color: #d01040 } /* Literal.String.Interpol */
+.highlight .sx { color: #d01040 } /* Literal.String.Other */
+.highlight .sr { color: #009926 } /* Literal.String.Regex */
+.highlight .s1 { color: #d01040 } /* Literal.String.Single */
+.highlight .ss { color: #990073 } /* Literal.String.Symbol */
+.highlight .bp { color: #999999 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #008080 } /* Name.Variable.Class */
+.highlight .vg { color: #008080 } /* Name.Variable.Global */
+.highlight .vi { color: #008080 } /* Name.Variable.Instance */
+.highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+<!-- @style-ignore -->
+/* hidden category. */
+.tos-addon-x, .\[tos-addon-x\] {
+  display: none;
+}
 </style>
 
 
@@ -215,7 +226,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2018-03-06 02:03:15 &#43;0900 JST",
+  "dateModified": "2018-09-05 07:11:05.4328573 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -230,7 +241,7 @@
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
 <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
-<script async='async' custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 
 <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -273,50 +284,35 @@
   
   <strong>Last modified.</strong>
   
-  <div class="lastmod-title">
-    <div class="[system-dev]">
-      <a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">[system development] cannot find source for binding with reference について</a>
-    
-    
-      <span class="blog-date">@2018/03/06 02:03:15</span>
-    </div>
-  </div>
+    <div><a href="http://www.weizlogy.gq/system/dev/cipher-suites/">TSLで定義される全CipherSuiteの一覧</a></div>
+    <div>@2017-01-31 21:59:00.001 &#43;0900 JST</div>
   
-  <div class="lastmod-title">
-    <div class="[system-dev]">
-      <a href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">[system development] strutsのFormFileからローカルファイルの絶対パスを取得</a>
-    
-    
-      <span class="blog-date">@2018/03/06 02:03:15</span>
-    </div>
-  </div>
+    <div><a href="http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/">XAMLでブロック矢印を描画する</a></div>
+    <div>@2016-12-04 22:45:00.001 &#43;0900 JST</div>
   
-  <div class="lastmod-title">
-    <div class="[system-dev]">
-      <a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a>
-    
-    
-      <span class="blog-date">@2018/03/06 02:03:15</span>
-    </div>
-  </div>
+    <div><a href="http://www.weizlogy.gq/system/dev/openweathermap-with-java-bazel/">Codeaywhere&#43;Java&#43;bazelでOpenWeatherMapのAPIを使用し現在の気象情報を取得する</a></div>
+    <div>@2016-08-21 11:20:00 &#43;0900 JST</div>
   
-  <div class="lastmod-title">
-    <div class="[system-dev]">
-      <a href="http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/">[system development] BeanUtils.describe()で配列を扱いたい</a>
-    
-    
-      <span class="blog-date">@2018/03/06 02:03:15</span>
-    </div>
-  </div>
+    <div><a href="http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/">Codeanywhereでbazelを使う</a></div>
+    <div>@2016-08-13 17:06:00 &#43;0900 JST</div>
   
-  <div class="lastmod-title">
-    <div class="[system-dev]">
-      <a href="http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/">[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</a>
-    
-    
-      <span class="blog-date">@2018/03/06 02:03:15</span>
-    </div>
-  </div>
+    <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/">Monodevelopで埋め込みリソースを使う</a></div>
+    <div>@2016-07-31 16:11:00 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/step-counter-is/">ステップカウンターのあるべき姿を考察する</a></div>
+    <div>@2016-07-29 00:14:00.003 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/">ubuntu16.04でMonoDevelopを使った開発環境</a></div>
+    <div>@2016-06-12 10:56:00 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/spring-aop-test/">Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</a></div>
+    <div>@2014-05-02 12:58:00.001 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/">Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</a></div>
+    <div>@2014-04-15 13:15:00.002 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/">JQueryUIのAutoCompleteを特定操作で強制選択する</a></div>
+    <div>@2014-03-19 12:39:00.002 &#43;0900 JST</div>
   
   
 </div>
@@ -326,13 +322,13 @@
   <section>
   
   
-  <div><a href="http://www.weizlogy.gq/system/dev/cipher-suites/">[system development] TSLで定義される全CipherSuiteの一覧</a></div>
+  <div><a href="http://www.weizlogy.gq/system/dev/cipher-suites/">TSLで定義される全CipherSuiteの一覧</a></div>
   <pre class="summary">Cipher Suiteの説明はさて置き、一覧を見るために以下のコマンドを使用する例が多々見受けられます。
 $ openssl ciphers -v これはopensslが対応するCipherSuiteの一覧であり、実際に存在するCipherSuiteの一覧とは異なります。
 実際に存在するCipherSuiteの一覧は、RFC5426によるとIANA管理とのことで、下記URLがマスターです。
 http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4</pre>
   
-  <div><a href="http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/">[system development] XAMLでブロック矢印を描画する</a></div>
+  <div><a href="http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/">XAMLでブロック矢印を描画する</a></div>
   <pre class="summary">ブロック矢印完成図 
 コード &lt;Path Stroke=&#34;Black&#34; StrokeThickness=&#34;2&#34; Fill=&#34;Gray&#34; Data=&#34;M 100 100 H 200 V 90 L 230 115 L 200 140 V 130 H 100 V 100 Z&#34; Margin=&#34;-30,-30,0,0&#34; /&gt; 解説 Pathを使って目標の位置付近に描画、Marginで微調整します。
 https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspxを読めば分かりますが簡単です。 一筆書きの要領で、矢印の左上から時計回りに線を引いています。
@@ -345,7 +341,7 @@ https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspxを読めば
 
 アローヘッドの頂点座標の算出は、頂点がシャフトの中央にあることと、三平方の定理を使えばきっちり出せます。 つまり、シャフトの幅は偶数が良いです。</pre>
   
-  <div><a href="http://www.weizlogy.gq/system/dev/openweathermap-with-java-bazel/">[system development] Codeaywhere&#43;Java&#43;bazelでOpenWeatherMapのAPIを使用し現在の気象情報を取得する</a></div>
+  <div><a href="http://www.weizlogy.gq/system/dev/openweathermap-with-java-bazel/">Codeaywhere&#43;Java&#43;bazelでOpenWeatherMapのAPIを使用し現在の気象情報を取得する</a></div>
   <pre class="summary">OpenWeatherMapの使い方 OpenWeatherMapは各種気象情報提供サービスです。
 サインアップすれば無料で使えるAPIも提供しています。
 今回は現在のみなので、Current weather data APIを使用します。 RESTサービスになっており、以下のURLで情報がJSON形式で取得できます。（{city name}は英語で）
@@ -353,7 +349,7 @@ http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;APPID={Your API
 http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;mode=xml&amp;APPID={Your API Key}  気象情報は以下のように返却されます。（例は{city name}=Tokyo）
 &lt;?xml version=&#34;1.0&#34;?&gt; &lt;current&gt; &lt;city id=&#34;1850147&#34; name=&#34;Tokyo&#34;&gt; &lt;coord lat=&#34;35.69&#34; lon=&#34;139.69&#34;/&gt; &lt;country&gt;JP&lt;/country&gt; &lt;sun set=&#34;2016-08-15T09:30:23&#34; rise=&#34;2016-08-14T20:00:21&#34;/&gt; &lt;/city&gt; &lt;temperature unit=&#34;kelvin&#34; max=&#34;304.82&#34; min=&#34;298.71&#34; value=&#34;301.68&#34;/&gt; &lt;humidity unit=&#34;%&#34; value=&#34;85&#34;/&gt; &lt;pressure unit=&#34;hPa&#34; value=&#34;1001&#34;/&gt; &lt;wind&gt; &lt;speed name=&#34;Gentle Breeze&#34; value=&#34;3.41&#34;/&gt; &lt;gusts/&gt; &lt;direction name=&#34;South&#34; value=&#34;179.504&#34; code=&#34;S&#34;/&gt; &lt;/wind&gt; &lt;clouds name=&#34;clear sky&#34; value=&#34;8&#34;/&gt; &lt;visibility/&gt; &lt;precipitation unit=&#34;3h&#34; value=&#34;0.245&#34; mode=&#34;rain&#34;/&gt; &lt;weather value=&#34;light rain&#34; icon=&#34;10d&#34; number=&#34;500&#34;/&gt; &lt;lastupdate value=&#34;2016-08-15T07:41:15&#34;/&gt; &lt;/current&gt; JavaでOpenWeatherMapのAPIを呼び出す RESTクライアントは色々ありますが、お手軽なApache Commonsのhttpclientとfluent-hcにします。</pre>
   
-  <div><a href="http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/">[system development] Codeanywhereでbazelを使う</a></div>
+  <div><a href="http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/">Codeanywhereでbazelを使う</a></div>
   <pre class="summary">CodeanywhereはクラウドIDEで、sudoが許可されたターミナルを使うことができます。 Google+アカウント連携ですぐに使えます。
 bazelは、mavenやGradleのようなビルドツールで、様々な言語のビルドが可能です。
 Codeanyhwereにbazelをインストール bazelはjdk1.8以降（jdk1.7はサポートされているが非推奨）が必須ですが、Codeanywhereはjdk1.7の環境です。 今回はjdk1.7のままでインストールします。
@@ -361,14 +357,14 @@ cabox@box-codeanywhere:~/workspace$ java -version java version &#34;1.7.0_95&#34
 $ echo &#34;deb [arch=amd64] http://storage.googleapis.com/bazel-apt testing jdk1.7&#34; | sudo tee /etc/apt/sources.list.d/bazel.list $ curl https://storage.googleapis.com/bazel-apt/doc/apt-key.pub.gpg | sudo apt-key add - sudo apt-get update &amp;&amp; sudo apt-get install bazel bazelでjavaをビルド 最低限の必要なファイルを作成します。
 cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cabox@box-codeanywhere:~/workspace$ touch hello/src/main/java/gq/weizlogy/Main.java cabox@box-codeanywhere:~/workspace$ touch hello/WORKSPACE cabox@box-codeanywhere:~/workspace$ touch hello/BUILD hello/src/main/java/gq/weizlogy/Main.</pre>
   
-  <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/">[system development] Monodevelopで埋め込みリソースを使う</a></div>
+  <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/">Monodevelopで埋め込みリソースを使う</a></div>
   <pre class="summary">ソリューションエクスプローラーで対象のファイルを右クリックします。
 「ビルドアクション &gt; EmbeddedResource」を選択します。以上です。
 プログラムからのアクセスで必要なリソースIDは、デフォルトネームスペース＋ファイル名となります。 リソースIDはプロパティビューで変更可能です。
 使い方は以下の通りです。
 using (var stream = new System.IO.StreamReader(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream(&#34;[ResourceID]&#34;), true)) { ... }</pre>
   
-  <div><a href="http://www.weizlogy.gq/system/dev/step-counter-is/">[system development] ステップカウンターのあるべき姿を考察する</a></div>
+  <div><a href="http://www.weizlogy.gq/system/dev/step-counter-is/">ステップカウンターのあるべき姿を考察する</a></div>
   <pre class="summary">ステップカウンターとは？ LOCを計測するツールです。LOCはLines Of Codeの略で、プログラムの規模として扱います。
  空行（改行など空白だけの行）やコメント行（コメントと空白だけの行）は除く、2つの命令が書かれた行は2行と数える、括弧だけの行を除くなどの換算をした行数を論理LOC (logical LOC) といい、通常はこちらを使う。
 &ndash; https://ja.wikipedia.org/wiki/LOC
@@ -384,39 +380,38 @@ C言語系統のプリプロセッサーディレクティブは微妙ですが�
 C言語の#includeは、必須であることを除き、C#のusingディレクティブ同様、非命令とします。
 考察は続きます。。。</pre>
   
-  <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/">[system development] ubuntu16.04でMonoDevelopを使った開発環境</a></div>
+  <div><a href="http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/">ubuntu16.04でMonoDevelopを使った開発環境</a></div>
   <pre class="summary">LinuxでC#を使うための環境(mono)とIDE(MonoDevelop)をインストールします。
 まずはmonoをインストールします。
 $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF $ echo &#34;deb http://download.mono-project.com/repo/debian wheezy main&#34; | sudo tee /etc/apt/sources.list.d/mono-xamarin.list $ sudo apt-get update $ sudo apt-get install mono-complete 続いてMonoDevelopをインストールします。
 $ sudo apt-get install monodevelop monodevelopコマンドでIDEを起動します。</pre>
   
-  <div><a href="http://www.weizlogy.gq/system/dev/spring-aop-test/">[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</a></div>
+  <div><a href="http://www.weizlogy.gq/system/dev/spring-aop-test/">Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</a></div>
   <pre class="summary">Interceptor クラスの内容は以下の通りです。
 import org.aspectj.lang.ProceedingJoinPoint; import org.aspectj.lang.annotation.Around; import org.aspectj.lang.annotation.Aspect; @Aspect public class SomeInterceptor { @Around(&#34;execution(* execute(..))&#34;) public Object around(ProceedingJoinPoint pjp) { System.out.println(String.format(&#34;%s.%s start.&#34;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); Object value = null; try { value = pjp.proceed(); } catch (Throwable e) { e.printStackTrace(); } System.out.println(String.format(&#34;%s.%s ended.&#34;, pjp.getTarget().getClass.getSimpleName(), pjp.getSignature().getName())); return value; } } Test クラスの内容は以下の通りです。
 import static org.junit.Assert.*; import java.util.ArrayList; import org.junit.Test; import org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint; import org.springframework.aop.framework.ReflectiveMethodInvocation; import org.springframework.aop.interceptor.SimpleTraceInterceptor; public class SomeInterceptorTest { /** AOP の対象となるメソッドを持つクラス */ private static class AOPTarget { public String execute() { System.</pre>
   
-  <div><a href="http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/">[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</a></div>
+  <div><a href="http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/">Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</a></div>
   <pre class="summary">img タグにサーブレットの URL を埋め込んで、画面描画時に呼び出します。 呼び出した先では画像をバイナリ形式で読み込んで画面に出力します。
 データベースに Blob 型で保存した画像の読み込みも、ロジックは同じです。
 JSPでは&hellip;
 &lt;img src=&#34;xxx.do&#34; /&gt; サーバーサイドでは&hellip;
 /** xxx.do から呼び出される Servlet */ protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { // ファイルパスはどこからか入手する  String file = &#34;\\server\image\sample.jpg&#34;; if (file == null || &#34;&#34;.equals(file)) { return; } try { // 画像を読み込む  byte[] image = Files.readAllBytes(Paths.get(file)); // レスポンスヘッダーを設定する  response.setContentType(&#34;image/&#34; + file.substring(file.lastIndexOf(&#34;.&#34;))); response.setContentLength(image.length); // servlet specification 3.1 によると OutputStream は  // Servlet 終了時にクローズされる  // 従って、ここではクローズしない  // むしろ、ここでクローズすると二重解放になる可能性があるのでは？  response.</pre>
   
-  <div><a href="http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/">[system development] JQueryUIのAutoCompleteを特定操作で強制選択する</a></div>
+  <div><a href="http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/">JQueryUIのAutoCompleteを特定操作で強制選択する</a></div>
   <pre class="summary">本来は blur 時に強制選択したかったのですが、候補確定時に AutoComplete の対象にフォーカスが当たる挙動を回避できなかったため、エンターキーで代用です。
-var obj = $(&#39;#autocomplete&#39;); obj.on(&#39;keydown&#39;, function(e) { // エンターキー以外を無視する  if (e.which !== 13) { return; } // search メソッドの結果で候補が存在する場合、  // autocompleteopen イベントが発行される  // 候補が 0 件の場合は動作しない  obj.on(&#39;autocompleteopen&#39;, function() { // 下矢印キーダウンイベントを作成し、候補の先頭を選択状態にする  var keyDownEvent = $.Event(&#39;keydown&#39;); keyDownEvent.keyCode = $.ui.keyCode.DOWN; obj.trigger(keyDownEvent); // エンターキーダウンを作成し、選択状態の候補で確定する  // →候補確定時のイベントが発火する  keyDownEvent.keyCode = $.ui.keyCode.ENTER; obj.trigger(keyDownEvent); // 通常動作時は不要なイベントなので終了時に破棄しておく  obj.off(&#39;autocompleteopen&#39;); }); // 現在の入力値で検索する  obj.autocomplete(&#39;search&#39;); });</pre>
+var obj = $(&#39;#autocomplete&#39;); obj.on(&#39;keydown&#39;, function(e) { // エンターキー以外を無視する  if (e.which !== 13) { return; } // search メソッドの結果で候補が存在する場合、  // autocompleteopen イベントが発行される  // 候補が 0 件の場合は動作しない  obj.on(&#39;autocompleteopen&#39;, function() { // 下矢印キーダウンイベントを作成し、候補の先頭を選択状態にする  var keyDownEvent = $.Event(&#39;keydown&#39;); keyDownEvent.keyCode = $.ui.keyCode.DOWN; obj.trigger(keyDownEvent); // エンターキーダウンを作成し、選択状態の候補で確定する  // →候補確定時のイベントが発火する  keyDownEvent.keyCode = $.ui.keyCode.ENTER; obj.trigger(keyDownEvent); // 通常動作時は不要なイベントなので終了時に破棄しておく  obj.off(&#39;autocompleteopen&#39;); }); // 現在の入力値で検索する  obj.autocomplete(&#39;search&#39;); }); </pre>
   
   
 
 <ul class="pagination">
     
-    <li>
-        <a href="/categories/system-dev/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    <li class="page-item">
+        <a href="/categories/system-dev/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
     </li>
     
-    <li
-    class="disabled">
-    <a href="" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    <li class="page-item disabled">
+    <a href="" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
     </li>
     
     
@@ -428,8 +423,7 @@ var obj = $(&#39;#autocomplete&#39;); obj.on(&#39;keydown&#39;, function(e) { //
         
     
     
-    <li
-    class="active"><a href="/categories/system-dev/">1</a></li>
+    <li class="page-item active"><a class="page-link" href="/categories/system-dev/">1</a></li>
     
     
     
@@ -440,17 +434,15 @@ var obj = $(&#39;#autocomplete&#39;); obj.on(&#39;keydown&#39;, function(e) { //
         
     
     
-    <li
-    ><a href="/categories/system-dev/page/2/">2</a></li>
+    <li class="page-item"><a class="page-link" href="/categories/system-dev/page/2/">2</a></li>
     
     
-    <li
-    >
-    <a href="/categories/system-dev/page/2/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    <li class="page-item">
+    <a href="/categories/system-dev/page/2/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
     </li>
     
-    <li>
-        <a href="/categories/system-dev/page/2/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    <li class="page-item">
+        <a href="/categories/system-dev/page/2/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
     </li>
     
 </ul>

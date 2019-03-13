@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>[site management] bloggerからhugo&#43;github pagesに移行した理由</title>
+      <title>bloggerからhugo&#43;github pagesに移行した理由</title>
       <link>http://www.weizlogy.gq/site/blogger-to-hugo/</link>
       <pubDate>Sat, 06 May 2017 17:31:42 +0900</pubDate>
       
@@ -30,7 +30,7 @@ bloggerで困ったことをhugoで解決する AMP対応 hugoにはAMP対応の
     </item>
     
     <item>
-      <title>[site management] schema.org構造化データBlogPosting対応 with JSON&#43;LD in blogger</title>
+      <title>schema.org構造化データBlogPosting対応 with JSON&#43;LD in blogger</title>
       <link>http://www.weizlogy.gq/site/blogger-blogposting-jsonld/</link>
       <pubDate>Sun, 26 Feb 2017 12:54:00 +0900</pubDate>
       
@@ -44,7 +44,7 @@ feedDataに情報はありますが、Javascriptを経由せず取得するの�
     </item>
     
     <item>
-      <title>[site management] bloggerで最終更新日時を表示する</title>
+      <title>bloggerで最終更新日時を表示する</title>
       <link>http://www.weizlogy.gq/site/blogger-last-modified/</link>
       <pubDate>Thu, 16 Jun 2016 22:00:00 +0900</pubDate>
       
@@ -60,7 +60,7 @@ feedDataに情報はありますが、Javascriptを経由せず取得するの�
     </item>
     
     <item>
-      <title>[site management] code-prettifyがgithubに移行し進化していたので対応した</title>
+      <title>code-prettifyがgithubに移行し進化していたので対応した</title>
       <link>http://www.weizlogy.gq/site/code-prettify-on-github/</link>
       <pubDate>Wed, 15 Jun 2016 23:16:00 +0900</pubDate>
       
@@ -72,7 +72,7 @@ feedDataに情報はありますが、Javascriptを経由せず取得するの�
     </item>
     
     <item>
-      <title>[site management] bing Web マスターのSEOレポート対策</title>
+      <title>bing Web マスターのSEOレポート対策</title>
       <link>http://www.weizlogy.gq/site/seo-bing-webmaster/</link>
       <pubDate>Mon, 13 Jun 2016 22:31:00 +0900</pubDate>
       

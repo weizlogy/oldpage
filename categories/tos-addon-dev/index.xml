@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>[tree of savior addon for developpers] アドオンで自作スキンを使用する方法</title>
+      <title>アドオンで自作スキンを使用する方法</title>
       <link>http://www.weizlogy.gq/tos/addon-dev/use-custom-skins/</link>
       <pubDate>Sun, 05 Mar 2017 14:19:00 +0900</pubDate>
       
@@ -30,7 +30,7 @@ skin 自作スキン画像ファイルを配置します。
     </item>
     
     <item>
-      <title>[tree of savior addon for developpers] iesファイルフォーマット解説</title>
+      <title>iesファイルフォーマット解説</title>
       <link>http://www.weizlogy.gq/tos/addon-dev/ies-format/</link>
       <pubDate>Sat, 31 Dec 2016 17:29:00 +0900</pubDate>
       
@@ -41,7 +41,7 @@ Header block  ---------------------- ------------------- -----------------------
     </item>
     
     <item>
-      <title>[tree of savior addon for developpers] iesファイルをcsv形式のファイルに変換するソフト</title>
+      <title>iesファイルをcsv形式のファイルに変換するソフト</title>
       <link>http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/</link>
       <pubDate>Sat, 31 Dec 2016 15:42:00 +0900</pubDate>
       
@@ -62,7 +62,7 @@ https://github.com/r1emu/IPFUnpacker/blob/master</description>
     </item>
     
     <item>
-      <title>[tree of savior addon for developpers] アドオン作成～設置方法まとめ</title>
+      <title>アドオン作成～設置方法まとめ</title>
       <link>http://www.weizlogy.gq/tos/addon-dev/create-addon/</link>
       <pubDate>Sun, 25 Sep 2016 07:41:00 +0900</pubDate>
       

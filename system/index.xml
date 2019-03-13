@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>[system] Windows10でTwitter公式webページをStylishでキレイに見せる</title>
+      <title>Windows10でTwitter公式webページをStylishでキレイに見せる</title>
       <link>http://www.weizlogy.gq/system/item/twitter-stylish/</link>
       <pubDate>Wed, 22 Nov 2017 22:22:09 +0900</pubDate>
       
@@ -28,7 +28,7 @@ Stylishでスタイル作成 コード body.ja, .TweetTextSize.TweetTextSize--no
     </item>
     
     <item>
-      <title>[system] CCC - 色当てゲーム解析ツール</title>
+      <title>CCC - 色当てゲーム解析ツール</title>
       <link>http://www.weizlogy.gq/system/item/ccc/</link>
       <pubDate>Fri, 11 Aug 2017 23:51:21 +0900</pubDate>
       
@@ -49,7 +49,7 @@ ESCキーUp キャプチャー結果をクリアします。</description>
     </item>
     
     <item>
-      <title>[system] Schritt - 論理ステップカウンター</title>
+      <title>Schritt - 論理ステップカウンター</title>
       <link>http://www.weizlogy.gq/system/item/schritt/</link>
       <pubDate>Mon, 13 Feb 2017 17:32:00 +0900</pubDate>
       
@@ -63,7 +63,7 @@ status. | 言語 | 対応バージョン | 状況説明 | |:&amp;mdash;||:&amp;m
     </item>
     
     <item>
-      <title>[system development] TSLで定義される全CipherSuiteの一覧</title>
+      <title>TSLで定義される全CipherSuiteの一覧</title>
       <link>http://www.weizlogy.gq/system/dev/cipher-suites/</link>
       <pubDate>Tue, 31 Jan 2017 21:59:00 +0900</pubDate>
       
@@ -75,7 +75,7 @@ http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-paramete
     </item>
     
     <item>
-      <title>[system] RealtimeWhoisView - グローバルIP＋国名表示ツール</title>
+      <title>RealtimeWhoisView - グローバルIP＋国名表示ツール</title>
       <link>http://www.weizlogy.gq/system/item/whoisview/</link>
       <pubDate>Sun, 18 Dec 2016 16:55:00 +0900</pubDate>
       
@@ -91,7 +91,7 @@ Proxyは通りません。</description>
     </item>
     
     <item>
-      <title>[system] Tapete - Windows spotlight画像抽出</title>
+      <title>Tapete - Windows spotlight画像抽出</title>
       <link>http://www.weizlogy.gq/system/item/tapete/</link>
       <pubDate>Sun, 18 Dec 2016 16:55:00 +0900</pubDate>
       
@@ -108,7 +108,7 @@ cautions. 自動起動はしないので、必要に応じてスタートアッ�
     </item>
     
     <item>
-      <title>[system development] XAMLでブロック矢印を描画する</title>
+      <title>XAMLでブロック矢印を描画する</title>
       <link>http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/</link>
       <pubDate>Sun, 04 Dec 2016 22:45:00 +0900</pubDate>
       
@@ -127,7 +127,7 @@ https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspxを読めば
     </item>
     
     <item>
-      <title>[system development] Codeaywhere&#43;Java&#43;bazelでOpenWeatherMapのAPIを使用し現在の気象情報を取得する</title>
+      <title>Codeaywhere&#43;Java&#43;bazelでOpenWeatherMapのAPIを使用し現在の気象情報を取得する</title>
       <link>http://www.weizlogy.gq/system/dev/openweathermap-with-java-bazel/</link>
       <pubDate>Sun, 21 Aug 2016 11:20:00 +0900</pubDate>
       
@@ -141,7 +141,7 @@ http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;amp;mode=xml&am
     </item>
     
     <item>
-      <title>[system development] Codeanywhereでbazelを使う</title>
+      <title>Codeanywhereでbazelを使う</title>
       <link>http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/</link>
       <pubDate>Sat, 13 Aug 2016 17:06:00 +0900</pubDate>
       
@@ -155,7 +155,7 @@ cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cab
     </item>
     
     <item>
-      <title>[system development] Monodevelopで埋め込みリソースを使う</title>
+      <title>Monodevelopで埋め込みリソースを使う</title>
       <link>http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/</link>
       <pubDate>Sun, 31 Jul 2016 16:11:00 +0900</pubDate>
       
@@ -168,7 +168,7 @@ using (var stream = new System.IO.StreamReader(System.Reflection.Assembly.GetExe
     </item>
     
     <item>
-      <title>[system development] ステップカウンターのあるべき姿を考察する</title>
+      <title>ステップカウンターのあるべき姿を考察する</title>
       <link>http://www.weizlogy.gq/system/dev/step-counter-is/</link>
       <pubDate>Fri, 29 Jul 2016 00:14:00 +0900</pubDate>
       
@@ -190,7 +190,7 @@ C言語の#includeは、必須であることを除き、C#のusingディレク�
     </item>
     
     <item>
-      <title>[system development] ubuntu16.04でMonoDevelopを使った開発環境</title>
+      <title>ubuntu16.04でMonoDevelopを使った開発環境</title>
       <link>http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/</link>
       <pubDate>Sun, 12 Jun 2016 10:56:00 +0900</pubDate>
       
@@ -202,7 +202,7 @@ $ sudo apt-get install monodevelop monodevelopコマンドでIDEを起動しま�
     </item>
     
     <item>
-      <title>[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</title>
+      <title>Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</title>
       <link>http://www.weizlogy.gq/system/dev/spring-aop-test/</link>
       <pubDate>Fri, 02 May 2014 12:58:00 +0900</pubDate>
       
@@ -213,7 +213,7 @@ import static org.junit.Assert.*; import java.util.ArrayList; import org.junit.T
     </item>
     
     <item>
-      <title>[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</title>
+      <title>Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</title>
       <link>http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/</link>
       <pubDate>Tue, 15 Apr 2014 13:15:00 +0900</pubDate>
       
@@ -226,28 +226,28 @@ JSPでは&amp;hellip;
     </item>
     
     <item>
-      <title>[system development] JQueryUIのAutoCompleteを特定操作で強制選択する</title>
+      <title>JQueryUIのAutoCompleteを特定操作で強制選択する</title>
       <link>http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/</link>
       <pubDate>Wed, 19 Mar 2014 12:39:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/</guid>
       <description>本来は blur 時に強制選択したかったのですが、候補確定時に AutoComplete の対象にフォーカスが当たる挙動を回避できなかったため、エンターキーで代用です。
-var obj = $(&amp;#39;#autocomplete&amp;#39;); obj.on(&amp;#39;keydown&amp;#39;, function(e) { // エンターキー以外を無視する  if (e.which !== 13) { return; } // search メソッドの結果で候補が存在する場合、  // autocompleteopen イベントが発行される  // 候補が 0 件の場合は動作しない  obj.on(&amp;#39;autocompleteopen&amp;#39;, function() { // 下矢印キーダウンイベントを作成し、候補の先頭を選択状態にする  var keyDownEvent = $.Event(&amp;#39;keydown&amp;#39;); keyDownEvent.keyCode = $.ui.keyCode.DOWN; obj.trigger(keyDownEvent); // エンターキーダウンを作成し、選択状態の候補で確定する  // →候補確定時のイベントが発火する  keyDownEvent.keyCode = $.ui.keyCode.ENTER; obj.trigger(keyDownEvent); // 通常動作時は不要なイベントなので終了時に破棄しておく  obj.off(&amp;#39;autocompleteopen&amp;#39;); }); // 現在の入力値で検索する  obj.autocomplete(&amp;#39;search&amp;#39;); });</description>
+var obj = $(&amp;#39;#autocomplete&amp;#39;); obj.on(&amp;#39;keydown&amp;#39;, function(e) { // エンターキー以外を無視する  if (e.which !== 13) { return; } // search メソッドの結果で候補が存在する場合、  // autocompleteopen イベントが発行される  // 候補が 0 件の場合は動作しない  obj.on(&amp;#39;autocompleteopen&amp;#39;, function() { // 下矢印キーダウンイベントを作成し、候補の先頭を選択状態にする  var keyDownEvent = $.Event(&amp;#39;keydown&amp;#39;); keyDownEvent.keyCode = $.ui.keyCode.DOWN; obj.trigger(keyDownEvent); // エンターキーダウンを作成し、選択状態の候補で確定する  // →候補確定時のイベントが発火する  keyDownEvent.keyCode = $.ui.keyCode.ENTER; obj.trigger(keyDownEvent); // 通常動作時は不要なイベントなので終了時に破棄しておく  obj.off(&amp;#39;autocompleteopen&amp;#39;); }); // 現在の入力値で検索する  obj.autocomplete(&amp;#39;search&amp;#39;); }); </description>
     </item>
     
     <item>
-      <title>[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</title>
+      <title>Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</title>
       <link>http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/</link>
       <pubDate>Sat, 10 Mar 2012 14:48:00 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/</guid>
       <description>Windows APIのIcmp6SendEcho2()をWindows XPで呼び出すときは以下の点に注意が必要です。
 Syntax from msdn.
-DWORD Icmp6SendEcho2( __in HANDLE IcmpHandle, __in_opt HANDLE Event, __in_opt PIO_APC_ROUTINE ApcRoutine, __in_opt PVOID ApcContext, __in struct sockaddr_in6 *SourceAddress, __in struct sockaddr_in6 *DestinationAddress, __in LPVOID RequestData, __in WORD RequestSize, __in_opt PIP_OPTION_INFORMATION RequestOptions, __out LPVOID ReplyBuffer, __in DWORD ReplySize, __in DWORD Timeout );  第9引数 PIP_OPTION_INFORMATION は必須です。Vista 以降のOSで動かす場合は任意です。（NULLでもよい） 第10引数 ReplyBuffer は80byte以上の領域がないとWin32エラーコード122（システム コールに渡されるデータ領域が小さすぎます）が発生します。  IcmpSendEcho()とは設定値が微妙に異なりますね。</description>
+DWORD Icmp6SendEcho2( __in HANDLE IcmpHandle, __in_opt HANDLE Event, __in_opt PIO_APC_ROUTINE ApcRoutine, __in_opt PVOID ApcContext, __in struct sockaddr_in6 *SourceAddress, __in struct sockaddr_in6 *DestinationAddress, __in LPVOID RequestData, __in WORD RequestSize, __in_opt PIP_OPTION_INFORMATION RequestOptions, __out LPVOID ReplyBuffer, __in DWORD ReplySize, __in DWORD Timeout );   第9引数 PIP_OPTION_INFORMATION は必須です。Vista 以降のOSで動かす場合は任意です。（NULLでもよい） 第10引数 ReplyBuffer は80byte以上の領域がないとWin32エラーコード122（システム コールに渡されるデータ領域が小さすぎます）が発生します。  IcmpSendEcho()とは設定値が微妙に異なりますね。</description>
     </item>
     
     <item>
-      <title>[system development] BeanUtils.describe()で配列を扱いたい</title>
+      <title>BeanUtils.describe()で配列を扱いたい</title>
       <link>http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/</link>
       <pubDate>Sat, 10 Sep 2011 00:03:00 +0900</pubDate>
       
@@ -263,7 +263,7 @@ ConvertUtils.deregister(String[].class); BeanUtilsBean.setInstance(new BeanUtils
     </item>
     
     <item>
-      <title>[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</title>
+      <title>strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</title>
       <link>http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/</link>
       <pubDate>Sun, 15 May 2011 01:21:00 +0900</pubDate>
       
@@ -281,7 +281,7 @@ import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.bean
     </item>
     
     <item>
-      <title>[system development] strutsのFormFileからローカルファイルの絶対パスを取得</title>
+      <title>strutsのFormFileからローカルファイルの絶対パスを取得</title>
       <link>http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/</link>
       <pubDate>Sun, 24 Apr 2011 01:02:00 +0900</pubDate>
       
@@ -296,7 +296,7 @@ java 1.6.0_18
     </item>
     
     <item>
-      <title>[system development] cannot find source for binding with reference について</title>
+      <title>cannot find source for binding with reference について</title>
       <link>http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/</link>
       <pubDate>Sat, 11 Sep 2010 18:35:00 +0900</pubDate>
       

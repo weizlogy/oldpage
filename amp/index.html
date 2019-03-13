@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html ⚡>
+<head>
+	<meta name="generator" content="Hugo 0.48" />
+<meta charset="utf-8">
+<link rel="canonical" href="http://www.weizlogy.gq/">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<title>
+
+  Weizlogy
+
+</title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+
+
+<style amp-custom>
+<!-- @style-ignore -->
+/* part of base. */
+body {
+  font-family: "Noto Sans Japanese", "monospace";
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+h1 {
+  font-size: 3.0em;
+}
+h1 > a {
+  text-decoration: none;
+  color: inherit;
+}
+h1::first-letter {
+  font-size: 3.5em;
+  color: orange;
+}
+
+header {
+  clear: left;
+}
+header > h1 {
+  font-family: 'Lobster', cursive;
+  display: inline;
+  color: #666;
+}
+header > h2 {
+  font-family: 'Lobster', cursive;
+  display: inline;
+  margin-left: 10px;
+  color: #999;
+}
+
+footer {
+  clear: left;
+  padding-top: 10px;
+}
+footer > p {
+  display: inline;
+  padding-left: 10px;
+}
+div.main {
+  /*width: 80%;*/
+  padding-left: 10px;
+}
+/* part of single. */
+article > div > h2 {
+  padding: 0px 0px 5px 5px;
+  border-left: 7px solid #999;
+  border-bottom: 1px solid #999;
+}
+article > div > h3 {
+  padding: 0px 0px 5px 5px;
+  border-left: 7px solid #CCC;
+  border-bottom: 1px solid #CCC;
+}
+/* part of list. */
+section {
+  overflow: hidden;
+}
+section > h1 {
+  padding: 0px 0px 5px 5px;
+  border-left: 7px solid #999;
+  border-bottom: 1px solid #999;
+}
+section > .summary {
+  font-size: 85%;
+  color: #999;
+}
+aside {
+  padding-left: 10px;
+  margin-top: 10px;
+  font-size: 85%;
+}
+aside > div {
+  margin-bottom: 10px;
+}
+.category {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.category > div {
+  margin-right: 10px;
+}
+.lastmod-title {
+  padding-bottom: 10px;
+}
+.blog-date {
+  color: #999;
+  margin-left: 10px;
+}
+/* part of code pagination. */
+.pagination {
+  display: inline-block;
+}
+.pagination li {
+  display: inline-block;
+  text-decoration: none;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 7px 14px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #000000;
+  margin: 0 4px;
+}
+.pagination li.active a {
+  background-color: #F5F5F5;
+  border: 1px solid #000000;
+}
+/* part of code highlighing. */
+pre {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #999;
+  word-wrap: break-word;
+}
+.highlight .c { color: #999988; font-style: italic } /* Comment */
+.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight .k { color: #000000; font-weight: bold } /* Keyword */
+.highlight .o { color: #000000; font-weight: bold } /* Operator */
+.highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #999999; font-weight: bold; font-style: italic } /* Comment.Preproc */
+.highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.highlight .ge { color: #000000; font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #aa0000 } /* Generic.Error */
+.highlight .gh { color: #999999 } /* Generic.Heading */
+.highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #555555 } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+.highlight .gt { color: #aa0000 } /* Generic.Traceback */
+.highlight .kc { color: #000000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #000000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #000000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #000000; font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { color: #000000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #009999 } /* Literal.Number */
+.highlight .s { color: #d01040 } /* Literal.String */
+.highlight .na { color: #008080 } /* Name.Attribute */
+.highlight .nb { color: #0086B3 } /* Name.Builtin */
+.highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+.highlight .no { color: #008080 } /* Name.Constant */
+.highlight .nd { color: #3c5d5d; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #800080 } /* Name.Entity */
+.highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+.highlight .nl { color: #990000; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #555555 } /* Name.Namespace */
+.highlight .nt { color: #000080 } /* Name.Tag */
+.highlight .nv { color: #008080 } /* Name.Variable */
+.highlight .ow { color: #000000; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #009999 } /* Literal.Number.Float */
+.highlight .mh { color: #009999 } /* Literal.Number.Hex */
+.highlight .mi { color: #009999 } /* Literal.Number.Integer */
+.highlight .mo { color: #009999 } /* Literal.Number.Oct */
+.highlight .sb { color: #d01040 } /* Literal.String.Backtick */
+.highlight .sc { color: #d01040 } /* Literal.String.Char */
+.highlight .sd { color: #d01040 } /* Literal.String.Doc */
+.highlight .s2 { color: #d01040 } /* Literal.String.Double */
+.highlight .se { color: #d01040 } /* Literal.String.Escape */
+.highlight .sh { color: #d01040 } /* Literal.String.Heredoc */
+.highlight .si { color: #d01040 } /* Literal.String.Interpol */
+.highlight .sx { color: #d01040 } /* Literal.String.Other */
+.highlight .sr { color: #009926 } /* Literal.String.Regex */
+.highlight .s1 { color: #d01040 } /* Literal.String.Single */
+.highlight .ss { color: #990073 } /* Literal.String.Symbol */
+.highlight .bp { color: #999999 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #008080 } /* Name.Variable.Class */
+.highlight .vg { color: #008080 } /* Name.Variable.Global */
+.highlight .vi { color: #008080 } /* Name.Variable.Instance */
+.highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+<!-- @style-ignore -->
+/* hidden category. */
+.tos-addon-x, .\[tos-addon-x\] {
+  display: none;
+}
+</style>
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Weizlogy",
+  "url": "http://www.weizlogy.gq/",
+  "datePublished": "0001-01-01 00:00:00 &#43;0000 UTC",
+  "author": {
+    "@type": "Person",
+    "name": "weizlogy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Weiβlogy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.weizlogy.gq//favicon.ico"
+    }
+  },
+  "dateModified": "2018-09-08 17:33:52.0501187 &#43;0900 JST",
+  "mainEntityOfPage": "1",
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://www.weizlogy.gq//dummy.png",
+    "width": "100",
+    "height": "100"
+  }
+}
+</script>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+<noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+</head>
+
+<body>
+<div id="container">
+
+<header>
+
+  <h1><a href="http://www.weizlogy.gq/">Weizlogy</a></h1>
+  <h2> - Live in der Zukunft.</h2>
+
+</header>
+
+<aside>
+<div>
+  <strong>Category.</strong>
+  <div class="category">
+  
+  
+    <div class="site-management"><a href="/categories/site-management">site-management</a>(5)</div>
+  
+    <div class="system"><a href="/categories/system">system</a>(5)</div>
+  
+    <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
+  
+    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(31)</div>
+  
+    <div class="tos-addon-dev"><a href="/categories/tos-addon-dev">tos-addon-dev</a>(4)</div>
+  
+    <div class="tos-addon-x"><a href="/categories/tos-addon-x">tos-addon-x</a>(2)</div>
+  
+  
+  
+  
+  </div>
+</div>
+<div>
+  
+  <strong>Last modified.</strong>
+  
+    <div><a href="http://www.weizlogy.gq/tos/addon/stealthymaster/">いいねせずキャラ情報を見るアドオン</a></div>
+    <div>@2018-02-10 08:58:15 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/tos/addon/partyinfoex/">パーティーメンバーの一覧に追加情報を表示するアドオン</a></div>
+    <div>@2018-01-27 07:38:47 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/tos/addon/showhiddenmap/">表示されないマップを表示するアドオン</a></div>
+    <div>@2018-01-17 22:13:20 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/tos/addon/minigaugetext/">キャラクター下HP/SPバーテキスト表示アドオン</a></div>
+    <div>@2018-01-16 01:34:09 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/tos/addon/showbuffsellertype/">商店のフキダシに商店名を付けるアドオン</a></div>
+    <div>@2017-12-26 00:36:58 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/tos/addon/compactheadsupdisplay/">Heads Up Displayをコンパクトにするアドオン</a></div>
+    <div>@2017-12-12 22:05:16 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/tos/addon/previewguildemblem/">ギルドマスター以外でもギルドエンブレムのプレビューができるアドオン</a></div>
+    <div>@2017-11-08 00:48:29 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/tos/addon/summonskilltooltip/">召喚獣にオベイで使えるスキルのツールチップを表示するアドオン</a></div>
+    <div>@2017-11-02 00:21:48 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/tos/addon/rmnewcollectionmark/">コレクション画面の[N]マークを非表示にするアドオン</a></div>
+    <div>@2017-08-31 21:25:07 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/tos/addon/fixbookread/">本アイテムの改行を正常化するアドオン</a></div>
+    <div>@2017-08-06 00:53:42 &#43;0900 JST</div>
+  
+  
+</div>
+</aside>
+
+<div class="main">
+  <strong>Contents index.</strong>
+  <section>
+  
+  
+  <div class="[tos-addon]">
+    <a href="http://www.weizlogy.gq/tos/addon/costumeplay/">GUI操作で装備を保存/復元するアドオン</a>
+    
+    
+    &ndash;&nbsp;v1.1.1
+    
+    
+  </div>
+  <pre class="summary [tos-addon]"> ToSには
+download. [v1.1.1] costumeplay.ipf
+install. README.md
+introduction. 
+settings. Nexon\TreeofSaviorJP\addons\costumeplay フォルダーを作成します。
+descriptions. costumeplayフォルダーには下記ファイルが自動的に生成され、 キャラクター毎にアドオンで使用する情報をログアウト後も保持するために使用します。
+ [cid]  v1.1.1 同一名称ブレスレットが正常に装備できない問題の修正 装備名クリック時の動作修正 旧：一時的に復元状態を変更
+新：永続的に復元状態を変更
+v1.1.0 ヘアカラー、称号追加 本バージョン以降に作成したデータは、ヘアカラーと称号を保存/復元できるようになります。
+フレーム表示方法修正 インベントリを開くと追従して開かなくなりました。 閉じる場合は依然としてインベントリに追従します。
+代わりに、インベントリアイコン右クリックメニューに[Open]が追加され、そこから開けます。 アドオンフレームが表示されるとインベントリが追従して開きます。
+v1.0.0 新規作成 GUI操作で装備を保存/復元します。
+usage. 保存方法  インベントリの左側にアドオンのフレームが表示されます。 名前を入力して[save]を押すと現在の装備を保存します。  復元方法  画面右下のインベントリアイコンを右クリックするとメニューが出現します。 メニューには保存時に入力した名前がリストアップされるので任意のものを選択します。  その他  見た目に影響しない防具やリングなどは初期状態で復元しない状態です。（装備名が灰色） アドオンフレームの装備名をクリックすると、永続的に復元状態を変更します。  </pre>
+  
+  <div class="[tos-addon]">
+    <a href="http://www.weizlogy.gq/tos/addon/stealthymaster/">いいねせずキャラ情報を見るアドオン</a>
+    
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+  </div>
+  <pre class="summary [tos-addon]">download. [v1.0.0] stealthymaster.ipf
+install. README.md
+introduction. settings. descriptions. v1.0.0 新規作成 アドオンがロードされると、キャラ情報を表示する既存処理を上書きして、いいねがされないようにします。</pre>
+  
+  <div class="[tos-addon]">
+    <a href="http://www.weizlogy.gq/tos/addon/partyinfoex/">パーティーメンバーの一覧に追加情報を表示するアドオン</a>
+    
+    
+    &ndash;&nbsp;v1.1.0
+    
+    
+  </div>
+  <pre class="summary [tos-addon]">download. [v1.1.0] partyinfoex.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.1.0 所在地追加 所在地（マップ名-チャンネル）を表示します。
+v1.0.0 新規作成 アドオンがロードされると、パーティーメンバー一覧にSPゲージを表示します。
+他に表示したい情報ありますか？ リクエストは適宜受け付けています。</pre>
+  
+  <div class="[tos-addon]">
+    <a href="http://www.weizlogy.gq/tos/addon/showhiddenmap/">表示されないマップを表示するアドオン</a>
+    
+    
+    &ndash;&nbsp;v1.0.1
+    
+    
+  </div>
+  <pre class="summary [tos-addon]">download. [v1.0.1] showhiddenmap.ipf
+install. README.md
+introduction. settings. descriptions. v1.0.1 マップ更新ロジック修正 FPS_UPDATE-&gt;RunUpdateScript(0.2)に変更することでスムーズ具合が向上しました。（ぬるぬるとは言ってない）
+v1.0.0 新規作成 アドオンがロードされると、（ミニ）マップが表示されないマップで（ミニ）マップが表示されるようになります。 とある事情で、通常マップに比べるとちょっとマップ位置更新がスムーズではありませんが&hellip;
+というのも、MAP_CHARACTER_UPDATEのイベントが発生しないっぽいので、FPS_UPDATEで代用しているためだったり。</pre>
+  
+  <div class="[tos-addon]">
+    <a href="http://www.weizlogy.gq/tos/addon/minigaugetext/">キャラクター下HP/SPバーテキスト表示アドオン</a>
+    
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+  </div>
+  <pre class="summary [tos-addon]">download. [v1.0.0] minigaugetext.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.0 新規作成 キャラクター下のHP/SPバーに現在値と最大値を表示します。</pre>
+  
+  <div class="[tos-addon]">
+    <a href="http://www.weizlogy.gq/tos/addon/showbuffsellertype/">商店のフキダシに商店名を付けるアドオン</a>
+    
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+  </div>
+  <pre class="summary [tos-addon]">download. [v1.0.0] showbuffsellertype.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.0 新規作成 アドオンがロードされると、商店のフキダシに商店名を付けて紛らわしさを回避します。（主に武器メンテ、防具メンテ、修理の区別）</pre>
+  
+  <div class="[tos-addon]">
+    <a href="http://www.weizlogy.gq/tos/addon/compactheadsupdisplay/">Heads Up Displayをコンパクトにするアドオン</a>
+    
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+  </div>
+  <pre class="summary [tos-addon]">download. [v1.0.0] compactheadsupdisplay.ipf
+install. README.md
+introduction. 
+settings. descriptions. v1.0.0 新規作成 アドオンがロードされると、Heads Up Display（自ジョブアイコン、HPなどがあるフレーム）からHPバーを取り去り、コンパクトにします。 （ジョブアイコンとレベルだけにします）
+レベル部分を掴めばドラッグできます</pre>
+  
+  <div class="[system]">
+    <a href="http://www.weizlogy.gq/system/item/twitter-stylish/">Windows10でTwitter公式webページをStylishでキレイに見せる</a>
+    
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+  </div>
+  <pre class="summary [system]">overviews. Windows10でTwitter公式webページを対象に、Google ChromeのStylishアドオンでフォント調整を行い、キレイに見せます。
+Macは元からキレイだから良いよね。。。
+introduction. 適用前 
+適用後 
+settings. Stylishインストール Google Chromeの機能拡張でStylishをインストールします。
+Stylishでスタイル作成 コード body.ja, .TweetTextSize.TweetTextSize--normal, .ProfileHeaderCard-bio, .TweetTextSize .twitter-hashtag b, .TweetTextSize .twitter-atreply b, .with-icn b, .Trends .context-trend-item .trend-item-context, .Trends .context-trend-item .trend-item-stats, b, .new-tweets-bar, .ProfileCard-bio, .FollowStatus { font-family: &#34;Helvetica Neue&#34;, &#34;Verdana&#34;, &#34;Yu Gothic&#34;, Meiryo, sans-serif; font-weight: 600; } 適用先 次で始まるURL　https://twitter.com
+保存！！！ descriptions. v1.0.0 新規作成 Windows10で標準採用された游ゴシックをベースに英数字は&rsquo;Helvetica Neue&rsquo;を使います。
+游ゴシックは、レギュラーサイズではフォントの線が細くなりボヤッとした印象を受けるため、ウェイトを掛けてくっきりはっきり見えるようにしました。</pre>
+  
+  <div class="[tos-addon]">
+    <a href="http://www.weizlogy.gq/tos/addon/previewguildemblem/">ギルドマスター以外でもギルドエンブレムのプレビューができるアドオン</a>
+    
+    
+    &ndash;&nbsp;v1.1.0
+    
+    
+  </div>
+  <pre class="summary [tos-addon]">download. [v1.1.0] previewguildemblem.ipf
+install. README.md
+introduction. 
+v1.1.0 キャラ名横エンブレムプレビュー対応 エンブレムの一覧（画像登録）画面でファイル名左にあるエンブレムアイコンをキャラ名横に表示されるサイズに合わせることでプレビュー可能としています。
+プレビュー画面の確認ボタンはギルドマスター以外非表示にしたので、ギルドマスターの人も入れられるよ！
+v1.0.0 新規作成 アドオンがロードされると、ギルドマスター以外でもギルドエンブレムのプレビューができるようになります。
+プレビュー画面の確認ボタンは非表示にしているので誤登録の心配はありません。（そもそも登録処理が成功するかどうかは怪しいところですが）
+ギルドマスターの人は入れないでね！！！</pre>
+  
+  <div class="[tos-addon]">
+    <a href="http://www.weizlogy.gq/tos/addon/summonskilltooltip/">召喚獣にオベイで使えるスキルのツールチップを表示するアドオン</a>
+    
+    
+    &ndash;&nbsp;v1.0.0
+    
+    
+  </div>
+  <pre class="summary [tos-addon]">download. [v1.0.0] summonskilltooltip.ipf
+install. README.md
+introduction. 
+v1.0.0 新規作成 アドオンがロードされると、召喚獣にオベイした際に使えるクイックスロットのスキル（降りるを除く）にツールチップを表示できるようにします。
+通常のスキル同様、マウスホバーで表示されます。
+ツールチップでは、該当スキルのクラスタイプ、攻撃タイプ、スキル威力、クールダウンタイムを表示します。</pre>
+  
+  
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/amp/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item disabled">
+    <a href="" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/amp/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/amp/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/amp/page/3/">3</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/amp/page/7/">7</a></li>
+    
+    
+    <li class="page-item">
+    <a href="/amp/page/2/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/amp/page/7/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
+  </section>
+  <amp-ad type="adsense"
+    layout="responsive"
+    width=300
+    height=250
+    data-ad-client="ca-pub-3395565787038716"
+    data-ad-slot="6217845612">
+  </amp-ad>
+</div>
+
+<footer>
+
+  <p>© 2010 weizlogy.<p>
+  <p>Powered by hugo &#43; github pages.<p>
+  <p><a href="https://twitter.com/twihamatter">Twitter</a></p>
+<p><a href="https://plus.google.com/u/0/111668640363056183135">Google+</a></p>
+
+
+<amp-analytics type="googleanalytics" id="analytics1">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-565719-7"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
+
+</footer>
+
+</div>
+</body>
+</html>

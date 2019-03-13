@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ⚡>
 <head>
-	<meta name="generator" content="Hugo 0.36" />
+	<meta name="generator" content="Hugo 0.48" />
 <meta charset="utf-8">
 <link rel="canonical" href="http://www.weizlogy.gq/">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -17,183 +17,194 @@
 
 
 <style amp-custom>
-   
-  body {
-    font-family: "Noto Sans Japanese", "monospace";
-    font-size: 85%;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  h1 > a {
-    text-decoration: none;
-    color: inherit;
-  }
-  header {
-    clear: left;
-  }
-  header > h1 {
-    font-family: 'Lobster', cursive;
-    display: inline;
-    color: #666;
-  }
-  header > h2 {
-    font-family: 'Lobster', cursive;
-    display: inline;
-    margin-left: 10px;
-    color: #999;
-  }
-  footer {
-    clear: left;
-    padding-top: 10px;
-  }
-  footer > p {
-    display: inline;
-    padding-left: 10px;
-  }
-  div.main {
-     
-    padding-left: 10px;
-  }
-   
-  article > div > h2 {
-    padding: 0px 0px 5px 5px;
-    border-left: 7px solid #999;
-    border-bottom: 1px solid #999;
-  }
-  article > div > h3 {
-    padding: 0px 0px 5px 5px;
-    border-left: 7px solid #CCC;
-    border-bottom: 1px solid #CCC;
-  }
-   
-  section {
-    overflow: hidden;
-  }
-  section > h1 {
-    padding: 0px 0px 5px 5px;
-    border-left: 7px solid #999;
-    border-bottom: 1px solid #999;
-  }
-  section > .summary {
-    font-size: 85%;
-    color: #999;
-  }
-  aside {
-    padding-left: 10px;
-    margin-top: 10px;
-    font-size: 85%;
-  }
-  aside > div {
-    margin-bottom: 10px;
-  }
-  .category {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .category > div {
-    margin-right: 10px;
-  }
-  .lastmod-title {
-    padding-bottom: 10px;
-  }
-  .blog-date {
-    color: #999;
-    margin-left: 10px;
-  }
-   
-  .pagination {
-    display: inline-block;
-  }
-  .pagination li {
-    display: inline-block;
-    text-decoration: none;
-  }
-  .pagination a {
-    color: black;
-    float: left;
-    padding: 7px 14px;
-    text-decoration: none;
-    transition: background-color .3s;
-    border: 1px solid #000000;
-    margin: 0 4px;
-  }
-  .pagination li.active a {
-    background-color: #F5F5F5;
-    border: 1px solid #000000;
-  }
-   
-  pre {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 5px;
-    border: 1px solid #999;
-    word-wrap: break-word;
-  }
-  .highlight .c { color: #999988; font-style: italic }  
-  .highlight .err { color: #a61717; background-color: #e3d2d2 }  
-  .highlight .k { color: #000000; font-weight: bold }  
-  .highlight .o { color: #000000; font-weight: bold }  
-  .highlight .cm { color: #999988; font-style: italic }  
-  .highlight .cp { color: #999999; font-weight: bold; font-style: italic }  
-  .highlight .c1 { color: #999988; font-style: italic }  
-  .highlight .cs { color: #999999; font-weight: bold; font-style: italic }  
-  .highlight .gd { color: #000000; background-color: #ffdddd }  
-  .highlight .ge { color: #000000; font-style: italic }  
-  .highlight .gr { color: #aa0000 }  
-  .highlight .gh { color: #999999 }  
-  .highlight .gi { color: #000000; background-color: #ddffdd }  
-  .highlight .go { color: #888888 }  
-  .highlight .gp { color: #555555 }  
-  .highlight .gs { font-weight: bold }  
-  .highlight .gu { color: #aaaaaa }  
-  .highlight .gt { color: #aa0000 }  
-  .highlight .kc { color: #000000; font-weight: bold }  
-  .highlight .kd { color: #000000; font-weight: bold }  
-  .highlight .kn { color: #000000; font-weight: bold }  
-  .highlight .kp { color: #000000; font-weight: bold }  
-  .highlight .kr { color: #000000; font-weight: bold }  
-  .highlight .kt { color: #445588; font-weight: bold }  
-  .highlight .m { color: #009999 }  
-  .highlight .s { color: #d01040 }  
-  .highlight .na { color: #008080 }  
-  .highlight .nb { color: #0086B3 }  
-  .highlight .nc { color: #445588; font-weight: bold }  
-  .highlight .no { color: #008080 }  
-  .highlight .nd { color: #3c5d5d; font-weight: bold }  
-  .highlight .ni { color: #800080 }  
-  .highlight .ne { color: #990000; font-weight: bold }  
-  .highlight .nf { color: #990000; font-weight: bold }  
-  .highlight .nl { color: #990000; font-weight: bold }  
-  .highlight .nn { color: #555555 }  
-  .highlight .nt { color: #000080 }  
-  .highlight .nv { color: #008080 }  
-  .highlight .ow { color: #000000; font-weight: bold }  
-  .highlight .w { color: #bbbbbb }  
-  .highlight .mf { color: #009999 }  
-  .highlight .mh { color: #009999 }  
-  .highlight .mi { color: #009999 }  
-  .highlight .mo { color: #009999 }  
-  .highlight .sb { color: #d01040 }  
-  .highlight .sc { color: #d01040 }  
-  .highlight .sd { color: #d01040 }  
-  .highlight .s2 { color: #d01040 }  
-  .highlight .se { color: #d01040 }  
-  .highlight .sh { color: #d01040 }  
-  .highlight .si { color: #d01040 }  
-  .highlight .sx { color: #d01040 }  
-  .highlight .sr { color: #009926 }  
-  .highlight .s1 { color: #d01040 }  
-  .highlight .ss { color: #990073 }  
-  .highlight .bp { color: #999999 }  
-  .highlight .vc { color: #008080 }  
-  .highlight .vg { color: #008080 }  
-  .highlight .vi { color: #008080 }  
-  .highlight .il { color: #009999 }  
-   
-  .tos-addon-x, .\[tos-addon-x\] {
-    display: none;
-  }
+<!-- @style-ignore -->
+/* part of base. */
+body {
+  font-family: "Noto Sans Japanese", "monospace";
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+h1 {
+  font-size: 3.0em;
+}
+h1 > a {
+  text-decoration: none;
+  color: inherit;
+}
+h1::first-letter {
+  font-size: 3.5em;
+  color: orange;
+}
+
+header {
+  clear: left;
+}
+header > h1 {
+  font-family: 'Lobster', cursive;
+  display: inline;
+  color: #666;
+}
+header > h2 {
+  font-family: 'Lobster', cursive;
+  display: inline;
+  margin-left: 10px;
+  color: #999;
+}
+
+footer {
+  clear: left;
+  padding-top: 10px;
+}
+footer > p {
+  display: inline;
+  padding-left: 10px;
+}
+div.main {
+  /*width: 80%;*/
+  padding-left: 10px;
+}
+/* part of single. */
+article > div > h2 {
+  padding: 0px 0px 5px 5px;
+  border-left: 7px solid #999;
+  border-bottom: 1px solid #999;
+}
+article > div > h3 {
+  padding: 0px 0px 5px 5px;
+  border-left: 7px solid #CCC;
+  border-bottom: 1px solid #CCC;
+}
+/* part of list. */
+section {
+  overflow: hidden;
+}
+section > h1 {
+  padding: 0px 0px 5px 5px;
+  border-left: 7px solid #999;
+  border-bottom: 1px solid #999;
+}
+section > .summary {
+  font-size: 85%;
+  color: #999;
+}
+aside {
+  padding-left: 10px;
+  margin-top: 10px;
+  font-size: 85%;
+}
+aside > div {
+  margin-bottom: 10px;
+}
+.category {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.category > div {
+  margin-right: 10px;
+}
+.lastmod-title {
+  padding-bottom: 10px;
+}
+.blog-date {
+  color: #999;
+  margin-left: 10px;
+}
+/* part of code pagination. */
+.pagination {
+  display: inline-block;
+}
+.pagination li {
+  display: inline-block;
+  text-decoration: none;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 7px 14px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #000000;
+  margin: 0 4px;
+}
+.pagination li.active a {
+  background-color: #F5F5F5;
+  border: 1px solid #000000;
+}
+/* part of code highlighing. */
+pre {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #999;
+  word-wrap: break-word;
+}
+.highlight .c { color: #999988; font-style: italic } /* Comment */
+.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight .k { color: #000000; font-weight: bold } /* Keyword */
+.highlight .o { color: #000000; font-weight: bold } /* Operator */
+.highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #999999; font-weight: bold; font-style: italic } /* Comment.Preproc */
+.highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.highlight .ge { color: #000000; font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #aa0000 } /* Generic.Error */
+.highlight .gh { color: #999999 } /* Generic.Heading */
+.highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #555555 } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+.highlight .gt { color: #aa0000 } /* Generic.Traceback */
+.highlight .kc { color: #000000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #000000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #000000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #000000; font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { color: #000000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #009999 } /* Literal.Number */
+.highlight .s { color: #d01040 } /* Literal.String */
+.highlight .na { color: #008080 } /* Name.Attribute */
+.highlight .nb { color: #0086B3 } /* Name.Builtin */
+.highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+.highlight .no { color: #008080 } /* Name.Constant */
+.highlight .nd { color: #3c5d5d; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #800080 } /* Name.Entity */
+.highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+.highlight .nl { color: #990000; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #555555 } /* Name.Namespace */
+.highlight .nt { color: #000080 } /* Name.Tag */
+.highlight .nv { color: #008080 } /* Name.Variable */
+.highlight .ow { color: #000000; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #009999 } /* Literal.Number.Float */
+.highlight .mh { color: #009999 } /* Literal.Number.Hex */
+.highlight .mi { color: #009999 } /* Literal.Number.Integer */
+.highlight .mo { color: #009999 } /* Literal.Number.Oct */
+.highlight .sb { color: #d01040 } /* Literal.String.Backtick */
+.highlight .sc { color: #d01040 } /* Literal.String.Char */
+.highlight .sd { color: #d01040 } /* Literal.String.Doc */
+.highlight .s2 { color: #d01040 } /* Literal.String.Double */
+.highlight .se { color: #d01040 } /* Literal.String.Escape */
+.highlight .sh { color: #d01040 } /* Literal.String.Heredoc */
+.highlight .si { color: #d01040 } /* Literal.String.Interpol */
+.highlight .sx { color: #d01040 } /* Literal.String.Other */
+.highlight .sr { color: #009926 } /* Literal.String.Regex */
+.highlight .s1 { color: #d01040 } /* Literal.String.Single */
+.highlight .ss { color: #990073 } /* Literal.String.Symbol */
+.highlight .bp { color: #999999 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #008080 } /* Name.Variable.Class */
+.highlight .vg { color: #008080 } /* Name.Variable.Global */
+.highlight .vi { color: #008080 } /* Name.Variable.Instance */
+.highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+<!-- @style-ignore -->
+/* hidden category. */
+.tos-addon-x, .\[tos-addon-x\] {
+  display: none;
+}
 </style>
 
 
@@ -216,7 +227,7 @@
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2018-03-06 02:03:15 &#43;0900 JST",
+  "dateModified": "2018-09-05 07:10:30.2198982 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -231,7 +242,7 @@
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
 <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
-<script async='async' custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 
 <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -274,60 +285,35 @@
   
   <strong>Last modified.</strong>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/costumeplay/">[tree of savior addon] GUI操作で装備を保存/復元するアドオン</a>
-    
-    &ndash;&nbsp;v1.1.1
-    
-    
-      <span class="blog-date">@2018/07/03 00:26:53</span>
-    </div>
-  </div>
+    <div><a href="http://www.weizlogy.gq/tos/addon/stealthymaster/">いいねせずキャラ情報を見るアドオン</a></div>
+    <div>@2018-02-10 08:58:15 &#43;0900 JST</div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon-x]">
-      <a href="http://www.weizlogy.gq/tos/addon-x/wingofbeelze/">[tree of savior addon] エリア内ランダムワープアドオン</a>
-    
-    &ndash;&nbsp;v1.0.4
-    
-    
-      <span class="blog-date">@2018/07/01 01:55:02</span>
-    </div>
-  </div>
+    <div><a href="http://www.weizlogy.gq/tos/addon/partyinfoex/">パーティーメンバーの一覧に追加情報を表示するアドオン</a></div>
+    <div>@2018-01-27 07:38:47 &#43;0900 JST</div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/skillitemcounter/">[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</a>
-    
-    &ndash;&nbsp;v1.1.2
-    
-    
-      <span class="blog-date">@2018/06/28 23:59:41</span>
-    </div>
-  </div>
+    <div><a href="http://www.weizlogy.gq/tos/addon/showhiddenmap/">表示されないマップを表示するアドオン</a></div>
+    <div>@2018-01-17 22:13:20 &#43;0900 JST</div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/summoncounter/">[tree of savior addon] 召喚物の個体数を表示するアドオン</a>
-    
-    &ndash;&nbsp;v1.0.4
-    
-    
-      <span class="blog-date">@2018/06/28 23:59:41</span>
-    </div>
-  </div>
+    <div><a href="http://www.weizlogy.gq/tos/addon/minigaugetext/">キャラクター下HP/SPバーテキスト表示アドオン</a></div>
+    <div>@2018-01-16 01:34:09 &#43;0900 JST</div>
   
-  <div class="lastmod-title">
-    <div class="[tos-addon]">
-      <a href="http://www.weizlogy.gq/tos/addon/savequest/">[tree of savior addon] ワープ用クエスト誤完了防止アドオン</a>
-    
-    &ndash;&nbsp;v1.2.5
-    
-    
-      <span class="blog-date">@2018/06/17 00:19:52</span>
-    </div>
-  </div>
+    <div><a href="http://www.weizlogy.gq/tos/addon/showbuffsellertype/">商店のフキダシに商店名を付けるアドオン</a></div>
+    <div>@2017-12-26 00:36:58 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/tos/addon/compactheadsupdisplay/">Heads Up Displayをコンパクトにするアドオン</a></div>
+    <div>@2017-12-12 22:05:16 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/tos/addon/previewguildemblem/">ギルドマスター以外でもギルドエンブレムのプレビューができるアドオン</a></div>
+    <div>@2017-11-08 00:48:29 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/tos/addon/summonskilltooltip/">召喚獣にオベイで使えるスキルのツールチップを表示するアドオン</a></div>
+    <div>@2017-11-02 00:21:48 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/tos/addon/rmnewcollectionmark/">コレクション画面の[N]マークを非表示にするアドオン</a></div>
+    <div>@2017-08-31 21:25:07 &#43;0900 JST</div>
+  
+    <div><a href="http://www.weizlogy.gq/tos/addon/fixbookread/">本アイテムの改行を正常化するアドオン</a></div>
+    <div>@2017-08-06 00:53:42 &#43;0900 JST</div>
   
   
 </div>
@@ -339,7 +325,7 @@
   
   
   <div class="[site-management]">
-    <a href="http://www.weizlogy.gq/site/blogger-last-modified/">[site management] bloggerで最終更新日時を表示する</a>
+    <a href="http://www.weizlogy.gq/site/blogger-last-modified/">bloggerで最終更新日時を表示する</a>
     
     
     
@@ -354,7 +340,7 @@
 &lt;script type=&#34;text/javascript&#34;&gt;// &lt;![CDATA[ function show_last_modified(root) { var published = &#39;&#39;; var updated = &#39;&#39;; for (var i = 0; i &lt; root.</pre>
   
   <div class="[site-management]">
-    <a href="http://www.weizlogy.gq/site/code-prettify-on-github/">[site management] code-prettifyがgithubに移行し進化していたので対応した</a>
+    <a href="http://www.weizlogy.gq/site/code-prettify-on-github/">code-prettifyがgithubに移行し進化していたので対応した</a>
     
     
     
@@ -365,7 +351,7 @@
 &lt;script src=&#34;https://cdn.</pre>
   
   <div class="[site-management]">
-    <a href="http://www.weizlogy.gq/site/seo-bing-webmaster/">[site management] bing Web マスターのSEOレポート対策</a>
+    <a href="http://www.weizlogy.gq/site/seo-bing-webmaster/">bing Web マスターのSEOレポート対策</a>
     
     
     
@@ -383,7 +369,7 @@
 &lt;img&gt; タグで ALT 属性が定義されていません。  bing Web マスター曰く、 原則として、検索エンジンは画像ファイルを解釈しません。サイト所有者は、&lt;img alt&gt; 属性のテキストを使用して検索エンジンとエンド ユーザーに関連情報を提供することができます。エンド ユーザーが画像を無効にしている場合や画像が正しく読み込まれなかった場合に、Alt テキストが役に立ちます。また、スクリーン リーダーでも Alt テキストが使用されます。Alt テキストが記述的で、画像を正確に示し、ページ コンテンツをサポートしていることを確認してください。</pre>
   
   <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/">[system development] ubuntu16.04でMonoDevelopを使った開発環境</a>
+    <a href="http://www.weizlogy.gq/system/dev/monodevelop-with-ubuntu/">ubuntu16.04でMonoDevelopを使った開発環境</a>
     
     
     
@@ -394,7 +380,7 @@ $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03
 $ sudo apt-get install monodevelop monodevelopコマンドでIDEを起動します。</pre>
   
   <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/spring-aop-test/">[system development] Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</a>
+    <a href="http://www.weizlogy.gq/system/dev/spring-aop-test/">Spring Framework で ProceedingJoinPoint を引数に持つ AOP Interceptor をテストで呼び出す</a>
     
     
     
@@ -404,7 +390,7 @@ import org.aspectj.lang.ProceedingJoinPoint; import org.aspectj.lang.annotation.
 import static org.junit.Assert.*; import java.util.ArrayList; import org.junit.Test; import org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint; import org.springframework.aop.framework.ReflectiveMethodInvocation; import org.springframework.aop.interceptor.SimpleTraceInterceptor; public class SomeInterceptorTest { /** AOP の対象となるメソッドを持つクラス */ private static class AOPTarget { public String execute() { System.</pre>
   
   <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/">[system development] Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</a>
+    <a href="http://www.weizlogy.gq/system/dev/dynamic-server-img-on-webapp/">Webアプリケーションでサーバー上の画像ファイルをIMGタグに動的出力する</a>
     
     
     
@@ -416,26 +402,26 @@ JSPでは&hellip;
 /** xxx.do から呼び出される Servlet */ protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { // ファイルパスはどこからか入手する  String file = &#34;\\server\image\sample.jpg&#34;; if (file == null || &#34;&#34;.equals(file)) { return; } try { // 画像を読み込む  byte[] image = Files.readAllBytes(Paths.get(file)); // レスポンスヘッダーを設定する  response.setContentType(&#34;image/&#34; + file.substring(file.lastIndexOf(&#34;.&#34;))); response.setContentLength(image.length); // servlet specification 3.1 によると OutputStream は  // Servlet 終了時にクローズされる  // 従って、ここではクローズしない  // むしろ、ここでクローズすると二重解放になる可能性があるのでは？  response.</pre>
   
   <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/">[system development] JQueryUIのAutoCompleteを特定操作で強制選択する</a>
+    <a href="http://www.weizlogy.gq/system/dev/force-jquery-autocomplete/">JQueryUIのAutoCompleteを特定操作で強制選択する</a>
     
     
     
   </div>
   <pre class="summary [system-dev]">本来は blur 時に強制選択したかったのですが、候補確定時に AutoComplete の対象にフォーカスが当たる挙動を回避できなかったため、エンターキーで代用です。
-var obj = $(&#39;#autocomplete&#39;); obj.on(&#39;keydown&#39;, function(e) { // エンターキー以外を無視する  if (e.which !== 13) { return; } // search メソッドの結果で候補が存在する場合、  // autocompleteopen イベントが発行される  // 候補が 0 件の場合は動作しない  obj.on(&#39;autocompleteopen&#39;, function() { // 下矢印キーダウンイベントを作成し、候補の先頭を選択状態にする  var keyDownEvent = $.Event(&#39;keydown&#39;); keyDownEvent.keyCode = $.ui.keyCode.DOWN; obj.trigger(keyDownEvent); // エンターキーダウンを作成し、選択状態の候補で確定する  // →候補確定時のイベントが発火する  keyDownEvent.keyCode = $.ui.keyCode.ENTER; obj.trigger(keyDownEvent); // 通常動作時は不要なイベントなので終了時に破棄しておく  obj.off(&#39;autocompleteopen&#39;); }); // 現在の入力値で検索する  obj.autocomplete(&#39;search&#39;); });</pre>
+var obj = $(&#39;#autocomplete&#39;); obj.on(&#39;keydown&#39;, function(e) { // エンターキー以外を無視する  if (e.which !== 13) { return; } // search メソッドの結果で候補が存在する場合、  // autocompleteopen イベントが発行される  // 候補が 0 件の場合は動作しない  obj.on(&#39;autocompleteopen&#39;, function() { // 下矢印キーダウンイベントを作成し、候補の先頭を選択状態にする  var keyDownEvent = $.Event(&#39;keydown&#39;); keyDownEvent.keyCode = $.ui.keyCode.DOWN; obj.trigger(keyDownEvent); // エンターキーダウンを作成し、選択状態の候補で確定する  // →候補確定時のイベントが発火する  keyDownEvent.keyCode = $.ui.keyCode.ENTER; obj.trigger(keyDownEvent); // 通常動作時は不要なイベントなので終了時に破棄しておく  obj.off(&#39;autocompleteopen&#39;); }); // 現在の入力値で検索する  obj.autocomplete(&#39;search&#39;); }); </pre>
   
   <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/">[system development] Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</a>
+    <a href="http://www.weizlogy.gq/system/dev/avoid-error-icmp6sendecho2/">Windows XP上でIcmp6SendEcho2()呼び出し時、異常終了しないために</a>
     
     
     
   </div>
   <pre class="summary [system-dev]">Windows APIのIcmp6SendEcho2()をWindows XPで呼び出すときは以下の点に注意が必要です。
 Syntax from msdn.
-DWORD Icmp6SendEcho2( __in HANDLE IcmpHandle, __in_opt HANDLE Event, __in_opt PIO_APC_ROUTINE ApcRoutine, __in_opt PVOID ApcContext, __in struct sockaddr_in6 *SourceAddress, __in struct sockaddr_in6 *DestinationAddress, __in LPVOID RequestData, __in WORD RequestSize, __in_opt PIP_OPTION_INFORMATION RequestOptions, __out LPVOID ReplyBuffer, __in DWORD ReplySize, __in DWORD Timeout );  第9引数 PIP_OPTION_INFORMATION は必須です。Vista 以降のOSで動かす場合は任意です。（NULLでもよい） 第10引数 ReplyBuffer は80byte以上の領域がないとWin32エラーコード122（システム コールに渡されるデータ領域が小さすぎます）が発生します。  IcmpSendEcho()とは設定値が微妙に異なりますね。</pre>
+DWORD Icmp6SendEcho2( __in HANDLE IcmpHandle, __in_opt HANDLE Event, __in_opt PIO_APC_ROUTINE ApcRoutine, __in_opt PVOID ApcContext, __in struct sockaddr_in6 *SourceAddress, __in struct sockaddr_in6 *DestinationAddress, __in LPVOID RequestData, __in WORD RequestSize, __in_opt PIP_OPTION_INFORMATION RequestOptions, __out LPVOID ReplyBuffer, __in DWORD ReplySize, __in DWORD Timeout );   第9引数 PIP_OPTION_INFORMATION は必須です。Vista 以降のOSで動かす場合は任意です。（NULLでもよい） 第10引数 ReplyBuffer は80byte以上の領域がないとWin32エラーコード122（システム コールに渡されるデータ領域が小さすぎます）が発生します。  IcmpSendEcho()とは設定値が微妙に異なりますね。</pre>
   
   <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/">[system development] BeanUtils.describe()で配列を扱いたい</a>
+    <a href="http://www.weizlogy.gq/system/dev/use-beanutils-describe-array/">BeanUtils.describe()で配列を扱いたい</a>
     
     
     
@@ -450,7 +436,7 @@ BeanUtilsBean.setInstance(new BeanUtilsBean2()); ArrayConverter converter = new 
 ConvertUtils.deregister(String[].class); BeanUtilsBean.setInstance(new BeanUtilsBean()); Converterインターフェースを実装したクラスを作成し、ConvertUtilsにregistすると、独自の変換も可能です。</pre>
   
   <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">[system development] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a>
+    <a href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</a>
     
     
     
@@ -470,13 +456,12 @@ import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.bean
 
 <ul class="pagination">
     
-    <li>
-        <a href="/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    <li class="page-item">
+        <a href="/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
     </li>
     
-    <li
-    >
-    <a href="/page/5/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    <li class="page-item">
+    <a href="/page/5/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
     </li>
     
     
@@ -488,8 +473,7 @@ import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.bean
         
     
     
-    <li
-    ><a href="/">1</a></li>
+    <li class="page-item"><a class="page-link" href="/">1</a></li>
     
     
     
@@ -500,8 +484,7 @@ import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.bean
         
     
     
-    <li
-    ><a href="/page/2/">2</a></li>
+    <li class="page-item"><a class="page-link" href="/page/2/">2</a></li>
     
     
     
@@ -512,8 +495,7 @@ import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.bean
         
     
     
-    <li
-    ><a href="/page/3/">3</a></li>
+    <li class="page-item"><a class="page-link" href="/page/3/">3</a></li>
     
     
     
@@ -524,7 +506,7 @@ import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.bean
         
     
     
-    <li class="disabled"><span aria-hidden="true">&hellip;</span></li>
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
     
     
     
@@ -535,8 +517,7 @@ import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.bean
         
     
     
-    <li
-    ><a href="/page/5/">5</a></li>
+    <li class="page-item"><a class="page-link" href="/page/5/">5</a></li>
     
     
     
@@ -547,8 +528,7 @@ import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.bean
         
     
     
-    <li
-    class="active"><a href="/page/6/">6</a></li>
+    <li class="page-item active"><a class="page-link" href="/page/6/">6</a></li>
     
     
     
@@ -559,17 +539,15 @@ import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.bean
         
     
     
-    <li
-    ><a href="/page/7/">7</a></li>
+    <li class="page-item"><a class="page-link" href="/page/7/">7</a></li>
     
     
-    <li
-    >
-    <a href="/page/7/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    <li class="page-item">
+    <a href="/page/7/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
     </li>
     
-    <li>
-        <a href="/page/7/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    <li class="page-item">
+        <a href="/page/7/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
     </li>
     
 </ul>

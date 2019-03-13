@@ -12,12 +12,13 @@
     
     
     <item>
-      <title>[tree of savior addon] GUI操作で装備を保存/復元するアドオン</title>
+      <title>GUI操作で装備を保存/復元するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/costumeplay/</link>
       <pubDate>Wed, 11 Apr 2018 23:48:28 +0900</pubDate>
       
       <guid>http://www.weizlogy.gq/tos/addon/costumeplay/</guid>
-      <description> download. [v1.1.1] costumeplay.ipf
+      <description> ToSには
+download. [v1.1.1] costumeplay.ipf
 install. README.md
 introduction. 
 settings. Nexon\TreeofSaviorJP\addons\costumeplay フォルダーを作成します。
@@ -32,7 +33,7 @@ usage. 保存方法  インベントリの左側にアドオンのフレーム�
     </item>
     
     <item>
-      <title>[tree of savior addon] いいねせずキャラ情報を見るアドオン</title>
+      <title>いいねせずキャラ情報を見るアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/stealthymaster/</link>
       <pubDate>Sat, 10 Feb 2018 08:58:15 +0900</pubDate>
       
@@ -43,7 +44,7 @@ introduction. settings. descriptions. v1.0.0 新規作成 アドオンがロー�
     </item>
     
     <item>
-      <title>[tree of savior addon] パーティーメンバーの一覧に追加情報を表示するアドオン</title>
+      <title>パーティーメンバーの一覧に追加情報を表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/partyinfoex/</link>
       <pubDate>Sat, 27 Jan 2018 07:38:47 +0900</pubDate>
       
@@ -57,7 +58,7 @@ v1.0.0 新規作成 アドオンがロードされると、パーティーメン
     </item>
     
     <item>
-      <title>[tree of savior addon] 表示されないマップを表示するアドオン</title>
+      <title>表示されないマップを表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/showhiddenmap/</link>
       <pubDate>Wed, 17 Jan 2018 22:13:20 +0900</pubDate>
       
@@ -70,7 +71,7 @@ v1.0.0 新規作成 アドオンがロードされると、（ミニ）マップ
     </item>
     
     <item>
-      <title>[tree of savior addon] キャラクター下HP/SPバーテキスト表示アドオン</title>
+      <title>キャラクター下HP/SPバーテキスト表示アドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/minigaugetext/</link>
       <pubDate>Tue, 16 Jan 2018 01:34:09 +0900</pubDate>
       
@@ -82,7 +83,7 @@ settings. descriptions. v1.0.0 新規作成 キャラクター下のHP/SPバー�
     </item>
     
     <item>
-      <title>[tree of savior addon] 商店のフキダシに商店名を付けるアドオン</title>
+      <title>商店のフキダシに商店名を付けるアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/showbuffsellertype/</link>
       <pubDate>Tue, 26 Dec 2017 00:36:58 +0900</pubDate>
       
@@ -94,7 +95,7 @@ settings. descriptions. v1.0.0 新規作成 アドオンがロードされると
     </item>
     
     <item>
-      <title>[tree of savior addon] Heads Up Displayをコンパクトにするアドオン</title>
+      <title>Heads Up Displayをコンパクトにするアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/compactheadsupdisplay/</link>
       <pubDate>Tue, 12 Dec 2017 22:05:16 +0900</pubDate>
       
@@ -107,7 +108,7 @@ settings. descriptions. v1.0.0 新規作成 アドオンがロードされると
     </item>
     
     <item>
-      <title>[tree of savior addon] ギルドマスター以外でもギルドエンブレムのプレビューができるアドオン</title>
+      <title>ギルドマスター以外でもギルドエンブレムのプレビューができるアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/previewguildemblem/</link>
       <pubDate>Wed, 08 Nov 2017 00:48:29 +0900</pubDate>
       
@@ -123,7 +124,7 @@ v1.0.0 新規作成 アドオンがロードされると、ギルドマスター
     </item>
     
     <item>
-      <title>[tree of savior addon] 召喚獣にオベイで使えるスキルのツールチップを表示するアドオン</title>
+      <title>召喚獣にオベイで使えるスキルのツールチップを表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/summonskilltooltip/</link>
       <pubDate>Thu, 02 Nov 2017 00:21:48 +0900</pubDate>
       
@@ -137,7 +138,7 @@ v1.0.0 新規作成 アドオンがロードされると、召喚獣にオベイ
     </item>
     
     <item>
-      <title>[tree of savior addon] コレクション画面の[N]マークを非表示にするアドオン</title>
+      <title>コレクション画面の[N]マークを非表示にするアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/rmnewcollectionmark/</link>
       <pubDate>Thu, 31 Aug 2017 21:25:07 +0900</pubDate>
       
@@ -150,7 +151,7 @@ settings. descriptions. v1.0.0 新規作成 アドオンがロードされると
     </item>
     
     <item>
-      <title>[tree of savior addon] 本アイテムの改行を正常化するアドオン</title>
+      <title>本アイテムの改行を正常化するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/fixbookread/</link>
       <pubDate>Sun, 06 Aug 2017 00:53:42 +0900</pubDate>
       
@@ -163,7 +164,7 @@ settings. descriptions. v1.0.0 新規作成。 アドオンがロードされる
     </item>
     
     <item>
-      <title>[tree of savior addon] ダイスロールアドオン</title>
+      <title>ダイスロールアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/dice/</link>
       <pubDate>Tue, 25 Jul 2017 05:47:00 +0900</pubDate>
       
@@ -176,7 +177,7 @@ settings. descriptions. v1.1.0 カスタムレンジ対応 チャットコマン
     </item>
     
     <item>
-      <title>[tree of savior addon] 召喚物の個体数を表示するアドオン</title>
+      <title>召喚物の個体数を表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/summoncounter/</link>
       <pubDate>Sun, 16 Jul 2017 23:14:23 +0900</pubDate>
       
@@ -193,7 +194,7 @@ suco.config = { Bokor_Zombify = { mode = &amp;#34;hpbar&amp;#34;, loc_frame = { 
     </item>
     
     <item>
-      <title>[tree of savior addon] クイックスロットスキル/アイテム用マクロアドオン</title>
+      <title>クイックスロットスキル/アイテム用マクロアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/slotmac/</link>
       <pubDate>Fri, 16 Jun 2017 21:15:19 +0900</pubDate>
       
@@ -225,7 +226,7 @@ cidフォルダー配下に、必要に応じてマクロファイル(slot1.txt 
     </item>
     
     <item>
-      <title>[tree of savior addon] ドロップアイテムの名称を常時表示するアドオン</title>
+      <title>ドロップアイテムの名称を常時表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/pickiteminfo/</link>
       <pubDate>Fri, 05 May 2017 23:14:15 +0900</pubDate>
       
@@ -243,7 +244,7 @@ v1.0.0 新規作成 アドオンがロードされると、ALTキーを押さな
     </item>
     
     <item>
-      <title>[tree of savior addon] 消費アイテムありスキルの使用回数表示アドオン</title>
+      <title>消費アイテムありスキルの使用回数表示アドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/skillitemcounter/</link>
       <pubDate>Sun, 16 Apr 2017 11:11:02 +0900</pubDate>
       
@@ -258,7 +259,7 @@ v1.0.0 新規作成 アドオンがロードされると、クイックスロッ
     </item>
     
     <item>
-      <title>[tree of savior addon] ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</title>
+      <title>ワールドマップ上に各エリアの受注可能なクエスト数を表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/worldmapquest/</link>
       <pubDate>Thu, 06 Apr 2017 04:28:09 +0900</pubDate>
       
@@ -278,7 +279,7 @@ introductionの画像では碑石路、いにしえの女神の庭、ドバシ�
     </item>
     
     <item>
-      <title>[tree of savior addon] オブジェクト探索アドオン</title>
+      <title>オブジェクト探索アドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/objectdetector/</link>
       <pubDate>Mon, 27 Mar 2017 19:39:27 +0900</pubDate>
       
@@ -293,7 +294,7 @@ settings. Nexon\TreeofSaviorJP\addons\objectdetector\settings.txt を作成し�
     </item>
     
     <item>
-      <title>[tree of savior addon] ワープ用クエスト誤完了防止アドオン</title>
+      <title>ワープ用クエスト誤完了防止アドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/savequest/</link>
       <pubDate>Fri, 24 Mar 2017 05:28:54 +0900</pubDate>
       
@@ -327,7 +328,7 @@ v1.0.0 新規作成 アドオンがロードされると、任意の完了済み
     </item>
     
     <item>
-      <title>[tree of savior addon] DPS計測アドオン</title>
+      <title>DPS計測アドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/dpsmeter/</link>
       <pubDate>Mon, 20 Mar 2017 08:41:36 +0900</pubDate>
       
@@ -352,7 +353,7 @@ v1.0.0 新規作成。 アドオンがロードされるとDPS計測が有効に
     </item>
     
     <item>
-      <title>[tree of savior addon] 装備修理時、装備アイコンに耐久度（％）を色分け表示するアドオン</title>
+      <title>装備修理時、装備アイコンに耐久度（％）を色分け表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/repairendur/</link>
       <pubDate>Thu, 09 Mar 2017 05:55:00 +0900</pubDate>
       
@@ -371,7 +372,7 @@ explanation of initial parameters. 武器
     </item>
     
     <item>
-      <title>[tree of savior addon] コンパニオンのリングコマンドを拡張するアドオン</title>
+      <title>コンパニオンのリングコマンドを拡張するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/customcompanion/</link>
       <pubDate>Sun, 05 Mar 2017 07:56:00 +0900</pubDate>
       
@@ -387,7 +388,7 @@ introduction.  settings. descriptions. v1.0.0 新規作成。
     </item>
     
     <item>
-      <title>[tree of savior addon] キャラの足元にスタミナゲージを追加するアドオン</title>
+      <title>キャラの足元にスタミナゲージを追加するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/staminagauge/</link>
       <pubDate>Sat, 25 Feb 2017 00:33:00 +0900</pubDate>
       
@@ -403,7 +404,7 @@ v1.0.0 新規作成 アドオンがロードされると、キャラの足元に
     </item>
     
     <item>
-      <title>[tree of savior addon] マーケットデフォルト出品日数変更アドオン</title>
+      <title>マーケットデフォルト出品日数変更アドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/marketselltimechanger/</link>
       <pubDate>Thu, 23 Feb 2017 23:34:00 +0900</pubDate>
       
@@ -419,7 +420,7 @@ descriptions. v1.0.0 新規作成。
     </item>
     
     <item>
-      <title>[tree of savior addon] 所持キャラ全員の個人倉庫を見るアドオン</title>
+      <title>所持キャラ全員の個人倉庫を見るアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/warehousepicker/</link>
       <pubDate>Sun, 19 Feb 2017 17:42:00 +0900</pubDate>
       
@@ -436,7 +437,7 @@ descriptions. v1.0.0 新規作成。
     </item>
     
     <item>
-      <title>[tree of savior addon] チャット入力欄表示中に所持中のメガホン数を表示するアドオン</title>
+      <title>チャット入力欄表示中に所持中のメガホン数を表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/megaphonecount/</link>
       <pubDate>Sun, 12 Feb 2017 21:56:00 +0900</pubDate>
       
@@ -449,7 +450,7 @@ settings. descriptions. v1.0.0 新規作成。
     </item>
     
     <item>
-      <title>[tree of savior addon] 特性習得ウィンドウに各特性の最大レベルを表示するアドオン</title>
+      <title>特性習得ウィンドウに各特性の最大レベルを表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/customabilityshop/</link>
       <pubDate>Sun, 12 Feb 2017 02:29:00 +0900</pubDate>
       
@@ -462,7 +463,7 @@ settings. descriptions. v1.0.0 新規作成。
     </item>
     
     <item>
-      <title>[tree of savior addon] ターゲット中のモンスターのステータスを表示するアドオン</title>
+      <title>ターゲット中のモンスターのステータスを表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/monsterstatus/</link>
       <pubDate>Thu, 09 Feb 2017 05:57:00 +0900</pubDate>
       
@@ -492,7 +493,7 @@ v2.0.0 討伐数、ドロップアイテム名、アイテム収集率表示追�
     </item>
     
     <item>
-      <title>[tree of savior addon] 画面にある自キャラ名を消すアドオン</title>
+      <title>画面にある自キャラ名を消すアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/hidename/</link>
       <pubDate>Sun, 05 Feb 2017 18:08:00 +0900</pubDate>
       
@@ -508,7 +509,7 @@ v1.0.0 新規作成 アドオンがロードされると[画面左上]と[自キ
     </item>
     
     <item>
-      <title>[tree of savior addon] アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）</title>
+      <title>アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）</title>
       <link>http://www.weizlogy.gq/tos/addon/console/</link>
       <pubDate>Sat, 10 Dec 2016 17:30:00 +0900</pubDate>
       
@@ -530,7 +531,7 @@ v1.0.0 新規作成。
     </item>
     
     <item>
-      <title>[tree of savior addon] 自キャラから近隣モンスターまでの距離を表示するアドオン</title>
+      <title>自キャラから近隣モンスターまでの距離を表示するアドオン</title>
       <link>http://www.weizlogy.gq/tos/addon/distance/</link>
       <pubDate>Sun, 13 Nov 2016 18:00:00 +0900</pubDate>
       
