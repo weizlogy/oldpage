@@ -10,46 +10,38 @@
   Weizlogy
 
 </title>
-
-
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
-
+<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet">
 
 <style amp-custom>
-<!-- @style-ignore -->
-/* part of base. */
 body {
-  font-family: "Noto Sans Japanese", "monospace";
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-h1 {
-  font-size: 3.0em;
-}
-h1 > a {
-  text-decoration: none;
-  color: inherit;
-}
-h1::first-letter {
-  font-size: 3.5em;
-  color: orange;
+  font-family: 'Noto Sans Japanese', 'monospace';
 }
 
 header {
-  clear: left;
+  font-family: 'Lobster', cursive;
 }
 header > h1 {
-  font-family: 'Lobster', cursive;
-  display: inline;
+  font-family: inherit;
   color: #666;
 }
+header > h1::first-letter {
+  color: orange;
+}
+
 header > h2 {
-  font-family: 'Lobster', cursive;
-  display: inline;
-  margin-left: 10px;
+  font-family: inherit;
   color: #999;
+}
+
+header > h3 {
+  font-family: inherit;
+  color: #CCC;
+}
+
+h1 > a, h3 > a {
+  text-decoration: none;
+  color: inherit;
 }
 
 footer {
@@ -60,10 +52,7 @@ footer > p {
   display: inline;
   padding-left: 10px;
 }
-div.main {
-  /*width: 80%;*/
-  padding-left: 10px;
-}
+
 /* part of single. */
 article > div > h2 {
   padding: 0px 0px 5px 5px;
@@ -84,33 +73,22 @@ section > h1 {
   border-left: 7px solid #999;
   border-bottom: 1px solid #999;
 }
-section > .summary {
-  font-size: 85%;
-  color: #999;
-}
+
 aside {
   padding-left: 10px;
   margin-top: 10px;
+}
+
+.section-title {
+  font-family: 'Lobster', cursive;
+  color: #333
+}
+
+.index-datetime {
   font-size: 85%;
-}
-aside > div {
-  margin-bottom: 10px;
-}
-.category {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.category > div {
-  margin-right: 10px;
-}
-.lastmod-title {
-  padding-bottom: 10px;
-}
-.blog-date {
   color: #999;
-  margin-left: 10px;
 }
+
 /* part of code pagination. */
 .pagination {
   display: inline-block;
@@ -139,6 +117,7 @@ pre {
   padding: 5px;
   border: 1px solid #999;
   word-wrap: break-word;
+  white-space: pre-wrap;
 }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
@@ -200,12 +179,13 @@ pre {
 .highlight .vg { color: #008080 } /* Name.Variable.Global */
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
-<!-- @style-ignore -->
+
 /* hidden category. */
 .tos-addon-x, .\[tos-addon-x\] {
   display: none;
 }
 </style>
+
 
 
 <script type="application/ld+json">
@@ -227,7 +207,7 @@ pre {
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2018-09-05 07:09:33.8965648 &#43;0900 JST",
+  "dateModified": "2018-09-05 07:09:33.9025618 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -237,6 +217,13 @@ pre {
   }
 }
 </script>
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Weizlogy" />
+<meta name="twitter:description" content="" />
+
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -248,105 +235,183 @@ pre {
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
 
-<body>
+<body style="padding-left: 5px; padding-right: 5px;">
 <div id="container">
 
-<header>
-
-  <h1><a href="http://www.weizlogy.gq/">Weizlogy</a></h1>
-  <h2> - Live in der Zukunft.</h2>
-
+<header style="display: flex; align-items: baseline;">
+  <h1 style="line-height: 0px;"><a href="http://www.weizlogy.gq/">Weizlogy</a></h1>
+  <h2 style="margin-left: 10px;"> - Live in der Zukunft.</h2>
+  <h3 style="align-self: flex-end; margin-left: auto; margin-right: 10px;"><a href="http://www.weizlogy.gq/site/about">about</a></h3>
 </header>
 
 <aside>
-<div>
-  <strong>Category.</strong>
-  <div class="category">
+
+<section>
+  <h2 class="section-title">Category.</h2>
+  <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
   
   
-    <div class="site-management"><a href="/categories/site-management">site-management</a>(5)</div>
+    <article class="site-management" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/site-management" style="text-decoration: none; color: inherit;">
+        site-management (6)
+      </a>
+    </article>
   
-    <div class="system"><a href="/categories/system">system</a>(5)</div>
+    <article class="system" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/system" style="text-decoration: none; color: inherit;">
+        system (5)
+      </a>
+    </article>
   
-    <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
+    <article class="system-dev" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/system-dev" style="text-decoration: none; color: inherit;">
+        system-dev (15)
+      </a>
+    </article>
   
-    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(31)</div>
+    <article class="tos-addon" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/tos-addon" style="text-decoration: none; color: inherit;">
+        tos-addon (31)
+      </a>
+    </article>
   
-    <div class="tos-addon-dev"><a href="/categories/tos-addon-dev">tos-addon-dev</a>(4)</div>
+    <article class="tos-addon-dev" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/tos-addon-dev" style="text-decoration: none; color: inherit;">
+        tos-addon-dev (4)
+      </a>
+    </article>
   
-    <div class="tos-addon-x"><a href="/categories/tos-addon-x">tos-addon-x</a>(2)</div>
+    <article class="tos-addon-x" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/tos-addon-x" style="text-decoration: none; color: inherit;">
+        tos-addon-x (2)
+      </a>
+    </article>
   
   
   
   
   </div>
-</div>
-<div>
+</section>
+
+<section>
   
-  <strong>Last modified.</strong>
+  <h2 class="section-title">Last modified.</h2>
+  <div>
+    
+    <article style="">
+      <div class="[tos-addon]">
+        <div class="index-datetime">2019/03/14 06:49:24</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/objectdetector/">
+          <h3>
+            [tos-addon] オブジェクト探索アドオン
+              &ndash;&nbsp;v1.3.1
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+    <article style="">
+      <div class="[site-management]">
+        <div class="index-datetime">2018/09/22 17:05:24</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/site/about/">
+          <h3>
+            [site-management] Weizlogy
+              
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+    <article style="">
+      <div class="[tos-addon]">
+        <div class="index-datetime">2018/09/08 17:33:52</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/costumeplay/">
+          <h3>
+            [tos-addon] GUI操作で装備を保存/復元するアドオン
+              &ndash;&nbsp;v1.1.1
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+    <article style="">
+      <div class="[system-dev]">
+        <div class="index-datetime">2018/09/05 07:11:05</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">
+          <h3>
+            [system-dev] cannot find source for binding with reference について
+              
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+    <article style="">
+      <div class="[system-dev]">
+        <div class="index-datetime">2018/09/05 07:11:05</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">
+          <h3>
+            [system-dev] strutsのFormFileからローカルファイルの絶対パスを取得
+              
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+  </div>
   
-    <div><a href="http://www.weizlogy.gq/tos/addon/stealthymaster/">いいねせずキャラ情報を見るアドオン</a></div>
-    <div>@2018-02-10 08:58:15 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/partyinfoex/">パーティーメンバーの一覧に追加情報を表示するアドオン</a></div>
-    <div>@2018-01-27 07:38:47 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/showhiddenmap/">表示されないマップを表示するアドオン</a></div>
-    <div>@2018-01-17 22:13:20 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/minigaugetext/">キャラクター下HP/SPバーテキスト表示アドオン</a></div>
-    <div>@2018-01-16 01:34:09 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/showbuffsellertype/">商店のフキダシに商店名を付けるアドオン</a></div>
-    <div>@2017-12-26 00:36:58 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/compactheadsupdisplay/">Heads Up Displayをコンパクトにするアドオン</a></div>
-    <div>@2017-12-12 22:05:16 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/previewguildemblem/">ギルドマスター以外でもギルドエンブレムのプレビューができるアドオン</a></div>
-    <div>@2017-11-08 00:48:29 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/summonskilltooltip/">召喚獣にオベイで使えるスキルのツールチップを表示するアドオン</a></div>
-    <div>@2017-11-02 00:21:48 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/rmnewcollectionmark/">コレクション画面の[N]マークを非表示にするアドオン</a></div>
-    <div>@2017-08-31 21:25:07 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/fixbookread/">本アイテムの改行を正常化するアドオン</a></div>
-    <div>@2017-08-06 00:53:42 &#43;0900 JST</div>
-  
-  
-</div>
+</section>
+
 </aside>
 
-<div class="main">
-  <strong>Contents index.</strong>
-  <section>
-  
-  
-  <div class="[tos-addon]">
-    <a href="http://www.weizlogy.gq/tos/addon/rmnewcollectionmark/">コレクション画面の[N]マークを非表示にするアドオン</a>
+<div>
+
+<section style="padding-left: 10px;">
+  <h2 class="section-title">Contents index.</h2>
+  <div style="display: flex; flex-wrap: wrap;">
     
     
-    &ndash;&nbsp;v1.0.0
+    <div class="[tos-addon]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:09:33</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/summonskilltooltip/">
+          <h3>[tos-addon] 召喚獣にオベイで使えるスキルのツールチップを表示するアドオン&ndash;&nbsp;v1.0.0</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">download. [v1.0.0] summonskilltooltip.ipf
+install. README.md
+introduction. 
+v1.0.0 新規作成 アドオンがロードされると、召喚獣にオベイした際に使えるクイックスロットのスキル（降りるを除く）にツールチップを表示できるようにします。
+通常のスキル同様、マウスホバーで表示されます。
+ツールチップでは、該当スキルのクラスタイプ、攻撃タイプ、スキル威力、クールダウンタイムを表示します。</pre>
+      </article>
+    </div>
     
-    
-  </div>
-  <pre class="summary [tos-addon]">download. [v1.0.0] rmnewcollectionmark.ipf
+    <div class="[tos-addon]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:09:33</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/rmnewcollectionmark/">
+          <h3>[tos-addon] コレクション画面の[N]マークを非表示にするアドオン&ndash;&nbsp;v1.0.0</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">download. [v1.0.0] rmnewcollectionmark.ipf
 install. README.md
 introduction. 
 settings. descriptions. v1.0.0 新規作成 アドオンがロードされると、コレクション画面で[N]マークが表示されなくなります。
 サブキャラ育成時にコレクション画面を開くと[N]マークがビッシリで消すのが大変だったので。。。</pre>
-  
-  <div class="[system]">
-    <a href="http://www.weizlogy.gq/system/item/ccc/">CCC - 色当てゲーム解析ツール</a>
+      </article>
+    </div>
     
-    
-    &ndash;&nbsp;v1.0.0
-    
-    
-  </div>
-  <pre class="summary [system]">overviews. KOLOR、The Colorのような 色当てゲームを解析し正解を表示します。
+    <div class="[system]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:10:49</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/item/ccc/">
+          <h3>[system] CCC - 色当てゲーム解析ツール&ndash;&nbsp;v1.0.0</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">overviews. KOLOR、The Colorのような 色当てゲームを解析し正解を表示します。
 download. [v1.0.0] CCC.exe
 introduction. 
 settings. なし。
@@ -359,44 +424,44 @@ DキーUp モードをDifferentMode（黒枠）に切り替えます。
 SキーUp モードをSameMode（赤枠）に切り替えます。
 TキーUp 一時的にウィンドウ領域全体を透過、透過解除を繰り返します。
 ESCキーUp キャプチャー結果をクリアします。</pre>
-  
-  <div class="[tos-addon]">
-    <a href="http://www.weizlogy.gq/tos/addon/fixbookread/">本アイテムの改行を正常化するアドオン</a>
+      </article>
+    </div>
     
-    
-    &ndash;&nbsp;v1.0.0
-    
-    
-  </div>
-  <pre class="summary [tos-addon]">download. [v1.0.0] fixbookread.ipf
+    <div class="[tos-addon]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:09:33</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/fixbookread/">
+          <h3>[tos-addon] 本アイテムの改行を正常化するアドオン&ndash;&nbsp;v1.0.0</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">download. [v1.0.0] fixbookread.ipf
 install. README.md
 introduction. before 
 after 
 settings. descriptions. v1.0.0 新規作成。 アドオンがロードされると、本アイテムのテキスト表示処理を自動修正し、改行を正常化させます。</pre>
-  
-  <div class="[tos-addon]">
-    <a href="http://www.weizlogy.gq/tos/addon/dice/">ダイスロールアドオン</a>
+      </article>
+    </div>
     
-    
-    &ndash;&nbsp;v1.1.0
-    
-    
-  </div>
-  <pre class="summary [tos-addon]">download. [v1.1.0] dice.ipf
+    <div class="[tos-addon]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:09:33</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/dice/">
+          <h3>[tos-addon] ダイスロールアドオン&ndash;&nbsp;v1.1.0</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">download. [v1.1.0] dice.ipf
 install. README.md
 introduction. 
 settings. descriptions. v1.1.0 カスタムレンジ対応 チャットコマンドで /random set &lt;最小&gt; &lt;最大&gt; と打つと、ランダムの範囲を変更できます。
 /random set 1 6 -- ６面ダイス状態 /random set 1 10 -- １０面ダイス状態 /random set -- デフォルトに戻ります v1.0.1 itos対応 v1.0.0 新規作成 アドオンがロードされると、チャットコマンドで /random と打つと、 0～999の値をランダムに決定し、一般チャット範囲に結果を送信します。</pre>
-  
-  <div class="[tos-addon]">
-    <a href="http://www.weizlogy.gq/tos/addon/summoncounter/">召喚物の個体数を表示するアドオン</a>
+      </article>
+    </div>
     
-    
-    &ndash;&nbsp;v1.0.4
-    
-    
-  </div>
-  <pre class="summary [tos-addon]">download. [v1.0.4] summoncounter.ipf
+    <div class="[tos-addon]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:09:33</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/summoncounter/">
+          <h3>[tos-addon] 召喚物の個体数を表示するアドオン&ndash;&nbsp;v1.0.4</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">download. [v1.0.4] summoncounter.ipf
 install. README.md
 introduction. 
 
@@ -405,16 +470,16 @@ introduction.
 settings. Nexon\TreeofSaviorJP\addons\summoncounter\settings.txt を作成します。
 以下の初期設定をsettings.txtコピペします。
 suco.config = { Bokor_Zombify = { mode = &#34;hpbar&#34;, loc_frame = { x = 450, y = 80 }, loc_bar = { x = 0, y = 0 } }, Necromancer_RaiseDead = { mode = &#34;icon1&#34;, loc = &#34;left&#34;, loc1 = { x = 0, y = 30 }, loc2 = { x = 0, y = 70 }, loc3 = { x = 0, y = 110 }, loc4 = { x = -40, y = 50 }, loc5 = { x = -40, y = 90 } }, Necromancer_RaiseSkullarcher = { mode = &#34;icon1&#34;, loc = &#34;right&#34;, loc1 = { x = 0, y = 30 }, loc2 = { x = 0, y = 70 }, loc3 = { x = 0, y = 110 }, loc4 = { x = 40, y = 50 }, loc5 = { x = 40, y = 90 } }, Necromancer_CreateShoggoth = { mode = &#34;icon2&#34;, loc = &#34;down&#34;, loc1 = { x = 0, y = 0 } } }; explanation.</pre>
-  
-  <div class="[tos-addon]">
-    <a href="http://www.weizlogy.gq/tos/addon/slotmac/">クイックスロットスキル/アイテム用マクロアドオン</a>
+      </article>
+    </div>
     
-    
-    &ndash;&nbsp;v1.3.0
-    
-    
-  </div>
-  <pre class="summary [tos-addon]">download. [v1.3.0] slotmac.ipf
+    <div class="[tos-addon]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:09:33</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/slotmac/">
+          <h3>[tos-addon] クイックスロットスキル/アイテム用マクロアドオン&ndash;&nbsp;v1.3.0</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">download. [v1.3.0] slotmac.ipf
 install. README.md
 introduction. settings. Nexon\TreeofSaviorJP\addons\slotmac フォルダーを作成します。
 slotmac フォルダー配下に自キャラの[cid]のフォルダーを作成します。
@@ -438,14 +503,16 @@ v1.0.0 新規作成 アドオンがロードされると、クイックスロッ
 また、[スキルと特性]ダイアログの右下の[slmc]Reloadボタンが追加されます。左クリックでマクロを再読み込みします。
 usage. マクロファイル作成 キーボード、マウスモードの場合、クイックスロットは左下が1、右上が40となります。(ジョイスティックは&hellip;？)
 cidフォルダー配下に、必要に応じてマクロファイル(slot1.txt ～ slot40.txt)をUTF8-BOM無で作成します。 マクロファイルがない場合は、今まで通りスロットにセットされたものを実行します。</pre>
-  
-  <div class="[site-management]">
-    <a href="http://www.weizlogy.gq/site/blogger-to-hugo/">bloggerからhugo&#43;github pagesに移行した理由</a>
+      </article>
+    </div>
     
-    
-    
-  </div>
-  <pre class="summary [site-management]">bloggerでサイト運営して困ったこと Googleサービスの割にAMP対応できない 新テンプレートはもちろん無理で、クラシックテンプレートも完全には対応できません。
+    <div class="[site-management]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:10:30</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/site/blogger-to-hugo/">
+          <h3>[site-management] bloggerからhugo&#43;github pagesに移行した理由</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">bloggerでサイト運営して困ったこと Googleサービスの割にAMP対応できない 新テンプレートはもちろん無理で、クラシックテンプレートも完全には対応できません。
 テンプレートが複雑でカスタマイズに時間がかかる 一番シンプルなテンプレートでも1000行以上はあり、コード修正はブラウザ上のテキストエリアで行うという苦行。
 HTML5のレイアウト対応（section, articleなど）も一苦労です。
 ページロードに時間がかかる AMPに対応できない一因でもありますが、リッチなUIを実現するためJavascriptが多様されます。
@@ -455,16 +522,16 @@ bloggerで困ったことをhugoで解決する AMP対応 hugoにはAMP対応の
 ページロード hugoはテーマとマークダウンから静的コンテンツを生成するため、キャッシュが効きやすくページロードに有利です。
 ホスティングサービスを選択する GitHub Pagesは静的コンテンツをgit pushするだけで公開できるGitHubのサービスです。
 1GBのストレージで100GB/Monthの帯域、1時間に10回ビルドといった制限がありますが、広告なし無料です。 画像などはdropboxに入れておけば十分活用できます。</pre>
-  
-  <div class="[tos-addon]">
-    <a href="http://www.weizlogy.gq/tos/addon/pickiteminfo/">ドロップアイテムの名称を常時表示するアドオン</a>
+      </article>
+    </div>
     
-    
-    &ndash;&nbsp;v1.0.4
-    
-    
-  </div>
-  <pre class="summary [tos-addon]">download. [v1.0.4] pickiteminfo.ipf
+    <div class="[tos-addon]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:09:33</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/pickiteminfo/">
+          <h3>[tos-addon] ドロップアイテムの名称を常時表示するアドオン&ndash;&nbsp;v1.0.4</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">download. [v1.0.4] pickiteminfo.ipf
 install. README.md
 introduction. 
 settings. descriptions. v1.0.4 アイテム名途切れ修正 アイテム名が途切れる問題を修正しました。
@@ -474,37 +541,24 @@ v1.0.1 名称表示位置調整 8&frasl;23 UPDATEにより、ALTキーでアイ�
 名称の動きが若干不穏ですが、ALTキーでアイテム名称表示がずれる問題が解決するまでの暫定対処となります。
 v1.0.0 新規作成 アドオンがロードされると、ALTキーを押さなくとも、ドロップアイテムの名称が表示されるようになります。
 アイテム名称はレアリティで色が変わります。 色の変化はColored Item Namesをパク&hellip;参考にしています。</pre>
-  
-  <div class="[tos-addon-x]">
-    <a href="http://www.weizlogy.gq/tos/addon-x/wingofbeelze/">エリア内ランダムワープアドオン</a>
+      </article>
+    </div>
     
-    
-    &ndash;&nbsp;v1.0.4
-    
-    
-  </div>
-  <pre class="summary [tos-addon-x]">download. [v1.0.4] wingofbeelze.ipf
+    <div class="[tos-addon-x]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:09:33</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon-x/wingofbeelze/">
+          <h3>[tos-addon-x] エリア内ランダムワープアドオン&ndash;&nbsp;v1.0.4</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">download. [v1.0.4] wingofbeelze.ipf
 install. README.md
 introduction. settings. descriptions. v1.0.4 6/27アップデート対応 v1.0.3 選択位置ワープ機能追加 マップ上でALT＋左クリックすると、その位置にワープします。
 v1.0.2 ワープロジック微調整 v1.0.1 ワープロジック微調整 v1.0.0 新規作成。 ESCAPE+LSHIFTでエリア内をランダムにワープします。
 ROのヴェルゼブブの羽のようなイメージです。</pre>
-  
-  <div class="[tos-addon]">
-    <a href="http://www.weizlogy.gq/tos/addon/skillitemcounter/">消費アイテムありスキルの使用回数表示アドオン</a>
-    
-    
-    &ndash;&nbsp;v1.1.2
-    
+      </article>
+    </div>
     
   </div>
-  <pre class="summary [tos-addon]">download. [v1.1.2] skillitemcounter.ipf
-install. README.md
-introduction. 
-settings. descriptions. v1.1.2 6/27アップデート対応 v1.1.1 使用回数が表示されない問題の修正 詳細は#19を参照してください。
-joypad対応 joypadのquickslotに対応しました。（遅
-v1.1.0 ポイズンポット使用スキル対応 ポイズンポット消費のあるスキルスロットにも使用回数を表示します。
-v1.0.0 新規作成 アドオンがロードされると、クイックスロットにセットしている、消費アイテムのあるスキルスロット右上に、消費アイテムの個数に応じたスキルの使用回数を追加で表示します。</pre>
-  
   
 
 <ul class="pagination">
@@ -601,14 +655,8 @@ v1.0.0 新規作成 アドオンがロードされると、クイックスロッ
     
 </ul>
 
-  </section>
-  <amp-ad type="adsense"
-    layout="responsive"
-    width=300
-    height=250
-    data-ad-client="ca-pub-3395565787038716"
-    data-ad-slot="6217845612">
-  </amp-ad>
+</section>
+
 </div>
 
 <footer>
@@ -616,7 +664,7 @@ v1.0.0 新規作成 アドオンがロードされると、クイックスロッ
   <p>© 2010 weizlogy.<p>
   <p>Powered by hugo &#43; github pages.<p>
   <p><a href="https://twitter.com/twihamatter">Twitter</a></p>
-<p><a href="https://plus.google.com/u/0/111668640363056183135">Google+</a></p>
+  <p><a href="https://plus.google.com/u/0/111668640363056183135">Google+</a></p>
 
 
 <amp-analytics type="googleanalytics" id="analytics1">

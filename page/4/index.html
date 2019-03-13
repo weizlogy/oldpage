@@ -10,46 +10,38 @@
   Weizlogy
 
 </title>
-
-
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
-
+<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet">
 
 <style amp-custom>
-<!-- @style-ignore -->
-/* part of base. */
 body {
-  font-family: "Noto Sans Japanese", "monospace";
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-h1 {
-  font-size: 3.0em;
-}
-h1 > a {
-  text-decoration: none;
-  color: inherit;
-}
-h1::first-letter {
-  font-size: 3.5em;
-  color: orange;
+  font-family: 'Noto Sans Japanese', 'monospace';
 }
 
 header {
-  clear: left;
+  font-family: 'Lobster', cursive;
 }
 header > h1 {
-  font-family: 'Lobster', cursive;
-  display: inline;
+  font-family: inherit;
   color: #666;
 }
+header > h1::first-letter {
+  color: orange;
+}
+
 header > h2 {
-  font-family: 'Lobster', cursive;
-  display: inline;
-  margin-left: 10px;
+  font-family: inherit;
   color: #999;
+}
+
+header > h3 {
+  font-family: inherit;
+  color: #CCC;
+}
+
+h1 > a, h3 > a {
+  text-decoration: none;
+  color: inherit;
 }
 
 footer {
@@ -60,10 +52,7 @@ footer > p {
   display: inline;
   padding-left: 10px;
 }
-div.main {
-  /*width: 80%;*/
-  padding-left: 10px;
-}
+
 /* part of single. */
 article > div > h2 {
   padding: 0px 0px 5px 5px;
@@ -84,33 +73,22 @@ section > h1 {
   border-left: 7px solid #999;
   border-bottom: 1px solid #999;
 }
-section > .summary {
-  font-size: 85%;
-  color: #999;
-}
+
 aside {
   padding-left: 10px;
   margin-top: 10px;
+}
+
+.section-title {
+  font-family: 'Lobster', cursive;
+  color: #333
+}
+
+.index-datetime {
   font-size: 85%;
-}
-aside > div {
-  margin-bottom: 10px;
-}
-.category {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.category > div {
-  margin-right: 10px;
-}
-.lastmod-title {
-  padding-bottom: 10px;
-}
-.blog-date {
   color: #999;
-  margin-left: 10px;
 }
+
 /* part of code pagination. */
 .pagination {
   display: inline-block;
@@ -139,6 +117,7 @@ pre {
   padding: 5px;
   border: 1px solid #999;
   word-wrap: break-word;
+  white-space: pre-wrap;
 }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
@@ -200,12 +179,13 @@ pre {
 .highlight .vg { color: #008080 } /* Name.Variable.Global */
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
-<!-- @style-ignore -->
+
 /* hidden category. */
 .tos-addon-x, .\[tos-addon-x\] {
   display: none;
 }
 </style>
+
 
 
 <script type="application/ld+json">
@@ -227,7 +207,7 @@ pre {
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2018-09-05 07:09:33.9025618 &#43;0900 JST",
+  "dateModified": "2018-09-05 07:09:33.8995467 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -237,6 +217,13 @@ pre {
   }
 }
 </script>
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Weizlogy" />
+<meta name="twitter:description" content="" />
+
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -248,91 +235,171 @@ pre {
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
 
-<body>
+<body style="padding-left: 5px; padding-right: 5px;">
 <div id="container">
 
-<header>
-
-  <h1><a href="http://www.weizlogy.gq/">Weizlogy</a></h1>
-  <h2> - Live in der Zukunft.</h2>
-
+<header style="display: flex; align-items: baseline;">
+  <h1 style="line-height: 0px;"><a href="http://www.weizlogy.gq/">Weizlogy</a></h1>
+  <h2 style="margin-left: 10px;"> - Live in der Zukunft.</h2>
+  <h3 style="align-self: flex-end; margin-left: auto; margin-right: 10px;"><a href="http://www.weizlogy.gq/site/about">about</a></h3>
 </header>
 
 <aside>
-<div>
-  <strong>Category.</strong>
-  <div class="category">
+
+<section>
+  <h2 class="section-title">Category.</h2>
+  <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
   
   
-    <div class="site-management"><a href="/categories/site-management">site-management</a>(5)</div>
+    <article class="site-management" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/site-management" style="text-decoration: none; color: inherit;">
+        site-management (6)
+      </a>
+    </article>
   
-    <div class="system"><a href="/categories/system">system</a>(5)</div>
+    <article class="system" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/system" style="text-decoration: none; color: inherit;">
+        system (5)
+      </a>
+    </article>
   
-    <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
+    <article class="system-dev" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/system-dev" style="text-decoration: none; color: inherit;">
+        system-dev (15)
+      </a>
+    </article>
   
-    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(31)</div>
+    <article class="tos-addon" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/tos-addon" style="text-decoration: none; color: inherit;">
+        tos-addon (31)
+      </a>
+    </article>
   
-    <div class="tos-addon-dev"><a href="/categories/tos-addon-dev">tos-addon-dev</a>(4)</div>
+    <article class="tos-addon-dev" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/tos-addon-dev" style="text-decoration: none; color: inherit;">
+        tos-addon-dev (4)
+      </a>
+    </article>
   
-    <div class="tos-addon-x"><a href="/categories/tos-addon-x">tos-addon-x</a>(2)</div>
+    <article class="tos-addon-x" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/tos-addon-x" style="text-decoration: none; color: inherit;">
+        tos-addon-x (2)
+      </a>
+    </article>
   
   
   
   
   </div>
-</div>
-<div>
+</section>
+
+<section>
   
-  <strong>Last modified.</strong>
+  <h2 class="section-title">Last modified.</h2>
+  <div>
+    
+    <article style="">
+      <div class="[tos-addon]">
+        <div class="index-datetime">2019/03/14 06:49:24</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/objectdetector/">
+          <h3>
+            [tos-addon] オブジェクト探索アドオン
+              &ndash;&nbsp;v1.3.1
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+    <article style="">
+      <div class="[site-management]">
+        <div class="index-datetime">2018/09/22 17:05:24</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/site/about/">
+          <h3>
+            [site-management] Weizlogy
+              
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+    <article style="">
+      <div class="[tos-addon]">
+        <div class="index-datetime">2018/09/08 17:33:52</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/costumeplay/">
+          <h3>
+            [tos-addon] GUI操作で装備を保存/復元するアドオン
+              &ndash;&nbsp;v1.1.1
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+    <article style="">
+      <div class="[system-dev]">
+        <div class="index-datetime">2018/09/05 07:11:05</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">
+          <h3>
+            [system-dev] cannot find source for binding with reference について
+              
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+    <article style="">
+      <div class="[system-dev]">
+        <div class="index-datetime">2018/09/05 07:11:05</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">
+          <h3>
+            [system-dev] strutsのFormFileからローカルファイルの絶対パスを取得
+              
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+  </div>
   
-    <div><a href="http://www.weizlogy.gq/tos/addon/stealthymaster/">いいねせずキャラ情報を見るアドオン</a></div>
-    <div>@2018-02-10 08:58:15 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/partyinfoex/">パーティーメンバーの一覧に追加情報を表示するアドオン</a></div>
-    <div>@2018-01-27 07:38:47 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/showhiddenmap/">表示されないマップを表示するアドオン</a></div>
-    <div>@2018-01-17 22:13:20 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/minigaugetext/">キャラクター下HP/SPバーテキスト表示アドオン</a></div>
-    <div>@2018-01-16 01:34:09 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/showbuffsellertype/">商店のフキダシに商店名を付けるアドオン</a></div>
-    <div>@2017-12-26 00:36:58 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/compactheadsupdisplay/">Heads Up Displayをコンパクトにするアドオン</a></div>
-    <div>@2017-12-12 22:05:16 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/previewguildemblem/">ギルドマスター以外でもギルドエンブレムのプレビューができるアドオン</a></div>
-    <div>@2017-11-08 00:48:29 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/summonskilltooltip/">召喚獣にオベイで使えるスキルのツールチップを表示するアドオン</a></div>
-    <div>@2017-11-02 00:21:48 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/rmnewcollectionmark/">コレクション画面の[N]マークを非表示にするアドオン</a></div>
-    <div>@2017-08-31 21:25:07 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/fixbookread/">本アイテムの改行を正常化するアドオン</a></div>
-    <div>@2017-08-06 00:53:42 &#43;0900 JST</div>
-  
-  
-</div>
+</section>
+
 </aside>
 
-<div class="main">
-  <strong>Contents index.</strong>
-  <section>
-  
-  
-  <div class="[tos-addon]">
-    <a href="http://www.weizlogy.gq/tos/addon/warehousepicker/">所持キャラ全員の個人倉庫を見るアドオン</a>
+<div>
+
+<section style="padding-left: 10px;">
+  <h2 class="section-title">Contents index.</h2>
+  <div style="display: flex; flex-wrap: wrap;">
     
     
-    &ndash;&nbsp;v1.0.0
+    <div class="[tos-addon]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:09:33</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/marketselltimechanger/">
+          <h3>[tos-addon] マーケットデフォルト出品日数変更アドオン&ndash;&nbsp;v1.0.0</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">download. marketselltimechanger.ipf
+install. README.md
+introduction. settings. Nexon\TreeofSaviorJP\addons\marketselltimechanger\settings.txt を作成します。
+ファイルを開いて一行目に、（デフォルト1日が良ければ）1と入力します。
+設定は、[デフォルト出品日数]のみ。
+現状、1,3,5,7 が使用でき、それ以外が入力されていた場合は、システムのデフォルト値が採用されます。
+descriptions. v1.0.0 新規作成。
+アドオンがロードされると、設定ファイルに記載された値でマーケットのデフォルト出品日数を変更します。</pre>
+      </article>
+    </div>
     
-    
-  </div>
-  <pre class="summary [tos-addon]">download. warehousepicker.ipf
+    <div class="[tos-addon]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:09:33</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/warehousepicker/">
+          <h3>[tos-addon] 所持キャラ全員の個人倉庫を見るアドオン&ndash;&nbsp;v1.0.0</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">download. warehousepicker.ipf
 install. README.md
 introduction.  settings. Nexon\TreeofSaviorJP\addons\warehousepicker フォルダーを作成します。
 各所持キャラで個人倉庫を開閉する（正確には閉じる瞬間）と、先ほど作成したフォルダーに個人倉庫のアイテム情報を保存します。
@@ -341,57 +408,59 @@ descriptions. v1.0.0 新規作成。
 ダイアログには、事前に個人倉庫のアイテム情報が作成された所持キャラ名のドロップダウンリストが表示されます。 ドロップダウンリストで選択した所持キャラ名の個人倉庫のアイテム情報（アイテムアイコン、名称、個数）をダイアログ内に表示します。
 最低一度は各所持キャラで個人倉庫を開閉する必要がありますが、それ以降はいずれかのキャラでログインすると全員の個人倉庫を見ることができます。
 今のところチームの区別なくキャラ名のみ表示しますので、複数チームを所持している場合に使い勝手に難があるかもしれません。 使いにくいようでしたら改善します。</pre>
-  
-  <div class="[system]">
-    <a href="http://www.weizlogy.gq/system/item/schritt/">Schritt - 論理ステップカウンター</a>
+      </article>
+    </div>
     
-    
-    
-  </div>
-  <pre class="summary [system]">overviews. Schrittは論理ステップカウンターです。
+    <div class="[system]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:10:49</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/item/schritt/">
+          <h3>[system] Schritt - 論理ステップカウンター</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">overviews. Schrittは論理ステップカウンターです。
 従来のステップカウンターは物理行でカウントする方式が主流であるため、書き方により規模に差異が現れます。
 Schrittは論理的に命令をカウントすることで、書き方による規模の差異を抑制することを目的に作られました。
 SchrittはLinux(ubuntu)のMonoを使用し、C#で実装されているため、.Net Frameworkの恩恵を受けられる環境であれば動作します。
 download. Schritt
 status. | 言語 | 対応バージョン | 状況説明 | |:&mdash;||:&mdash;||:&mdash;| | C | 0.0.3-α | | | C++ | | 順次対応予定 | | C# | 0.0.1-α | | | Java | 0.0.2-α | | | VB | | 順次対応予定 | | JavaScript | | 順次対応予定 | | HTML | | 順次対応予定 | | CSS | | 順次対応予定 | | Ruby | | 順次対応予定 |</pre>
-  
-  <div class="[tos-addon]">
-    <a href="http://www.weizlogy.gq/tos/addon/megaphonecount/">チャット入力欄表示中に所持中のメガホン数を表示するアドオン</a>
+      </article>
+    </div>
     
-    
-    &ndash;&nbsp;v1.0.0
-    
-    
-  </div>
-  <pre class="summary [tos-addon]">download. megaphonecount.ipf
+    <div class="[tos-addon]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:09:33</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/megaphonecount/">
+          <h3>[tos-addon] チャット入力欄表示中に所持中のメガホン数を表示するアドオン&ndash;&nbsp;v1.0.0</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">download. megaphonecount.ipf
 install. README.md
 introduction. 
 settings. descriptions. v1.0.0 新規作成。
 アドオンがロードされると、チャット入力欄表示中に所持中のメガホン数が表示されます。 それだけです。。。</pre>
-  
-  <div class="[tos-addon]">
-    <a href="http://www.weizlogy.gq/tos/addon/customabilityshop/">特性習得ウィンドウに各特性の最大レベルを表示するアドオン</a>
+      </article>
+    </div>
     
-    
-    &ndash;&nbsp;v1.0.0
-    
-    
-  </div>
-  <pre class="summary [tos-addon]">download. 2/22パッチで最大値が表示されるようになりましたので非公開にします。
+    <div class="[tos-addon]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:09:33</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/customabilityshop/">
+          <h3>[tos-addon] 特性習得ウィンドウに各特性の最大レベルを表示するアドオン&ndash;&nbsp;v1.0.0</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">download. 2/22パッチで最大値が表示されるようになりましたので非公開にします。
 install. README.md
 introduction. 
 settings. descriptions. v1.0.0 新規作成。
 アドオンがロードされると、特性習得ウィンドウに各特性の最大レベルが表示されます。 無くてもいい気がするけど。。。</pre>
-  
-  <div class="[tos-addon]">
-    <a href="http://www.weizlogy.gq/tos/addon/monsterstatus/">ターゲット中のモンスターのステータスを表示するアドオン</a>
+      </article>
+    </div>
     
-    
-    &ndash;&nbsp;v3.0.3
-    
-    
-  </div>
-  <pre class="summary [tos-addon]">download. [v3.0.3] monsterstatus.ipf
+    <div class="[tos-addon]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:09:33</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/monsterstatus/">
+          <h3>[tos-addon] ターゲット中のモンスターのステータスを表示するアドオン&ndash;&nbsp;v3.0.3</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">download. [v3.0.3] monsterstatus.ipf
 [v2.1.3] monsterstatus.ipf
 install. README.md
 introduction.  settings. Nexon\TreeofSaviorJP\addons\monsterstatus\location.txt を作成します。
@@ -413,16 +482,16 @@ v2.1.0 コンパクトなv2系のサポートを始めました。
 v2.0.0 討伐数、ドロップアイテム名、アイテム収集率表示追加 冒険日誌から討伐数、ドロップアイテム名、アイテム収集率を取得、 表示する機能を追加しました。 また、ドロップアイテム名からアイテムツールチップが開けます。
 表示ステータス 、フォーマット調整 表示するステータスは現在のところ以下の通りです。
    表示名 内容     ATK 物理攻撃力(最大)   MATK 魔法攻撃力(最大)   DEF 物理防御力   MDEF 魔法防御力    UIウィンドウをドラッグで移動できるようになりました。</pre>
-  
-  <div class="[tos-addon]">
-    <a href="http://www.weizlogy.gq/tos/addon/hidename/">画面にある自キャラ名を消すアドオン</a>
+      </article>
+    </div>
     
-    
-    &ndash;&nbsp;v1.0.3
-    
-    
-  </div>
-  <pre class="summary [tos-addon]">download. [v1.0.3] hidename.ipf
+    <div class="[tos-addon]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:09:33</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/hidename/">
+          <h3>[tos-addon] 画面にある自キャラ名を消すアドオン&ndash;&nbsp;v1.0.3</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">download. [v1.0.3] hidename.ipf
 install. README.md
 introduction. 
 settings. descriptions. v1.0.3 ギルドエンブレムも非表示にします。
@@ -430,35 +499,41 @@ v1.0.2 ギルド名も非表示にします。
 v1.0.1 ふとした拍子に[自キャラ体力バー下]の名前が見えてしまう問題を修正しました。
 v1.0.0 新規作成 アドオンがロードされると[画面左上]と[自キャラ体力バー下]のチーム名、キャラ名を非表示にします。
 動画を撮るときに設定では非表示にできなかったので。。。</pre>
-  
-  <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/cipher-suites/">TSLで定義される全CipherSuiteの一覧</a>
+      </article>
+    </div>
     
-    
-    
-  </div>
-  <pre class="summary [system-dev]">Cipher Suiteの説明はさて置き、一覧を見るために以下のコマンドを使用する例が多々見受けられます。
+    <div class="[system-dev]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:11:05</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/dev/cipher-suites/">
+          <h3>[system-dev] TSLで定義される全CipherSuiteの一覧</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">Cipher Suiteの説明はさて置き、一覧を見るために以下のコマンドを使用する例が多々見受けられます。
 $ openssl ciphers -v これはopensslが対応するCipherSuiteの一覧であり、実際に存在するCipherSuiteの一覧とは異なります。
 実際に存在するCipherSuiteの一覧は、RFC5426によるとIANA管理とのことで、下記URLがマスターです。
 http://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4</pre>
-  
-  <div class="[tos-addon-dev]">
-    <a href="http://www.weizlogy.gq/tos/addon-dev/ies-format/">iesファイルフォーマット解説</a>
+      </article>
+    </div>
     
-    
-    
-  </div>
-  <pre class="summary [tos-addon-dev]">???は可変長です。
+    <div class="[tos-addon-dev]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:10:05</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon-dev/ies-format/">
+          <h3>[tos-addon-dev] iesファイルフォーマット解説</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">???は可変長です。
 Total block  ------------------- ---------------------------- ------------------------- | Header [156 byte] | Cell Header [136 x N byte] | Row Data [??? x M byte] | ------------------- ---------------------------- -------------------------  N=列数。は、Header blockのCellCountで指定。 M=行数。は、Header blockのRowCountで指定。
 Header block  ---------------------- ------------------- ------------------------ | TableName [128 byte] | Reserve1 [4 byte] | OffsetOfData [4 byte] | ---------------------- ------------------- ------------------------ --------------------------- ------------------- ------------------- | OffsetOfResource [4 byte] | FileSize [4 byte] | Reserve2 [4 byte] | --------------------------- ------------------- ------------------- ------------------- -------------------- -------------------------- | RowCount [2 byte] | CellCount [2 byte] | NumCellCount [2 byte] | ------------------- -------------------- -------------------------- ----------------------- ------------------------------------------- | StrCellCount [2 byte] | Reserve3 [2 byte] | --------------------- | ----------------------- -------------------------------------------           TableName IESテーブル名   Reserve1 予約1   OffsetOfData Cell Header blockのサイズ   OffsetOfResource Row Data blockのサイズ   FileSize IESファイルサイズ   Reserve2 予約2   RowCount 行数   CellCount 列数   NumCellCount 数値列数   StrCellCount 文字列列数   Reserve3 予約3    Cell Header block  ---------------- ------------------- ---------------------- | Name [64 byte] | Name2 [64 byte] | Type [2 byte] | ------ | ---------------- ------------------- ---------------------- ------------------- ------------------- ------------------- | Reserve1 [2 byte] | Reserve2 [4 byte] | Position [2 byte] | ------------------- ------------------- -------------------           Name Cell名   Name2 Cell別名   Type 0：数値Cell、1,2：文字列Cell   Reserve1 予約1   Reserve2 予約2   Position Type内Cell順序    Cell順は、Type昇順、Position昇順。</pre>
-  
-  <div class="[tos-addon-dev]">
-    <a href="http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/">iesファイルをcsv形式のファイルに変換するソフト</a>
+      </article>
+    </div>
     
-    
-    
-  </div>
-  <pre class="summary [tos-addon-dev]">overviews. Tree Of Saviorのipfファイル内には拡張子がiesのファイルがあります。
+    <div class="[tos-addon-dev]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:10:05</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon-dev/ies-to-csv/">
+          <h3>[tos-addon-dev] iesファイルをcsv形式のファイルに変換するソフト</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">overviews. Tree Of Saviorのipfファイル内には拡張子がiesのファイルがあります。
 Ipf Suiteでは中身を見ることができますが、extractしても実体はバイナリファイル（かつ、暗号化されている）で、 テキストエディタでもバイナリエディタでも見ても分かりません。
 もちろん、grep検索で引き当てることもできません。
 本ソフトは、iesファイルを解析し、可読性のあるcsvファイルを生成します。
@@ -471,23 +546,10 @@ caution. iesファイル内に韓国語が含まれるので、Excelでは文字
 本当は英訳を載せたいのですが、完全無料の翻訳APIがないもので。。。 需要があれば何とかしようと思います。
 acknowledgment. iesファイルフォーマットは、以下のソースコードを参考にさせて頂きました。 ありがとうございます。
 https://github.com/r1emu/IPFUnpacker/blob/master</pre>
-  
-  <div class="[system]">
-    <a href="http://www.weizlogy.gq/system/item/tapete/">Tapete - Windows spotlight画像抽出</a>
-    
-    
+      </article>
+    </div>
     
   </div>
-  <pre class="summary [system]">overviews. Windows10のロック画面で使われるspotlight画像を厳選し、&lt;ユーザーディレクトリ&gt;\picture\Tapete フォルダにコピーします。
-コピーは随時発生し、日次で最新状態にリセットします。
-壁紙のスライドショーで使用することを想定し、画像の厳選条件は、4KB以上かつ、 プライマリースクリーンの解像度以上としています。
-download. Tapete.zip
-install. ダウンロードしたzipを解凍し、任意の場所に配置します。
-descriptions. 画面のフォルダパスをクリックすると、該当フォルダをエクスプローラーで開きます。
-最小化すると通知アイコン化します。アイコンをクリックすると復元します。
-cautions. 自動起動はしないので、必要に応じてスタートアップに登録してください。
-コピー先は固定なので、ソフトリンクやジャンクションで任意の場所にコピーさせることもできます。</pre>
-  
   
 
 <ul class="pagination">
@@ -588,14 +650,8 @@ cautions. 自動起動はしないので、必要に応じてスタートアッ�
     
 </ul>
 
-  </section>
-  <amp-ad type="adsense"
-    layout="responsive"
-    width=300
-    height=250
-    data-ad-client="ca-pub-3395565787038716"
-    data-ad-slot="6217845612">
-  </amp-ad>
+</section>
+
 </div>
 
 <footer>
@@ -603,7 +659,7 @@ cautions. 自動起動はしないので、必要に応じてスタートアッ�
   <p>© 2010 weizlogy.<p>
   <p>Powered by hugo &#43; github pages.<p>
   <p><a href="https://twitter.com/twihamatter">Twitter</a></p>
-<p><a href="https://plus.google.com/u/0/111668640363056183135">Google+</a></p>
+  <p><a href="https://plus.google.com/u/0/111668640363056183135">Google+</a></p>
 
 
 <amp-analytics type="googleanalytics" id="analytics1">

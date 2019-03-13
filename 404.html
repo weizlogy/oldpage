@@ -5,48 +5,42 @@
 <link rel="canonical" href="">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <title>
-404 - Weizlogy
+
+  Weizlogy
+
 </title>
-
-
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
-
+<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet">
 
 <style amp-custom>
-<!-- @style-ignore -->
-/* part of base. */
 body {
-  font-family: "Noto Sans Japanese", "monospace";
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-h1 {
-  font-size: 3.0em;
-}
-h1 > a {
-  text-decoration: none;
-  color: inherit;
-}
-h1::first-letter {
-  font-size: 3.5em;
-  color: orange;
+  font-family: 'Noto Sans Japanese', 'monospace';
 }
 
 header {
-  clear: left;
+  font-family: 'Lobster', cursive;
 }
 header > h1 {
-  font-family: 'Lobster', cursive;
-  display: inline;
+  font-family: inherit;
   color: #666;
 }
+header > h1::first-letter {
+  color: orange;
+}
+
 header > h2 {
-  font-family: 'Lobster', cursive;
-  display: inline;
-  margin-left: 10px;
+  font-family: inherit;
   color: #999;
+}
+
+header > h3 {
+  font-family: inherit;
+  color: #CCC;
+}
+
+h1 > a, h3 > a {
+  text-decoration: none;
+  color: inherit;
 }
 
 footer {
@@ -57,10 +51,7 @@ footer > p {
   display: inline;
   padding-left: 10px;
 }
-div.main {
-  /*width: 80%;*/
-  padding-left: 10px;
-}
+
 /* part of single. */
 article > div > h2 {
   padding: 0px 0px 5px 5px;
@@ -81,33 +72,22 @@ section > h1 {
   border-left: 7px solid #999;
   border-bottom: 1px solid #999;
 }
-section > .summary {
-  font-size: 85%;
-  color: #999;
-}
+
 aside {
   padding-left: 10px;
   margin-top: 10px;
+}
+
+.section-title {
+  font-family: 'Lobster', cursive;
+  color: #333
+}
+
+.index-datetime {
   font-size: 85%;
-}
-aside > div {
-  margin-bottom: 10px;
-}
-.category {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.category > div {
-  margin-right: 10px;
-}
-.lastmod-title {
-  padding-bottom: 10px;
-}
-.blog-date {
   color: #999;
-  margin-left: 10px;
 }
+
 /* part of code pagination. */
 .pagination {
   display: inline-block;
@@ -136,6 +116,7 @@ pre {
   padding: 5px;
   border: 1px solid #999;
   word-wrap: break-word;
+  white-space: pre-wrap;
 }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
@@ -197,12 +178,13 @@ pre {
 .highlight .vg { color: #008080 } /* Name.Variable.Global */
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
-<!-- @style-ignore -->
+
 /* hidden category. */
 .tos-addon-x, .\[tos-addon-x\] {
   display: none;
 }
 </style>
+
 
 
 <script type="application/ld+json">
@@ -235,6 +217,13 @@ pre {
 }
 </script>
 
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="404 Page not found" />
+<meta name="twitter:description" content="" />
+
+
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
@@ -245,87 +234,28 @@ pre {
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
 
-<body>
+<body style="padding-left: 5px; padding-right: 5px;">
 <div id="container">
 
-<header>
-
-  <h1><a href="http://www.weizlogy.gq/">Weizlogy</a></h1>
-  <h2> - Live in der Zukunft.</h2>
-
+<header style="display: flex; align-items: baseline;">
+  <h1 style="line-height: 0px;"><a href="http://www.weizlogy.gq/">Weizlogy</a></h1>
+  <h2 style="margin-left: 10px;"> - Live in der Zukunft.</h2>
+  <h3 style="align-self: flex-end; margin-left: auto; margin-right: 10px;"><a href="http://www.weizlogy.gq/site/about">about</a></h3>
 </header>
 
 <aside>
-<div>
-  <strong>Category.</strong>
-  
-  
-  <div><a href="/categories/site-management">site-management</a> (5)</div>
-  
-  <div><a href="/categories/system">system</a> (5)</div>
-  
-  <div><a href="/categories/system-dev">system-dev</a> (15)</div>
-  
-  <div><a href="/categories/tos-addon">tos-addon</a> (31)</div>
-  
-  <div><a href="/categories/tos-addon-dev">tos-addon-dev</a> (4)</div>
-  
-  <div><a href="/categories/tos-addon-x">tos-addon-x</a> (2)</div>
-  
-  
-  
-  
-</div>
-<div>
-  
-  <strong>Last modified.</strong>
-  
-    <div><a href="http://www.weizlogy.gq/categories/">Categories</a></div>
-    <div>@0001-01-01 00:00:00 &#43;0000 UTC</div>
-  
-    <div><a href="http://www.weizlogy.gq/tags/">Tags</a></div>
-    <div>@0001-01-01 00:00:00 &#43;0000 UTC</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/stealthymaster/">いいねせずキャラ情報を見るアドオン</a></div>
-    <div>@2018-02-10 08:58:15 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/partyinfoex/">パーティーメンバーの一覧に追加情報を表示するアドオン</a></div>
-    <div>@2018-01-27 07:38:47 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/showhiddenmap/">表示されないマップを表示するアドオン</a></div>
-    <div>@2018-01-17 22:13:20 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/minigaugetext/">キャラクター下HP/SPバーテキスト表示アドオン</a></div>
-    <div>@2018-01-16 01:34:09 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/showbuffsellertype/">商店のフキダシに商店名を付けるアドオン</a></div>
-    <div>@2017-12-26 00:36:58 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/compactheadsupdisplay/">Heads Up Displayをコンパクトにするアドオン</a></div>
-    <div>@2017-12-12 22:05:16 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/previewguildemblem/">ギルドマスター以外でもギルドエンブレムのプレビューができるアドオン</a></div>
-    <div>@2017-11-08 00:48:29 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/summonskilltooltip/">召喚獣にオベイで使えるスキルのツールチップを表示するアドオン</a></div>
-    <div>@2017-11-02 00:21:48 &#43;0900 JST</div>
-  
-  
-</div>
+
 </aside>
 
-<div class="main">
+<div>
+
+<div style="padding-left: 10px;">
   <section>
     <h1>404.</h1>
     <p>page not found.</p>
   </section>
-  <amp-ad type="adsense"
-    layout="responsive"
-    width=300
-    height=250
-    data-ad-client="ca-pub-3395565787038716"
-    data-ad-slot="6217845612">
-  </amp-ad>
+</div>
+
 </div>
 
 <footer>
@@ -333,7 +263,7 @@ pre {
   <p>© 2010 weizlogy.<p>
   <p>Powered by hugo &#43; github pages.<p>
   <p><a href="https://twitter.com/twihamatter">Twitter</a></p>
-<p><a href="https://plus.google.com/u/0/111668640363056183135">Google+</a></p>
+  <p><a href="https://plus.google.com/u/0/111668640363056183135">Google+</a></p>
 
 
 <amp-analytics type="googleanalytics" id="analytics1">

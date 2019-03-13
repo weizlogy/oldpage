@@ -10,46 +10,38 @@
   Weizlogy
 
 </title>
-
-
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
-
+<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet">
 
 <style amp-custom>
-<!-- @style-ignore -->
-/* part of base. */
 body {
-  font-family: "Noto Sans Japanese", "monospace";
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-h1 {
-  font-size: 3.0em;
-}
-h1 > a {
-  text-decoration: none;
-  color: inherit;
-}
-h1::first-letter {
-  font-size: 3.5em;
-  color: orange;
+  font-family: 'Noto Sans Japanese', 'monospace';
 }
 
 header {
-  clear: left;
+  font-family: 'Lobster', cursive;
 }
 header > h1 {
-  font-family: 'Lobster', cursive;
-  display: inline;
+  font-family: inherit;
   color: #666;
 }
+header > h1::first-letter {
+  color: orange;
+}
+
 header > h2 {
-  font-family: 'Lobster', cursive;
-  display: inline;
-  margin-left: 10px;
+  font-family: inherit;
   color: #999;
+}
+
+header > h3 {
+  font-family: inherit;
+  color: #CCC;
+}
+
+h1 > a, h3 > a {
+  text-decoration: none;
+  color: inherit;
 }
 
 footer {
@@ -60,10 +52,7 @@ footer > p {
   display: inline;
   padding-left: 10px;
 }
-div.main {
-  /*width: 80%;*/
-  padding-left: 10px;
-}
+
 /* part of single. */
 article > div > h2 {
   padding: 0px 0px 5px 5px;
@@ -84,33 +73,22 @@ section > h1 {
   border-left: 7px solid #999;
   border-bottom: 1px solid #999;
 }
-section > .summary {
-  font-size: 85%;
-  color: #999;
-}
+
 aside {
   padding-left: 10px;
   margin-top: 10px;
+}
+
+.section-title {
+  font-family: 'Lobster', cursive;
+  color: #333
+}
+
+.index-datetime {
   font-size: 85%;
-}
-aside > div {
-  margin-bottom: 10px;
-}
-.category {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.category > div {
-  margin-right: 10px;
-}
-.lastmod-title {
-  padding-bottom: 10px;
-}
-.blog-date {
   color: #999;
-  margin-left: 10px;
 }
+
 /* part of code pagination. */
 .pagination {
   display: inline-block;
@@ -139,6 +117,7 @@ pre {
   padding: 5px;
   border: 1px solid #999;
   word-wrap: break-word;
+  white-space: pre-wrap;
 }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
@@ -200,12 +179,13 @@ pre {
 .highlight .vg { color: #008080 } /* Name.Variable.Global */
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
-<!-- @style-ignore -->
+
 /* hidden category. */
 .tos-addon-x, .\[tos-addon-x\] {
   display: none;
 }
 </style>
+
 
 
 <script type="application/ld+json">
@@ -227,7 +207,7 @@ pre {
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2018-09-05 07:10:49.8360695 &#43;0900 JST",
+  "dateModified": "2018-09-05 07:10:49.830052 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -237,6 +217,13 @@ pre {
   }
 }
 </script>
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Weizlogy" />
+<meta name="twitter:description" content="" />
+
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -248,91 +235,172 @@ pre {
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
 
-<body>
+<body style="padding-left: 5px; padding-right: 5px;">
 <div id="container">
 
-<header>
-
-  <h1><a href="http://www.weizlogy.gq/">Weizlogy</a></h1>
-  <h2> - Live in der Zukunft.</h2>
-
+<header style="display: flex; align-items: baseline;">
+  <h1 style="line-height: 0px;"><a href="http://www.weizlogy.gq/">Weizlogy</a></h1>
+  <h2 style="margin-left: 10px;"> - Live in der Zukunft.</h2>
+  <h3 style="align-self: flex-end; margin-left: auto; margin-right: 10px;"><a href="http://www.weizlogy.gq/site/about">about</a></h3>
 </header>
 
 <aside>
-<div>
-  <strong>Category.</strong>
-  <div class="category">
+
+<section>
+  <h2 class="section-title">Category.</h2>
+  <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
   
   
-    <div class="site-management"><a href="/categories/site-management">site-management</a>(5)</div>
+    <article class="site-management" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/site-management" style="text-decoration: none; color: inherit;">
+        site-management (6)
+      </a>
+    </article>
   
-    <div class="system"><a href="/categories/system">system</a>(5)</div>
+    <article class="system" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/system" style="text-decoration: none; color: inherit;">
+        system (5)
+      </a>
+    </article>
   
-    <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
+    <article class="system-dev" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/system-dev" style="text-decoration: none; color: inherit;">
+        system-dev (15)
+      </a>
+    </article>
   
-    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(31)</div>
+    <article class="tos-addon" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/tos-addon" style="text-decoration: none; color: inherit;">
+        tos-addon (31)
+      </a>
+    </article>
   
-    <div class="tos-addon-dev"><a href="/categories/tos-addon-dev">tos-addon-dev</a>(4)</div>
+    <article class="tos-addon-dev" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/tos-addon-dev" style="text-decoration: none; color: inherit;">
+        tos-addon-dev (4)
+      </a>
+    </article>
   
-    <div class="tos-addon-x"><a href="/categories/tos-addon-x">tos-addon-x</a>(2)</div>
+    <article class="tos-addon-x" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/tos-addon-x" style="text-decoration: none; color: inherit;">
+        tos-addon-x (2)
+      </a>
+    </article>
   
   
   
   
   </div>
-</div>
-<div>
+</section>
+
+<section>
   
-  <strong>Last modified.</strong>
+  <h2 class="section-title">Last modified.</h2>
+  <div>
+    
+    <article style="">
+      <div class="[tos-addon]">
+        <div class="index-datetime">2019/03/14 06:49:24</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/objectdetector/">
+          <h3>
+            [tos-addon] オブジェクト探索アドオン
+              &ndash;&nbsp;v1.3.1
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+    <article style="">
+      <div class="[site-management]">
+        <div class="index-datetime">2018/09/22 17:05:24</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/site/about/">
+          <h3>
+            [site-management] Weizlogy
+              
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+    <article style="">
+      <div class="[tos-addon]">
+        <div class="index-datetime">2018/09/08 17:33:52</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/costumeplay/">
+          <h3>
+            [tos-addon] GUI操作で装備を保存/復元するアドオン
+              &ndash;&nbsp;v1.1.1
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+    <article style="">
+      <div class="[system-dev]">
+        <div class="index-datetime">2018/09/05 07:11:05</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">
+          <h3>
+            [system-dev] cannot find source for binding with reference について
+              
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+    <article style="">
+      <div class="[system-dev]">
+        <div class="index-datetime">2018/09/05 07:11:05</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">
+          <h3>
+            [system-dev] strutsのFormFileからローカルファイルの絶対パスを取得
+              
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+  </div>
   
-    <div><a href="http://www.weizlogy.gq/tos/addon/stealthymaster/">いいねせずキャラ情報を見るアドオン</a></div>
-    <div>@2018-02-10 08:58:15 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/partyinfoex/">パーティーメンバーの一覧に追加情報を表示するアドオン</a></div>
-    <div>@2018-01-27 07:38:47 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/showhiddenmap/">表示されないマップを表示するアドオン</a></div>
-    <div>@2018-01-17 22:13:20 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/minigaugetext/">キャラクター下HP/SPバーテキスト表示アドオン</a></div>
-    <div>@2018-01-16 01:34:09 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/showbuffsellertype/">商店のフキダシに商店名を付けるアドオン</a></div>
-    <div>@2017-12-26 00:36:58 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/compactheadsupdisplay/">Heads Up Displayをコンパクトにするアドオン</a></div>
-    <div>@2017-12-12 22:05:16 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/previewguildemblem/">ギルドマスター以外でもギルドエンブレムのプレビューができるアドオン</a></div>
-    <div>@2017-11-08 00:48:29 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/summonskilltooltip/">召喚獣にオベイで使えるスキルのツールチップを表示するアドオン</a></div>
-    <div>@2017-11-02 00:21:48 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/rmnewcollectionmark/">コレクション画面の[N]マークを非表示にするアドオン</a></div>
-    <div>@2017-08-31 21:25:07 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/fixbookread/">本アイテムの改行を正常化するアドオン</a></div>
-    <div>@2017-08-06 00:53:42 &#43;0900 JST</div>
-  
-  
-</div>
+</section>
+
 </aside>
 
-<div class="main">
-  <strong>Contents index.</strong>
-  <section>
-  
-  
-  <div class="[system]">
-    <a href="http://www.weizlogy.gq/system/item/whoisview/">RealtimeWhoisView - グローバルIP＋国名表示ツール</a>
+<div>
+
+<section style="padding-left: 10px;">
+  <h2 class="section-title">Contents index.</h2>
+  <div style="display: flex; flex-wrap: wrap;">
     
     
-    &ndash;&nbsp;v1.0.0
+    <div class="[system]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:10:49</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/item/tapete/">
+          <h3>[system] Tapete - Windows spotlight画像抽出</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">overviews. Windows10のロック画面で使われるspotlight画像を厳選し、&lt;ユーザーディレクトリ&gt;\picture\Tapete フォルダにコピーします。
+コピーは随時発生し、日次で最新状態にリセットします。
+壁紙のスライドショーで使用することを想定し、画像の厳選条件は、4KB以上かつ、 プライマリースクリーンの解像度以上としています。
+download. Tapete.zip
+install. ダウンロードしたzipを解凍し、任意の場所に配置します。
+descriptions. 画面のフォルダパスをクリックすると、該当フォルダをエクスプローラーで開きます。
+最小化すると通知アイコン化します。アイコンをクリックすると復元します。
+cautions. 自動起動はしないので、必要に応じてスタートアップに登録してください。
+コピー先は固定なので、ソフトリンクやジャンクションで任意の場所にコピーさせることもできます。</pre>
+      </article>
+    </div>
     
-    
-  </div>
-  <pre class="summary [system]">overviews. グローバルIPとIPアドレスの所属する国名を右上にひっそり表示します。
+    <div class="[system]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:10:49</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/item/whoisview/">
+          <h3>[system] RealtimeWhoisView - グローバルIP＋国名表示ツール&ndash;&nbsp;v1.0.0</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">overviews. グローバルIPとIPアドレスの所属する国名を右上にひっそり表示します。
 download. [v1.0.0] RealtimeWhoisView.exe
 introduction. 
 settings. なし。
@@ -340,16 +408,16 @@ descriptions. v1.0.0 新規作成 exeを実行するとグローバルIPと国�
 一応ドラッグできますが、位置は覚えません。
 VPN等、ネットワークが切り替わると自動的に更新します。
 Proxyは通りません。</pre>
-  
-  <div class="[tos-addon]">
-    <a href="http://www.weizlogy.gq/tos/addon/console/">アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）</a>
+      </article>
+    </div>
     
-    
-    &ndash;&nbsp;v1.2.0
-    
-    
-  </div>
-  <pre class="summary [tos-addon]">download. [v1.2.0] console.ipf
+    <div class="[tos-addon]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:09:33</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/console/">
+          <h3>[tos-addon] アドオンで定義される関数、プロパティを抽出するアドオン（開発者用）&ndash;&nbsp;v1.2.0</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">download. [v1.2.0] console.ipf
 install. README.md
 introduction. settings. jtos. cfunc.txtを ダウンロードします。
 Nexon\TreeofSaviorJP\addons\console\cfunc.txt を配置します。
@@ -363,14 +431,16 @@ v1.1.0 設定[ボタン表示状態]を追加しました。
 アドオンがロードされるとボタン表示状態が1の場合のみ、[Console]ボタンが表示されます。 ボタンを押すと抽出を開始します。 ボタン表示状態はエリアチェンジの度に読み込まれるため、ゲーム起動中にボタン表示を切り替えることも可能です。
 v1.0.0 新規作成。
 アドオンがロードされると[Console]ボタンが表示されます。ボタンを押すと抽出を開始します。 Nexon\TreeofSaviorJP\data\console.txt に抽出結果が出力されます。 実際の抽出結果は別記事にあります。</pre>
-  
-  <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/">XAMLでブロック矢印を描画する</a>
+      </article>
+    </div>
     
-    
-    
-  </div>
-  <pre class="summary [system-dev]">ブロック矢印完成図 
+    <div class="[system-dev]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:11:05</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/dev/xaml-with-block-arrow/">
+          <h3>[system-dev] XAMLでブロック矢印を描画する</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">ブロック矢印完成図 
 コード &lt;Path Stroke=&#34;Black&#34; StrokeThickness=&#34;2&#34; Fill=&#34;Gray&#34; Data=&#34;M 100 100 H 200 V 90 L 230 115 L 200 140 V 130 H 100 V 100 Z&#34; Margin=&#34;-30,-30,0,0&#34; /&gt; 解説 Pathを使って目標の位置付近に描画、Marginで微調整します。
 https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspxを読めば分かりますが簡単です。 一筆書きの要領で、矢印の左上から時計回りに線を引いています。
 「M 100 100」は「X=100,Y=100に移動」します。
@@ -381,16 +451,16 @@ https://msdn.microsoft.com/en-us/library/ms752293%28v=vs.110%29.aspxを読めば
 座標の算出には、描画開始位置、シャフトの幅と高さ、アローヘッドの出代と角度を決めます。 今回は、描画開始位置=100,100、シャフトの幅=100、高さ=30、アローヘッドの出代=10、角度=60にしました。
 
 アローヘッドの頂点座標の算出は、頂点がシャフトの中央にあることと、三平方の定理を使えばきっちり出せます。 つまり、シャフトの幅は偶数が良いです。</pre>
-  
-  <div class="[tos-addon]">
-    <a href="http://www.weizlogy.gq/tos/addon/distance/">自キャラから近隣モンスターまでの距離を表示するアドオン</a>
+      </article>
+    </div>
     
-    
-    &ndash;&nbsp;v1.1.1
-    
-    
-  </div>
-  <pre class="summary [tos-addon]">download. [v1.1.1] distance.ipf
+    <div class="[tos-addon]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:09:33</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/distance/">
+          <h3>[tos-addon] 自キャラから近隣モンスターまでの距離を表示するアドオン&ndash;&nbsp;v1.1.1</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">download. [v1.1.1] distance.ipf
 install. README.md
 introduction.  settings. descriptions. v1.1.1 性能改善しました。
 v1.1.0 メートル単位対応しました。
@@ -399,16 +469,16 @@ v1.1.0 メートル単位対応しました。
 v1.0.0 新規作成。
 アドオンがロードされると近隣（500範囲内）モンスターに自キャラからの距離が表示されます。
 単位はよくわかっていませんが、座標の差分という雰囲気です。距離が300を超えると、表示が消えます。</pre>
-  
-  <div class="[tos-addon-x]">
-    <a href="http://www.weizlogy.gq/tos/addon-x/fly/">飛行アドオン</a>
+      </article>
+    </div>
     
-    
-    &ndash;&nbsp;v1.2.0
-    
-    
-  </div>
-  <pre class="summary [tos-addon-x]">download. [v1.2.0] fly.ipf
+    <div class="[tos-addon-x]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:09:33</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon-x/fly/">
+          <h3>[tos-addon-x] 飛行アドオン&ndash;&nbsp;v1.2.0</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">download. [v1.2.0] fly.ipf
 install. README.md
 introduction.  settings. Nexon\TreeofSaviorJP\addons\fly\settings.txt を作成します。
 以下の初期設定をコピペします。
@@ -434,14 +504,16 @@ v1.0.0 新規作成。
 飛行状態でも地上の敵を攻撃できます。 飛行状態では地上の敵はこちらを近接攻撃できません。
 実際は地上を歩行しているのでトラップには気をつけてください。
 飛行状態ではスキルが使用不可ですが、ノックバックを受けるとスキルが使用可能になりますので、わざとノックバックするようになっています。</pre>
-  
-  <div class="[tos-addon-dev]">
-    <a href="http://www.weizlogy.gq/tos/addon-dev/create-addon/">アドオン作成～設置方法まとめ</a>
+      </article>
+    </div>
     
-    
-    
-  </div>
-  <pre class="summary [tos-addon-dev]">必要なもの  IPF Suite IPFUnpacker  作成手順 1. アドオンの名前を決める &ldquo;xxxaddonxxx&rdquo;としてみます。全て小文字、記号なしが良いです。
+    <div class="[tos-addon-dev]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:10:05</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon-dev/create-addon/">
+          <h3>[tos-addon-dev] アドオン作成～設置方法まとめ</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">必要なもの  IPF Suite IPFUnpacker  作成手順 1. アドオンの名前を決める &ldquo;xxxaddonxxx&rdquo;としてみます。全て小文字、記号なしが良いです。
 2. アドオンのGUIを作る &ldquo;xxxaddonxxx.xml&rdquo;ファイルを作成します。アドオン名とuiframe@nameの値が一致するようにします。
 &lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; ?&gt; &lt;uiframe name=&#34;xxxaddonxxx&#34; x=&#34;10&#34; y=&#34;10&#34; width=&#34;100&#34; height=&#34;100&#34;&gt; &lt;frame title=&#34;XXXaddonXXX&#34; snapclient=&#34;true&#34; snapframe=&#34;true&#34;/&gt; &lt;option closebutton=&#34;false&#34; hideable=&#34;false&#34;/&gt; &lt;input hittest=&#34;true&#34;/&gt; &lt;layer layerlevel=&#34;31&#34; /&gt; &lt;draw blend=&#34;100&#34; drawtitlebar=&#34;false&#34; drawframe=&#34;false&#34;/&gt; &lt;controls&gt; &lt;richtext name=&#34;dummy&#34; /&gt; &lt;/controls&gt; &lt;/uiframe&gt; 3. アドオンのスクリプトを作る &ldquo;xxxaddonxxx.lua&rdquo;ファイルを作成します。アドオン名と関数名の&rdquo;_ON_INIT&rdquo;前までが、大文字で一致するようにします。
 function XXXADDONXXX_ON_INIT(addon, frame) -- 任意の初期化処理 end 4. アドオンをパッケージングする IPFSuite.exeを起動、上部メニューの[New]、[New Container]の順序でボタンを押します。
@@ -451,66 +523,54 @@ function XXXADDONXXX_ON_INIT(addon, frame) -- 任意の初期化処理 end 4. �
 上部メニューの[Save]ボタンを押します。保存するファイル名は&rdquo;xxxaddonxxx.ipf&rdquo;とします。
 5. アドオンを暗号化する IPF Unpackerで暗号化します。&rdquo;Done!&ldquo;と表示されれば成功です。
 &gt; ipf_unpack.</pre>
-  
-  <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/openweathermap-with-java-bazel/">Codeaywhere&#43;Java&#43;bazelでOpenWeatherMapのAPIを使用し現在の気象情報を取得する</a>
+      </article>
+    </div>
     
-    
-    
-  </div>
-  <pre class="summary [system-dev]">OpenWeatherMapの使い方 OpenWeatherMapは各種気象情報提供サービスです。
+    <div class="[system-dev]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:11:05</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/dev/openweathermap-with-java-bazel/">
+          <h3>[system-dev] Codeaywhere&#43;Java&#43;bazelでOpenWeatherMapのAPIを使用し現在の気象情報を取得する</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">OpenWeatherMapの使い方 OpenWeatherMapは各種気象情報提供サービスです。
 サインアップすれば無料で使えるAPIも提供しています。
 今回は現在のみなので、Current weather data APIを使用します。 RESTサービスになっており、以下のURLで情報がJSON形式で取得できます。（{city name}は英語で）
 http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;APPID={Your API Key}  JSON形式ではJavaで扱いにくいので、&rdquo;mode=xml&rdquo;パラメータでXML形式にします。
 http://api.openweathermap.org/data/2.5/weather?q={city name}&amp;mode=xml&amp;APPID={Your API Key}  気象情報は以下のように返却されます。（例は{city name}=Tokyo）
 &lt;?xml version=&#34;1.0&#34;?&gt; &lt;current&gt; &lt;city id=&#34;1850147&#34; name=&#34;Tokyo&#34;&gt; &lt;coord lat=&#34;35.69&#34; lon=&#34;139.69&#34;/&gt; &lt;country&gt;JP&lt;/country&gt; &lt;sun set=&#34;2016-08-15T09:30:23&#34; rise=&#34;2016-08-14T20:00:21&#34;/&gt; &lt;/city&gt; &lt;temperature unit=&#34;kelvin&#34; max=&#34;304.82&#34; min=&#34;298.71&#34; value=&#34;301.68&#34;/&gt; &lt;humidity unit=&#34;%&#34; value=&#34;85&#34;/&gt; &lt;pressure unit=&#34;hPa&#34; value=&#34;1001&#34;/&gt; &lt;wind&gt; &lt;speed name=&#34;Gentle Breeze&#34; value=&#34;3.41&#34;/&gt; &lt;gusts/&gt; &lt;direction name=&#34;South&#34; value=&#34;179.504&#34; code=&#34;S&#34;/&gt; &lt;/wind&gt; &lt;clouds name=&#34;clear sky&#34; value=&#34;8&#34;/&gt; &lt;visibility/&gt; &lt;precipitation unit=&#34;3h&#34; value=&#34;0.245&#34; mode=&#34;rain&#34;/&gt; &lt;weather value=&#34;light rain&#34; icon=&#34;10d&#34; number=&#34;500&#34;/&gt; &lt;lastupdate value=&#34;2016-08-15T07:41:15&#34;/&gt; &lt;/current&gt; JavaでOpenWeatherMapのAPIを呼び出す RESTクライアントは色々ありますが、お手軽なApache Commonsのhttpclientとfluent-hcにします。</pre>
-  
-  <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/">Codeanywhereでbazelを使う</a>
+      </article>
+    </div>
     
-    
-    
-  </div>
-  <pre class="summary [system-dev]">CodeanywhereはクラウドIDEで、sudoが許可されたターミナルを使うことができます。 Google+アカウント連携ですぐに使えます。
+    <div class="[system-dev]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:11:05</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/dev/codeanywhere-with-bezel/">
+          <h3>[system-dev] Codeanywhereでbazelを使う</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">CodeanywhereはクラウドIDEで、sudoが許可されたターミナルを使うことができます。 Google+アカウント連携ですぐに使えます。
 bazelは、mavenやGradleのようなビルドツールで、様々な言語のビルドが可能です。
 Codeanyhwereにbazelをインストール bazelはjdk1.8以降（jdk1.7はサポートされているが非推奨）が必須ですが、Codeanywhereはjdk1.7の環境です。 今回はjdk1.7のままでインストールします。
 cabox@box-codeanywhere:~/workspace$ java -version java version &#34;1.7.0_95&#34; OpenJDK Runtime Environment (IcedTea 2.6.4) (7u95-2.6.4-0ubuntu0.14.04.1) OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode) Installig Bazelを参考に、以下のコマンドを打ちます。
 $ echo &#34;deb [arch=amd64] http://storage.googleapis.com/bazel-apt testing jdk1.7&#34; | sudo tee /etc/apt/sources.list.d/bazel.list $ curl https://storage.googleapis.com/bazel-apt/doc/apt-key.pub.gpg | sudo apt-key add - sudo apt-get update &amp;&amp; sudo apt-get install bazel bazelでjavaをビルド 最低限の必要なファイルを作成します。
 cabox@box-codeanywhere:~/workspace$ mkdir -p hello/src/main/java/gq/weizlogy cabox@box-codeanywhere:~/workspace$ touch hello/src/main/java/gq/weizlogy/Main.java cabox@box-codeanywhere:~/workspace$ touch hello/WORKSPACE cabox@box-codeanywhere:~/workspace$ touch hello/BUILD hello/src/main/java/gq/weizlogy/Main.</pre>
-  
-  <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/">Monodevelopで埋め込みリソースを使う</a>
+      </article>
+    </div>
     
-    
-    
-  </div>
-  <pre class="summary [system-dev]">ソリューションエクスプローラーで対象のファイルを右クリックします。
+    <div class="[system-dev]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:11:05</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/dev/monodevelop-embed-resource/">
+          <h3>[system-dev] Monodevelopで埋め込みリソースを使う</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">ソリューションエクスプローラーで対象のファイルを右クリックします。
 「ビルドアクション &gt; EmbeddedResource」を選択します。以上です。
 プログラムからのアクセスで必要なリソースIDは、デフォルトネームスペース＋ファイル名となります。 リソースIDはプロパティビューで変更可能です。
 使い方は以下の通りです。
 using (var stream = new System.IO.StreamReader(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream(&#34;[ResourceID]&#34;), true)) { ... }</pre>
-  
-  <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/step-counter-is/">ステップカウンターのあるべき姿を考察する</a>
-    
-    
+      </article>
+    </div>
     
   </div>
-  <pre class="summary [system-dev]">ステップカウンターとは？ LOCを計測するツールです。LOCはLines Of Codeの略で、プログラムの規模として扱います。
- 空行（改行など空白だけの行）やコメント行（コメントと空白だけの行）は除く、2つの命令が書かれた行は2行と数える、括弧だけの行を除くなどの換算をした行数を論理LOC (logical LOC) といい、通常はこちらを使う。
-&ndash; https://ja.wikipedia.org/wiki/LOC
- 2つの命令が書かれた行は2行と数える、括弧だけの行を除くなどの換算してますか？ 世にあるステップカウンターは、有効行（実行行）、コメント行、空白行の3種を見ていることが多く、高度な換算はされていないようです。
-そこで、*本来あるべきステップカウンター*を、以下の考察に基づき鋭意作成中です。
-詳細はこちらをご覧ください。
-本来あるべきステップカウンターの想定仕様概要  2つの命令が書かれた行は2行と数える。 括弧だけの行を除く。 ディレクティブは考慮が必要。  本来あるべきステップカウンターの想定仕様詳細 2つの命令が書かれた行は2行と数える C言語系統は命令の終端に&rdquo;;&ldquo;が必要な言語使用のため、その終端記号（または文字）を数えれば良い。また、IF文では&rdquo;{&ldquo;、SWITCH-CASE文では&rdquo;{&ldquo;と&rdquo;:&ldquo;に着目することで命令を計測します。
-ただし、FOR文は3式で1セットの命令であるため、FOR文中の終端記号は無視しなければいけません。 VBやRubyのような言語、HTMLのようなタグが構成要素の場合は検討中です。
-括弧だけの行を除く C言語系統はブロックの終端記号&rdquo;}&ldquo;がありますが、1命令のセットであるため、開始記号&rdquo;{&ldquo;とどちらか一方を測定対象とすべきです。 VBやRubyのような言語の&rdquo;END&rdquo;キーワードも同様です。
-ディレクティブは考慮が必要 Javaのimport文、C#のusingディレクティブは、パッケージ名を省略するためだけに存在するもので、記載の有無がプログラムの動作に影響を与えませんので、命令とは位置付け異なります。
-C言語系統のプリプロセッサーディレクティブは微妙ですが、動作に影響を与えるものもあるため、命令と考えます。
-ただし、&rdquo;#endif&rdquo;、&rdquo;#region&rdquo;、&rdquo;#endregion&rdquo;は非命令とし計測しません。
-C言語の#includeは、必須であることを除き、C#のusingディレクティブ同様、非命令とします。
-考察は続きます。。。</pre>
-  
   
 
 <ul class="pagination">
@@ -611,14 +671,8 @@ C言語の#includeは、必須であることを除き、C#のusingディレク�
     
 </ul>
 
-  </section>
-  <amp-ad type="adsense"
-    layout="responsive"
-    width=300
-    height=250
-    data-ad-client="ca-pub-3395565787038716"
-    data-ad-slot="6217845612">
-  </amp-ad>
+</section>
+
 </div>
 
 <footer>
@@ -626,7 +680,7 @@ C言語の#includeは、必須であることを除き、C#のusingディレク�
   <p>© 2010 weizlogy.<p>
   <p>Powered by hugo &#43; github pages.<p>
   <p><a href="https://twitter.com/twihamatter">Twitter</a></p>
-<p><a href="https://plus.google.com/u/0/111668640363056183135">Google+</a></p>
+  <p><a href="https://plus.google.com/u/0/111668640363056183135">Google+</a></p>
 
 
 <amp-analytics type="googleanalytics" id="analytics1">

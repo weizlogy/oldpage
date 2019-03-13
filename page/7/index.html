@@ -10,46 +10,38 @@
   Weizlogy
 
 </title>
-
-
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
-
+<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet">
 
 <style amp-custom>
-<!-- @style-ignore -->
-/* part of base. */
 body {
-  font-family: "Noto Sans Japanese", "monospace";
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-h1 {
-  font-size: 3.0em;
-}
-h1 > a {
-  text-decoration: none;
-  color: inherit;
-}
-h1::first-letter {
-  font-size: 3.5em;
-  color: orange;
+  font-family: 'Noto Sans Japanese', 'monospace';
 }
 
 header {
-  clear: left;
+  font-family: 'Lobster', cursive;
 }
 header > h1 {
-  font-family: 'Lobster', cursive;
-  display: inline;
+  font-family: inherit;
   color: #666;
 }
+header > h1::first-letter {
+  color: orange;
+}
+
 header > h2 {
-  font-family: 'Lobster', cursive;
-  display: inline;
-  margin-left: 10px;
+  font-family: inherit;
   color: #999;
+}
+
+header > h3 {
+  font-family: inherit;
+  color: #CCC;
+}
+
+h1 > a, h3 > a {
+  text-decoration: none;
+  color: inherit;
 }
 
 footer {
@@ -60,10 +52,7 @@ footer > p {
   display: inline;
   padding-left: 10px;
 }
-div.main {
-  /*width: 80%;*/
-  padding-left: 10px;
-}
+
 /* part of single. */
 article > div > h2 {
   padding: 0px 0px 5px 5px;
@@ -84,33 +73,22 @@ section > h1 {
   border-left: 7px solid #999;
   border-bottom: 1px solid #999;
 }
-section > .summary {
-  font-size: 85%;
-  color: #999;
-}
+
 aside {
   padding-left: 10px;
   margin-top: 10px;
+}
+
+.section-title {
+  font-family: 'Lobster', cursive;
+  color: #333
+}
+
+.index-datetime {
   font-size: 85%;
-}
-aside > div {
-  margin-bottom: 10px;
-}
-.category {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.category > div {
-  margin-right: 10px;
-}
-.lastmod-title {
-  padding-bottom: 10px;
-}
-.blog-date {
   color: #999;
-  margin-left: 10px;
 }
+
 /* part of code pagination. */
 .pagination {
   display: inline-block;
@@ -139,6 +117,7 @@ pre {
   padding: 5px;
   border: 1px solid #999;
   word-wrap: break-word;
+  white-space: pre-wrap;
 }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
@@ -200,12 +179,13 @@ pre {
 .highlight .vg { color: #008080 } /* Name.Variable.Global */
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
-<!-- @style-ignore -->
+
 /* hidden category. */
 .tos-addon-x, .\[tos-addon-x\] {
   display: none;
 }
 </style>
+
 
 
 <script type="application/ld+json">
@@ -227,7 +207,7 @@ pre {
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2018-09-05 07:11:05.4399273 &#43;0900 JST",
+  "dateModified": "2018-09-05 07:11:05.4389015 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -237,6 +217,13 @@ pre {
   }
 }
 </script>
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Weizlogy" />
+<meta name="twitter:description" content="" />
+
 
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -248,110 +235,199 @@ pre {
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
 
-<body>
+<body style="padding-left: 5px; padding-right: 5px;">
 <div id="container">
 
-<header>
-
-  <h1><a href="http://www.weizlogy.gq/">Weizlogy</a></h1>
-  <h2> - Live in der Zukunft.</h2>
-
+<header style="display: flex; align-items: baseline;">
+  <h1 style="line-height: 0px;"><a href="http://www.weizlogy.gq/">Weizlogy</a></h1>
+  <h2 style="margin-left: 10px;"> - Live in der Zukunft.</h2>
+  <h3 style="align-self: flex-end; margin-left: auto; margin-right: 10px;"><a href="http://www.weizlogy.gq/site/about">about</a></h3>
 </header>
 
 <aside>
-<div>
-  <strong>Category.</strong>
-  <div class="category">
+
+<section>
+  <h2 class="section-title">Category.</h2>
+  <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
   
   
-    <div class="site-management"><a href="/categories/site-management">site-management</a>(5)</div>
+    <article class="site-management" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/site-management" style="text-decoration: none; color: inherit;">
+        site-management (6)
+      </a>
+    </article>
   
-    <div class="system"><a href="/categories/system">system</a>(5)</div>
+    <article class="system" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/system" style="text-decoration: none; color: inherit;">
+        system (5)
+      </a>
+    </article>
   
-    <div class="system-dev"><a href="/categories/system-dev">system-dev</a>(15)</div>
+    <article class="system-dev" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/system-dev" style="text-decoration: none; color: inherit;">
+        system-dev (15)
+      </a>
+    </article>
   
-    <div class="tos-addon"><a href="/categories/tos-addon">tos-addon</a>(31)</div>
+    <article class="tos-addon" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/tos-addon" style="text-decoration: none; color: inherit;">
+        tos-addon (31)
+      </a>
+    </article>
   
-    <div class="tos-addon-dev"><a href="/categories/tos-addon-dev">tos-addon-dev</a>(4)</div>
+    <article class="tos-addon-dev" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/tos-addon-dev" style="text-decoration: none; color: inherit;">
+        tos-addon-dev (4)
+      </a>
+    </article>
   
-    <div class="tos-addon-x"><a href="/categories/tos-addon-x">tos-addon-x</a>(2)</div>
+    <article class="tos-addon-x" style="background-color: #CCC; padding: 5px; margin-right: 10px; border-radius: 8px; border: 2px solid #999">
+      <a href="/categories/tos-addon-x" style="text-decoration: none; color: inherit;">
+        tos-addon-x (2)
+      </a>
+    </article>
   
   
   
   
   </div>
-</div>
-<div>
+</section>
+
+<section>
   
-  <strong>Last modified.</strong>
+  <h2 class="section-title">Last modified.</h2>
+  <div>
+    
+    <article style="">
+      <div class="[tos-addon]">
+        <div class="index-datetime">2019/03/14 06:49:24</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/objectdetector/">
+          <h3>
+            [tos-addon] オブジェクト探索アドオン
+              &ndash;&nbsp;v1.3.1
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+    <article style="">
+      <div class="[site-management]">
+        <div class="index-datetime">2018/09/22 17:05:24</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/site/about/">
+          <h3>
+            [site-management] Weizlogy
+              
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+    <article style="">
+      <div class="[tos-addon]">
+        <div class="index-datetime">2018/09/08 17:33:52</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/tos/addon/costumeplay/">
+          <h3>
+            [tos-addon] GUI操作で装備を保存/復元するアドオン
+              &ndash;&nbsp;v1.1.1
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+    <article style="">
+      <div class="[system-dev]">
+        <div class="index-datetime">2018/09/05 07:11:05</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">
+          <h3>
+            [system-dev] cannot find source for binding with reference について
+              
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+    <article style="">
+      <div class="[system-dev]">
+        <div class="index-datetime">2018/09/05 07:11:05</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">
+          <h3>
+            [system-dev] strutsのFormFileからローカルファイルの絶対パスを取得
+              
+          </h3>
+        </a>
+      </div>
+    </article>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to left, white, black, white);">
+    
+  </div>
   
-    <div><a href="http://www.weizlogy.gq/tos/addon/stealthymaster/">いいねせずキャラ情報を見るアドオン</a></div>
-    <div>@2018-02-10 08:58:15 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/partyinfoex/">パーティーメンバーの一覧に追加情報を表示するアドオン</a></div>
-    <div>@2018-01-27 07:38:47 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/showhiddenmap/">表示されないマップを表示するアドオン</a></div>
-    <div>@2018-01-17 22:13:20 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/minigaugetext/">キャラクター下HP/SPバーテキスト表示アドオン</a></div>
-    <div>@2018-01-16 01:34:09 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/showbuffsellertype/">商店のフキダシに商店名を付けるアドオン</a></div>
-    <div>@2017-12-26 00:36:58 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/compactheadsupdisplay/">Heads Up Displayをコンパクトにするアドオン</a></div>
-    <div>@2017-12-12 22:05:16 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/previewguildemblem/">ギルドマスター以外でもギルドエンブレムのプレビューができるアドオン</a></div>
-    <div>@2017-11-08 00:48:29 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/summonskilltooltip/">召喚獣にオベイで使えるスキルのツールチップを表示するアドオン</a></div>
-    <div>@2017-11-02 00:21:48 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/rmnewcollectionmark/">コレクション画面の[N]マークを非表示にするアドオン</a></div>
-    <div>@2017-08-31 21:25:07 &#43;0900 JST</div>
-  
-    <div><a href="http://www.weizlogy.gq/tos/addon/fixbookread/">本アイテムの改行を正常化するアドオン</a></div>
-    <div>@2017-08-06 00:53:42 &#43;0900 JST</div>
-  
-  
-</div>
+</section>
+
 </aside>
 
-<div class="main">
-  <strong>Contents index.</strong>
-  <section>
-  
-  
-  <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">strutsのFormFileからローカルファイルの絶対パスを取得</a>
+<div>
+
+<section style="padding-left: 10px;">
+  <h2 class="section-title">Contents index.</h2>
+  <div style="display: flex; flex-wrap: wrap;">
     
     
+    <div class="[system-dev]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:11:05</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/dev/struts-form-to-servlet-easily/">
+          <h3>[system-dev] strutsでJSPで動的に一覧表示した複数のForm値をServletで簡単に渡す</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">strutsのActionFormには、「map-backed properties」「list-backed properties」という機能があります。
+ActionFormにMapやListのフィールドと適切なアクセサーメソッドを用意することで、JSP-Servlet間のデータ送受信が動的に行われる仕組みです。
+Formのフィールドをいくつも用意しなくていいところが、とても便利です。
+基本的な使い方は、下記公式リンクが分かりやすくなっています。
+http://struts.apache.org/1.x/userGuide/building_controller.html#map_action_form_classes
+今回の趣旨は、「map-backed properties」「list-backed properties」を併用することです。 検索結果等JSPで動的に一覧表示した複数のForm値を、簡単にActionで受け取ることができます。
+struts1.3.10
+java 1.6.0_18
+以下のようなFormクラスを用意します。
+import org.apache.commons.beanutils.LazyDynaList; import org.apache.commons.beanutils.LazyDynaMap; public HogeForm extends ActionForm { private LazyDynaList values = new LazyDynaList(LazyDynaMap.class); public String getValue(int index) { return values.get(index); } public void setValue(int index, Object value) { return values.set(index, value); } public List&lt;Map&lt;String, String&gt;&gt; getValues() { // LazyDynaList, LazyDynaMapのままでは扱いにくいため、より一般的な型（List, Map）に変換します。  List&lt;Map&lt;String, String&gt;&gt; convertValues = new ArrayList&lt;Map&lt;String, String&gt;&gt;(); for (Object item : values) { convertValues.</pre>
+      </article>
+    </div>
     
-  </div>
-  <pre class="summary [system-dev]">strutsのFormFileからローカルファイルの絶対パスを取得したいのです。 （取得しても無意味ですが）
+    <div class="[system-dev]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:11:05</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/dev/struts-formfile-to-local-path/">
+          <h3>[system-dev] strutsのFormFileからローカルファイルの絶対パスを取得</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">strutsのFormFileからローカルファイルの絶対パスを取得したいのです。 （取得しても無意味ですが）
 eclipseのデバッガで参照すると、確かにprivate変数に絶対パスを持っていますが、アクセスするためのメソッドがありません。
 リフレクションでアクセス可能です。
 DiskFileItemを使用するために、「commons-fileupload.jar」が必要です。
 struts1.3.10
 java 1.6.0_18
 // formFileの実体は「org.apache.struts.upload.CommonsMultipartRequestHandler.CommonsFormFile」 Field f = formFile.getClass().getDeclaredField(&#34;fileItem&#34;); f.setAccessible(true); // fileItemは「org.apache.commons.fileupload.FileItem」を実装した「org.apache.commons.fileupload.disk.DiskFileItem」 DiskFileItem item = (DiskFileItem) f.get(formFile); System.</pre>
-  
-  <div class="[system-dev]">
-    <a href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">cannot find source for binding with reference について</a>
+      </article>
+    </div>
     
-    
-    
-  </div>
-  <pre class="summary [system-dev]">掲題の件について、検索キーワードにあがりましたので、簡単にまとめました。
+    <div class="[system-dev]">
+      <article style="margin: 0 0 10px 10px; padding: 5px; border: 2px solid #999; border-radius: 8px; width: 300px; height: 400px; overflow: hidden;">
+        <div class="index-datetime">2018/09/05 07:11:05</div>
+        <a style="text-decoration: none; color: inherit;" href="http://www.weizlogy.gq/system/dev/cannot-find-source-for-binding-with-reference/">
+          <h3>[system-dev] cannot find source for binding with reference について</h3>
+        </a>
+        <pre style="overflow: hidden; border: 0; margin-left: 0px;">掲題の件について、検索キーワードにあがりましたので、簡単にまとめました。
 正式には、以下のErrorが発生しました。
 System.Windows.Data Error: 4 : Cannot find source for binding with reference &lsquo;RelativeSource FindAncestor, AncestorType=&lsquo;System.Windows.Controls.ItemsControl&rsquo;, AncestorLevel=&lsquo;1&rdquo;. BindingExpression:Path=HorizontalContentAlignment; DataItem=null; target element is &lsquo;ListBoxItem&rsquo; (Name=&ldquo;); target property is &lsquo;HorizontalContentAlignment&rsquo; (type &lsquo;HorizontalAlignment&rsquo;)
 System.Windows.Data Error: 4 : Cannot find source for binding with reference &lsquo;RelativeSource FindAncestor, AncestorType=&lsquo;System.Windows.Controls.ItemsControl&rsquo;, AncestorLevel=&lsquo;1&rdquo;. BindingExpression:Path=VerticalContentAlignment; DataItem=null; target element is &lsquo;ListBoxItem&rsquo; (Name=&ldquo;); target property is &lsquo;VerticalContentAlignment&rsquo; (type &lsquo;VerticalAlignment&rsquo;)
 xamlのStyle定義のSetterプロパティでAlignmentを定義していると出るみたいです。 定義を外すとErrorは出ません。 みたいです。というのは、何故なのか理由が分からないためです。
 以下、実際のコードの抜粋です。
 &lt;Style TargetType=&#34;{x:Type ListBoxItem}&#34;&gt; &lt;Setter Property=&#34;HorizontalContentAlignment&#34; Value=&#34;{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&#34;/&gt; &lt;Setter Property=&#34;VerticalContentAlignment&#34; Value=&#34;{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}&#34;/&gt;</pre>
-  
+      </article>
+    </div>
+    
+  </div>
   
 
 <ul class="pagination">
@@ -450,14 +526,8 @@ xamlのStyle定義のSetterプロパティでAlignmentを定義していると�
     
 </ul>
 
-  </section>
-  <amp-ad type="adsense"
-    layout="responsive"
-    width=300
-    height=250
-    data-ad-client="ca-pub-3395565787038716"
-    data-ad-slot="6217845612">
-  </amp-ad>
+</section>
+
 </div>
 
 <footer>
@@ -465,7 +535,7 @@ xamlのStyle定義のSetterプロパティでAlignmentを定義していると�
   <p>© 2010 weizlogy.<p>
   <p>Powered by hugo &#43; github pages.<p>
   <p><a href="https://twitter.com/twihamatter">Twitter</a></p>
-<p><a href="https://plus.google.com/u/0/111668640363056183135">Google+</a></p>
+  <p><a href="https://plus.google.com/u/0/111668640363056183135">Google+</a></p>
 
 
 <amp-analytics type="googleanalytics" id="analytics1">

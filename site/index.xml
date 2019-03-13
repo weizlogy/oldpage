@@ -6,10 +6,19 @@
     <description>Recent content in Sites on Weizlogy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 May 2017 17:31:42 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 22 Sep 2018 16:41:21 +0900</lastBuildDate>
     
 	<atom:link href="http://www.weizlogy.gq/site/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Weizlogy</title>
+      <link>http://www.weizlogy.gq/site/about/</link>
+      <pubDate>Sat, 22 Sep 2018 16:41:21 +0900</pubDate>
+      
+      <guid>http://www.weizlogy.gq/site/about/</guid>
+      <description>aaa</description>
+    </item>
     
     <item>
       <title>bloggerからhugo&#43;github pagesに移行した理由</title>

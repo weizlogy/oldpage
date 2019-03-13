@@ -9,46 +9,38 @@
   オブジェクト探索アドオン &ndash; Weizlogy
 
 </title>
-
-
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
-
+<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet">
 
 <style amp-custom>
-<!-- @style-ignore -->
-/* part of base. */
 body {
-  font-family: "Noto Sans Japanese", "monospace";
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-h1 {
-  font-size: 3.0em;
-}
-h1 > a {
-  text-decoration: none;
-  color: inherit;
-}
-h1::first-letter {
-  font-size: 3.5em;
-  color: orange;
+  font-family: 'Noto Sans Japanese', 'monospace';
 }
 
 header {
-  clear: left;
+  font-family: 'Lobster', cursive;
 }
 header > h1 {
-  font-family: 'Lobster', cursive;
-  display: inline;
+  font-family: inherit;
   color: #666;
 }
+header > h1::first-letter {
+  color: orange;
+}
+
 header > h2 {
-  font-family: 'Lobster', cursive;
-  display: inline;
-  margin-left: 10px;
+  font-family: inherit;
   color: #999;
+}
+
+header > h3 {
+  font-family: inherit;
+  color: #CCC;
+}
+
+h1 > a, h3 > a {
+  text-decoration: none;
+  color: inherit;
 }
 
 footer {
@@ -59,10 +51,7 @@ footer > p {
   display: inline;
   padding-left: 10px;
 }
-div.main {
-  /*width: 80%;*/
-  padding-left: 10px;
-}
+
 /* part of single. */
 article > div > h2 {
   padding: 0px 0px 5px 5px;
@@ -83,33 +72,22 @@ section > h1 {
   border-left: 7px solid #999;
   border-bottom: 1px solid #999;
 }
-section > .summary {
-  font-size: 85%;
-  color: #999;
-}
+
 aside {
   padding-left: 10px;
   margin-top: 10px;
+}
+
+.section-title {
+  font-family: 'Lobster', cursive;
+  color: #333
+}
+
+.index-datetime {
   font-size: 85%;
-}
-aside > div {
-  margin-bottom: 10px;
-}
-.category {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.category > div {
-  margin-right: 10px;
-}
-.lastmod-title {
-  padding-bottom: 10px;
-}
-.blog-date {
   color: #999;
-  margin-left: 10px;
 }
+
 /* part of code pagination. */
 .pagination {
   display: inline-block;
@@ -138,6 +116,7 @@ pre {
   padding: 5px;
   border: 1px solid #999;
   word-wrap: break-word;
+  white-space: pre-wrap;
 }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
@@ -199,7 +178,7 @@ pre {
 .highlight .vg { color: #008080 } /* Name.Variable.Global */
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
-<!-- @style-ignore -->
+
 /* hidden category. */
 .tos-addon-x, .\[tos-addon-x\] {
   display: none;
@@ -227,7 +206,7 @@ pre {
       "url": "http://www.weizlogy.gq//favicon.ico"
     }
   },
-  "dateModified": "2018-09-05 07:09:33.8845539 &#43;0900 JST",
+  "dateModified": "2019-03-14 06:49:24.8245454 &#43;0900 JST",
   "mainEntityOfPage": "1",
   "image": {
     "@type": "ImageObject",
@@ -242,7 +221,7 @@ pre {
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="オブジェクト探索アドオン" />
-<meta name="twitter:description" content="download. [v1.3.0] objectdetector.ipf
+<meta name="twitter:description" content="download. [v1.3.1] objectdetector.ipf
 install. README.md
 introduction. 
 
@@ -261,25 +240,26 @@ settings. Nexon\TreeofSaviorJP\addons\objectdetector\settings.txt を作成し�
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
 
-<body>
+<body style="padding-left: 5px; padding-right: 5px;">
 <div id="container">
 
-<header>
-
-  <h1><a href="http://www.weizlogy.gq/">Weizlogy</a></h1>
-  <h2> - Live in der Zukunft.</h2>
-
+<header style="display: flex; align-items: baseline;">
+  <h1 style="line-height: 0px;"><a href="http://www.weizlogy.gq/">Weizlogy</a></h1>
+  <h2 style="margin-left: 10px;"> - Live in der Zukunft.</h2>
+  <h3 style="align-self: flex-end; margin-left: auto; margin-right: 10px;"><a href="http://www.weizlogy.gq/site/about">about</a></h3>
 </header>
 
 <aside>
+
 </aside>
 
 <div>
+
 <article>
 
  <h1><a href="http://www.weizlogy.gq/tos/addon/objectdetector/">オブジェクト探索アドオン</a>
   
-    &ndash;&nbsp;v1.3.0
+    &ndash;&nbsp;v1.3.1
   
 </h1>
  <div>
@@ -287,7 +267,7 @@ settings. Nexon\TreeofSaviorJP\addons\objectdetector\settings.txt を作成し�
 
 <h2 id="download">download.</h2>
 
-<p><a href="https://github.com/weizlogy/tos/releases/download/objectdetector-v1.3.0/objectdetector.ipf">[v1.3.0] objectdetector.ipf</a></p>
+<p><a href="https://github.com/weizlogy/tos/releases/download/objectdetector/objectdetector-v1.3.1.ipf">[v1.3.1] objectdetector.ipf</a></p>
 
 <h2 id="install">install.</h2>
 
@@ -483,6 +463,12 @@ classnameはアイコンのツールチップ[b=]で確認できます。</p>
 
 <h2 id="descriptions">descriptions.</h2>
 
+<h3 id="v1-3-1">v1.3.1</h3>
+
+<h4 id="pvpマップ動作停止対応">PVPマップ動作停止対応</h4>
+
+<p>PVPマップでは動きません。</p>
+
 <h3 id="v1-3-0">v1.3.0</h3>
 
 <h4 id="ボス系サイズ拡大対応">ボス系サイズ拡大対応</h4>
@@ -581,7 +567,7 @@ classnameはアイコンのツールチップ[b=]で確認できます。</p>
 
 </article>
 <div class="blog-date">
-  2017/03/27 19:39:27 - 2018/09/05 07:09:33
+  2017/03/27 19:39:27 - 2019/03/14 06:49:24
 </div>
 <amp-ad type="adsense"
   layout="responsive"
@@ -590,6 +576,7 @@ classnameはアイコンのツールチップ[b=]で確認できます。</p>
   data-ad-client="ca-pub-3395565787038716"
   data-ad-slot="6078244818">
 </amp-ad>
+
 </div>
 
 <footer>
@@ -597,7 +584,7 @@ classnameはアイコンのツールチップ[b=]で確認できます。</p>
   <p>© 2010 weizlogy.<p>
   <p>Powered by hugo &#43; github pages.<p>
   <p><a href="https://twitter.com/twihamatter">Twitter</a></p>
-<p><a href="https://plus.google.com/u/0/111668640363056183135">Google+</a></p>
+  <p><a href="https://plus.google.com/u/0/111668640363056183135">Google+</a></p>
 
 
 <amp-analytics type="googleanalytics" id="analytics1">
