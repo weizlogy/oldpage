@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.weizlogy.gq/site/about/</loc>
-    <lastmod>2018-09-22T17:05:24+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.weizlogy.gq/tos/addon/costumeplay/</loc>
     <lastmod>2018-09-08T17:33:52+09:00</lastmod>
   </url>
@@ -324,13 +319,13 @@
   
   <url>
     <loc>http://www.weizlogy.gq/categories/site-management/</loc>
-    <lastmod>2018-09-22T17:05:24+09:00</lastmod>
+    <lastmod>2018-09-05T07:10:30+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.weizlogy.gq/site/</loc>
-    <lastmod>2018-09-22T17:05:24+09:00</lastmod>
+    <lastmod>2018-09-05T07:10:30+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -383,7 +378,7 @@
   
   <url>
     <loc>http://www.weizlogy.gq/</loc>
-    <lastmod>2018-09-22T17:05:24+09:00</lastmod>
+    <lastmod>2018-09-08T17:33:52+09:00</lastmod>
     <priority>0</priority>
   </url>
   
